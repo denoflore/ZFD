@@ -1,0 +1,657 @@
+{
+  "generated": "2026-02-01T04:36:33.069927",
+  "n_candidates": 12,
+  "results": [
+    {
+      "name": "fire_heat",
+      "variants": [
+        "kair",
+        "fair",
+        "kar",
+        "char"
+      ],
+      "description": "Fire/heat - cooking contexts",
+      "claimed_context": "heat_source",
+      "total_occurrences": 249,
+      "in_herbal": 249,
+      "operator_analysis": {
+        "total_occurrences": 249,
+        "operator_counts": {
+          "yk": 20,
+          "sh": 7,
+          "(none)": 65,
+          "ok": 46,
+          "ch": 52,
+          "ys": 1,
+          "qo": 43,
+          "so": 1,
+          "da": 4,
+          "ot": 2,
+          "dc": 3,
+          "pc": 3,
+          "yc": 1,
+          "tc": 1
+        },
+        "expected_op_rate": 0.40160642570281124,
+        "top_operators": [
+          [
+            "(none)",
+            65,
+            0.26104417670682734
+          ],
+          [
+            "ch",
+            52,
+            0.20883534136546184
+          ],
+          [
+            "ok",
+            46,
+            0.18473895582329317
+          ],
+          [
+            "qo",
+            43,
+            0.17269076305220885
+          ],
+          [
+            "yk",
+            20,
+            0.08032128514056225
+          ]
+        ],
+        "context_score": 0.40160642570281124
+      },
+      "image_adjacent_results": {
+        "kair_root": {
+          "match_rate": 0.3333333333333333,
+          "p_value": 0.568,
+          "verdict": "FAIL"
+        },
+        "kar_root": {
+          "match_rate": 0.3219178082191781,
+          "p_value": 0.822,
+          "verdict": "FAIL"
+        },
+        "char_root": {
+          "match_rate": 0.5277777777777778,
+          "p_value": 0.0,
+          "verdict": "PASS"
+        },
+        "kair_stalk": {
+          "match_rate": 0.5185185185185185,
+          "p_value": 0.38,
+          "verdict": "FAIL"
+        },
+        "kar_stalk": {
+          "match_rate": 0.5068493150684932,
+          "p_value": 0.77,
+          "verdict": "FAIL"
+        },
+        "char_stalk": {
+          "match_rate": 0.5972222222222222,
+          "p_value": 0.166,
+          "verdict": "FAIL"
+        },
+        "kair_leaf": {
+          "match_rate": 0.48148148148148145,
+          "p_value": 0.472,
+          "verdict": "FAIL"
+        },
+        "kar_leaf": {
+          "match_rate": 0.5684931506849316,
+          "p_value": 0.104,
+          "verdict": "FAIL"
+        },
+        "char_leaf": {
+          "match_rate": 0.4444444444444444,
+          "p_value": 0.936,
+          "verdict": "FAIL"
+        },
+        "kair_flower": {
+          "match_rate": 0.2962962962962963,
+          "p_value": 0.864,
+          "verdict": "FAIL"
+        },
+        "kar_flower": {
+          "match_rate": 0.4383561643835616,
+          "p_value": 0.27,
+          "verdict": "FAIL"
+        },
+        "char_flower": {
+          "match_rate": 0.2361111111111111,
+          "p_value": 1.0,
+          "verdict": "FAIL"
+        }
+      },
+      "confidence_score": 1.0,
+      "verdict": "PROMOTE_TO_CONFIRMED"
+    },
+    {
+      "name": "dose_seed",
+      "variants": [
+        "dar",
+        "dain",
+        "daiin"
+      ],
+      "description": "Add/Portion/Measure/Seed - dose contexts",
+      "claimed_context": "dose_quantity",
+      "total_occurrences": 985,
+      "in_herbal": 985,
+      "operator_analysis": {
+        "total_occurrences": 985,
+        "operator_counts": {
+          "da": 652,
+          "(none)": 158,
+          "ok": 8,
+          "ch": 63,
+          "qo": 36,
+          "tc": 8,
+          "pc": 13,
+          "yk": 2,
+          "ot": 8,
+          "dc": 6,
+          "so": 5,
+          "sh": 22,
+          "po": 2,
+          "yc": 2
+        },
+        "expected_op_rate": 0.698477157360406,
+        "top_operators": [
+          [
+            "da",
+            652,
+            0.6619289340101523
+          ],
+          [
+            "(none)",
+            158,
+            0.16040609137055836
+          ],
+          [
+            "ch",
+            63,
+            0.06395939086294417
+          ],
+          [
+            "qo",
+            36,
+            0.03654822335025381
+          ],
+          [
+            "sh",
+            22,
+            0.02233502538071066
+          ]
+        ],
+        "context_score": 0.698477157360406
+      },
+      "image_adjacent_results": {
+        "dar_root": {
+          "match_rate": 0.4222222222222222,
+          "p_value": 0.094,
+          "verdict": "FAIL"
+        },
+        "dain_root": {
+          "match_rate": 0.4462809917355372,
+          "p_value": 0.096,
+          "verdict": "FAIL"
+        },
+        "daiin_root": {
+          "match_rate": 0.41883116883116883,
+          "p_value": 0.028,
+          "verdict": "BORDERLINE"
+        },
+        "dar_stalk": {
+          "match_rate": 0.6,
+          "p_value": 0.138,
+          "verdict": "FAIL"
+        },
+        "dain_stalk": {
+          "match_rate": 0.6446280991735537,
+          "p_value": 0.072,
+          "verdict": "FAIL"
+        },
+        "daiin_stalk": {
+          "match_rate": 0.5974025974025974,
+          "p_value": 0.12,
+          "verdict": "FAIL"
+        },
+        "dar_leaf": {
+          "match_rate": 0.5733333333333334,
+          "p_value": 0.28,
+          "verdict": "FAIL"
+        },
+        "dain_leaf": {
+          "match_rate": 0.5867768595041323,
+          "p_value": 0.41,
+          "verdict": "FAIL"
+        },
+        "daiin_leaf": {
+          "match_rate": 0.551948051948052,
+          "p_value": 0.814,
+          "verdict": "FAIL"
+        },
+        "dar_flower": {
+          "match_rate": 0.39555555555555555,
+          "p_value": 0.872,
+          "verdict": "FAIL"
+        },
+        "dain_flower": {
+          "match_rate": 0.38016528925619836,
+          "p_value": 0.942,
+          "verdict": "FAIL"
+        },
+        "daiin_flower": {
+          "match_rate": 0.42694805194805197,
+          "p_value": 0.758,
+          "verdict": "FAIL"
+        }
+      },
+      "confidence_score": 0.75,
+      "verdict": "PROMOTE_TO_CONFIRMED"
+    },
+    {
+      "name": "cauldron",
+      "variants": [
+        "kal"
+      ],
+      "description": "Cauldron/heated vessel",
+      "claimed_context": "heated_vessel",
+      "total_occurrences": 171,
+      "in_herbal": 171,
+      "operator_analysis": {
+        "total_occurrences": 171,
+        "operator_counts": {
+          "yk": 13,
+          "ok": 70,
+          "ch": 14,
+          "qo": 44,
+          "sh": 8,
+          "(none)": 21,
+          "da": 1
+        },
+        "expected_op_rate": 0.49122807017543857,
+        "top_operators": [
+          [
+            "ok",
+            70,
+            0.4093567251461988
+          ],
+          [
+            "qo",
+            44,
+            0.2573099415204678
+          ],
+          [
+            "(none)",
+            21,
+            0.12280701754385964
+          ],
+          [
+            "ch",
+            14,
+            0.08187134502923976
+          ],
+          [
+            "yk",
+            13,
+            0.07602339181286549
+          ]
+        ],
+        "context_score": 0.49122807017543857
+      },
+      "image_adjacent_results": {
+        "kal_root": {
+          "match_rate": 0.31176470588235294,
+          "p_value": 0.79,
+          "verdict": "FAIL"
+        },
+        "kal_stalk": {
+          "match_rate": 0.4294117647058823,
+          "p_value": 0.876,
+          "verdict": "FAIL"
+        },
+        "kal_leaf": {
+          "match_rate": 0.4823529411764706,
+          "p_value": 0.336,
+          "verdict": "FAIL"
+        },
+        "kal_flower": {
+          "match_rate": 0.4647058823529412,
+          "p_value": 0.012,
+          "verdict": "BORDERLINE"
+        }
+      },
+      "confidence_score": 0.75,
+      "verdict": "PROMOTE_TO_CONFIRMED"
+    },
+    {
+      "name": "broth",
+      "variants": [
+        "ykal"
+      ],
+      "description": "Broth/decoction - vessels and soaking",
+      "claimed_context": "vessel_infusion",
+      "total_occurrences": 15,
+      "in_herbal": 15,
+      "operator_analysis": {
+        "total_occurrences": 15,
+        "operator_counts": {
+          "yk": 13,
+          "ch": 1,
+          "(none)": 1
+        },
+        "expected_op_rate": 0.0,
+        "top_operators": [
+          [
+            "yk",
+            13,
+            0.8666666666666667
+          ],
+          [
+            "ch",
+            1,
+            0.06666666666666667
+          ],
+          [
+            "(none)",
+            1,
+            0.06666666666666667
+          ]
+        ],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {
+        "ykal_root": {
+          "match_rate": 0.35714285714285715,
+          "p_value": 0.478,
+          "verdict": "FAIL"
+        },
+        "ykal_stalk": {
+          "match_rate": 0.5714285714285714,
+          "p_value": 0.244,
+          "verdict": "FAIL"
+        },
+        "ykal_leaf": {
+          "match_rate": 0.5,
+          "p_value": 0.38,
+          "verdict": "FAIL"
+        },
+        "ykal_flower": {
+          "match_rate": 0.2857142857142857,
+          "p_value": 0.766,
+          "verdict": "FAIL"
+        }
+      },
+      "confidence_score": 0.25,
+      "verdict": "DEMOTE_TO_LOW"
+    },
+    {
+      "name": "boil_roast",
+      "variants": [
+        "thor",
+        "thar"
+      ],
+      "description": "Boil/roast/scorch - heat contexts",
+      "claimed_context": "heat_process",
+      "total_occurrences": 67,
+      "in_herbal": 67,
+      "operator_analysis": {
+        "total_occurrences": 67,
+        "operator_counts": {
+          "(none)": 61,
+          "ch": 3,
+          "qo": 2,
+          "yc": 1
+        },
+        "expected_op_rate": 0.04477611940298507,
+        "top_operators": [
+          [
+            "(none)",
+            61,
+            0.9104477611940298
+          ],
+          [
+            "ch",
+            3,
+            0.04477611940298507
+          ],
+          [
+            "qo",
+            2,
+            0.029850746268656716
+          ],
+          [
+            "yc",
+            1,
+            0.014925373134328358
+          ]
+        ],
+        "context_score": 0.04477611940298507
+      },
+      "image_adjacent_results": {
+        "thor_root": {
+          "match_rate": 0.4,
+          "p_value": 0.48,
+          "verdict": "FAIL"
+        },
+        "thar_root": {
+          "match_rate": 0.4166666666666667,
+          "p_value": 0.5,
+          "verdict": "FAIL"
+        },
+        "thor_stalk": {
+          "match_rate": 0.62,
+          "p_value": 0.348,
+          "verdict": "FAIL"
+        },
+        "thar_stalk": {
+          "match_rate": 0.6666666666666666,
+          "p_value": 0.29,
+          "verdict": "FAIL"
+        },
+        "thor_leaf": {
+          "match_rate": 0.6,
+          "p_value": 0.364,
+          "verdict": "FAIL"
+        },
+        "thar_leaf": {
+          "match_rate": 0.6666666666666666,
+          "p_value": 0.288,
+          "verdict": "FAIL"
+        },
+        "thor_flower": {
+          "match_rate": 0.42,
+          "p_value": 0.726,
+          "verdict": "FAIL"
+        },
+        "thar_flower": {
+          "match_rate": 0.3333333333333333,
+          "p_value": 0.824,
+          "verdict": "FAIL"
+        }
+      },
+      "confidence_score": 0.25,
+      "verdict": "DEMOTE_TO_LOW"
+    },
+    {
+      "name": "flask_phial",
+      "variants": [
+        "phar"
+      ],
+      "description": "Flask/phial - liquid contexts",
+      "claimed_context": "vessel_liquid",
+      "total_occurrences": 6,
+      "in_herbal": 6,
+      "operator_analysis": {
+        "total_occurrences": 6,
+        "operator_counts": {
+          "(none)": 5,
+          "ch": 1
+        },
+        "expected_op_rate": 0.0,
+        "top_operators": [
+          [
+            "(none)",
+            5,
+            0.8333333333333334
+          ],
+          [
+            "ch",
+            1,
+            0.16666666666666666
+          ]
+        ],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {
+        "phar_root": {
+          "match_rate": 0.8,
+          "p_value": 1.0,
+          "verdict": "INSUFFICIENT_DATA"
+        },
+        "phar_stalk": {
+          "match_rate": 0.6,
+          "p_value": 1.0,
+          "verdict": "INSUFFICIENT_DATA"
+        },
+        "phar_leaf": {
+          "match_rate": 0.4,
+          "p_value": 1.0,
+          "verdict": "INSUFFICIENT_DATA"
+        },
+        "phar_flower": {
+          "match_rate": 0.0,
+          "p_value": 1.0,
+          "verdict": "INSUFFICIENT_DATA"
+        }
+      },
+      "confidence_score": 0.1,
+      "verdict": "DEMOTE_TO_LOW"
+    },
+    {
+      "name": "syrup",
+      "variants": [
+        "syr",
+        "syrop"
+      ],
+      "description": "Syrup/potion - terminal media/sweetened",
+      "claimed_context": "preparation_terminal",
+      "total_occurrences": 0,
+      "in_herbal": 0,
+      "operator_analysis": {
+        "total_occurrences": 0,
+        "operator_counts": {},
+        "expected_op_rate": 0.0,
+        "top_operators": [],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {},
+      "confidence_score": 0.0,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    {
+      "name": "bitter_herb",
+      "variants": [
+        "amar"
+      ],
+      "description": "Bitter herb/resin - wines/bitters",
+      "claimed_context": "wine_bitter",
+      "total_occurrences": 0,
+      "in_herbal": 0,
+      "operator_analysis": {
+        "total_occurrences": 0,
+        "operator_counts": {},
+        "expected_op_rate": 0.0,
+        "top_operators": [],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {},
+      "confidence_score": 0.0,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    {
+      "name": "zedoary",
+      "variants": [
+        "zel",
+        "zedo",
+        "zedor"
+      ],
+      "description": "Zedoary root - rare root ingredient",
+      "claimed_context": "root_rare",
+      "total_occurrences": 0,
+      "in_herbal": 0,
+      "operator_analysis": {
+        "total_occurrences": 0,
+        "operator_counts": {},
+        "expected_op_rate": 0.0,
+        "top_operators": [],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {},
+      "confidence_score": 0.0,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    {
+      "name": "lime",
+      "variants": [
+        "calc"
+      ],
+      "description": "Lime/quickite - minerals + fire",
+      "claimed_context": "mineral_fire",
+      "total_occurrences": 0,
+      "in_herbal": 0,
+      "operator_analysis": {
+        "total_occurrences": 0,
+        "operator_counts": {},
+        "expected_op_rate": 0.0,
+        "top_operators": [],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {},
+      "confidence_score": 0.0,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    {
+      "name": "licorice",
+      "variants": [
+        "licor"
+      ],
+      "description": "Licorice root - honey/sweets",
+      "claimed_context": "sweet_root",
+      "total_occurrences": 0,
+      "in_herbal": 0,
+      "operator_analysis": {
+        "total_occurrences": 0,
+        "operator_counts": {},
+        "expected_op_rate": 0.0,
+        "top_operators": [],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {},
+      "confidence_score": 0.0,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    {
+      "name": "electuary",
+      "variants": [
+        "elec"
+      ],
+      "description": "Electuary - compound paste/mixture",
+      "claimed_context": "compound_paste",
+      "total_occurrences": 0,
+      "in_herbal": 0,
+      "operator_analysis": {
+        "total_occurrences": 0,
+        "operator_counts": {},
+        "expected_op_rate": 0.0,
+        "top_operators": [],
+        "context_score": 0.0
+      },
+      "image_adjacent_results": {},
+      "confidence_score": 0.0,
+      "verdict": "INSUFFICIENT_DATA"
+    }
+  ]
+}
