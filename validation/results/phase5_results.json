@@ -1,0 +1,96 @@
+{
+  "generated": "2026-02-01T16:54:44.637252",
+  "al_pharma_count": 870,
+  "ar_pharma_count": 883,
+  "al_ar_ratio": 0.9852774631936579,
+  "equipment_annotations": {
+    "f75v_est": {
+      "equipment_type": "LIQUID_APPARATUS",
+      "description": "Tube/pipe system connecting to bathing pools",
+      "visible_elements": [
+        "scalloped pipe system at top",
+        "vertical tube descending into pool",
+        "circular green pool with nymphs (1)",
+        "circular green pool with nymphs (2)"
+      ],
+      "liquid_indicators": [
+        "green colored pools (infusion/herbal bath)",
+        "connected tube system (circulation)",
+        "immersion of human figures"
+      ],
+      "heat_indicators": [],
+      "preparation_class": "LIQUID",
+      "confidence": "HIGH"
+    },
+    "f79v_est": {
+      "equipment_type": "BATHING_SCENE",
+      "description": "Vessel, swimming nymph, communal pool",
+      "visible_elements": [
+        "vessel/container at top",
+        "swimming/bathing nymph",
+        "communal green pool at bottom"
+      ],
+      "liquid_indicators": [
+        "green pool (infusion)",
+        "bathing/immersion",
+        "vessel with possible liquid"
+      ],
+      "heat_indicators": [],
+      "preparation_class": "LIQUID",
+      "confidence": "HIGH"
+    },
+    "f80v_est": {
+      "equipment_type": "TUBE_BASIN_SYSTEM",
+      "description": "Nymphs connected by blue tubes to basins",
+      "visible_elements": [
+        "blue tube/conduit system",
+        "human figures at tube junctions",
+        "basin structures"
+      ],
+      "liquid_indicators": [
+        "blue tubes (water/liquid flow)",
+        "basin containers",
+        "connected fluid system"
+      ],
+      "heat_indicators": [],
+      "preparation_class": "LIQUID",
+      "confidence": "HIGH"
+    },
+    "f81v_est": {
+      "equipment_type": "COMMUNAL_BATHS",
+      "description": "Multiple bathing pools with pipe system",
+      "visible_elements": [
+        "piping/tube system at top with nymphs",
+        "first green pool with bathing nymphs",
+        "second green pool with nymphs + colored orbs",
+        "grouped figures at bottom"
+      ],
+      "liquid_indicators": [
+        "multiple green pools (herbal baths)",
+        "piping system (circulation)",
+        "colored additives in liquid (blue/red orbs)",
+        "communal immersion"
+      ],
+      "heat_indicators": [],
+      "preparation_class": "LIQUID",
+      "confidence": "VERY_HIGH"
+    },
+    "f87r": {
+      "equipment_type": "STORAGE_JARS_AND_MATERIALS",
+      "description": "Striped storage jars with plant materials",
+      "visible_elements": [
+        "cylindrical striped jars (left side)",
+        "root/plant materials (top and right)",
+        "large plant with roots (bottom)"
+      ],
+      "liquid_indicators": [
+        "layered/striped jars (possibly showing liquid levels)",
+        "storage vessels (for infusions/tinctures)"
+      ],
+      "heat_indicators": [],
+      "preparation_class": "LIQUID",
+      "confidence": "MEDIUM",
+      "notes": "Jars likely store liquid preparations; no heat visible"
+    }
+  }
+}
