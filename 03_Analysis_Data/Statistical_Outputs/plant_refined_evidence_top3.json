@@ -1,0 +1,737 @@
+{
+  "kaii": {
+    "herbal": {
+      "folio": "39r",
+      "evidence": [
+        {
+          "unit": "3,+P0",
+          "forms": [
+            {
+              "token": "chekaiin",
+              "op": "che",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "8,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "9,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "11,+P0",
+          "forms": [
+            {
+              "token": "olkaiin",
+              "op": "ol",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "13,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        }
+      ]
+    },
+    "biological": {
+      "folio": "77r",
+      "evidence": [
+        {
+          "unit": "11,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "14,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "15,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "16,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "23,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "26,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "34,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            },
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            },
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "35,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "38,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        }
+      ]
+    },
+    "pharma": {
+      "folio": "95r1",
+      "evidence": [
+        {
+          "unit": "1,@P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "2,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            },
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "3,+P0",
+          "forms": [
+            {
+              "token": "chekaiin",
+              "op": "che",
+              "stem": "kaii",
+              "suf": "n"
+            },
+            {
+              "token": "chekaiin",
+              "op": "che",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        },
+        {
+          "unit": "4,+P0",
+          "forms": [
+            {
+              "token": "qokaiin",
+              "op": "qo",
+              "stem": "kaii",
+              "suf": "n"
+            }
+          ]
+        }
+      ]
+    },
+    "zodiac": {
+      "folio": null,
+      "evidence": []
+    }
+  },
+  "okee": {
+    "herbal": {
+      "folio": "31r",
+      "evidence": [
+        {
+          "unit": "2,+P0",
+          "forms": [
+            {
+              "token": "qokees",
+              "op": "q",
+              "stem": "okee",
+              "suf": "s"
+            }
+          ]
+        },
+        {
+          "unit": "3,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            },
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        }
+      ]
+    },
+    "biological": {
+      "folio": "79v",
+      "evidence": [
+        {
+          "unit": "8,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "10,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "14,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "18,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            },
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "24,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "25,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "34,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "38,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            },
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "40,+P0",
+          "forms": [
+            {
+              "token": "qokees",
+              "op": "q",
+              "stem": "okee",
+              "suf": "s"
+            }
+          ]
+        },
+        {
+          "unit": "41,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        }
+      ]
+    },
+    "pharma": {
+      "folio": "89r2",
+      "evidence": [
+        {
+          "unit": "8,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "23,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "24,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            },
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "26,+P0",
+          "forms": [
+            {
+              "token": "qokeey",
+              "op": "q",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        }
+      ]
+    },
+    "zodiac": {
+      "folio": "68r2",
+      "evidence": [
+        {
+          "unit": "2,+P0",
+          "forms": [
+            {
+              "token": "chokeey",
+              "op": "ch",
+              "stem": "okee",
+              "suf": "y"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "hckh": {
+    "herbal": {
+      "folio": "46r",
+      "evidence": [
+        {
+          "unit": "2,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "3,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "4,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            },
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "8,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "12,+P0",
+          "forms": [
+            {
+              "token": "chckham",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "am"
+            }
+          ]
+        }
+      ]
+    },
+    "biological": {
+      "folio": "76r",
+      "evidence": [
+        {
+          "unit": "9,+P0",
+          "forms": [
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "11,=P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "16,+P0",
+          "forms": [
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "20,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            },
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "23,=P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "25,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "33,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "35,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "40,+P0",
+          "forms": [
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "41,+P0",
+          "forms": [
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "44,+P0",
+          "forms": [
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "45,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "47,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        },
+        {
+          "unit": "48,+P0",
+          "forms": [
+            {
+              "token": "shckhy",
+              "op": "s",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        }
+      ]
+    },
+    "pharma": {
+      "folio": "95r1",
+      "evidence": [
+        {
+          "unit": "10,+P0",
+          "forms": [
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            },
+            {
+              "token": "chckhy",
+              "op": "c",
+              "stem": "hckh",
+              "suf": "y"
+            }
+          ]
+        }
+      ]
+    },
+    "zodiac": {
+      "folio": null,
+      "evidence": []
+    }
+  }
+}
