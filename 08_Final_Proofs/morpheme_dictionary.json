@@ -1,0 +1,163 @@
+{
+  "generated": "2026-02-01T22:54:53.754702",
+  "source": "ZFD Phase 9 - Pharmaceutical Section",
+  "folios_analyzed": [
+    "f88r",
+    "f88v",
+    "f99r",
+    "f99v",
+    "f100r",
+    "f100v",
+    "f101r",
+    "f101v"
+  ],
+  "operators": {
+    "ch": {
+      "meaning": "mix",
+      "count": 238,
+      "confidence": "CONFIRMED"
+    },
+    "qo": {
+      "meaning": "measure",
+      "count": 133,
+      "confidence": "CONFIRMED"
+    },
+    "ok": {
+      "meaning": "process",
+      "count": 113,
+      "confidence": "CONFIRMED"
+    },
+    "sh": {
+      "meaning": "strain",
+      "count": 92,
+      "confidence": "CONFIRMED"
+    },
+    "da": {
+      "meaning": "dose",
+      "count": 90,
+      "confidence": "CONFIRMED"
+    },
+    "ot": {
+      "meaning": "prepare",
+      "count": 62,
+      "confidence": "CONFIRMED"
+    },
+    "sa": {
+      "meaning": "salt",
+      "count": 26,
+      "confidence": "CANDIDATE"
+    },
+    "so": {
+      "meaning": "soak",
+      "count": 23,
+      "confidence": "CANDIDATE"
+    },
+    "yk": {
+      "meaning": "yield",
+      "count": 22,
+      "confidence": "CANDIDATE"
+    },
+    "pc": {
+      "meaning": "pound",
+      "count": 5,
+      "confidence": "CANDIDATE"
+    },
+    "tc": {
+      "meaning": "apply",
+      "count": 1,
+      "confidence": "CANDIDATE"
+    }
+  },
+  "stems": {
+    "ol": {
+      "meaning": "oil",
+      "count": 318,
+      "confidence": "CONFIRMED"
+    },
+    "or": {
+      "meaning": "oil",
+      "count": 142,
+      "confidence": "CANDIDATE"
+    },
+    "k": {
+      "meaning": "vessel",
+      "count": 118,
+      "confidence": "CANDIDATE"
+    },
+    "ee": {
+      "meaning": "thoroughly",
+      "count": 115,
+      "confidence": "CANDIDATE"
+    },
+    "od": {
+      "meaning": "stalk",
+      "count": 67,
+      "confidence": "CONFIRMED"
+    },
+    "ed": {
+      "meaning": "root",
+      "count": 6,
+      "confidence": "CONFIRMED"
+    },
+    "kal": {
+      "meaning": "vessel",
+      "count": 4,
+      "confidence": "CONFIRMED"
+    },
+    "kar": {
+      "meaning": "fire",
+      "count": 2,
+      "confidence": "CONFIRMED"
+    }
+  },
+  "class_markers": {
+    "al": {
+      "meaning": "liquid",
+      "count": 63,
+      "confidence": "CONFIRMED"
+    },
+    "ar": {
+      "meaning": "heat",
+      "count": 53,
+      "confidence": "CONFIRMED"
+    }
+  },
+  "suffixes": {
+    "y": {
+      "meaning": "",
+      "count": 316,
+      "confidence": "CONFIRMED"
+    },
+    "iin": {
+      "meaning": "continue",
+      "count": 63,
+      "confidence": "CANDIDATE"
+    },
+    "aiin": {
+      "meaning": "continue in liquid",
+      "count": 56,
+      "confidence": "CONFIRMED"
+    },
+    "dy": {
+      "meaning": "until done",
+      "count": 51,
+      "confidence": "CONFIRMED"
+    },
+    "m": {
+      "meaning": "material",
+      "count": 34,
+      "confidence": "CANDIDATE"
+    },
+    "ain": {
+      "meaning": "in process",
+      "count": 11,
+      "confidence": "CANDIDATE"
+    },
+    "ir": {
+      "meaning": "heat result",
+      "count": 10,
+      "confidence": "CANDIDATE"
+    }
+  },
+  "unknown": []
+}
