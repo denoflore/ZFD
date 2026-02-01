@@ -1,0 +1,93 @@
+{
+  "generated": "2026-02-01T04:33:08.909672",
+  "methodology": "Image-adjacent correlation with shuffled baseline",
+  "adjacency_window": 2,
+  "pass_threshold": 0.4,
+  "forbid_threshold": 0.2,
+  "p_value_threshold": 0.01,
+  "tests": {
+    "od_stalk": {
+      "stem": "od",
+      "claimed_part": "stalk",
+      "occurrences": 790,
+      "occurrences_in_annotated": 775,
+      "adjacent_matches": 451,
+      "match_rate": 0.5819354838709677,
+      "baseline_rate": 0.557221935483871,
+      "p_value": 0.092,
+      "verdict": "FAIL"
+    },
+    "od_forbid": {
+      "stem": "od",
+      "claimed_part": "stalk",
+      "wrong_part_rates": {
+        "root": 0.43483870967741933,
+        "leaf": 0.5290322580645161,
+        "flower": 0.3832258064516129,
+        "seed": 0.0,
+        "vessel": 0.0
+      },
+      "max_wrong_rate": 0.5290322580645161,
+      "max_wrong_part": "leaf",
+      "forbid_violated": true,
+      "verdict": "VIOLATED"
+    },
+    "ed_root_baseline": {
+      "stem": "ed",
+      "claimed_part": "root",
+      "occurrences": 550,
+      "occurrences_in_annotated": 550,
+      "adjacent_matches": 204,
+      "match_rate": 0.3709090909090909,
+      "baseline_rate": 0.3697709090909091,
+      "p_value": 0.493,
+      "verdict": "FAIL"
+    },
+    "od_alternatives": [
+      {
+        "stem": "od",
+        "claimed_part": "root",
+        "occurrences": 790,
+        "occurrences_in_annotated": 775,
+        "adjacent_matches": 337,
+        "match_rate": 0.43483870967741933,
+        "baseline_rate": 0.3766322580645161,
+        "p_value": 0.0,
+        "verdict": "PASS"
+      },
+      {
+        "stem": "od",
+        "claimed_part": "leaf",
+        "occurrences": 790,
+        "occurrences_in_annotated": 775,
+        "adjacent_matches": 410,
+        "match_rate": 0.5290322580645161,
+        "baseline_rate": 0.5454787096774194,
+        "p_value": 0.838,
+        "verdict": "FAIL"
+      },
+      {
+        "stem": "od",
+        "claimed_part": "flower",
+        "occurrences": 790,
+        "occurrences_in_annotated": 775,
+        "adjacent_matches": 297,
+        "match_rate": 0.3832258064516129,
+        "baseline_rate": 0.4364283870967741,
+        "p_value": 0.996,
+        "verdict": "FAIL"
+      },
+      {
+        "stem": "od",
+        "claimed_part": "vessel",
+        "occurrences": 790,
+        "occurrences_in_annotated": 775,
+        "adjacent_matches": 0,
+        "match_rate": 0.0,
+        "baseline_rate": 0.0,
+        "p_value": 1.0,
+        "verdict": "FAIL"
+      }
+    ]
+  }
+}
