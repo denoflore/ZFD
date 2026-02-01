@@ -1,0 +1,17 @@
+first2,role,share_pct,H_third_bits,k_third,top3_third,analogue_note
+qo,Q (quantity/measure frame),12.987012987012983,0.8739810481273578,2,k:288; t:120,"weights & measures frames in notarial/merchant notes (units, counts, portions)"
+da,D (dose/weight toggle),8.987012987012987,-0.0,1,i:251,dosage/weight toggles in medical and trade memos
+ok,V1 (vessel/container class),8.675324675324674,0.9882120827287972,2,e:106; a:82,"container/vessel references (ampulla, olla, bocale) in shop inventories"
+ot,V2 (vessel/container class),8.0,1.5829333352860284,3,e:82; o:77; a:72,alternate vessel/form factor markers in recipe margins
+sh,S (soak/infuse step),5.2727272727272725,-0.0,1,o:120,infusion/maceration verbs common in pharmacopoeia and brewing
+so,,5.194805194805195,-0.0,1,l:79,
+yc,,5.012987012987013,-0.0,1,h:189,
+sa,,4.909090909090909,-0.0,1,i:113,
+ch,C (combine/mix step),4.753246753246753,-0.0,1,o:102,"recipe/procedural imperatives (admixt., misc.) found in apothecary/culinary notes"
+yk,,4.077922077922078,-0.0,1,e:80,
+dc,,3.922077922077922,-0.0,1,h:150,
+pc,,3.8701298701298703,-0.0,1,h:149,
+po,,3.7142857142857135,-0.0,1,l:74,
+tc,,2.987012987012987,-0.0,1,h:115,
+ds,,2.623376623376624,-0.0,1,h:99,
+ys,,2.181818181818182,-0.0,1,h:78,
