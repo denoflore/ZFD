@@ -179,4 +179,58 @@ The key points to a different lock for **al/ar** (preparation states).
 
 *"The answer was not where we looked, but the looking revealed where to look next."*
 
-*February 2026*
+---
+
+## Addendum: Curio's Geometric Test
+
+Following Curio's insight about branching geometry, we tested whether:
+- 'al' = lateral divergence (branch points)
+- 'ar' = terminal divergence (endpoints)
+
+### Results
+
+| Prediction | Result |
+|------------|--------|
+| 'al' → branch zones | **NOT SUPPORTED** (ar has higher branch correlation) |
+| 'ar' → terminal zones | **WEAKLY SUPPORTED** (1.30x preference) |
+
+### Key Finding: f34r (Single Terminal Flower)
+
+This folio has ONE dramatic flower terminal:
+- ar = 20, al = 11
+- ar in terminal zone: 30%
+
+This supports 'ar' having a terminal/endpoint function.
+
+### Synthesis: DUAL FUNCTION HYPOTHESIS
+
+**'ar' may do DOUBLE DUTY:**
+
+```
+┌────────────────────────────────────────────────┐
+│  'ar' = TERMINAL + DRY/HEAT                    │
+│                                                │
+│  1. Marks WHERE growth ends (geometric)        │
+│  2. Marks HOW to process dry/heat (semantic)   │
+│                                                │
+│  These OVERLAP: flowers/seeds are often dried! │
+└────────────────────────────────────────────────┘
+```
+
+**'al' = LIQUID/PREPARATION CLASS (primary function):**
+- Does NOT show geometric preference
+- Distributed across all zones
+- Consistent with ZFD suffix "liquid/alcohol class"
+
+### Pharmacological Coherence
+
+This makes sense for a practical herbal:
+- Terminal structures (flowers, seeds) → dried/heated
+- Root/stalk structures → decoctions/infusions
+
+The language may encode **both anatomy AND processing** in the same morphemes.
+
+---
+
+*Updated with geometric analysis - February 2026*
+
