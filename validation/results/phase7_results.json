@@ -1,0 +1,28 @@
+{
+  "generated": "2026-02-01T17:48:42.702772",
+  "parsing_stats": {
+    "total_parsed": 5771,
+    "high_confidence": 141,
+    "high_confidence_pct": 2.4432507364408247,
+    "medium_confidence": 536,
+    "low_confidence": 5094,
+    "anomalies": 4682
+  },
+  "success_criteria": {
+    "target_high_confidence_pct": 70,
+    "achieved_high_confidence_pct": 2.4432507364408247,
+    "meets_target": false
+  },
+  "discoveries": {
+    "ee_mystery": "'ee' may be an intensifier/emphatic marker",
+    "suffix_patterns": [
+      "aiin",
+      "y",
+      "dy",
+      "ain",
+      "ir",
+      "iin",
+      "m"
+    ]
+  }
+}
