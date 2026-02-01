@@ -1,6 +1,6 @@
 # ZFD Validation Results - February 2026
 
-**Generated:** 2026-02-01 05:25
+**Generated:** 2026-02-01 15:42
 **Pipeline Version:** 0.1.0
 **Methodology:** Preregistered Falsification Testing with Image-Adjacent Correlation
 
@@ -31,11 +31,11 @@ pipeline with preregistered falsification protocols.
 
 | Test | Result |
 |------|--------|
-| od → stalk match rate | 61.6% |
-| od → stalk p-value | 0.2050 |
-| od → root match rate | 42.9% |
-| Forbid check (max wrong part) | 48.9% (leaf) |
-| Baseline: ed → root | 52.2% (p=0.071) |
+| od → stalk match rate | 63.8% |
+| od → stalk p-value | 0.0250 |
+| od → root match rate | 42.6% |
+| Forbid check (max wrong part) | 51.4% (leaf) |
+| Baseline: ed → root | 51.3% (p=0.012) |
 
 **Verdict:** NEEDS_REFINEMENT
 

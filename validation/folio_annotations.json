@@ -1,6 +1,6 @@
 {
-  "version": "2.0",
-  "description": "Plant-part annotations with VISUAL and PATTERN_ENHANCED methods",
+  "version": "3.0",
+  "description": "Plant-part annotations with VISUAL (Phase 3) from actual JP2 images",
   "methodology": {
     "VISUAL": "Embodied visual analysis from actual folio images",
     "VISUAL_HIGH": "Clear plant-part depiction, unambiguous",
@@ -1182,40 +1182,68 @@
       "notes": "Auto-generated from layout heuristic"
     },
     "f20r": {
-      "max_lines": 13,
+      "max_lines": 17,
       "plant_parts": [
-        "root",
         "stalk",
         "leaf",
-        "flower"
+        "seed"
       ],
-      "root_lines": [
-        1
-      ],
+      "root_lines": [],
       "stalk_lines": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
         8,
-        9
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
       ],
       "leaf_lines": [
         10,
         11,
-        12
+        12,
+        13,
+        14,
+        15
       ],
-      "flower_lines": [
-        13
+      "flower_lines": [],
+      "seed_lines": [
+        8,
+        9,
+        10
       ],
-      "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
+      "confidence": "VISUAL_HIGH",
       "notes": "Zero ed, high od - strongly stalk-focused",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High od count (19), zero ed - STALK-FOCUSED"
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High od count (19), zero ed - STALK-FOCUSED",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "branching herb with small leaves",
+        "layout": "plant centered in lower half, text above in 3 paragraphs",
+        "color_present": true,
+        "root_depicted": false,
+        "root_style": "no distinct root - branching base only",
+        "stalk_depicted": true,
+        "stalk_prominence": "VERY_HIGH - multiple branching stems dominate",
+        "leaf_depicted": true,
+        "leaf_style": "small green rounded leaves along branches",
+        "flower_depicted": false,
+        "seed_depicted": true,
+        "seed_style": "small tan structures at branch tips",
+        "notes": "STALK-DOMINATED. Branching stems are THE feature. No anatomical root visible."
+      },
+      "bidirectional_validation": {
+        "expected_od_zone": "stalk",
+        "stalk_zone_pct": 59,
+        "zero_ed_expected": true,
+        "no_root_depicted": true,
+        "notes": "Zero ed AND no root depicted - strong support for both ed=root and od=stalk"
+      }
     },
     "f20v": {
       "max_lines": 11,
@@ -1581,7 +1609,7 @@
       "notes": "Auto-generated from layout heuristic"
     },
     "f26r": {
-      "max_lines": 10,
+      "max_lines": 18,
       "plant_parts": [
         "root",
         "stalk",
@@ -1589,29 +1617,62 @@
         "flower"
       ],
       "root_lines": [
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "stalk_lines": [
+        9,
+        10,
+        11,
+        12,
+        13
+      ],
+      "leaf_lines": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
         1,
         2,
         3,
-        4,
-        5,
-        6
-      ],
-      "stalk_lines": [
-        7,
-        8
-      ],
-      "leaf_lines": [
-        9
-      ],
-      "flower_lines": [
-        10
+        4
       ],
       "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
+      "confidence": "VISUAL_HIGH",
       "notes": "High ed density suggests root-emphasized illustration",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High ed count (29), low od (5) - ROOT-FOCUSED"
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High ed count (29), low od (5) - ROOT-FOCUSED",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "large-leaved plant with secondary plant",
+        "layout": "main plant left, secondary plant lower-right, text wrapping",
+        "color_present": true,
+        "root_depicted": true,
+        "root_style": "VERY PROMINENT branching brown root system",
+        "stalk_depicted": true,
+        "stalk_style": "central pale stalk",
+        "leaf_depicted": true,
+        "leaf_style": "large green leaves",
+        "flower_depicted": true,
+        "flower_style": "blue structures at top",
+        "secondary_plant": "small plant with visible tan roots lower-right",
+        "notes": "ROOT-EMPHASIZED. Clear branching roots. Secondary plant also shows roots."
+      },
+      "bidirectional_validation": {
+        "expected_ed_zone": "root",
+        "root_zone_pct": 28,
+        "notes": "High ed count with prominent root depiction"
+      }
     },
     "f26v": {
       "max_lines": 9,
@@ -2586,7 +2647,7 @@
       "notes": "Auto-generated from layout heuristic"
     },
     "f41r": {
-      "max_lines": 11,
+      "max_lines": 28,
       "plant_parts": [
         "root",
         "stalk",
@@ -2599,25 +2660,65 @@
         3,
         4,
         5,
-        6
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
       ],
       "stalk_lines": [
-        7,
-        8
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
       ],
       "leaf_lines": [
-        9,
-        10
+        21,
+        22,
+        23,
+        24,
+        25
       ],
       "flower_lines": [
-        11
+        15,
+        16,
+        17,
+        18
       ],
       "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
+      "confidence": "VISUAL_HIGH",
       "notes": "Enhanced based on ed frequency pattern",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High ed count (44) suggests root-focused content"
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High ed count (44) suggests root-focused content",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "large-leaved plant with prominent root system",
+        "layout": "plant right side, text left in two sections",
+        "color_present": true,
+        "root_depicted": true,
+        "root_style": "VERY PROMINENT - large detailed branching rootlets",
+        "stalk_depicted": true,
+        "stalk_style": "single tall pale stem",
+        "leaf_depicted": true,
+        "leaf_style": "large green leaf at top, red/orange structures",
+        "flower_depicted": true,
+        "flower_style": "red/orange rounded structures",
+        "notes": "ROOT-DOMINATED illustration. Highest ed count (44) correlates with most prominent root depiction."
+      },
+      "bidirectional_validation": {
+        "expected_ed_zone": "root",
+        "root_zone_pct": 50,
+        "highest_ed_count": 44,
+        "notes": "CRITICAL TEST: Highest ed folio should have highest root match rate"
+      }
     },
     "f41v": {
       "max_lines": 8,
@@ -2772,35 +2873,60 @@
         "flower"
       ],
       "root_lines": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8
-      ],
-      "stalk_lines": [
-        9,
-        10,
-        11
-      ],
-      "leaf_lines": [
-        12,
         13,
-        14
-      ],
-      "flower_lines": [
+        14,
         15,
         16
       ],
+      "stalk_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "leaf_lines": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
       "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
+      "confidence": "VISUAL_MEDIUM",
       "notes": "Enhanced based on ed frequency pattern",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High ed count (38) suggests root-focused content"
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High ed count (38) suggests root-focused content",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "curly-leaved plant (parsley-like)",
+        "layout": "plant centered at bottom, text in two paragraphs above",
+        "color_present": true,
+        "root_depicted": true,
+        "root_style": "visible forking root at bottom",
+        "stalk_depicted": true,
+        "stalk_style": "thick central tan/cream stalk",
+        "leaf_depicted": true,
+        "leaf_style": "PROMINENT dark green curly/lobed leaves",
+        "flower_depicted": true,
+        "flower_style": "small pink/tan bud at top",
+        "notes": "Root present but LEAF is most prominent feature. Mixed emphasis."
+      },
+      "bidirectional_validation": {
+        "expected_ed_zone": "root",
+        "root_zone_pct": 25,
+        "notes": "Root visible but less prominent than leaves"
+      }
     },
     "f44r": {
       "max_lines": 11,
@@ -3271,11 +3397,72 @@
         "flower"
       ],
       "root_lines": [
+        13,
+        14,
+        15
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "leaf_lines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
         1,
         2
       ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "VISUAL_HIGH",
+      "notes": "High od density suggests stalk-emphasized illustration",
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High od count (20), low ed (1) - STALK-FOCUSED",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "branching herb with lobed leaves",
+        "layout": "plant right-center, text left wrapping",
+        "color_present": true,
+        "root_depicted": true,
+        "root_style": "stylized decorative 'face' - NOT anatomical",
+        "stalk_depicted": true,
+        "stalk_prominence": "VERY_HIGH - central feature",
+        "leaf_depicted": true,
+        "flower_depicted": true,
+        "flower_type": "small blue bud at top",
+        "notes": "STALK-DOMINATED illustration. Branching stems are the primary visual feature."
+      },
+      "bidirectional_validation": {
+        "expected_od_zone": "stalk",
+        "stalk_zone_pct": 60,
+        "notes": "High od count should correlate with stalk lines"
+      }
+    },
+    "f51v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "flower"
+      ],
+      "root_lines": [
+        12,
+        13
+      ],
       "stalk_lines": [
-        3,
         4,
         5,
         6,
@@ -3285,33 +3472,9 @@
         10,
         11
       ],
-      "leaf_lines": [
-        12,
-        13,
-        14
-      ],
+      "leaf_lines": [],
       "flower_lines": [
-        15
-      ],
-      "seed_lines": [],
-      "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
-      "notes": "High od density suggests stalk-emphasized illustration",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High od count (20), low ed (1) - STALK-FOCUSED"
-    },
-    "f51v": {
-      "max_lines": 13,
-      "plant_parts": [
-        "root",
-        "stalk",
-        "leaf",
-        "flower"
-      ],
-      "root_lines": [
-        1
-      ],
-      "stalk_lines": [
+        1,
         2,
         3,
         4,
@@ -3321,20 +3484,33 @@
         8,
         9
       ],
-      "leaf_lines": [
-        10,
-        11,
-        12
-      ],
-      "flower_lines": [
-        13
-      ],
       "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
+      "confidence": "VISUAL_HIGH",
       "notes": "Zero ed, high od - strongly stalk-focused",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High od count (21), zero ed - STALK-FOCUSED"
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High od count (21), zero ed - STALK-FOCUSED",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "branching plant with flower/seed heads",
+        "layout": "plant right side, text left in two paragraphs",
+        "color_present": true,
+        "root_depicted": true,
+        "root_style": "branching rootlets - anatomically visible",
+        "stalk_depicted": true,
+        "stalk_prominence": "HIGH - connects all flower heads",
+        "leaf_depicted": false,
+        "flower_depicted": true,
+        "flower_type": "green rosette structures (seed heads or flowers)",
+        "notes": "STALK + FLOWER/SEED focused. Stalk connects all elements."
+      },
+      "bidirectional_validation": {
+        "expected_od_zone": "stalk",
+        "stalk_zone_pct": 62,
+        "zero_ed_expected": true,
+        "notes": "Zero ed, high od - stalk should dominate"
+      }
     },
     "f52r": {
       "max_lines": 8,
@@ -3431,19 +3607,43 @@
       "notes": "Auto-generated from layout heuristic"
     },
     "f53v": {
-      "max_lines": 13,
+      "max_lines": 20,
       "plant_parts": [
         "root",
         "stalk",
         "leaf",
-        "flower"
+        "fruit"
       ],
       "root_lines": [
-        1
+        17,
+        18,
+        19,
+        20
       ],
       "stalk_lines": [
-        2,
-        3,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "leaf_lines": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [],
+      "seed_lines": [
         4,
         5,
         6,
@@ -3451,20 +3651,34 @@
         8,
         9
       ],
-      "leaf_lines": [
-        10,
-        11,
-        12
-      ],
-      "flower_lines": [
-        13
-      ],
-      "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
+      "confidence": "VISUAL_HIGH",
       "notes": "Zero ed, high od - strongly stalk-focused",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High od count (23), zero ed - STALK-FOCUSED"
+      "annotation_method": "VISUAL",
+      "enhancement_basis": "High od count (23), zero ed - STALK-FOCUSED",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "plant_type": "tuberous plant with berries/fruits",
+        "layout": "plant right-center, text left",
+        "color_present": true,
+        "root_depicted": true,
+        "root_style": "VERY PROMINENT bulbous tuberous root",
+        "stalk_depicted": true,
+        "stalk_prominence": "VISIBLE - central stem runs full height",
+        "leaf_depicted": true,
+        "leaf_style": "green elongated leaves on left side",
+        "flower_depicted": false,
+        "fruit_depicted": true,
+        "fruit_style": "blue/black oval berries on right side",
+        "notes": "INTERESTING: Both root AND stalk prominent. Root is bulbous, stalk connects leaves and fruit."
+      },
+      "bidirectional_validation": {
+        "expected_od_zone": "stalk",
+        "stalk_zone_pct": 50,
+        "zero_ed_expected": true,
+        "notes": "Zero ed despite prominent root - tests whether od correlates with STALK (not just absence of root)"
+      }
     },
     "f54r": {
       "max_lines": 12,
@@ -3930,108 +4144,26 @@
     },
     "f66r": {
       "max_lines": 82,
-      "plant_parts": [
-        "root",
-        "stalk",
-        "leaf",
-        "flower"
-      ],
-      "root_lines": [
-        1,
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20
-      ],
-      "stalk_lines": [
-        21,
-        22,
-        23,
-        24,
-        25,
-        26,
-        27,
-        28,
-        29,
-        30,
-        31,
-        32,
-        33,
-        34,
-        35,
-        36,
-        37,
-        38,
-        39,
-        40,
-        41
-      ],
-      "leaf_lines": [
-        42,
-        43,
-        44,
-        45,
-        46,
-        47,
-        48,
-        49,
-        50,
-        51,
-        52,
-        53,
-        54,
-        55,
-        56,
-        57,
-        58,
-        59,
-        60,
-        61
-      ],
-      "flower_lines": [
-        62,
-        63,
-        64,
-        65,
-        66,
-        67,
-        68,
-        69,
-        70,
-        71,
-        72,
-        73,
-        74,
-        75,
-        76,
-        77,
-        78,
-        79,
-        80,
-        81,
-        82
-      ],
+      "plant_parts": [],
+      "root_lines": [],
+      "stalk_lines": [],
+      "leaf_lines": [],
+      "flower_lines": [],
       "seed_lines": [],
       "vessel_lines": [],
-      "confidence": "HEURISTIC_ENHANCED",
-      "notes": "Complex 82-line folio. Pattern suggests both root and stalk content.",
-      "annotation_method": "PATTERN_ENHANCED",
-      "enhancement_basis": "High od count (41) + high ed count (43) - complex layout"
+      "confidence": "VISUAL_HIGH",
+      "notes": "CRITICAL: This is a cosmological folio, not herbal. Exclude from all plant-part tests.",
+      "annotation_method": "EXCLUDED",
+      "enhancement_basis": "High od count (41) + high ed count (43) - complex layout",
+      "annotator": "claude_code_phase3",
+      "annotation_date": "2026-02-01",
+      "illustration_analysis": {
+        "type": "COSMOLOGICAL/ASTRONOMICAL",
+        "description": "Concentric circles with human figures (nymphs), stars, central animal figure",
+        "is_herbal": false,
+        "notes": "NOT A HERBAL FOLIO. Should be excluded from plant-part validation."
+      },
+      "exclude_from_herbal_validation": true
     },
     "f66v": {
       "max_lines": 13,
@@ -4069,7 +4201,7 @@
     },
     "f1r": {
       "annotation_method": "VISUAL",
-      "annotator": "claude_code_phase2",
+      "annotator": "claude_code_phase3",
       "annotation_date": "2026-02-01",
       "max_lines": 31,
       "illustration_analysis": {
@@ -4127,7 +4259,6 @@
       "confidence": "VISUAL_MEDIUM",
       "bidirectional_validation": {
         "ed_lines": [],
-        "ed_prediction": "root",
         "ed_observation": "No ed tokens, no root depicted - CONSISTENT",
         "od_lines": [
           3,
@@ -4140,20 +4271,12 @@
           16,
           26
         ],
-        "od_prediction": "stalk",
-        "od_observation": "Most od tokens (8,9,12,13,14,16) in stalk-adjacent area - SUPPORTIVE",
-        "kair_lines": [
-          19
-        ],
-        "kair_observation": "Plant folio, no fire/vessel context to validate",
-        "kal_lines": [
-          1
-        ],
-        "kal_observation": "Plant folio, no vessel imagery to validate"
+        "od_observation": "Most od tokens in stalk-adjacent area - SUPPORTIVE"
       },
       "notes": "CORRECTION: Phase 1 marked this as 'no plant illustration' - WRONG. Clear plant illustration present."
     }
   },
-  "phase": "2",
-  "last_updated": "2026-02-01T05:24:20.491820"
+  "phase": "3",
+  "last_updated": "2026-02-01T15:41:14.674416",
+  "notes": "Full visual analysis using embodied illustrator protocol on high-resolution JP2 images"
 }

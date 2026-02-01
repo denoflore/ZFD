@@ -67,7 +67,15 @@ class ImageAdjacentValidator:
         # For each (folio, line), what plant parts are adjacent?
         self.adjacent_parts: Dict[Tuple[str, int], set] = defaultdict(set)
 
+        # Track which folios to exclude from herbal validation
+        self.excluded_folios = set()
+
         for folio, ann in self.annotations.items():
+            # Skip non-herbal folios (e.g., cosmological pages like f66r)
+            if ann.get('exclude_from_herbal_validation', False):
+                self.excluded_folios.add(folio)
+                continue
+
             for part in self.PLANT_PARTS:
                 part_lines = ann.get(f'{part}_lines', [])
                 for pline in part_lines:
@@ -100,8 +108,8 @@ class ImageAdjacentValidator:
         total = 0
 
         for folio, line_num in positions:
-            # Only count if we have annotations for this folio
-            if folio in self.annotations:
+            # Only count if we have annotations for this folio AND it's not excluded
+            if folio in self.annotations and folio not in self.excluded_folios:
                 total += 1
                 if claimed_part in self.adjacent_parts.get((folio, line_num), set()):
                     adjacent += 1
@@ -126,7 +134,7 @@ class ImageAdjacentValidator:
             total = 0
 
             for folio, line_num in positions:
-                if folio in self.annotations:
+                if folio in self.annotations and folio not in self.excluded_folios:
                     total += 1
                     if other_part in self.adjacent_parts.get((folio, line_num), set()):
                         adjacent += 1
@@ -162,7 +170,7 @@ class ImageAdjacentValidator:
             # Group by folio for shuffling
             folio_lines = defaultdict(list)
             for folio, line_num in positions:
-                if folio in self.annotations:
+                if folio in self.annotations and folio not in self.excluded_folios:
                     folio_lines[folio].append(line_num)
 
             for folio, lines in folio_lines.items():

@@ -1,39 +1,39 @@
 {
-  "generated": "2026-02-01T05:25:00.389301",
+  "generated": "2026-02-01T15:42:20.138739",
   "od_validation": {
     "od_stalk": {
       "stem": "od",
       "claimed_part": "stalk",
       "occurrences": 790,
-      "occurrences_in_annotated": 790,
-      "adjacent_matches": 487,
-      "match_rate": 0.6164556962025316,
-      "baseline_rate": 0.6017113924050632,
-      "p_value": 0.205,
-      "verdict": "FAIL"
+      "occurrences_in_annotated": 749,
+      "adjacent_matches": 478,
+      "match_rate": 0.6381842456608812,
+      "baseline_rate": 0.6050881174899867,
+      "p_value": 0.025,
+      "verdict": "BORDERLINE"
     },
     "od_root": {
       "stem": "od",
       "claimed_part": "root",
       "occurrences": 790,
-      "occurrences_in_annotated": 790,
-      "adjacent_matches": 339,
-      "match_rate": 0.4291139240506329,
-      "baseline_rate": 0.3690215189873418,
-      "p_value": 0.001,
+      "occurrences_in_annotated": 749,
+      "adjacent_matches": 319,
+      "match_rate": 0.4259012016021362,
+      "baseline_rate": 0.35626568758344457,
+      "p_value": 0.0,
       "verdict": "PASS"
     },
     "od_forbid": {
       "stem": "od",
       "claimed_part": "stalk",
       "wrong_part_rates": {
-        "root": 0.4291139240506329,
-        "leaf": 0.48860759493670886,
-        "flower": 0.330379746835443,
-        "seed": 0.0,
+        "root": 0.4259012016021362,
+        "leaf": 0.514018691588785,
+        "flower": 0.3364485981308411,
+        "seed": 0.042723631508678236,
         "vessel": 0.0
       },
-      "max_wrong_rate": 0.48860759493670886,
+      "max_wrong_rate": 0.514018691588785,
       "max_wrong_part": "leaf",
       "forbid_violated": true,
       "verdict": "VIOLATED"
@@ -42,12 +42,12 @@
       "stem": "ed",
       "claimed_part": "root",
       "occurrences": 550,
-      "occurrences_in_annotated": 550,
-      "adjacent_matches": 287,
-      "match_rate": 0.5218181818181818,
-      "baseline_rate": 0.4920854545454546,
-      "p_value": 0.071,
-      "verdict": "FAIL"
+      "occurrences_in_annotated": 507,
+      "adjacent_matches": 260,
+      "match_rate": 0.5128205128205128,
+      "baseline_rate": 0.47045562130177515,
+      "p_value": 0.012,
+      "verdict": "BORDERLINE"
     },
     "final_verdict": "NEEDS_REFINEMENT"
   },
@@ -114,13 +114,13 @@
       },
       "image_adjacent_results": {
         "kair_root": {
-          "match_rate": 0.3333333333333333,
-          "p_value": 0.568,
+          "match_rate": 0.36,
+          "p_value": 0.456,
           "verdict": "FAIL"
         },
         "kar_root": {
-          "match_rate": 0.3493150684931507,
-          "p_value": 0.728,
+          "match_rate": 0.34285714285714286,
+          "p_value": 0.768,
           "verdict": "FAIL"
         },
         "char_root": {
@@ -129,48 +129,48 @@
           "verdict": "PASS"
         },
         "kair_stalk": {
-          "match_rate": 0.5185185185185185,
-          "p_value": 0.514,
+          "match_rate": 0.56,
+          "p_value": 0.394,
           "verdict": "FAIL"
         },
         "kar_stalk": {
-          "match_rate": 0.5205479452054794,
-          "p_value": 0.746,
+          "match_rate": 0.5428571428571428,
+          "p_value": 0.638,
           "verdict": "FAIL"
         },
         "char_stalk": {
           "match_rate": 0.6712328767123288,
-          "p_value": 0.028,
+          "p_value": 0.014,
           "verdict": "BORDERLINE"
         },
         "kair_leaf": {
-          "match_rate": 0.48148148148148145,
-          "p_value": 0.512,
+          "match_rate": 0.48,
+          "p_value": 0.59,
           "verdict": "FAIL"
         },
         "kar_leaf": {
-          "match_rate": 0.5616438356164384,
-          "p_value": 0.082,
+          "match_rate": 0.5714285714285714,
+          "p_value": 0.128,
           "verdict": "FAIL"
         },
         "char_leaf": {
           "match_rate": 0.410958904109589,
-          "p_value": 0.978,
+          "p_value": 0.97,
           "verdict": "FAIL"
         },
         "kair_flower": {
-          "match_rate": 0.2962962962962963,
-          "p_value": 0.84,
+          "match_rate": 0.28,
+          "p_value": 0.89,
           "verdict": "FAIL"
         },
         "kar_flower": {
-          "match_rate": 0.4246575342465753,
-          "p_value": 0.25,
+          "match_rate": 0.42857142857142855,
+          "p_value": 0.308,
           "verdict": "FAIL"
         },
         "char_flower": {
           "match_rate": 0.2328767123287671,
-          "p_value": 0.996,
+          "p_value": 1.0,
           "verdict": "FAIL"
         }
       },
@@ -238,63 +238,63 @@
       },
       "image_adjacent_results": {
         "dar_root": {
-          "match_rate": 0.4434782608695652,
-          "p_value": 0.048,
+          "match_rate": 0.43243243243243246,
+          "p_value": 0.036,
           "verdict": "BORDERLINE"
         },
         "dain_root": {
-          "match_rate": 0.4186046511627907,
-          "p_value": 0.092,
-          "verdict": "FAIL"
+          "match_rate": 0.4418604651162791,
+          "p_value": 0.02,
+          "verdict": "BORDERLINE"
         },
         "daiin_root": {
-          "match_rate": 0.4057507987220447,
-          "p_value": 0.07,
-          "verdict": "FAIL"
+          "match_rate": 0.40456769983686786,
+          "p_value": 0.03,
+          "verdict": "BORDERLINE"
         },
         "dar_stalk": {
-          "match_rate": 0.6043478260869565,
-          "p_value": 0.148,
+          "match_rate": 0.6261261261261262,
+          "p_value": 0.078,
           "verdict": "FAIL"
         },
         "dain_stalk": {
-          "match_rate": 0.6666666666666666,
-          "p_value": 0.016,
+          "match_rate": 0.6744186046511628,
+          "p_value": 0.012,
           "verdict": "BORDERLINE"
         },
         "daiin_stalk": {
-          "match_rate": 0.6086261980830671,
-          "p_value": 0.222,
+          "match_rate": 0.6150081566068516,
+          "p_value": 0.134,
           "verdict": "FAIL"
         },
         "dar_leaf": {
-          "match_rate": 0.5652173913043478,
-          "p_value": 0.154,
+          "match_rate": 0.5585585585585585,
+          "p_value": 0.422,
           "verdict": "FAIL"
         },
         "dain_leaf": {
           "match_rate": 0.5891472868217055,
-          "p_value": 0.214,
+          "p_value": 0.258,
           "verdict": "FAIL"
         },
         "daiin_leaf": {
-          "match_rate": 0.5239616613418531,
-          "p_value": 0.906,
+          "match_rate": 0.5399673735725938,
+          "p_value": 0.892,
           "verdict": "FAIL"
         },
         "dar_flower": {
-          "match_rate": 0.36086956521739133,
-          "p_value": 0.942,
+          "match_rate": 0.36036036036036034,
+          "p_value": 0.97,
           "verdict": "FAIL"
         },
         "dain_flower": {
-          "match_rate": 0.34108527131782945,
-          "p_value": 0.956,
+          "match_rate": 0.32558139534883723,
+          "p_value": 0.972,
           "verdict": "FAIL"
         },
         "daiin_flower": {
-          "match_rate": 0.40415335463258784,
-          "p_value": 0.7,
+          "match_rate": 0.401305057096248,
+          "p_value": 0.884,
           "verdict": "FAIL"
         }
       },
@@ -353,23 +353,23 @@
       },
       "image_adjacent_results": {
         "kal_root": {
-          "match_rate": 0.3157894736842105,
-          "p_value": 0.71,
+          "match_rate": 0.325,
+          "p_value": 0.642,
           "verdict": "FAIL"
         },
         "kal_stalk": {
-          "match_rate": 0.43859649122807015,
-          "p_value": 0.982,
+          "match_rate": 0.46875,
+          "p_value": 0.932,
           "verdict": "FAIL"
         },
         "kal_leaf": {
-          "match_rate": 0.47953216374269003,
-          "p_value": 0.202,
+          "match_rate": 0.4875,
+          "p_value": 0.22,
           "verdict": "FAIL"
         },
         "kal_flower": {
-          "match_rate": 0.4152046783625731,
-          "p_value": 0.052,
+          "match_rate": 0.40625,
+          "p_value": 0.086,
           "verdict": "FAIL"
         }
       },
@@ -414,23 +414,23 @@
       },
       "image_adjacent_results": {
         "ykal_root": {
-          "match_rate": 0.3333333333333333,
-          "p_value": 0.446,
+          "match_rate": 0.2857142857142857,
+          "p_value": 0.654,
           "verdict": "FAIL"
         },
         "ykal_stalk": {
-          "match_rate": 0.4666666666666667,
-          "p_value": 0.73,
+          "match_rate": 0.5,
+          "p_value": 0.708,
           "verdict": "FAIL"
         },
         "ykal_leaf": {
-          "match_rate": 0.3333333333333333,
-          "p_value": 0.828,
+          "match_rate": 0.42857142857142855,
+          "p_value": 0.622,
           "verdict": "FAIL"
         },
         "ykal_flower": {
-          "match_rate": 0.26666666666666666,
-          "p_value": 0.722,
+          "match_rate": 0.2857142857142857,
+          "p_value": 0.698,
           "verdict": "FAIL"
         }
       },
@@ -483,42 +483,42 @@
       "image_adjacent_results": {
         "thor_root": {
           "match_rate": 0.39215686274509803,
-          "p_value": 0.464,
+          "p_value": 0.492,
           "verdict": "FAIL"
         },
         "thar_root": {
           "match_rate": 0.3125,
-          "p_value": 0.506,
+          "p_value": 0.526,
           "verdict": "FAIL"
         },
         "thor_stalk": {
           "match_rate": 0.6078431372549019,
-          "p_value": 0.45,
+          "p_value": 0.464,
           "verdict": "FAIL"
         },
         "thar_stalk": {
           "match_rate": 0.5,
-          "p_value": 0.662,
+          "p_value": 0.672,
           "verdict": "FAIL"
         },
         "thor_leaf": {
           "match_rate": 0.5882352941176471,
-          "p_value": 0.394,
+          "p_value": 0.398,
           "verdict": "FAIL"
         },
         "thar_leaf": {
           "match_rate": 0.5625,
-          "p_value": 0.412,
+          "p_value": 0.364,
           "verdict": "FAIL"
         },
         "thor_flower": {
           "match_rate": 0.4117647058823529,
-          "p_value": 0.728,
+          "p_value": 0.768,
           "verdict": "FAIL"
         },
         "thar_flower": {
           "match_rate": 0.25,
-          "p_value": 0.802,
+          "p_value": 0.85,
           "verdict": "FAIL"
         }
       },
@@ -707,21 +707,21 @@
   "catmus_comparison": {
     "distribution_comparison": {
       "apicius": {
-        "char_freq_jsd": 0.09044474863860555,
+        "char_freq_jsd": 0.09044474863860547,
         "prefix_2_jsd": 0.604830106104663,
-        "prefix_3_jsd": 0.6931469919963863,
+        "prefix_3_jsd": 0.6931469919963862,
         "word_length_jsd": 0.05372312132312467,
-        "avg_jsd": 0.3605362420156949
+        "avg_jsd": 0.36053624201569484
       },
       "liber_de_coquina": {
-        "char_freq_jsd": 0.14336932258284185,
+        "char_freq_jsd": 0.14336932258284174,
         "prefix_2_jsd": 0.6373995715538056,
         "prefix_3_jsd": 0.6931470223099762,
         "word_length_jsd": 0.05079628645981644,
-        "avg_jsd": 0.38117805072661
+        "avg_jsd": 0.38117805072660993
       },
       "pharma_miscellany_lat_eng": {
-        "char_freq_jsd": 0.13597217264123407,
+        "char_freq_jsd": 0.13597217264123426,
         "prefix_2_jsd": 0.6106690478672419,
         "prefix_3_jsd": 0.685547341289676,
         "word_length_jsd": 0.06015173357654151,
