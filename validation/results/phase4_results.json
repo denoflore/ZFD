@@ -1,0 +1,98 @@
+{
+  "generated": "2026-02-01T16:06:18.889647",
+  "validation_results": {
+    "al_leaf": {
+      "stem": "al",
+      "claimed_part": "leaf",
+      "occurrences": 722,
+      "occurrences_in_annotated": 687,
+      "adjacent_matches": 303,
+      "match_rate": 0.4410480349344978,
+      "baseline_rate": 0.45648762736535664,
+      "p_value": 0.821,
+      "verdict": "FAIL"
+    },
+    "ol_leaf": {
+      "stem": "ol",
+      "claimed_part": "leaf",
+      "occurrences": 1532,
+      "occurrences_in_annotated": 1496,
+      "adjacent_matches": 820,
+      "match_rate": 0.5481283422459893,
+      "baseline_rate": 0.5523622994652407,
+      "p_value": 0.648,
+      "verdict": "FAIL"
+    },
+    "chol_leaf": {
+      "stem": "chol",
+      "claimed_part": "leaf",
+      "occurrences": 450,
+      "occurrences_in_annotated": 450,
+      "adjacent_matches": 252,
+      "match_rate": 0.56,
+      "baseline_rate": 0.56402,
+      "p_value": 0.596,
+      "verdict": "FAIL"
+    },
+    "ar_flower": {
+      "stem": "ar",
+      "claimed_part": "flower",
+      "occurrences": 827,
+      "occurrences_in_annotated": 802,
+      "adjacent_matches": 292,
+      "match_rate": 0.3640897755610973,
+      "baseline_rate": 0.3983640897755611,
+      "p_value": 0.98,
+      "verdict": "FAIL"
+    },
+    "or_flower": {
+      "stem": "or",
+      "claimed_part": "flower",
+      "occurrences": 1118,
+      "occurrences_in_annotated": 1103,
+      "adjacent_matches": 416,
+      "match_rate": 0.3771532184950136,
+      "baseline_rate": 0.410116953762466,
+      "p_value": 0.987,
+      "verdict": "FAIL"
+    },
+    "al_forbid": {
+      "stem": "al",
+      "claimed_part": "leaf",
+      "wrong_part_rates": {
+        "root": 0.34497816593886466,
+        "stalk": 0.49344978165938863,
+        "flower": 0.32751091703056767,
+        "seed": 0.011644832605531296,
+        "vessel": 0.0
+      },
+      "max_wrong_rate": 0.49344978165938863,
+      "max_wrong_part": "stalk",
+      "forbid_violated": true,
+      "verdict": "VIOLATED"
+    },
+    "ar_forbid": {
+      "stem": "ar",
+      "claimed_part": "flower",
+      "wrong_part_rates": {
+        "root": 0.35910224438902744,
+        "stalk": 0.529925187032419,
+        "leaf": 0.4925187032418953,
+        "seed": 0.029925187032418952,
+        "vessel": 0.0
+      },
+      "max_wrong_rate": 0.529925187032419,
+      "max_wrong_part": "stalk",
+      "forbid_violated": true,
+      "verdict": "VIOLATED"
+    }
+  },
+  "verdict": {
+    "al_leaf": "BORDERLINE",
+    "ar_flower": "NOT_CONFIRMED",
+    "al_match_rate": 0.4410480349344978,
+    "ar_match_rate": 0.3640897755610973,
+    "al_p_value": 0.821,
+    "ar_p_value": 0.98
+  }
+}
