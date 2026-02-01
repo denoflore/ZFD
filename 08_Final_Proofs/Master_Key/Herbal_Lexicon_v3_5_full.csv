@@ -1,0 +1,123 @@
+name,variant,variant_context,inference,lexical_link,status
+Operator-Quantity,qo-,prefix,Quantity / Unit,—,CONFIRMED
+Operator-Combine,ch-,prefix,Combine / Cook,coquere,CONFIRMED
+Operator-Soak,sh-,prefix,Soak / Infuse,sorbere,CONFIRMED
+Operator-Dose,da-,prefix,Dose / Add / Give,dare,CONFIRMED
+Operator-Vessel,ok-,prefix,Vessel / Container,olla / calix,CONFIRMED
+Operator-Vessel,ot-,prefix,Vessel / Container (alt),olla / calix,CONFIRMED
+root,edy,"after qo-, ch-, sh-",Root / prepared root,radix,CONFIRMED
+root,rady,"after qo-, ch-, sh-",Root / prepared root,radix,CONFIRMED
+grain/flour,chol,"after qo-, ch-",Flour / grain,farina / caulis (scribal),CONFIRMED
+grain/flour,chal,"after qo-, ch-",Flour / grain,farina / caulis (scribal),CONFIRMED
+water,ar,free or after ok-/vessels,Water / medium,aqua,CONFIRMED
+oil,ol,free or with vessels,Oil / oleum,oleum,CONFIRMED
+oil,or,free or with vessels,Oil / oleum,oleum,CONFIRMED
+wine,vin,quantity / medium lines,Wine,vinum,CONFIRMED
+wine,vinor,quantity / medium lines,Wine,vinum,CONFIRMED
+milk,lac,quantity / medium lines,Milk,lac,CONFIRMED
+milk,laco,quantity / medium lines,Milk,lac,CONFIRMED
+honey,mel,adjacent to cooking or syrup,Honey,mel,CONFIRMED
+syrup,syr,terminal media / sweetened,Syrup / potion,syrupus,CANDIDATE
+syrup,syrop,terminal media / sweetened,Syrup / potion,syrupus,CANDIDATE
+broth/decoction,ykal,with vessels and soaking,Broth / decoction,—,CANDIDATE
+soak/infuse,shor,after sh-,Soak / Infuse,sorbere,CONFIRMED
+cook/combine,chor,after ch-,Cook / Combine,coquere,CONFIRMED
+add/give,dar,near doses and quantities,Add / Portion / Measure / Seed,dare / granum / dosis,CANDIDATE
+add/give,dain,near doses and quantities,Add / Portion / Measure / Seed,dare / granum / dosis,CANDIDATE
+add/give,daiin,near doses and quantities,Add / Portion / Measure / Seed,dare / granum / dosis,CANDIDATE
+boil/roast,thor,heat contexts,Boil / roast / scorch,torreo,CANDIDATE
+boil/roast,thar,heat contexts,Boil / roast / scorch,torreo,CANDIDATE
+heat/fire,kair,with vessels and cooking,Fire / heat,"carbo (char), vernacular fire",CANDIDATE
+heat/fire,fair,with vessels and cooking,Fire / heat,"carbo (char), vernacular fire",CANDIDATE
+heat/fire,kar,with vessels and cooking,Fire / heat,"carbo (char), vernacular fire",CANDIDATE
+heat/fire,char,with vessels and cooking,Fire / heat,"carbo (char), vernacular fire",CANDIDATE
+pot/jar,okal,after V-operators; vessel context,Pot / jar,olla / calix,CONFIRMED
+pot/jar,okar,after V-operators; vessel context,Pot / jar,olla / calix,CONFIRMED
+pot/jar,otal,after V-operators; vessel context,Pot / jar,olla / calix,CONFIRMED
+cauldron,kal,with heat/fire,Cauldron / heated vessel,caldarium,CANDIDATE
+flask/phial,phar,with liquids/resins,Flask / phial,phiala,CANDIDATE
+salt,sar,with vessels/roots,Salt,sal,CONFIRMED
+bitter-herb/resin,amar,with wines/bitters,Bitter herb / resin,amarus,CANDIDATE
+in/with (particle),ty,terminal particle,Preposition: in/with,in,CANDIDATE
+repeat/plural,aiin,floating/terminal,Repetition / plural marker,iterum (analogy),LOW
+flower,flor,after combine/quantity,Flower,flos,CONFIRMED
+rose/rosewater,ros,liquid media,Rose / rosewater,rosa,CONFIRMED
+rose/rosewater,rosar,liquid media,Rose / rosewater,rosa,CONFIRMED
+rose/rosewater,rosol,liquid media,Rose / rosewater,rosa,CONFIRMED
+myrrh,myr,with honey/wine bases,Myrrh resin,myrrha,CONFIRMED
+myrrh,myrrh,with honey/wine bases,Myrrh resin,myrrha,CONFIRMED
+myrrh,myron,with honey/wine bases,Myrrh resin,myrrha,CONFIRMED
+aloe,aloe,doses/liquids,Aloe,aloe,CONFIRMED
+galbanum,galb,with oils/resins,Galbanum,galbanum,CONFIRMED
+storax,stor,with infusions/oils,Storax,storax,CONFIRMED
+opopanax,opop,dose + fire contexts,Opopanax gum,opopanax,CONFIRMED
+camphor,camph,late with oils/resins,Camphor,camphora,CONFIRMED
+anise,anis,spice clusters,Anise,anisum,CONFIRMED
+coriander,cori,spice clusters,Coriander,coriandrum,CONFIRMED
+mint,ment,with wine/syrup,Mint,mentha,CONFIRMED
+sage,salv,with roots/infusions,Sage,salvia,CONFIRMED
+fennel,fenn,with anise/coriander,Fennel,feniculum,CONFIRMED
+rue,ruta,with bitters/wine,Rue,ruta,CONFIRMED
+hyssop,hyss,with flowers/resins,Hyssop,hyssopus,CONFIRMED
+mallow,malv,root/flower clusters,Mallow,malva,CONFIRMED
+broom,genist,with flowers/roots,Genista (broom),genista,CONFIRMED
+vervain,verb,with infusions/water/wine,Vervain / verbena,verbena,CONFIRMED
+plantain,plant,with soak/cook,Plantain herb,plantago,CONFIRMED
+cinnamon,canel,with honey/wine/syrups,Cinnamon,cannella,CONFIRMED
+cinnamon,canol,with honey/wine/syrups,Cinnamon,cannella,CONFIRMED
+ginger,zing,spice clusters,Ginger,zingiber,CONFIRMED
+ginger,zinger,spice clusters,Ginger,zingiber,CONFIRMED
+ginger,zinor,spice clusters,Ginger,zingiber,CONFIRMED
+pepper,piper,with doses/combines,Pepper,piper,CONFIRMED
+sulfur,sul,heat/vessel contexts,Sulfur,sulphur,CONFIRMED
+silver,arg,dose/vessel/liquid contexts,Silver / silver salts,argentum,CONFIRMED
+copper/verdigris,cuper,vessel + heat,Copper / verdigris,cuprum,CONFIRMED
+copper/verdigris,cupr,vessel + heat,Copper / verdigris,cuprum,CONFIRMED
+copper/verdigris,copr,vessel + heat,Copper / verdigris,cuprum,CONFIRMED
+iron,fer,heat + roots,Iron / filings,ferrum,CONFIRMED
+saltpeter,salp,with fire and liquids,Saltpeter,sal petrae,CONFIRMED
+alum,alum,infusions/dyeing,Alum,alumen,CONFIRMED
+lime/quicklime,calc,minerals + fire,Lime / quicklime,calx,CANDIDATE
+wax,cera,with honey/oils/vessels,Wax,cera,CONFIRMED
+lard/fat,axun,dose with oils/fats,Lard / animal fat,axungia,CONFIRMED
+lard/fat,axung,dose with oils/fats,Lard / animal fat,axungia,CONFIRMED
+lard/fat,axor,dose with oils/fats,Lard / animal fat,axungia,CONFIRMED
+cheese/curd,case,with milk/honey,Cheese / curd,caseus,CONFIRMED
+egg,ova,dose sequences,Egg / yolk,ovum,CONFIRMED
+butter,melk,dairy contexts,Butter / clarified fat,— (vernacular),CANDIDATE
+ointment,ung,line terminals with oils/wax,Ointment / salve,unguentum,CONFIRMED
+musk,musc,perfume clusters,Musk,muscus,CONFIRMED
+ambergris,ambra,perfume/fixative clusters,Ambergris,ambra,CONFIRMED
+pearl,perla,dose + wine/vinegar,Pearl (ground),perla,CONFIRMED
+coral,coral,powders/doses,Coral,corallium,CONFIRMED
+ivory,ivor,powders/doses,Ivory (dust),ebur → ivor,CONFIRMED
+lapis,lapis,with minerals/pigments,Lapis / stone,lapis (lazuli),CONFIRMED
+asafoetida,asaf,rare with resins,Asafoetida,asa foetida,CANDIDATE
+asafoetida,asafot,rare with resins,Asafoetida,asa foetida,CANDIDATE
+asafoetida,asafor,rare with resins,Asafoetida,asa foetida,CANDIDATE
+spikenard,nard,perfumes/luxury,Spikenard,nardus,CONFIRMED
+spikenard,nardi,perfumes/luxury,Spikenard,nardus,CONFIRMED
+spikenard,nardor,perfumes/luxury,Spikenard,nardus,CONFIRMED
+saffron,croc,flowers/dyes,Saffron,crocus,CONFIRMED
+saffron,croco,flowers/dyes,Saffron,crocus,CONFIRMED
+saffron,crocor,flowers/dyes,Saffron,crocus,CONFIRMED
+costus root,cost,exotic herb group,Costus root,costus,CONFIRMED
+costus root,costu,exotic herb group,Costus root,costus,CONFIRMED
+costus root,costor,exotic herb group,Costus root,costus,CONFIRMED
+galangal,galg,spice groups,Galangal,galanga,CONFIRMED
+galangal,galgan,spice groups,Galangal,galanga,CONFIRMED
+galangal,galgor,spice groups,Galangal,galanga,CONFIRMED
+zedoary,zel,roots/rare,Zedoary,zedoaria,CANDIDATE
+zedoary,zedo,roots/rare,Zedoary,zedoaria,CANDIDATE
+zedoary,zedor,roots/rare,Zedoary,zedoaria,CANDIDATE
+scammony,scam,purgatives,Scammony resin,scammonium,CONFIRMED
+dragon root,drac,once with roots,Dragon root,dracontium,LOW
+dragon root,dracon,once with roots,Dragon root,dracontium,LOW
+dragon root,dracor,once with roots,Dragon root,dracontium,LOW
+licorice,licor,with honey/sweets,Licorice root,liquiritia,CANDIDATE
+colocynth,coloc,near purgatives,Colocynth (bitter apple),colocynthis,CANDIDATE
+colocynth,colocyn,near purgatives,Colocynth (bitter apple),colocynthis,CANDIDATE
+colocynth,colocr,near purgatives,Colocynth (bitter apple),colocynthis,CANDIDATE
+mandrake,mandr,hapax near roots,Mandrake root,mandragora,CANDIDATE
+electuary,elec,mixture lines with resins,Electuary (compound paste),electuarium,CANDIDATE
+turpentine,turp,with gums/resins,Turpentine,terebinthina,CANDIDATE
