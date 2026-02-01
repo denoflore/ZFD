@@ -1,0 +1,30 @@
+{
+  "mixture_rho_operator_path": 0.9,
+  "third_letter_noise": 0.0,
+  "suffix_attach_probability": 0.4,
+  "null_attach_probability": 0.08,
+  "null_glyphs": [
+    "y",
+    "n"
+  ],
+  "suffix_codebook": [
+    "y",
+    "dy",
+    "in",
+    "an",
+    "ol",
+    "al",
+    "um",
+    "us",
+    "nt",
+    "la",
+    "pl",
+    "ts",
+    "ro",
+    "lf"
+  ],
+  "length_distribution_summary": {
+    "mean_length_obs": 6.185237348356327,
+    "mode_length_obs": 5
+  }
+}
