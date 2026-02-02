@@ -193,7 +193,7 @@ Statistical validation would **fail** if:
 
 **Validator**: Georgie Zuger, professional Croatian-English translator-interpreter (40+ years experience)
 
-**Method**: Blind review—vocabulary presented without context or source identification
+**Method**: Blind review - vocabulary presented without context or source identification
 
 **Materials**: 
 - Top 50 decoded morphemes
