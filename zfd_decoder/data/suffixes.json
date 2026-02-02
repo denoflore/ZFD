@@ -1,0 +1,20 @@
+{
+  "suffixes": [
+    {"eva": "aiin", "croatian": "ain", "semantic": "substance_noun", "gloss": "substance/thing", "status": "CONFIRMED"},
+    {"eva": "edy", "croatian": "edi", "semantic": "processed", "gloss": "prepared/processed", "status": "CONFIRMED"},
+    {"eva": "eey", "croatian": "ei", "semantic": "instance", "gloss": "instance of", "status": "CONFIRMED"},
+    {"eva": "y", "croatian": "i", "semantic": "adjectival", "gloss": "adjective marker", "status": "CONFIRMED"},
+    {"eva": "ol", "croatian": "ol", "semantic": "oil_related", "gloss": "oil/oily", "status": "CONFIRMED"},
+    {"eva": "ar", "croatian": "ar", "semantic": "water_agent", "gloss": "water/agent", "status": "CONFIRMED"},
+    {"eva": "or", "croatian": "or", "semantic": "oil_related", "gloss": "oil", "status": "CONFIRMED"},
+    {"eva": "al", "croatian": "al", "semantic": "substance", "gloss": "substance", "status": "CONFIRMED"},
+    {"eva": "am", "croatian": "am", "semantic": "instrumental", "gloss": "by means of", "status": "CONFIRMED"},
+    {"eva": "om", "croatian": "om", "semantic": "instrumental", "gloss": "with/by", "status": "CONFIRMED"},
+    {"eva": "od", "croatian": "od", "semantic": "completion", "gloss": "completed", "status": "CANDIDATE"},
+    {"eva": "n", "croatian": "n", "semantic": "noun", "gloss": "noun ending", "status": "CONFIRMED"},
+    {"eva": "l", "croatian": "l", "semantic": "noun", "gloss": "noun ending", "status": "CONFIRMED"},
+    {"eva": "r", "croatian": "r", "semantic": "agent", "gloss": "agent/doer", "status": "CONFIRMED"},
+    {"eva": "m", "croatian": "m", "semantic": "instrumental", "gloss": "instrumental", "status": "CONFIRMED"}
+  ],
+  "detection_order": "longest_first"
+}

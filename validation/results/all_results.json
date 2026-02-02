@@ -1,25 +1,25 @@
 {
-  "generated": "2026-02-01T04:40:33.989437",
+  "generated": "2026-02-01T15:42:20.138739",
   "od_validation": {
     "od_stalk": {
       "stem": "od",
       "claimed_part": "stalk",
       "occurrences": 790,
-      "occurrences_in_annotated": 775,
-      "adjacent_matches": 451,
-      "match_rate": 0.5819354838709677,
-      "baseline_rate": 0.557221935483871,
-      "p_value": 0.092,
-      "verdict": "FAIL"
+      "occurrences_in_annotated": 749,
+      "adjacent_matches": 478,
+      "match_rate": 0.6381842456608812,
+      "baseline_rate": 0.6050881174899867,
+      "p_value": 0.025,
+      "verdict": "BORDERLINE"
     },
     "od_root": {
       "stem": "od",
       "claimed_part": "root",
       "occurrences": 790,
-      "occurrences_in_annotated": 775,
-      "adjacent_matches": 337,
-      "match_rate": 0.43483870967741933,
-      "baseline_rate": 0.3756903225806452,
+      "occurrences_in_annotated": 749,
+      "adjacent_matches": 319,
+      "match_rate": 0.4259012016021362,
+      "baseline_rate": 0.35626568758344457,
       "p_value": 0.0,
       "verdict": "PASS"
     },
@@ -27,13 +27,13 @@
       "stem": "od",
       "claimed_part": "stalk",
       "wrong_part_rates": {
-        "root": 0.43483870967741933,
-        "leaf": 0.5290322580645161,
-        "flower": 0.3832258064516129,
-        "seed": 0.0,
+        "root": 0.4259012016021362,
+        "leaf": 0.514018691588785,
+        "flower": 0.3364485981308411,
+        "seed": 0.042723631508678236,
         "vessel": 0.0
       },
-      "max_wrong_rate": 0.5290322580645161,
+      "max_wrong_rate": 0.514018691588785,
       "max_wrong_part": "leaf",
       "forbid_violated": true,
       "verdict": "VIOLATED"
@@ -42,12 +42,12 @@
       "stem": "ed",
       "claimed_part": "root",
       "occurrences": 550,
-      "occurrences_in_annotated": 550,
-      "adjacent_matches": 204,
-      "match_rate": 0.3709090909090909,
-      "baseline_rate": 0.3705909090909091,
-      "p_value": 0.521,
-      "verdict": "FAIL"
+      "occurrences_in_annotated": 507,
+      "adjacent_matches": 260,
+      "match_rate": 0.5128205128205128,
+      "baseline_rate": 0.47045562130177515,
+      "p_value": 0.012,
+      "verdict": "BORDERLINE"
     },
     "final_verdict": "NEEDS_REFINEMENT"
   },
@@ -114,62 +114,62 @@
       },
       "image_adjacent_results": {
         "kair_root": {
-          "match_rate": 0.3333333333333333,
-          "p_value": 0.578,
+          "match_rate": 0.36,
+          "p_value": 0.456,
           "verdict": "FAIL"
         },
         "kar_root": {
-          "match_rate": 0.3219178082191781,
-          "p_value": 0.834,
+          "match_rate": 0.34285714285714286,
+          "p_value": 0.768,
           "verdict": "FAIL"
         },
         "char_root": {
-          "match_rate": 0.5277777777777778,
-          "p_value": 0.004,
+          "match_rate": 0.5342465753424658,
+          "p_value": 0.002,
           "verdict": "PASS"
         },
         "kair_stalk": {
-          "match_rate": 0.5185185185185185,
-          "p_value": 0.426,
+          "match_rate": 0.56,
+          "p_value": 0.394,
           "verdict": "FAIL"
         },
         "kar_stalk": {
-          "match_rate": 0.5068493150684932,
-          "p_value": 0.766,
+          "match_rate": 0.5428571428571428,
+          "p_value": 0.638,
           "verdict": "FAIL"
         },
         "char_stalk": {
-          "match_rate": 0.5972222222222222,
-          "p_value": 0.164,
-          "verdict": "FAIL"
+          "match_rate": 0.6712328767123288,
+          "p_value": 0.014,
+          "verdict": "BORDERLINE"
         },
         "kair_leaf": {
-          "match_rate": 0.48148148148148145,
-          "p_value": 0.506,
+          "match_rate": 0.48,
+          "p_value": 0.59,
           "verdict": "FAIL"
         },
         "kar_leaf": {
-          "match_rate": 0.5684931506849316,
-          "p_value": 0.13,
+          "match_rate": 0.5714285714285714,
+          "p_value": 0.128,
           "verdict": "FAIL"
         },
         "char_leaf": {
-          "match_rate": 0.4444444444444444,
-          "p_value": 0.932,
+          "match_rate": 0.410958904109589,
+          "p_value": 0.97,
           "verdict": "FAIL"
         },
         "kair_flower": {
-          "match_rate": 0.2962962962962963,
-          "p_value": 0.878,
+          "match_rate": 0.28,
+          "p_value": 0.89,
           "verdict": "FAIL"
         },
         "kar_flower": {
-          "match_rate": 0.4383561643835616,
-          "p_value": 0.294,
+          "match_rate": 0.42857142857142855,
+          "p_value": 0.308,
           "verdict": "FAIL"
         },
         "char_flower": {
-          "match_rate": 0.2361111111111111,
+          "match_rate": 0.2328767123287671,
           "p_value": 1.0,
           "verdict": "FAIL"
         }
@@ -238,63 +238,63 @@
       },
       "image_adjacent_results": {
         "dar_root": {
-          "match_rate": 0.4222222222222222,
-          "p_value": 0.086,
-          "verdict": "FAIL"
+          "match_rate": 0.43243243243243246,
+          "p_value": 0.036,
+          "verdict": "BORDERLINE"
         },
         "dain_root": {
-          "match_rate": 0.4462809917355372,
-          "p_value": 0.066,
-          "verdict": "FAIL"
+          "match_rate": 0.4418604651162791,
+          "p_value": 0.02,
+          "verdict": "BORDERLINE"
         },
         "daiin_root": {
-          "match_rate": 0.41883116883116883,
-          "p_value": 0.05,
+          "match_rate": 0.40456769983686786,
+          "p_value": 0.03,
           "verdict": "BORDERLINE"
         },
         "dar_stalk": {
-          "match_rate": 0.6,
-          "p_value": 0.166,
+          "match_rate": 0.6261261261261262,
+          "p_value": 0.078,
           "verdict": "FAIL"
         },
         "dain_stalk": {
-          "match_rate": 0.6446280991735537,
-          "p_value": 0.092,
-          "verdict": "FAIL"
+          "match_rate": 0.6744186046511628,
+          "p_value": 0.012,
+          "verdict": "BORDERLINE"
         },
         "daiin_stalk": {
-          "match_rate": 0.5974025974025974,
-          "p_value": 0.11,
+          "match_rate": 0.6150081566068516,
+          "p_value": 0.134,
           "verdict": "FAIL"
         },
         "dar_leaf": {
-          "match_rate": 0.5733333333333334,
-          "p_value": 0.274,
+          "match_rate": 0.5585585585585585,
+          "p_value": 0.422,
           "verdict": "FAIL"
         },
         "dain_leaf": {
-          "match_rate": 0.5867768595041323,
-          "p_value": 0.452,
+          "match_rate": 0.5891472868217055,
+          "p_value": 0.258,
           "verdict": "FAIL"
         },
         "daiin_leaf": {
-          "match_rate": 0.551948051948052,
-          "p_value": 0.81,
+          "match_rate": 0.5399673735725938,
+          "p_value": 0.892,
           "verdict": "FAIL"
         },
         "dar_flower": {
-          "match_rate": 0.39555555555555555,
-          "p_value": 0.866,
+          "match_rate": 0.36036036036036034,
+          "p_value": 0.97,
           "verdict": "FAIL"
         },
         "dain_flower": {
-          "match_rate": 0.38016528925619836,
-          "p_value": 0.958,
+          "match_rate": 0.32558139534883723,
+          "p_value": 0.972,
           "verdict": "FAIL"
         },
         "daiin_flower": {
-          "match_rate": 0.42694805194805197,
-          "p_value": 0.806,
+          "match_rate": 0.401305057096248,
+          "p_value": 0.884,
           "verdict": "FAIL"
         }
       },
@@ -353,27 +353,27 @@
       },
       "image_adjacent_results": {
         "kal_root": {
-          "match_rate": 0.31176470588235294,
-          "p_value": 0.782,
+          "match_rate": 0.325,
+          "p_value": 0.642,
           "verdict": "FAIL"
         },
         "kal_stalk": {
-          "match_rate": 0.4294117647058823,
-          "p_value": 0.854,
+          "match_rate": 0.46875,
+          "p_value": 0.932,
           "verdict": "FAIL"
         },
         "kal_leaf": {
-          "match_rate": 0.4823529411764706,
-          "p_value": 0.314,
+          "match_rate": 0.4875,
+          "p_value": 0.22,
           "verdict": "FAIL"
         },
         "kal_flower": {
-          "match_rate": 0.4647058823529412,
-          "p_value": 0.018,
-          "verdict": "BORDERLINE"
+          "match_rate": 0.40625,
+          "p_value": 0.086,
+          "verdict": "FAIL"
         }
       },
-      "confidence_score": 0.75,
+      "confidence_score": 0.6,
       "verdict": "PROMOTE_TO_CONFIRMED"
     },
     {
@@ -414,23 +414,23 @@
       },
       "image_adjacent_results": {
         "ykal_root": {
-          "match_rate": 0.35714285714285715,
-          "p_value": 0.516,
+          "match_rate": 0.2857142857142857,
+          "p_value": 0.654,
           "verdict": "FAIL"
         },
         "ykal_stalk": {
-          "match_rate": 0.5714285714285714,
-          "p_value": 0.236,
+          "match_rate": 0.5,
+          "p_value": 0.708,
           "verdict": "FAIL"
         },
         "ykal_leaf": {
-          "match_rate": 0.5,
-          "p_value": 0.37,
+          "match_rate": 0.42857142857142855,
+          "p_value": 0.622,
           "verdict": "FAIL"
         },
         "ykal_flower": {
           "match_rate": 0.2857142857142857,
-          "p_value": 0.804,
+          "p_value": 0.698,
           "verdict": "FAIL"
         }
       },
@@ -482,43 +482,43 @@
       },
       "image_adjacent_results": {
         "thor_root": {
-          "match_rate": 0.4,
-          "p_value": 0.436,
+          "match_rate": 0.39215686274509803,
+          "p_value": 0.492,
           "verdict": "FAIL"
         },
         "thar_root": {
-          "match_rate": 0.4166666666666667,
-          "p_value": 0.54,
+          "match_rate": 0.3125,
+          "p_value": 0.526,
           "verdict": "FAIL"
         },
         "thor_stalk": {
-          "match_rate": 0.62,
-          "p_value": 0.344,
+          "match_rate": 0.6078431372549019,
+          "p_value": 0.464,
           "verdict": "FAIL"
         },
         "thar_stalk": {
-          "match_rate": 0.6666666666666666,
-          "p_value": 0.282,
+          "match_rate": 0.5,
+          "p_value": 0.672,
           "verdict": "FAIL"
         },
         "thor_leaf": {
-          "match_rate": 0.6,
-          "p_value": 0.39,
+          "match_rate": 0.5882352941176471,
+          "p_value": 0.398,
           "verdict": "FAIL"
         },
         "thar_leaf": {
-          "match_rate": 0.6666666666666666,
-          "p_value": 0.238,
+          "match_rate": 0.5625,
+          "p_value": 0.364,
           "verdict": "FAIL"
         },
         "thor_flower": {
-          "match_rate": 0.42,
-          "p_value": 0.766,
+          "match_rate": 0.4117647058823529,
+          "p_value": 0.768,
           "verdict": "FAIL"
         },
         "thar_flower": {
-          "match_rate": 0.3333333333333333,
-          "p_value": 0.834,
+          "match_rate": 0.25,
+          "p_value": 0.85,
           "verdict": "FAIL"
         }
       },
@@ -557,17 +557,17 @@
       },
       "image_adjacent_results": {
         "phar_root": {
-          "match_rate": 0.8,
+          "match_rate": 0.6666666666666666,
           "p_value": 1.0,
           "verdict": "INSUFFICIENT_DATA"
         },
         "phar_stalk": {
-          "match_rate": 0.6,
+          "match_rate": 0.5,
           "p_value": 1.0,
           "verdict": "INSUFFICIENT_DATA"
         },
         "phar_leaf": {
-          "match_rate": 0.4,
+          "match_rate": 0.5,
           "p_value": 1.0,
           "verdict": "INSUFFICIENT_DATA"
         },
@@ -706,26 +706,26 @@
   ],
   "catmus_comparison": {
     "distribution_comparison": {
+      "apicius": {
+        "char_freq_jsd": 0.09044474863860547,
+        "prefix_2_jsd": 0.604830106104663,
+        "prefix_3_jsd": 0.6931469919963862,
+        "word_length_jsd": 0.05372312132312467,
+        "avg_jsd": 0.36053624201569484
+      },
+      "liber_de_coquina": {
+        "char_freq_jsd": 0.14336932258284174,
+        "prefix_2_jsd": 0.6373995715538056,
+        "prefix_3_jsd": 0.6931470223099762,
+        "word_length_jsd": 0.05079628645981644,
+        "avg_jsd": 0.38117805072660993
+      },
       "pharma_miscellany_lat_eng": {
-        "char_freq_jsd": 0.13597217264123404,
+        "char_freq_jsd": 0.13597217264123426,
         "prefix_2_jsd": 0.6106690478672419,
         "prefix_3_jsd": 0.685547341289676,
         "word_length_jsd": 0.06015173357654151,
         "avg_jsd": 0.3730850738436734
-      },
-      "apicius": {
-        "char_freq_jsd": 0.09044474863860533,
-        "prefix_2_jsd": 0.6048301061046629,
-        "prefix_3_jsd": 0.6931469919963864,
-        "word_length_jsd": 0.05372312132312467,
-        "avg_jsd": 0.3605362420156948
-      },
-      "liber_de_coquina": {
-        "char_freq_jsd": 0.14336932258284174,
-        "prefix_2_jsd": 0.6373995715538054,
-        "prefix_3_jsd": 0.6931470223099757,
-        "word_length_jsd": 0.05079628645981644,
-        "avg_jsd": 0.3811780507266098
       }
     },
     "stem_analogues": {
@@ -807,11 +807,6 @@
         "lexical_link": "farina / caulis (scribal)",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
-            "term": "farina"
-          },
-          {
             "corpus": "apicius",
             "count": 6,
             "term": "farina"
@@ -819,6 +814,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 17,
+            "term": "farina"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "farina"
           }
         ],
@@ -828,11 +828,6 @@
         "lexical_link": "farina / caulis (scribal)",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
-            "term": "farina"
-          },
-          {
             "corpus": "apicius",
             "count": 6,
             "term": "farina"
@@ -840,6 +835,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 17,
+            "term": "farina"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "farina"
           }
         ],
@@ -849,11 +849,6 @@
         "lexical_link": "aqua",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 53,
-            "term": "aqua"
-          },
-          {
             "corpus": "apicius",
             "count": 9,
             "term": "aqua"
@@ -861,6 +856,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 93,
+            "term": "aqua"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 53,
             "term": "aqua"
           }
         ],
@@ -870,11 +870,6 @@
         "lexical_link": "oleum",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 28,
-            "term": "oleum"
-          },
-          {
             "corpus": "apicius",
             "count": 12,
             "term": "oleum"
@@ -882,6 +877,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 4,
+            "term": "oleum"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 28,
             "term": "oleum"
           }
         ],
@@ -891,11 +891,6 @@
         "lexical_link": "oleum",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 28,
-            "term": "oleum"
-          },
-          {
             "corpus": "apicius",
             "count": 12,
             "term": "oleum"
@@ -903,6 +898,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 4,
+            "term": "oleum"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 28,
             "term": "oleum"
           }
         ],
@@ -912,13 +912,13 @@
         "lexical_link": "vinum",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
+            "corpus": "apicius",
+            "count": 16,
             "term": "vinum"
           },
           {
-            "corpus": "apicius",
-            "count": 16,
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "vinum"
           }
         ],
@@ -928,13 +928,13 @@
         "lexical_link": "vinum",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
+            "corpus": "apicius",
+            "count": 16,
             "term": "vinum"
           },
           {
-            "corpus": "apicius",
-            "count": 16,
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "vinum"
           }
         ],
@@ -944,11 +944,6 @@
         "lexical_link": "lac",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 17,
-            "term": "lac"
-          },
-          {
             "corpus": "apicius",
             "count": 307,
             "term": "lac"
@@ -956,6 +951,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 29,
+            "term": "lac"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 17,
             "term": "lac"
           }
         ],
@@ -965,11 +965,6 @@
         "lexical_link": "lac",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 17,
-            "term": "lac"
-          },
-          {
             "corpus": "apicius",
             "count": 307,
             "term": "lac"
@@ -977,6 +972,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 29,
+            "term": "lac"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 17,
             "term": "lac"
           }
         ],
@@ -986,11 +986,6 @@
         "lexical_link": "mel",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 22,
-            "term": "mel"
-          },
-          {
             "corpus": "apicius",
             "count": 173,
             "term": "mel"
@@ -998,6 +993,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 19,
+            "term": "mel"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 22,
             "term": "mel"
           }
         ],
@@ -1071,11 +1071,6 @@
         "lexical_link": "sal",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 4,
-            "term": "sal"
-          },
-          {
             "corpus": "apicius",
             "count": 348,
             "term": "sal"
@@ -1083,6 +1078,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 79,
+            "term": "sal"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 4,
             "term": "sal"
           }
         ],
@@ -1097,11 +1097,6 @@
         "lexical_link": "rosa",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 20,
-            "term": "rosa"
-          },
-          {
             "corpus": "apicius",
             "count": 9,
             "term": "rosa"
@@ -1109,6 +1104,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 8,
+            "term": "rosa"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 20,
             "term": "rosa"
           }
         ],
@@ -1118,11 +1118,6 @@
         "lexical_link": "rosa",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 20,
-            "term": "rosa"
-          },
-          {
             "corpus": "apicius",
             "count": 9,
             "term": "rosa"
@@ -1130,6 +1125,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 8,
+            "term": "rosa"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 20,
             "term": "rosa"
           }
         ],
@@ -1139,11 +1139,6 @@
         "lexical_link": "rosa",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 20,
-            "term": "rosa"
-          },
-          {
             "corpus": "apicius",
             "count": 9,
             "term": "rosa"
@@ -1151,6 +1146,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 8,
+            "term": "rosa"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 20,
             "term": "rosa"
           }
         ],
@@ -1200,13 +1200,13 @@
         "lexical_link": "anisum",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
+            "corpus": "apicius",
+            "count": 1,
             "term": "anisum"
           },
           {
-            "corpus": "apicius",
-            "count": 1,
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "anisum"
           }
         ],
@@ -1238,12 +1238,12 @@
         "lexical_link": "salvia",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
+            "corpus": "apicius",
             "count": 2,
             "term": "salvia"
           },
           {
-            "corpus": "apicius",
+            "corpus": "pharma_miscellany_lat_eng",
             "count": 2,
             "term": "salvia"
           }
@@ -1254,11 +1254,6 @@
         "lexical_link": "feniculum",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 3,
-            "term": "feniculum"
-          },
-          {
             "corpus": "apicius",
             "count": 2,
             "term": "feniculum"
@@ -1266,6 +1261,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 10,
+            "term": "feniculum"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 3,
             "term": "feniculum"
           }
         ],
@@ -1366,11 +1366,6 @@
         "lexical_link": "piper",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
-            "term": "piper"
-          },
-          {
             "corpus": "apicius",
             "count": 21,
             "term": "piper"
@@ -1378,6 +1373,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 31,
+            "term": "piper"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "piper"
           }
         ],
@@ -1435,11 +1435,6 @@
         "lexical_link": "sal petrae",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 4,
-            "term": "sal"
-          },
-          {
             "corpus": "apicius",
             "count": 348,
             "term": "sal"
@@ -1447,6 +1442,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 79,
+            "term": "sal"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 4,
             "term": "sal"
           }
         ],
@@ -1467,11 +1467,6 @@
         "lexical_link": "cera",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 7,
-            "term": "cera"
-          },
-          {
             "corpus": "apicius",
             "count": 8,
             "term": "cera"
@@ -1479,6 +1474,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 11,
+            "term": "cera"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 7,
             "term": "cera"
           }
         ],
@@ -1709,11 +1709,6 @@
         "lexical_link": "galanga",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
-            "term": "galanga"
-          },
-          {
             "corpus": "apicius",
             "count": 1,
             "term": "galanga"
@@ -1721,6 +1716,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 1,
+            "term": "galanga"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "galanga"
           }
         ],
@@ -1730,11 +1730,6 @@
         "lexical_link": "galanga",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
-            "term": "galanga"
-          },
-          {
             "corpus": "apicius",
             "count": 1,
             "term": "galanga"
@@ -1742,6 +1737,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 1,
+            "term": "galanga"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "galanga"
           }
         ],
@@ -1751,11 +1751,6 @@
         "lexical_link": "galanga",
         "matches": [
           {
-            "corpus": "pharma_miscellany_lat_eng",
-            "count": 2,
-            "term": "galanga"
-          },
-          {
             "corpus": "apicius",
             "count": 1,
             "term": "galanga"
@@ -1763,6 +1758,11 @@
           {
             "corpus": "liber_de_coquina",
             "count": 1,
+            "term": "galanga"
+          },
+          {
+            "corpus": "pharma_miscellany_lat_eng",
+            "count": 2,
             "term": "galanga"
           }
         ],
@@ -1781,12 +1781,6 @@
         "vocab_size": 9368,
         "token_count": 35402
       },
-      "pharma_miscellany_lat_eng": {
-        "char_entropy": 4.031745336632402,
-        "word_entropy": 7.410134504735311,
-        "vocab_size": 619,
-        "token_count": 2867
-      },
       "apicius": {
         "char_entropy": 4.199176308406258,
         "word_entropy": 10.309978289248107,
@@ -1798,6 +1792,12 @@
         "word_entropy": 8.894815756950122,
         "vocab_size": 2081,
         "token_count": 9196
+      },
+      "pharma_miscellany_lat_eng": {
+        "char_entropy": 4.031745336632402,
+        "word_entropy": 7.410134504735311,
+        "vocab_size": 619,
+        "token_count": 2867
       }
     },
     "summary": {

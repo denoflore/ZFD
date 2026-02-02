@@ -1,0 +1,98 @@
+{
+  "title": "ZFD Phase 9: Complete Pharmaceutical Section Translation",
+  "date": "2026-02-01T22:54:53.928790",
+  "statistics": {
+    "folios_translated": 8,
+    "total_words": 1313,
+    "words_parsed": 547,
+    "parse_rate": 0.4166031987814166,
+    "average_confidence": 0.27362862428074275
+  },
+  "folio_breakdown": [
+    {
+      "folio": "f88r",
+      "words": 149,
+      "parsed": 65,
+      "confidence": 0.28310067114093956
+    },
+    {
+      "folio": "f88v",
+      "words": 145,
+      "parsed": 80,
+      "confidence": 0.3285724137931034
+    },
+    {
+      "folio": "f99r",
+      "words": 198,
+      "parsed": 76,
+      "confidence": 0.26249999999999996
+    },
+    {
+      "folio": "f99v",
+      "words": 163,
+      "parsed": 77,
+      "confidence": 0.296717791411043
+    },
+    {
+      "folio": "f100r",
+      "words": 109,
+      "parsed": 49,
+      "confidence": 0.2752752293577983
+    },
+    {
+      "folio": "f100v",
+      "words": 91,
+      "parsed": 38,
+      "confidence": 0.2788571428571428
+    },
+    {
+      "folio": "f101r",
+      "words": 205,
+      "parsed": 80,
+      "confidence": 0.259321951219512
+    },
+    {
+      "folio": "f101v",
+      "words": 253,
+      "parsed": 82,
+      "confidence": 0.20468379446640303
+    }
+  ],
+  "morpheme_frequencies": {
+    "operators": {
+      "ch": 238,
+      "qo": 133,
+      "ok": 113,
+      "sh": 92,
+      "da": 90,
+      "ot": 62,
+      "sa": 26,
+      "so": 23,
+      "yk": 22,
+      "pc": 5
+    },
+    "stems": {
+      "ol": 318,
+      "or": 142,
+      "k": 118,
+      "ee": 115,
+      "od": 67,
+      "ed": 6,
+      "kal": 4,
+      "kar": 2
+    },
+    "classes": {
+      "al": 63,
+      "ar": 53
+    }
+  },
+  "missing_folios": [
+    "f89r1",
+    "f89r2",
+    "f89v1",
+    "f89v2",
+    "f102r",
+    "f102v"
+  ],
+  "missing_reason": "Transcription data not available in source corpus"
+}

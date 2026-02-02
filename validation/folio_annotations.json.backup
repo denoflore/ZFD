@@ -1,0 +1,4140 @@
+{
+  "version": "2.0",
+  "description": "Plant-part annotations with VISUAL and PATTERN_ENHANCED methods",
+  "methodology": {
+    "VISUAL": "Embodied visual analysis from actual folio images",
+    "VISUAL_HIGH": "Clear plant-part depiction, unambiguous",
+    "VISUAL_MEDIUM": "Plant-part likely but illustration stylized",
+    "VISUAL_LOW": "Inference from context, illustration unclear",
+    "PATTERN_ENHANCED": "Heuristic refined by stem frequency patterns",
+    "HEURISTIC_ENHANCED": "Basic heuristic with stem-based adjustments",
+    "HEURISTIC": "Auto-generated from standard vertical plant layout",
+    "CATALOG": "Based on Beinecke catalog descriptions"
+  },
+  "adjacency_window": 2,
+  "folios": {
+    "f1v": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f2r": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "CATALOG",
+      "notes": "Full plant with visible root system, upright orientation."
+    },
+    "f2v": {
+      "max_lines": 8,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f3r": {
+      "max_lines": 20,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leaf_lines": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "flower_lines": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f3v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f4r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f4v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "CATALOG",
+      "notes": "Clear root illustration at bottom of plant."
+    },
+    "f5r": {
+      "max_lines": 7,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4,
+        5
+      ],
+      "flower_lines": [
+        6,
+        7
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f5v": {
+      "max_lines": 6,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4
+      ],
+      "flower_lines": [
+        5,
+        6
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f6r": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f6v": {
+      "max_lines": 21,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leaf_lines": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "flower_lines": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f7r": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f7v": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f8r": {
+      "max_lines": 20,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leaf_lines": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "flower_lines": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f8v": {
+      "max_lines": 17,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f9r": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f9v": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f10r": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f10v": {
+      "max_lines": 7,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4,
+        5
+      ],
+      "flower_lines": [
+        6,
+        7
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f11r": {
+      "max_lines": 7,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4,
+        5
+      ],
+      "flower_lines": [
+        6,
+        7
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f11v": {
+      "max_lines": 7,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4,
+        5
+      ],
+      "flower_lines": [
+        6,
+        7
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f13r": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f13v": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f14r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f14v": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f15r": {
+      "max_lines": 15,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f15v": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f16r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f16v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f17r": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f17v": {
+      "max_lines": 23,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "leaf_lines": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "flower_lines": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f18r": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f18v": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f19r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f19v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f20r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f20v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f21r": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f21v": {
+      "max_lines": 8,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f22r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f22v": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f23r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f23v": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f24r": {
+      "max_lines": 20,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leaf_lines": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "flower_lines": [
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f24v": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f25r": {
+      "max_lines": 6,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4
+      ],
+      "flower_lines": [
+        5,
+        6
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f25v": {
+      "max_lines": 7,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4,
+        5
+      ],
+      "flower_lines": [
+        6,
+        7
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f26r": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f26v": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f27r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f27v": {
+      "max_lines": 8,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f28r": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f28v": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f29r": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f29v": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f30r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f30v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f31r": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f31v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f32r": {
+      "max_lines": 19,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "leaf_lines": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "flower_lines": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f32v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f33r": {
+      "max_lines": 7,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4,
+        5
+      ],
+      "flower_lines": [
+        6,
+        7
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f33v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f34r": {
+      "max_lines": 15,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f34v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f35r": {
+      "max_lines": 15,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f35v": {
+      "max_lines": 21,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leaf_lines": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "flower_lines": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f36r": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f36v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f37r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f37v": {
+      "max_lines": 23,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "leaf_lines": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "flower_lines": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f38r": {
+      "max_lines": 6,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4
+      ],
+      "flower_lines": [
+        5,
+        6
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f38v": {
+      "max_lines": 8,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f39r": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f39v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f40r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f40v": {
+      "max_lines": 19,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "leaf_lines": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "flower_lines": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f41r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "stalk_lines": [
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10
+      ],
+      "flower_lines": [
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC_ENHANCED",
+      "notes": "Enhanced based on ed frequency pattern",
+      "annotation_method": "PATTERN_ENHANCED",
+      "enhancement_basis": "High ed count (44) suggests root-focused content"
+    },
+    "f41v": {
+      "max_lines": 8,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f42r": {
+      "max_lines": 23,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ],
+      "leaf_lines": [
+        12,
+        13,
+        14,
+        15,
+        16,
+        17
+      ],
+      "flower_lines": [
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f42v": {
+      "max_lines": 15,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f43r": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f43v": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "stalk_lines": [
+        9,
+        10,
+        11
+      ],
+      "leaf_lines": [
+        12,
+        13,
+        14
+      ],
+      "flower_lines": [
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC_ENHANCED",
+      "notes": "Enhanced based on ed frequency pattern",
+      "annotation_method": "PATTERN_ENHANCED",
+      "enhancement_basis": "High ed count (38) suggests root-focused content"
+    },
+    "f44r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f44v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f45r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f45v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f46r": {
+      "max_lines": 15,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f46v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f47r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f47v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f48r": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f48v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f49r": {
+      "max_lines": 21,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "stalk_lines": [
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "leaf_lines": [
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "flower_lines": [
+        16,
+        17,
+        18,
+        19,
+        20,
+        21
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f49v": {
+      "max_lines": 1,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2
+      ],
+      "leaf_lines": [
+        3
+      ],
+      "flower_lines": [],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f50r": {
+      "max_lines": 10,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7
+      ],
+      "flower_lines": [
+        8,
+        9,
+        10
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f50v": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5
+      ],
+      "leaf_lines": [
+        6,
+        7,
+        8
+      ],
+      "flower_lines": [
+        9,
+        10,
+        11
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f51r": {
+      "max_lines": 15,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10,
+        11
+      ],
+      "flower_lines": [
+        12,
+        13,
+        14,
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f51v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f52r": {
+      "max_lines": 8,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f52v": {
+      "max_lines": 14,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6,
+        7
+      ],
+      "leaf_lines": [
+        8,
+        9,
+        10
+      ],
+      "flower_lines": [
+        11,
+        12,
+        13,
+        14
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f53r": {
+      "max_lines": 9,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4
+      ],
+      "leaf_lines": [
+        5,
+        6
+      ],
+      "flower_lines": [
+        7,
+        8,
+        9
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f53v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f54r": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f54v": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f55r": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f55v": {
+      "max_lines": 12,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f56r": {
+      "max_lines": 19,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "leaf_lines": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "flower_lines": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "CATALOG",
+      "notes": "Important folio with existing decipherment analysis."
+    },
+    "f56v": {
+      "max_lines": 16,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "stalk_lines": [
+        5,
+        6,
+        7,
+        8
+      ],
+      "leaf_lines": [
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [
+        13,
+        14,
+        15,
+        16
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f57r": {
+      "max_lines": 11,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2
+      ],
+      "stalk_lines": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "leaf_lines": [
+        13,
+        14
+      ],
+      "flower_lines": [
+        15
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC_ENHANCED",
+      "notes": "Enhanced based on od frequency pattern",
+      "annotation_method": "PATTERN_ENHANCED",
+      "enhancement_basis": "High od count (21) suggests stalk-focused content"
+    },
+    "f57v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f58r": {
+      "max_lines": 41,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "stalk_lines": [
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "leaf_lines": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "flower_lines": [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f58v": {
+      "max_lines": 39,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "stalk_lines": [
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "leaf_lines": [
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "flower_lines": [
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f65r": {
+      "max_lines": 1,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2
+      ],
+      "leaf_lines": [
+        3
+      ],
+      "flower_lines": [],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f65v": {
+      "max_lines": 6,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1
+      ],
+      "stalk_lines": [
+        2,
+        3
+      ],
+      "leaf_lines": [
+        4
+      ],
+      "flower_lines": [
+        5,
+        6
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f66r": {
+      "max_lines": 82,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "stalk_lines": [
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "leaf_lines": [
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61
+      ],
+      "flower_lines": [
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC_ENHANCED",
+      "notes": "Complex 82-line folio. Pattern suggests both root and stalk content.",
+      "annotation_method": "PATTERN_ENHANCED",
+      "enhancement_basis": "High od count (41) + high ed count (43) - complex layout"
+    },
+    "f66v": {
+      "max_lines": 13,
+      "plant_parts": [
+        "root",
+        "stalk",
+        "leaf",
+        "flower"
+      ],
+      "root_lines": [
+        1,
+        2,
+        3
+      ],
+      "stalk_lines": [
+        4,
+        5,
+        6
+      ],
+      "leaf_lines": [
+        7,
+        8,
+        9
+      ],
+      "flower_lines": [
+        10,
+        11,
+        12,
+        13
+      ],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "confidence": "HEURISTIC",
+      "notes": "Auto-generated from layout heuristic"
+    },
+    "f1r": {
+      "annotation_method": "VISUAL",
+      "annotator": "claude_code_phase2",
+      "annotation_date": "2026-02-01",
+      "max_lines": 31,
+      "illustration_analysis": {
+        "plant_type": "herbaceous with prominent lobed leaves",
+        "layout": "centered, text wrapping in 4 paragraphs",
+        "color_present": true,
+        "root_depicted": false,
+        "stalk_depicted": true,
+        "leaf_depicted": true,
+        "flower_depicted": false,
+        "notes": "Leaf-focused illustration. No roots shown. Plant starts at mid-stem."
+      },
+      "plant_parts": [
+        "stalk",
+        "leaf"
+      ],
+      "root_lines": [],
+      "stalk_lines": [
+        8,
+        9,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      ],
+      "leaf_lines": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "flower_lines": [],
+      "seed_lines": [],
+      "vessel_lines": [],
+      "general_lines": [
+        1,
+        2,
+        3,
+        4,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "confidence": "VISUAL_MEDIUM",
+      "bidirectional_validation": {
+        "ed_lines": [],
+        "ed_prediction": "root",
+        "ed_observation": "No ed tokens, no root depicted - CONSISTENT",
+        "od_lines": [
+          3,
+          4,
+          8,
+          9,
+          12,
+          13,
+          14,
+          16,
+          26
+        ],
+        "od_prediction": "stalk",
+        "od_observation": "Most od tokens (8,9,12,13,14,16) in stalk-adjacent area - SUPPORTIVE",
+        "kair_lines": [
+          19
+        ],
+        "kair_observation": "Plant folio, no fire/vessel context to validate",
+        "kal_lines": [
+          1
+        ],
+        "kal_observation": "Plant folio, no vessel imagery to validate"
+      },
+      "notes": "CORRECTION: Phase 1 marked this as 'no plant illustration' - WRONG. Clear plant illustration present."
+    }
+  },
+  "phase": "2",
+  "last_updated": "2026-02-01T05:23:33.231219"
+}

@@ -1,0 +1,150 @@
+{
+  "operators": {
+    "qo": {
+      "meaning": "measure/quantify",
+      "confidence": "HIGH",
+      "phase": 6
+    },
+    "ch": {
+      "meaning": "mix/combine",
+      "confidence": "HIGH",
+      "phase": 6
+    },
+    "da": {
+      "meaning": "dose/dispense",
+      "confidence": "HIGH",
+      "phase": 6
+    },
+    "ok": {
+      "meaning": "process (vessel)",
+      "confidence": "MEDIUM",
+      "phase": 6
+    },
+    "ot": {
+      "meaning": "prepare (general)",
+      "confidence": "MEDIUM",
+      "phase": 6
+    },
+    "sh": {
+      "meaning": "strain/filter",
+      "confidence": "MEDIUM",
+      "phase": 6
+    },
+    "so": {
+      "meaning": "soak?",
+      "confidence": "LOW",
+      "phase": 6
+    },
+    "sa": {
+      "meaning": "salt/preserve?",
+      "confidence": "LOW",
+      "phase": 6
+    },
+    "yk": {
+      "meaning": "yield?",
+      "confidence": "LOW",
+      "phase": 6
+    },
+    "pc": {
+      "meaning": "pound/crush?",
+      "confidence": "LOW",
+      "phase": 6
+    },
+    "tc": {
+      "meaning": "touch/apply?",
+      "confidence": "LOW",
+      "phase": 6
+    }
+  },
+  "stems": {
+    "ed": {
+      "meaning": "root (plant)",
+      "confidence": "MEDIUM",
+      "phase": 3
+    },
+    "od": {
+      "meaning": "stalk/axis",
+      "confidence": "HIGH",
+      "phase": 3
+    },
+    "ol": {
+      "meaning": "oil",
+      "confidence": "MEDIUM",
+      "phase": 5
+    },
+    "or": {
+      "meaning": "oil variant?",
+      "confidence": "LOW",
+      "phase": 5
+    },
+    "kal": {
+      "meaning": "vessel/cauldron",
+      "confidence": "HIGH",
+      "phase": 5
+    },
+    "kar": {
+      "meaning": "fire/heat",
+      "confidence": "HIGH",
+      "phase": 5
+    },
+    "ee": {
+      "meaning": "??? MYSTERY",
+      "confidence": "UNKNOWN",
+      "phase": 7
+    },
+    "k": {
+      "meaning": "vessel? (short)",
+      "confidence": "LOW",
+      "phase": 6
+    }
+  },
+  "class_markers": {
+    "al": {
+      "meaning": "liquid preparation",
+      "confidence": "HIGH",
+      "phase": 5
+    },
+    "ar": {
+      "meaning": "heat/dry preparation",
+      "confidence": "HIGH",
+      "phase": 5
+    }
+  },
+  "suffixes": {
+    "y": {
+      "meaning": "result/completion",
+      "confidence": "MEDIUM",
+      "phase": 6
+    },
+    "dy": {
+      "meaning": "done/completed",
+      "confidence": "MEDIUM",
+      "phase": 6
+    },
+    "iin": {
+      "meaning": "continuation?",
+      "confidence": "LOW",
+      "phase": 5
+    },
+    "aiin": {
+      "meaning": "liquid continuation?",
+      "confidence": "LOW",
+      "phase": 5
+    },
+    "ain": {
+      "meaning": "process marker?",
+      "confidence": "LOW",
+      "phase": 6
+    },
+    "m": {
+      "meaning": "material?",
+      "confidence": "LOW",
+      "phase": 6
+    },
+    "ir": {
+      "meaning": "heat result?",
+      "confidence": "LOW",
+      "phase": 6
+    }
+  }
+}

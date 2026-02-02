@@ -1,0 +1,140 @@
+{
+  "version": "2.0",
+  "source": "Yale Beinecke Library MS 408 (Voynich Manuscript)",
+  "base_url": "https://collections.library.yale.edu/catalog/2002046",
+  "iiif_base": "https://images.library.yale.edu/iiif/2/beinecke:",
+  "notes": "High-resolution scans available from Yale Beinecke Digital Library",
+
+  "priority_folios": {
+    "high_ed_count": ["f41r", "f66r", "f43v", "f43r", "f26r", "f48v", "f31r", "f46v"],
+    "high_od_count": ["f66r", "f53v", "f51v", "f57r", "f51r", "f58r", "f20r", "f1r"],
+    "case_study": ["f56r"],
+    "herbal_start": ["f1r", "f2r", "f3r", "f4r", "f5r"]
+  },
+
+  "folios": {
+    "f1r": {
+      "status": "available_local",
+      "path": "03_Analysis_Data/Visuals/voynich_f1r.jpg",
+      "beinecke_page": 3,
+      "initial_observation": "Centered plant illustration with text wrapping. Green leaves visible. NOT text-only as previously assumed.",
+      "annotation_priority": "HIGH"
+    },
+    "f2r": {
+      "status": "needs_fetch",
+      "beinecke_page": 5,
+      "url": "https://collections.library.yale.edu/catalog/2002046 (page 5)",
+      "annotation_priority": "HIGH"
+    },
+    "f3r": {
+      "status": "needs_fetch",
+      "beinecke_page": 7,
+      "annotation_priority": "HIGH"
+    },
+    "f4r": {
+      "status": "needs_fetch",
+      "beinecke_page": 9,
+      "annotation_priority": "HIGH"
+    },
+    "f4v": {
+      "status": "needs_fetch",
+      "beinecke_page": 10,
+      "annotation_priority": "HIGH"
+    },
+    "f5r": {
+      "status": "needs_fetch",
+      "beinecke_page": 11,
+      "annotation_priority": "MEDIUM"
+    },
+    "f20r": {
+      "status": "needs_fetch",
+      "beinecke_page": 41,
+      "notes": "High od count",
+      "annotation_priority": "HIGH"
+    },
+    "f26r": {
+      "status": "needs_fetch",
+      "beinecke_page": 53,
+      "notes": "High ed count",
+      "annotation_priority": "HIGH"
+    },
+    "f31r": {
+      "status": "needs_fetch",
+      "beinecke_page": 63,
+      "notes": "High ed count",
+      "annotation_priority": "MEDIUM"
+    },
+    "f41r": {
+      "status": "needs_fetch",
+      "beinecke_page": 83,
+      "notes": "Highest ed count (44)",
+      "annotation_priority": "HIGH"
+    },
+    "f43r": {
+      "status": "needs_fetch",
+      "beinecke_page": 87,
+      "notes": "High ed count",
+      "annotation_priority": "HIGH"
+    },
+    "f43v": {
+      "status": "needs_fetch",
+      "beinecke_page": 88,
+      "notes": "High ed count",
+      "annotation_priority": "HIGH"
+    },
+    "f46v": {
+      "status": "needs_fetch",
+      "beinecke_page": 94,
+      "notes": "High ed count",
+      "annotation_priority": "MEDIUM"
+    },
+    "f48v": {
+      "status": "needs_fetch",
+      "beinecke_page": 98,
+      "notes": "High ed count",
+      "annotation_priority": "MEDIUM"
+    },
+    "f51r": {
+      "status": "needs_fetch",
+      "beinecke_page": 103,
+      "notes": "High od count",
+      "annotation_priority": "HIGH"
+    },
+    "f51v": {
+      "status": "needs_fetch",
+      "beinecke_page": 104,
+      "notes": "High od count",
+      "annotation_priority": "HIGH"
+    },
+    "f53v": {
+      "status": "needs_fetch",
+      "beinecke_page": 108,
+      "notes": "High od count",
+      "annotation_priority": "HIGH"
+    },
+    "f56r": {
+      "status": "needs_fetch",
+      "beinecke_page": 113,
+      "notes": "Case study folio - detailed analysis exists",
+      "annotation_priority": "HIGH"
+    },
+    "f57r": {
+      "status": "needs_fetch",
+      "beinecke_page": 115,
+      "notes": "High od count",
+      "annotation_priority": "HIGH"
+    },
+    "f58r": {
+      "status": "needs_fetch",
+      "beinecke_page": 117,
+      "notes": "High od count, many text lines",
+      "annotation_priority": "MEDIUM"
+    },
+    "f66r": {
+      "status": "needs_fetch",
+      "beinecke_page": 133,
+      "notes": "Highest combined ed/od. Complex layout (82 lines). Critical for validation.",
+      "annotation_priority": "CRITICAL"
+    }
+  }
+}

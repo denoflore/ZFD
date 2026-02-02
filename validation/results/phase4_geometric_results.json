@@ -1,0 +1,82 @@
+{
+  "generated": "2026-02-01T16:31:44.298867",
+  "results": {
+    "f58r": {
+      "al_total": 128,
+      "ar_total": 70,
+      "al_in_branch": 19,
+      "al_in_terminal": 18,
+      "ar_in_branch": 14,
+      "ar_in_terminal": 12,
+      "expected_al": "HIGH",
+      "expected_ar": "HIGH",
+      "geometry_type": "UMBELLIFER"
+    },
+    "f34r": {
+      "al_total": 11,
+      "ar_total": 20,
+      "al_in_branch": 2,
+      "al_in_terminal": 1,
+      "ar_in_branch": 5,
+      "ar_in_terminal": 6,
+      "expected_al": "LOW",
+      "expected_ar": "HIGH",
+      "geometry_type": "SINGLE_TERMINAL"
+    },
+    "f17v": {
+      "al_total": 5,
+      "ar_total": 4,
+      "al_in_branch": 0,
+      "al_in_terminal": 4,
+      "ar_in_branch": 1,
+      "ar_in_terminal": 1,
+      "expected_al": "HIGH",
+      "expected_ar": "MEDIUM",
+      "geometry_type": "PAIRED_BRANCHES"
+    },
+    "f3r": {
+      "al_total": 3,
+      "ar_total": 3,
+      "al_in_branch": 0,
+      "al_in_terminal": 0,
+      "ar_in_branch": 0,
+      "ar_in_terminal": 0,
+      "expected_al": "LOW",
+      "expected_ar": "LOW",
+      "geometry_type": "SIMPLE_AXIS"
+    },
+    "f51r": {
+      "al_total": 8,
+      "ar_total": 3,
+      "al_in_branch": 3,
+      "al_in_terminal": 0,
+      "ar_in_branch": 2,
+      "ar_in_terminal": 1,
+      "expected_al": "MEDIUM",
+      "expected_ar": "LOW",
+      "geometry_type": "AXIS_DOMINANT"
+    },
+    "f20r": {
+      "al_total": 2,
+      "ar_total": 2,
+      "al_in_branch": 0,
+      "al_in_terminal": 0,
+      "ar_in_branch": 1,
+      "ar_in_terminal": 1,
+      "expected_al": "HIGH",
+      "expected_ar": "MEDIUM",
+      "geometry_type": "MULTI_BRANCH"
+    },
+    "f53v": {
+      "al_total": 3,
+      "ar_total": 1,
+      "al_in_branch": 3,
+      "al_in_terminal": 2,
+      "ar_in_branch": 1,
+      "ar_in_terminal": 0,
+      "expected_al": "MEDIUM",
+      "expected_ar": "HIGH",
+      "geometry_type": "AXIS_WITH_CLUSTERS"
+    }
+  }
+}

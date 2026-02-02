@@ -1,0 +1,929 @@
+{
+  "generated": "2026-02-01T17:15:40.575653",
+  "operator_stats": {
+    "qo": {
+      "total": 5107,
+      "candidate_meaning": "measure/pour/quantify",
+      "by_section": {
+        "herbal": 2927,
+        "pharma": 2109
+      },
+      "with_stems": {
+        "ed": 1094,
+        "ol": 597,
+        "al": 364,
+        "ar": 331,
+        "od": 302,
+        "kal": 236,
+        "or": 208,
+        "kar": 156
+      },
+      "with_class": {
+        "al": 364,
+        "ar": 331,
+        "al_ar_ratio": 1.0996978851963746
+      },
+      "top_words": [
+        [
+          "qokeedy",
+          301
+        ],
+        [
+          "qokeey",
+          292
+        ],
+        [
+          "qokain",
+          257
+        ],
+        [
+          "qokedy",
+          253
+        ],
+        [
+          "qokaiin",
+          251
+        ],
+        [
+          "qokal",
+          181
+        ],
+        [
+          "qokar",
+          142
+        ],
+        [
+          "qoky",
+          122
+        ],
+        [
+          "qol",
+          112
+        ],
+        [
+          "qokey",
+          98
+        ]
+      ]
+    },
+    "da": {
+      "total": 2141,
+      "candidate_meaning": "dose/give/dispense",
+      "by_section": {
+        "herbal": 1340,
+        "pharma": 630
+      },
+      "with_stems": {
+        "al": 419,
+        "ar": 413,
+        "ol": 39,
+        "or": 27,
+        "ed": 21,
+        "od": 19,
+        "kar": 6,
+        "kal": 2
+      },
+      "with_class": {
+        "al": 419,
+        "ar": 413,
+        "al_ar_ratio": 1.0145278450363195
+      },
+      "top_words": [
+        [
+          "daiin",
+          694
+        ],
+        [
+          "dar",
+          271
+        ],
+        [
+          "dal",
+          206
+        ],
+        [
+          "dain",
+          173
+        ],
+        [
+          "dair",
+          91
+        ],
+        [
+          "dam",
+          68
+        ],
+        [
+          "daiinplant",
+          34
+        ],
+        [
+          "daly",
+          25
+        ],
+        [
+          "dary",
+          20
+        ],
+        [
+          "daiin$",
+          19
+        ]
+      ]
+    },
+    "ok": {
+      "total": 2289,
+      "candidate_meaning": "cook/process/treat (vessel)",
+      "by_section": {
+        "herbal": 1440,
+        "pharma": 566
+      },
+      "with_stems": {
+        "ed": 325,
+        "ol": 248,
+        "al": 246,
+        "ar": 197,
+        "kal": 191,
+        "kar": 147,
+        "or": 116,
+        "od": 115
+      },
+      "with_class": {
+        "al": 246,
+        "ar": 197,
+        "al_ar_ratio": 1.248730964467005
+      },
+      "top_words": [
+        [
+          "okaiin",
+          188
+        ],
+        [
+          "okeey",
+          164
+        ],
+        [
+          "okain",
+          129
+        ],
+        [
+          "okal",
+          118
+        ],
+        [
+          "okar",
+          115
+        ],
+        [
+          "okedy",
+          107
+        ],
+        [
+          "okeedy",
+          94
+        ],
+        [
+          "oky",
+          74
+        ],
+        [
+          "okol",
+          72
+        ],
+        [
+          "okeol",
+          62
+        ]
+      ]
+    },
+    "ot": {
+      "total": 2263,
+      "candidate_meaning": "prepare/ready (vessel)",
+      "by_section": {
+        "herbal": 1293,
+        "pharma": 573
+      },
+      "with_stems": {
+        "ed": 371,
+        "al": 244,
+        "ar": 241,
+        "ol": 228,
+        "od": 137,
+        "or": 123,
+        "kal": 2,
+        "kar": 1
+      },
+      "with_class": {
+        "al": 244,
+        "ar": 241,
+        "al_ar_ratio": 1.012448132780083
+      },
+      "top_words": [
+        [
+          "otedy",
+          151
+        ],
+        [
+          "otaiin",
+          142
+        ],
+        [
+          "otar",
+          139
+        ],
+        [
+          "oteey",
+          131
+        ],
+        [
+          "otal",
+          123
+        ],
+        [
+          "oty",
+          104
+        ],
+        [
+          "oteedy",
+          95
+        ],
+        [
+          "otain",
+          90
+        ],
+        [
+          "otol",
+          75
+        ],
+        [
+          "otey",
+          49
+        ]
+      ]
+    },
+    "sh": {
+      "total": 3009,
+      "candidate_meaning": "strain/filter/separate",
+      "by_section": {
+        "herbal": 1824,
+        "pharma": 1014
+      },
+      "with_stems": {
+        "ed": 595,
+        "ol": 389,
+        "od": 204,
+        "or": 195,
+        "ar": 111,
+        "al": 104,
+        "kal": 16,
+        "kar": 15
+      },
+      "with_class": {
+        "al": 104,
+        "ar": 111,
+        "al_ar_ratio": 0.9369369369369369
+      },
+      "top_words": [
+        [
+          "shedy",
+          374
+        ],
+        [
+          "shey",
+          239
+        ],
+        [
+          "shol",
+          158
+        ],
+        [
+          "sheey",
+          133
+        ],
+        [
+          "sheol",
+          104
+        ],
+        [
+          "sho",
+          102
+        ],
+        [
+          "shor",
+          93
+        ],
+        [
+          "shy",
+          75
+        ],
+        [
+          "sheedy",
+          72
+        ],
+        [
+          "shckhy",
+          51
+        ]
+      ]
+    },
+    "ch": {
+      "total": 5687,
+      "candidate_meaning": "mix/combine",
+      "by_section": {
+        "herbal": 3890,
+        "pharma": 1362
+      },
+      "with_stems": {
+        "ed": 838,
+        "ol": 832,
+        "or": 454,
+        "od": 418,
+        "ar": 338,
+        "al": 316,
+        "kal": 48,
+        "kar": 41
+      },
+      "with_class": {
+        "al": 316,
+        "ar": 338,
+        "al_ar_ratio": 0.9349112426035503
+      },
+      "top_words": [
+        [
+          "chedy",
+          452
+        ],
+        [
+          "chol",
+          358
+        ],
+        [
+          "chey",
+          290
+        ],
+        [
+          "chor",
+          194
+        ],
+        [
+          "cheey",
+          161
+        ],
+        [
+          "cheol",
+          149
+        ],
+        [
+          "chy",
+          133
+        ],
+        [
+          "chdy",
+          131
+        ],
+        [
+          "chckhy",
+          119
+        ],
+        [
+          "chody",
+          87
+        ]
+      ]
+    },
+    "so": {
+      "total": 313,
+      "candidate_meaning": "soak?",
+      "by_section": {
+        "herbal": 148,
+        "pharma": 139
+      },
+      "with_stems": {
+        "ol": 128,
+        "or": 69,
+        "ed": 26,
+        "od": 21,
+        "al": 14,
+        "ar": 12,
+        "kal": 2,
+        "kar": 1
+      },
+      "with_class": {
+        "al": 14,
+        "ar": 12,
+        "al_ar_ratio": 1.1666666666666667
+      },
+      "top_words": [
+        [
+          "sol",
+          53
+        ],
+        [
+          "sor",
+          40
+        ],
+        [
+          "soiin",
+          17
+        ],
+        [
+          "solkeedy",
+          7
+        ],
+        [
+          "solchedy",
+          6
+        ],
+        [
+          "soiiin",
+          5
+        ],
+        [
+          "sodaiin",
+          5
+        ],
+        [
+          "sos",
+          5
+        ],
+        [
+          "soraiin",
+          5
+        ],
+        [
+          "sodar",
+          4
+        ]
+      ]
+    },
+    "sa": {
+      "total": 488,
+      "candidate_meaning": "salt/preserve?",
+      "by_section": {
+        "herbal": 245,
+        "pharma": 196
+      },
+      "with_stems": {
+        "ar": 122,
+        "al": 99,
+        "ol": 12,
+        "ed": 11,
+        "or": 8,
+        "od": 1
+      },
+      "with_class": {
+        "al": 99,
+        "ar": 122,
+        "al_ar_ratio": 0.8114754098360656
+      },
+      "top_words": [
+        [
+          "saiin",
+          127
+        ],
+        [
+          "sar",
+          76
+        ],
+        [
+          "sain",
+          59
+        ],
+        [
+          "sal",
+          42
+        ],
+        [
+          "sair",
+          26
+        ],
+        [
+          "sam",
+          9
+        ],
+        [
+          "salplant",
+          5
+        ],
+        [
+          "saiinplant",
+          5
+        ],
+        [
+          "sary",
+          5
+        ],
+        [
+          "saiir",
+          5
+        ]
+      ]
+    },
+    "yk": {
+      "total": 544,
+      "candidate_meaning": "yield/produce?",
+      "by_section": {
+        "herbal": 343,
+        "pharma": 130
+      },
+      "with_stems": {
+        "ed": 71,
+        "ol": 60,
+        "od": 47,
+        "ar": 47,
+        "kar": 36,
+        "al": 34,
+        "or": 30,
+        "kal": 23
+      },
+      "with_class": {
+        "al": 34,
+        "ar": 47,
+        "al_ar_ratio": 0.723404255319149
+      },
+      "top_words": [
+        [
+          "ykeey",
+          52
+        ],
+        [
+          "ykaiin",
+          44
+        ],
+        [
+          "ykar",
+          32
+        ],
+        [
+          "ykeedy",
+          23
+        ],
+        [
+          "ykchy",
+          19
+        ],
+        [
+          "ykedy",
+          18
+        ],
+        [
+          "yky",
+          17
+        ],
+        [
+          "ykeol",
+          15
+        ],
+        [
+          "ykal",
+          13
+        ],
+        [
+          "ykeody",
+          13
+        ]
+      ]
+    },
+    "pc": {
+      "total": 245,
+      "candidate_meaning": "pound/crush?",
+      "by_section": {
+        "herbal": 183,
+        "pharma": 60
+      },
+      "with_stems": {
+        "ed": 68,
+        "od": 41,
+        "ar": 37,
+        "ol": 34,
+        "or": 25,
+        "al": 15,
+        "kal": 2,
+        "kar": 1
+      },
+      "with_class": {
+        "al": 15,
+        "ar": 37,
+        "al_ar_ratio": 0.40540540540540543
+      },
+      "top_words": [
+        [
+          "pchedy",
+          34
+        ],
+        [
+          "pchor",
+          12
+        ],
+        [
+          "pchedar",
+          12
+        ],
+        [
+          "pcheol",
+          11
+        ],
+        [
+          "pchdy",
+          10
+        ],
+        [
+          "pchey",
+          9
+        ],
+        [
+          "pchdar",
+          6
+        ],
+        [
+          "pchody",
+          6
+        ],
+        [
+          "pcheody",
+          6
+        ],
+        [
+          "pchol",
+          6
+        ]
+      ]
+    },
+    "tc": {
+      "total": 237,
+      "candidate_meaning": "touch/apply?",
+      "by_section": {
+        "herbal": 174,
+        "pharma": 57
+      },
+      "with_stems": {
+        "ed": 45,
+        "od": 35,
+        "ol": 30,
+        "or": 28,
+        "ar": 12,
+        "al": 7
+      },
+      "with_class": {
+        "al": 7,
+        "ar": 12,
+        "al_ar_ratio": 0.5833333333333334
+      },
+      "top_words": [
+        [
+          "tchedy",
+          33
+        ],
+        [
+          "tchey",
+          20
+        ],
+        [
+          "tchy",
+          20
+        ],
+        [
+          "tchor",
+          15
+        ],
+        [
+          "tchol",
+          12
+        ],
+        [
+          "tchdy",
+          11
+        ],
+        [
+          "tchody",
+          7
+        ],
+        [
+          "tcheo",
+          6
+        ],
+        [
+          "tcheey",
+          5
+        ],
+        [
+          "tchodaiin",
+          5
+        ]
+      ]
+    }
+  },
+  "clustering_results": {
+    "operator_class_chi2": {
+      "chi2": 6.862514585655734,
+      "p_value": 0.23106772869227088,
+      "significant": "False"
+    },
+    "qo_prediction": {
+      "kal": 236,
+      "kar": 156,
+      "al": 364,
+      "ar": 331
+    },
+    "ok_prediction": {
+      "kal": 191,
+      "kar": 147,
+      "al": 246,
+      "ar": 197
+    },
+    "da_prediction": {
+      "kal": 2,
+      "kar": 6,
+      "al": 419,
+      "ar": 413
+    },
+    "ch_prediction": {
+      "kal": 48,
+      "kar": 41,
+      "al": 316,
+      "ar": 338
+    },
+    "sh_prediction": {
+      "kal": 16,
+      "kar": 15,
+      "al": 104,
+      "ar": 111
+    }
+  },
+  "lexicon": {
+    "qo": {
+      "meaning": "measure/pour/quantify",
+      "confidence": "LOW",
+      "total_occurrences": 5107,
+      "evidence": [
+        "Balanced class preference (al/ar=1.10)"
+      ],
+      "top_combinations": [
+        "qokeedy",
+        "qokeey",
+        "qokain",
+        "qokedy",
+        "qokaiin"
+      ]
+    },
+    "da": {
+      "meaning": "dose/give/dispense",
+      "confidence": "LOW",
+      "total_occurrences": 2141,
+      "evidence": [
+        "Balanced class preference (al/ar=1.01)",
+        "Prefers kar over kal (6 vs 2)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "daiin",
+        "dar",
+        "dal",
+        "dain",
+        "dair"
+      ]
+    },
+    "ok": {
+      "meaning": "cook/process/treat (vessel)",
+      "confidence": "LOW",
+      "total_occurrences": 2289,
+      "evidence": [
+        "Balanced class preference (al/ar=1.25)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "okaiin",
+        "okeey",
+        "okain",
+        "okal",
+        "okar"
+      ]
+    },
+    "ot": {
+      "meaning": "prepare/ready (vessel)",
+      "confidence": "LOW",
+      "total_occurrences": 2263,
+      "evidence": [
+        "Balanced class preference (al/ar=1.01)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "otedy",
+        "otaiin",
+        "otar",
+        "oteey",
+        "otal"
+      ]
+    },
+    "sh": {
+      "meaning": "strain/filter/separate",
+      "confidence": "LOW",
+      "total_occurrences": 3009,
+      "evidence": [
+        "Balanced class preference (al/ar=0.94)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "shedy",
+        "shey",
+        "shol",
+        "sheey",
+        "sheol"
+      ]
+    },
+    "ch": {
+      "meaning": "mix/combine",
+      "confidence": "LOW",
+      "total_occurrences": 5687,
+      "evidence": [
+        "Balanced class preference (al/ar=0.93)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "chedy",
+        "chol",
+        "chey",
+        "chor",
+        "cheey"
+      ]
+    },
+    "so": {
+      "meaning": "soak?",
+      "confidence": "LOW",
+      "total_occurrences": 313,
+      "evidence": [
+        "Balanced class preference (al/ar=1.17)"
+      ],
+      "top_combinations": [
+        "sol",
+        "sor",
+        "soiin",
+        "solkeedy",
+        "solchedy"
+      ]
+    },
+    "sa": {
+      "meaning": "salt/preserve?",
+      "confidence": "LOW",
+      "total_occurrences": 488,
+      "evidence": [
+        "Balanced class preference (al/ar=0.81)"
+      ],
+      "top_combinations": [
+        "saiin",
+        "sar",
+        "sain",
+        "sal",
+        "sair"
+      ]
+    },
+    "yk": {
+      "meaning": "yield/produce?",
+      "confidence": "LOW",
+      "total_occurrences": 544,
+      "evidence": [
+        "Balanced class preference (al/ar=0.72)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "ykeey",
+        "ykaiin",
+        "ykar",
+        "ykeedy",
+        "ykchy"
+      ]
+    },
+    "pc": {
+      "meaning": "pound/crush?",
+      "confidence": "MEDIUM",
+      "total_occurrences": 245,
+      "evidence": [
+        "Prefers heat class (al/ar=0.41)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "pchedy",
+        "pchor",
+        "pchedar",
+        "pcheol",
+        "pchdy"
+      ]
+    },
+    "tc": {
+      "meaning": "touch/apply?",
+      "confidence": "LOW",
+      "total_occurrences": 237,
+      "evidence": [
+        "Prefers heat class (al/ar=0.58)",
+        "More common in herbal section"
+      ],
+      "top_combinations": [
+        "tchedy",
+        "tchey",
+        "tchy",
+        "tchor",
+        "tchol"
+      ]
+    }
+  }
+}

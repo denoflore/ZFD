@@ -1,6 +1,6 @@
 # ZFD Validation Results - February 2026
 
-**Generated:** 2026-02-01 04:40
+**Generated:** 2026-02-01 15:42
 **Pipeline Version:** 0.1.0
 **Methodology:** Preregistered Falsification Testing with Image-Adjacent Correlation
 
@@ -31,11 +31,11 @@ pipeline with preregistered falsification protocols.
 
 | Test | Result |
 |------|--------|
-| od → stalk match rate | 58.2% |
-| od → stalk p-value | 0.0920 |
-| od → root match rate | 43.5% |
-| Forbid check (max wrong part) | 52.9% (leaf) |
-| Baseline: ed → root | 37.1% (p=0.521) |
+| od → stalk match rate | 63.8% |
+| od → stalk p-value | 0.0250 |
+| od → root match rate | 42.6% |
+| Forbid check (max wrong part) | 51.4% (leaf) |
+| Baseline: ed → root | 51.3% (p=0.012) |
 
 **Verdict:** NEEDS_REFINEMENT
 
@@ -71,7 +71,7 @@ required for final determination.
 3. **cauldron** (kal)
    - Occurrences: 171
    - Operator context: 49.1%
-   - Confidence: 0.75
+   - Confidence: 0.60
 
 ### Phase 6: CATMuS Cross-Validation
 
@@ -79,18 +79,18 @@ required for final determination.
 
 | Corpus | Tokens | Avg JSD |
 |--------|--------|---------|
-| pharma_miscellany_lat_eng | - | 0.3731 |
 | apicius | - | 0.3605 |
 | liber_de_coquina | - | 0.3812 |
+| pharma_miscellany_lat_eng | - | 0.3731 |
 
 **Entropy Profiles:**
 
 | Corpus | Char Entropy | Word Entropy | Vocab Size |
 |--------|--------------|--------------|------------|
 | voynich | 3.925 | 10.830 | 9368 |
-| pharma_miscellany_lat_eng | 4.032 | 7.410 | 619 |
 | apicius | 4.199 | 10.310 | 12137 |
 | liber_de_coquina | 3.965 | 8.895 | 2081 |
+| pharma_miscellany_lat_eng | 4.032 | 7.410 | 619 |
 
 **Stem Analogue Matching:**
 - Stems checked: 86

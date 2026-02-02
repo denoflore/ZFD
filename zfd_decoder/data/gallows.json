@@ -1,0 +1,14 @@
+{
+  "gallows": [
+    {"eva": "k", "expansion": "st", "note": "produces kost (bone)", "status": "CONFIRMED"},
+    {"eva": "t", "expansion": "tr", "note": "produces otr- patterns", "status": "CONFIRMED"},
+    {"eva": "f", "expansion": "pr", "note": "pr- cluster", "status": "CONFIRMED"},
+    {"eva": "p", "expansion": "pl", "note": "pl- cluster", "status": "CONFIRMED"}
+  ],
+  "context_rules": {
+    "k": "apply when produces known stem (kost, kal, kar) or in gallows position",
+    "t": "apply when produces known stem or follows o-",
+    "f": "apply in initial position or after vowel",
+    "p": "apply in initial position or after vowel"
+  }
+}
