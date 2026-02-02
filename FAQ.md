@@ -402,6 +402,177 @@ The probability of all five being coincidence is effectively zero.
 
 ---
 
+## Deeper Objections: Statistical, Historical, and Methodological
+
+*These address the more sophisticated technical objections likely to come from academic reviewers, Voynich community experts, and computational linguists.*
+
+---
+
+### Q: The Voynich text has abnormally low second-order conditional entropy (h2 ≈ 2). Natural languages are 3-4. Doesn't this rule out a natural language reading?
+
+No. This is one of the strongest objections, and it has a direct answer.
+
+The h2 metric measures how predictable each character is given the preceding character. Bowern & Lindemann (2020) showed Voynichese has an h2 of ~2, lower than any of 316 comparison texts. This seems damning until you consider what the ZFD actually proposes:
+
+1. **Heavy abbreviation.** The scribe used systematic shorthand where gallows characters expand to consonant clusters (k→st, t→tr) and operators compress common prefixes. This compresses the character-level entropy while preserving word-level and semantic-level information. Medieval abbreviated Latin also shows depressed h2 relative to full Latin.
+
+2. **Formulaic pharmaceutical text.** Recipe books are inherently repetitive: "take X, boil in Y, strain, give with Z." This formulaic structure compresses character-pair predictability far below literary or epistolary text.
+
+3. **Position-constrained characters.** Bowern herself notes the low h2 is "largely the result of common characters which are heavily restricted to certain positions within the word." This is exactly what ZFD predicts: operators cluster at word-initial positions, suffixes at word-final positions - because that's how agglutinative morphology works in a shorthand system.
+
+4. **Word-level entropy is normal.** The manuscript's word entropy (~10 bits/word) matches English and Latin texts. The information is there - it's just encoded differently at the character level because of the abbreviation system.
+
+The low h2 is not evidence against ZFD. It's predicted by ZFD.
+
+---
+
+### Q: Gaskell & Bowern (2022) showed that human-generated gibberish can replicate Voynich statistical properties. Doesn't that support the hoax theory?
+
+Gaskell & Bowern demonstrated that humans intentionally writing meaningless text can produce statistical patterns similar to Voynichese. This is an important finding, but it proves possibility, not actuality.
+
+Their experiment shows that some Voynich features *could* emerge from gibberish production. It does not show that the Voynich *is* gibberish. The same statistical properties are also consistent with heavily abbreviated natural language.
+
+More importantly, their gibberish texts did NOT produce:
+- 94.7% morphological coverage in a specific natural language
+- Spatial correlation between semantic content and manuscript sections
+- Native speaker recognition of vocabulary
+- Bilingual code-mixing with period-appropriate Latin pharmaceutical terms
+- 68.6% stem overlap with a medieval pharmaceutical corpus
+
+The statistical similarity between gibberish and Voynichese is a property of the writing system's structure. The semantic content is what distinguishes a real text from gibberish - and that's precisely what ZFD demonstrates.
+
+---
+
+### Q: Timm & Schinner (2019) showed the text could be produced by "self-citation" - scribes copying and modifying earlier words. Isn't that simpler?
+
+Timm & Schinner proposed that scribes generated text by looking back at earlier portions of the manuscript and creating new words by modifying existing ones. Their computer simulation reproduced many statistical features of Voynichese.
+
+This is a clever generation model, but it has the same problem as the Rugg/Cardan grille theory: it explains the statistics without explaining the content.
+
+Self-citation produces text that looks right statistically. It does not produce text where:
+- "Kost" (bone) clusters at 9.5:1 ratio in pharmaceutical sections
+- "Orolaly" (oraliter/orally) appears as a label on recipe pages
+- Suffix patterns consistently match Croatian morphology
+- A native Croatian speaker recognizes the vocabulary
+
+Self-citation is a mechanism for generating Voynich-like text. ZFD demonstrates that the actual Voynich text contains meaningful content. These are different claims about different questions.
+
+---
+
+### Q: Rugg's Cardan grille method can generate Voynich-like text with medieval technology. Why isn't that sufficient?
+
+Gordon Rugg (2004, 2016) demonstrated that a Cardan grille overlaid on a table of syllable groups can generate text with Voynich-like statistical properties. This proves a 15th-century hoax was technically possible.
+
+But "technically possible" ≠ "what actually happened." Rugg's method:
+
+- **Generates text that satisfies Zipf's law** - so does ZFD's decoded Croatian
+- **Cannot generate semantic content** - ZFD can
+- **Cannot explain spatial correlation** - why would a hoaxer put bone terminology preferentially in pharmaceutical sections?
+- **Cannot explain native speaker recognition** - random syllable tables don't produce words a Croatian speaker knows
+- **Cannot explain the Latin pharmaceutical loanwords** - "orolaly" appearing as a recipe label is inexplicable as grille output
+
+The grille theory answers "could someone make text that looks like this?" ZFD answers "what does this text say?" One is about possibility; the other is about actuality.
+
+---
+
+### Q: Lisa Fagin Davis and other experts have been dismissive of every decipherment claim. Why should yours be different?
+
+Davis's criticism of previous claims is well-founded and usually boils down to the same core issues:
+
+- **Cheshire (2019):** "Proto-Romance" is not a real language family. When you apply his substitutions, the result is gibberish. No reproducibility.
+- **Gibbs (2017):** Patched together existing scholarship with speculative translations. No statistical validation.
+- **Bax (2014):** Sound methodology but limited to ~10 words. No systematic key.
+
+Every failed claim shares the same deficit: **no reproducible, systematic methodology that produces coherent text validated by native speakers.**
+
+ZFD addresses every criticism Davis has leveled at previous attempts:
+
+1. "Apply the substitutions and try to translate the result" → We provide a complete character key. Apply it to any folio. The result is Croatian, not gibberish.
+2. "Circular and aspirational" → Our falsification criteria were preregistered. We committed to abandoning the theory if core tests failed. They didn't.
+3. "Methodology falls apart" → Our methodology is published, reproducible, and automated. Run the pipeline yourself.
+
+We welcome Davis's scrutiny. The methodology was designed to survive it.
+
+---
+
+### Q: Five different scribes have been identified (Davis, 2020). How does a single decipherment key work across multiple scribes?
+
+This actually supports rather than undermines ZFD.
+
+Multiple scribes using the same shorthand system is exactly what you'd expect from a professional apothecary workshop or scriptorium. Modern parallels: multiple pharmacists using the same Rx abbreviation conventions, multiple lawyers using the same legal shorthand.
+
+The "minor variations" Davis identified - larger or smaller loops, straighter or curvier crossbars - are handwriting differences, not linguistic differences. Five people can write the same word "prescription" with different handwriting while using identical abbreviation conventions.
+
+ZFD's character key works across all sections precisely because it maps the *system* (Glagolitic shorthand conventions), not individual handwriting quirks. The minor Voynich A/B dialect variations noted by Currier are consistent with regional dialect differences within Croatian - again, expected for a multi-scribe workshop.
+
+---
+
+### Q: The plant illustrations don't match any known botanical specimens. Doesn't that undermine the pharmaceutical interpretation?
+
+Medieval herbal illustrations are notoriously stylized. Comparison studies have shown that even identified plants in well-known medieval herbals (Dioscorides manuscripts, the Voynich's near-contemporary Codex Bellunensis) are often unrecognizable to modern botanists without the accompanying text.
+
+The Voynich illustrations appear to be:
+1. **Highly stylized** - Drawn from memory or convention rather than direct observation
+2. **Composite** - Some may represent multiple plant parts or preparation stages combined
+3. **Deliberately simplified** - As reference markers, not botanical identification guides
+
+Tucker & Talbert (2014) identified 37 plants as New World species. Other researchers have proposed Mediterranean identifications. The lack of consensus on illustrations is a general Voynich problem, not specific to ZFD.
+
+What ZFD adds is that the *text* now provides pharmaceutical context for the illustrations: preparation methods, dosing instructions, and administration routes. The illustrations become useful once you can read what surrounds them.
+
+---
+
+### Q: You use AI in your methodology. Isn't that unreliable for historical linguistics?
+
+AI was used as a *tool*, not as the decoder. Specifically:
+
+- **Pattern recognition**: AI helped identify statistical clustering and morpheme distribution patterns across 39,903 tokens - work that would take years manually
+- **Cross-referencing**: AI assisted in comparing results against the CATMuS medieval Latin database (160,000+ lines)
+- **Validation**: AI performed adversarial review, actively trying to disprove findings
+
+The actual decipherment key was derived through:
+- Behavioral paleographic analysis (human-led)
+- Historical linguistic comparison with documented Glagolitic traditions (human-led)
+- Native speaker validation (entirely human)
+
+AI didn't "translate" the Voynich manuscript. A human identified the script, derived the character key, and a native Croatian speaker validated the readings. AI helped process the data volume. This is no different from using computers to run frequency analysis on cipher texts - the tool doesn't invalidate the method.
+
+---
+
+### Q: Why hasn't this been peer-reviewed yet?
+
+The full paper, methodology, validation data, and reproducible pipeline are publicly available on GitHub right now. This is preprint-stage work, which is standard practice in 2026 for computational linguistics and digital humanities.
+
+Peer review is underway. Academic publication timelines are 6-18 months from submission. We chose to publish openly because:
+
+1. **Reproducibility first**: Anyone can verify the claims today, not after journal review delays
+2. **Transparency**: All data, code, and methods are visible. Nothing is hidden behind a paywall
+3. **Crowdsourced validation**: Croatian speakers, paleographers, and pharmacological historians can contribute now
+4. **Precedent**: Linear B, Mayan glyphs, and other major decipherments were publicly discussed before formal publication
+
+The absence of a journal stamp doesn't change the data. Run the pipeline. Check the morpheme coverage. Ask a Croatian speaker.
+
+---
+
+### Q: "Every claim about the Voynich turns out to be wrong." Why should anyone bother looking at this one?
+
+Because previous claims share specific, identifiable failures that ZFD doesn't share:
+
+| Failure Mode | Previous Claims | ZFD |
+|---|---|---|
+| No systematic key | ✓ Most | Complete character map |
+| No full translations | ✓ All | 201 folios translated |
+| No statistical validation | ✓ Most | 94.7% coverage, p < 0.001 |
+| No native speaker | ✓ All | Professional translator confirms |
+| Not reproducible | ✓ All | Pipeline on GitHub |
+| No falsification testing | ✓ All | Preregistered, all passed |
+| No corpus comparison | ✓ All | 68.6% CATMuS overlap |
+| No bilingual evidence | ✓ All | Latin pharmaceutical terms confirmed |
+
+The pattern of previous failures doesn't predict future failures when the methodology explicitly addresses every known failure mode. Dismissing ZFD because others failed is the argument from pessimism, not the argument from evidence.
+
+---
+
 ## Getting Involved
 
 ### Q: How can I help?
@@ -432,4 +603,4 @@ See [CONTRIBUTOR_GUIDE.md](CONTRIBUTOR_GUIDE.md) for details.
 
 ---
 
-*FAQ version 2.0 | February 2026 | Updated with adversarial review responses and comparative analysis*
+*FAQ version 3.0 | February 2026 | Comprehensive adversarial, statistical, historical, and methodological coverage*
