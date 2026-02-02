@@ -32,7 +32,7 @@ Because we provide **falsifiable criteria** and **passed all of them**:
 4. ✓ Native speaker recognizes vocabulary as Croatian
 5. ✓ 68.6% stem match against medieval pharmaceutical corpora
 
-Previous "solutions" offered translations without validation. We offer validation without requiring you to trust us—run the code yourself.
+Previous "solutions" offered translations without validation. We offer validation without requiring you to trust us - run the code yourself.
 
 ---
 
@@ -54,7 +54,7 @@ The Republic of Ragusa (Dubrovnik) was a major pharmaceutical trading center wit
 
 **Western scholarly bias.**
 
-Every previous analysis compared Voynichese exclusively to Latin scribal traditions. Lisa Fagin Davis, the leading paleographic authority, correctly stated there is "nothing in history to compare it to"—but she was only looking at Latin history.
+Every previous analysis compared Voynichese exclusively to Latin scribal traditions. Lisa Fagin Davis, the leading paleographic authority, correctly stated there is "nothing in history to compare it to" - but she was only looking at Latin history.
 
 Angular Glagolitic expertise exists primarily in Croatian academic institutions, with minimal integration into mainstream Voynich scholarship. Nobody built the bridge.
 
@@ -82,7 +82,7 @@ A hoax would not produce 94.7% coverage with Croatian morphemes that a native sp
 
 ### Q: What about other proposed solutions (Bax, Cheshire, etc.)?
 
-**Stephen Bax (2014)**: Proposed partial readings of plant names. His approach was sound but limited—he identified ~10 words without a systematic key. Our work extends and systematizes this.
+**Stephen Bax (2014)**: Proposed partial readings of plant names. His approach was sound but limited - he identified ~10 words without a systematic key. Our work extends and systematizes this.
 
 **Gerard Cheshire (2019)**: Claimed "proto-Romance" language. Rejected by linguists because:
 - No consistent grammar demonstrated
@@ -90,7 +90,7 @@ A hoax would not produce 94.7% coverage with Croatian morphemes that a native sp
 - No statistical validation
 - Native speakers of Romance languages don't recognize it
 
-**Key difference**: We provide reproducible methodology, statistical validation, and native speaker confirmation. Apply our key to any folio—it works consistently. Previous solutions don't survive this test.
+**Key difference**: We provide reproducible methodology, statistical validation, and native speaker confirmation. Apply our key to any folio - it works consistently. Previous solutions don't survive this test.
 
 ---
 
@@ -102,7 +102,7 @@ We identified 94 morphemes (prefixes, stems, suffixes) that account for 94.7% of
 
 - 37,793 of 39,903 word-tokens contain at least one known Croatian morpheme
 - Only 5.3% remain unidentified (mostly plant names and rare abbreviations)
-- The coverage is not cherry-picked—it's corpus-wide
+- The coverage is not cherry-picked - it's corpus-wide
 
 For comparison, if you applied random Croatian morphemes to random text, you'd expect ~5-10% accidental matches. 94.7% is statistically impossible by chance.
 
@@ -122,7 +122,7 @@ The same logic applies to t→tr, producing verb patterns consistent with Croati
 
 **Paleographic evidence:**
 
-Medieval scribes routinely abbreviated common consonant clusters. Glagolitic manuscripts show similar conventions. This is not invention—it's standard medieval practice.
+Medieval scribes routinely abbreviated common consonant clusters. Glagolitic manuscripts show similar conventions. This is not invention - it's standard medieval practice.
 
 ---
 
@@ -213,7 +213,7 @@ Angular Glagolitic has distinctive tall ascending characters and developed cursi
 
 ### Q: Why would an apothecary use a "secret" script?
 
-It's not secret—it's **specialized shorthand**.
+It's not secret - it's **specialized shorthand**.
 
 Medieval professionals routinely developed abbreviated writing systems:
 - Physicians used Latin shorthand
