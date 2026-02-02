@@ -1,0 +1,12 @@
+{
+  "operators": [
+    {"eva": "qo", "croatian": "ko", "type": "relative", "gloss": "which/that/quantity", "latin": "quod/quot", "status": "CONFIRMED"},
+    {"eva": "q", "croatian": "k", "type": "relative", "gloss": "which (short)", "latin": "quod", "status": "CONFIRMED"},
+    {"eva": "ch", "croatian": "h", "type": "action", "gloss": "combine/cook", "latin": "coquere", "status": "CONFIRMED"},
+    {"eva": "sh", "croatian": "š", "type": "comitative", "gloss": "with/soak", "latin": "sorbere", "status": "CONFIRMED"},
+    {"eva": "da", "croatian": "da", "type": "dative", "gloss": "dose/give/add", "latin": "dare", "status": "CONFIRMED"},
+    {"eva": "ok", "croatian": "ost", "type": "vessel", "gloss": "vessel/container", "latin": "olla", "status": "CONFIRMED"},
+    {"eva": "ot", "croatian": "otr", "type": "vessel", "gloss": "vessel/container", "latin": "olla", "status": "CONFIRMED"}
+  ],
+  "detection_order": ["qo", "ch", "sh", "da", "ok", "ot", "q"]
+}

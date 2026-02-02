@@ -1,0 +1,93 @@
+name,variant,context,gloss,latin,status
+bone,kost,pharmaceutical,bone,os,CONFIRMED
+bone,ost,after vessel markers,bone,os,CONFIRMED
+oil,ol,free or vessels,oil,oleum,CONFIRMED
+oil,or,free or vessels,oil,oleum,CONFIRMED
+water,ar,free or vessels,water,aqua,CONFIRMED
+salt,sar,vessels/roots,salt,sal,CONFIRMED
+salt,sal,free,salt,sal,CONFIRMED
+honey,mel,cooking/syrup,honey,mel,CONFIRMED
+flour,chol,after combine,flour/grain,farina,CONFIRMED
+flour,chal,after combine,flour/grain,farina,CONFIRMED
+flour,hol,after combine,flour/grain,farina,CONFIRMED
+root,edy,after operators,root/prepared,radix,CONFIRMED
+root,edi,after operators,root/prepared,radix,CONFIRMED
+root,rady,after operators,root/prepared,radix,CONFIRMED
+wine,vin,quantity/medium,wine,vinum,CONFIRMED
+milk,lac,quantity/medium,milk,lac,CONFIRMED
+flower,flor,combine/quantity,flower,flos,CONFIRMED
+rose,ros,liquid media,rose/rosewater,rosa,CONFIRMED
+rose,rosar,liquid media,rose/rosewater,rosa,CONFIRMED
+myrrh,myr,honey/wine,myrrh resin,myrrha,CONFIRMED
+myrrh,myron,honey/wine,myrrh resin,myrrha,CONFIRMED
+aloe,aloe,doses/liquids,aloe,aloe,CONFIRMED
+galbanum,galb,oils/resins,galbanum,galbanum,CONFIRMED
+storax,stor,infusions/oils,storax,storax,CONFIRMED
+opopanax,opop,dose/fire,opopanax gum,opopanax,CONFIRMED
+camphor,camph,oils/resins,camphor,camphora,CONFIRMED
+anise,anis,spice clusters,anise,anisum,CONFIRMED
+coriander,cori,spice clusters,coriander,coriandrum,CONFIRMED
+mint,ment,wine/syrup,mint,mentha,CONFIRMED
+sage,salv,roots/infusions,sage,salvia,CONFIRMED
+fennel,fenn,anise/coriander,fennel,feniculum,CONFIRMED
+rue,ruta,bitters/wine,rue,ruta,CONFIRMED
+hyssop,hyss,flowers/resins,hyssop,hyssopus,CONFIRMED
+mallow,malv,root/flower,mallow,malva,CONFIRMED
+broom,genist,flowers/roots,genista broom,genista,CONFIRMED
+vervain,verb,infusions,vervain,verbena,CONFIRMED
+plantain,plant,soak/cook,plantain,plantago,CONFIRMED
+cinnamon,canel,honey/wine,cinnamon,cannella,CONFIRMED
+cinnamon,canol,honey/wine,cinnamon,cannella,CONFIRMED
+ginger,zing,spice clusters,ginger,zingiber,CONFIRMED
+ginger,zinor,spice clusters,ginger,zingiber,CONFIRMED
+pepper,piper,doses/combines,pepper,piper,CONFIRMED
+sulfur,sul,heat/vessel,sulfur,sulphur,CONFIRMED
+silver,arg,dose/vessel,silver,argentum,CONFIRMED
+copper,cupr,vessel/heat,copper/verdigris,cuprum,CONFIRMED
+copper,copr,vessel/heat,copper/verdigris,cuprum,CONFIRMED
+iron,fer,heat/roots,iron/filings,ferrum,CONFIRMED
+saltpeter,salp,fire/liquids,saltpeter,sal petrae,CONFIRMED
+alum,alum,infusions,alum,alumen,CONFIRMED
+pot,okal,after V-operators,pot/jar,olla,CONFIRMED
+pot,okar,after V-operators,pot/jar,olla,CONFIRMED
+pot,otal,after V-operators,pot/jar,olla,CONFIRMED
+pot,ostal,after V-operators,pot/jar,olla,CONFIRMED
+pot,ostar,after V-operators,pot/jar,olla,CONFIRMED
+cauldron,kal,heat/fire,cauldron,caldarium,CANDIDATE
+cauldron,stal,heat/fire,cauldron,caldarium,CANDIDATE
+flask,phar,liquids/resins,flask/phial,phiala,CANDIDATE
+soak,shor,after sh-,soak/infuse,sorbere,CONFIRMED
+soak,šor,after š-,soak/infuse,sorbere,CONFIRMED
+cook,chor,after ch-,cook/combine,coquere,CONFIRMED
+cook,hor,after h-,cook/combine,coquere,CONFIRMED
+dose,dar,near quantities,dose/add,dare,CANDIDATE
+dose,dain,near quantities,dose/portion,dare,CANDIDATE
+boil,thor,heat contexts,boil/roast,torreo,CANDIDATE
+boil,tror,heat contexts,boil/roast,torreo,CANDIDATE
+fire,kair,vessels/cooking,fire/heat,carbo,CANDIDATE
+fire,kar,vessels/cooking,fire/heat,carbo,CANDIDATE
+fire,star,vessels/cooking,fire/heat,carbo,CANDIDATE
+fire,char,vessels/cooking,fire/heat,carbo,CANDIDATE
+syrup,syr,sweetened,syrup/potion,syrupus,CANDIDATE
+broth,ykal,vessels/soaking,broth/decoction,,CANDIDATE
+bitter,amar,wines/bitters,bitter herb,amarus,CANDIDATE
+lime,calc,minerals/fire,lime/ite,calx,CANDIDATE
+give,da,operators,give/add,dare,CONFIRMED
+give,dain,operators,given/added,dare,CONFIRMED
+self,sam,free,self/alone,,CONFIRMED
+gift,dar,free,gift,donum,CONFIRMED
+day,dan,free,day,dies,CONFIRMED
+strain,šei,after š-,strain/filter,,CONFIRMED
+combine,hei,after h-,combine/mix,,CONFIRMED
+walk,hodi,after h-,walk/go,,CONFIRMED
+vessel,otrai,vessel markers,vessel/container,olla,CONFIRMED
+vessel,ostai,vessel markers,vessel/container,olla,CONFIRMED
+old,star,free,old/aged,,CONFIRMED
+new,nov,free,new/fresh,,CANDIDATE
+dry,suh,free,dry/dried,,CANDIDATE
+wet,mok,free,wet/moist,,CANDIDATE
+cold,hlad,free,cold/cool,,CANDIDATE
+warm,topl,free,warm/hot,,CANDIDATE
+pain,bol,free,pain/ache,,CANDIDATE
+burn,gor,free,burn/fire,,CANDIDATE
+peace,mir,free,peace/calm,,CANDIDATE

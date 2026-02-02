@@ -1,0 +1,134 @@
+token_id,eva,zfd,operator,stem,suffix,expansion,croatian,english,confidence,notes
+f88r.1.1,doršeoi,doršeoi,,doršeoi,,[STEM:doršeoi=oil],doršeoi,oil,0.3,Stem: oil (CONFIRMED)
+f88r.1.2,ctrheol,ctrrrheol,,ctrrrheol,,[STEM:ctrrrheol=oil],ctrrrheol,oil,0.6000000000000001,Stem: oil (CONFIRMED)
+f88r.1.3,kocsthei,strocstrhei,,strocstrhei,,[STEM:strocstrhei=combine/mix],strocstrhei,combine/mix,0.7,Stem: combine (CONFIRMED)
+f88r.1.4,dori,dori,,dori,,[STEM:dori=oil],dori,oil,0.3,Stem: oil (CONFIRMED)
+f88r.1.5,šeor,šeor,,šeor,,[STEM:šeor=oil],šeor,oil,0.3,Stem: oil (CONFIRMED)
+f88r.1.6,šolprhor,olor,,ol,or,[STEM:ol=oil][SUF:or=oil_related],olor,oil,0.6499999999999999,Stem: oil (CONFIRMED)
+f88r.1.7,dal,dal,da,l,,[OP:da][STEM:l=?],dal,dose [l],0.25,Operator dose/give/add (CONFIRMED)
+f88r.1.8,hcsthod,hcstrhod,,hcstrhod,,[STEM:hcstrhod=?],hcstrhod,[hcstrhod],0.05,
+f88r.2.1,sal,sal,,sal,,[STEM:sal=salt],sal,salt,0.3,Stem: salt (CONFIRMED)
+f88r.2.2,šeom,šeom,,šeom,,[STEM:šeom=?],šeom,[šeom],0.0,
+f88r.2.3,stol,strol,,strol,,[STEM:strol=oil],strol,oil,0.5,Stem: oil (CONFIRMED)
+f88r.2.4,hear,hear,,hear,,[STEM:hear=water],hear,water,0.3,Stem: water (CONFIRMED)
+f88r.2.5,šestor,šestror,,šestror,,[STEM:šestror=boil/roast],šestror,boil/roast,0.5,Stem: boil (CANDIDATE)
+f88r.2.6,kostor,ostor,,ost,or,[STEM:ost=bone][SUF:or=oil_related],ostor,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.2.7,dain,dain,da,in,,[OP:da][STEM:in=?],dain,dose [in],0.25,Operator dose/give/add (CONFIRMED)
+f88r.2.8,sar,sar,,sar,,[STEM:sar=salt],sar,salt,0.3,Stem: salt (CONFIRMED)
+f88r.2.9,rain,rain,,rain,,[STEM:rain=?],rain,[rain],0.0,
+f88r.2.10,osti,ostri,,ostri,,[STEM:ostri=bone],ostri,bone,0.5,Stem: bone (CONFIRMED)
+f88r.2.11,sam,sam,,sam,,[STEM:sam=self/alone],sam,self/alone,0.3,Stem: self (CONFIRMED)
+f88r.3.1,oain,oain,,oain,,[STEM:oain=?],oain,[oain],0.0,
+f88r.3.2,or,or,,or,,[STEM:or=oil],or,oil,0.3,Stem: oil (CONFIRMED)
+f88r.3.3,om,om,,om,,[STEM:om=?],om,[om],0.0,
+f88r.3.4,otram,otrram,otr,ram,,[OP:otr][STEM:ram=?],otrram,vessel [ram],0.25,Operator vessel/container (CONFIRMED)
+f88r.3.5,osteom,ostom,,ost,om,[STEM:ost=bone][SUF:om=instrumental],ostom,with bone,0.6499999999999999,Stem: bone (CONFIRMED)
+f88r.3.6,heor,heor,,heor,,[STEM:heor=oil],heor,oil,0.3,Stem: oil (CONFIRMED)
+f88r.3.7,kosteodi,strostreodi,,strostreodi,,[STEM:strostreodi=bone],strostreodi,bone,0.7,Stem: bone (CONFIRMED)
+f88r.3.8,dar,dar,da,r,,[OP:da][STEM:r=?],dar,dose [r],0.25,Operator dose/give/add (CONFIRMED)
+f88r.3.9,or,or,,or,,[STEM:or=oil],or,oil,0.3,Stem: oil (CONFIRMED)
+f88r.3.10,om,om,,om,,[STEM:om=?],om,[om],0.0,
+f88r.3.11,heodi,heodi,,heodi,,[STEM:heodi=?],heodi,[heodi],0.0,
+f88r.4.1,kosteol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.4.2,heol,heol,,heol,,[STEM:heol=oil],heol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.4.3,sain,sain,,sain,,[STEM:sain=?],sain,[sain],0.0,
+f88r.4.4,heos,heos,,heos,,[STEM:heos=?],heos,[heos],0.0,
+f88r.4.5,heol,heol,,heol,,[STEM:heol=oil],heol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.4.6,doleei,dolei,,dolei,,[STEM:dolei=oil],dolei,oil,0.4,Stem: oil (CONFIRMED)
+f88r.4.7,or,or,,or,,[STEM:or=oil],or,oil,0.3,Stem: oil (CONFIRMED)
+f88r.4.8,heom,heom,,heom,,[STEM:heom=?],heom,[heom],0.0,
+f88r.4.9,heomam,heomam,,heomam,,[STEM:heomam=?],heomam,[heomam],0.0,
+f88r.5.1,iosteodi,iostreodi,,iostreodi,,[STEM:iostreodi=bone],iostreodi,bone,0.5,Stem: bone (CONFIRMED)
+f88r.5.2,heom,heom,,heom,,[STEM:heom=?],heom,[heom],0.0,
+f88r.5.3,koor,stroor,,stroor,,[STEM:stroor=oil],stroor,oil,0.7,Stem: oil (CONFIRMED)
+f88r.5.4,hes,hes,,hes,,[STEM:hes=?],hes,[hes],0.0,
+f88r.5.5,isteor,istreor,,istreor,,[STEM:istreor=oil],istreor,oil,0.5,Stem: oil (CONFIRMED)
+f88r.5.6,ši,ši,,ši,,[STEM:ši=?],ši,[ši],0.0,
+f88r.5.7,sam,sam,,sam,,[STEM:sam=self/alone],sam,self/alone,0.3,Stem: self (CONFIRMED)
+f88r.6.1,stoaiplhhi,stroaipllhhi,,stroaipllhhi,,[STEM:stroaipllhhi=?],stroaipllhhi,[stroaipllhhi],0.1,
+f88r.6.2,cplhol,cpllhol,,cpllhol,,[STEM:cpllhol=flour/grain],cpllhol,flour/grain,0.5,Stem: flour (CONFIRMED)
+f88r.6.3,orhor,oror,,or,or,[STEM:or=oil][SUF:or=oil_related],oror,oil,0.44999999999999996,Stem: oil (CONFIRMED)
+f88r.6.4,plheoli,pllheoli,,pllheoli,,[STEM:pllheoli=oil],pllheoli,oil,0.5,Stem: oil (CONFIRMED)
+f88r.6.5,otrhol,otrrhol,otr,rhol,,[OP:otr][STEM:rhol=flour/grain],otrrhol,vessel flour/grain,0.55,Operator vessel/container (CONFIRMED); Stem: flour (CONFIRMED)
+f88r.6.6,oldi,oldi,,oldi,,[STEM:oldi=oil],oldi,oil,0.3,Stem: oil (CONFIRMED)
+f88r.6.7,sal,sal,,sal,,[STEM:sal=salt],sal,salt,0.3,Stem: salt (CONFIRMED)
+f88r.6.8,sali,sali,,sali,,[STEM:sali=salt],sali,salt,0.3,Stem: salt (CONFIRMED)
+f88r.7.1,dhei,dhei,,dhei,,[STEM:dhei=combine/mix],dhei,combine/mix,0.3,Stem: combine (CONFIRMED)
+f88r.7.2,hostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.6499999999999999,Stem: bone (CONFIRMED)
+f88r.7.3,dain,dain,da,in,,[OP:da][STEM:in=?],dain,dose [in],0.25,Operator dose/give/add (CONFIRMED)
+f88r.7.4,koestol,stroestrol,,stroestrol,,[STEM:stroestrol=oil],stroestrol,oil,0.7,Stem: oil (CONFIRMED)
+f88r.7.5,koestol,stroestrol,,stroestrol,,[STEM:stroestrol=oil],stroestrol,oil,0.7,Stem: oil (CONFIRMED)
+f88r.7.6,kocsthoi,strocstrhoi,,strocstrhoi,,[STEM:strocstrhoi=?],strocstrhoi,[strocstrhoi],0.1,
+f88r.7.7,ostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.6499999999999999,Stem: bone (CONFIRMED)
+f88r.7.8,heol,heol,,heol,,[STEM:heol=oil],heol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.8.1,dšeol,dšeol,,dšeol,,[STEM:dšeol=oil],dšeol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.8.2,kostei,strostrei,,strostrei,,[STEM:strostrei=bone],strostrei,bone,0.7,Stem: bone (CONFIRMED)
+f88r.8.3,s,s,,s,,[STEM:s=?],s,[s],0.0,
+f88r.8.4,hi,hi,,hi,,[STEM:hi=?],hi,[hi],0.0,
+f88r.8.5,sain,sain,,sain,,[STEM:sain=?],sain,[sain],0.0,
+f88r.8.6,hor,hor,,hor,,[STEM:hor=cook/combine],hor,cook/combine,0.3,Stem: cook (CONFIRMED)
+f88r.8.7,otreor,otrreor,otr,reor,,[OP:otr][STEM:reor=oil],otrreor,vessel oil,0.55,Operator vessel/container (CONFIRMED); Stem: oil (CONFIRMED)
+f88r.8.8,ain,ain,,ain,,[STEM:ain=?],ain,[ain],0.0,
+f88r.8.9,hosals,hosals,,hosals,,[STEM:hosals=salt],hosals,salt,0.3,Stem: salt (CONFIRMED)
+f88r.9.1,treol,trreol,,trreol,,[STEM:trreol=oil],trreol,oil,0.5,Stem: oil (CONFIRMED)
+f88r.9.2,hor,hor,,hor,,[STEM:hor=cook/combine],hor,cook/combine,0.3,Stem: cook (CONFIRMED)
+f88r.9.3,olšeodi,olšeodi,,olšeodi,,[STEM:olšeodi=oil],olšeodi,oil,0.3,Stem: oil (CONFIRMED)
+f88r.9.4,kosteol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.9.5,šoisthi,šoistrhi,,šoistrhi,,[STEM:šoistrhi=?],šoistrhi,[šoistrhi],0.05,
+f88r.9.6,ol,ol,,ol,,[STEM:ol=oil],ol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.9.7,šeol,šeol,,šeol,,[STEM:šeol=oil],šeol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.9.8,šeol,šeol,,šeol,,[STEM:šeol=oil],šeol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.9.9,dg,dg,,dg,,[STEM:dg=?],dg,[dg],0.0,
+f88r.10.1,ihei,ihei,,ihei,,[STEM:ihei=combine/mix],ihei,combine/mix,0.3,Stem: combine (CONFIRMED)
+f88r.10.2,ostain,ostn,,ost,n,[STEM:ost=bone][SUF:n=noun],ostn,bone,0.6499999999999999,Stem: bone (CONFIRMED)
+f88r.10.3,hol,hol,,hol,,[STEM:hol=flour/grain],hol,flour/grain,0.3,Stem: flour (CONFIRMED)
+f88r.10.4,heor,heor,,heor,,[STEM:heor=oil],heor,oil,0.3,Stem: oil (CONFIRMED)
+f88r.10.5,ol,ol,,ol,,[STEM:ol=oil],ol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.10.6,horholsal,holal,,hol,al,[STEM:hol=flour/grain][SUF:al=substance],holal,flour/grain,0.44999999999999996,Stem: flour (CONFIRMED)
+f88r.11.1,ploeas,plloeas,,plloeas,,[STEM:plloeas=?],plloeas,[plloeas],0.05,
+f88r.11.2,šeosti,šeostri,,šeostri,,[STEM:šeostri=bone],šeostri,bone,0.5,Stem: bone (CONFIRMED)
+f88r.11.3,olstei,olstrei,,olstrei,,[STEM:olstrei=oil],olstrei,oil,0.5,Stem: oil (CONFIRMED)
+f88r.11.4,ctrhol,ctrrrhol,,ctrrrhol,,[STEM:ctrrrhol=flour/grain],ctrrrhol,flour/grain,0.6000000000000001,Stem: flour (CONFIRMED)
+f88r.11.5,ploldi,plloldi,,plloldi,,[STEM:plloldi=oil],plloldi,oil,0.5,Stem: oil (CONFIRMED)
+f88r.11.6,sostoldi,sostroldi,,sostroldi,,[STEM:sostroldi=bone],sostroldi,bone,0.5,Stem: bone (CONFIRMED)
+f88r.12.1,kostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.12.2,hol,hol,,hol,,[STEM:hol=flour/grain],hol,flour/grain,0.3,Stem: flour (CONFIRMED)
+f88r.12.3,kostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.12.4,kostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.12.5,hol,hol,,hol,,[STEM:hol=flour/grain],hol,flour/grain,0.3,Stem: flour (CONFIRMED)
+f88r.12.6,hei,hei,,hei,,[STEM:hei=combine/mix],hei,combine/mix,0.3,Stem: combine (CONFIRMED)
+f88r.12.7,or,or,,or,,[STEM:or=oil],or,oil,0.3,Stem: oil (CONFIRMED)
+f88r.12.8,ain,ain,,ain,,[STEM:ain=?],ain,[ain],0.0,
+f88r.12.9,oldal,olal,,ol,al,[STEM:ol=oil][SUF:al=substance],olal,oil,0.44999999999999996,Stem: oil (CONFIRMED)
+f88r.13.1,istar,istrar,,istrar,,[STEM:istrar=water],istrar,water,0.5,Stem: water (CONFIRMED)
+f88r.13.2,heol,heol,,heol,,[STEM:heol=oil],heol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.13.3,hol,hol,,hol,,[STEM:hol=flour/grain],hol,flour/grain,0.3,Stem: flour (CONFIRMED)
+f88r.13.4,hei,hei,,hei,,[STEM:hei=combine/mix],hei,combine/mix,0.3,Stem: combine (CONFIRMED)
+f88r.13.5,csthei,cstrhei,,cstrhei,,[STEM:cstrhei=combine/mix],cstrhei,combine/mix,0.5,Stem: combine (CONFIRMED)
+f88r.13.6,s,s,,s,,[STEM:s=?],s,[s],0.0,
+f88r.13.7,or,or,,or,,[STEM:or=oil],or,oil,0.3,Stem: oil (CONFIRMED)
+f88r.13.8,šear,šear,,šear,,[STEM:šear=water],šear,water,0.3,Stem: water (CONFIRMED)
+f88r.13.9,ar,ar,,ar,,[STEM:ar=water],ar,water,0.3,Stem: water (CONFIRMED)
+f88r.13.10,alsi,alsi,,alsi,,[STEM:alsi=?],alsi,[alsi],0.0,
+f88r.14.1,stor,stror,,stror,,[STEM:stror=boil/roast],stror,boil/roast,0.5,Stem: boil (CANDIDATE)
+f88r.14.2,hei,hei,,hei,,[STEM:hei=combine/mix],hei,combine/mix,0.3,Stem: combine (CONFIRMED)
+f88r.14.3,kostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.14.4,heol,heol,,heol,,[STEM:heol=oil],heol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.14.5,hodi,hodi,,hodi,,[STEM:hodi=walk/go],hodi,walk/go,0.3,Stem: walk (CONFIRMED)
+f88r.14.6,kostol,ostol,,ost,ol,[STEM:ost=bone][SUF:ol=oil_related],ostol,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.14.7,sthor,strhor,,strhor,,[STEM:strhor=cook/combine],strhor,cook/combine,0.5,Stem: cook (CONFIRMED)
+f88r.14.8,hol,hol,,hol,,[STEM:hol=flour/grain],hol,flour/grain,0.3,Stem: flour (CONFIRMED)
+f88r.14.9,dal,dal,da,l,,[OP:da][STEM:l=?],dal,dose [l],0.25,Operator dose/give/add (CONFIRMED)
+f88r.15.1,isteei,istrei,,istrei,,[STEM:istrei=?],istrei,[istrei],0.15000000000000002,
+f88r.15.2,heor,heor,,heor,,[STEM:heor=oil],heor,oil,0.3,Stem: oil (CONFIRMED)
+f88r.15.3,heotrei,heotrrei,,heotrrei,,[STEM:heotrrei=?],heotrrei,[heotrrei],0.05,
+f88r.15.4,heol,heol,,heol,,[STEM:heol=oil],heol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.15.5,kosteor,ostor,,ost,or,[STEM:ost=bone][SUF:or=oil_related],ostor,bone,0.8500000000000001,Stem: bone (CONFIRMED)
+f88r.15.6,hetrhi,hetrrhi,,hetrrhi,,[STEM:hetrrhi=?],hetrrhi,[hetrrhi],0.05,
+f88r.15.7,opral,oplral,,oplral,,[STEM:oplral=?],oplral,[oplral],0.05,
+f88r.16.1,dar,dar,da,r,,[OP:da][STEM:r=?],dar,dose [r],0.25,Operator dose/give/add (CONFIRMED)
+f88r.16.2,hear,hear,,hear,,[STEM:hear=water],hear,water,0.3,Stem: water (CONFIRMED)
+f88r.16.3,hol,hol,,hol,,[STEM:hol=flour/grain],hol,flour/grain,0.3,Stem: flour (CONFIRMED)
+f88r.16.4,dol,dol,,dol,,[STEM:dol=oil],dol,oil,0.3,Stem: oil (CONFIRMED)
+f88r.16.5,koesteor,stroestreor,,stroestreor,,[STEM:stroestreor=oil],stroestreor,oil,0.7,Stem: oil (CONFIRMED)
+f88r.16.6,heom,heom,,heom,,[STEM:heom=?],heom,[heom],0.0,

@@ -1,0 +1,12 @@
+{
+  "substitutions": [
+    {"pattern": "ck", "replacement": "cst", "priority": 1},
+    {"pattern": "ct", "replacement": "ctr", "priority": 1},
+    {"pattern": "ch", "replacement": "h", "priority": 2},
+    {"pattern": "sh", "replacement": "š", "priority": 2},
+    {"pattern": "ee", "replacement": "e", "priority": 3},
+    {"pattern": "ii", "replacement": "i", "priority": 3},
+    {"pattern": "aiin", "replacement": "ain", "priority": 1}
+  ],
+  "application_order": "longest_first"
+}
