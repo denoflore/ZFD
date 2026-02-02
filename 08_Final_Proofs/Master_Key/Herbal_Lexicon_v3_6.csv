@@ -1,0 +1,147 @@
+name,variant,variant_context,inference,lexical_link,status
+# OPERATORS (action-forcing prefixes)
+Operator-Quantity,qo-,prefix,Quantity / Unit,—,CONFIRMED
+Operator-Quantity,ko-,prefix,Quantity / Unit (variant),—,CONFIRMED
+Operator-Combine,ch-,prefix,Combine / Cook,coquere,CONFIRMED
+Operator-Combine,h-,prefix,Combine / Cook (reduced),coquere,CONFIRMED
+Operator-Soak,sh-,prefix,Soak / Infuse,sorbere,CONFIRMED
+Operator-Soak,š-,prefix,Soak / Infuse (Croatian),sorbere,CONFIRMED
+Operator-Dose,da-,prefix,Dose / Add / Give,dare,CONFIRMED
+Operator-Vessel,ok-,prefix,Vessel / Container,olla / calix,CONFIRMED
+Operator-Vessel,ot-,prefix,Vessel / Container (alt),olla / calix,CONFIRMED
+# STATE MARKERS (non-operator prefixes) - NEW per Friday
+State-Complete,he-,prefix,State / Result / After,—,CONFIRMED
+State-Complete,heo-,prefix,State / Result (extended),—,CONFIRMED
+State-Complete,še-,prefix,Soaked-state / After soaking,—,CONFIRMED
+State-Complete,šeo-,prefix,Soaked-state (extended),—,CONFIRMED
+# SUFFIX FAMILIES - NEW per Friday
+Suffix-Active,edi,suffix,Active process / doing,-are verbs,CONFIRMED
+Suffix-Active,dy,suffix,Active process (variant),-are verbs,CONFIRMED
+Suffix-State,ei,suffix,Resulting state / condition,-atus participle,CONFIRMED
+Suffix-State,ey,suffix,Resulting state (variant),-atus participle,CONFIRMED
+Suffix-State,i,suffix,Adjectival / state,-us/-a adjective,CONFIRMED
+Suffix-State,y,suffix,Adjectival (variant),-us/-a adjective,CONFIRMED
+Suffix-Plural,ain,suffix,Plural / collective,-ae/-i plural,CONFIRMED
+Suffix-Plural,in,suffix,Plural (reduced),-ae/-i plural,CONFIRMED
+Suffix-Container,al,suffix,Container / vessel context,-alis,CONFIRMED
+Suffix-Container,ol,suffix,Oil/liquid context,oleum,CONFIRMED
+# CORE STEMS - Process kernel
+root,ed,core,"Process kernel / do / treat",radix + facere,CONFIRMED
+root,edy,after operators,Root / prepared root,radix,CONFIRMED
+root,rady,after operators,Root / prepared root (full),radix,CONFIRMED
+# BONE STEMS - Slavic register
+bone-slav,kost,free or compound,Bone (Slavic),kost,CONFIRMED
+bone-slav,kosti,with suffix,Bone + state,kost + -i,CONFIRMED
+# BONE STEMS - Medical/Latin register - NEW per Friday
+bone-med,ost,medical context,Bone (medical register),osteo-,CONFIRMED
+bone-med,oste,medical context,Bone (medical extended),osteo-,CONFIRMED
+bone-med,osteo,medical context,Bone (full Latin),osteum,CONFIRMED
+# LIQUIDS
+water,ar,free or after vessels,Water / medium,aqua,CONFIRMED
+oil,ol,free or with vessels,Oil / oleum,oleum,CONFIRMED
+oil,or,free or with vessels,Oil / oleum (variant),oleum,CONFIRMED
+wine,vin,quantity / medium,Wine,vinum,CONFIRMED
+wine,vinor,quantity / medium,Wine (extended),vinum,CONFIRMED
+milk,lac,quantity / medium,Milk,lac,CONFIRMED
+milk,laco,quantity / medium,Milk (extended),lac,CONFIRMED
+honey,mel,adjacent to cooking,Honey,mel,CONFIRMED
+syrup,syr,terminal media,Syrup / potion,syrupus,CANDIDATE
+syrup,syrop,terminal media,Syrup / potion (full),syrupus,CANDIDATE
+broth,ykal,with vessels,Broth / decoction,—,CANDIDATE
+# PROCESS VERBS
+soak,shor,after sh-,Soak / Infuse,sorbere,CONFIRMED
+cook,chor,after ch-,Cook / Combine,coquere,CONFIRMED
+dose,dar,near quantities,Add / Portion / Seed,dare / granum,CANDIDATE
+dose,dain,near quantities,Add (plural),dare,CANDIDATE
+dose,daiin,near quantities,Add (extended),dare,CANDIDATE
+boil,thor,heat contexts,Boil / roast / scorch,torreo,CANDIDATE
+boil,thar,heat contexts,Boil (variant),torreo,CANDIDATE
+heat,kair,with vessels,Fire / heat,carbo,CANDIDATE
+heat,fair,with vessels,Fire (variant),carbo,CANDIDATE
+heat,kar,with vessels,Fire (reduced),carbo,CANDIDATE
+heat,char,with vessels,Char / burn,carbo,CANDIDATE
+# VESSELS
+pot,okal,V-operator context,Pot / jar,olla / calix,CONFIRMED
+pot,okar,V-operator context,Pot (variant),olla / calix,CONFIRMED
+pot,otal,V-operator context,Pot (alt),olla / calix,CONFIRMED
+cauldron,kal,with heat,Cauldron / heated vessel,caldarium,CANDIDATE
+flask,phar,with liquids,Flask / phial,phiala,CANDIDATE
+# MINERALS
+salt,sar,with vessels/roots,Salt,sal,CONFIRMED
+salt,sal,with vessels/roots,Salt (Latin),sal,CONFIRMED
+bitter,amar,with wines,Bitter herb / resin,amarus,CANDIDATE
+sulfur,sul,heat/vessel,Sulfur,sulphur,CONFIRMED
+silver,arg,dose/vessel,Silver / silver salts,argentum,CONFIRMED
+copper,cuper,vessel + heat,Copper / verdigris,cuprum,CONFIRMED
+copper,cupr,vessel + heat,Copper (reduced),cuprum,CONFIRMED
+copper,copr,vessel + heat,Copper (variant),cuprum,CONFIRMED
+iron,fer,heat + roots,Iron / filings,ferrum,CONFIRMED
+saltpeter,salp,with fire,Saltpeter,sal petrae,CONFIRMED
+alite,alum,infusions,Alum,alumen,CONFIRMED
+lime,calc,minerals + fire,Lime / quickite,calx,CANDIDATE
+# HERBS AND BOTANICALS
+flower,flor,after combine,Flower,flos,CONFIRMED
+rose,ros,liquid media,Rose / rosewater,rosa,CONFIRMED
+rose,rosar,liquid media,Rose (extended),rosa,CONFIRMED
+rose,rosol,liquid media,Rose-oil,rosa + oleum,CONFIRMED
+myrrh,myr,with honey/wine,Myrrh resin,myrrha,CONFIRMED
+myrrh,myrrh,with honey/wine,Myrrh (full),myrrha,CONFIRMED
+myrrh,myron,with honey/wine,Myrrh (Greek),myrrha,CONFIRMED
+aloe,aloe,doses/liquids,Aloe,aloe,CONFIRMED
+galbanum,galb,with oils,Galbanum,galbanum,CONFIRMED
+storax,stor,with infusions,Storax,storax,CONFIRMED
+opopanax,opop,dose + fire,Opopanax gum,opopanax,CONFIRMED
+camphor,camph,with oils,Camphor,camphora,CONFIRMED
+anise,anis,spice clusters,Anise,anisum,CONFIRMED
+coriander,cori,spice clusters,Coriander,coriandrum,CONFIRMED
+mint,ment,with wine/syrup,Mint,mentha,CONFIRMED
+sage,salv,with roots,Sage,salvia,CONFIRMED
+fennel,fenn,with anise,Fennel,feniculum,CONFIRMED
+rue,ruta,with bitters,Rue,ruta,CONFIRMED
+hyssop,hyss,with flowers,Hyssop,hyssopus,CONFIRMED
+mallow,malv,root/flower,Mallow,malva,CONFIRMED
+broom,genist,with flowers,Genista (broom),genista,CONFIRMED
+vervain,verb,with infusions,Vervain / verbena,verbena,CONFIRMED
+plantain,plant,with soak/cook,Plantain herb,plantago,CONFIRMED
+cinnamon,canel,with honey/wine,Cinnamon,cannella,CONFIRMED
+cinnamon,canol,with honey/wine,Cinnamon (variant),cannella,CONFIRMED
+ginger,zing,spice clusters,Ginger,zingiber,CONFIRMED
+ginger,zinger,spice clusters,Ginger (full),zingiber,CONFIRMED
+ginger,zinor,spice clusters,Ginger (extended),zingiber,CONFIRMED
+pepper,piper,with doses,Pepper,piper,CONFIRMED
+# ANIMAL PRODUCTS
+wax,cera,with honey/oils,Wax,cera,CONFIRMED
+lard,axun,dose with oils,Lard / animal fat,axungia,CONFIRMED
+lard,axung,dose with oils,Lard (full),axungia,CONFIRMED
+lard,axor,dose with oils,Lard (variant),axungia,CONFIRMED
+cheese,case,with milk/honey,Cheese / curd,caseus,CONFIRMED
+egg,ova,dose sequences,Egg / yolk,ovum,CONFIRMED
+butter,melk,dairy contexts,Butter / clarified fat,—,CANDIDATE
+# PREPARATIONS
+ointment,ung,terminals with oils,Ointment / salve,unguentum,CONFIRMED
+# LUXURY/RARE
+musk,musc,perfume clusters,Musk,muscus,CONFIRMED
+ambergris,ambra,perfume clusters,Ambergris,ambra,CONFIRMED
+pearl,perla,dose + wine,Pearl (ground),perla,CONFIRMED
+coral,coral,powders/doses,Coral,corallium,CONFIRMED
+ivory,ivor,powders/doses,Ivory (dust),ebur → ivor,CONFIRMED
+lapis,lapis,with minerals,Lapis / stone,lapis lazuli,CONFIRMED
+asafoetida,asaf,with resins,Asafoetida,asa foetida,CANDIDATE
+asafoetida,asafot,with resins,Asafoetida (full),asa foetida,CANDIDATE
+asafoetida,asafor,with resins,Asafoetida (variant),asa foetida,CANDIDATE
+spikenard,nard,perfumes,Spikenard,nardus,CONFIRMED
+spikenard,nardi,perfumes,Spikenard (genitive),nardus,CONFIRMED
+spikenard,nardor,perfumes,Spikenard (extended),nardus,CONFIRMED
+# PARTICLES
+particle-in,ty,terminal,Preposition: in/with,in,CANDIDATE
+particle-repeat,aiin,floating,Repetition / plural,iterum,LOW
+# GALLOWS EXPANSIONS - consonant clusters
+gallows-st,st,cluster,Stand / place / position,stare,CANDIDATE
+gallows-tr,tr,cluster,Through / trans,trans,CANDIDATE
+gallows-ctr,ctr,cluster,Center / control,centrum,CANDIDATE
+gallows-hctr,hctr,cluster,Heated-center compound,—,CANDIDATE
+gallows-csth,csth,cluster,Complex cluster,—,CANDIDATE
+# L-PREFIX - possible article/determiner
+determiner,l-,prefix,The / that (determiner),—,CANDIDATE
+determiner,lh-,prefix,The (before h-),—,CANDIDATE
+determiner,lš-,prefix,The (before š-),—,CANDIDATE
