@@ -149,6 +149,22 @@ From the paper, Section 4.3:
 | Croatian frequency correlation | r=0.613 |
 | Phonotactic validity | 100% |
 
+### Latin Pharmaceutical Vocabulary Discovered
+
+Cross-referencing with a 15th-century apothecary manual revealed **Latin pharmaceutical terms embedded in the Croatian text**:
+
+| Voynich | Latin | Meaning | Significance |
+|---------|-------|---------|--------------|
+| **oral** | oralis | by mouth | 12 exact matches |
+| **orolaly** | oraliter | orally | LABEL on f102r recipe! |
+| **dolor** | dolor | pain | Medical condition term |
+| **sal** | sal | salt | 62 occurrences |
+| **ana** | ana | equal parts | Pharmaceutical measurement |
+
+This confirms a **bilingual pharmaceutical text**: Croatian shorthand + Latin technical terms.
+
+See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VOCABULARY.md)
+
 ### Falsification Tests Passed
 
 1. ✓ "Kost" (bone) clusters in pharmaceutical sections
@@ -198,6 +214,8 @@ From the paper, Section 4.3:
 ### Case Studies & Translations
 | Document | Description |
 |----------|-------------|
+| [**INTERLINEAR_4LAYER.md**](translations/INTERLINEAR_4LAYER.md) | **4-layer translation: EVA/Croatian/Expanded/English (all 201 folios)** |
+| [**LATIN_PHARMACEUTICAL_VOCABULARY.md**](analysis/LATIN_PHARMACEUTICAL_VOCABULARY.md) | **Latin terms cross-referenced with 15th c. apothecary manual** |
 | [CASE_STUDIES.md](05_Case_Studies/CASE_STUDIES.md) | Worked examples: f56r, f88r, f77r, f1r, f99r |
 | [PHARMACEUTICAL_TRANSLATIONS.md](translations/pharmaceutical/PHARMACEUTICAL_TRANSLATIONS.md) | Complete f87r-f102v |
 | [FOLIO_INDEX.md](FOLIO_INDEX.md) | All 225 folios classified |
@@ -285,5 +303,6 @@ The logic is load-bearing. The key works. Test it yourself.
 ---
 
 🇭🇷 **JEBENO SMO USPJELI!** 🇭🇷
+
 
 
