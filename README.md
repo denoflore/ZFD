@@ -68,9 +68,11 @@ This is not coincidence. This is the key.
 ### Papers
 | Document | Description |
 |----------|-------------|
+| [**Voynich_Nature_Submission_2026.pdf**](papers/Voynich_Nature_Submission_2026.pdf) | **Nature submission (tracking #2026-02-03422)** |
 | [ZFD_PAPER_DRAFT_v1.pdf](papers/ZFD_PAPER_DRAFT_v1.pdf) | Complete academic paper |
 | [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Full paleographic analysis |
 | [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
+| [voynich_croatian_review.pdf](papers/voynich_croatian_review.pdf) | Croatian linguistic review |
 
 ### Case Studies & Translations
 | Document | Description |
