@@ -139,7 +139,7 @@ ZFD/
 
 Western cryptographers assumed the script was invented or encoded. They only compared to Latin scribal traditions.
 
-The Voynich script is **angular Glagolitic cursive** — a Croatian writing system that was actively used during the manuscript's creation (1404-1438) in Dalmatia and the Republic of Ragusa.
+The Voynich script is **angular Glagolitic cursive**  -  a Croatian writing system that was actively used during the manuscript's creation (1404-1438) in Dalmatia and the Republic of Ragusa.
 
 Nobody checked Croatian manuscripts.
 
@@ -179,7 +179,7 @@ Research data and analysis provided for academic use.
 ---
 
 *"There is nothing in [Latin] history to compare it to."*  
-— Lisa Fagin Davis, paleographer
+ -  Lisa Fagin Davis, paleographer
 
 *Correct. Because it's Croatian.*
 
