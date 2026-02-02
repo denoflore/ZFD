@@ -181,6 +181,8 @@ From the paper, Section 4.3:
 |----------|-------------|
 | [**ZFD_COMPLETE_PAPER.pdf**](papers/ZFD_COMPLETE_PAPER.pdf) | **Complete paper: methodology, three-layer system, validation, falsification** |
 | [**ZFD_COMPLETE_PAPER.md**](papers/ZFD_COMPLETE_PAPER.md) | Same paper in Markdown (renders in browser) |
+| [**ZFD_SUPPLEMENTARY_MATERIALS.pdf**](papers/ZFD_SUPPLEMENTARY_MATERIALS.pdf) | **Supplementary: S1-S7 data tables, case studies, validation protocol** |
+| [**ZFD_SUPPLEMENTARY_MATERIALS.md**](papers/ZFD_SUPPLEMENTARY_MATERIALS.md) | Same supplementary in Markdown (renders in browser) |
 | [Voynich_Nature_Submission_2026.pdf](papers/Voynich_Nature_Submission_2026.pdf) | Nature submission format (tracking #2026-02-03422) |
 | [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Full paleographic analysis |
 | [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
@@ -283,4 +285,5 @@ The logic is load-bearing. The key works. Test it yourself.
 ---
 
 🇭🇷 **JEBENO SMO USPJELI!** 🇭🇷
+
 
