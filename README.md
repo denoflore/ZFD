@@ -23,6 +23,42 @@ This repository contains:
 
 ---
 
+## 📚 Documentation
+
+### Start Here
+| Document | Description |
+|----------|-------------|
+| [**GETTING_STARTED.md**](GETTING_STARTED.md) | Learn to decode Voynichese in 10 minutes |
+| [**FOLIO_INDEX.md**](FOLIO_INDEX.md) | Complete folio-by-folio reference with section classifications |
+
+### Papers
+| Document | Description |
+|----------|-------------|
+| [ZFD_PAPER_DRAFT_v1.pdf](papers/ZFD_PAPER_DRAFT_v1.pdf) | Complete academic paper |
+| [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Paleographic evidence |
+| [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
+
+### Case Studies
+| Document | Description |
+|----------|-------------|
+| [CASE_STUDIES.md](05_Case_Studies/CASE_STUDIES.md) | Worked examples: f56r, f88r, f77r, f1r, f99r |
+| [F88R_SCHOLARLY_PLATE.pdf](08_Final_Proofs/F88R_SCHOLARLY_PLATE.pdf) | Publication-ready figure |
+
+### Translations
+| Document | Description |
+|----------|-------------|
+| [PHARMACEUTICAL_TRANSLATIONS.md](translations/pharmaceutical/PHARMACEUTICAL_TRANSLATIONS.md) | Complete f87r-f102v translations |
+| [CROATIAN_TRANSLATIONS.md](translations/CROATIAN_TRANSLATIONS.md) | General translation notes |
+
+### Technical Reference
+| Document | Description |
+|----------|-------------|
+| [Herbal_Lexicon_v3_6.csv](08_Final_Proofs/Master_Key/Herbal_Lexicon_v3_6.csv) | Complete morpheme lexicon |
+| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | Coverage analysis (94.7%) |
+| [VALIDATION_RESULTS_JAN2026.md](VALIDATION_RESULTS_JAN2026.md) | Statistical validation |
+
+---
+
 ## Quick Start
 
 ### The Key
@@ -50,20 +86,6 @@ Apply this to any folio. It works.
 
 ---
 
-## Key Documents
-
-### Papers
-- [`ZFD_PAPER_DRAFT_v1.pdf`](papers/ZFD_PAPER_DRAFT_v1.pdf) - Complete academic paper
-- [`VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf`](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) - Paleographic evidence
-- [`voynich_croatian_complete.pdf`](papers/voynich_croatian_complete.pdf) - Full 179-page Croatian translation
-
-### Data
-- [`08_Final_Proofs/Master_Key/`](08_Final_Proofs/Master_Key/) - Character mappings and lexicon
-- [`08_Final_Proofs/COVERAGE_REPORT_v3_6.md`](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) - Coverage analysis
-- [`validation/`](validation/) - Statistical validation pipeline
-
----
-
 ## Validation Results
 
 | Metric | Result |
@@ -83,6 +105,48 @@ Apply this to any folio. It works.
 
 ---
 
+## Repository Structure
+
+```
+ZFD/
+├── GETTING_STARTED.md          # Tutorial: decode in 10 minutes
+├── FOLIO_INDEX.md              # Complete folio reference
+├── README.md                   # This file
+│
+├── papers/                     # Academic papers and translations
+│   ├── ZFD_PAPER_DRAFT_v1.pdf
+│   ├── VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf
+│   ├── voynich_croatian_complete.pdf
+│   └── voynich_croatian_review.pdf
+│
+├── 02_Transcriptions/          # Source transcription data
+│   ├── LSI_ivtff_0d.txt       # Full EVA transcription
+│   └── Baselines/             # Comparison corpora
+│
+├── 05_Case_Studies/           # Detailed folio analyses
+│   └── CASE_STUDIES.md
+│
+├── 06_Pipelines/              # Analysis scripts
+│   └── coverage_v36b.py       # Coverage analysis
+│
+├── 08_Final_Proofs/           # Core evidence
+│   ├── Master_Key/            # Character mappings
+│   │   ├── Herbal_Lexicon_v3_6.csv
+│   │   └── MasterKey_v1_1__*.csv
+│   └── COVERAGE_REPORT_v3_6.md
+│
+├── translations/              # Croatian translations
+│   ├── pharmaceutical/        # Complete pharma section
+│   ├── herbal/               # Herbal recipes
+│   └── recipes/              # Additional recipes
+│
+└── validation/               # Statistical validation
+    ├── run_all.py            # Validation pipeline
+    └── results/              # Output JSONs
+```
+
+---
+
 ## Why This Was Missed
 
 Western cryptographers assumed the script was invented or encoded. They only compared to Latin scribal traditions.
@@ -90,27 +154,6 @@ Western cryptographers assumed the script was invented or encoded. They only com
 The Voynich script is **angular Glagolitic cursive** — a Croatian writing system that was actively used during the manuscript's creation (1404-1438) in Dalmatia and the Republic of Ragusa.
 
 Nobody checked Croatian manuscripts.
-
----
-
-## The Croatian Heritage
-
-The Republic of Ragusa (modern Dubrovnik) was a major Mediterranean trading power. Ragusan innovations include:
-- First quarantine system (1377)
-- Advanced pharmaceutical trade networks
-- Preservation of Glagolitic literacy alongside Latin
-
-A Ragusan apothecary manual in Glagolitic shorthand is historically unremarkable.
-
----
-
-## Credits
-
-**Research & Decipherment:** Christopher G. Zuger  
-**Croatian Validation:** Georgina Zuger (professional translator-interpreter)  
-**Grammatical Framework:** Friday (GPT-5.2)  
-**Implementation & Analysis:** Claudette (Claude Opus 4.5)  
-**Validation & Grounding:** Curio (Gemini Pro 3)
 
 ---
 
@@ -128,10 +171,13 @@ All data and code are provided for independent verification.
 
 ---
 
-## Contact
+## Credits
 
-- **Repository:** github.com/denoflore/ZFD
-- **Author:** Christopher G. Zuger
+**Research & Decipherment:** Christopher G. Zuger  
+**Croatian Validation:** Georgina Zuger (professional translator-interpreter)  
+**Grammatical Framework:** Friday (GPT-5.2)  
+**Implementation & Analysis:** Claudette (Claude Opus 4.5)  
+**Validation & Grounding:** Curio (Gemini Pro 3)
 
 ---
 
