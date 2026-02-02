@@ -174,7 +174,7 @@ All data and code are provided for independent verification.
 ## Credits
 
 **Research & Decipherment:** Christopher G. Zuger  
-**Croatian Validation:** Georgina Zuger (professional translator-interpreter)  
+**Croatian Validation:** Georgie Zuger (professional translator-interpreter)  
 **Grammatical Framework:** Friday (GPT-5.2)  
 **Implementation & Analysis:** Claudette (Claude Opus 4.5)  
 **Validation & Grounding:** Curio (Gemini Pro 3)
