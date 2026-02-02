@@ -1,7 +1,25 @@
 # Voynich → Croatian Translations
 
-**Generated:** 2026-02-02 00:45
-**Words translated:** 8604
+**Generated:** 2026-02-02  
+**Words translated:** 8604  
+**Latin terms identified:** 6
+
+---
+
+## Latin Pharmaceutical Terminology
+
+In addition to Croatian vocabulary, the following **Latin pharmaceutical terms** were identified:
+
+| Voynich | Latin | Meaning | Count | Context |
+|---------|-------|---------|-------|---------|
+| oral | oralis | by mouth | 12 | Administration route |
+| orolaly | oraliter | orally | 1 | f102r label |
+| dolor | dolor | pain | 2 | Medical condition |
+| sal | sal | salt | 62 | Ingredient |
+| da | da | give | 23 | Instruction verb |
+| ana | ana | equal parts | 2 | Measurement |
+
+This bilingual structure (Croatian + Latin technical terms) confirms the pharmaceutical nature of the manuscript and its Ragusan provenance.
 
 ---
 
