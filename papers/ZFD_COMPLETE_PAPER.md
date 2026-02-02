@@ -26,6 +26,8 @@ We present a complete decipherment of the Voynich Manuscript (Beinecke MS 408), 
 6. Preregistered falsification criteria, all of which the hypothesis survives
 7. The complete manuscript rendered in readable Croatian orthography (179 pages)
 
+Cross-referencing with a contemporary 15th-century apothecary manual revealed Latin pharmaceutical terminology (oral, dolor, sal, ana) embedded within the Croatian shorthand, confirming the bilingual nature expected of a Ragusan medical professional.
+
 Unlike previous decipherment claims that offer untestable assertions, we provide falsifiable criteria, reproducible methodology, and challenge readers to apply this key to any folio. The solution is not proposed. It is demonstrated.
 
 **Keywords:** Voynich Manuscript, Croatian, Glagolitic, paleography, medieval pharmacy, Ragusa, Dalmatia, shorthand, brachygraphy
