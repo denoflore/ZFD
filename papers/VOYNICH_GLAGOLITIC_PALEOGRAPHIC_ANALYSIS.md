@@ -51,7 +51,7 @@ We adopt a behavioral paleographic methodology that analyzes:
 
 **Angular Glagolitic Exemplars:**
 - Hrvoje's Missal (Missale Hervoiae, c. 1404) - Formal bookhand
-- Vinodolski Zakon (Vinodol Codex, 1288, 15th c. copies) - Legal cursive
+- Vinodolski Zakonik (Vinodol Codex, 1288, 15th c. copies) - Legal cursive
 - Misal kneza Novaka (Missal of Prince Novak, 1368) - Liturgical hand
 - Petrisov Zbornik (Petris's Collection, 15th c.) - Mixed hand
 
@@ -77,7 +77,7 @@ Following the behavioral paleography protocol developed for this study:
 
 ### 3.1 Stroke Logic Comparison
 
-| Feature | Hrvoje's Missal (Formal) | Vinodolski Zakon (Cursive) | Voynich MS |
+| Feature | Hrvoje's Missal (Formal) | Vinodolski Zakonik (Cursive) | Voynich MS |
 |---------|-------------------------|---------------------------|------------|
 | Baseline consistency | Ruled, rigid | Fluid, wavy | Fluid, wavy |
 | Ascender behavior | Tall, angular | Cursive loops | Cursive loops |
@@ -85,7 +85,7 @@ Following the behavioral paleography protocol developed for this study:
 | Word boundaries | Clearly marked | Often ambiguous | Often ambiguous |
 | Right-margin behavior | Justified | Ragged, compressed | Ragged, compressed |
 
-**Finding:** Voynich stroke logic aligns with Glagolitic *cursive* traditions (Vinodolski Zakon), not formal bookhand (Hrvoje's Missal). This is consistent with working documents rather than display manuscripts.
+**Finding:** Voynich stroke logic aligns with Glagolitic *cursive* traditions (Vinodolski Zakonik), not formal bookhand (Hrvoje's Missal). This is consistent with working documents rather than display manuscripts.
 
 ### 3.2 The "Gallows" Characters
 
@@ -230,13 +230,13 @@ The path forward requires collaboration between Voynich researchers and Croatian
 [HM_057.jpg, HM_104.jpg]
 *Note the tall ascending characters, angular letterforms, and ruled baseline characteristic of formal Glagolitic bookhand.*
 
-### Figure 2: Vinodolski Zakon (15th c. copy) - Cursive Angular Glagolitic  
+### Figure 2: Vinodolski Zakonik (15th c. copy) - Cursive Angular Glagolitic  
 [VZ_R4080_017.jpg]
 *Note the fluid baseline, compressed ligatures, and stroke economy characteristic of working legal documents.*
 
 ### Figure 3: Voynich Manuscript f56r - Voynichese
 [voynich_f56r.png]
-*Note the behavioral parallels to Vinodolski Zakon: fluid baseline, compressed clusters, operator-initial word structure.*
+*Note the behavioral parallels to Vinodolski Zakonik: fluid baseline, compressed clusters, operator-initial word structure.*
 
 ### Figure 4: Behavioral Comparison Matrix
 [To be generated: side-by-side stroke analysis]
@@ -304,7 +304,7 @@ Zuger, C. G. (2025). The Zuger Functional Decipherment (ZFD): A Morpheme-Based A
 | Voynich MS | 1404-1438 (C14) | Unknown | Subject |
 | Hrvoje's Missal | c. 1404 | Angular Glagolitic formal | Contemporary comparison |
 | Misal kneza Novaka | 1368 | Angular Glagolitic formal | Earlier comparison |
-| Vinodolski Zakon | 1288 (15th c. copies) | Angular Glagolitic cursive | Cursive comparison |
+| Vinodolski Zakonik | 1288 (15th c. copies) | Angular Glagolitic cursive | Cursive comparison |
 | Petrisov Zbornik | 15th c. | Mixed Glagolitic | Variation comparison |
 
 ---
