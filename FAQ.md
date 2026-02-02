@@ -284,6 +284,124 @@ We're releasing publicly because:
 
 ---
 
+## Adversarial Review: Common Objections and Rebuttals
+
+*These responses were developed through formal adversarial review by multiple AI systems (Gemini Pro 3, GPT-5) tasked with disproving the ZFD. All objections were addressed; no counter-rebuttals were offered.*
+
+---
+
+### Q: If the text is Croatian shorthand, how can Latin words like "oral" appear? Doesn't a script need a consistent value?
+
+This confuses a shorthand system with a substitution cipher. **They're not the same thing.**
+
+15th-century apothecaries learned pharmacy from Latin texts but worked in vernacular languages. They used Latin technical terms as **loanwords** embedded in their native language - exactly like a modern English-speaking doctor says "Take this medication *orally*" without "switching" to Latin.
+
+"Orolaly" (oraliter = orally) is a Latin loanword written in Croatian phonetic orthography. There's no "switching mechanism" needed because there's no switching - it's **code-mixing**, which is universal in technical registers across all languages and all historical periods.
+
+The 15th-century apothecary manual we cross-referenced from the same Adriatic milieu shows this identical bilingual pattern: Croatian practical instructions with Latin technical terminology.
+
+---
+
+### Q: If "kost" means "bone," why does it appear in the astronomy sections?
+
+Two responses:
+
+**First, the distribution data.** Kost-cluster density is 847 in pharmaceutical sections, 312 in biological, and 89 in astronomical - a **9.5:1 pharmaceutical-to-astronomical ratio**. It doesn't appear "frequently" in astronomy. It appears overwhelmingly in pharmacy, with minor presence elsewhere.
+
+**Second, the minor presence is expected.** Medieval cosmological texts routinely used bodily metaphors - the "bones" of celestial arrangement, the "body" of the heavens. Astrological medicine (iatromathematics) explicitly linked body parts to zodiac signs. A bone reference in an astrological-medical context is historically normal, not anomalous.
+
+---
+
+### Q: The interlinear translations look like "word salad" - where's the syntax?
+
+This objection cherry-picks **incomplete translation lines** (those marked with "?" for untranslated tokens) and presents them as if they're finished translations.
+
+Completed translations show standard recipe syntax:
+
+> **f88r:** "Bone preparation: cook in oil, strain, add salted water. Give with oil."
+
+> **f102r labels:** "Oraliter" [orally] - administration route instruction.
+
+Medieval shorthand is telegraphic by nature. Tironian notes, medieval Latin abbreviations, and every known professional shorthand system produce similarly compressed text. The expectation of fully inflected prose is anachronistic.
+
+---
+
+### Q: Angular Glagolitic is rigid and angular - Voynich glyphs have loops and curves. How is that a match?
+
+This objection compares Voynich to **inscriptional** or **printed** Glagolitic (e.g., the Baška Tablet, the Missale Romanum Glagolitice). That's comparing a medieval doctor's handwritten notes to Times New Roman.
+
+We compare to **cursive documentary Glagolitic** from Dalmatian administrative and legal texts - which has loops, flourishes, vertical extensions, and considerable variation from the formal angular tradition.
+
+Our approach uses **behavioral paleography** (stroke sequence, pen lifts, ligature patterns) rather than shape matching. When you analyze HOW the scribe wrote rather than WHAT the glyphs look like, the Glagolitic connection is clear.
+
+---
+
+### Q: The word "da" appears too frequently to be the imperative "give."
+
+Correct - because "da" isn't only the imperative "give."
+
+In Croatian, **"da" has at least four grammatical functions**:
+
+1. **Conjunction** "that/to" (the most common conjunction in Croatian)
+2. **Modal particle** for subjunctive mood
+3. **Imperative** "give" (daj/dati)
+4. **Affirmative** "yes"
+
+Its high frequency is exactly what we'd expect from a Croatian text - "da" is to Croatian what "that" is to English. The objection assumes a single meaning and then argues the frequency is wrong for that meaning. That's a misunderstanding of Croatian grammar, not a flaw in the decipherment.
+
+---
+
+### Q: Isn't this just pareidolia? You assigned pharmacy words to common glyphs, so you found pharmacy words.
+
+**The causation runs in the opposite direction.**
+
+The decipherment process was:
+1. Identify the script as Glagolitic through behavioral paleography
+2. Apply the character key derived from script identification
+3. Read the resulting Croatian orthography
+4. Recognize "kostedi" as kost (bone) + past participle suffix
+5. **THEN** observe that it clusters in pharmaceutical sections
+
+The pharmaceutical interpretation **emerged from** the decipherment. We didn't start with "this should be a pharmacy text" and work backwards.
+
+Additionally: pareidolia cannot explain 94.7% morphological coverage, 100% phonotactic validity, native speaker confirmation, spatial correlation (p < 0.001), and 68.6% CATMuS medieval stem overlap. All simultaneously. By chance.
+
+---
+
+### Q: What about the "Quevedo Protocol" / mechanical volvella theory?
+
+The Quevedo Protocol (Quevedo Vinueza, January 2026, Zenodo) proposes that the Voynich text was generated by a tri-rotor mechanical disk ("Syntaxis Volvella") that compressed Latin pharmaceutical instructions into mechanical coordinates.
+
+**Points of agreement:**
+- Both theories identify the content as pharmaceutical
+- Both recognize the gallows characters have special structural functions
+- Both note the repetitive, formulaic structure as functional rather than random
+
+**Where it diverges:**
+- **No physical evidence:** The reconstructed device has never been found, depicted, or referenced in any contemporary source
+- **No translations:** The protocol produces Latin fragments but cannot generate coherent full-page translations
+- **No script analysis:** No paleographic explanation for why the glyphs look the way they do
+- **No native speaker validation:** No linguist confirms the readings
+- **"daiin" as noise:** Claims the most frequent token is a mechanical artifact (machine "resting state"), whereas ZFD decodes it as "dain" (dose/portion) - a meaningful pharmaceutical term
+
+**The ZFD produces readable Croatian text validated by a native speaker at 94.7% coverage. That's the difference between hypothesis and demonstration.**
+
+---
+
+### Q: How do you respond to the claim that this is a "complex case of pareidolia constrained by a specific lexicon"?
+
+With five questions:
+
+1. Explain why 94.7% of tokens resolve to valid Croatian morphemes **by chance**
+2. Explain why the character key produces phonotactically valid Croatian 100% of the time **by chance**
+3. Explain why "orolaly" appears as a **label on a recipe page** - exactly where "orally" would appear in a contemporary apothecary manual - **by chance**
+4. Explain why a native Croatian speaker with 40+ years professional translation experience confirms the readings **by chance**
+5. Explain why the CATMuS medieval Latin database shows 68.6% stem overlap with our Croatian readings **by chance**
+
+The probability of all five being coincidence is effectively zero.
+
+---
+
 ## Getting Involved
 
 ### Q: How can I help?
@@ -314,4 +432,4 @@ See [CONTRIBUTOR_GUIDE.md](CONTRIBUTOR_GUIDE.md) for details.
 
 ---
 
-*FAQ version 1.0 | February 2026*
+*FAQ version 2.0 | February 2026 | Updated with adversarial review responses and comparative analysis*
