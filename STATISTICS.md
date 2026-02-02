@@ -21,6 +21,19 @@ We're not in "interesting correlation" territory. We're not in "warrants further
 
 We're in **"the probability this is coincidence is effectively zero"** territory.
 
+## Latin Pharmaceutical Terminology
+
+Beyond Croatian morphology, we found **Latin pharmaceutical terms** embedded in the text:
+
+| Term | Latin | Meaning | Count |
+|------|-------|---------|-------|
+| oral | oralis | by mouth | 12 |
+| orolaly | oraliter | orally | 1 |
+| dolor | dolor | pain | 2 |
+| sal | sal | salt | 62 |
+
+This bilingual structure (Croatian + Latin technical terms) is exactly what we expect from a 15th-century Ragusan apothecary.
+
 ## The Challenge
 
 Apply the character key to any folio. 
