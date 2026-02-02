@@ -214,7 +214,7 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 ### Case Studies & Translations
 | Document | Description |
 |----------|-------------|
-| [**INTERLINEAR_4LAYER.md**](translations/INTERLINEAR_4LAYER.md) | **4-layer translation: EVA/Croatian/Expanded/English (all 201 folios)** |
+| [**INTERLINEAR_QUADRILINGUAL.md**](translations/INTERLINEAR_QUADRILINGUAL.md) | **Quadrilingual interlinear: EVA/Croatian/Latin-Croatian/English (Latin terms marked) (all 201 folios)** |
 | [**LATIN_PHARMACEUTICAL_VOCABULARY.md**](analysis/LATIN_PHARMACEUTICAL_VOCABULARY.md) | **Latin terms cross-referenced with 15th c. apothecary manual** |
 | [CASE_STUDIES.md](05_Case_Studies/CASE_STUDIES.md) | Worked examples: f56r, f88r, f77r, f1r, f99r |
 | [PHARMACEUTICAL_TRANSLATIONS.md](translations/pharmaceutical/PHARMACEUTICAL_TRANSLATIONS.md) | Complete f87r-f102v |
