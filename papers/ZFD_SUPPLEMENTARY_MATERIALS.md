@@ -616,9 +616,98 @@ Glagolitic script was used continuously in Dalmatia from the 9th-16th centuries:
 
 A pharmaceutical manual in Glagolitic shorthand from this region is historically unremarkable.
 
+
+---
+
+# S8: Latin Pharmaceutical Vocabulary
+
+## S8.1 Discovery Context
+
+Cross-referencing with a 15th-century apothecary manual (LAT_ENG_Pharmamiscellany_2066895) revealed Latin pharmaceutical terminology embedded within the Croatian shorthand system.
+
+## S8.2 Exact Latin Matches
+
+Words appearing in the Voynich EXACTLY as in Latin pharmaceutical texts:
+
+| Voynich Word | Latin Term | Meaning | Category | Count | Folios |
+|--------------|------------|---------|----------|-------|--------|
+| oral | oralis | by mouth | Administration | 12 | f88r, f103r, f105r, f108v, f112r |
+| orolaly | oraliter | orally (adverb) | Administration | 1 | f102r |
+| dolor | dolor | pain | Condition | 2 | f84v, f114r |
+| sal | sal | salt | Ingredient | 62 | f71r, f76r, f81v |
+| da | da | give (imperative) | Instruction | 23 | f31r, f70r |
+| ana | ana | equal parts | Measurement | 2 | f111v, f116r |
+
+## S8.3 "Oral" Variants
+
+24 variants of the Latin "oral" (by mouth) were identified:
+
+| Variant | Count | Interpretation |
+|---------|-------|----------------|
+| oral | 12 | Exact Latin |
+| orolaly | 1 | Latin adverb "oraliter" |
+| oraly | 2 | Croatian-ized form |
+| soraly | 1 | "s-" prefix + oral |
+| choraly | 1 | "ch-" prefix + oral |
+| cthoral | 1 | Compound form |
+| poral | 1 | "p-" prefix + oral |
+| loral | 1 | "l-" prefix + oral |
+| doral | 1 | "d-" prefix + oral |
+| okoral | 1 | "ok-" prefix + oral |
+| loralody | 1 | Extended form |
+| ... | ... | (additional variants) |
+
+## S8.4 Context Analysis: f102r
+
+Folio f102r contains "orolaly" as a LABEL on a pharmaceutical recipe page:
+
+```
+=== Folio f102r ===
+[Labels]
+dordod
+orolaly      <-- ORALLY (administration route)
+dardsh
+otodeeodor
+...
+```
+
+This matches the apothecary manual pattern where administration routes appear as recipe labels.
+
+## S8.5 Comparative Apothecary Manual Terminology
+
+From the 15th-century apothecary manual:
+
+| Latin Term | English | Voynich Match |
+|------------|---------|---------------|
+| Recipe | Take | - |
+| Coque | Cook | h- (kuhati) |
+| Misce | Mix | - |
+| Da | Give | da |
+| Bibe | Drink | - |
+| Oral | By mouth | oral, orolaly |
+| Ana | Equal parts | ana |
+| Sal | Salt | sal |
+| Aqua | Water | ar (voda) |
+| Oleum | Oil | ol (ulje) |
+
+## S8.6 Significance
+
+The presence of Latin pharmaceutical terminology:
+
+1. **Confirms pharmaceutical content** - These are professional medical terms
+2. **Establishes bilingual context** - Latin technical + Croatian practical
+3. **Supports Ragusan provenance** - Expected for Adriatic apothecary
+4. **Validates ZFD methodology** - Croatian/Latin coexistence is natural, not forced
+
+## S8.7 Cross-Reference
+
+Full analysis available in: [LATIN_PHARMACEUTICAL_VOCABULARY.md](../analysis/LATIN_PHARMACEUTICAL_VOCABULARY.md)
+
+
 ---
 
 **End of Supplementary Materials**
 
 *For questions or additional data requests, contact via GitHub:*
 *https://github.com/denoflore/ZFD*
+
