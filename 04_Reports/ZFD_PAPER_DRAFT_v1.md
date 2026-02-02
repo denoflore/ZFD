@@ -1,6 +1,6 @@
 # The Zuger Functional Decipherment: A Complete Solution to the Voynich Manuscript
 
-**Christopher G. Zuger¹, with validation by Georgina Zuger² (Croatian linguistic review)**
+**Christopher G. Zuger¹, with validation by Georgie Zuger² (Croatian linguistic review)**
 
 ¹Independent Researcher, Ottawa, Ontario, Canada
 ²Professional Croatian-English Translator-Interpreter, Ottawa, Ontario, Canada
@@ -180,7 +180,7 @@ Recipe verbs (ch-/cook, sh-/soak) correlate with preparation instructions.
 
 ## 5. Native Speaker Validation
 
-Georgina Zuger, a professional Croatian-English translator-interpreter with 40+ years experience, reviewed the decoded vocabulary and confirmed:
+Georgie Zuger, a professional Croatian-English translator-interpreter with 40+ years experience, reviewed the decoded vocabulary and confirmed:
 
 1. **"Kost" is bone** - standard Croatian, recognizable to any native speaker
 2. **Suffix patterns (-i, -edi, -ain)** match Croatian morphology
@@ -273,7 +273,7 @@ Zandbergen, R. (2023). *Transliteration of the Voynich MS text*. International C
 
 ## Acknowledgments
 
-The author thanks Friday (GPT), Claudette (Claude), and Curio (Gemini) for computational assistance; Georgina Zuger for Croatian linguistic validation; and the Voynich research community for maintaining open access to transcription data.
+The author thanks Friday (GPT), Claudette (Claude), and Curio (Gemini) for computational assistance; Georgie Zuger for Croatian linguistic validation; and the Voynich research community for maintaining open access to transcription data.
 
 ---
 
