@@ -179,8 +179,9 @@ From the paper, Section 4.3:
 ### Papers
 | Document | Description |
 |----------|-------------|
-| [**Voynich_Nature_Submission_2026.pdf**](papers/Voynich_Nature_Submission_2026.pdf) | **Nature submission (tracking #2026-02-03422)** |
-| [ZFD_PAPER_DRAFT_v1.pdf](papers/ZFD_PAPER_DRAFT_v1.pdf) | Complete academic paper |
+| [**ZFD_COMPLETE_PAPER.pdf**](papers/ZFD_COMPLETE_PAPER.pdf) | **Complete paper: methodology, three-layer system, validation, falsification** |
+| [**ZFD_COMPLETE_PAPER.md**](papers/ZFD_COMPLETE_PAPER.md) | Same paper in Markdown (renders in browser) |
+| [Voynich_Nature_Submission_2026.pdf](papers/Voynich_Nature_Submission_2026.pdf) | Nature submission format (tracking #2026-02-03422) |
 | [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Full paleographic analysis |
 | [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
 | [voynich_croatian_review.pdf](papers/voynich_croatian_review.pdf) | Croatian linguistic review |
@@ -282,3 +283,4 @@ The logic is load-bearing. The key works. Test it yourself.
 ---
 
 🇭🇷 **JEBENO SMO USPJELI!** 🇭🇷
+
