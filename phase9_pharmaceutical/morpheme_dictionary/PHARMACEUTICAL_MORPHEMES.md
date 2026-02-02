@@ -6,6 +6,24 @@
 
 ---
 
+## Latin Pharmaceutical Terms
+
+In addition to Croatian morphemes, the following **Latin terms** appear in the pharmaceutical sections:
+
+| Term | Latin | Meaning | Type |
+|------|-------|---------|------|
+| oral | oralis | by mouth | Administration |
+| orolaly | oraliter | orally | Administration |
+| dolor | dolor | pain | Condition |
+| sal | sal | salt | Ingredient |
+| da | da | give | Instruction |
+| ana | ana | equal parts | Measurement |
+
+These Latin terms represent standard pharmaceutical vocabulary embedded within the Croatian shorthand system.
+
+---
+
+
 ## Statistics
 
 | Metric | Value |
