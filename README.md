@@ -4,6 +4,7 @@
 **Status:** COMPLETE ✓  
 **Coverage:** 94.7% morphological token coverage  
 Colloquially - that means for every 100 words ~95 resolve to Croatian.
+
 **Validation:** Native speaker confirmed (Croatian)  
 **Date:** February 2026
 
