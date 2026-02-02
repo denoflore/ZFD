@@ -261,3 +261,50 @@ Each case study demonstrates:
 
 *Case studies version 1.0 | February 2026*
 *Christopher G. Zuger | github.com/denoflore/ZFD*
+
+---
+
+## Case Study: f102r (Latin Administration Labels)
+### "The Orally Administered Recipe"
+
+**Section:** Pharmaceutical  
+**Content:** Recipe with administration labels  
+**Key Finding:** Latin pharmaceutical terminology
+
+### Labels Section (EVA)
+```
+dordod
+orolaly
+dardsh
+```
+
+### Decoding with Latin Identification
+
+| EVA | Reading | Language | Meaning |
+|-----|---------|----------|---------|
+| dordod | dordod | Croatian? | [uncertain] |
+| **orolaly** | **ORALITER** | **Latin** | **"orally" (by mouth)** |
+| dardsh | dardš | Croatian | give + [suffix] |
+
+### Significance
+
+The word "orolaly" is not Croatian - it is the Latin pharmaceutical term **oraliter** meaning "orally" or "by mouth."
+
+This appears as a LABEL on a recipe page, indicating the administration route - exactly as seen in contemporary 15th-century apothecary manuals.
+
+### Other Latin Terms Found
+
+| Voynich | Latin | Meaning | Folios |
+|---------|-------|---------|--------|
+| oral | oralis | by mouth | f88r, f103r, f105r |
+| dolor | dolor | pain | f84v, f114r |
+| sal | sal | salt | throughout |
+| ana | ana | equal parts | f111v, f116r |
+
+### Conclusion
+
+The Voynich Manuscript is a **bilingual pharmaceutical text**:
+- Croatian shorthand for preparation instructions
+- Latin terminology for technical medical terms
+
+This is exactly what we would expect from a 15th-century Ragusan apothecary who learned pharmacy from Latin texts but worked in a Croatian-speaking environment.
