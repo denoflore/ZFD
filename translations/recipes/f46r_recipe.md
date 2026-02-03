@@ -1,0 +1,140 @@
+# F46R: Recipe Extraction
+
+**Section:** Herbal A
+**Confidence:** 85%
+**Words:** 418 total, 132 recipe-relevant
+
+---
+
+## Ingredients Identified
+
+| Stem | English | Latin | Category | Occurrences | Status |
+|------|---------|-------|----------|-------------|--------|
+| **ol** | oil | *oleum* | liquid | 29 | CONFIRMED |
+| **ar** | water | *aqua* | liquid | 28 | CONFIRMED |
+| **kost** | bone | *os/ossis* | animal | 21 | CONFIRMED |
+| **or** | oil | *oleum* | liquid | 11 | CONFIRMED |
+
+## Preparation Methods
+
+| Stem | English | Category | Occurrences |
+|------|---------|----------|-------------|
+| **dain** | dose/portion | dosing | 10 |
+| **hedi** | cook/prepare | heat | 9 |
+| **dar** | dose/give | dosing | 7 |
+| **dal** | then/next | sequence | 5 |
+| **šol** | soak in oil | liquid | 5 |
+| **šedi** | soak/infuse | liquid | 2 |
+| **hol** | combine | mixing | 2 |
+| **kal** | cauldron/heat vessel | equipment | 2 |
+| **šor** | strain/soak | liquid | 1 |
+
+## Running Text (Interlinear)
+
+```
+EVA: pcheocphy qotedy chety dy chepchx yfcheky osaiin shee qoteol daiin shee dy daly
+CRO: pheocplly kotredi hetry dy heplhx yprhesty osain še kotreol dain še dy daly
+EXP: pheocplly kotredi hetry dy heplhx yprhesty osain še kotreol DA [Lat.] še dy DA [Lat.]
+ENG: ? ? ? ? ? ? ? ? ? give ? ? give
+```
+
+```
+EVA: rodaiin sheeoly qoor sheoteoly chckhy daiin sheksheet shedy xor aiin sheckhy
+CRO: rodain šeoly koor šeotreoly hcstry dain šestšet šedi xor ain šecstry
+EXP: rodain šeoly koor šeotreoly hcstry DA [Lat.] šestšet močeno xor ain šecstry
+ENG: ? ? ? ? ? give ? soaked ? ? ?
+```
+
+```
+EVA: daiin shor ykal chckhy daiin she dalshedo qokol s aiin shee ykar daiin
+CRO: dain šor ystal hcstry dain še dalšedo kostol s ain še ystar dain
+EXP: DA [Lat.] s-ulje ystal hcstry DA [Lat.] še daj-tekšedo kost-ol s ain še ystar DA [Lat.]
+ENG: give with oil ? ? give ? give liquid+šedo bone-oil ? ? ? ? give
+```
+
+```
+EVA: tshedar chol kaldy chckhy qokaldy chekal chckhy sheky sheky dalocthhy
+CRO: tšedar hol kaldy hcstry kostaldy hestal hcstry šesty šesty daloctrrhy
+EXP: tšedar kuh-ulje kaldy hcstry kost-aldy hestal hcstry šesty šesty daj-tekoctrrhy
+ENG: ? cook+oil ? ? bone-vessel+dy ? ? ? ? give liquid+octrrhy
+```
+
+```
+EVA: okeedy shekeey ykey shedy chdy shky qotsheod ytedy ytey cheor
+CRO: ostedi šestei ystey šedi hdy šsty kotršeod ytredi ytrey heor
+EXP: kost-edi šestei ystey močeno hdy šsty kotršeod ytredi ytrey heor
+ENG: bone-prepared ? ? soaked ? ? ? ? ? ?
+```
+
+```
+EVA: tedy dytedy shee keedy ypchedy chdalor sheedo odor aiin opchedy dykedy chdam
+CRO: tedi dytredi še kedi yplhedi hdalor šedo odor ain oplhedi dystedi hdam
+EXP: tedi dytredi še kedi yplhedi hdalor šedo odor ain oplhedi dystedi DA [Lat.]
+ENG: ? ? ? ? ? ? ? ? ? ? ? give
+```
+
+```
+EVA: xol shol qokaiin ytchdy qokchdy s ar chdy cthy otedy chedy qokar chcthhy m
+CRO: xol šol kostain ytrhdy kosthdy s ar hdy ctrry otredi hedi kostar hctrrhy m
+EXP: xol s-ulje kost-ain ytrhdy kosthdy s voda hdy ctrry priprava kuhano kost-ar hctrrhy m
+ENG: ? with oil bone [noun] ? ? ? water ? ? preparation cooked bone-water ? ?
+```
+
+```
+EVA: dsheol chy chckhy shy shdy chky chody cthdy s cheos chey
+CRO: dšeol hy hcstry šy šdy hsty hody ctrrdy s heos hey
+EXP: dšeol hy hcstry šy šdy hsty hody ctrrdy s heos hey
+ENG: ? ? ? ? ? ? ? ? ? ? ?
+```
+
+```
+EVA: tshdy shdy feeedy dyfchdy shol kchs ytaly fchdy dy karal shky yty dardam
+CRO: tšdy šdy feedi dyprhdy šol khs ytraly fhdy dy karal šsty ytry dardam
+EXP: tšdy šdy feedi dyprhdy s-ulje khs ytraly fhdy dy karal šsty ytry dardam
+ENG: ? ? ? ? with oil ? ? ? ? ? ? ? dose/gift+dam
+```
+
+```
+EVA: tchey shy chkal chd qokdy shdy aloldy olaiir sheol
+CRO: they šy hstal hd kostdy šdy aloldy olair šeol
+EXP: they šy hstal hd kostdy šdy tekućinaoldy uljeair šeol
+ENG: ? ? ? ? ? ? liquid+oldy oil+air ?
+```
+
+```
+EVA: pchdair shd shepdaiin shdy oifhedy qopchdy ldy shear opdarshdy sayfchedy
+CRO: phdair šd šepldain šdy oiprhedi koplhdy ldy šear opldaršdy sayprhedi
+EXP: phdair šd šepldain šdy oiprhedi koplhdy ldy šear opldaršdy sayprhedi
+ENG: ? ? ? ? ? ? ? ? ? ?
+```
+
+```
+EVA: techy daiin sheockhy choky r aiin ches shey kar sheckhy chdy chckham
+CRO: tehy dain šeocstry hosty r ain hes šey kar šecstry hdy hcstram
+EXP: tehy DA [Lat.] šeocstry hosty r ain hes šey kar šecstry hdy hcstram
+ENG: ? give ? ? ? ? ? ? ? ? ? ?
+```
+
+```
+EVA: arakaiin shol okeey chol dar ols lain y
+CRO: arastain šol ostei hol dar ols lain y
+EXP: vodaastain s-ulje kostei kuh-ulje DA [Lat.] uljes lain y
+ENG: water+astain with oil bone+ei cook+oil give oil+s ? ?
+```
+
+```
+EVA: otshealkar sholkshy qokar cheol okal dam chdam qokam
+CRO: otršealstar šolstšy kostar heol ostal dam hdam kostam
+EXP: otrov/pripravašealstar s-uljestšy kost-ar heol kostal DA [Lat.] DA [Lat.] kostam
+ENG: extract/prep+šealstar with oil+stšy bone-water ? bone+al give give ?
+```
+
+```
+EVA: qokar sholkal olkeody
+CRO: kostar šolstal olsteody
+EXP: kost-ar s-uljestal uljesteody
+ENG: bone-water with oil+stal oil+steody
+```
+
+---
+*Generated by ZFD Recipe Extraction Pipeline v1.0*
