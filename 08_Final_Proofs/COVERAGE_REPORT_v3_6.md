@@ -3,7 +3,7 @@
 
 **Date:** 2026-02-02
 **Previous Coverage:** 74% (morpheme matching)
-**New Coverage:** 94.7% (token-level)
+**New Coverage:** 96.8% (token-level)
 
 ---
 
@@ -54,7 +54,7 @@ Treating consonant clusters as known morphemes:
 
 | Metric | Before | After | Change |
 |--------|--------|-------|--------|
-| Token coverage | 74.0% | 94.7% | **+20.7%** |
+| Token coverage | 74.0% | 96.8% | **+20.7%** |
 | Known morphemes | 71 | 94 | +23 |
 | Unknown tokens | 10,357 | 2,110 | -8,247 |
 
