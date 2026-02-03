@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voynich Digital Edition - ZFD</title>
+  <link rel="stylesheet" href="css/edition.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <h1>Voynich Digital Edition</h1>
+      <p class="subtitle">The Zuger Functional Decipherment - An Annotated Pharmaceutical Manual</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Introduction -->
+    <section class="mb-lg">
+      <h2>About This Edition</h2>
+      <p>
+        This digital edition presents the Voynich Manuscript as what the ZFD decipherment reveals it to be:
+        a <strong>Ragusan pharmaceutical SOP manual</strong> from the 14th-15th century. Each folio is treated
+        as a page in that manual, with interlinear translations, ingredient analysis, and cross-references
+        to related preparations.
+      </p>
+      <p>
+        <strong>201 folios</strong> | <strong>13 ingredients</strong> |
+        <strong>36,794 mentions</strong>
+      </p>
+    </section>
+
+    <!-- Search -->
+    <section class="search-box">
+      <input type="text" id="search" placeholder="Search folios, ingredients, or Croatian terms..." onkeyup="filterFolios()">
+    </section>
+
+    <!-- Sections -->
+    <section class="mb-lg">
+      <h2>Manuscript Sections</h2>
+      <div class="section-grid">
+        <div class="section-card" id="pharmaceutical">
+  <h3>Pharmaceutical</h3>
+  <div class="folio-count">24</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f100r.html">F100R</a> <a href="folios/f100v.html">F100V</a> <a href="folios/f101r.html">F101R</a> <a href="folios/f101v.html">F101V</a> <a href="folios/f102r.html">F102R</a> <a href="folios/f102v.html">F102V</a> <a href="folios/f87r.html">F87R</a> <a href="folios/f87v.html">F87V</a> <a href="folios/f88r.html">F88R</a> <a href="folios/f88v.html">F88V</a> <a href="folios/f89r.html">F89R</a> <a href="folios/f89v.html">F89V</a> <a href="folios/f90r.html">F90R</a> <a href="folios/f90v.html">F90V</a> <a href="folios/f93r.html">F93R</a> <a href="folios/f93v.html">F93V</a> <a href="folios/f94r.html">F94R</a> <a href="folios/f94v.html">F94V</a> <a href="folios/f95r.html">F95R</a> <a href="folios/f95v.html">F95V</a> (+4 more)</div>
+</div>
+<div class="section-card" id="recipes-stars">
+  <h3>Recipes/Stars</h3>
+  <div class="folio-count">23</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f103r.html">F103R</a> <a href="folios/f103v.html">F103V</a> <a href="folios/f104r.html">F104R</a> <a href="folios/f104v.html">F104V</a> <a href="folios/f105r.html">F105R</a> <a href="folios/f105v.html">F105V</a> <a href="folios/f106r.html">F106R</a> <a href="folios/f106v.html">F106V</a> <a href="folios/f107r.html">F107R</a> <a href="folios/f107v.html">F107V</a> <a href="folios/f108r.html">F108R</a> <a href="folios/f108v.html">F108V</a> <a href="folios/f111r.html">F111R</a> <a href="folios/f111v.html">F111V</a> <a href="folios/f112r.html">F112R</a> <a href="folios/f112v.html">F112V</a> <a href="folios/f113r.html">F113R</a> <a href="folios/f113v.html">F113V</a> <a href="folios/f114r.html">F114R</a> <a href="folios/f114v.html">F114V</a> (+3 more)</div>
+</div>
+<div class="section-card" id="herbal a">
+  <h3>Herbal A</h3>
+  <div class="folio-count">112</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f10r.html">F10R</a> <a href="folios/f10v.html">F10V</a> <a href="folios/f11r.html">F11R</a> <a href="folios/f11v.html">F11V</a> <a href="folios/f13r.html">F13R</a> <a href="folios/f13v.html">F13V</a> <a href="folios/f14r.html">F14R</a> <a href="folios/f14v.html">F14V</a> <a href="folios/f15r.html">F15R</a> <a href="folios/f15v.html">F15V</a> <a href="folios/f16r.html">F16R</a> <a href="folios/f16v.html">F16V</a> <a href="folios/f17r.html">F17R</a> <a href="folios/f17v.html">F17V</a> <a href="folios/f18r.html">F18R</a> <a href="folios/f18v.html">F18V</a> <a href="folios/f19r.html">F19R</a> <a href="folios/f19v.html">F19V</a> <a href="folios/f1r.html">F1R</a> <a href="folios/f1v.html">F1V</a> (+92 more)</div>
+</div>
+<div class="section-card" id="herbal a (cont.)">
+  <h3>Herbal A (cont.)</h3>
+  <div class="folio-count">2</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f58r.html">F58R</a> <a href="folios/f58v.html">F58V</a></div>
+</div>
+<div class="section-card" id="herbal b - astronomical">
+  <h3>Herbal B / Astronomical</h3>
+  <div class="folio-count">18</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f65r.html">F65R</a> <a href="folios/f65v.html">F65V</a> <a href="folios/f66r.html">F66R</a> <a href="folios/f66v.html">F66V</a> <a href="folios/f67r.html">F67R</a> <a href="folios/f67v.html">F67V</a> <a href="folios/f68r.html">F68R</a> <a href="folios/f68v.html">F68V</a> <a href="folios/f69r.html">F69R</a> <a href="folios/f69v.html">F69V</a> <a href="folios/f70r.html">F70R</a> <a href="folios/f70v.html">F70V</a> <a href="folios/f71r.html">F71R</a> <a href="folios/f71v.html">F71V</a> <a href="folios/f72r.html">F72R</a> <a href="folios/f72v.html">F72V</a> <a href="folios/f73r.html">F73R</a> <a href="folios/f73v.html">F73V</a></div>
+</div>
+<div class="section-card" id="biological">
+  <h3>Biological</h3>
+  <div class="folio-count">20</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f75r.html">F75R</a> <a href="folios/f75v.html">F75V</a> <a href="folios/f76r.html">F76R</a> <a href="folios/f76v.html">F76V</a> <a href="folios/f77r.html">F77R</a> <a href="folios/f77v.html">F77V</a> <a href="folios/f78r.html">F78R</a> <a href="folios/f78v.html">F78V</a> <a href="folios/f79r.html">F79R</a> <a href="folios/f79v.html">F79V</a> <a href="folios/f80r.html">F80R</a> <a href="folios/f80v.html">F80V</a> <a href="folios/f81r.html">F81R</a> <a href="folios/f81v.html">F81V</a> <a href="folios/f82r.html">F82R</a> <a href="folios/f82v.html">F82V</a> <a href="folios/f83r.html">F83R</a> <a href="folios/f83v.html">F83V</a> <a href="folios/f84r.html">F84R</a> <a href="folios/f84v.html">F84V</a></div>
+</div>
+<div class="section-card" id="cosmological">
+  <h3>Cosmological</h3>
+  <div class="folio-count">2</div>
+  <p>folios</p>
+  <div class="folio-list"><a href="folios/f85r.html">F85R</a> <a href="folios/f86v.html">F86V</a></div>
+</div>
+
+      </div>
+    </section>
+
+    <!-- Top Ingredients -->
+    <section class="info-panel">
+      <h3>Top Ingredients Across All Folios</h3>
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Stem</th>
+            <th>English</th>
+            <th>Latin</th>
+            <th>Total Mentions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+  <td><strong>ol</strong></td>
+  <td>oil</td>
+  <td><em>oleum</em></td>
+  <td class="num">10,732</td>
+</tr><tr>
+  <td><strong>kost</strong></td>
+  <td>bone</td>
+  <td><em>os/ossis</em></td>
+  <td class="num">10,325</td>
+</tr><tr>
+  <td><strong>ar</strong></td>
+  <td>water</td>
+  <td><em>aqua</em></td>
+  <td class="num">8,854</td>
+</tr><tr>
+  <td><strong>or</strong></td>
+  <td>oil</td>
+  <td><em>oleum</em></td>
+  <td class="num">5,468</td>
+</tr><tr>
+  <td><strong>sal</strong></td>
+  <td>salt</td>
+  <td><em>sal</em></td>
+  <td class="num">613</td>
+</tr><tr>
+  <td><strong>sar</strong></td>
+  <td>salt</td>
+  <td><em>sal</em></td>
+  <td class="num">346</td>
+</tr><tr>
+  <td><strong>stor</strong></td>
+  <td>storax</td>
+  <td><em>storax</em></td>
+  <td class="num">288</td>
+</tr><tr>
+  <td><strong>ros</strong></td>
+  <td>rose/rosewater</td>
+  <td><em>rosa</em></td>
+  <td class="num">101</td>
+</tr><tr>
+  <td><strong>edy</strong></td>
+  <td>root/prepared root</td>
+  <td><em>radix</em></td>
+  <td class="num">51</td>
+</tr><tr>
+  <td><strong>rady</strong></td>
+  <td>root</td>
+  <td><em>radix</em></td>
+  <td class="num">6</td>
+</tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- All Folios Table -->
+    <section>
+      <h2>All Folios</h2>
+      <table class="data-table folio-list-table" id="folio-table">
+        <thead>
+          <tr>
+            <th>Folio</th>
+            <th>Section</th>
+            <th>Confidence</th>
+            <th>Words</th>
+            <th>Top Ingredients</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="folio-row" data-folio="f100r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f100r.html">F100R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">319</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f100v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f100v.html">F100V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">249</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f101r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f101r.html">F101R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">580</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f101v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f101v.html">F101V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">579</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f102r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f102r.html">F102R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">648</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f102v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f102v.html">F102V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">825</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f103r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f103r.html">F103R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1638</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f103v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f103v.html">F103V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1381</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f104r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f104r.html">F104R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1322</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f104v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f104v.html">F104V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1251</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f105r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f105r.html">F105R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1068</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f105v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f105v.html">F105V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">2257</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f106r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f106r.html">F106R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">2402</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f106v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f106v.html">F106V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">2560</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f107r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f107r.html">F107R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">2817</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f107v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f107v.html">F107V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">2866</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f108r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f108r.html">F108R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">3128</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f108v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f108v.html">F108V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">3436</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f10r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f10r.html">F10R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">236</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f10v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f10v.html">F10V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">153</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f111r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f111r.html">F111R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">3489</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f111v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f111v.html">F111V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">3101</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f112r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f112r.html">F112R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">2432</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f112v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f112v.html">F112V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">2499</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f113r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f113r.html">F113R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">2408</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f113v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f113v.html">F113V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1530</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f114r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f114r.html">F114R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1269</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f114v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f114v.html">F114V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1033</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f115r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f115r.html">F115R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1188</td>
+            <td>ar, kost, or, ol</td>
+          </tr><tr class="folio-row" data-folio="f115v" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f115v.html">F115V</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1057</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f116r" data-section="Recipes/Stars">
+            <td class="folio-id"><a href="folios/f116r.html">F116R</a></td>
+            <td>Recipes/Stars</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1592</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f11r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f11r.html">F11R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-75">75%</span></td>
+            <td class="num">147</td>
+            <td>ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f11v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f11v.html">F11V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">113</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f13r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f13r.html">F13R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">202</td>
+            <td>or, ol, kost, stor</td>
+          </tr><tr class="folio-row" data-folio="f13v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f13v.html">F13V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">189</td>
+            <td>ol, kost, or, ros</td>
+          </tr><tr class="folio-row" data-folio="f14r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f14r.html">F14R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">185</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f14v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f14v.html">F14V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">184</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f15r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f15r.html">F15R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">203</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f15v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f15v.html">F15V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">208</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f16r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f16r.html">F16R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">193</td>
+            <td>or, ol, kost, sal</td>
+          </tr><tr class="folio-row" data-folio="f16v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f16v.html">F16V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">202</td>
+            <td>or, ar, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f17r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f17r.html">F17R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">204</td>
+            <td>or, ar, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f17v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f17v.html">F17V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">396</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f18r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f18r.html">F18R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">222</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f18v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f18v.html">F18V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">176</td>
+            <td>kost, ol, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f19r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f19r.html">F19R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">213</td>
+            <td>or, ar, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f19v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f19v.html">F19V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">219</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f1r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f1r.html">F1R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">581</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f1v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f1v.html">F1V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">227</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f20r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f20r.html">F20R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">217</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f20v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f20v.html">F20V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">244</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f21r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f21r.html">F21R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">263</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f21v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f21v.html">F21V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">147</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f22r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f22r.html">F22R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">290</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f22v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f22v.html">F22V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">208</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f23r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f23r.html">F23R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">324</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f23v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f23v.html">F23V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">256</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f24r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f24r.html">F24R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">288</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f24v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f24v.html">F24V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">231</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f25r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f25r.html">F25R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">121</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f25v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f25v.html">F25V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">154</td>
+            <td>or, kost, ol, ar</td>
+          </tr><tr class="folio-row" data-folio="f26r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f26r.html">F26R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">193</td>
+            <td>kost, ar, ol, sal</td>
+          </tr><tr class="folio-row" data-folio="f26v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f26v.html">F26V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">236</td>
+            <td>ar, kost, or, ol</td>
+          </tr><tr class="folio-row" data-folio="f27r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f27r.html">F27R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">222</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f27v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f27v.html">F27V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">126</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f28r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f28r.html">F28R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">176</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f28v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f28v.html">F28V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">175</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f29r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f29r.html">F29R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">154</td>
+            <td>or, kost, ol, ar</td>
+          </tr><tr class="folio-row" data-folio="f29v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f29v.html">F29V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">212</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f2r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f2r.html">F2R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">215</td>
+            <td>ol, or, sal, kost</td>
+          </tr><tr class="folio-row" data-folio="f2v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f2v.html">F2V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-75">75%</span></td>
+            <td class="num">159</td>
+            <td>or, ol, ar</td>
+          </tr><tr class="folio-row" data-folio="f30r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f30r.html">F30R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">205</td>
+            <td>or, ar, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f30v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f30v.html">F30V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">163</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f31r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f31r.html">F31R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">290</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f31v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f31v.html">F31V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">316</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f32r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f32r.html">F32R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">204</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f32v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f32v.html">F32V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">211</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f33r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f33r.html">F33R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">227</td>
+            <td>ar, kost, or, ol</td>
+          </tr><tr class="folio-row" data-folio="f33v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f33v.html">F33V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">251</td>
+            <td>ar, or, kost, ol</td>
+          </tr><tr class="folio-row" data-folio="f34r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f34r.html">F34R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">340</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f34v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f34v.html">F34V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">325</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f35r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f35r.html">F35R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">232</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f35v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f35v.html">F35V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">236</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f36r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f36r.html">F36R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">144</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f36v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f36v.html">F36V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">190</td>
+            <td>or, ar, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f37r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f37r.html">F37R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">221</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f37v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f37v.html">F37V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">238</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f38r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f38r.html">F38R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">97</td>
+            <td>or, ol, kost, stor</td>
+          </tr><tr class="folio-row" data-folio="f38v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f38v.html">F38V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">175</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f39r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f39r.html">F39R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">436</td>
+            <td>ol, ar, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f39v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f39v.html">F39V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">399</td>
+            <td>ar, or, kost, ol</td>
+          </tr><tr class="folio-row" data-folio="f3r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f3r.html">F3R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">333</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f3v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f3v.html">F3V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">222</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f40r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f40r.html">F40R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">276</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f40v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f40v.html">F40V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">299</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f41r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f41r.html">F41R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">237</td>
+            <td>kost, ar, or, sal</td>
+          </tr><tr class="folio-row" data-folio="f41v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f41v.html">F41V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">189</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f42r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f42r.html">F42R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">415</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f42v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f42v.html">F42V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">274</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f43r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f43r.html">F43R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">431</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f43v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f43v.html">F43V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">439</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f44r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f44r.html">F44R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">202</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f44v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f44v.html">F44V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">279</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f45r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f45r.html">F45R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">252</td>
+            <td>ol, ar, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f45v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f45v.html">F45V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">206</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f46r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f46r.html">F46R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">418</td>
+            <td>ol, ar, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f46v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f46v.html">F46V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">328</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f47r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f47r.html">F47R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">250</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f47v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f47v.html">F47V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">211</td>
+            <td>ol, ar, or, sal</td>
+          </tr><tr class="folio-row" data-folio="f48r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f48r.html">F48R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">254</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f48v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f48v.html">F48V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">324</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f49r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f49r.html">F49R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">297</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f49v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f49v.html">F49V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">374</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f4r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f4r.html">F4R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">164</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f4v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f4v.html">F4V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">194</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f50r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f50r.html">F50R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">258</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f50v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f50v.html">F50V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">305</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f51r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f51r.html">F51R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">215</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f51v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f51v.html">F51V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">189</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f52r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f52r.html">F52R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">184</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f52v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f52v.html">F52V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">199</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f53r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f53r.html">F53R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">159</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f53v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f53v.html">F53V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">209</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f54r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f54r.html">F54R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">279</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f54v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f54v.html">F54V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">250</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f55r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f55r.html">F55R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">371</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f55v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f55v.html">F55V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">274</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f56r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f56r.html">F56R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">253</td>
+            <td>ol, or, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f56v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f56v.html">F56V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">242</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f57r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f57r.html">F57R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">203</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f57v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f57v.html">F57V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">326</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f58r" data-section="Herbal A (cont.)">
+            <td class="folio-id"><a href="folios/f58r.html">F58R</a></td>
+            <td>Herbal A (cont.)</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1198</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f58v" data-section="Herbal A (cont.)">
+            <td class="folio-id"><a href="folios/f58v.html">F58V</a></td>
+            <td>Herbal A (cont.)</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1147</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f5r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f5r.html">F5R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-75">75%</span></td>
+            <td class="num">147</td>
+            <td>or, ol, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f5v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f5v.html">F5V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">147</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f65r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f65r.html">F65R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-low">20%</span></td>
+            <td class="num">12</td>
+            <td>ar</td>
+          </tr><tr class="folio-row" data-folio="f65v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f65v.html">F65V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-75">75%</span></td>
+            <td class="num">93</td>
+            <td>kost, or, ol</td>
+          </tr><tr class="folio-row" data-folio="f66r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f66r.html">F66R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">944</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f66v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f66v.html">F66V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">307</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f67r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f67r.html">F67R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">946</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f67v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f67v.html">F67V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">377</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f68r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f68r.html">F68R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">786</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f68v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f68v.html">F68V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1046</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f69r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f69r.html">F69R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">483</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f69v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f69v.html">F69V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">420</td>
+            <td>ar, kost, ol, sar</td>
+          </tr><tr class="folio-row" data-folio="f6r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f6r.html">F6R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">215</td>
+            <td>ar, or, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f6v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f6v.html">F6V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">292</td>
+            <td>ar, or, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f70r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f70r.html">F70R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1127</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f70v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f70v.html">F70V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">844</td>
+            <td>ar, ol, kost, sal</td>
+          </tr><tr class="folio-row" data-folio="f71r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f71r.html">F71R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">368</td>
+            <td>ar, ol, kost, sar</td>
+          </tr><tr class="folio-row" data-folio="f71v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f71v.html">F71V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">364</td>
+            <td>ar, or, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f72r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f72r.html">F72R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1289</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f72v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f72v.html">F72V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1114</td>
+            <td>ol, ar, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f73r" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f73r.html">F73R</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">323</td>
+            <td>ar, or, kost, ol</td>
+          </tr><tr class="folio-row" data-folio="f73v" data-section="Herbal B / Astronomical">
+            <td class="folio-id"><a href="folios/f73v.html">F73V</a></td>
+            <td>Herbal B / Astronomical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">313</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f75r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f75r.html">F75R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1218</td>
+            <td>kost, ar, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f75v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f75v.html">F75V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1087</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f76r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f76r.html">F76R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1655</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f76v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f76v.html">F76V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1160</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f77r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f77r.html">F77R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">985</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f77v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f77v.html">F77V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1054</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f78r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f78r.html">F78R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">911</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f78v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f78v.html">F78V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">906</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f79r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f79r.html">F79R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1180</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f79v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f79v.html">F79V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1150</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f7r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f7r.html">F7R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">142</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f7v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f7v.html">F7V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">173</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f80r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f80r.html">F80R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1378</td>
+            <td>kost, ol, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f80v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f80v.html">F80V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1118</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f81r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f81r.html">F81R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">650</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f81v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f81v.html">F81V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">743</td>
+            <td>ol, kost, ar, sal</td>
+          </tr><tr class="folio-row" data-folio="f82r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f82r.html">F82R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">853</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f82v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f82v.html">F82V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1023</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f83r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f83r.html">F83R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">958</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f83v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f83v.html">F83V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">837</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f84r" data-section="Biological">
+            <td class="folio-id"><a href="folios/f84r.html">F84R</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1141</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f84v" data-section="Biological">
+            <td class="folio-id"><a href="folios/f84v.html">F84V</a></td>
+            <td>Biological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1084</td>
+            <td>kost, ol, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f85r" data-section="Cosmological">
+            <td class="folio-id"><a href="folios/f85r.html">F85R</a></td>
+            <td>Cosmological</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">1495</td>
+            <td>ar, or, ol, kost</td>
+          </tr><tr class="folio-row" data-folio="f86v" data-section="Cosmological">
+            <td class="folio-id"><a href="folios/f86v.html">F86V</a></td>
+            <td>Cosmological</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">3878</td>
+            <td>ar, ol, kost, or</td>
+          </tr><tr class="folio-row" data-folio="f87r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f87r.html">F87R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">248</td>
+            <td>ol, or, sal, ar</td>
+          </tr><tr class="folio-row" data-folio="f87v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f87v.html">F87V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">178</td>
+            <td>ol, or, ar, sal</td>
+          </tr><tr class="folio-row" data-folio="f88r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f88r.html">F88R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">445</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f88v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f88v.html">F88V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">413</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f89r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f89r.html">F89R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">1096</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f89v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f89v.html">F89V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">940</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f8r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f8r.html">F8R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">344</td>
+            <td>ol, ar, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f8v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f8v.html">F8V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">304</td>
+            <td>ar, ol, or, kost</td>
+          </tr><tr class="folio-row" data-folio="f90r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f90r.html">F90R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">294</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f90v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f90v.html">F90V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">363</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f93r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f93r.html">F93R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">387</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f93v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f93v.html">F93V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">176</td>
+            <td>ol, kost, ar, or</td>
+          </tr><tr class="folio-row" data-folio="f94r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f94r.html">F94R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">246</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f94v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f94v.html">F94V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">281</td>
+            <td>ar, kost, or, ol</td>
+          </tr><tr class="folio-row" data-folio="f95r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f95r.html">F95R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">553</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f95v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f95v.html">F95V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">524</td>
+            <td>ar, kost, ol, or</td>
+          </tr><tr class="folio-row" data-folio="f96r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f96r.html">F96R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">214</td>
+            <td>ol, or, kost, ar</td>
+          </tr><tr class="folio-row" data-folio="f96v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f96v.html">F96V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-100">100%</span></td>
+            <td class="num">133</td>
+            <td>ar, or, sar, ol</td>
+          </tr><tr class="folio-row" data-folio="f99r" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f99r.html">F99R</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">572</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f99v" data-section="Pharmaceutical">
+            <td class="folio-id"><a href="folios/f99v.html">F99V</a></td>
+            <td>Pharmaceutical</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">548</td>
+            <td>ol, kost, or, ar</td>
+          </tr><tr class="folio-row" data-folio="f9r" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f9r.html">F9R</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">197</td>
+            <td>or, ol, ar, kost</td>
+          </tr><tr class="folio-row" data-folio="f9v" data-section="Herbal A">
+            <td class="folio-id"><a href="folios/f9v.html">F9V</a></td>
+            <td>Herbal A</td>
+            <td><span class="confidence-badge confidence-85">85%</span></td>
+            <td class="num">204</td>
+            <td>ol, or, ar, kost</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>Voynich Digital Edition - <a href="https://github.com/denoflore/ZFD">ZFD Project</a></p>
+      <p class="text-muted">"No one fabricates 179 pages of bone poultice instructions for a prank."</p>
+      <p class="text-muted">Based on the Zuger Functional Decipherment | CC BY-SA 4.0</p>
+    </div>
+  </footer>
+
+  <script>
+    function filterFolios() {
+      const query = document.getElementById('search').value.toLowerCase();
+      const rows = document.querySelectorAll('.folio-row');
+
+      rows.forEach(row => {
+        const text = row.textContent.toLowerCase();
+        row.style.display = text.includes(query) ? '' : 'none';
+      });
+    }
+  </script>
+</body>
+</html>

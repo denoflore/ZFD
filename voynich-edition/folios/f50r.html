@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F50R - Voynich Digital Edition</title>
+  <link rel="stylesheet" href="../css/edition.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../index.html">Voynich Edition</a>
+        <span>/</span>
+        <a href="../index.html#herbal a">Herbal A</a>
+        <span>/</span>
+        <span>F50R</span>
+      </nav>
+      <h1>F50R</h1>
+      <p class="subtitle">Herbal A Section
+        <span class="confidence-badge confidence-85">85% confidence</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="folio-layout">
+      <!-- Scan viewer -->
+      <div class="scan-viewer">
+        <img src="https://via.placeholder.com/600x800?text=F50R" alt="Folio F50R scan" id="folio-image">
+        <div class="viewer-controls">
+          <button onclick="zoomIn()">Zoom +</button>
+          <button onclick="zoomOut()">Zoom -</button>
+          <button onclick="resetZoom()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div class="text-content">
+        <section class="interlinear-section">
+          <h2>Interlinear Decode</h2>
+          <p class="text-muted">4-layer format: Voynichese (EVA) > Croatian > Expanded > English</p>
+          <div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> psheor olkais olfchedy qopeeedar opchey dair olaiin chefchdy</div>
+  <div class="line"><span class="label cro">CRO:</span> pšeor olstais olprhedi kopleedar oplhey dair olain heprhdy</div>
+  <div class="line"><span class="label exp">EXP:</span> pšeor uljestais uljeprhedi kopleedar oplhey DA [Lat.] uljeain heprhdy</div>
+  <div class="line"><span class="label eng">ENG:</span> ? oil+stais oil+prhedi ? ? give oil+ain ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> sor orsheckhy ockhody shos alol dy kar oky daiiin okar ar okam</div>
+  <div class="line"><span class="label cro">CRO:</span> sor oršecstry ocstrody šos alol dy kar osty daiin ostar ar ostam</div>
+  <div class="line"><span class="label exp">EXP:</span> sor ulješecstry ocstrody šos tekućinaol dy kar kosty DA [Lat.] kostar voda kostam</div>
+  <div class="line"><span class="label eng">ENG:</span> ? oil+šecstry ? ? liquid+ol ? ? bone+y give bone+ar water bone+am</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> tshol kar sheedy okeody qokedy chody kchdy pchdy chkaiin odam</div>
+  <div class="line"><span class="label cro">CRO:</span> tšol kar šedi osteody kostedi hody khdy phdy hstain odam</div>
+  <div class="line"><span class="label exp">EXP:</span> tšol kar močeno kosteody kost-edi hody khdy phdy hstain DA [Lat.]</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? soaked bone+eody bone-preparation ? ? ? ? give</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> tchdy qokar chedy qokchdy qokaiin or ar alol keodaiin olr</div>
+  <div class="line"><span class="label cro">CRO:</span> thdy kostar hedi kosthdy kostain or ar alol keodain olr</div>
+  <div class="line"><span class="label exp">EXP:</span> thdy kost-ar kuhano kosthdy kost-ain ulje voda tekućinaol keodain uljer</div>
+  <div class="line"><span class="label eng">ENG:</span> ? bone-water cooked ? bone [noun] oil water liquid+ol ? oil+r</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> solkchy chckhy qokchdy qokchdy okar ar y qokchdy kar ar okain</div>
+  <div class="line"><span class="label cro">CRO:</span> solsthy hcstry kosthdy kosthdy ostar ar y kosthdy kar ar ostain</div>
+  <div class="line"><span class="label exp">EXP:</span> solsthy hcstry kosthdy kosthdy kostar voda y kosthdy kar voda kostnin</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? ? ? bone+ar water ? ? ? water of bone+n</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> ykain ssear olkchedy okal qotor cheeor olkady daiin qoky</div>
+  <div class="line"><span class="label cro">CRO:</span> ystain ssear olsthedi ostal kotror heor olstady dain kosty</div>
+  <div class="line"><span class="label exp">EXP:</span> ystain ssear uljesthedi kostal kotror heor uljestady DA [Lat.] kosty</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? oil+sthedi bone+al ? ? oil+stady give ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> todalain qotal kaiin otaiin otal she kar ariin okchedy dariin</div>
+  <div class="line"><span class="label cro">CRO:</span> todalain kotral kain otrain otral še kar arin osthedi darin</div>
+  <div class="line"><span class="label exp">EXP:</span> todalain kotral kain pripravnin otrov/pripravaal še kar vodain kosthedi DA [Lat.]</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? ? prepared+n extract/prep+al ? ? water+in bone+hedi give</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> ykykaiin sheekar otchdy dar kar shelain taipar orolkain</div>
+  <div class="line"><span class="label cro">CRO:</span> ystystain šestar otrhdy dar kar šelain taiplar orolstain</div>
+  <div class="line"><span class="label exp">EXP:</span> ystystain šestar otrov/pripravahdy DA [Lat.] kar šelain taiplar uljeolstain</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? extract/prep+hdy give ? ? ? oil+olstain</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> ytchdy kchedyykeey kaiin qokain aldalosam</div>
+  <div class="line"><span class="label cro">CRO:</span> ytrhdy khediystei kain kostain aldalosam</div>
+  <div class="line"><span class="label exp">EXP:</span> ytrhdy khediystei kain kost-ain tekućinadalosam</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? ? bone [noun] liquid+dalosam</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> solkaiinopalke chckhy dario chky</div>
+  <div class="line"><span class="label cro">CRO:</span> solstainoplalste hcstry dario hsty</div>
+  <div class="line"><span class="label exp">EXP:</span> solstainoplalste hcstry DA [Lat.] hsty</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? give ?</div>
+</div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Ingredients -->
+    <section class="info-panel">
+      <h3>Ingredients Identified</h3>
+      <table class="data-table">
+        <thead><tr><th>Stem</th><th>English</th><th>Latin</th><th>Category</th><th>Count</th><th>Status</th></tr></thead>
+        <tbody><tr><td><strong>ar</strong></td><td>water</td><td><em>aqua</em></td><td>liquid</td><td class="num">36</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>kost</strong></td><td>bone</td><td><em>os/ossis</em></td><td>animal</td><td class="num">26</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>ol</strong></td><td>oil</td><td><em>oleum</em></td><td>liquid</td><td class="num">21</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>or</strong></td><td>oil</td><td><em>oleum</em></td><td>liquid</td><td class="num">11</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+</tbody></table>
+    </section>
+
+    <!-- Preparation Methods -->
+    <section class="info-panel">
+      <h3>Preparation Methods</h3>
+      <table class="data-table">
+        <thead><tr><th>Stem</th><th>English</th><th>Category</th><th>Count</th></tr></thead>
+        <tbody><tr><td><strong>hedi</strong></td><td>cook/prepare</td><td>heat</td><td class="num">12</td></tr>
+<tr><td><strong>dar</strong></td><td>dose/give</td><td>dosing</td><td class="num">5</td></tr>
+<tr><td><strong>dal</strong></td><td>then/next</td><td>sequence</td><td class="num">5</td></tr>
+<tr><td><strong>dain</strong></td><td>dose/portion</td><td>dosing</td><td class="num">4</td></tr>
+<tr><td><strong>šol</strong></td><td>soak in oil</td><td>liquid</td><td class="num">2</td></tr>
+<tr><td><strong>šedi</strong></td><td>soak/infuse</td><td>liquid</td><td class="num">1</td></tr>
+</tbody></table>
+    </section>
+
+    
+
+    <!-- SOP Chain -->
+    <section class="info-panel">
+      <h3>SOP Chain (Related Folios)</h3>
+      <p class="text-muted mb-md">Folios sharing ingredients with F50R:</p>
+      <div class="sop-chain">
+        <a href="f108v.html" class="sop-link related">F108V (ol, kost, ar)</a>
+<a href="f86v.html" class="sop-link related">F86V (ol, kost, ar)</a>
+<a href="f108r.html" class="sop-link related">F108R (ol, kost, ar)</a>
+<a href="f107v.html" class="sop-link related">F107V (ol, kost, ar)</a>
+<a href="f111v.html" class="sop-link related">F111V (ol, kost, ar)</a>
+
+      </div>
+    </section>
+
+    <!-- Codicological Notes (placeholder) -->
+    <section class="info-panel">
+      <h3>Codicological Notes</h3>
+      <dl>
+        <dt>Section</dt>
+        <dd>Herbal A</dd>
+        <dt>Word Count</dt>
+        <dd>258 total, 123 recipe-relevant</dd>
+        <dt>Confidence</dt>
+        <dd>85%</dd>
+      </dl>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="folio-nav">
+      <a href="f4v.html">&larr; F4V</a>
+      <a href="../index.html">All Folios</a>
+      <a href="f50v.html">F50V &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>Voynich Digital Edition - <a href="https://github.com/denoflore/ZFD">ZFD Project</a></p>
+      <p class="text-muted">Based on the Zuger Functional Decipherment</p>
+    </div>
+  </footer>
+
+  <script>
+    let scale = 1;
+    const img = document.getElementById('folio-image');
+
+    function zoomIn() {
+      scale = Math.min(scale * 1.2, 4);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function zoomOut() {
+      scale = Math.max(scale / 1.2, 0.5);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function resetZoom() {
+      scale = 1;
+      img.style.transform = 'scale(1)';
+    }
+  </script>
+</body>
+</html>

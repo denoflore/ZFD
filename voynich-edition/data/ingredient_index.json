@@ -1,0 +1,208 @@
+{
+  "summary": {
+    "folios_analyzed": 201,
+    "folios_with_recipe_content": 201,
+    "unique_ingredients_identified": 13,
+    "total_ingredient_mentions": 36794,
+    "unique_preparation_methods": 12,
+    "latin_pharmaceutical_terms_found": 4
+  },
+  "ingredients": [
+    {
+      "rank": 1,
+      "stem": "ol",
+      "english": "oil",
+      "latin": "oleum",
+      "total_mentions": 10732
+    },
+    {
+      "rank": 2,
+      "stem": "kost",
+      "english": "bone",
+      "latin": "os/ossis",
+      "total_mentions": 10325
+    },
+    {
+      "rank": 3,
+      "stem": "ar",
+      "english": "water",
+      "latin": "aqua",
+      "total_mentions": 8854
+    },
+    {
+      "rank": 4,
+      "stem": "or",
+      "english": "oil",
+      "latin": "oleum",
+      "total_mentions": 5468
+    },
+    {
+      "rank": 5,
+      "stem": "sal",
+      "english": "salt",
+      "latin": "sal",
+      "total_mentions": 613
+    },
+    {
+      "rank": 6,
+      "stem": "sar",
+      "english": "salt",
+      "latin": "sal",
+      "total_mentions": 346
+    },
+    {
+      "rank": 7,
+      "stem": "stor",
+      "english": "storax",
+      "latin": "storax",
+      "total_mentions": 288
+    },
+    {
+      "rank": 8,
+      "stem": "ros",
+      "english": "rose/rosewater",
+      "latin": "rosa",
+      "total_mentions": 101
+    },
+    {
+      "rank": 9,
+      "stem": "edy",
+      "english": "root/prepared root",
+      "latin": "radix",
+      "total_mentions": 51
+    },
+    {
+      "rank": 10,
+      "stem": "rady",
+      "english": "root",
+      "latin": "radix",
+      "total_mentions": 6
+    },
+    {
+      "rank": 11,
+      "stem": "aloe",
+      "english": "aloe",
+      "latin": "aloe",
+      "total_mentions": 4
+    },
+    {
+      "rank": 12,
+      "stem": "salp",
+      "english": "saltpeter",
+      "latin": "sal petrae",
+      "total_mentions": 3
+    },
+    {
+      "rank": 13,
+      "stem": "arg",
+      "english": "silver",
+      "latin": "argentum",
+      "total_mentions": 3
+    }
+  ],
+  "preparation_methods": [
+    {
+      "stem": "dain",
+      "english": "dose/portion",
+      "category": "dosing",
+      "total_mentions": 2929
+    },
+    {
+      "stem": "hedi",
+      "english": "cook/prepare",
+      "category": "heat",
+      "total_mentions": 2820
+    },
+    {
+      "stem": "dar",
+      "english": "dose/give",
+      "category": "dosing",
+      "total_mentions": 1339
+    },
+    {
+      "stem": "hol",
+      "english": "combine",
+      "category": "mixing",
+      "total_mentions": 1259
+    },
+    {
+      "stem": "šedi",
+      "english": "soak/infuse",
+      "category": "liquid",
+      "total_mentions": 1211
+    },
+    {
+      "stem": "dal",
+      "english": "then/next",
+      "category": "sequence",
+      "total_mentions": 1162
+    },
+    {
+      "stem": "hor",
+      "english": "process/work",
+      "category": "general",
+      "total_mentions": 928
+    },
+    {
+      "stem": "šol",
+      "english": "soak in oil",
+      "category": "liquid",
+      "total_mentions": 385
+    },
+    {
+      "stem": "šor",
+      "english": "strain/soak",
+      "category": "liquid",
+      "total_mentions": 217
+    },
+    {
+      "stem": "thor",
+      "english": "boil/roast",
+      "category": "heat",
+      "total_mentions": 135
+    },
+    {
+      "stem": "kal",
+      "english": "cauldron/heat vessel",
+      "category": "equipment",
+      "total_mentions": 97
+    },
+    {
+      "stem": "shor",
+      "english": "soak/infuse",
+      "category": "liquid",
+      "total_mentions": 10
+    }
+  ],
+  "latin_vocabulary": [
+    {
+      "term": "oral",
+      "latin": "oralis",
+      "english": "by mouth",
+      "category": "administration",
+      "occurrences": 70
+    },
+    {
+      "term": "dolor",
+      "latin": "dolor",
+      "english": "pain",
+      "category": "condition",
+      "occurrences": 4
+    },
+    {
+      "term": "ana",
+      "latin": "ana",
+      "english": "equal parts",
+      "category": "measurement",
+      "occurrences": 2
+    },
+    {
+      "term": "orolaly",
+      "latin": "oraliter",
+      "english": "orally",
+      "category": "administration",
+      "occurrences": 1
+    }
+  ],
+  "ingredient_concordance": {}
+}
