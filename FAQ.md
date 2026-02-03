@@ -66,6 +66,20 @@ Additionally:
 
 ---
 
+### Q: Didn't someone already identify Croatian in 2015?
+
+Yes. Beate Missing-Watson, a German researcher, published a short paper in 2015 identifying Croatian as the language and Glagolitic (*Hlaholica*) as the script. She was correct on both counts, and she deserves credit for that identification.
+
+However, Missing-Watson did not produce a decipherment. Her method required manually rearranging letters within each word, then looking up the result in a dictionary. She published no systematic character key, no coverage metrics, no falsification criteria, and no way for anyone else to independently verify or reproduce her readings. Her single worked example (f2r, line 1) produces a self-referential commentary about cryptography rather than pharmaceutical content.
+
+The ZFD was developed independently from October 2025 with no knowledge of Missing-Watson's work, which was brought to the author's attention on February 3, 2026, one day after the repository went public.
+
+The distinction is between identification and decipherment. Identification says "this is Croatian in Glagolitic." Decipherment provides a complete key, 96.8% coverage, native speaker validation, spatial correlation, and a public pipeline anyone can run. Two independent researchers converging on the same language and script from entirely different methods is itself strong evidence for the hypothesis.
+
+Missing-Watson, B. (2015). *Das Voynich Manuskript: Übersetzungsanleitung*. http://kaypacha.info/VoynichUebersetzungsAnleitung_de.pdf
+
+---
+
 ### Q: What about Gordon Rugg's hoax theory?
 
 Rugg demonstrated that meaningless text with Voynich-like statistical properties could be generated using a Cardan grille. This proves the manuscript *could* be a hoax, not that it *is* one.
