@@ -7,11 +7,39 @@ This document tracks the evolution of the decipherment from initial hypothesis t
 
 ## Version History
 
-### v3.6 - February 2, 2026 (Current)
+### v4.0 - February 3, 2026 (Current)
+**"Complete Inventory"**
+
+- **Coverage**: 94.7% → **96.8%** (+2.1 percentage points)
+- **Known morphemes**: 94 → **141** (+47)
+
+**Why coverage increased:**
+
+Three validated sources contributed new morphemes:
+
+1. **Latin Pharmaceutical Vocabulary** (+11 morphemes): Discovery of bilingual macaronic layer — `oral`/`orolaly` (oralis/oraliter), `dolor`, `ana`, `fac`, `dent`, `rad`, `foli`, `oleo`. Cross-validated against 15th-century apothecary manual.
+
+2. **Spatial Correlation Terms** (+3 morphemes): Independent testing on f88r by Gemini Pro 3 confirmed `ostol` (bone oil, on distillation vessel), `oldar` (oil dose), `hetr` (heated). See S8 Preemptive Peer Review.
+
+3. **Lexicon v3.6 Confirmed Fills** (+33 morphemes): CONFIRMED entries in formal lexicon that were omitted from v3.6b pipeline — documented suffixes (`ey`, `an`, `on`, `en`, `om`, `em`, `di`), expanded stem variants, clusters, and particles.
+
+**Remaining unknowns:** 325 words (1,296 tokens, 3.2% of corpus). Average frequency 4.0 — mostly 2-3 character fragments consistent with hyper-abbreviated shorthand margins.
+
+**Note:** With single-character documented suffixes (`i`, `y`) included, coverage reaches 98.5%. The conservative 96.8% figure excludes these to avoid trivial substring inflation.
+
+**Documentation:**
+- `08_Final_Proofs/COVERAGE_REPORT_v4_0.md` (full analysis with source attribution)
+- `06_Pipelines/coverage_v40.py` (reproducible pipeline)
+- `papers/S8_PREEMPTIVE_PEER_REVIEW.md` (adversarial validation protocol)
+- All 14 repo documents updated for consistency
+
+---
+
+### v3.6 - February 2, 2026
 **"Friday's Framework"**
 
-- **Coverage**: 74% → **96.8%** (+20.7%)
-- **Known morphemes**: 71 → 94 → 141 (+47 in v4.0)
+- **Coverage**: 74% → **94.7%** (+20.7%)
+- **Known morphemes**: 71 → 94 (+23)
 
 **Key additions:**
 - State markers (he-, heo-, še-, šeo-) distinguished from operators
@@ -104,8 +132,11 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 | Dec 2025 | 65% coverage reached | Viability threshold |
 | Jan 2026 | Native speaker validation | Human confirmation |
 | Jan 31, 2026 | 179-page translation | Complete orthographic decode |
-| Feb 2, 2026 | 96.8% coverage | Solution validated |
+| Feb 2, 2026 | 94.7% coverage (v3.6) | Solution validated |
 | Feb 2, 2026 | Repository public | Open for verification |
+| Feb 2, 2026 | Nature submission | Tracking #2026-02-03422 |
+| Feb 2, 2026 | Adversarial AI validation | 8-turn Gemini Pro 3 stress test passed |
+| Feb 3, 2026 | **96.8% coverage (v4.0)** | +Latin pharma, +spatial correlation, +lexicon fills |
 
 ---
 
@@ -146,7 +177,9 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 - State markers (he-, še-)
 - Aspect suffix distinction (-edi vs -ei)
 - Medical register (ost-)
-- Final 20% coverage gain
+- Latin pharmaceutical macaronic layer (oral, dolor, ana, fac)
+- Spatial correlation morphemes (ostol, oldar, hetr)
+- Final coverage: 94.7% → 96.8%
 
 ---
 
@@ -204,4 +237,4 @@ https://github.com/denoflore/ZFD
 ---
 
 *Changelog maintained since September 2025*
-*Last updated: February 2, 2026*
+*Last updated: February 3, 2026*
