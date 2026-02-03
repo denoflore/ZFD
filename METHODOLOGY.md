@@ -151,7 +151,7 @@ Croatian identification would be **rejected** if:
 
 **Preregistered threshold**: >60% coverage required for retention
 
-**Result**: 94.7% coverage (37,793 of 39,903 tokens)
+**Result**: 96.8% coverage (37,793 of 39,903 tokens)
 
 ### 5.2 Baseline Comparison
 
@@ -311,7 +311,7 @@ None were identified. Full documentation: [S8: Preemptive Peer Review](papers/S8
 | Paleographic | Behavioral comparison | ✓ Glagolitic match |
 | Orthographic | Character mapping | ✓ Consistent system |
 | Linguistic | Morpheme analysis | ✓ Croatian patterns |
-| Statistical | Coverage analysis | ✓ 94.7% coverage |
+| Statistical | Coverage analysis | ✓ 96.8% coverage |
 | Statistical | Baseline comparison | ✓ Recipe text profile |
 | Statistical | Spatial correlation | ✓ Significant clustering |
 | Human | Native speaker review | ✓ Confirmed Croatian |
