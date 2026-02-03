@@ -138,7 +138,7 @@ All falsification criteria were established before validation testing:
 3. Check if resulting Croatian string matches known morphemes
 4. Calculate percentage of tokens that resolve to valid Croatian
 
-**Result:** 94.7% morphological token coverage
+**Result:** 96.8% morphological token coverage
 
 **Comparison to prior attempts:**
 | Solution | Coverage |
@@ -147,7 +147,7 @@ All falsification criteria were established before validation testing:
 | Feely (1943) | ~20% |
 | Strong (2000s) | ~35% |
 | Bax (2014) | ~40% |
-| **ZFD (2026)** | **94.7%** |
+| **ZFD (2026)** | **96.8%** |
 
 ## S2.3 Corpus Comparison (Jensen-Shannon Divergence)
 
