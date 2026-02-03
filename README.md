@@ -32,11 +32,11 @@ The Voynich Manuscript didn't appear from nowhere. Its journey across 600 years 
 
 The manuscript was written during the golden age of the Republic of Ragusa, a Croatian maritime city-state that rivaled Venice in wealth and sophistication. Ragusa was a major pharmaceutical trade hub on the Adriatic, with merchant routes connecting the Balkans to Italy, the Levant, and the courts of Central Europe.
 
-In **1317**, Franciscan monks founded a pharmacy inside their monastery complex near the Pile Gate. This pharmacy — one of the oldest continuously operating pharmacies in Europe — served the monks initially, then expanded to treat the citizens of Dubrovnik. The friars cultivated medicinal herbs in the monastery gardens, prepared compounds from imported ingredients (storax resin from the eastern Mediterranean, rosewater, bone oil, mineral salts), and maintained detailed recipe books in the monastery library.
+In **1317**, Franciscan monks founded a pharmacy inside their monastery complex near the Pile Gate. This pharmacy, one of the oldest continuously operating pharmacies in Europe, served the monks initially, then expanded to treat the citizens of Dubrovnik. The friars cultivated medicinal herbs in the monastery gardens, prepared compounds from imported ingredients (storax resin from the eastern Mediterranean, rosewater, bone oil, mineral salts), and maintained detailed recipe books in the monastery library.
 
 **The Voynich Manuscript is one of those recipe books.**
 
-It was written in angular Glagolitic cursive — the local Croatian liturgical and administrative script — using standard medieval pharmaceutical shorthand to compress ingredient lists and preparation instructions. The author wasn't hiding anything. He was writing fast. The "code" is just a pharmacist's professional notation, optimized for daily reference by someone who already knew the vocabulary.
+It was written in angular Glagolitic cursive, the local Croatian liturgical and administrative script, using standard medieval pharmaceutical shorthand to compress ingredient lists and preparation instructions. The author wasn't hiding anything. He was writing fast. The "code" is just a pharmacist's professional notation, optimized for daily reference by someone who already knew the vocabulary.
 
 ### The Ingredient Match
 
@@ -51,7 +51,7 @@ The Franciscan Pharmacy still operates today and still sells products made from 
 | Bergamot anti-wrinkle cream | Herbal A catalog entries | Ingredient + application instructions |
 | Cold-pressed soaps | **ol** (oil) + processing operators | Oil-based preparation sequences |
 
-The pharmacy's own literature states their products are "prepared under 200 year old recipes" — but the pharmacy has been operating since 1317. The **medieval** recipe archive (1317–1667) was largely destroyed. What survived became the basis for the "200 year old" recipes still in use. The older, original formulations — including bone-oil preparations no longer commercially viable — are preserved in the Voynich Manuscript.
+The pharmacy's own literature states their products are "prepared under 200 year old recipes," but the pharmacy has been operating since 1317. The **medieval** recipe archive (1317–1667) was largely destroyed. What survived became the basis for the "200 year old" recipes still in use. The older, original formulations, including bone-oil preparations no longer commercially viable, are preserved in the Voynich Manuscript.
 
 **The modern pharmacy replaced bone oil with beeswax. The Voynich still has the original.**
 
@@ -59,11 +59,11 @@ One ingredient tells the story: **storax** (styrax resin, imported from the east
 
 ### The Catastrophe: April 6, 1667
 
-At 8:45 AM on Holy Wednesday, the most devastating earthquake in Croatian recorded history struck Dubrovnik. The quake lasted only seconds but killed approximately 3,000–5,000 people, including the city's Rector. Three-quarters of all public buildings were destroyed. Boulders rolled down Mount Srđ into the city. A tsunami struck the harbor. Fires — fueled by strong winds from collapsed bakeries and hearths — burned for almost 20 days.
+At 8:45 AM on Holy Wednesday, the most devastating earthquake in Croatian recorded history struck Dubrovnik. The quake lasted only seconds but killed approximately 3,000–5,000 people, including the city's Rector. Three-quarters of all public buildings were destroyed. Boulders rolled down Mount Srđ into the city. A tsunami struck the harbor. Fires, fueled by strong winds from collapsed bakeries and hearths, burned for almost 20 days.
 
 The Franciscan Church and Monastery survived the earthquake itself, but **the subsequent fire destroyed much of the monastery complex, including its great library.** Centuries of accumulated manuscripts, pharmaceutical texts, recipe books, and medical records were incinerated.
 
-The pharmacy survived. The building survived. The recipes — passed down orally and through whatever fragments remained — survived in degraded form. But the comprehensive medieval archive was gone.
+The pharmacy survived. The building survived. The recipes, passed down orally and through whatever fragments remained, survived in degraded form. But the comprehensive medieval archive was gone.
 
 **Except for one book that had already left the building.**
 
@@ -71,29 +71,29 @@ The pharmacy survived. The building survived. The recipes — passed down orally
 
 The manuscript's documented chain of custody reads like a European road trip through the courts of power:
 
-**Before 1608** — The manuscript leaves Ragusa. The exact mechanism is unknown, but Ragusa's extensive trade routes to Venice and the Habsburg courts provide obvious pathways. Croatian merchants, diplomats, and Franciscan networks regularly moved between Dubrovnik and Central Europe. The manuscript may have traveled as a curiosity, a gift, or a trade good.
+**Before 1608:** The manuscript leaves Ragusa. The exact mechanism is unknown, but Ragusa's extensive trade routes to Venice and the Habsburg courts provide obvious pathways. Croatian merchants, diplomats, and Franciscan networks regularly moved between Dubrovnik and Central Europe. The manuscript may have traveled as a curiosity, a gift, or a trade good.
 
-**c. 1608–1622** — **Jacobus Hořčický de Tepenec** (Jakub Horčický), court pharmacist and Imperial Distiller to Emperor Rudolf II in Prague, owns the manuscript. His signature is visible on folio 1r under ultraviolet light. Hořčický was ennobled by Rudolf in 1607, appointed curator of the imperial botanical gardens, and served as one of Rudolf's personal physicians. **A pharmacist owned a pharmacy book.** Rudolf himself reportedly paid 600 gold ducats for it — he thought it was Roger Bacon's secret alchemical text. It was actually a Croatian moisturizer recipe.
+**c. 1608–1622:** **Jacobus Hořčický de Tepenec** (Jakub Horčický), court pharmacist and Imperial Distiller to Emperor Rudolf II in Prague, owns the manuscript. His signature is visible on folio 1r under ultraviolet light. Hořčický was ennobled by Rudolf in 1607, appointed curator of the imperial botanical gardens, and served as one of Rudolf's personal physicians. **A pharmacist owned a pharmacy book.** Rudolf himself reportedly paid 600 gold ducats for it. He thought it was Roger Bacon's secret alchemical text. It was actually a Croatian moisturizer recipe.
 
-**c. 1622–1650s** — After Hořčický's death, the manuscript passes to **Georg Baresch**, a Prague alchemist who spends years trying to decipher it. He fails because he's looking for hidden alchemical wisdom. It's a bone salve recipe.
+**c. 1622–1650s:** After Hořčický's death, the manuscript passes to **Georg Baresch**, a Prague alchemist who spends years trying to decipher it. He fails because he's looking for hidden alchemical wisdom. It's a bone salve recipe.
 
-**1665** — **Johannes Marcus Marci** of Prague sends the manuscript to **Athanasius Kircher** in Rome, the most famous polymath of the 17th century, hoping Kircher can decode it. Kircher — who claimed to have deciphered Egyptian hieroglyphs (he hadn't) — also fails. He's looking for an ancient mystical language. It's Croatian shorthand.
+**1665:** **Johannes Marcus Marci** of Prague sends the manuscript to **Athanasius Kircher** in Rome, the most famous polymath of the 17th century, hoping Kircher can decode it. Kircher, who claimed to have deciphered Egyptian hieroglyphs (he hadn't), also fails. He's looking for an ancient mystical language. It's Croatian shorthand.
 
-**1667** — While the manuscript sits in Kircher's collection in Rome, the earthquake destroys the Dubrovnik monastery library. The original context — the other recipe books, the pharmaceutical references, the Glagolitic training materials that would have made the manuscript trivially readable — is incinerated. The manuscript becomes an orphan. Its interpretive framework no longer exists in its place of origin.
+**1667:** While the manuscript sits in Kircher's collection in Rome, the earthquake destroys the Dubrovnik monastery library. The original context, the other recipe books, the pharmaceutical references, the Glagolitic training materials that would have made the manuscript trivially readable, is incinerated. The manuscript becomes an orphan. Its interpretive framework no longer exists in its place of origin.
 
-**c. 1680–1912** — After Kircher's death, the manuscript disappears into the Jesuit library at the Collegio Romano (now the Pontifical Gregorian University). It sits unread for over 200 years.
+**c. 1680–1912:** After Kircher's death, the manuscript disappears into the Jesuit library at the Collegio Romano (now the Pontifical Gregorian University). It sits unread for over 200 years.
 
-**1912** — **Wilfrid Voynich**, a Polish-born rare book dealer, purchases the manuscript from the Jesuit college at Villa Mondragone near Rome. He finds Marci's letter tucked inside and begins promoting it as the "Roger Bacon cipher manuscript." The mystery industry begins.
+**1912:** **Wilfrid Voynich**, a Polish-born rare book dealer, purchases the manuscript from the Jesuit college at Villa Mondragone near Rome. He finds Marci's letter tucked inside and begins promoting it as the "Roger Bacon cipher manuscript." The mystery industry begins.
 
-**1930–1969** — After Voynich's death, the manuscript passes through his widow to book dealer Hans P. Kraus, who donates it to Yale University's Beinecke Rare Book & Manuscript Library, where it resides today as MS 408.
+**1930–1969:** After Voynich's death, the manuscript passes through his widow to book dealer Hans P. Kraus, who donates it to Yale University's Beinecke Rare Book & Manuscript Library, where it resides today as MS 408.
 
 ### Why It Stayed "Unsolvable" for 112 Years
 
 The 1667 earthquake didn't just destroy buildings. It destroyed **context**.
 
-If the manuscript had remained in the Franciscan library alongside its companion volumes — other recipe books in the same notation, Glagolitic reference materials, pharmaceutical inventories — any competent Slavic paleographer could have read it. The script is not obscure. Angular Glagolitic was widely used in Croatian churches and monasteries. The shorthand conventions are documented in other surviving Glagolitic manuscripts.
+If the manuscript had remained in the Franciscan library alongside its companion volumes (other recipe books in the same notation, Glagolitic reference materials, pharmaceutical inventories), any competent Slavic paleographer could have read it. The script is not obscure. Angular Glagolitic was widely used in Croatian churches and monasteries. The shorthand conventions are documented in other surviving Glagolitic manuscripts.
 
-But by the time anyone in the modern era tried to read it, all the contextual clues were gone. The manuscript had been removed from Croatia to Prague before the earthquake. The library that would have identified it was ash. The Glagolitic manuscript tradition was studied primarily by Croatian and Serbian scholars who never had access to the Voynich. And Western European scholars — who did have access — compared it exclusively to Latin paleography.
+But by the time anyone in the modern era tried to read it, all the contextual clues were gone. The manuscript had been removed from Croatia to Prague before the earthquake. The library that would have identified it was ash. The Glagolitic manuscript tradition was studied primarily by Croatian and Serbian scholars who never had access to the Voynich. And Western European scholars, who did have access, compared it exclusively to Latin paleography.
 
 Nobody checked Croatian manuscripts because nobody thought to look there.
 
@@ -103,7 +103,7 @@ Meanwhile, in Dubrovnik, the Franciscan Pharmacy kept operating. The monks kept 
 
 Every failed attempt at decipherment made the same five mistakes:
 
-**Wrong corpus.** Everyone compared Voynichese to Latin paleographic traditions. The script behaviors — tall structural glyphs, extensive ligature compression, continuous pen strokes, variable baselines — match Glagolitic manuscripts perfectly. Zero Latin manuscripts exhibit all eight behavioral markers simultaneously.
+**Wrong corpus.** Everyone compared Voynichese to Latin paleographic traditions. The script behaviors (tall structural glyphs, extensive ligature compression, continuous pen strokes, variable baselines) match Glagolitic manuscripts perfectly. Zero Latin manuscripts exhibit all eight behavioral markers simultaneously.
 
 **Wrong model.** Cryptographers assumed the text was encrypted (complexity added to hide a message). It is compressed (redundancy removed to speed up writing). The NSA brought signals intelligence methodology to a pharmacist's shorthand notebook.
 
@@ -111,7 +111,7 @@ Every failed attempt at decipherment made the same five mistakes:
 
 **Wrong geography.** The radiocarbon date (1404–1438) and stylistic analysis pointed scholars toward "Northern Italy." The Republic of Ragusa was culturally, commercially, and geographically adjacent to Northern Italy. Ragusan merchants operated throughout the Italian peninsula. The vellum could easily have been sourced from Italian suppliers. But "Northern Italian provenance" was interpreted as "Italian author" rather than "Adriatic trade network."
 
-**Cultural blindness.** Croatia was considered too peripheral to matter. Glagolitic was dismissed as an obscure liturgical curiosity rather than recognized as the dominant administrative and literary script of coastal Croatia for centuries. The answer was in Croatian churches and monasteries the whole time — but nobody who had access to the Voynich had access to Croatian paleographic training, and nobody with Croatian paleographic training had access to the Voynich.
+**Cultural blindness.** Croatia was considered too peripheral to matter. Glagolitic was dismissed as an obscure liturgical curiosity rather than recognized as the dominant administrative and literary script of coastal Croatia for centuries. The answer was in Croatian churches and monasteries the whole time, but nobody who had access to the Voynich had access to Croatian paleographic training, and nobody with Croatian paleographic training had access to the Voynich.
 
 ---
 
@@ -138,7 +138,7 @@ The "code" is literally just medieval doctor's handwriting.
 - The **"Gallows" characters?** Quick ways to write "st" or "tr" without lifting the pen.
 - The **"Weird" word endings?** Shorthand for grammar cases (-us, -um, -is).
 
-There is a profound irony that the most secure document in human history—the one that defeated the greatest minds of the 20th century—wasn't a blueprint for a doomsday device.
+There is a profound irony that the most secure document in human history, the one that defeated the greatest minds of the 20th century, wasn't a blueprint for a doomsday device.
 
 **It was a list of ingredients for a skin moisturizer.**
 
@@ -156,7 +156,7 @@ That's it. That is the text that baffled the NSA.
 **The Mundanity Audit:**
 
 - **Repetitive inventory:** On this single page, *kost* (bone) appears 15+ times. *Ol/or* (oil) appears 20+ times. *Sal* (salt) 4 times. *Ar* (water) 2 times.
-- **Functional operators:** The prefix operators aren't mystical keys—they are recipe verbs. *h-* is "combine/cook." *š-* is "soak." *da-* is "dose."
+- **Functional operators:** The prefix operators aren't mystical keys. They are recipe verbs. *h-* is "combine/cook." *š-* is "soak." *da-* is "dose."
 - **"Cookbook" entropy:** The text's entropy profile matches *Apicius* (Roman cookbook) and *Liber de Coquina* (medieval recipes). It has the statistical fingerprint of an instruction manual.
 
 **The smoking gun of boredom:** Folios f87v through f94v are page after page of *slight variations on this same bone-oil-salt preparation.* More oil. Longer soaking. Different salt ratio. It is the medieval equivalent of "Chicken Parmesan," "Chicken Parmesan (Quick Version)," and "Chicken Parmesan (Large Batch)."
@@ -301,7 +301,7 @@ From the paper, Section 4.3:
 
 > "If the word 'kost' (bone) does not cluster significantly in pharmaceutical sections, the Croatian hypothesis would be rejected."
 
-**Result:** "Kost" appears 2,000+ times. It clusters in pharmaceutical and biological sections—exactly where bone-derived ingredients (calcium compounds, bone meal) appear in medieval apothecary texts.
+**Result:** "Kost" appears 2,000+ times. It clusters in pharmaceutical and biological sections, exactly where bone-derived ingredients (calcium compounds, bone meal) appear in medieval apothecary texts.
 
 **The hypothesis survives falsification.**
 
@@ -354,7 +354,7 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 | [**GETTING_STARTED.md**](GETTING_STARTED.md) | Learn to decode Voynichese in 10 minutes |
 | [**WHY_GLAGOLITIC.md**](WHY_GLAGOLITIC.md) | The paleographic evidence |
 | [**FAQ.md**](FAQ.md) | Common questions and objections answered |
-| [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | **Complete recipe extraction — every preparation, ingredient, and instruction from all 201 folios** |
+| [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | **Complete recipe extraction: every preparation, ingredient, and instruction from all 201 folios** |
 
 
 ### Methodology & Validation
@@ -375,7 +375,7 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 | [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Full paleographic analysis |
 | [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
 | [voynich_croatian_review.pdf](papers/voynich_croatian_review.pdf) | Croatian linguistic review |
-| [**S8_PREEMPTIVE_PEER_REVIEW.pdf**](papers/S8_PREEMPTIVE_PEER_REVIEW.pdf) | **S8: Adversarial AI validation — 8-turn stress test by Gemini Pro 3. Common objections pre-answered.** |
+| [**S8_PREEMPTIVE_PEER_REVIEW.pdf**](papers/S8_PREEMPTIVE_PEER_REVIEW.pdf) | **S8: Adversarial AI validation. 8-turn stress test by Gemini Pro 3. Common objections pre-answered.** |
 
 ### The Complete Key
 | Document | Description |
@@ -423,7 +423,7 @@ All data and code provided for independent verification.
 ---
 
 *"There is nothing in [Latin] history to compare it to."*  
-— Lisa Fagin Davis, paleographer
+-- Lisa Fagin Davis, paleographer
 
 *Correct. Because it's Croatian.*
 
