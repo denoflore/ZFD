@@ -76,6 +76,33 @@ A hoaxer optimizing for mystique writes one perfect, enigmatic page. A pharmacis
 
 ---
 
+## What the Sections Actually Are
+
+The manuscript is organized like a working pharmacy's filing system:
+
+**Herbal A (f1-f57): The Ingredient Catalog.** Each page is one plant. The text next to the illustration is basically a product label: "This one, use the oil, soak it, combine with bone preparation, dose this much." Short entries. The plant picture is the point. It's a field guide crossed with a quick-reference card. "Here's what it looks like, here's what you do with it." Some pages mention exotic imports: storax resin shows up on f13r (a tree sap from the eastern Mediterranean, used in medieval wound care), rosewater on f13v.
+
+**Herbal B / "Astronomical" (f65-f73): Extraction and Processing Reference.** Heavier on liquid work. Lots of straining, infusing, combining. The circular diagrams probably aren't star charts. They're process diagrams or seasonal calendars for when to harvest and process. "Extract this in water, dose it, then combine" over and over.
+
+**Biological (f75-f84): The Application Guide.** This is where the body diagrams are. Massive amounts of soaking and cooking. This section is about preparing compounds for external use. The "nymphs" are application targets. F84v literally says **dolor** (Latin: pain). So: "For pain: soak bone preparation, cook it, apply here." The drawings show WHERE on the body.
+
+**Pharmaceutical (f87-f102): The Finished Formulary.** Specific recipes with dosing instructions. F88r is the famous one: bone oil, salt, water, storax, rosewater, all with "oral" marked on it. F102r has **orolaly** (literally Latin for "orally") as a label. Someone wrote "take this by mouth" on a recipe page. These are prescriptions.
+
+**Recipes/Stars (f103-f116): The Master Reference.** Massive pages. F108v alone has 3,400 words. This is where **ana** shows up ("equal parts"), standard pharmaceutical Latin for measuring. F114r has both **dolor** (pain) AND **oral** (by mouth). That's a pain remedy taken orally. The "star" decorations are probably recipe markers or category dividers, like the little symbols you'd put in a reference book to find sections fast.
+
+**The whole book reads like:**
+
+1. **What plants do I have?** (Herbal: the pictures)
+2. **How do I process them?** (Extraction: the circular diagrams)
+3. **Where do I put it on the body?** (Application: the "nymph" diagrams)
+4. **What are the specific formulas?** (Formulary: dense text, administration routes)
+5. **Give me everything in one place** (Master index: the big dense pages at the back)
+
+It's a pharmacy. From intake to output. Ingredient to patient. The whole pipeline, documented by a guy who did this every day and needed to look things up fast.
+
+
+---
+
 ## The Key: Three-Layer Shorthand System
 
 Voynichese isn't an alphabet. It's a **positional shorthand** with three layers:
