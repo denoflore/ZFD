@@ -276,6 +276,7 @@ If your concern is already listed below, the cited evidence addresses it. We res
 | "96.8% coverage is suspiciously high" | Wrong key → 30%. Right key → 95%. That's what correct looks like. | §3.5; `08_Final_Proofs/COVERAGE_REPORT_v3_6.md` |
 | "An AI validated it, so it doesn't count" | The AI spent six turns trying to *destroy* it first. Read the protocol. | §2; §4 (this document) |
 | "No one else has verified this" | The complete key, pipeline, and corpus are public. Verify it yourself. | https://github.com/denoflore/ZFD |
+| "Someone already identified Croatian in 2015" | Missing-Watson (2015) correctly identified the language and script. She produced no key, no metrics, and no reproducible method. Independent convergence strengthens the hypothesis. | §1.3; §9.6 (main paper) |
 
 ---
 
