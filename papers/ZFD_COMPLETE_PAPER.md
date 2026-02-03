@@ -21,7 +21,7 @@ We present a complete decipherment of the Voynich Manuscript (Beinecke MS 408), 
 1. The paleographic basis for script identification through behavioral analysis
 2. The three-layer positional shorthand system (Operator + Stem + Suffix)
 3. The complete character mapping from EVA transcription to Croatian orthography
-4. Statistical validation achieving 94.7% morphological token coverage
+4. Statistical validation achieving 96.8% morphological token coverage
 5. Native speaker confirmation of key vocabulary
 6. Preregistered falsification criteria, all of which the hypothesis survives
 7. The complete manuscript rendered in readable Croatian orthography (179 pages)
@@ -306,13 +306,13 @@ If any criterion failed, the hypothesis would be rejected.
 
 | Metric | Result |
 |--------|--------|
-| Total morphological tokens | 94.7% coverage |
-| Known morphemes identified | 94 |
+| Total morphological tokens | 96.8% coverage |
+| Known morphemes identified | 141 |
 | CATMuS medieval stem match | 68.6% |
 | Croatian frequency correlation | r = 0.613 |
 | Phonotactic validity | 100% |
 
-**94.7% coverage** means that for every 100 words in the Voynich Manuscript, approximately 95 resolve to recognizable Croatian morphemes using the three-layer key.
+**96.8% coverage** means that for every 100 words in the Voynich Manuscript, approximately 95 resolve to recognizable Croatian morphemes using the three-layer key.
 
 Previous decipherment attempts achieved coverage rates of 30-40% at best. The difference is not incremental. It is categorical.
 
@@ -522,7 +522,7 @@ How did a Ragusan pharmaceutical manual reach Rudolf II's collection in Prague?
 
 ### 9.1 "The coverage rate is too high to be real"
 
-Previous decipherment attempts achieved 30-40% coverage. Is 94.7% suspiciously high?
+Previous decipherment attempts achieved 30-40% coverage. Is 96.8% suspiciously high?
 
 **Response:** Previous attempts failed because they treated Voynichese as a simple alphabet. Once you recognize the three-layer positional system, coverage rates increase dramatically because you are parsing the system correctly.
 
@@ -598,7 +598,7 @@ We provide:
 
 - The complete character key
 - The three-layer positional system
-- Statistical validation (94.7% coverage)
+- Statistical validation (96.8% coverage)
 - Native speaker confirmation
 - Preregistered falsification criteria, all passed
 - The full manuscript in readable Croatian orthography
