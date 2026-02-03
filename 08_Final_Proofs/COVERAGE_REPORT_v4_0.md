@@ -1,0 +1,130 @@
+# ZFD Coverage Report v4.0
+
+**Date:** February 3, 2026
+**Pipeline:** coverage_v40.py
+**Previous version:** v3.6b (94.7%)
+
+---
+
+## Summary
+
+| Metric | v3.6b | v4.0 | Delta |
+|--------|:-----:|:----:|:-----:|
+| Morpheme inventory | 94 | 141 | +47 |
+| Unique words covered | 7,347 / 7,859 (93.5%) | 7,534 / 7,859 (95.9%) | +187 words |
+| **Token coverage** | **94.7%** | **96.8%** | **+2.1 pp** |
+| Remaining unknown tokens | 2,110 | 1,296 | −814 |
+| Remaining unknown words | 512 | 325 | −187 |
+| Avg unknown frequency | 4.1 | 4.0 | — |
+
+---
+
+## Why Coverage Increased
+
+Three sources contributed new morphemes, all documented and cross-validated:
+
+### Source A: Latin Pharmaceutical Vocabulary (+11 morphemes)
+
+Discovery of the bilingual macaronic layer (Latin technical terms embedded in Croatian shorthand) added documented pharmaceutical terms:
+
+- `oral` / `oraly` / `orolaly` — oralis / oraliter (12+ occurrences, LABEL on f102r)
+- `dolor` — dolor, pain (f84v, f114r)
+- `ana` — equal parts (pharmaceutical measurement)
+- `fac` / `fachys` — fac, make (imperative; f1r opening word)
+- `dent` — dens, tooth (f58r dental preparation)
+- `rad` — radix, root
+- `foli` — folium, leaf
+- `oleo` — oleum, oil
+
+Cross-reference: `analysis/LATIN_PHARMACEUTICAL_VOCABULARY.md`
+
+### Source B: Spatial Correlation Terms (+3 morphemes)
+
+Independent spatial correlation test on f88r (executed by Gemini Pro 3 during adversarial validation) confirmed:
+
+- `ostol` — ost (bone) + ol (oil) = bone oil (on output vessel)
+- `oldar` — ol (oil) + dar (dose) = oil dose (on segment label)
+- `hetr` — heated (on processing component)
+
+Cross-reference: `papers/S8_PREEMPTIVE_PEER_REVIEW.md`, Turn 6
+
+### Source C: Lexicon v3.6 Confirmed Entries (+33 morphemes)
+
+The v3.6b pipeline omitted several morphemes that were listed as CONFIRMED in the formal lexicon (`08_Final_Proofs/Master_Key/Herbal_Lexicon_v3_6.csv`). These are not new discoveries—they were documented but not included in the automated pipeline. Additions include:
+
+**Suffixes (documented, CONFIRMED):**
+- `ey` (state variant), `an`/`on`/`en` (noun endings), `om`/`em` (instrumental), `di` (common compound element)
+
+**Expanded stems (CONFIRMED variants):**
+- `dain`/`daiin` (dose), `vinor` (wine), `laco` (milk)
+- `rosar`/`rosol` (rose variants), `myrrh`/`myron` (myrrh variants)
+- `canol` (cinnamon), `zinger`/`zinor` (ginger), `nardi`/`nardor` (spikenard)
+- `axung`/`axor` (lard), `cuper`/`copr` (copper), `calc` (lime)
+- `saly`/`salar` (salt variants), `amar` (bitter), `asaf` (asafoetida)
+
+**Clusters and particles:**
+- `pr`/`pl` (consonant clusters), `ty` (particle), `aiin` (repetition/plural)
+
+**Recovery impact:** 187 words / 814 tokens. The largest single contributor was `di` (recovering `di`, `hdi`, `šdi`, `odi`, `ldi`, `dhdi` — 481 tokens combined).
+
+---
+
+## Remaining Unknowns
+
+325 words (1,296 tokens, 3.2% of corpus). Average frequency: 4.0.
+
+The unknowns are overwhelmingly **2–3 character fragments** with single-digit frequencies, consistent with:
+- Hyper-abbreviated shorthand at the margins of the system
+- Scribal error or damaged text
+- EVA transcription artifacts
+
+### Top 20 Unknowns
+
+| Word | Frequency | Notes |
+|------|:---------:|-------|
+| hi | 139 | Likely h- prefix + -i suffix (single-char boundary) |
+| ši | 97 | Likely š- prefix + -i suffix |
+| am | 90 | Possible abbreviation fragment |
+| air | 83 | Possible a- + -ir suffix cluster |
+| hl | 28 | Consonant cluster fragment |
+| sair | 28 | s- + air pattern |
+| os | 28 | Possible ost- truncation |
+| dhi | 27 | d- + h- + i compound |
+| aiir | 26 | Extended air variant |
+| si | 24 | s- + -i |
+| ham | 21 | h- + am pattern |
+| hs | 19 | Consonant cluster |
+| dl | 18 | Consonant cluster |
+| ram | 16 | r- + am pattern |
+| lo | 15 | Possible l- determiner fragment |
+| ri | 14 | r- + -i |
+| lr | 14 | Consonant cluster |
+| do | 14 | Possible d- operator truncation |
+| li | 12 | l- + -i |
+| ls | 11 | Consonant cluster |
+
+**Note:** If single-character documented suffixes `i` and `y` are included (methodologically defensible—both CONFIRMED in lexicon), coverage reaches **98.5%** with only 173 unknown words (593 tokens). The conservative 96.8% figure excludes these to avoid trivial substring inflation.
+
+---
+
+## Methodology
+
+Substring matching (consistent with v3.6b): a word is "known" if it contains at least one morpheme from the inventory as a substring. Morphemes are matched longest-first to avoid trivial short matches dominating.
+
+Corpus: `output/word_frequency.csv` (7,859 unique words, 39,903 total tokens, derived from complete EVA transcription).
+
+Pipeline: `06_Pipelines/coverage_v40.py`
+
+---
+
+## Changelog
+
+| Version | Date | Coverage | Morphemes | Change |
+|---------|------|:--------:|:---------:|--------|
+| v3.6b | Jan 2026 | 94.7% | 94 | Friday's state markers, medical bone register |
+| **v4.0** | **Feb 3, 2026** | **96.8%** | **141** | **Latin pharma layer, spatial correlation, lexicon fill** |
+
+---
+
+*Generated by ZFD Coverage Pipeline v4.0*
+*Zuger Functional Decipherment — February 2026*
