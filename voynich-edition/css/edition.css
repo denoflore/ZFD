@@ -434,6 +434,42 @@ a:hover {
 .mb-md { margin-bottom: var(--space-md); }
 .mb-lg { margin-bottom: var(--space-lg); }
 
+/* Image loading states */
+.scan-viewer img {
+  min-height: 400px;
+  background: var(--bg-secondary);
+  object-fit: contain;
+}
+
+.scan-viewer img.loading {
+  opacity: 0.5;
+}
+
+.scan-viewer img.error {
+  min-height: 400px;
+  background: var(--bg-secondary) url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><text x="50" y="50" text-anchor="middle" dominant-baseline="middle" font-family="Georgia" font-size="12" fill="%238a7a6a">Image unavailable</text></svg>') center center no-repeat;
+  background-size: 80%;
+}
+
+/* Loading spinner */
+.scan-viewer.loading::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 40px;
+  height: 40px;
+  margin: -20px 0 0 -20px;
+  border: 3px solid var(--border-light);
+  border-top-color: var(--accent-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
 /* Print styles */
 @media print {
   .scan-viewer {
