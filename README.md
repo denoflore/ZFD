@@ -11,6 +11,11 @@
 
 ## What Is This?
 
+<p align="center">
+<img src="images/f1r_title_page.jpg" width="400" alt="Folio 1r of the Voynich Manuscript (Beinecke MS 408). Hořčický's signature is visible under UV light.">
+<br><em>Folio 1r. The title page of Beinecke MS 408. Image: Yale Beinecke Library (public domain).</em>
+</p>
+
 The Voynich Manuscript (Beinecke MS 408) is a 15th-century **Croatian apothecary manual** written in **angular Glagolitic cursive** using medieval shorthand conventions.
 
 This repository contains:
@@ -57,6 +62,11 @@ The pharmacy's own literature states their products are "prepared under 200 year
 
 **The modern pharmacy replaced bone oil with beeswax. The Voynich still has the original.**
 
+<p align="center">
+<img src="images/f13v_rose_recipe.jpg" width="400" alt="Folio 13v of the Voynich Manuscript, containing the rose cream recipe that matches the Franciscan Pharmacy's modern bestseller.">
+<br><em>Folio 13v. The rose cream recipe. You can still buy this product today for 30 euros. Image: Yale Beinecke Library (public domain).</em>
+</p>
+
 The pharmacy also produced Theriac (*Teriaca*), a complex preparation of dozens of ingredients requiring precise aging and compounding. These were serious pharmaceutical chemists, not monks dabbling in herbs.
 
 One ingredient tells the story: **storax** (styrax resin, imported from the eastern Mediterranean for wound care). It appears 288 times in the Voynich manuscript. The modern pharmacy doesn't use it. It was likely discontinued after the supply chain collapsed in 1667. The manuscript preserves a product line that no longer exists.
@@ -72,6 +82,11 @@ This was not the last time the monastery was nearly destroyed. During the Siege 
 The pharmacy survived. The building survived. The recipes, passed down orally and through whatever fragments remained, survived in degraded form. But the comprehensive medieval archive was gone.
 
 **Except for one book that had already left the building.**
+
+<p align="center">
+<img src="images/f85v_86r_rosette_foldout.jpg" width="600" alt="Folios 85v-86r, the famous rosette foldout page of the Voynich Manuscript.">
+<br><em>Folios 85v-86r. The famous "rosette" foldout. Frequently cited as a map or astronomical diagram, it is a visual index of preparation categories. Image: Yale Beinecke Library (public domain).</em>
+</p>
 
 ### The Journey: Ragusa → Prague → Rome → Yale
 
@@ -153,6 +168,11 @@ Boredom is the ultimate camouflage.
 
 ## But What Does It Actually Say?
 
+<p align="center">
+<img src="images/f88r_pharmaceutical.jpg" width="400" alt="Folio 88r of the Voynich Manuscript, a pharmaceutical recipe page.">
+<br><em>Folio 88r. A bone salve recipe. The text that baffled the NSA. Image: Yale Beinecke Library (public domain).</em>
+</p>
+
 You want the details that are too boring to hallucinate? Here is the translation of the "great mystery" on folio 88r. It is not a spell. It is not a map to Atlantis. It is a recipe for bone salve.
 
 > *"Take bone oil. Combine with treated oil. Work the selected bone preparation. Apply oil process, then complete bone cooking. Salt with process. Bone-oil, combine water. Dose of salt. Portion of bone."*
@@ -174,6 +194,11 @@ A hoaxer optimizing for mystique writes one perfect, enigmatic page. A pharmacis
 ---
 
 ## What the Sections Actually Are
+
+<p align="center">
+<img src="images/f87r_pharmaceutical.jpg" width="400" alt="Folio 87r, the beginning of the pharmaceutical section with dense recipe text.">
+<br><em>Folio 87r. Start of the pharmaceutical section: dense recipe text, specific dosing, preparation sequences. Image: Yale Beinecke Library (public domain).</em>
+</p>
 
 The manuscript is organized like a working pharmacy's filing system:
 
@@ -283,6 +308,11 @@ Step 5: Check Croatian
 ---
 
 ## Why Glagolitic? The Evidence
+
+<p align="center">
+<img src="images/f33v_herbal.jpg" width="400" alt="Folio 33v, a herbal illustration page with plant drawing and Glagolitic shorthand text.">
+<br><em>Folio 33v. A herbal entry with plant illustration and preparation text in angular Glagolitic cursive. Image: Yale Beinecke Library (public domain).</em>
+</p>
 
 Lisa Fagin Davis said there is "nothing in history to compare it to." She was right. In *Latin* history. She never checked Croatian manuscripts.
 
@@ -426,6 +456,12 @@ All data and code provided for independent verification.
 **Grammatical Framework:** Friday (GPT-5.2)  
 **Implementation & Analysis:** Claudette (Claude Opus 4.5)  
 **Validation & Grounding:** Curio (Gemini Pro 3)
+
+### Image Sources
+
+All folio images are from the **Yale University Beinecke Rare Book & Manuscript Library** digital collection of MS 408 ("Voynich Manuscript"), accessed via IIIF. The manuscript is pre-1500 and in the public domain. High-resolution scans of all 225 folios are available at [collections.library.yale.edu/catalog/2002046](https://collections.library.yale.edu/catalog/2002046).
+
+For photographs of the Franciscan Pharmacy museum and interior, see [Wikimedia Commons: Franciscan Church and Monastery in Dubrovnik](https://commons.wikimedia.org/wiki/Category:Franciscan_Church_and_Monastery_in_Dubrovnik_-_Museum).
 
 ---
 
