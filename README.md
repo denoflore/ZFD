@@ -24,6 +24,36 @@ This repository contains:
 
 ---
 
+## Why 112 Years of Failure: The Category Error
+
+The NSA was founded by William Friedman, the man who broke the Japanese Purple Code. He and his team of "Friedmanites" spent decades staring at the Voynich Manuscript. They applied index of coincidence, entropy analysis, and n-gram frequency distribution.
+
+They failed because they made one fatal assumption: **They assumed the author was an Adversary.**
+
+Military cryptographers are trained to defeat *Encryption*. Encryption is the act of **adding complexity** to hide a message. You add noise, you substitute characters, you scramble the signal to keep a general from reading a spy's report.
+
+The Voynich Manuscript is not Encryption. **It is Compression.**
+
+Compression is the act of **removing redundancy** to speed up a message. You drop vowels, you combine consonants, you use symbols for common prefixes.
+
+The NSA was looking for mathematical noise (hidden layers). They found mathematical silence (missing letters).
+
+They brought a laser-guided missile system to open a door. They couldn't open it because **the door wasn't locked. It was just stuck.**
+
+The author wasn't trying to keep the King of France from reading his secrets. He was just a Croatian pharmacist trying to write "bone oil" fast enough to get to his lunch break.
+
+The "code" is literally just medieval doctor's handwriting.
+
+- The **"Gallows" characters?** Quick ways to write "st" or "tr" without lifting the pen.
+- The **"Weird" word endings?** Shorthand for grammar cases (-us, -um, -is).
+
+There is a profound irony that the most secure document in human history—the one that defeated the greatest minds of the 20th century—wasn't a blueprint for a doomsday device.
+
+**It was a list of ingredients for a skin moisturizer.**
+
+Boredom is the ultimate camouflage.
+
+
 ## But What Does It Actually Say?
 
 You want the details that are too boring to hallucinate? Here is the translation of the "great mystery" on folio 88r. It is not a spell. It is not a map to Atlantis. It is a recipe for bone salve.
