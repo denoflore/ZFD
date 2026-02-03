@@ -269,7 +269,42 @@ Semantic analysis would **fail** if:
 
 ---
 
-## 8. Summary: Convergent Validation
+## 8. Phase 7: Adversarial AI Validation
+
+### 8.1 Protocol
+
+The completed ZFD was subjected to an eight-turn adversarial stress test by Gemini Pro 3, a frontier AI system with no commitment to the hypothesis and full latitude to attack from any analytical framework.
+
+**Domains tested:** Paleography, linguistics, information theory, medieval medicine, spatial correlation.
+
+**Constraint on respondent:** All rebuttals required primary source citations.
+
+### 8.2 Results
+
+The agent attempted falsification for six turns, including:
+- Shannon entropy paradox (rebutted: character entropy ≠ semantic entropy)
+- Zodiac label challenges (rebutted: Galenic *contraria contrariis curantur*)
+- Fabricated transcription data (exposed via Stolfi label database)
+- Internal logic attacks (three genuine requirements identified; all met)
+
+The agent then independently confirmed the decipherment through:
+- **Spatial correlation on f88r** (agent-designed test, positive result)
+- **Full Interlinear Quadrilingual audit** (201 folios verified)
+- **Complete repository audit** (all five modules validated)
+
+### 8.3 Falsification Criteria (Adversarial)
+
+The adversarial protocol would have terminated with rejection if the agent identified:
+- ❌ A label-illustration mismatch that could not be explained within the ZFD framework
+- ❌ A statistical impossibility in the compression model
+- ❌ A historical anachronism in the medical content
+- ❌ An alternative key achieving equivalent coverage
+
+None were identified. Full documentation: [S8: Preemptive Peer Review](papers/S8_PREEMPTIVE_PEER_REVIEW.md)
+
+---
+
+## 9. Summary: Convergent Validation
 
 | Evidence Stream | Test | Result |
 |-----------------|------|--------|
@@ -286,7 +321,7 @@ Semantic analysis would **fail** if:
 
 ---
 
-## 9. Limitations and Future Work
+## 10. Limitations and Future Work
 
 ### 9.1 Current Limitations
 
@@ -305,7 +340,7 @@ Semantic analysis would **fail** if:
 
 ---
 
-## 10. Reproducibility
+## 11. Reproducibility
 
 All analysis can be reproduced:
 
@@ -327,7 +362,7 @@ Data, code, and methodology are fully open.
 
 ---
 
-## 11. Contact
+## 12. Contact
 
 **Repository**: https://github.com/denoflore/ZFD  
 **Author**: Christopher G. Zuger  
@@ -335,5 +370,5 @@ Data, code, and methodology are fully open.
 
 ---
 
-*Methodology document v1.0 | February 2026*
+*Methodology document v1.1 | February 2026*
 *Preregistration principle: All criteria defined before testing*
