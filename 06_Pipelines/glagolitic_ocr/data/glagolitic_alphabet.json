@@ -1,0 +1,451 @@
+{
+  "metadata": {
+    "name": "Glagolitic Alphabet Reference",
+    "variant": "Angular (Croatian)",
+    "purpose": "OCR and EVA mapping for Voynich comparison",
+    "version": "1.0",
+    "date": "2026-02-03"
+  },
+  "characters": {
+    "Ⰰ": {
+      "unicode": "U+2C00",
+      "codepoint": 11264,
+      "name": "Az",
+      "sound": "/a/",
+      "ipa": "a",
+      "eva": "a",
+      "croatian": "a",
+      "type": "vowel",
+      "frequency": "high"
+    },
+    "Ⰵ": {
+      "unicode": "U+2C05",
+      "codepoint": 11269,
+      "name": "Est",
+      "sound": "/e/",
+      "ipa": "e",
+      "eva": "e",
+      "croatian": "e",
+      "type": "vowel",
+      "frequency": "high"
+    },
+    "Ⰹ": {
+      "unicode": "U+2C09",
+      "codepoint": 11273,
+      "name": "Izhe",
+      "sound": "/i/",
+      "ipa": "i",
+      "eva": "i",
+      "croatian": "i",
+      "type": "vowel",
+      "frequency": "high"
+    },
+    "Ⱁ": {
+      "unicode": "U+2C11",
+      "codepoint": 11281,
+      "name": "On",
+      "sound": "/o/",
+      "ipa": "o",
+      "eva": "o",
+      "croatian": "o",
+      "type": "vowel",
+      "frequency": "high"
+    },
+    "Ⱆ": {
+      "unicode": "U+2C16",
+      "codepoint": 11286,
+      "name": "Uk",
+      "sound": "/u/",
+      "ipa": "u",
+      "eva": null,
+      "croatian": "u",
+      "type": "vowel",
+      "frequency": "medium"
+    },
+    "Ⱏ": {
+      "unicode": "U+2C1F",
+      "codepoint": 11295,
+      "name": "Yat",
+      "sound": "/ja/",
+      "ipa": "ja",
+      "eva": null,
+      "croatian": "ja/je",
+      "type": "vowel",
+      "frequency": "medium"
+    },
+    "Ⱍ": {
+      "unicode": "U+2C1D",
+      "codepoint": 11293,
+      "name": "Yer",
+      "sound": "/ɨ/",
+      "ipa": "ɨ",
+      "eva": "y",
+      "croatian": "i",
+      "type": "vowel",
+      "frequency": "high",
+      "note": "Reduced vowel, often written as y in EVA"
+    },
+    "Ⰱ": {
+      "unicode": "U+2C01",
+      "codepoint": 11265,
+      "name": "Buky",
+      "sound": "/b/",
+      "ipa": "b",
+      "eva": null,
+      "croatian": "b",
+      "type": "consonant",
+      "frequency": "medium"
+    },
+    "Ⰳ": {
+      "unicode": "U+2C03",
+      "codepoint": 11267,
+      "name": "Glagoli",
+      "sound": "/g/",
+      "ipa": "g",
+      "eva": "g",
+      "croatian": "g",
+      "type": "consonant",
+      "frequency": "low"
+    },
+    "Ⰴ": {
+      "unicode": "U+2C04",
+      "codepoint": 11268,
+      "name": "Dobro",
+      "sound": "/d/",
+      "ipa": "d",
+      "eva": "d",
+      "croatian": "d",
+      "type": "consonant",
+      "frequency": "high"
+    },
+    "Ⰼ": {
+      "unicode": "U+2C0C",
+      "codepoint": 11276,
+      "name": "Kako",
+      "sound": "/k/",
+      "ipa": "k",
+      "eva": "k",
+      "croatian": "k",
+      "type": "consonant",
+      "frequency": "high",
+      "note": "Gallows character in EVA"
+    },
+    "Ⱂ": {
+      "unicode": "U+2C12",
+      "codepoint": 11282,
+      "name": "Pokoj",
+      "sound": "/p/",
+      "ipa": "p",
+      "eva": "p",
+      "croatian": "p",
+      "type": "consonant",
+      "frequency": "medium",
+      "note": "Gallows character in EVA"
+    },
+    "Ⱅ": {
+      "unicode": "U+2C15",
+      "codepoint": 11285,
+      "name": "Tvrdo",
+      "sound": "/t/",
+      "ipa": "t",
+      "eva": "t",
+      "croatian": "t",
+      "type": "consonant",
+      "frequency": "high",
+      "note": "Gallows character in EVA"
+    },
+    "Ⰲ": {
+      "unicode": "U+2C02",
+      "codepoint": 11266,
+      "name": "Vede",
+      "sound": "/v/",
+      "ipa": "v",
+      "eva": null,
+      "croatian": "v",
+      "type": "consonant",
+      "frequency": "medium"
+    },
+    "Ⰶ": {
+      "unicode": "U+2C06",
+      "codepoint": 11270,
+      "name": "Zhivete",
+      "sound": "/ʒ/",
+      "ipa": "ʒ",
+      "eva": null,
+      "croatian": "ž",
+      "type": "consonant",
+      "frequency": "low"
+    },
+    "Ⰸ": {
+      "unicode": "U+2C08",
+      "codepoint": 11272,
+      "name": "Zemlja",
+      "sound": "/z/",
+      "ipa": "z",
+      "eva": null,
+      "croatian": "z",
+      "type": "consonant",
+      "frequency": "medium"
+    },
+    "Ⱄ": {
+      "unicode": "U+2C14",
+      "codepoint": 11284,
+      "name": "Slovo",
+      "sound": "/s/",
+      "ipa": "s",
+      "eva": "s",
+      "croatian": "s",
+      "type": "consonant",
+      "frequency": "high"
+    },
+    "Ⱇ": {
+      "unicode": "U+2C17",
+      "codepoint": 11287,
+      "name": "Frt",
+      "sound": "/f/",
+      "ipa": "f",
+      "eva": "f",
+      "croatian": "f",
+      "type": "consonant",
+      "frequency": "low",
+      "note": "Gallows character in EVA"
+    },
+    "Ⱈ": {
+      "unicode": "U+2C18",
+      "codepoint": 11288,
+      "name": "Xer",
+      "sound": "/x/",
+      "ipa": "x",
+      "eva": "ch",
+      "croatian": "h",
+      "type": "consonant",
+      "frequency": "medium",
+      "note": "Maps to EVA ch- prefix"
+    },
+    "Ⱊ": {
+      "unicode": "U+2C1A",
+      "codepoint": 11290,
+      "name": "Sha",
+      "sound": "/ʃ/",
+      "ipa": "ʃ",
+      "eva": "sh",
+      "croatian": "š",
+      "type": "consonant",
+      "frequency": "medium",
+      "note": "Maps to EVA sh- prefix"
+    },
+    "Ⰷ": {
+      "unicode": "U+2C07",
+      "codepoint": 11271,
+      "name": "Dzelo",
+      "sound": "/dz/",
+      "ipa": "dz",
+      "eva": null,
+      "croatian": "dz",
+      "type": "consonant",
+      "frequency": "low"
+    },
+    "Ⱉ": {
+      "unicode": "U+2C19",
+      "codepoint": 11289,
+      "name": "Tsi",
+      "sound": "/ts/",
+      "ipa": "ts",
+      "eva": "c",
+      "croatian": "c",
+      "type": "consonant",
+      "frequency": "medium"
+    },
+    "Ⱋ": {
+      "unicode": "U+2C1B",
+      "codepoint": 11291,
+      "name": "Chrv",
+      "sound": "/tʃ/",
+      "ipa": "tʃ",
+      "eva": null,
+      "croatian": "č",
+      "type": "consonant",
+      "frequency": "low"
+    },
+    "Ⱌ": {
+      "unicode": "U+2C1C",
+      "codepoint": 11292,
+      "name": "Shta",
+      "sound": "/ʃt/",
+      "ipa": "ʃt",
+      "eva": null,
+      "croatian": "št",
+      "type": "consonant",
+      "frequency": "low"
+    },
+    "Ⰽ": {
+      "unicode": "U+2C0D",
+      "codepoint": 11277,
+      "name": "Ljudie",
+      "sound": "/l/",
+      "ipa": "l",
+      "eva": "l",
+      "croatian": "l",
+      "type": "consonant",
+      "frequency": "high"
+    },
+    "Ⰾ": {
+      "unicode": "U+2C0E",
+      "codepoint": 11278,
+      "name": "Myslete",
+      "sound": "/m/",
+      "ipa": "m",
+      "eva": "m",
+      "croatian": "m",
+      "type": "consonant",
+      "frequency": "medium"
+    },
+    "Ⰿ": {
+      "unicode": "U+2C0F",
+      "codepoint": 11279,
+      "name": "Nash",
+      "sound": "/n/",
+      "ipa": "n",
+      "eva": "n",
+      "croatian": "n",
+      "type": "consonant",
+      "frequency": "high"
+    },
+    "Ⱃ": {
+      "unicode": "U+2C13",
+      "codepoint": 11283,
+      "name": "Rtsi",
+      "sound": "/r/",
+      "ipa": "r",
+      "eva": "r",
+      "croatian": "r",
+      "type": "consonant",
+      "frequency": "high"
+    },
+    "Ⰺ": {
+      "unicode": "U+2C0A",
+      "codepoint": 11274,
+      "name": "I",
+      "sound": "/i/",
+      "ipa": "i",
+      "eva": "i",
+      "croatian": "i",
+      "type": "vowel",
+      "frequency": "medium",
+      "note": "Variant of Izhe"
+    },
+    "Ⰻ": {
+      "unicode": "U+2C0B",
+      "codepoint": 11275,
+      "name": "Djerv",
+      "sound": "/dʒ/",
+      "ipa": "dʒ",
+      "eva": null,
+      "croatian": "đ",
+      "type": "consonant",
+      "frequency": "low"
+    },
+    "Ⱎ": {
+      "unicode": "U+2C1E",
+      "codepoint": 11294,
+      "name": "Yeri",
+      "sound": "/ɨ/",
+      "ipa": "ɨ",
+      "eva": "y",
+      "croatian": "i",
+      "type": "vowel",
+      "frequency": "low"
+    },
+    "Ⱐ": {
+      "unicode": "U+2C20",
+      "codepoint": 11296,
+      "name": "Yo",
+      "sound": "/jo/",
+      "ipa": "jo",
+      "eva": null,
+      "croatian": "jo",
+      "type": "vowel",
+      "frequency": "low"
+    },
+    "Ⱑ": {
+      "unicode": "U+2C21",
+      "codepoint": 11297,
+      "name": "Yu",
+      "sound": "/ju/",
+      "ipa": "ju",
+      "eva": null,
+      "croatian": "ju",
+      "type": "vowel",
+      "frequency": "low"
+    }
+  },
+  "eva_mapping": {
+    "a": "Ⰰ",
+    "e": "Ⰵ",
+    "i": "Ⰹ",
+    "o": "Ⱁ",
+    "y": "Ⱍ",
+    "g": "Ⰳ",
+    "d": "Ⰴ",
+    "k": "Ⰼ",
+    "p": "Ⱂ",
+    "t": "Ⱅ",
+    "s": "Ⱄ",
+    "f": "Ⱇ",
+    "ch": "Ⱈ",
+    "sh": "Ⱊ",
+    "c": "Ⱉ",
+    "l": "Ⰽ",
+    "m": "Ⰾ",
+    "n": "Ⰿ",
+    "r": "Ⱃ"
+  },
+  "gallows_characters": {
+    "k": {
+      "glagolitic": "Ⰼ",
+      "name": "Kako",
+      "note": "Commonly used gallows in Voynich"
+    },
+    "t": {
+      "glagolitic": "Ⱅ",
+      "name": "Tvrdo",
+      "note": "Commonly used gallows in Voynich"
+    },
+    "f": {
+      "glagolitic": "Ⱇ",
+      "name": "Frt",
+      "note": "Less common gallows in Voynich"
+    },
+    "p": {
+      "glagolitic": "Ⱂ",
+      "name": "Pokoj",
+      "note": "Less common gallows in Voynich"
+    }
+  },
+  "abbreviation_marks": {
+    "titlo": {
+      "description": "Overline mark indicating abbreviation",
+      "usage": "Placed over abbreviated words, especially nomina sacra",
+      "voynich_parallel": "Gallows may function similarly"
+    },
+    "superscript": {
+      "description": "Letters written above baseline",
+      "usage": "Indicate omitted letters in abbreviation",
+      "voynich_parallel": "Some EVA glyphs may be superscript indicators"
+    },
+    "contraction": {
+      "description": "Omission of middle letters",
+      "usage": "Common in liturgical manuscripts",
+      "voynich_parallel": "May explain missing vowels in some words"
+    }
+  },
+  "statistics": {
+    "total_characters": 32,
+    "vowels": 11,
+    "consonants": 21,
+    "with_eva_mapping": 19,
+    "high_frequency": 11,
+    "medium_frequency": 11,
+    "low_frequency": 10
+  }
+}
