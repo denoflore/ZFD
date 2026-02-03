@@ -2,7 +2,7 @@
 ## The Voynich Manuscript is Solved
 
 **Status:** COMPLETE ✓  
-**Coverage:** 94.7% morphological token coverage  
+**Coverage:** 96.8% morphological token coverage  
 **Validation:** Native speaker confirmed (Croatian)  
 **Nature Submission:** Tracking #2026-02-03422  
 **Date:** February 2026
@@ -141,8 +141,8 @@ From the paper, Section 4.3:
 
 | Metric | Result |
 |--------|--------|
-| Token coverage | **94.7%** |
-| Known morphemes | 94 |
+| Token coverage | **96.8%** |
+| Known morphemes | 141 |
 | CATMuS stem match | 68.6% |
 | Native speaker confirmed | ✓ |
 | Spatial correlation | ✓ (p<0.001) |
@@ -190,7 +190,7 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 |----------|-------------|
 | [**METHODOLOGY.md**](METHODOLOGY.md) | Preregistered criteria, falsification tests |
 | [VALIDATION_RESULTS_JAN2026.md](VALIDATION_RESULTS_JAN2026.md) | Statistical validation results |
-| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | 94.7% coverage analysis |
+| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | 96.8% coverage analysis |
 
 ### Papers
 | Document | Description |
