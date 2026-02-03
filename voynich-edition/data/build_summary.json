@@ -1,0 +1,25 @@
+{
+  "generated": "2026-02-03",
+  "version": "1.0.0",
+  "source": "ZFD Repository",
+  "folio_count": 201,
+  "sections": [
+    "Herbal A",
+    "Herbal B",
+    "Astronomical",
+    "Biological",
+    "Cosmological",
+    "Pharmaceutical",
+    "Recipes/Stars"
+  ],
+  "total_ingredients": 13,
+  "total_ingredient_mentions": 36794,
+  "total_preparation_methods": 12,
+  "sop_graph_edges": 20097,
+  "files_generated": [
+    "folio_metadata.json",
+    "section_data.json",
+    "ingredient_index.json",
+    "sop_graph.json"
+  ]
+}

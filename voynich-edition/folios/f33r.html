@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F33R - Voynich Digital Edition</title>
+  <link rel="stylesheet" href="../css/edition.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../index.html">Voynich Edition</a>
+        <span>/</span>
+        <a href="../index.html#herbal a">Herbal A</a>
+        <span>/</span>
+        <span>F33R</span>
+      </nav>
+      <h1>F33R</h1>
+      <p class="subtitle">Herbal A Section
+        <span class="confidence-badge confidence-85">85% confidence</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="folio-layout">
+      <!-- Scan viewer -->
+      <div class="scan-viewer">
+        <img src="https://via.placeholder.com/600x800?text=F33R" alt="Folio F33R scan" id="folio-image">
+        <div class="viewer-controls">
+          <button onclick="zoomIn()">Zoom +</button>
+          <button onclick="zoomOut()">Zoom -</button>
+          <button onclick="resetZoom()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div class="text-content">
+        <section class="interlinear-section">
+          <h2>Interlinear Decode</h2>
+          <p class="text-muted">4-layer format: Voynichese (EVA) > Croatian > Expanded > English</p>
+          <div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> tshdar shdor shepchdy cphody yfoldy qofockhdy otchedy lfchdy daiin</div>
+  <div class="line"><span class="label cro">CRO:</span> tšdar šdor šeplhdy cpllody yproldy koprocstrdy otrhedi lprhdy dain</div>
+  <div class="line"><span class="label exp">EXP:</span> DA [Lat.] šdor šeplhdy cpllody yproldy koprocstrdy otrov/pripravahedi lprhdy DA [Lat.]</div>
+  <div class="line"><span class="label eng">ENG:</span> give ? ? ? ? ? extract/prep+hedi ? give</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> ytchedy qokar cheky okaldy qokaldy otor oldor qotor otar otardam</div>
+  <div class="line"><span class="label cro">CRO:</span> ytrhedi kostar hesty ostaldy kostaldy otror oldor kotror otrar otrardam</div>
+  <div class="line"><span class="label exp">EXP:</span> ytrhedi kost-ar hesty kostaldy kost-aldy otrov/pripravaor uljedor kotror otrov/pripravaar otrov/pripravaardam</div>
+  <div class="line"><span class="label eng">ENG:</span> ? bone-water ? bone+aldy bone-vessel+dy extract/prep+or oil+dor ? extract/prep+ar extract/prep+ardam</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> loiin y cheky qokedy shedy chdal chechdaiin qokchy ody chekeedy ykam</div>
+  <div class="line"><span class="label cro">CRO:</span> loin y hesty kostedi šedi hdal hehdain kosthy ody hestedi ystam</div>
+  <div class="line"><span class="label exp">EXP:</span> loin y hesty kost-edi močeno DA [Lat.] hehdain kosthy ody hestedi ystam</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? ? bone-preparation soaked give ? ? ? ? ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> taiin chekey or alaiiin saiin okaiin dar cheedy chkeey far aiin s</div>
+  <div class="line"><span class="label cro">CRO:</span> tain hestey or alaiin sain ostain dar hedi hstei far ain s</div>
+  <div class="line"><span class="label exp">EXP:</span> tain hestey ulje tekućinaaiin soljeno kostnin DA [Lat.] kuhano hstei far ain s</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? oil liquid+aiin salted of bone+n give cooked ? ? ? ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> pair or aiin otaiin ol kor aiin okal otal chdal shekal qakar otam</div>
+  <div class="line"><span class="label cro">CRO:</span> pair or ain otrain ol kor ain ostal otral hdal šestal koastar otram</div>
+  <div class="line"><span class="label exp">EXP:</span> pair ulje ain pripravnin ulje korijen ain kostal otrov/pripravaal DA [Lat.] šestal koastar otrov/pripravaam</div>
+  <div class="line"><span class="label eng">ENG:</span> ? oil ? prepared+n oil root ? bone+al extract/prep+al give ? ? extract/prep+am</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> yteey shody tchedydy chekar okaiin okaiin daiin okal</div>
+  <div class="line"><span class="label cro">CRO:</span> ytrei šody thedidy hestar ostain ostain dain ostal</div>
+  <div class="line"><span class="label exp">EXP:</span> ytrei šody thedidy hestar kostnin kostnin DA [Lat.] kostal</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? ? ? of bone+n of bone+n give bone+al</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> dar chos aiin or aiin cheekaiin okain ar okeeey</div>
+  <div class="line"><span class="label cro">CRO:</span> dar hos ain or ain hestain ostain ar ostei</div>
+  <div class="line"><span class="label exp">EXP:</span> DA [Lat.] hos ain ulje ain hestain kostnin voda kostei</div>
+  <div class="line"><span class="label eng">ENG:</span> give ? ? oil ? ? of bone+n water bone+ei</div>
+</div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Ingredients -->
+    <section class="info-panel">
+      <h3>Ingredients Identified</h3>
+      <table class="data-table">
+        <thead><tr><th>Stem</th><th>English</th><th>Latin</th><th>Category</th><th>Count</th><th>Status</th></tr></thead>
+        <tbody><tr><td><strong>ar</strong></td><td>water</td><td><em>aqua</em></td><td>liquid</td><td class="num">20</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>kost</strong></td><td>bone</td><td><em>os/ossis</em></td><td>animal</td><td class="num">16</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>or</strong></td><td>oil</td><td><em>oleum</em></td><td>liquid</td><td class="num">15</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>ol</strong></td><td>oil</td><td><em>oleum</em></td><td>liquid</td><td class="num">5</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>sal</strong></td><td>salt</td><td><em>sal</em></td><td>mineral</td><td class="num">1</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+</tbody></table>
+    </section>
+
+    <!-- Preparation Methods -->
+    <section class="info-panel">
+      <h3>Preparation Methods</h3>
+      <table class="data-table">
+        <thead><tr><th>Stem</th><th>English</th><th>Category</th><th>Count</th></tr></thead>
+        <tbody><tr><td><strong>hedi</strong></td><td>cook/prepare</td><td>heat</td><td class="num">8</td></tr>
+<tr><td><strong>dain</strong></td><td>dose/portion</td><td>dosing</td><td class="num">4</td></tr>
+<tr><td><strong>dar</strong></td><td>dose/give</td><td>dosing</td><td class="num">3</td></tr>
+<tr><td><strong>dal</strong></td><td>then/next</td><td>sequence</td><td class="num">2</td></tr>
+<tr><td><strong>šedi</strong></td><td>soak/infuse</td><td>liquid</td><td class="num">1</td></tr>
+</tbody></table>
+    </section>
+
+    
+
+    <!-- SOP Chain -->
+    <section class="info-panel">
+      <h3>SOP Chain (Related Folios)</h3>
+      <p class="text-muted mb-md">Folios sharing ingredients with F33R:</p>
+      <div class="sop-chain">
+        <a href="f108v.html" class="sop-link related">F108V (ar, ol, kost)</a>
+<a href="f86v.html" class="sop-link related">F86V (ar, ol, kost)</a>
+<a href="f108r.html" class="sop-link related">F108R (ar, ol, kost)</a>
+<a href="f107v.html" class="sop-link related">F107V (ar, ol, kost)</a>
+<a href="f111v.html" class="sop-link related">F111V (ar, ol, kost)</a>
+
+      </div>
+    </section>
+
+    <!-- Codicological Notes (placeholder) -->
+    <section class="info-panel">
+      <h3>Codicological Notes</h3>
+      <dl>
+        <dt>Section</dt>
+        <dd>Herbal A</dd>
+        <dt>Word Count</dt>
+        <dd>227 total, 75 recipe-relevant</dd>
+        <dt>Confidence</dt>
+        <dd>85%</dd>
+      </dl>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="folio-nav">
+      <a href="f32v.html">&larr; F32V</a>
+      <a href="../index.html">All Folios</a>
+      <a href="f33v.html">F33V &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>Voynich Digital Edition - <a href="https://github.com/denoflore/ZFD">ZFD Project</a></p>
+      <p class="text-muted">Based on the Zuger Functional Decipherment</p>
+    </div>
+  </footer>
+
+  <script>
+    let scale = 1;
+    const img = document.getElementById('folio-image');
+
+    function zoomIn() {
+      scale = Math.min(scale * 1.2, 4);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function zoomOut() {
+      scale = Math.max(scale / 1.2, 0.5);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function resetZoom() {
+      scale = 1;
+      img.style.transform = 'scale(1)';
+    }
+  </script>
+</body>
+</html>

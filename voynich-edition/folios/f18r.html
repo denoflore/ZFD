@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F18R - Voynich Digital Edition</title>
+  <link rel="stylesheet" href="../css/edition.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../index.html">Voynich Edition</a>
+        <span>/</span>
+        <a href="../index.html#herbal a">Herbal A</a>
+        <span>/</span>
+        <span>F18R</span>
+      </nav>
+      <h1>F18R</h1>
+      <p class="subtitle">Herbal A Section
+        <span class="confidence-badge confidence-85">85% confidence</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="folio-layout">
+      <!-- Scan viewer -->
+      <div class="scan-viewer">
+        <img src="https://via.placeholder.com/600x800?text=F18R" alt="Folio F18R scan" id="folio-image">
+        <div class="viewer-controls">
+          <button onclick="zoomIn()">Zoom +</button>
+          <button onclick="zoomOut()">Zoom -</button>
+          <button onclick="resetZoom()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div class="text-content">
+        <section class="interlinear-section">
+          <h2>Interlinear Decode</h2>
+          <p class="text-muted">4-layer format: Voynichese (EVA) > Croatian > Expanded > English</p>
+          <div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> pdrairdy darodsf yoar ykchol dar o m chckhyockhor dal</div>
+  <div class="line"><span class="label cro">CRO:</span> pdrairdy darodspr yoar ysthol dar o m hcstryocstror dal</div>
+  <div class="line"><span class="label exp">EXP:</span> pdrairdy darodspr yoar ysthol DA [Lat.] o m hcstryocstror DA [Lat.]</div>
+  <div class="line"><span class="label eng">ENG:</span> ? dose/gift+odspr ? ? give ? ? ? give</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> otshol qokchol chykchy okchal daiin dychol diiin</div>
+  <div class="line"><span class="label cro">CRO:</span> otršol kosthol hysthy osthal dain dyhol diin</div>
+  <div class="line"><span class="label exp">EXP:</span> otrov/pripravašol kosthol hysthy kosthal DA [Lat.] dyhol diin</div>
+  <div class="line"><span class="label eng">ENG:</span> extract/prep+šol ? ? bone+hal give ? ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> qokchor chor chckhy orchey qokchol dyytchar g</div>
+  <div class="line"><span class="label cro">CRO:</span> kosthor hor hcstry orhey kosthol dyytrhar g</div>
+  <div class="line"><span class="label exp">EXP:</span> kosthor kuhar hcstry uljehey kosthol dyytrhar g</div>
+  <div class="line"><span class="label eng">ENG:</span> ? cook ? oil+hey ? ? ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> chor cthor okeor ykchol okain</div>
+  <div class="line"><span class="label cro">CRO:</span> hor ctrror osteor ysthol ostain</div>
+  <div class="line"><span class="label exp">EXP:</span> kuhar ctrror kosteor ysthol kostnin</div>
+  <div class="line"><span class="label eng">ENG:</span> cook ? bone+eor ? of bone+n</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> tchor shor cthaiin cthol chlol chom</div>
+  <div class="line"><span class="label cro">CRO:</span> thor šor ctrrain ctrrol hlol hom</div>
+  <div class="line"><span class="label exp">EXP:</span> thor s-ulje ctrrain ctrrol hlol hom</div>
+  <div class="line"><span class="label eng">ENG:</span> ? with oil ? ? ? ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> ychy kchor dair ytol chcthy dar dar dal</div>
+  <div class="line"><span class="label cro">CRO:</span> yhy khor dair ytrol hctrry dar dar dal</div>
+  <div class="line"><span class="label exp">EXP:</span> yhy khor DA [Lat.] ytrol hctrry DA [Lat.] DA [Lat.] DA [Lat.]</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? give ? ? give give give</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> oshor shaiin cthy sholdy doldy doldaiin</div>
+  <div class="line"><span class="label cro">CRO:</span> ošor šain ctrry šoldy doldy doldain</div>
+  <div class="line"><span class="label exp">EXP:</span> ošor šain ctrry s-uljedy doldy doldain</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? ? with oil+dy ? ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> qokchor ckhol olody okaldydary</div>
+  <div class="line"><span class="label cro">CRO:</span> kosthor cstrol olody ostaldydary</div>
+  <div class="line"><span class="label exp">EXP:</span> kosthor cstrol uljeody kostaldydary</div>
+  <div class="line"><span class="label eng">ENG:</span> ? ? oil+ody bone+aldydary</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> chol chcthal okshal chykald</div>
+  <div class="line"><span class="label cro">CRO:</span> hol hctrral ostšal hystald</div>
+  <div class="line"><span class="label exp">EXP:</span> kuh-ulje hctrral kostšal hystald</div>
+  <div class="line"><span class="label eng">ENG:</span> cook+oil ? bone+šal ?</div>
+</div><div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> dar shor qokchol ol ydaiin</div>
+  <div class="line"><span class="label cro">CRO:</span> dar šor kosthol ol ydain</div>
+  <div class="line"><span class="label exp">EXP:</span> DA [Lat.] s-ulje kosthol ulje DA [Lat.]</div>
+  <div class="line"><span class="label eng">ENG:</span> give with oil ? oil give</div>
+</div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Ingredients -->
+    <section class="info-panel">
+      <h3>Ingredients Identified</h3>
+      <table class="data-table">
+        <thead><tr><th>Stem</th><th>English</th><th>Latin</th><th>Category</th><th>Count</th><th>Status</th></tr></thead>
+        <tbody><tr><td><strong>ol</strong></td><td>oil</td><td><em>oleum</em></td><td>liquid</td><td class="num">35</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>or</strong></td><td>oil</td><td><em>oleum</em></td><td>liquid</td><td class="num">24</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>ar</strong></td><td>water</td><td><em>aqua</em></td><td>liquid</td><td class="num">19</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>kost</strong></td><td>bone</td><td><em>os/ossis</em></td><td>animal</td><td class="num">18</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+<tr><td><strong>edy</strong></td><td>root/prepared root</td><td><em>radix</em></td><td>plant_part</td><td class="num">1</td><td><span class="tag tag-confirmed">CONFIRMED</span></td></tr>
+</tbody></table>
+    </section>
+
+    <!-- Preparation Methods -->
+    <section class="info-panel">
+      <h3>Preparation Methods</h3>
+      <table class="data-table">
+        <thead><tr><th>Stem</th><th>English</th><th>Category</th><th>Count</th></tr></thead>
+        <tbody><tr><td><strong>hol</strong></td><td>combine</td><td>mixing</td><td class="num">15</td></tr>
+<tr><td><strong>hor</strong></td><td>process/work</td><td>general</td><td class="num">11</td></tr>
+<tr><td><strong>dar</strong></td><td>dose/give</td><td>dosing</td><td class="num">10</td></tr>
+<tr><td><strong>thor</strong></td><td>boil/roast</td><td>heat</td><td class="num">6</td></tr>
+<tr><td><strong>dain</strong></td><td>dose/portion</td><td>dosing</td><td class="num">5</td></tr>
+<tr><td><strong>šol</strong></td><td>soak in oil</td><td>liquid</td><td class="num">4</td></tr>
+<tr><td><strong>šor</strong></td><td>strain/soak</td><td>liquid</td><td class="num">4</td></tr>
+<tr><td><strong>dal</strong></td><td>then/next</td><td>sequence</td><td class="num">2</td></tr>
+</tbody></table>
+    </section>
+
+    
+
+    <!-- SOP Chain -->
+    <section class="info-panel">
+      <h3>SOP Chain (Related Folios)</h3>
+      <p class="text-muted mb-md">Folios sharing ingredients with F18R:</p>
+      <div class="sop-chain">
+        <a href="f108v.html" class="sop-link related">F108V (ar, edy, ol)</a>
+<a href="f107v.html" class="sop-link related">F107V (ar, edy, ol)</a>
+<a href="f76r.html" class="sop-link related">F76R (ar, edy, ol)</a>
+<a href="f75r.html" class="sop-link related">F75R (ar, edy, ol)</a>
+<a href="f103r.html" class="sop-link related">F103R (ar, edy, ol)</a>
+
+      </div>
+    </section>
+
+    <!-- Codicological Notes (placeholder) -->
+    <section class="info-panel">
+      <h3>Codicological Notes</h3>
+      <dl>
+        <dt>Section</dt>
+        <dd>Herbal A</dd>
+        <dt>Word Count</dt>
+        <dd>222 total, 154 recipe-relevant</dd>
+        <dt>Confidence</dt>
+        <dd>85%</dd>
+      </dl>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="folio-nav">
+      <a href="f17v.html">&larr; F17V</a>
+      <a href="../index.html">All Folios</a>
+      <a href="f18v.html">F18V &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>Voynich Digital Edition - <a href="https://github.com/denoflore/ZFD">ZFD Project</a></p>
+      <p class="text-muted">Based on the Zuger Functional Decipherment</p>
+    </div>
+  </footer>
+
+  <script>
+    let scale = 1;
+    const img = document.getElementById('folio-image');
+
+    function zoomIn() {
+      scale = Math.min(scale * 1.2, 4);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function zoomOut() {
+      scale = Math.max(scale / 1.2, 0.5);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function resetZoom() {
+      scale = 1;
+      img.style.transform = 'scale(1)';
+    }
+  </script>
+</body>
+</html>

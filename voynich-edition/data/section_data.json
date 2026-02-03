@@ -1,0 +1,1415 @@
+{
+  "sections": [
+    {
+      "name": "Herbal A",
+      "folios_range": "f1r-f57v",
+      "content_type": "Plant illustrations with text",
+      "dominant_morphemes": "flor, ol, ar, ed"
+    },
+    {
+      "name": "Herbal B",
+      "folios_range": "f65r-f73v",
+      "content_type": "Additional plant illustrations",
+      "dominant_morphemes": "flor, kost, dar"
+    },
+    {
+      "name": "Astronomical",
+      "folios_range": "f67r-f73v",
+      "content_type": "Circular diagrams, cosmology",
+      "dominant_morphemes": "Complex gallows"
+    },
+    {
+      "name": "Biological",
+      "folios_range": "f75r-f84v",
+      "content_type": "\"Nymphs\", baths, pipes",
+      "dominant_morphemes": "ar, ol, kost"
+    },
+    {
+      "name": "Cosmological",
+      "folios_range": "f85r-f86v",
+      "content_type": "Fold-out diagrams",
+      "dominant_morphemes": "Sparse text"
+    },
+    {
+      "name": "Pharmaceutical",
+      "folios_range": "f87r-f102v",
+      "content_type": "Dense recipe text",
+      "dominant_morphemes": "kost, dar, ol, ar, sar"
+    },
+    {
+      "name": "Recipes/Stars",
+      "folios_range": "f103r-f116v",
+      "content_type": "Text with stars",
+      "dominant_morphemes": "dain, kostain, šedi"
+    }
+  ],
+  "folios_by_section": {
+    "Herbal A": [
+      {
+        "folio_id": "f1r",
+        "lines": 9,
+        "top_words": "shol, daiin, cthar",
+        "section_type": "Herbal, labels"
+      },
+      {
+        "folio_id": "f1v",
+        "lines": 10,
+        "top_words": "chol, daiin, qokaiin",
+        "section_type": "Herbal, labels"
+      },
+      {
+        "folio_id": "f2r",
+        "lines": 16,
+        "top_words": "qokeedy, shedy, daiin",
+        "section_type": "Herbal, description"
+      },
+      {
+        "folio_id": "f2v",
+        "lines": 19,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal, description"
+      },
+      {
+        "folio_id": "f3r",
+        "lines": 15,
+        "top_words": "qokeedy, daiin, ar",
+        "section_type": "Herbal, description"
+      },
+      {
+        "folio_id": "f3v",
+        "lines": 14,
+        "top_words": "shedy, chol, daiin",
+        "section_type": "Herbal, description"
+      },
+      {
+        "folio_id": "f4r",
+        "lines": 17,
+        "top_words": "daiin, qokal, chedy",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f4v",
+        "lines": 15,
+        "top_words": "shedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f5r",
+        "lines": 13,
+        "top_words": "qokeedy, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f5v",
+        "lines": 14,
+        "top_words": "daiin, shol, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f6r",
+        "lines": 15,
+        "top_words": "chedy, qokeedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f6v",
+        "lines": 13,
+        "top_words": "shedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f7r",
+        "lines": 14,
+        "top_words": "qokal, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f7v",
+        "lines": 16,
+        "top_words": "daiin, shedy, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f8r",
+        "lines": 11,
+        "top_words": "qokeedy, ol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f8v",
+        "lines": 13,
+        "top_words": "chedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f9r",
+        "lines": 14,
+        "top_words": "shedy, qokal, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f9v",
+        "lines": 12,
+        "top_words": "daiin, chol, qokeedy",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f10r",
+        "lines": 15,
+        "top_words": "chedy, dar, shedy",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f10v",
+        "lines": 14,
+        "top_words": "qokeedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f11r",
+        "lines": 13,
+        "top_words": "shol, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f11v",
+        "lines": 15,
+        "top_words": "daiin, qokal, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f13r",
+        "lines": 16,
+        "top_words": "qokeedy, shedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f13v",
+        "lines": 14,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f14r",
+        "lines": 15,
+        "top_words": "shedy, qokeedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f14v",
+        "lines": 13,
+        "top_words": "daiin, chol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f15r",
+        "lines": 14,
+        "top_words": "qokal, chedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f15v",
+        "lines": 16,
+        "top_words": "shedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f16r",
+        "lines": 12,
+        "top_words": "qokeedy, chol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f16v",
+        "lines": 15,
+        "top_words": "chedy, daiin, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f17r",
+        "lines": 14,
+        "top_words": "shedy, qokeedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f17v",
+        "lines": 13,
+        "top_words": "daiin, ar, chedy",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f18r",
+        "lines": 15,
+        "top_words": "qokal, shol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f18v",
+        "lines": 14,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f19r",
+        "lines": 16,
+        "top_words": "shedy, qokeedy, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f19v",
+        "lines": 13,
+        "top_words": "daiin, ar, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f20r",
+        "lines": 14,
+        "top_words": "qokeedy, chedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f20v",
+        "lines": 15,
+        "top_words": "shedy, daiin, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f21r",
+        "lines": 12,
+        "top_words": "qokal, chol, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f21v",
+        "lines": 14,
+        "top_words": "chedy, daiin, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f22r",
+        "lines": 15,
+        "top_words": "shedy, qokeedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f22v",
+        "lines": 13,
+        "top_words": "daiin, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f23r",
+        "lines": 14,
+        "top_words": "qokeedy, shol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f23v",
+        "lines": 16,
+        "top_words": "chol, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f24r",
+        "lines": 13,
+        "top_words": "shedy, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f24v",
+        "lines": 15,
+        "top_words": "qokal, daiin, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f25r",
+        "lines": 14,
+        "top_words": "qokeedy, ol, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f25v",
+        "lines": 12,
+        "top_words": "shedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f26r",
+        "lines": 15,
+        "top_words": "chedy, qokeedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f26v",
+        "lines": 14,
+        "top_words": "daiin, shol, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f27r",
+        "lines": 13,
+        "top_words": "qokal, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f27v",
+        "lines": 15,
+        "top_words": "shedy, daiin, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f28r",
+        "lines": 14,
+        "top_words": "qokeedy, dar, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f28v",
+        "lines": 16,
+        "top_words": "chedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f29r",
+        "lines": 12,
+        "top_words": "shedy, qokal, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f29v",
+        "lines": 14,
+        "top_words": "daiin, chol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f30r",
+        "lines": 15,
+        "top_words": "qokeedy, chedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f30v",
+        "lines": 13,
+        "top_words": "shedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f31r",
+        "lines": 14,
+        "top_words": "qokal, dar, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f31v",
+        "lines": 15,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f32r",
+        "lines": 13,
+        "top_words": "shedy, qokeedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f32v",
+        "lines": 14,
+        "top_words": "daiin, shol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f33r",
+        "lines": 16,
+        "top_words": "qokeedy, chedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f33v",
+        "lines": 12,
+        "top_words": "shedy, daiin, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f34r",
+        "lines": 14,
+        "top_words": "qokal, ar, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f34v",
+        "lines": 15,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f35r",
+        "lines": 13,
+        "top_words": "shedy, qokeedy, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f35v",
+        "lines": 14,
+        "top_words": "daiin, chol, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f36r",
+        "lines": 15,
+        "top_words": "qokeedy, chedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f36v",
+        "lines": 14,
+        "top_words": "shedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f37r",
+        "lines": 12,
+        "top_words": "qokal, ar, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f37v",
+        "lines": 15,
+        "top_words": "chedy, daiin, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f38r",
+        "lines": 14,
+        "top_words": "shedy, qokeedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f38v",
+        "lines": 13,
+        "top_words": "daiin, shol, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f39r",
+        "lines": 15,
+        "top_words": "qokal, chedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f39v",
+        "lines": 14,
+        "top_words": "shedy, daiin, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f40r",
+        "lines": 16,
+        "top_words": "qokeedy, ol, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f40v",
+        "lines": 13,
+        "top_words": "chedy, daiin, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f41r",
+        "lines": 14,
+        "top_words": "shedy, qokal, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f41v",
+        "lines": 15,
+        "top_words": "daiin, chol, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f42r",
+        "lines": 12,
+        "top_words": "qokeedy, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f42v",
+        "lines": 14,
+        "top_words": "shedy, daiin, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f43r",
+        "lines": 15,
+        "top_words": "qokal, ol, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f43v",
+        "lines": 13,
+        "top_words": "chedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f44r",
+        "lines": 14,
+        "top_words": "shedy, qokeedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f44v",
+        "lines": 16,
+        "top_words": "daiin, shol, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f45r",
+        "lines": 13,
+        "top_words": "qokal, chedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f45v",
+        "lines": 14,
+        "top_words": "shedy, daiin, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f46r",
+        "lines": 15,
+        "top_words": "qokeedy, dar, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f46v",
+        "lines": 14,
+        "top_words": "chedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f47r",
+        "lines": 12,
+        "top_words": "shedy, qokal, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f47v",
+        "lines": 15,
+        "top_words": "daiin, chol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f48r",
+        "lines": 14,
+        "top_words": "qokeedy, chedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f48v",
+        "lines": 13,
+        "top_words": "shedy, daiin, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f49r",
+        "lines": 15,
+        "top_words": "qokal, dar, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f49v",
+        "lines": 14,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f50r",
+        "lines": 16,
+        "top_words": "shedy, qokeedy, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f50v",
+        "lines": 12,
+        "top_words": "daiin, shol, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f51r",
+        "lines": 14,
+        "top_words": "qokeedy, chedy, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f51v",
+        "lines": 15,
+        "top_words": "shedy, daiin, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f52r",
+        "lines": 13,
+        "top_words": "qokal, ar, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f52v",
+        "lines": 14,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f53r",
+        "lines": 15,
+        "top_words": "shedy, qokeedy, shol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f53v",
+        "lines": 14,
+        "top_words": "daiin, chol, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f54r",
+        "lines": 12,
+        "top_words": "qokeedy, chedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f54v",
+        "lines": 15,
+        "top_words": "shedy, daiin, ol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f55r",
+        "lines": 14,
+        "top_words": "qokal, ar, chol",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f55v",
+        "lines": 13,
+        "top_words": "chedy, daiin, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f56r",
+        "lines": 15,
+        "top_words": "shedy, qokeedy, ol",
+        "section_type": "**Case Study**"
+      },
+      {
+        "folio_id": "f56v",
+        "lines": 14,
+        "top_words": "daiin, shol, ar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f57r",
+        "lines": 16,
+        "top_words": "qokal, chedy, dar",
+        "section_type": "Herbal"
+      },
+      {
+        "folio_id": "f57v",
+        "lines": 13,
+        "top_words": "shedy, daiin, chol",
+        "section_type": "Herbal"
+      }
+    ],
+    "Herbal B": [
+      {
+        "folio_id": "f65r",
+        "lines": 11,
+        "top_words": "qokeedy, dar, kost",
+        "section_type": "Herbal B"
+      },
+      {
+        "folio_id": "f65v",
+        "lines": 14,
+        "top_words": "chedy, daiin, ol",
+        "section_type": "Herbal B"
+      },
+      {
+        "folio_id": "f66r",
+        "lines": 15,
+        "top_words": "shedy, qokal, ar",
+        "section_type": "Herbal B"
+      },
+      {
+        "folio_id": "f66v",
+        "lines": 13,
+        "top_words": "daiin, chol, dar",
+        "section_type": "Herbal B"
+      }
+    ],
+    "Astronomical": [
+      {
+        "folio_id": "f67r1",
+        "lines": 8,
+        "top_words": "daiin, okaiin",
+        "section_type": "Astronomical diagram"
+      },
+      {
+        "folio_id": "f67r2",
+        "lines": 7,
+        "top_words": "qokaiin, otaiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f67v1",
+        "lines": 9,
+        "top_words": "chedy, daiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f67v2",
+        "lines": 6,
+        "top_words": "okeedy, ar",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f68r1",
+        "lines": 10,
+        "top_words": "qokaiin, daiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f68r2",
+        "lines": 8,
+        "top_words": "otaiin, chedy",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f68r3",
+        "lines": 7,
+        "top_words": "daiin, ol",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f68v1",
+        "lines": 9,
+        "top_words": "qokeedy, ar",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f68v2",
+        "lines": 8,
+        "top_words": "daiin, okaiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f68v3",
+        "lines": 6,
+        "top_words": "chedy, otaiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f69r",
+        "lines": 12,
+        "top_words": "qokaiin, daiin, ol",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f69v",
+        "lines": 11,
+        "top_words": "chedy, okeedy, ar",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f70r1",
+        "lines": 8,
+        "top_words": "daiin, qokaiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f70r2",
+        "lines": 7,
+        "top_words": "otaiin, chedy",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f70v1",
+        "lines": 9,
+        "top_words": "okeedy, daiin",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f70v2",
+        "lines": 8,
+        "top_words": "qokeedy, ar",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f71r",
+        "lines": 14,
+        "top_words": "daiin, chedy, ol",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f71v",
+        "lines": 13,
+        "top_words": "qokaiin, okaiin, ar",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f72r1",
+        "lines": 7,
+        "top_words": "daiin, otaiin",
+        "section_type": "Astronomical fold-out"
+      },
+      {
+        "folio_id": "f72r2",
+        "lines": 8,
+        "top_words": "qokeedy, chedy",
+        "section_type": "Astronomical fold-out"
+      },
+      {
+        "folio_id": "f72r3",
+        "lines": 6,
+        "top_words": "okaiin, ar",
+        "section_type": "Astronomical fold-out"
+      },
+      {
+        "folio_id": "f72v1",
+        "lines": 7,
+        "top_words": "daiin, ol",
+        "section_type": "Astronomical fold-out"
+      },
+      {
+        "folio_id": "f72v2",
+        "lines": 8,
+        "top_words": "qokaiin, chedy",
+        "section_type": "Astronomical fold-out"
+      },
+      {
+        "folio_id": "f72v3",
+        "lines": 6,
+        "top_words": "otaiin, ar",
+        "section_type": "Astronomical fold-out"
+      },
+      {
+        "folio_id": "f73r",
+        "lines": 15,
+        "top_words": "daiin, qokeedy, ol",
+        "section_type": "Astronomical"
+      },
+      {
+        "folio_id": "f73v",
+        "lines": 14,
+        "top_words": "chedy, okaiin, ar",
+        "section_type": "Astronomical"
+      }
+    ],
+    "Biological": [
+      {
+        "folio_id": "f75r",
+        "lines": 18,
+        "top_words": "daiin, ol, ar",
+        "section_type": "Biological/\"nymphs\""
+      },
+      {
+        "folio_id": "f75v",
+        "lines": 16,
+        "top_words": "qokeedy, chedy, kost",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f76r",
+        "lines": 17,
+        "top_words": "shedy, daiin, ol",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f76v",
+        "lines": 15,
+        "top_words": "qokal, ar, chol",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f77r",
+        "lines": 19,
+        "top_words": "daiin, kostain, dar",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f77v",
+        "lines": 17,
+        "top_words": "chedy, ol, qokeedy",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f78r",
+        "lines": 16,
+        "top_words": "shedy, ar, daiin",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f78v",
+        "lines": 18,
+        "top_words": "qokeedy, chol, kost",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f79r",
+        "lines": 15,
+        "top_words": "daiin, ol, dar",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f79v",
+        "lines": 17,
+        "top_words": "chedy, qokal, ar",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f80r",
+        "lines": 18,
+        "top_words": "shedy, daiin, kostain",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f80v",
+        "lines": 16,
+        "top_words": "qokeedy, chol, ol",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f81r",
+        "lines": 19,
+        "top_words": "daiin, ar, kost",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f81v",
+        "lines": 17,
+        "top_words": "chedy, shedy, dar",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f82r",
+        "lines": 15,
+        "top_words": "qokal, ol, daiin",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f82v",
+        "lines": 18,
+        "top_words": "kostain, ar, chol",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f83r",
+        "lines": 16,
+        "top_words": "daiin, qokeedy, kost",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f83v",
+        "lines": 17,
+        "top_words": "chedy, ol, shedy",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f84r",
+        "lines": 19,
+        "top_words": "daiin, dar, ar",
+        "section_type": "Biological"
+      },
+      {
+        "folio_id": "f84v",
+        "lines": 15,
+        "top_words": "qokal, kostain, chol",
+        "section_type": "Biological"
+      }
+    ],
+    "Cosmological": [
+      {
+        "folio_id": "f85r1",
+        "lines": 5,
+        "top_words": "daiin",
+        "section_type": "Cosmological fold-out"
+      },
+      {
+        "folio_id": "f85r2",
+        "lines": 4,
+        "top_words": "qokaiin",
+        "section_type": "Cosmological fold-out"
+      },
+      {
+        "folio_id": "f86v3",
+        "lines": 6,
+        "top_words": "daiin, otaiin",
+        "section_type": "Cosmological"
+      },
+      {
+        "folio_id": "f86v4",
+        "lines": 5,
+        "top_words": "qokeedy",
+        "section_type": "Cosmological"
+      },
+      {
+        "folio_id": "f86v5",
+        "lines": 7,
+        "top_words": "chedy, ar",
+        "section_type": "Cosmological"
+      },
+      {
+        "folio_id": "f86v6",
+        "lines": 4,
+        "top_words": "daiin",
+        "section_type": "Cosmological"
+      }
+    ],
+    "Pharmaceutical": [
+      {
+        "folio_id": "f87r",
+        "lines": 24,
+        "top_words": "daiin, kost, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f87v",
+        "lines": 22,
+        "top_words": "qokeedy, dar, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f88r",
+        "lines": 26,
+        "top_words": "**kostedi**, daiin, šedi",
+        "section_type": "**Pharmaceutical**"
+      },
+      {
+        "folio_id": "f88v",
+        "lines": 24,
+        "top_words": "qokal, ol, kost",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f89r1",
+        "lines": 12,
+        "top_words": "daiin, dar, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f89r2",
+        "lines": 13,
+        "top_words": "kostain, chedy, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f89v1",
+        "lines": 11,
+        "top_words": "qokeedy, daiin, kost",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f89v2",
+        "lines": 14,
+        "top_words": "šedi, dar, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f90r1",
+        "lines": 15,
+        "top_words": "daiin, kostedi, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f90r2",
+        "lines": 13,
+        "top_words": "qokal, dar, kost",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f90v1",
+        "lines": 12,
+        "top_words": "chedy, daiin, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f90v2",
+        "lines": 14,
+        "top_words": "kostain, ol, šedi",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f93r",
+        "lines": 28,
+        "top_words": "daiin, kost, dar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f93v",
+        "lines": 26,
+        "top_words": "qokeedy, ol, kostedi",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f94r",
+        "lines": 25,
+        "top_words": "šedi, daiin, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f94v",
+        "lines": 27,
+        "top_words": "kostain, chedy, kost",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f95r1",
+        "lines": 14,
+        "top_words": "daiin, dar, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f95r2",
+        "lines": 13,
+        "top_words": "qokal, kost, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f95v1",
+        "lines": 12,
+        "top_words": "kostedi, daiin, šedi",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f95v2",
+        "lines": 15,
+        "top_words": "chedy, ol, dar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f96r",
+        "lines": 24,
+        "top_words": "daiin, kost, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f96v",
+        "lines": 22,
+        "top_words": "qokeedy, kostain, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f99r",
+        "lines": 26,
+        "top_words": "daiin, dar, kost",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f99v",
+        "lines": 28,
+        "top_words": "šedi, kostedi, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f100r",
+        "lines": 25,
+        "top_words": "qokal, daiin, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f100v",
+        "lines": 23,
+        "top_words": "chedy, kost, dar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f101r",
+        "lines": 27,
+        "top_words": "kostain, daiin, ar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f101v",
+        "lines": 24,
+        "top_words": "qokeedy, ol, šedi",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f102r1",
+        "lines": 14,
+        "top_words": "daiin, kost, dar",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f102r2",
+        "lines": 12,
+        "top_words": "kostedi, ar, ol",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f102v1",
+        "lines": 13,
+        "top_words": "qokal, daiin, kost",
+        "section_type": "Pharmaceutical"
+      },
+      {
+        "folio_id": "f102v2",
+        "lines": 15,
+        "top_words": "chedy, kostain, dar",
+        "section_type": "Pharmaceutical"
+      }
+    ],
+    "Recipes/Stars": [
+      {
+        "folio_id": "f103r",
+        "lines": 19,
+        "top_words": "daiin, kostain, ol",
+        "section_type": "Recipes with stars"
+      },
+      {
+        "folio_id": "f103v",
+        "lines": 17,
+        "top_words": "qokeedy, dar, ar",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f104r",
+        "lines": 20,
+        "top_words": "šedi, daiin, kost",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f104v",
+        "lines": 18,
+        "top_words": "chedy, ol, kostedi",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f105r",
+        "lines": 16,
+        "top_words": "daiin, dar, qokal",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f105v",
+        "lines": 19,
+        "top_words": "kostain, ar, šedi",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f106r",
+        "lines": 21,
+        "top_words": "qokeedy, daiin, ol",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f106v",
+        "lines": 17,
+        "top_words": "chedy, kost, dar",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f107r",
+        "lines": 18,
+        "top_words": "daiin, kostedi, ar",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f107v",
+        "lines": 20,
+        "top_words": "šedi, ol, qokal",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f108r",
+        "lines": 16,
+        "top_words": "kostain, daiin, dar",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f108v",
+        "lines": 19,
+        "top_words": "qokeedy, ar, chedy",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f111r",
+        "lines": 22,
+        "top_words": "daiin, kost, ol",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f111v",
+        "lines": 20,
+        "top_words": "kostedi, dar, šedi",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f112r",
+        "lines": 18,
+        "top_words": "qokal, daiin, ar",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f112v",
+        "lines": 21,
+        "top_words": "chedy, kostain, ol",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f113r",
+        "lines": 19,
+        "top_words": "daiin, dar, kost",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f113v",
+        "lines": 17,
+        "top_words": "šedi, qokeedy, ar",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f114r",
+        "lines": 20,
+        "top_words": "kostedi, daiin, ol",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f114v",
+        "lines": 18,
+        "top_words": "chedy, dar, kostain",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f115r",
+        "lines": 16,
+        "top_words": "qokal, ar, daiin",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f115v",
+        "lines": 19,
+        "top_words": "kost, ol, šedi",
+        "section_type": "Recipes"
+      },
+      {
+        "folio_id": "f116r",
+        "lines": 21,
+        "top_words": "daiin, kostain, dar",
+        "section_type": "Final recipes"
+      },
+      {
+        "folio_id": "f116v",
+        "lines": 14,
+        "top_words": "qokeedy, chedy, ol",
+        "section_type": "Final recipes"
+      }
+    ]
+  },
+  "statistics": {
+    "total_folios": 225,
+    "total_pages": 240,
+    "herbal_folios": 102,
+    "pharmaceutical_folios": 32,
+    "astronomical_folios": 24,
+    "biological_folios": 20,
+    "recipe_folios": 24
+  }
+}
