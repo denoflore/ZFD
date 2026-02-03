@@ -1,0 +1,195 @@
+# F42R: Recipe Extraction
+
+**Section:** Herbal A
+**Confidence:** 85%
+**Words:** 415 total, 152 recipe-relevant
+
+---
+
+## Ingredients Identified
+
+| Stem | English | Latin | Category | Occurrences | Status |
+|------|---------|-------|----------|-------------|--------|
+| **ol** | oil | *oleum* | liquid | 48 | CONFIRMED |
+| **ar** | water | *aqua* | liquid | 20 | CONFIRMED |
+| **or** | oil | *oleum* | liquid | 20 | CONFIRMED |
+| **kost** | bone | *os/ossis* | animal | 4 | CONFIRMED |
+
+## Preparation Methods
+
+| Stem | English | Category | Occurrences |
+|------|---------|----------|-------------|
+| **šol** | soak in oil | liquid | 16 |
+| **dain** | dose/portion | dosing | 16 |
+| **hol** | combine | mixing | 14 |
+| **hor** | process/work | general | 6 |
+| **dal** | then/next | sequence | 2 |
+| **šor** | strain/soak | liquid | 2 |
+| **dar** | dose/give | dosing | 2 |
+| **thor** | boil/roast | heat | 2 |
+
+## Running Text (Interlinear)
+
+```
+EVA: sho ofaiin cthachcthy otcheey pchear
+CRO: šo oprain ctrrahctrry otrhei phear
+EXP: šo oprain ctrrahctrry otrov/pripravahei phear
+ENG: ? ? ? extract/prep+hei ?
+```
+
+```
+EVA: sol kaiin char cheky otshaiin daiiry
+CRO: sol kain har hesty otršain dairy
+EXP: sol kain kuh-voda hesty otrov/pripravašain DA [Lat.]
+ENG: ? ? cook+water ? extract/prep+šain give
+```
+
+```
+EVA: toshy chtshar chotar chain dal
+CRO: tošy htršar hotrar hain dal
+EXP: tošy htršar hotrar hain DA [Lat.]
+ENG: ? ? ? ? give
+```
+
+```
+EVA: shor chetar chotais dar cthaiin
+CRO: šor hetrar hotrais dar ctrrain
+EXP: s-ulje hetrar hotrais DA [Lat.] ctrrain
+ENG: with oil ? ? give ?
+```
+
+```
+EVA: qokar chockhy chotor cha kary
+CRO: kostar hocstry hotror ha kary
+EXP: kost-ar hocstry hotror ha kary
+ENG: bone-water ? ? ? ?
+```
+
+```
+EVA: dorain char
+CRO: dorain har
+EXP: dorain kuh-voda
+ENG: ? cook+water
+```
+
+```
+EVA: pcho chy kshaiin shotaiin cham shan
+CRO: pho hy kšain šotrain ham šan
+EXP: pho hy kšain šotrain ham šan
+ENG: ? ? ? ? ? ?
+```
+
+```
+EVA: yshol chees cthol shor shol ety chary
+CRO: yšol hes ctrrol šor šol etry hary
+EXP: yšol hes ctrrol s-ulje s-ulje etry kuh-voday
+ENG: ? ? ? with oil with oil ? cook+water+y
+```
+
+```
+EVA: qotchor otchol ctho kchodan chkchory
+CRO: kotrhor otrhol ctrro khodan hsthory
+EXP: kotrhor otrov/pripravahol ctrro khodan hsthory
+ENG: ? extract/prep+hol ? ? ?
+```
+
+```
+EVA: choty dol ksheo cthor otol cthol cholshol dain
+CRO: hotry dol kšeo ctrror otrol ctrrol holšol dain
+EXP: hotry dol kšeo ctrror otrov/pripravaol ctrrol kuh-ulješol DA [Lat.]
+ENG: ? ? ? ? extract/prep+ol ? cook+oil+šol give
+```
+
+```
+EVA: qotor cho chody daiin chol ctheey darchy daiidy
+CRO: kotror ho hody dain hol ctrrei darhy daidy
+EXP: kotror ho hody DA [Lat.] kuh-ulje ctrrei DA [Lat.] DA [Lat.]
+ENG: ? ? ? give cook+oil ? give give
+```
+
+```
+EVA: dcheey chol shol chokaiin choeky dckydain dal
+CRO: dhei hol šol hostain hoesty dcstydain dal
+EXP: dhei kuh-ulje s-ulje hostain hoesty dcstydain DA [Lat.]
+ENG: ? cook+oil with oil ? ? ? give
+```
+
+```
+EVA: qopor shol shot shol shol daiin dain scheam
+CRO: koplor šol šot šol šol dain dain sheam
+EXP: koplor s-ulje šot s-ulje s-ulje DA [Lat.] DA [Lat.] sheam
+ENG: ? with oil ? with oil with oil give give ?
+```
+
+```
+EVA: sho kshey choty chdain chodaiin daiindam
+CRO: šo kšey hotry hdain hodain daindam
+EXP: šo kšey hotry DA [Lat.] hodain danodam
+ENG: ? ? ? give ? given+dam
+```
+
+```
+EVA: chody otshey dodaiin
+CRO: hody otršey dodain
+EXP: hody otrov/pripravašey dodain
+ENG: ? extract/prep+šey ?
+```
+
+```
+EVA: pydaiin sheor shaiin tsh olcha sholy
+CRO: pydain šeor šain tš olha šoly
+EXP: pydain šeor šain tš uljeha s-uljey
+ENG: ? ? ? ? oil+ha with oil+y
+```
+
+```
+EVA: shotol shol chety daiin chokchy chkaiin
+CRO: šotrol šol hetry dain hosthy hstain
+EXP: šotrol s-ulje hetry DA [Lat.] hosthy hstain
+ENG: ? with oil ? give ? ?
+```
+
+```
+EVA: qody cthochy otaiin shy kshes chor ain
+CRO: kody ctrrohy otrain šy kšes hor ain
+EXP: kody ctrrohy pripravnin šy kšes kuhar ain
+ENG: ? ? prepared+n ? ? cook ?
+```
+
+```
+EVA: otchoty daiin chot sho ckhhy cty s os
+CRO: otrhotry dain hot šo cstrhy ctry s os
+EXP: otrov/pripravahotry DA [Lat.] hot šo cstrhy ctry s os
+ENG: extract/prep+hotry give ? ? ? ? ? ?
+```
+
+```
+EVA: shol chol shoky okol sho chol chol chal
+CRO: šol hol šosty ostol šo hol hol hal
+EXP: s-ulje kuh-ulje šosty kostol šo kuh-ulje kuh-ulje hal
+ENG: with oil cook+oil ? bone+ol ? cook+oil cook+oil ?
+```
+
+```
+EVA: shol chol chol shol ctoiin sos odan
+CRO: šol hol hol šol ctroin sos odan
+EXP: s-ulje kuh-ulje kuh-ulje s-ulje ctroin sos DA [Lat.]
+ENG: with oil cook+oil cook+oil with oil ? ? give
+```
+
+```
+EVA: kchaiin chos ckhaiin choro chaiin
+CRO: khain hos cstrain horo hain
+EXP: khain hos cstrain kuharo hain
+ENG: ? ? ? cook+o ?
+```
+
+```
+EVA: okchol shol kolschees
+CRO: osthol šol kolshes
+EXP: kosthol s-ulje kolshes
+ENG: bone+hol with oil ?
+```
+
+---
+*Generated by ZFD Recipe Extraction Pipeline v1.0*
