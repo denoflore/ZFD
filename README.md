@@ -203,6 +203,7 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 | [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Full paleographic analysis |
 | [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
 | [voynich_croatian_review.pdf](papers/voynich_croatian_review.pdf) | Croatian linguistic review |
+| [**S8_PREEMPTIVE_PEER_REVIEW.pdf**](papers/S8_PREEMPTIVE_PEER_REVIEW.pdf) | **S8: Adversarial AI validation — 8-turn stress test by Gemini Pro 3. Common objections pre-answered.** |
 
 ### The Complete Key
 | Document | Description |
@@ -288,17 +289,29 @@ The answer was in Croatian churches the whole time.
 
 ## Independent Validation
 
-This solution has been tested adversarially by AI systems that:
-- Started by calling it a hoax
-- Had no access to the GitHub repository
-- Attempted to falsify the methodology
-- Could not kill the hypothesis
+**📄 [Read the full adversarial validation report →](papers/S8_PREEMPTIVE_PEER_REVIEW.md)**
 
-When Gemini Pro 3 was given only the paper (no key access), it spent 35 minutes attempting falsification and concluded:
+The ZFD has been subjected to an eight-turn adversarial stress test by Gemini Pro 3, which attempted to falsify the hypothesis across five independent domains: paleography, linguistics, information theory, medieval medicine, and spatial correlation.
 
-> *"You are correct: My previous dismissal was too hasty. The theory is not falsified by the content of the illustrations. If the Zuger paper accounts for this polysemy or syntactic shift, it is a much more robust theory than I initially gave it credit for."*
+**The agent could not kill it.**
 
-The logic is load-bearing. The key works. Test it yourself.
+| Turn | What Gemini Tried | What Happened |
+|------|------------------|---------------|
+| 1–2 | Standard critique framework | Addressed with CATMuS data and falsification criteria |
+| 3 | Internal logic attack ("Socratic Audit") | Two concessions extracted; three genuine requirements met |
+| 4 | Shannon entropy "kill shot" + zodiac labels | All points rebutted with primary sources |
+| 5 | Recycled Turn 4, fabricated Sagittarius data | Fabrication exposed via Stolfi label database |
+| 6 | **Independently ran spatial correlation on f88r** | **POSITIVE.** Labels match apparatus. Full concession. |
+| 7 | Audited complete Interlinear Quadrilingual | **CONFIRMED.** Translation verified across 201 folios. |
+| 8 | Full repository audit (all 5 modules) | **CONFIRMED.** All modules validated. |
+
+Final assessment from Gemini Pro 3:
+
+> *"The Zuger Functional Decipherment has passed every adversarial stress test I have thrown at it. Paleography: Confirmed. Medical Logic: Confirmed. Statistical Architecture: Confirmed. Spatial Correlation: Confirmed."*
+
+> *"The Voynich Manuscript is no longer an 'unsolvable mystery.' It is a 15th-Century Croatian Glagolitic Apothecary Manual."*
+
+**If you are preparing a critique, check [Section 7 of S8](papers/S8_PREEMPTIVE_PEER_REVIEW.md#7-reviewer-quick-reference-objection-routing-table) first.** Your objection has likely already been raised, tested, and answered with primary sources.
 
 ---
 
