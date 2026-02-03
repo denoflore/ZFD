@@ -87,13 +87,82 @@ def get_related_folios(folio_id: str, sop_graph: Dict, limit: int = 5) -> List[D
 
 
 def render_interlinear_block(block: Dict) -> str:
-    """Render an interlinear text block as HTML."""
+    """Render an interlinear text block as HTML (legacy 4-layer format)."""
     return f'''<div class="interlinear-block">
   <div class="line"><span class="label eva">EVA:</span> {html_escape(block.get("eva", ""))}</div>
   <div class="line"><span class="label cro">CRO:</span> {html_escape(block.get("croatian", ""))}</div>
   <div class="line"><span class="label exp">EXP:</span> {html_escape(block.get("expanded", ""))}</div>
   <div class="line"><span class="label eng">ENG:</span> {html_escape(block.get("english", ""))}</div>
 </div>'''
+
+
+def render_glagolitic_line(line_data: Dict) -> str:
+    """Render a five-layer Glagolitic interlinear line."""
+    layers = line_data.get('layers', {})
+    line_num = line_data.get('line_num', '')
+    confidence = line_data.get('confidence_avg', 0)
+
+    conf_class = 'high'
+    if confidence < 0.5:
+        conf_class = 'low'
+    elif confidence < 0.8:
+        conf_class = 'medium'
+
+    conf_pct = int(confidence * 100)
+
+    return f'''<div class="transcription-line">
+  <span class="line-number">Line {line_num}</span>
+  <span class="line-confidence {conf_class}">{conf_pct}%</span>
+  <div class="interlinear-five-layer">
+    <div class="layer-row layer-eva">
+      <span class="layer-label">EVA</span>
+      <span class="layer-content">{html_escape(layers.get('eva', ''))}</span>
+    </div>
+    <div class="layer-row layer-glagolitic">
+      <span class="layer-label">Glagolitic</span>
+      <span class="layer-content">{html_escape(layers.get('glagolitic', ''))}</span>
+    </div>
+    <div class="layer-row layer-latin">
+      <span class="layer-label">Latin</span>
+      <span class="layer-content">{html_escape(layers.get('latin', ''))}</span>
+    </div>
+    <div class="layer-row layer-croatian">
+      <span class="layer-label">Croatian</span>
+      <span class="layer-content">{html_escape(layers.get('croatian_short', ''))}</span>
+    </div>
+    <div class="layer-row layer-english">
+      <span class="layer-label">English</span>
+      <span class="layer-content">{html_escape(layers.get('croatian_expanded', ''))}</span>
+    </div>
+  </div>
+</div>'''
+
+
+def render_glagolitic_section(glag_data: Dict) -> str:
+    """Render complete Glagolitic transcription section with toggle."""
+    if not glag_data or not glag_data.get('lines'):
+        return ''
+
+    lines_html = ''
+    for line in glag_data.get('lines', []):
+        lines_html += render_glagolitic_line(line)
+
+    stats = glag_data.get('statistics', {})
+    total = stats.get('total_words', 0)
+    high = stats.get('high_confidence', 0)
+
+    return f'''<section class="info-panel glagolitic-section">
+  <h3>Glagolitic Transcription (5-Layer)</h3>
+  <div class="view-toggle">
+    <button class="active" data-view="glagolitic">5-Layer View</button>
+    <button data-view="eva">EVA Only</button>
+    <button data-view="compact">Compact</button>
+  </div>
+  <p class="text-muted">{total} words | {high} high confidence</p>
+  <div class="layer-view glagolitic-view active">
+    {lines_html}
+  </div>
+</section>'''
 
 
 def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_data: Dict, page_mapping: Dict[str, int]) -> str:
@@ -148,6 +217,10 @@ def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_da
     if not interlinear_html:
         interlinear_html = '<p class="text-muted">No interlinear data available for this folio.</p>'
 
+    # Build Glagolitic section
+    glag_data = folio.get("glagolitic_transcription")
+    glagolitic_section = render_glagolitic_section(glag_data)
+
     # Build related folios
     related_html = ""
     for rel in related:
@@ -194,6 +267,7 @@ def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_da
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{folio_upper} - Voynich Digital Edition</title>
   <link rel="stylesheet" href="../css/edition.css">
+  <link rel="stylesheet" href="../css/glagolitic.css">
 </head>
 <body>
   <header class="page-header">
@@ -247,6 +321,9 @@ def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_da
     </section>
 
     {latin_section}
+
+    <!-- Glagolitic Transcription -->
+    {glagolitic_section}
 
     <!-- SOP Chain -->
     <section class="info-panel">
@@ -324,6 +401,7 @@ def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_da
       img.style.transform = 'scale(1)';
     }}
   </script>
+  <script src="../js/interlinear.js"></script>
 </body>
 </html>'''
 

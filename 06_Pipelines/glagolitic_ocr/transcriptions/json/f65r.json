@@ -1,0 +1,44 @@
+{
+  "lines": [
+    {
+      "line_num": 1,
+      "layers": {
+        "eva": "otaim dam alam",
+        "glagolitic": "ⰑⰕⰰⰹⰏ ⰄⰀⰏ ⰀⰎⰀⰏ",
+        "latin": "otaim dam alam",
+        "croatian_short": "otaim dam alam",
+        "croatian_expanded": "taim m alam"
+      },
+      "words": [
+        {
+          "eva": "otaim",
+          "glagolitic": "ⰑⰕⰰⰹⰏ",
+          "latin": "otaim",
+          "confidence": 1.0
+        },
+        {
+          "eva": "dam",
+          "glagolitic": "ⰄⰀⰏ",
+          "latin": "dam",
+          "confidence": 1.0
+        },
+        {
+          "eva": "alam",
+          "glagolitic": "ⰀⰎⰀⰏ",
+          "latin": "alam",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    }
+  ],
+  "statistics": {
+    "total_words": 3,
+    "high_confidence": 3,
+    "medium_confidence": 0,
+    "low_confidence": 0,
+    "unmapped_chars": []
+  },
+  "folio": "f65r",
+  "iiif_url": "https://iiif.archive.org/image/iiif/3/voynich%24115/full/800,/0/default.jpg"
+}

@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>F65R - Voynich Digital Edition</title>
   <link rel="stylesheet" href="../css/edition.css">
+  <link rel="stylesheet" href="../css/glagolitic.css">
 </head>
 <body>
   <header class="page-header">
@@ -66,6 +67,45 @@
     </section>
 
     
+
+    <!-- Glagolitic Transcription -->
+    <section class="info-panel glagolitic-section">
+  <h3>Glagolitic Transcription (5-Layer)</h3>
+  <div class="view-toggle">
+    <button class="active" data-view="glagolitic">5-Layer View</button>
+    <button data-view="eva">EVA Only</button>
+    <button data-view="compact">Compact</button>
+  </div>
+  <p class="text-muted">3 words | 3 high confidence</p>
+  <div class="layer-view glagolitic-view active">
+    <div class="transcription-line">
+  <span class="line-number">Line 1</span>
+  <span class="line-confidence high">100%</span>
+  <div class="interlinear-five-layer">
+    <div class="layer-row layer-eva">
+      <span class="layer-label">EVA</span>
+      <span class="layer-content">otaim dam alam</span>
+    </div>
+    <div class="layer-row layer-glagolitic">
+      <span class="layer-label">Glagolitic</span>
+      <span class="layer-content">ⰑⰕⰰⰹⰏ ⰄⰀⰏ ⰀⰎⰀⰏ</span>
+    </div>
+    <div class="layer-row layer-latin">
+      <span class="layer-label">Latin</span>
+      <span class="layer-content">otaim dam alam</span>
+    </div>
+    <div class="layer-row layer-croatian">
+      <span class="layer-label">Croatian</span>
+      <span class="layer-content">otaim dam alam</span>
+    </div>
+    <div class="layer-row layer-english">
+      <span class="layer-label">English</span>
+      <span class="layer-content">taim m alam</span>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
 
     <!-- SOP Chain -->
     <section class="info-panel">
@@ -148,5 +188,6 @@
       img.style.transform = 'scale(1)';
     }
   </script>
+  <script src="../js/interlinear.js"></script>
 </body>
 </html>

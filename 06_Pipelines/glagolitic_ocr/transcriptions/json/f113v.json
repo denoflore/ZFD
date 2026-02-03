@@ -1,0 +1,3542 @@
+{
+  "lines": [
+    {
+      "line_num": 1,
+      "layers": {
+        "eva": "folorarom otchey qotar air otair opchedy qokeedody cheykeeoy rol lkar chsamoky",
+        "glagolitic": "ⰗⰑⰎⰑⰓⰀⰓⰑⰏ ⰑⰕⰘⰅⰟ ⰼⱁⰑⰕⰀⰓ ⰰⰹⰓ ⰑⰕⰰⰹⰓ ⰑⰒⰘⰅⰄⰟ ⰼⱁⰑⰌⰵⰵⰄⰑⰄⰟ ⰘⰅⰟⰌⰵⰵⰑⰟ ⰓⰑⰎ ⰎⰌⰀⰓ ⰘⰔⰀⰏⰑⰌⰟ",
+        "latin": "folorarom othey kootar air otair ophedy kookeedody heykeeoy rol lkar hsamoky",
+        "croatian_short": "folorarom otchey qotar air otair opchedy qokeedody cheykeeoy rol lkar chsamoky",
+        "croatian_expanded": "folorarom the tar air tair phed keedod heykeeo r lkar hsamok"
+      },
+      "words": [
+        {
+          "eva": "folorarom",
+          "glagolitic": "ⰗⰑⰎⰑⰓⰀⰓⰑⰏ",
+          "latin": "folorarom",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otchey",
+          "glagolitic": "ⰑⰕⰘⰅⰟ",
+          "latin": "othey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotar",
+          "glagolitic": "ⰼⱁⰑⰕⰀⰓ",
+          "latin": "kootar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "air",
+          "glagolitic": "ⰰⰹⰓ",
+          "latin": "air",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otair",
+          "glagolitic": "ⰑⰕⰰⰹⰓ",
+          "latin": "otair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opchedy",
+          "glagolitic": "ⰑⰒⰘⰅⰄⰟ",
+          "latin": "ophedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeedody",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰄⰑⰄⰟ",
+          "latin": "kookeedody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheykeeoy",
+          "glagolitic": "ⰘⰅⰟⰌⰵⰵⰑⰟ",
+          "latin": "heykeeoy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "rol",
+          "glagolitic": "ⰓⰑⰎ",
+          "latin": "rol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkar",
+          "glagolitic": "ⰎⰌⰀⰓ",
+          "latin": "lkar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chsamoky",
+          "glagolitic": "ⰘⰔⰀⰏⰑⰌⰟ",
+          "latin": "hsamoky",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 2,
+      "layers": {
+        "eva": "teoar ain qotar ycheey otaiir otaiin okchy lkchdy oteol ar al araiin okal cheyor",
+        "glagolitic": "ⰕⰅⰑⰀⰓ ⰰⰹⰐ ⰼⱁⰑⰕⰀⰓ ⰟⰘⰵⰵⰟ ⰑⰕⰰⰹⰉⰓ ⰑⰕⰰⰹⰉⰐ ⰑⰌⰘⰟ ⰎⰌⰘⰄⰟ ⰑⰕⰅⰑⰎ ⰀⰓ ⰀⰎ ⰀⰓⰰⰹⰉⰐ ⰑⰌⰀⰎ ⰘⰅⰟⰑⰓ",
+        "latin": "teoar ain kootar yheey otaiir otaiin okhy lkhdy oteol ar al araiin okal heyor",
+        "croatian_short": "teoar ain qotar ycheey otaiir otaiin okchy lkchdy oteol ar al araiin okal cheyor",
+        "croatian_expanded": "teoar a tar hee taiir tai kh lkhd te ar al arai okal hey"
+      },
+      "words": [
+        {
+          "eva": "teoar",
+          "glagolitic": "ⰕⰅⰑⰀⰓ",
+          "latin": "teoar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ain",
+          "glagolitic": "ⰰⰹⰐ",
+          "latin": "ain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotar",
+          "glagolitic": "ⰼⱁⰑⰕⰀⰓ",
+          "latin": "kootar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ycheey",
+          "glagolitic": "ⰟⰘⰵⰵⰟ",
+          "latin": "yheey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiir",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰓ",
+          "latin": "otaiir",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okchy",
+          "glagolitic": "ⰑⰌⰘⰟ",
+          "latin": "okhy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkchdy",
+          "glagolitic": "ⰎⰌⰘⰄⰟ",
+          "latin": "lkhdy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteol",
+          "glagolitic": "ⰑⰕⰅⰑⰎ",
+          "latin": "oteol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "araiin",
+          "glagolitic": "ⰀⰓⰰⰹⰉⰐ",
+          "latin": "araiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okal",
+          "glagolitic": "ⰑⰌⰀⰎ",
+          "latin": "okal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheyor",
+          "glagolitic": "ⰘⰅⰟⰑⰓ",
+          "latin": "heyor",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 3,
+      "layers": {
+        "eva": "sar aiin chotar okeeodar qokain olol olam",
+        "glagolitic": "ⰔⰀⰓ ⰰⰹⰉⰐ ⰘⰑⰕⰀⰓ ⰑⰌⰵⰵⰑⰄⰀⰓ ⰼⱁⰑⰌⰰⰹⰐ ⰑⰎⰑⰎ ⰑⰎⰀⰏ",
+        "latin": "sar aiin hotar okeeodar kookain olol olam",
+        "croatian_short": "sar aiin chotar okeeodar qokain olol olam",
+        "croatian_expanded": "sar ai hotar keeodar ka l lam"
+      },
+      "words": [
+        {
+          "eva": "sar",
+          "glagolitic": "ⰔⰀⰓ",
+          "latin": "sar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chotar",
+          "glagolitic": "ⰘⰑⰕⰀⰓ",
+          "latin": "hotar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeeodar",
+          "glagolitic": "ⰑⰌⰵⰵⰑⰄⰀⰓ",
+          "latin": "okeeodar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokain",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰐ",
+          "latin": "kookain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olol",
+          "glagolitic": "ⰑⰎⰑⰎ",
+          "latin": "olol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olam",
+          "glagolitic": "ⰑⰎⰀⰏ",
+          "latin": "olam",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 4,
+      "layers": {
+        "eva": "fchoctheody keeodar oteedy rchedy qokechy otches oporaiin oteody otaiin otl aroshy",
+        "glagolitic": "ⰗⰘⰑⰽⱅⱈⰅⰑⰄⰟ ⰌⰵⰵⰑⰄⰀⰓ ⰑⰕⰵⰵⰄⰟ ⰓⰘⰅⰄⰟ ⰼⱁⰑⰌⰅⰘⰟ ⰑⰕⰘⰅⰔ ⰑⰒⰑⰓⰰⰹⰉⰐ ⰑⰕⰅⰑⰄⰟ ⰑⰕⰰⰹⰉⰐ ⰑⰕⰎ ⰀⰓⰑⰚⰟ",
+        "latin": "fholtheody keeodar oteedy rhedy kookehy othes oporaiin oteody otaiin otl arošy",
+        "croatian_short": "fchoctheody keeodar oteedy rchedy qokechy otches oporaiin oteody otaiin otl aroshy",
+        "croatian_expanded": "fholtheod keeodar teed rhed keh thes porai teod tai tl aroš"
+      },
+      "words": [
+        {
+          "eva": "fchoctheody",
+          "glagolitic": "ⰗⰘⰑⰽⱅⱈⰅⰑⰄⰟ",
+          "latin": "fholtheody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keeodar",
+          "glagolitic": "ⰌⰵⰵⰑⰄⰀⰓ",
+          "latin": "keeodar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteedy",
+          "glagolitic": "ⰑⰕⰵⰵⰄⰟ",
+          "latin": "oteedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "rchedy",
+          "glagolitic": "ⰓⰘⰅⰄⰟ",
+          "latin": "rhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokechy",
+          "glagolitic": "ⰼⱁⰑⰌⰅⰘⰟ",
+          "latin": "kookehy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otches",
+          "glagolitic": "ⰑⰕⰘⰅⰔ",
+          "latin": "othes",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oporaiin",
+          "glagolitic": "ⰑⰒⰑⰓⰰⰹⰉⰐ",
+          "latin": "oporaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteody",
+          "glagolitic": "ⰑⰕⰅⰑⰄⰟ",
+          "latin": "oteody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otl",
+          "glagolitic": "ⰑⰕⰎ",
+          "latin": "otl",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aroshy",
+          "glagolitic": "ⰀⰓⰑⰚⰟ",
+          "latin": "arošy",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 5,
+      "layers": {
+        "eva": "dcheos otaiin otedy otodaiin qokeey rchchy qeeeear oteedy qokeedy otedar ar t oteesal",
+        "glagolitic": "ⰄⰘⰅⰑⰔ ⰑⰕⰰⰹⰉⰐ ⰑⰕⰅⰄⰟ ⰑⰕⰑⰄⰰⰹⰉⰐ ⰼⱁⰑⰌⰵⰵⰟ ⰓⰘⰘⰟ ⰼⱁⰵⰵⰵⰵⰀⰓ ⰑⰕⰵⰵⰄⰟ ⰼⱁⰑⰌⰵⰵⰄⰟ ⰑⰕⰅⰄⰀⰓ ⰀⰓ Ⱅ ⰑⰕⰵⰵⰔⰀⰎ",
+        "latin": "dheos otaiin otedy otodaiin kookeey rhhy koeeeear oteedy kookeedy otedar ar t oteesal",
+        "croatian_short": "dcheos otaiin otedy otodaiin qokeey rchchy qeeeear oteedy qokeedy otedar ar t oteesal",
+        "croatian_expanded": "dheos tai ted todai kee rhh koeeeear teed keed tedar ar t tees"
+      },
+      "words": [
+        {
+          "eva": "dcheos",
+          "glagolitic": "ⰄⰘⰅⰑⰔ",
+          "latin": "dheos",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otedy",
+          "glagolitic": "ⰑⰕⰅⰄⰟ",
+          "latin": "otedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otodaiin",
+          "glagolitic": "ⰑⰕⰑⰄⰰⰹⰉⰐ",
+          "latin": "otodaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeey",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰟ",
+          "latin": "kookeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "rchchy",
+          "glagolitic": "ⰓⰘⰘⰟ",
+          "latin": "rhhy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qeeeear",
+          "glagolitic": "ⰼⱁⰵⰵⰵⰵⰀⰓ",
+          "latin": "koeeeear",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteedy",
+          "glagolitic": "ⰑⰕⰵⰵⰄⰟ",
+          "latin": "oteedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeedy",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰄⰟ",
+          "latin": "kookeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otedar",
+          "glagolitic": "ⰑⰕⰅⰄⰀⰓ",
+          "latin": "otedar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "t",
+          "glagolitic": "Ⱅ",
+          "latin": "t",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteesal",
+          "glagolitic": "ⰑⰕⰵⰵⰔⰀⰎ",
+          "latin": "oteesal",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 6,
+      "layers": {
+        "eva": "tcheolchy lcheol chockhy cheodoiidaiin",
+        "glagolitic": "ⰕⰘⰅⰑⰎⰘⰟ ⰎⰘⰅⰑⰎ ⰘⰑⰽⰼⱈⰟ ⰘⰅⰑⰄⱁⰹⰉⰄⰰⰹⰉⰐ",
+        "latin": "theolhy lheol holkhy heodoiidaiin",
+        "croatian_short": "tcheolchy lcheol chockhy cheodoiidaiin",
+        "croatian_expanded": "theolh lhe holkh heodoiidai"
+      },
+      "words": [
+        {
+          "eva": "tcheolchy",
+          "glagolitic": "ⰕⰘⰅⰑⰎⰘⰟ",
+          "latin": "theolhy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lcheol",
+          "glagolitic": "ⰎⰘⰅⰑⰎ",
+          "latin": "lheol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chockhy",
+          "glagolitic": "ⰘⰑⰽⰼⱈⰟ",
+          "latin": "holkhy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheodoiidaiin",
+          "glagolitic": "ⰘⰅⰑⰄⱁⰹⰉⰄⰰⰹⰉⰐ",
+          "latin": "heodoiidaiin",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 7,
+      "layers": {
+        "eva": "fcheshd teody lkeeody oteedy lchealaim shockhol opchedy qotaiin otar ar al oteal",
+        "glagolitic": "ⰗⰘⰅⰚⰄ ⰕⰅⰑⰄⰟ ⰎⰌⰵⰵⰑⰄⰟ ⰑⰕⰵⰵⰄⰟ ⰎⰘⰅⰀⰎⰰⰹⰏ ⰚⰑⰽⰼⱈⰑⰎ ⰑⰒⰘⰅⰄⰟ ⰼⱁⰑⰕⰰⰹⰉⰐ ⰑⰕⰀⰓ ⰀⰓ ⰀⰎ ⰑⰕⰅⰀⰎ",
+        "latin": "fhešd teody lkeeody oteedy lhealaim šolkhol ophedy kootaiin otar ar al oteal",
+        "croatian_short": "fcheshd teody lkeeody oteedy lchealaim shockhol opchedy qotaiin otar ar al oteal",
+        "croatian_expanded": "fhešd teod lkeeod teed lhealaim šolkh phed tai tar ar al te"
+      },
+      "words": [
+        {
+          "eva": "fcheshd",
+          "glagolitic": "ⰗⰘⰅⰚⰄ",
+          "latin": "fhešd",
+          "confidence": 1.0
+        },
+        {
+          "eva": "teody",
+          "glagolitic": "ⰕⰅⰑⰄⰟ",
+          "latin": "teody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeeody",
+          "glagolitic": "ⰎⰌⰵⰵⰑⰄⰟ",
+          "latin": "lkeeody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteedy",
+          "glagolitic": "ⰑⰕⰵⰵⰄⰟ",
+          "latin": "oteedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lchealaim",
+          "glagolitic": "ⰎⰘⰅⰀⰎⰰⰹⰏ",
+          "latin": "lhealaim",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shockhol",
+          "glagolitic": "ⰚⰑⰽⰼⱈⰑⰎ",
+          "latin": "šolkhol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opchedy",
+          "glagolitic": "ⰑⰒⰘⰅⰄⰟ",
+          "latin": "ophedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotaiin",
+          "glagolitic": "ⰼⱁⰑⰕⰰⰹⰉⰐ",
+          "latin": "kootaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteal",
+          "glagolitic": "ⰑⰕⰅⰀⰎ",
+          "latin": "oteal",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 8,
+      "layers": {
+        "eva": "ycheody qokeeor choltar olkam chokam odal sheckhy qokchedy otor otar toky",
+        "glagolitic": "ⰟⰘⰅⰑⰄⰟ ⰼⱁⰑⰌⰵⰵⰑⰓ ⰘⰑⰎⰕⰀⰓ ⰑⰎⰌⰀⰏ ⰘⰑⰌⰀⰏ ⰑⰄⰀⰎ ⰚⰅⰽⰼⱈⰟ ⰼⱁⰑⰌⰘⰅⰄⰟ ⰑⰕⰑⰓ ⰑⰕⰀⰓ ⰕⰑⰌⰟ",
+        "latin": "yheody kookeeor holtar olkam hokam odal šelkhy kookhedy otor otar toky",
+        "croatian_short": "ycheody qokeeor choltar olkam chokam odal sheckhy qokchedy otor otar toky",
+        "croatian_expanded": "heod kee holtar lkam hokam d šelkh khed t tar tok"
+      },
+      "words": [
+        {
+          "eva": "ycheody",
+          "glagolitic": "ⰟⰘⰅⰑⰄⰟ",
+          "latin": "yheody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeeor",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰑⰓ",
+          "latin": "kookeeor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "choltar",
+          "glagolitic": "ⰘⰑⰎⰕⰀⰓ",
+          "latin": "holtar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olkam",
+          "glagolitic": "ⰑⰎⰌⰀⰏ",
+          "latin": "olkam",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chokam",
+          "glagolitic": "ⰘⰑⰌⰀⰏ",
+          "latin": "hokam",
+          "confidence": 1.0
+        },
+        {
+          "eva": "odal",
+          "glagolitic": "ⰑⰄⰀⰎ",
+          "latin": "odal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "sheckhy",
+          "glagolitic": "ⰚⰅⰽⰼⱈⰟ",
+          "latin": "šelkhy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokchedy",
+          "glagolitic": "ⰼⱁⰑⰌⰘⰅⰄⰟ",
+          "latin": "kookhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otor",
+          "glagolitic": "ⰑⰕⰑⰓ",
+          "latin": "otor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "toky",
+          "glagolitic": "ⰕⰑⰌⰟ",
+          "latin": "toky",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 9,
+      "layers": {
+        "eva": "dair ar okaiin chokaiin checkhol cholkaiin olchy",
+        "glagolitic": "ⰄⰰⰹⰓ ⰀⰓ ⰑⰌⰰⰹⰉⰐ ⰘⰑⰌⰰⰹⰉⰐ ⰘⰅⰽⰼⱈⰑⰎ ⰘⰑⰎⰌⰰⰹⰉⰐ ⰑⰎⰘⰟ",
+        "latin": "dair ar okaiin hokaiin helkhol holkaiin olhy",
+        "croatian_short": "dair ar okaiin chokaiin checkhol cholkaiin olchy",
+        "croatian_expanded": "ir ar kai hokai helkh holkai lh"
+      },
+      "words": [
+        {
+          "eva": "dair",
+          "glagolitic": "ⰄⰰⰹⰓ",
+          "latin": "dair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chokaiin",
+          "glagolitic": "ⰘⰑⰌⰰⰹⰉⰐ",
+          "latin": "hokaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "checkhol",
+          "glagolitic": "ⰘⰅⰽⰼⱈⰑⰎ",
+          "latin": "helkhol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cholkaiin",
+          "glagolitic": "ⰘⰑⰎⰌⰰⰹⰉⰐ",
+          "latin": "holkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olchy",
+          "glagolitic": "ⰑⰎⰘⰟ",
+          "latin": "olhy",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 10,
+      "layers": {
+        "eva": "polaiin oteol otedy ar ar al kedy qokeedy olar aiin kchey dal otor ar opchey ro",
+        "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ ⰑⰕⰅⰑⰎ ⰑⰕⰅⰄⰟ ⰀⰓ ⰀⰓ ⰀⰎ ⰌⰅⰄⰟ ⰼⱁⰑⰌⰵⰵⰄⰟ ⰑⰎⰀⰓ ⰰⰹⰉⰐ ⰌⰘⰅⰟ ⰄⰀⰎ ⰑⰕⰑⰓ ⰀⰓ ⰑⰒⰘⰅⰟ ⰓⰑ",
+        "latin": "polaiin oteol otedy ar ar al kedy kookeedy olar aiin khey dal otor ar ophey ro",
+        "croatian_short": "polaiin oteol otedy ar ar al kedy qokeedy olar aiin kchey dal otor ar opchey ro",
+        "croatian_expanded": "polai te ted ar ar al ked keed lar ai khe daljnji t ar phe ro"
+      },
+      "words": [
+        {
+          "eva": "polaiin",
+          "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ",
+          "latin": "polaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteol",
+          "glagolitic": "ⰑⰕⰅⰑⰎ",
+          "latin": "oteol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otedy",
+          "glagolitic": "ⰑⰕⰅⰄⰟ",
+          "latin": "otedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "kedy",
+          "glagolitic": "ⰌⰅⰄⰟ",
+          "latin": "kedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeedy",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰄⰟ",
+          "latin": "kookeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olar",
+          "glagolitic": "ⰑⰎⰀⰓ",
+          "latin": "olar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "kchey",
+          "glagolitic": "ⰌⰘⰅⰟ",
+          "latin": "khey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "dal",
+          "glagolitic": "ⰄⰀⰎ",
+          "latin": "dal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otor",
+          "glagolitic": "ⰑⰕⰑⰓ",
+          "latin": "otor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opchey",
+          "glagolitic": "ⰑⰒⰘⰅⰟ",
+          "latin": "ophey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ro",
+          "glagolitic": "ⰓⰑ",
+          "latin": "ro",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 11,
+      "layers": {
+        "eva": "or sheor oteeo cheey olkeey otol chotair otar qotar okar oko lkedal ram",
+        "glagolitic": "ⰑⰓ ⰚⰅⰑⰓ ⰑⰕⰵⰵⰑ ⰘⰵⰵⰟ ⰑⰎⰌⰵⰵⰟ ⰑⰕⰑⰎ ⰘⰑⰕⰰⰹⰓ ⰑⰕⰀⰓ ⰼⱁⰑⰕⰀⰓ ⰑⰌⰀⰓ ⰑⰌⰑ ⰎⰌⰅⰄⰀⰎ ⰓⰀⰏ",
+        "latin": "or šeor oteeo heey olkeey otol hotair otar kootar okar oko lkedal ram",
+        "croatian_short": "or sheor oteeo cheey olkeey otol chotair otar qotar okar oko lkedal ram",
+        "croatian_expanded": "r še teeo hee lkee t hotair tar tar vatra ko lked ram"
+      },
+      "words": [
+        {
+          "eva": "or",
+          "glagolitic": "ⰑⰓ",
+          "latin": "or",
+          "confidence": 1.0
+        },
+        {
+          "eva": "sheor",
+          "glagolitic": "ⰚⰅⰑⰓ",
+          "latin": "šeor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteeo",
+          "glagolitic": "ⰑⰕⰵⰵⰑ",
+          "latin": "oteeo",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheey",
+          "glagolitic": "ⰘⰵⰵⰟ",
+          "latin": "heey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olkeey",
+          "glagolitic": "ⰑⰎⰌⰵⰵⰟ",
+          "latin": "olkeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otol",
+          "glagolitic": "ⰑⰕⰑⰎ",
+          "latin": "otol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chotair",
+          "glagolitic": "ⰘⰑⰕⰰⰹⰓ",
+          "latin": "hotair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotar",
+          "glagolitic": "ⰼⱁⰑⰕⰀⰓ",
+          "latin": "kootar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oko",
+          "glagolitic": "ⰑⰌⰑ",
+          "latin": "oko",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkedal",
+          "glagolitic": "ⰎⰌⰅⰄⰀⰎ",
+          "latin": "lkedal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ram",
+          "glagolitic": "ⰓⰀⰏ",
+          "latin": "ram",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 12,
+      "layers": {
+        "eva": "solchedy otsheody arl olchey oror",
+        "glagolitic": "ⰔⰑⰎⰘⰅⰄⰟ ⰑⰕⰚⰅⰑⰄⰟ ⰀⰓⰎ ⰑⰎⰘⰅⰟ ⰑⰓⰑⰓ",
+        "latin": "solhedy otšeody arl olhey oror",
+        "croatian_short": "solchedy otsheody arl olchey oror",
+        "croatian_expanded": "solhed tšeod arl lhe r"
+      },
+      "words": [
+        {
+          "eva": "solchedy",
+          "glagolitic": "ⰔⰑⰎⰘⰅⰄⰟ",
+          "latin": "solhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otsheody",
+          "glagolitic": "ⰑⰕⰚⰅⰑⰄⰟ",
+          "latin": "otšeody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "arl",
+          "glagolitic": "ⰀⰓⰎ",
+          "latin": "arl",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olchey",
+          "glagolitic": "ⰑⰎⰘⰅⰟ",
+          "latin": "olhey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oror",
+          "glagolitic": "ⰑⰓⰑⰓ",
+          "latin": "oror",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 13,
+      "layers": {
+        "eva": "poraiin otar ar okol shedy qokchedy otchdy qotor qoteedar roral fchee llor",
+        "glagolitic": "ⰒⰑⰓⰰⰹⰉⰐ ⰑⰕⰀⰓ ⰀⰓ ⰑⰌⰑⰎ ⰚⰅⰄⰟ ⰼⱁⰑⰌⰘⰅⰄⰟ ⰑⰕⰘⰄⰟ ⰼⱁⰑⰕⰑⰓ ⰼⱁⰑⰕⰵⰵⰄⰀⰓ ⰓⰑⰓⰀⰎ ⰗⰘⰵⰵ ⰎⰎⰑⰓ",
+        "latin": "poraiin otar ar okol šedy kookhedy othdy kootor kooteedar roral fhee llor",
+        "croatian_short": "poraiin otar ar okol shedy qokchedy otchdy qotor qoteedar roral fchee llor",
+        "croatian_expanded": "porai tar ar k šed khed thd t teedar ror fhee ll"
+      },
+      "words": [
+        {
+          "eva": "poraiin",
+          "glagolitic": "ⰒⰑⰓⰰⰹⰉⰐ",
+          "latin": "poraiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okol",
+          "glagolitic": "ⰑⰌⰑⰎ",
+          "latin": "okol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shedy",
+          "glagolitic": "ⰚⰅⰄⰟ",
+          "latin": "šedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokchedy",
+          "glagolitic": "ⰼⱁⰑⰌⰘⰅⰄⰟ",
+          "latin": "kookhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otchdy",
+          "glagolitic": "ⰑⰕⰘⰄⰟ",
+          "latin": "othdy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotor",
+          "glagolitic": "ⰼⱁⰑⰕⰑⰓ",
+          "latin": "kootor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qoteedar",
+          "glagolitic": "ⰼⱁⰑⰕⰵⰵⰄⰀⰓ",
+          "latin": "kooteedar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "roral",
+          "glagolitic": "ⰓⰑⰓⰀⰎ",
+          "latin": "roral",
+          "confidence": 1.0
+        },
+        {
+          "eva": "fchee",
+          "glagolitic": "ⰗⰘⰵⰵ",
+          "latin": "fhee",
+          "confidence": 1.0
+        },
+        {
+          "eva": "llor",
+          "glagolitic": "ⰎⰎⰑⰓ",
+          "latin": "llor",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 14,
+      "layers": {
+        "eva": "dar al sheey qotaiin chor cthol okeshos olchedy qokaiin okal okaiin olo",
+        "glagolitic": "ⰄⰀⰓ ⰀⰎ ⰚⰵⰵⰟ ⰼⱁⰑⰕⰰⰹⰉⰐ ⰘⰑⰓ ⰽⱅⱈⰑⰎ ⰑⰌⰅⰚⰑⰔ ⰑⰎⰘⰅⰄⰟ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰑⰌⰀⰎ ⰑⰌⰰⰹⰉⰐ ⰑⰎⰑ",
+        "latin": "dar al šeey kootaiin hor lthol okešos olhedy kookaiin okal okaiin olo",
+        "croatian_short": "dar al sheey qotaiin chor cthol okeshos olchedy qokaiin okal okaiin olo",
+        "croatian_expanded": "r al šee tai kuhati lth kešos lhed kai okal kai lo"
+      },
+      "words": [
+        {
+          "eva": "dar",
+          "glagolitic": "ⰄⰀⰓ",
+          "latin": "dar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "sheey",
+          "glagolitic": "ⰚⰵⰵⰟ",
+          "latin": "šeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotaiin",
+          "glagolitic": "ⰼⱁⰑⰕⰰⰹⰉⰐ",
+          "latin": "kootaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chor",
+          "glagolitic": "ⰘⰑⰓ",
+          "latin": "hor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cthol",
+          "glagolitic": "ⰽⱅⱈⰑⰎ",
+          "latin": "lthol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeshos",
+          "glagolitic": "ⰑⰌⰅⰚⰑⰔ",
+          "latin": "okešos",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olchedy",
+          "glagolitic": "ⰑⰎⰘⰅⰄⰟ",
+          "latin": "olhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okal",
+          "glagolitic": "ⰑⰌⰀⰎ",
+          "latin": "okal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olo",
+          "glagolitic": "ⰑⰎⰑ",
+          "latin": "olo",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 15,
+      "layers": {
+        "eva": "ar ar okeey oeky otcheedaiin ol tchdy pcheol kcheor raiin cheey qokaram",
+        "glagolitic": "ⰀⰓ ⰀⰓ ⰑⰌⰵⰵⰟ ⰑⰅⰌⰟ ⰑⰕⰘⰵⰵⰄⰰⰹⰉⰐ ⰑⰎ ⰕⰘⰄⰟ ⰒⰘⰅⰑⰎ ⰌⰘⰅⰑⰓ ⰓⰰⰹⰉⰐ ⰘⰵⰵⰟ ⰼⱁⰑⰌⰀⰓⰀⰏ",
+        "latin": "ar ar okeey oeky otheedaiin ol thdy pheol kheor raiin heey kookaram",
+        "croatian_short": "ar ar okeey oeky otcheedaiin ol tchdy pcheol kcheor raiin cheey qokaram",
+        "croatian_expanded": "ar ar kee ek theedai ulje thd phe khe rai hee karam"
+      },
+      "words": [
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeey",
+          "glagolitic": "ⰑⰌⰵⰵⰟ",
+          "latin": "okeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oeky",
+          "glagolitic": "ⰑⰅⰌⰟ",
+          "latin": "oeky",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otcheedaiin",
+          "glagolitic": "ⰑⰕⰘⰵⰵⰄⰰⰹⰉⰐ",
+          "latin": "otheedaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ol",
+          "glagolitic": "ⰑⰎ",
+          "latin": "ol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "tchdy",
+          "glagolitic": "ⰕⰘⰄⰟ",
+          "latin": "thdy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "pcheol",
+          "glagolitic": "ⰒⰘⰅⰑⰎ",
+          "latin": "pheol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "kcheor",
+          "glagolitic": "ⰌⰘⰅⰑⰓ",
+          "latin": "kheor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "raiin",
+          "glagolitic": "ⰓⰰⰹⰉⰐ",
+          "latin": "raiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheey",
+          "glagolitic": "ⰘⰵⰵⰟ",
+          "latin": "heey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaram",
+          "glagolitic": "ⰼⱁⰑⰌⰀⰓⰀⰏ",
+          "latin": "kookaram",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 16,
+      "layers": {
+        "eva": "daiin chl lkeey lkaiin chdain qokain sheor okalchedy qokar olkam ar",
+        "glagolitic": "ⰄⰰⰹⰉⰐ ⰘⰎ ⰎⰌⰵⰵⰟ ⰎⰌⰰⰹⰉⰐ ⰘⰄⰰⰹⰐ ⰼⱁⰑⰌⰰⰹⰐ ⰚⰅⰑⰓ ⰑⰌⰀⰎⰘⰅⰄⰟ ⰼⱁⰑⰌⰀⰓ ⰑⰎⰌⰀⰏ ⰀⰓ",
+        "latin": "daiin hl lkeey lkaiin hdain kookain šeor okalhedy kookar olkam ar",
+        "croatian_short": "daiin chl lkeey lkaiin chdain qokain sheor okalchedy qokar olkam ar",
+        "croatian_expanded": "dati hl lkee lkai hda ka še kalhed vatra lkam ar"
+      },
+      "words": [
+        {
+          "eva": "daiin",
+          "glagolitic": "ⰄⰰⰹⰉⰐ",
+          "latin": "daiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chl",
+          "glagolitic": "ⰘⰎ",
+          "latin": "hl",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeey",
+          "glagolitic": "ⰎⰌⰵⰵⰟ",
+          "latin": "lkeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkaiin",
+          "glagolitic": "ⰎⰌⰰⰹⰉⰐ",
+          "latin": "lkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chdain",
+          "glagolitic": "ⰘⰄⰰⰹⰐ",
+          "latin": "hdain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokain",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰐ",
+          "latin": "kookain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "sheor",
+          "glagolitic": "ⰚⰅⰑⰓ",
+          "latin": "šeor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okalchedy",
+          "glagolitic": "ⰑⰌⰀⰎⰘⰅⰄⰟ",
+          "latin": "okalhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokar",
+          "glagolitic": "ⰼⱁⰑⰌⰀⰓ",
+          "latin": "kookar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olkam",
+          "glagolitic": "ⰑⰎⰌⰀⰏ",
+          "latin": "olkam",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 17,
+      "layers": {
+        "eva": "saraiin shedy lcheey olkar okaiin cthor oraiin yteeeor",
+        "glagolitic": "ⰔⰀⰓⰰⰹⰉⰐ ⰚⰅⰄⰟ ⰎⰘⰵⰵⰟ ⰑⰎⰌⰀⰓ ⰑⰌⰰⰹⰉⰐ ⰽⱅⱈⰑⰓ ⰑⰓⰰⰹⰉⰐ ⰟⰕⰵⰵⰅⰑⰓ",
+        "latin": "saraiin šedy lheey olkar okaiin lthor oraiin yteeeor",
+        "croatian_short": "saraiin shedy lcheey olkar okaiin cthor oraiin yteeeor",
+        "croatian_expanded": "sarai šed lhee lkar kai lth rai teee"
+      },
+      "words": [
+        {
+          "eva": "saraiin",
+          "glagolitic": "ⰔⰀⰓⰰⰹⰉⰐ",
+          "latin": "saraiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shedy",
+          "glagolitic": "ⰚⰅⰄⰟ",
+          "latin": "šedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lcheey",
+          "glagolitic": "ⰎⰘⰵⰵⰟ",
+          "latin": "lheey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olkar",
+          "glagolitic": "ⰑⰎⰌⰀⰓ",
+          "latin": "olkar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cthor",
+          "glagolitic": "ⰽⱅⱈⰑⰓ",
+          "latin": "lthor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oraiin",
+          "glagolitic": "ⰑⰓⰰⰹⰉⰐ",
+          "latin": "oraiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "yteeeor",
+          "glagolitic": "ⰟⰕⰵⰵⰅⰑⰓ",
+          "latin": "yteeeor",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 18,
+      "layers": {
+        "eva": "pychdar chckhedy otshedy tcheepchey lky lkches qokody lkeshdy fchocthar opam",
+        "glagolitic": "ⰒⰟⰘⰄⰀⰓ ⰘⰽⰼⱈⰅⰄⰟ ⰑⰕⰚⰅⰄⰟ ⰕⰘⰵⰵⰒⰘⰅⰟ ⰎⰌⰟ ⰎⰌⰘⰅⰔ ⰼⱁⰑⰌⰑⰄⰟ ⰎⰌⰅⰚⰄⰟ ⰗⰘⰑⰽⱅⱈⰀⰓ ⰑⰒⰀⰏ",
+        "latin": "pyhdar hlkhedy otšedy theephey lky lkhes kookody lkešdy fholthar opam",
+        "croatian_short": "pychdar chckhedy otshedy tcheepchey lky lkches qokody lkeshdy fchocthar opam",
+        "croatian_expanded": "pyhdar hlkhed tšed theephe lk lkhes kod lkešd fholthar pam"
+      },
+      "words": [
+        {
+          "eva": "pychdar",
+          "glagolitic": "ⰒⰟⰘⰄⰀⰓ",
+          "latin": "pyhdar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chckhedy",
+          "glagolitic": "ⰘⰽⰼⱈⰅⰄⰟ",
+          "latin": "hlkhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otshedy",
+          "glagolitic": "ⰑⰕⰚⰅⰄⰟ",
+          "latin": "otšedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "tcheepchey",
+          "glagolitic": "ⰕⰘⰵⰵⰒⰘⰅⰟ",
+          "latin": "theephey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lky",
+          "glagolitic": "ⰎⰌⰟ",
+          "latin": "lky",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkches",
+          "glagolitic": "ⰎⰌⰘⰅⰔ",
+          "latin": "lkhes",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokody",
+          "glagolitic": "ⰼⱁⰑⰌⰑⰄⰟ",
+          "latin": "kookody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeshdy",
+          "glagolitic": "ⰎⰌⰅⰚⰄⰟ",
+          "latin": "lkešdy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "fchocthar",
+          "glagolitic": "ⰗⰘⰑⰽⱅⱈⰀⰓ",
+          "latin": "fholthar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opam",
+          "glagolitic": "ⰑⰒⰀⰏ",
+          "latin": "opam",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 19,
+      "layers": {
+        "eva": "daiin qokeeody qokar okaiin qokaiin okar checthy okalched lchal qckham",
+        "glagolitic": "ⰄⰰⰹⰉⰐ ⰼⱁⰑⰌⰵⰵⰑⰄⰟ ⰼⱁⰑⰌⰀⰓ ⰑⰌⰰⰹⰉⰐ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰑⰌⰀⰓ ⰘⰅⰽⱅⱈⰟ ⰑⰌⰀⰎⰘⰅⰄ ⰎⰘⰀⰎ ⰼⱁⰽⰼⱈⰀⰏ",
+        "latin": "daiin kookeeody kookar okaiin kookaiin okar helthy okalhed lhal kolkham",
+        "croatian_short": "daiin qokeeody qokar okaiin qokaiin okar checthy okalched lchal qckham",
+        "croatian_expanded": "dati keeod vatra kai kai vatra helth kalhed lh kolkham"
+      },
+      "words": [
+        {
+          "eva": "daiin",
+          "glagolitic": "ⰄⰰⰹⰉⰐ",
+          "latin": "daiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeeody",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰑⰄⰟ",
+          "latin": "kookeeody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokar",
+          "glagolitic": "ⰼⱁⰑⰌⰀⰓ",
+          "latin": "kookar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "checthy",
+          "glagolitic": "ⰘⰅⰽⱅⱈⰟ",
+          "latin": "helthy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okalched",
+          "glagolitic": "ⰑⰌⰀⰎⰘⰅⰄ",
+          "latin": "okalhed",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lchal",
+          "glagolitic": "ⰎⰘⰀⰎ",
+          "latin": "lhal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qckham",
+          "glagolitic": "ⰼⱁⰽⰼⱈⰀⰏ",
+          "latin": "kolkham",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 20,
+      "layers": {
+        "eva": "lkaiin chckhhy chody otchar or otary olaiin",
+        "glagolitic": "ⰎⰌⰰⰹⰉⰐ ⰘⰽⰼⱈⰘⰟ ⰘⰑⰄⰟ ⰑⰕⰘⰀⰓ ⰑⰓ ⰑⰕⰀⰓⰟ ⰑⰎⰰⰹⰉⰐ",
+        "latin": "lkaiin hlkhhy hody othar or otary olaiin",
+        "croatian_short": "lkaiin chckhhy chody otchar or otary olaiin",
+        "croatian_expanded": "lkai hlkhh hod thar r tar lai"
+      },
+      "words": [
+        {
+          "eva": "lkaiin",
+          "glagolitic": "ⰎⰌⰰⰹⰉⰐ",
+          "latin": "lkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chckhhy",
+          "glagolitic": "ⰘⰽⰼⱈⰘⰟ",
+          "latin": "hlkhhy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chody",
+          "glagolitic": "ⰘⰑⰄⰟ",
+          "latin": "hody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otchar",
+          "glagolitic": "ⰑⰕⰘⰀⰓ",
+          "latin": "othar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "or",
+          "glagolitic": "ⰑⰓ",
+          "latin": "or",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otary",
+          "glagolitic": "ⰑⰕⰀⰓⰟ",
+          "latin": "otary",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olaiin",
+          "glagolitic": "ⰑⰎⰰⰹⰉⰐ",
+          "latin": "olaiin",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 21,
+      "layers": {
+        "eva": "polaiin otar qotain chtol tarol cheol kaiin chpkcheos okar aithchr lo",
+        "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ ⰑⰕⰀⰓ ⰼⱁⰑⰕⰰⰹⰐ ⰘⰕⰑⰎ ⰕⰀⰓⰑⰎ ⰘⰅⰑⰎ ⰌⰰⰹⰉⰐ ⰘⰒⰌⰘⰅⰑⰔ ⰑⰌⰀⰓ ⰰⰹⰕⰘⰘⰓ ⰎⰑ",
+        "latin": "polaiin otar kootain htol tarol heol kaiin hpkheos okar aithhr lo",
+        "croatian_short": "polaiin otar qotain chtol tarol cheol kaiin chpkcheos okar aithchr lo",
+        "croatian_expanded": "polai tar ta ht tar he kai hpkheos vatra aithhr lo"
+      },
+      "words": [
+        {
+          "eva": "polaiin",
+          "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ",
+          "latin": "polaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotain",
+          "glagolitic": "ⰼⱁⰑⰕⰰⰹⰐ",
+          "latin": "kootain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chtol",
+          "glagolitic": "ⰘⰕⰑⰎ",
+          "latin": "htol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "tarol",
+          "glagolitic": "ⰕⰀⰓⰑⰎ",
+          "latin": "tarol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheol",
+          "glagolitic": "ⰘⰅⰑⰎ",
+          "latin": "heol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "kaiin",
+          "glagolitic": "ⰌⰰⰹⰉⰐ",
+          "latin": "kaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chpkcheos",
+          "glagolitic": "ⰘⰒⰌⰘⰅⰑⰔ",
+          "latin": "hpkheos",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aithchr",
+          "glagolitic": "ⰰⰹⰕⰘⰘⰓ",
+          "latin": "aithhr",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lo",
+          "glagolitic": "ⰎⰑ",
+          "latin": "lo",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 22,
+      "layers": {
+        "eva": "okaiin okaiin cheeky raiin olal okaiin cheody okaiin okaiin otar aly",
+        "glagolitic": "ⰑⰌⰰⰹⰉⰐ ⰑⰌⰰⰹⰉⰐ ⰘⰵⰵⰌⰟ ⰓⰰⰹⰉⰐ ⰑⰎⰀⰎ ⰑⰌⰰⰹⰉⰐ ⰘⰅⰑⰄⰟ ⰑⰌⰰⰹⰉⰐ ⰑⰌⰰⰹⰉⰐ ⰑⰕⰀⰓ ⰀⰎⰟ",
+        "latin": "okaiin okaiin heeky raiin olal okaiin heody okaiin okaiin otar aly",
+        "croatian_short": "okaiin okaiin cheeky raiin olal okaiin cheody okaiin okaiin otar aly",
+        "croatian_expanded": "kai kai heek rai l kai heod kai kai tar al"
+      },
+      "words": [
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheeky",
+          "glagolitic": "ⰘⰵⰵⰌⰟ",
+          "latin": "heeky",
+          "confidence": 1.0
+        },
+        {
+          "eva": "raiin",
+          "glagolitic": "ⰓⰰⰹⰉⰐ",
+          "latin": "raiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olal",
+          "glagolitic": "ⰑⰎⰀⰎ",
+          "latin": "olal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheody",
+          "glagolitic": "ⰘⰅⰑⰄⰟ",
+          "latin": "heody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aly",
+          "glagolitic": "ⰀⰎⰟ",
+          "latin": "aly",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 23,
+      "layers": {
+        "eva": "ykaiin al kar okain qokaiin chokair okar al cheody qokar otal lkl lol",
+        "glagolitic": "ⰟⰌⰰⰹⰉⰐ ⰀⰎ ⰌⰀⰓ ⰑⰌⰰⰹⰐ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰘⰑⰌⰰⰹⰓ ⰑⰌⰀⰓ ⰀⰎ ⰘⰅⰑⰄⰟ ⰼⱁⰑⰌⰀⰓ ⰑⰕⰀⰎ ⰎⰌⰎ ⰎⰑⰎ",
+        "latin": "ykaiin al kar okain kookaiin hokair okar al heody kookar otal lkl lol",
+        "croatian_short": "ykaiin al kar okain qokaiin chokair okar al cheody qokar otal lkl lol",
+        "croatian_expanded": "kai al vatra ka kai hokair vatra al heod vatra t lkl l"
+      },
+      "words": [
+        {
+          "eva": "ykaiin",
+          "glagolitic": "ⰟⰌⰰⰹⰉⰐ",
+          "latin": "ykaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "kar",
+          "glagolitic": "ⰌⰀⰓ",
+          "latin": "kar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okain",
+          "glagolitic": "ⰑⰌⰰⰹⰐ",
+          "latin": "okain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chokair",
+          "glagolitic": "ⰘⰑⰌⰰⰹⰓ",
+          "latin": "hokair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheody",
+          "glagolitic": "ⰘⰅⰑⰄⰟ",
+          "latin": "heody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokar",
+          "glagolitic": "ⰼⱁⰑⰌⰀⰓ",
+          "latin": "kookar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otal",
+          "glagolitic": "ⰑⰕⰀⰎ",
+          "latin": "otal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkl",
+          "glagolitic": "ⰎⰌⰎ",
+          "latin": "lkl",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lol",
+          "glagolitic": "ⰎⰑⰎ",
+          "latin": "lol",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 24,
+      "layers": {
+        "eva": "olkeey lcheey loar cheos",
+        "glagolitic": "ⰑⰎⰌⰵⰵⰟ ⰎⰘⰵⰵⰟ ⰎⰑⰀⰓ ⰘⰅⰑⰔ",
+        "latin": "olkeey lheey loar heos",
+        "croatian_short": "olkeey lcheey loar cheos",
+        "croatian_expanded": "lkee lhee loar heos"
+      },
+      "words": [
+        {
+          "eva": "olkeey",
+          "glagolitic": "ⰑⰎⰌⰵⰵⰟ",
+          "latin": "olkeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lcheey",
+          "glagolitic": "ⰎⰘⰵⰵⰟ",
+          "latin": "lheey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "loar",
+          "glagolitic": "ⰎⰑⰀⰓ",
+          "latin": "loar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheos",
+          "glagolitic": "ⰘⰅⰑⰔ",
+          "latin": "heos",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 25,
+      "layers": {
+        "eva": "tokary lkchey lkeedy otey pcheol qopchey cthol opaiin ol keeor opshedy qotam",
+        "glagolitic": "ⰕⰑⰌⰀⰓⰟ ⰎⰌⰘⰅⰟ ⰎⰌⰵⰵⰄⰟ ⰑⰕⰅⰟ ⰒⰘⰅⰑⰎ ⰼⱁⰑⰒⰘⰅⰟ ⰽⱅⱈⰑⰎ ⰑⰒⰰⰹⰉⰐ ⰑⰎ ⰌⰵⰵⰑⰓ ⰑⰒⰚⰅⰄⰟ ⰼⱁⰑⰕⰀⰏ",
+        "latin": "tokary lkhey lkeedy otey pheol koophey lthol opaiin ol keeor opšedy kootam",
+        "croatian_short": "tokary lkchey lkeedy otey pcheol qopchey cthol opaiin ol keeor opshedy qotam",
+        "croatian_expanded": "tokar lkhe lkeed te phe phe lth pai ulje kee pšed tam"
+      },
+      "words": [
+        {
+          "eva": "tokary",
+          "glagolitic": "ⰕⰑⰌⰀⰓⰟ",
+          "latin": "tokary",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkchey",
+          "glagolitic": "ⰎⰌⰘⰅⰟ",
+          "latin": "lkhey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeedy",
+          "glagolitic": "ⰎⰌⰵⰵⰄⰟ",
+          "latin": "lkeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otey",
+          "glagolitic": "ⰑⰕⰅⰟ",
+          "latin": "otey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "pcheol",
+          "glagolitic": "ⰒⰘⰅⰑⰎ",
+          "latin": "pheol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qopchey",
+          "glagolitic": "ⰼⱁⰑⰒⰘⰅⰟ",
+          "latin": "koophey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cthol",
+          "glagolitic": "ⰽⱅⱈⰑⰎ",
+          "latin": "lthol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opaiin",
+          "glagolitic": "ⰑⰒⰰⰹⰉⰐ",
+          "latin": "opaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ol",
+          "glagolitic": "ⰑⰎ",
+          "latin": "ol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keeor",
+          "glagolitic": "ⰌⰵⰵⰑⰓ",
+          "latin": "keeor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opshedy",
+          "glagolitic": "ⰑⰒⰚⰅⰄⰟ",
+          "latin": "opšedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotam",
+          "glagolitic": "ⰼⱁⰑⰕⰀⰏ",
+          "latin": "kootam",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 26,
+      "layers": {
+        "eva": "okiin al keechy qoteeol otar ar otchey otaiin al otaiin otol qotody loty",
+        "glagolitic": "ⰑⰌⰹⰹⰐ ⰀⰎ ⰌⰵⰵⰘⰟ ⰼⱁⰑⰕⰵⰵⰑⰎ ⰑⰕⰀⰓ ⰀⰓ ⰑⰕⰘⰅⰟ ⰑⰕⰰⰹⰉⰐ ⰀⰎ ⰑⰕⰰⰹⰉⰐ ⰑⰕⰑⰎ ⰼⱁⰑⰕⰑⰄⰟ ⰎⰑⰕⰟ",
+        "latin": "okiin al keehy kooteeol otar ar othey otaiin al otaiin otol kootody loty",
+        "croatian_short": "okiin al keechy qoteeol otar ar otchey otaiin al otaiin otol qotody loty",
+        "croatian_expanded": "ki al keeh tee tar ar the tai al tai t tod lot"
+      },
+      "words": [
+        {
+          "eva": "okiin",
+          "glagolitic": "ⰑⰌⰹⰹⰐ",
+          "latin": "okiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keechy",
+          "glagolitic": "ⰌⰵⰵⰘⰟ",
+          "latin": "keehy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qoteeol",
+          "glagolitic": "ⰼⱁⰑⰕⰵⰵⰑⰎ",
+          "latin": "kooteeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otchey",
+          "glagolitic": "ⰑⰕⰘⰅⰟ",
+          "latin": "othey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otol",
+          "glagolitic": "ⰑⰕⰑⰎ",
+          "latin": "otol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotody",
+          "glagolitic": "ⰼⱁⰑⰕⰑⰄⰟ",
+          "latin": "kootody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "loty",
+          "glagolitic": "ⰎⰑⰕⰟ",
+          "latin": "loty",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 27,
+      "layers": {
+        "eva": "ycheeol cheeo alkeedy",
+        "glagolitic": "ⰟⰘⰵⰵⰑⰎ ⰘⰵⰵⰑ ⰀⰎⰌⰵⰵⰄⰟ",
+        "latin": "yheeol heeo alkeedy",
+        "croatian_short": "ycheeol cheeo alkeedy",
+        "croatian_expanded": "hee heeo alkeed"
+      },
+      "words": [
+        {
+          "eva": "ycheeol",
+          "glagolitic": "ⰟⰘⰵⰵⰑⰎ",
+          "latin": "yheeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheeo",
+          "glagolitic": "ⰘⰵⰵⰑ",
+          "latin": "heeo",
+          "confidence": 1.0
+        },
+        {
+          "eva": "alkeedy",
+          "glagolitic": "ⰀⰎⰌⰵⰵⰄⰟ",
+          "latin": "alkeedy",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 28,
+      "layers": {
+        "eva": "paiir oteey lkaiin oshox ar ash opheey cphedy opcheody okalchdy qotol oky",
+        "glagolitic": "ⰒⰰⰹⰉⰓ ⰑⰕⰵⰵⰟ ⰎⰌⰰⰹⰉⰐ ⰑⰚⰑⰘ ⰀⰓ ⰀⰚ ⰑⰒⰘⰵⰵⰟ ⰽⱂⱈⰅⰄⰟ ⰑⰒⰘⰅⰑⰄⰟ ⰑⰌⰀⰎⰘⰄⰟ ⰼⱁⰑⰕⰑⰎ ⰑⰌⰟ",
+        "latin": "paiir oteey lkaiin ošoh ar aš opheey lphedy opheody okalhdy kootol oky",
+        "croatian_short": "paiir oteey lkaiin oshox ar ash opheey cphedy opcheody okalchdy qotol oky",
+        "croatian_expanded": "paiir tee lkai šoh ar aš phee lphed pheod kalhd t k"
+      },
+      "words": [
+        {
+          "eva": "paiir",
+          "glagolitic": "ⰒⰰⰹⰉⰓ",
+          "latin": "paiir",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteey",
+          "glagolitic": "ⰑⰕⰵⰵⰟ",
+          "latin": "oteey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkaiin",
+          "glagolitic": "ⰎⰌⰰⰹⰉⰐ",
+          "latin": "lkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oshox",
+          "glagolitic": "ⰑⰚⰑⰘ",
+          "latin": "ošoh",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ash",
+          "glagolitic": "ⰀⰚ",
+          "latin": "aš",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opheey",
+          "glagolitic": "ⰑⰒⰘⰵⰵⰟ",
+          "latin": "opheey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cphedy",
+          "glagolitic": "ⰽⱂⱈⰅⰄⰟ",
+          "latin": "lphedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opcheody",
+          "glagolitic": "ⰑⰒⰘⰅⰑⰄⰟ",
+          "latin": "opheody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okalchdy",
+          "glagolitic": "ⰑⰌⰀⰎⰘⰄⰟ",
+          "latin": "okalhdy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotol",
+          "glagolitic": "ⰼⱁⰑⰕⰑⰎ",
+          "latin": "kootol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oky",
+          "glagolitic": "ⰑⰌⰟ",
+          "latin": "oky",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 29,
+      "layers": {
+        "eva": "ykeeol chedy qokeey olkeeey okaiin ar cthey okaiin al lor air arald",
+        "glagolitic": "ⰟⰌⰵⰵⰑⰎ ⰘⰅⰄⰟ ⰼⱁⰑⰌⰵⰵⰟ ⰑⰎⰌⰵⰵⰅⰟ ⰑⰌⰰⰹⰉⰐ ⰀⰓ ⰽⱅⱈⰅⰟ ⰑⰌⰰⰹⰉⰐ ⰀⰎ ⰎⰑⰓ ⰰⰹⰓ ⰀⰓⰀⰎⰄ",
+        "latin": "ykeeol hedy kookeey olkeeey okaiin ar lthey okaiin al lor air arald",
+        "croatian_short": "ykeeol chedy qokeey olkeeey okaiin ar cthey okaiin al lor air arald",
+        "croatian_expanded": "kee hed kee lkeee kai ar lthe kai al l air arald"
+      },
+      "words": [
+        {
+          "eva": "ykeeol",
+          "glagolitic": "ⰟⰌⰵⰵⰑⰎ",
+          "latin": "ykeeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chedy",
+          "glagolitic": "ⰘⰅⰄⰟ",
+          "latin": "hedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeey",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰟ",
+          "latin": "kookeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olkeeey",
+          "glagolitic": "ⰑⰎⰌⰵⰵⰅⰟ",
+          "latin": "olkeeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cthey",
+          "glagolitic": "ⰽⱅⱈⰅⰟ",
+          "latin": "lthey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lor",
+          "glagolitic": "ⰎⰑⰓ",
+          "latin": "lor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "air",
+          "glagolitic": "ⰰⰹⰓ",
+          "latin": "air",
+          "confidence": 1.0
+        },
+        {
+          "eva": "arald",
+          "glagolitic": "ⰀⰓⰀⰎⰄ",
+          "latin": "arald",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 30,
+      "layers": {
+        "eva": "ysheey qoeey or aiiin okeeol otain ar al okaiiin aiin shody otcham",
+        "glagolitic": "ⰟⰚⰵⰵⰟ ⰼⱁⰑⰵⰵⰟ ⰑⰓ ⰰⰹⰹⰹⰐ ⰑⰌⰵⰵⰑⰎ ⰑⰕⰰⰹⰐ ⰀⰓ ⰀⰎ ⰑⰌⰰⰹⰹⰹⰐ ⰰⰹⰉⰐ ⰚⰑⰄⰟ ⰑⰕⰘⰀⰏ",
+        "latin": "yšeey kooeey or aiiin okeeol otain ar al okaiiin aiin šody otham",
+        "croatian_short": "ysheey qoeey or aiiin okeeol otain ar al okaiiin aiin shody otcham",
+        "croatian_expanded": "šee ee r aii kee ta ar al kaii ai šod tham"
+      },
+      "words": [
+        {
+          "eva": "ysheey",
+          "glagolitic": "ⰟⰚⰵⰵⰟ",
+          "latin": "yšeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qoeey",
+          "glagolitic": "ⰼⱁⰑⰵⰵⰟ",
+          "latin": "kooeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "or",
+          "glagolitic": "ⰑⰓ",
+          "latin": "or",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiiin",
+          "glagolitic": "ⰰⰹⰹⰹⰐ",
+          "latin": "aiiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeeol",
+          "glagolitic": "ⰑⰌⰵⰵⰑⰎ",
+          "latin": "okeeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otain",
+          "glagolitic": "ⰑⰕⰰⰹⰐ",
+          "latin": "otain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiiin",
+          "glagolitic": "ⰑⰌⰰⰹⰹⰹⰐ",
+          "latin": "okaiiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shody",
+          "glagolitic": "ⰚⰑⰄⰟ",
+          "latin": "šody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otcham",
+          "glagolitic": "ⰑⰕⰘⰀⰏ",
+          "latin": "otham",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 31,
+      "layers": {
+        "eva": "daiiin cheol teeoar shek lchedy okaiin chckhaiin otaiin otaiin araral",
+        "glagolitic": "ⰄⰰⰹⰹⰹⰐ ⰘⰅⰑⰎ ⰕⰵⰵⰑⰀⰓ ⰚⰅⰌ ⰎⰘⰅⰄⰟ ⰑⰌⰰⰹⰉⰐ ⰘⰽⰼⱈⰰⰹⰉⰐ ⰑⰕⰰⰹⰉⰐ ⰑⰕⰰⰹⰉⰐ ⰀⰓⰀⰓⰀⰎ",
+        "latin": "daiiin heol teeoar šek lhedy okaiin hlkhaiin otaiin otaiin araral",
+        "croatian_short": "daiiin cheol teeoar shek lchedy okaiin chckhaiin otaiin otaiin araral",
+        "croatian_expanded": "ii he teeoar šek lhed kai hlkhai tai tai arar"
+      },
+      "words": [
+        {
+          "eva": "daiiin",
+          "glagolitic": "ⰄⰰⰹⰹⰹⰐ",
+          "latin": "daiiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheol",
+          "glagolitic": "ⰘⰅⰑⰎ",
+          "latin": "heol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "teeoar",
+          "glagolitic": "ⰕⰵⰵⰑⰀⰓ",
+          "latin": "teeoar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shek",
+          "glagolitic": "ⰚⰅⰌ",
+          "latin": "šek",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lchedy",
+          "glagolitic": "ⰎⰘⰅⰄⰟ",
+          "latin": "lhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okaiin",
+          "glagolitic": "ⰑⰌⰰⰹⰉⰐ",
+          "latin": "okaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chckhaiin",
+          "glagolitic": "ⰘⰽⰼⱈⰰⰹⰉⰐ",
+          "latin": "hlkhaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "araral",
+          "glagolitic": "ⰀⰓⰀⰓⰀⰎ",
+          "latin": "araral",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 32,
+      "layers": {
+        "eva": "sheol keey qokain char ar olar aiiin okar",
+        "glagolitic": "ⰚⰅⰑⰎ ⰌⰵⰵⰟ ⰼⱁⰑⰌⰰⰹⰐ ⰘⰀⰓ ⰀⰓ ⰑⰎⰀⰓ ⰰⰹⰹⰹⰐ ⰑⰌⰀⰓ",
+        "latin": "šeol keey kookain har ar olar aiiin okar",
+        "croatian_short": "sheol keey qokain char ar olar aiiin okar",
+        "croatian_expanded": "še kee ka har ar lar aii vatra"
+      },
+      "words": [
+        {
+          "eva": "sheol",
+          "glagolitic": "ⰚⰅⰑⰎ",
+          "latin": "šeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keey",
+          "glagolitic": "ⰌⰵⰵⰟ",
+          "latin": "keey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokain",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰐ",
+          "latin": "kookain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "char",
+          "glagolitic": "ⰘⰀⰓ",
+          "latin": "har",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olar",
+          "glagolitic": "ⰑⰎⰀⰓ",
+          "latin": "olar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiiin",
+          "glagolitic": "ⰰⰹⰹⰹⰐ",
+          "latin": "aiiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 33,
+      "layers": {
+        "eva": "polsaisy oteo qokeedy qokaiin okal qofcheol qokaiin opalor lkch ofchr",
+        "glagolitic": "ⰒⰑⰎⰔⰰⰹⰔⰟ ⰑⰕⰅⰑ ⰼⱁⰑⰌⰵⰵⰄⰟ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰑⰌⰀⰎ ⰼⱁⰑⰗⰘⰅⰑⰎ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰑⰒⰀⰎⰑⰓ ⰎⰌⰘ ⰑⰗⰘⰓ",
+        "latin": "polsaisy oteo kookeedy kookaiin okal koofheol kookaiin opalor lkh ofhr",
+        "croatian_short": "polsaisy oteo qokeedy qokaiin okal qofcheol qokaiin opalor lkch ofchr",
+        "croatian_expanded": "polsais teo keed kai okal fhe kai pal lkh fhr"
+      },
+      "words": [
+        {
+          "eva": "polsaisy",
+          "glagolitic": "ⰒⰑⰎⰔⰰⰹⰔⰟ",
+          "latin": "polsaisy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteo",
+          "glagolitic": "ⰑⰕⰅⰑ",
+          "latin": "oteo",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeedy",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰄⰟ",
+          "latin": "kookeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okal",
+          "glagolitic": "ⰑⰌⰀⰎ",
+          "latin": "okal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qofcheol",
+          "glagolitic": "ⰼⱁⰑⰗⰘⰅⰑⰎ",
+          "latin": "koofheol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opalor",
+          "glagolitic": "ⰑⰒⰀⰎⰑⰓ",
+          "latin": "opalor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkch",
+          "glagolitic": "ⰎⰌⰘ",
+          "latin": "lkh",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ofchr",
+          "glagolitic": "ⰑⰗⰘⰓ",
+          "latin": "ofhr",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 34,
+      "layers": {
+        "eva": "daiin cheaiin okchey cheky qokain otecheedy qokaiin chckhey cheoram",
+        "glagolitic": "ⰄⰰⰹⰉⰐ ⰘⰅⰰⰹⰉⰐ ⰑⰌⰘⰅⰟ ⰘⰅⰌⰟ ⰼⱁⰑⰌⰰⰹⰐ ⰑⰕⰅⰘⰵⰵⰄⰟ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰘⰽⰼⱈⰅⰟ ⰘⰅⰑⰓⰀⰏ",
+        "latin": "daiin heaiin okhey heky kookain oteheedy kookaiin hlkhey heoram",
+        "croatian_short": "daiin cheaiin okchey cheky qokain otecheedy qokaiin chckhey cheoram",
+        "croatian_expanded": "dati heai khe hek ka teheed kai hlkhe heoram"
+      },
+      "words": [
+        {
+          "eva": "daiin",
+          "glagolitic": "ⰄⰰⰹⰉⰐ",
+          "latin": "daiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheaiin",
+          "glagolitic": "ⰘⰅⰰⰹⰉⰐ",
+          "latin": "heaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okchey",
+          "glagolitic": "ⰑⰌⰘⰅⰟ",
+          "latin": "okhey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheky",
+          "glagolitic": "ⰘⰅⰌⰟ",
+          "latin": "heky",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokain",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰐ",
+          "latin": "kookain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otecheedy",
+          "glagolitic": "ⰑⰕⰅⰘⰵⰵⰄⰟ",
+          "latin": "oteheedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chckhey",
+          "glagolitic": "ⰘⰽⰼⱈⰅⰟ",
+          "latin": "hlkhey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheoram",
+          "glagolitic": "ⰘⰅⰑⰓⰀⰏ",
+          "latin": "heoram",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 35,
+      "layers": {
+        "eva": "qokaiin air lor chedy otain",
+        "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ ⰰⰹⰓ ⰎⰑⰓ ⰘⰅⰄⰟ ⰑⰕⰰⰹⰐ",
+        "latin": "kookaiin air lor hedy otain",
+        "croatian_short": "qokaiin air lor chedy otain",
+        "croatian_expanded": "kai air l hed ta"
+      },
+      "words": [
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "air",
+          "glagolitic": "ⰰⰹⰓ",
+          "latin": "air",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lor",
+          "glagolitic": "ⰎⰑⰓ",
+          "latin": "lor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chedy",
+          "glagolitic": "ⰘⰅⰄⰟ",
+          "latin": "hedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otain",
+          "glagolitic": "ⰑⰕⰰⰹⰐ",
+          "latin": "otain",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 36,
+      "layers": {
+        "eva": "ofaral olkaiin okar okeeedy tshedy qokeedy otcheypchedy tsho lteam",
+        "glagolitic": "ⰑⰗⰀⰓⰀⰎ ⰑⰎⰌⰰⰹⰉⰐ ⰑⰌⰀⰓ ⰑⰌⰵⰵⰅⰄⰟ ⰕⰚⰅⰄⰟ ⰼⱁⰑⰌⰵⰵⰄⰟ ⰑⰕⰘⰅⰟⰒⰘⰅⰄⰟ ⰕⰚⰑ ⰎⰕⰅⰀⰏ",
+        "latin": "ofaral olkaiin okar okeeedy tšedy kookeedy otheyphedy tšo lteam",
+        "croatian_short": "ofaral olkaiin okar okeeedy tshedy qokeedy otcheypchedy tsho lteam",
+        "croatian_expanded": "far lkai vatra keeed tšed keed theyphed tšo lteam"
+      },
+      "words": [
+        {
+          "eva": "ofaral",
+          "glagolitic": "ⰑⰗⰀⰓⰀⰎ",
+          "latin": "ofaral",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olkaiin",
+          "glagolitic": "ⰑⰎⰌⰰⰹⰉⰐ",
+          "latin": "olkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeeedy",
+          "glagolitic": "ⰑⰌⰵⰵⰅⰄⰟ",
+          "latin": "okeeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "tshedy",
+          "glagolitic": "ⰕⰚⰅⰄⰟ",
+          "latin": "tšedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeedy",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰄⰟ",
+          "latin": "kookeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otcheypchedy",
+          "glagolitic": "ⰑⰕⰘⰅⰟⰒⰘⰅⰄⰟ",
+          "latin": "otheyphedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "tsho",
+          "glagolitic": "ⰕⰚⰑ",
+          "latin": "tšo",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lteam",
+          "glagolitic": "ⰎⰕⰅⰀⰏ",
+          "latin": "lteam",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 37,
+      "layers": {
+        "eva": "qol aiin olaiin oteeey lchedy qokair ydaiin",
+        "glagolitic": "ⰼⱁⰑⰎ ⰰⰹⰉⰐ ⰑⰎⰰⰹⰉⰐ ⰑⰕⰵⰵⰅⰟ ⰎⰘⰅⰄⰟ ⰼⱁⰑⰌⰰⰹⰓ ⰟⰄⰰⰹⰉⰐ",
+        "latin": "kool aiin olaiin oteeey lhedy kookair ydaiin",
+        "croatian_short": "qol aiin olaiin oteeey lchedy qokair ydaiin",
+        "croatian_expanded": "kool ai lai teee lhed kair dai"
+      },
+      "words": [
+        {
+          "eva": "qol",
+          "glagolitic": "ⰼⱁⰑⰎ",
+          "latin": "kool",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olaiin",
+          "glagolitic": "ⰑⰎⰰⰹⰉⰐ",
+          "latin": "olaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteeey",
+          "glagolitic": "ⰑⰕⰵⰵⰅⰟ",
+          "latin": "oteeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lchedy",
+          "glagolitic": "ⰎⰘⰅⰄⰟ",
+          "latin": "lhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokair",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰓ",
+          "latin": "kookair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ydaiin",
+          "glagolitic": "ⰟⰄⰰⰹⰉⰐ",
+          "latin": "ydaiin",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 38,
+      "layers": {
+        "eva": "pcholky otar airol okeedy chokor sheedy oteey teear otorsheey qoteal",
+        "glagolitic": "ⰒⰘⰑⰎⰌⰟ ⰑⰕⰀⰓ ⰰⰹⰓⰑⰎ ⰑⰌⰵⰵⰄⰟ ⰘⰑⰌⰑⰓ ⰚⰵⰵⰄⰟ ⰑⰕⰵⰵⰟ ⰕⰵⰵⰀⰓ ⰑⰕⰑⰓⰚⰵⰵⰟ ⰼⱁⰑⰕⰅⰀⰎ",
+        "latin": "pholky otar airol okeedy hokor šeedy oteey teear otoršeey kooteal",
+        "croatian_short": "pcholky otar airol okeedy chokor sheedy oteey teear otorsheey qoteal",
+        "croatian_expanded": "pholk tar air keed hok šeed tee teear toršee te"
+      },
+      "words": [
+        {
+          "eva": "pcholky",
+          "glagolitic": "ⰒⰘⰑⰎⰌⰟ",
+          "latin": "pholky",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otar",
+          "glagolitic": "ⰑⰕⰀⰓ",
+          "latin": "otar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "airol",
+          "glagolitic": "ⰰⰹⰓⰑⰎ",
+          "latin": "airol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeedy",
+          "glagolitic": "ⰑⰌⰵⰵⰄⰟ",
+          "latin": "okeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chokor",
+          "glagolitic": "ⰘⰑⰌⰑⰓ",
+          "latin": "hokor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "sheedy",
+          "glagolitic": "ⰚⰵⰵⰄⰟ",
+          "latin": "šeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteey",
+          "glagolitic": "ⰑⰕⰵⰵⰟ",
+          "latin": "oteey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "teear",
+          "glagolitic": "ⰕⰵⰵⰀⰓ",
+          "latin": "teear",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otorsheey",
+          "glagolitic": "ⰑⰕⰑⰓⰚⰵⰵⰟ",
+          "latin": "otoršeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qoteal",
+          "glagolitic": "ⰼⱁⰑⰕⰅⰀⰎ",
+          "latin": "kooteal",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 39,
+      "layers": {
+        "eva": "osheol cheol ar aloiiin oteeey otain chekey qokain chcthy qotam lr",
+        "glagolitic": "ⰑⰚⰅⰑⰎ ⰘⰅⰑⰎ ⰀⰓ ⰀⰎⱁⰹⰹⰹⰐ ⰑⰕⰵⰵⰅⰟ ⰑⰕⰰⰹⰐ ⰘⰅⰌⰅⰟ ⰼⱁⰑⰌⰰⰹⰐ ⰘⰽⱅⱈⰟ ⰼⱁⰑⰕⰀⰏ ⰎⰓ",
+        "latin": "ošeol heol ar aloiiin oteeey otain hekey kookain hlthy kootam lr",
+        "croatian_short": "osheol cheol ar aloiiin oteeey otain chekey qokain chcthy qotam lr",
+        "croatian_expanded": "še he ar aloii teee ta heke ka hlth tam lr"
+      },
+      "words": [
+        {
+          "eva": "osheol",
+          "glagolitic": "ⰑⰚⰅⰑⰎ",
+          "latin": "ošeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheol",
+          "glagolitic": "ⰘⰅⰑⰎ",
+          "latin": "heol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aloiiin",
+          "glagolitic": "ⰀⰎⱁⰹⰹⰹⰐ",
+          "latin": "aloiiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteeey",
+          "glagolitic": "ⰑⰕⰵⰵⰅⰟ",
+          "latin": "oteeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otain",
+          "glagolitic": "ⰑⰕⰰⰹⰐ",
+          "latin": "otain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chekey",
+          "glagolitic": "ⰘⰅⰌⰅⰟ",
+          "latin": "hekey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokain",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰐ",
+          "latin": "kookain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chcthy",
+          "glagolitic": "ⰘⰽⱅⱈⰟ",
+          "latin": "hlthy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotam",
+          "glagolitic": "ⰼⱁⰑⰕⰀⰏ",
+          "latin": "kootam",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lr",
+          "glagolitic": "ⰎⰓ",
+          "latin": "lr",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 40,
+      "layers": {
+        "eva": "oraiin cheor alkain oteey ar aiin otaiin okeey lkeeedy qoeeeey aiin",
+        "glagolitic": "ⰑⰓⰰⰹⰉⰐ ⰘⰅⰑⰓ ⰀⰎⰌⰰⰹⰐ ⰑⰕⰵⰵⰟ ⰀⰓ ⰰⰹⰉⰐ ⰑⰕⰰⰹⰉⰐ ⰑⰌⰵⰵⰟ ⰎⰌⰵⰵⰅⰄⰟ ⰼⱁⰑⰵⰵⰵⰵⰟ ⰰⰹⰉⰐ",
+        "latin": "oraiin heor alkain oteey ar aiin otaiin okeey lkeeedy kooeeeey aiin",
+        "croatian_short": "oraiin cheor alkain oteey ar aiin otaiin okeey lkeeedy qoeeeey aiin",
+        "croatian_expanded": "rai he alka tee ar ai tai kee lkeeed eeee ai"
+      },
+      "words": [
+        {
+          "eva": "oraiin",
+          "glagolitic": "ⰑⰓⰰⰹⰉⰐ",
+          "latin": "oraiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheor",
+          "glagolitic": "ⰘⰅⰑⰓ",
+          "latin": "heor",
+          "confidence": 1.0
+        },
+        {
+          "eva": "alkain",
+          "glagolitic": "ⰀⰎⰌⰰⰹⰐ",
+          "latin": "alkain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteey",
+          "glagolitic": "ⰑⰕⰵⰵⰟ",
+          "latin": "oteey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeey",
+          "glagolitic": "ⰑⰌⰵⰵⰟ",
+          "latin": "okeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeeedy",
+          "glagolitic": "ⰎⰌⰵⰵⰅⰄⰟ",
+          "latin": "lkeeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qoeeeey",
+          "glagolitic": "ⰼⱁⰑⰵⰵⰵⰵⰟ",
+          "latin": "kooeeeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 41,
+      "layers": {
+        "eva": "dair aiin okain ar aiin cheody",
+        "glagolitic": "ⰄⰰⰹⰓ ⰰⰹⰉⰐ ⰑⰌⰰⰹⰐ ⰀⰓ ⰰⰹⰉⰐ ⰘⰅⰑⰄⰟ",
+        "latin": "dair aiin okain ar aiin heody",
+        "croatian_short": "dair aiin okain ar aiin cheody",
+        "croatian_expanded": "ir ai ka ar ai heod"
+      },
+      "words": [
+        {
+          "eva": "dair",
+          "glagolitic": "ⰄⰰⰹⰓ",
+          "latin": "dair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okain",
+          "glagolitic": "ⰑⰌⰰⰹⰐ",
+          "latin": "okain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheody",
+          "glagolitic": "ⰘⰅⰑⰄⰟ",
+          "latin": "heody",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 42,
+      "layers": {
+        "eva": "pol keeo dy qoeees aiin oraiin oteol fchedy oteeey dar otakeol ol",
+        "glagolitic": "ⰒⰑⰎ ⰌⰵⰵⰑ ⰄⰟ ⰼⱁⰑⰵⰵⰅⰔ ⰰⰹⰉⰐ ⰑⰓⰰⰹⰉⰐ ⰑⰕⰅⰑⰎ ⰗⰘⰅⰄⰟ ⰑⰕⰵⰵⰅⰟ ⰄⰀⰓ ⰑⰕⰀⰌⰅⰑⰎ ⰑⰎ",
+        "latin": "pol keeo dy kooeees aiin oraiin oteol fhedy oteeey dar otakeol ol",
+        "croatian_short": "pol keeo dy qoeees aiin oraiin oteol fchedy oteeey dar otakeol ol",
+        "croatian_expanded": "p keeo d eees ai rai te fhed teee r take ulje"
+      },
+      "words": [
+        {
+          "eva": "pol",
+          "glagolitic": "ⰒⰑⰎ",
+          "latin": "pol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keeo",
+          "glagolitic": "ⰌⰵⰵⰑ",
+          "latin": "keeo",
+          "confidence": 1.0
+        },
+        {
+          "eva": "dy",
+          "glagolitic": "ⰄⰟ",
+          "latin": "dy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qoeees",
+          "glagolitic": "ⰼⱁⰑⰵⰵⰅⰔ",
+          "latin": "kooeees",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oraiin",
+          "glagolitic": "ⰑⰓⰰⰹⰉⰐ",
+          "latin": "oraiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteol",
+          "glagolitic": "ⰑⰕⰅⰑⰎ",
+          "latin": "oteol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "fchedy",
+          "glagolitic": "ⰗⰘⰅⰄⰟ",
+          "latin": "fhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteeey",
+          "glagolitic": "ⰑⰕⰵⰵⰅⰟ",
+          "latin": "oteeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "dar",
+          "glagolitic": "ⰄⰀⰓ",
+          "latin": "dar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otakeol",
+          "glagolitic": "ⰑⰕⰀⰌⰅⰑⰎ",
+          "latin": "otakeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ol",
+          "glagolitic": "ⰑⰎ",
+          "latin": "ol",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 43,
+      "layers": {
+        "eva": "ycheol keey lkeees or aiin otaiin chkain olar olchedy qok aiin os",
+        "glagolitic": "ⰟⰘⰅⰑⰎ ⰌⰵⰵⰟ ⰎⰌⰵⰵⰅⰔ ⰑⰓ ⰰⰹⰉⰐ ⰑⰕⰰⰹⰉⰐ ⰘⰌⰰⰹⰐ ⰑⰎⰀⰓ ⰑⰎⰘⰅⰄⰟ ⰼⱁⰑⰌ ⰰⰹⰉⰐ ⰑⰔ",
+        "latin": "yheol keey lkeees or aiin otaiin hkain olar olhedy kook aiin os",
+        "croatian_short": "ycheol keey lkeees or aiin otaiin chkain olar olchedy qok aiin os",
+        "croatian_expanded": "he kee lkeees r ai tai hka lar lhed kok ai s"
+      },
+      "words": [
+        {
+          "eva": "ycheol",
+          "glagolitic": "ⰟⰘⰅⰑⰎ",
+          "latin": "yheol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keey",
+          "glagolitic": "ⰌⰵⰵⰟ",
+          "latin": "keey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeees",
+          "glagolitic": "ⰎⰌⰵⰵⰅⰔ",
+          "latin": "lkeees",
+          "confidence": 1.0
+        },
+        {
+          "eva": "or",
+          "glagolitic": "ⰑⰓ",
+          "latin": "or",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chkain",
+          "glagolitic": "ⰘⰌⰰⰹⰐ",
+          "latin": "hkain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olar",
+          "glagolitic": "ⰑⰎⰀⰓ",
+          "latin": "olar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olchedy",
+          "glagolitic": "ⰑⰎⰘⰅⰄⰟ",
+          "latin": "olhedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qok",
+          "glagolitic": "ⰼⱁⰑⰌ",
+          "latin": "kook",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aiin",
+          "glagolitic": "ⰰⰹⰉⰐ",
+          "latin": "aiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "os",
+          "glagolitic": "ⰑⰔ",
+          "latin": "os",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 44,
+      "layers": {
+        "eva": "daiin cheal otain okar otaiin oloiin",
+        "glagolitic": "ⰄⰰⰹⰉⰐ ⰘⰅⰀⰎ ⰑⰕⰰⰹⰐ ⰑⰌⰀⰓ ⰑⰕⰰⰹⰉⰐ ⰑⰎⱁⰹⰉⰐ",
+        "latin": "daiin heal otain okar otaiin oloiin",
+        "croatian_short": "daiin cheal otain okar otaiin oloiin",
+        "croatian_expanded": "dati he ta vatra tai loi"
+      },
+      "words": [
+        {
+          "eva": "daiin",
+          "glagolitic": "ⰄⰰⰹⰉⰐ",
+          "latin": "daiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheal",
+          "glagolitic": "ⰘⰅⰀⰎ",
+          "latin": "heal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otain",
+          "glagolitic": "ⰑⰕⰰⰹⰐ",
+          "latin": "otain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okar",
+          "glagolitic": "ⰑⰌⰀⰓ",
+          "latin": "okar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oloiin",
+          "glagolitic": "ⰑⰎⱁⰹⰉⰐ",
+          "latin": "oloiin",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 45,
+      "layers": {
+        "eva": "polaiin arol shear okeeeody lsar lkeey opchedy qokchdy ota aram",
+        "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ ⰀⰓⰑⰎ ⰚⰅⰀⰓ ⰑⰌⰵⰵⰅⰑⰄⰟ ⰎⰔⰀⰓ ⰎⰌⰵⰵⰟ ⰑⰒⰘⰅⰄⰟ ⰼⱁⰑⰌⰘⰄⰟ ⰑⰕⰀ ⰀⰓⰀⰏ",
+        "latin": "polaiin arol šear okeeeody lsar lkeey ophedy kookhdy ota aram",
+        "croatian_short": "polaiin arol shear okeeeody lsar lkeey opchedy qokchdy ota aram",
+        "croatian_expanded": "polai ar šear keeeod lsar lkee phed khd ta aram"
+      },
+      "words": [
+        {
+          "eva": "polaiin",
+          "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ",
+          "latin": "polaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "arol",
+          "glagolitic": "ⰀⰓⰑⰎ",
+          "latin": "arol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shear",
+          "glagolitic": "ⰚⰅⰀⰓ",
+          "latin": "šear",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okeeeody",
+          "glagolitic": "ⰑⰌⰵⰵⰅⰑⰄⰟ",
+          "latin": "okeeeody",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lsar",
+          "glagolitic": "ⰎⰔⰀⰓ",
+          "latin": "lsar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeey",
+          "glagolitic": "ⰎⰌⰵⰵⰟ",
+          "latin": "lkeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "opchedy",
+          "glagolitic": "ⰑⰒⰘⰅⰄⰟ",
+          "latin": "ophedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokchdy",
+          "glagolitic": "ⰼⱁⰑⰌⰘⰄⰟ",
+          "latin": "kookhdy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ota",
+          "glagolitic": "ⰑⰕⰀ",
+          "latin": "ota",
+          "confidence": 1.0
+        },
+        {
+          "eva": "aram",
+          "glagolitic": "ⰀⰓⰀⰏ",
+          "latin": "aram",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 46,
+      "layers": {
+        "eva": "olkaiin cheey lain al cheey",
+        "glagolitic": "ⰑⰎⰌⰰⰹⰉⰐ ⰘⰵⰵⰟ ⰎⰰⰹⰐ ⰀⰎ ⰘⰵⰵⰟ",
+        "latin": "olkaiin heey lain al heey",
+        "croatian_short": "olkaiin cheey lain al cheey",
+        "croatian_expanded": "lkai hee la al hee"
+      },
+      "words": [
+        {
+          "eva": "olkaiin",
+          "glagolitic": "ⰑⰎⰌⰰⰹⰉⰐ",
+          "latin": "olkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheey",
+          "glagolitic": "ⰘⰵⰵⰟ",
+          "latin": "heey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lain",
+          "glagolitic": "ⰎⰰⰹⰐ",
+          "latin": "lain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "al",
+          "glagolitic": "ⰀⰎ",
+          "latin": "al",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheey",
+          "glagolitic": "ⰘⰵⰵⰟ",
+          "latin": "heey",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 47,
+      "layers": {
+        "eva": "polaiin ksheeol lkaiin tair shey qotain ar akal shey qopchedy ldy",
+        "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ ⰌⰚⰵⰵⰑⰎ ⰎⰌⰰⰹⰉⰐ ⰕⰰⰹⰓ ⰚⰅⰟ ⰼⱁⰑⰕⰰⰹⰐ ⰀⰓ ⰀⰌⰀⰎ ⰚⰅⰟ ⰼⱁⰑⰒⰘⰅⰄⰟ ⰎⰄⰟ",
+        "latin": "polaiin kšeeol lkaiin tair šey kootain ar akal šey koophedy ldy",
+        "croatian_short": "polaiin ksheeol lkaiin tair shey qotain ar akal shey qopchedy ldy",
+        "croatian_expanded": "polai kšee lkai tair še ta ar ak še phed ld"
+      },
+      "words": [
+        {
+          "eva": "polaiin",
+          "glagolitic": "ⰒⰑⰎⰰⰹⰉⰐ",
+          "latin": "polaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ksheeol",
+          "glagolitic": "ⰌⰚⰵⰵⰑⰎ",
+          "latin": "kšeeol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkaiin",
+          "glagolitic": "ⰎⰌⰰⰹⰉⰐ",
+          "latin": "lkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "tair",
+          "glagolitic": "ⰕⰰⰹⰓ",
+          "latin": "tair",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shey",
+          "glagolitic": "ⰚⰅⰟ",
+          "latin": "šey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qotain",
+          "glagolitic": "ⰼⱁⰑⰕⰰⰹⰐ",
+          "latin": "kootain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ar",
+          "glagolitic": "ⰀⰓ",
+          "latin": "ar",
+          "confidence": 1.0
+        },
+        {
+          "eva": "akal",
+          "glagolitic": "ⰀⰌⰀⰎ",
+          "latin": "akal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "shey",
+          "glagolitic": "ⰚⰅⰟ",
+          "latin": "šey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qopchedy",
+          "glagolitic": "ⰼⱁⰑⰒⰘⰅⰄⰟ",
+          "latin": "koophedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ldy",
+          "glagolitic": "ⰎⰄⰟ",
+          "latin": "ldy",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 48,
+      "layers": {
+        "eva": "ycheol cheey qol lsheedy qokaiin chedy kain qokeeedy lkaiin okal dy",
+        "glagolitic": "ⰟⰘⰅⰑⰎ ⰘⰵⰵⰟ ⰼⱁⰑⰎ ⰎⰚⰵⰵⰄⰟ ⰼⱁⰑⰌⰰⰹⰉⰐ ⰘⰅⰄⰟ ⰌⰰⰹⰐ ⰼⱁⰑⰌⰵⰵⰅⰄⰟ ⰎⰌⰰⰹⰉⰐ ⰑⰌⰀⰎ ⰄⰟ",
+        "latin": "yheol heey kool lšeedy kookaiin hedy kain kookeeedy lkaiin okal dy",
+        "croatian_short": "ycheol cheey qol lsheedy qokaiin chedy kain qokeeedy lkaiin okal dy",
+        "croatian_expanded": "he hee kool lšeed kai hed ka keeed lkai okal d"
+      },
+      "words": [
+        {
+          "eva": "ycheol",
+          "glagolitic": "ⰟⰘⰅⰑⰎ",
+          "latin": "yheol",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheey",
+          "glagolitic": "ⰘⰵⰵⰟ",
+          "latin": "heey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qol",
+          "glagolitic": "ⰼⱁⰑⰎ",
+          "latin": "kool",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lsheedy",
+          "glagolitic": "ⰎⰚⰵⰵⰄⰟ",
+          "latin": "lšeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokaiin",
+          "glagolitic": "ⰼⱁⰑⰌⰰⰹⰉⰐ",
+          "latin": "kookaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "chedy",
+          "glagolitic": "ⰘⰅⰄⰟ",
+          "latin": "hedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "kain",
+          "glagolitic": "ⰌⰰⰹⰐ",
+          "latin": "kain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeeedy",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰅⰄⰟ",
+          "latin": "kookeeedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkaiin",
+          "glagolitic": "ⰎⰌⰰⰹⰉⰐ",
+          "latin": "lkaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "okal",
+          "glagolitic": "ⰑⰌⰀⰎ",
+          "latin": "okal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "dy",
+          "glagolitic": "ⰄⰟ",
+          "latin": "dy",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    },
+    {
+      "line_num": 49,
+      "layers": {
+        "eva": "yshey teeo oteedy qokeey otaiin olaiin cheokain lkeey ltal keedy",
+        "glagolitic": "ⰟⰚⰅⰟ ⰕⰵⰵⰑ ⰑⰕⰵⰵⰄⰟ ⰼⱁⰑⰌⰵⰵⰟ ⰑⰕⰰⰹⰉⰐ ⰑⰎⰰⰹⰉⰐ ⰘⰅⰑⰌⰰⰹⰐ ⰎⰌⰵⰵⰟ ⰎⰕⰀⰎ ⰌⰵⰵⰄⰟ",
+        "latin": "yšey teeo oteedy kookeey otaiin olaiin heokain lkeey ltal keedy",
+        "croatian_short": "yshey teeo oteedy qokeey otaiin olaiin cheokain lkeey ltal keedy",
+        "croatian_expanded": "še teeo teed kee tai lai heoka lkee lt keed"
+      },
+      "words": [
+        {
+          "eva": "yshey",
+          "glagolitic": "ⰟⰚⰅⰟ",
+          "latin": "yšey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "teeo",
+          "glagolitic": "ⰕⰵⰵⰑ",
+          "latin": "teeo",
+          "confidence": 1.0
+        },
+        {
+          "eva": "oteedy",
+          "glagolitic": "ⰑⰕⰵⰵⰄⰟ",
+          "latin": "oteedy",
+          "confidence": 1.0
+        },
+        {
+          "eva": "qokeey",
+          "glagolitic": "ⰼⱁⰑⰌⰵⰵⰟ",
+          "latin": "kookeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "otaiin",
+          "glagolitic": "ⰑⰕⰰⰹⰉⰐ",
+          "latin": "otaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "olaiin",
+          "glagolitic": "ⰑⰎⰰⰹⰉⰐ",
+          "latin": "olaiin",
+          "confidence": 1.0
+        },
+        {
+          "eva": "cheokain",
+          "glagolitic": "ⰘⰅⰑⰌⰰⰹⰐ",
+          "latin": "heokain",
+          "confidence": 1.0
+        },
+        {
+          "eva": "lkeey",
+          "glagolitic": "ⰎⰌⰵⰵⰟ",
+          "latin": "lkeey",
+          "confidence": 1.0
+        },
+        {
+          "eva": "ltal",
+          "glagolitic": "ⰎⰕⰀⰎ",
+          "latin": "ltal",
+          "confidence": 1.0
+        },
+        {
+          "eva": "keedy",
+          "glagolitic": "ⰌⰵⰵⰄⰟ",
+          "latin": "keedy",
+          "confidence": 1.0
+        }
+      ],
+      "confidence_avg": 1.0
+    }
+  ],
+  "statistics": {
+    "total_words": 482,
+    "high_confidence": 482,
+    "medium_confidence": 0,
+    "low_confidence": 0,
+    "unmapped_chars": []
+  },
+  "folio": "f113v",
+  "iiif_url": "https://iiif.archive.org/image/iiif/3/voynich%24216/full/800,/0/default.jpg"
+}

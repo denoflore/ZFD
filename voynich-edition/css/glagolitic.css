@@ -1,0 +1,247 @@
+/**
+ * Glagolitic Layer Styles for Voynich Digital Edition
+ * Phase 5: Glagolitic OCR Pipeline Integration
+ */
+
+/* Font stack for Glagolitic Unicode display */
+.glagolitic-text,
+.interlinear-glagolitic {
+    font-family: 'Noto Sans Glagolitic', 'Segoe UI Historic', 'Quivira', 'FreeSerif', sans-serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    direction: ltr;
+}
+
+/* Five-layer interlinear display */
+.interlinear-five-layer {
+    margin: 1rem 0;
+    padding: 1rem;
+    background: var(--bg-secondary, #f9f9f9);
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.interlinear-five-layer .layer-row {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.5rem;
+    padding: 0.25rem 0;
+    border-bottom: 1px solid var(--border-light, #e0e0e0);
+}
+
+.interlinear-five-layer .layer-row:last-child {
+    border-bottom: none;
+}
+
+.interlinear-five-layer .layer-label {
+    font-weight: 600;
+    color: var(--text-secondary, #666);
+    text-transform: uppercase;
+    font-size: 0.75em;
+    padding-top: 0.15rem;
+}
+
+.interlinear-five-layer .layer-content {
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', monospace;
+    font-size: 0.95em;
+}
+
+/* Layer-specific styling */
+.layer-eva .layer-content {
+    color: #2c3e50;
+}
+
+.layer-glagolitic .layer-content {
+    font-family: 'Noto Sans Glagolitic', 'Segoe UI Historic', 'Quivira', sans-serif;
+    font-size: 1.1em;
+    color: #8e44ad;
+}
+
+.layer-latin .layer-content {
+    color: #27ae60;
+    font-style: italic;
+}
+
+.layer-croatian .layer-content {
+    color: #e67e22;
+}
+
+.layer-english .layer-content {
+    color: #2980b9;
+}
+
+/* Confidence-coded word highlighting */
+.word-high-conf {
+    background: rgba(46, 204, 113, 0.15);
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.word-med-conf {
+    background: rgba(241, 196, 15, 0.2);
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+.word-low-conf {
+    background: rgba(231, 76, 60, 0.2);
+    border-radius: 2px;
+    padding: 0 2px;
+}
+
+/* Toggle buttons for view switching */
+.view-toggle {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.view-toggle button {
+    padding: 0.5rem 1rem;
+    border: 2px solid var(--border-color, #ddd);
+    background: var(--bg-primary, #fff);
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: all 0.2s ease;
+}
+
+.view-toggle button:hover {
+    border-color: var(--primary-color, #3498db);
+}
+
+.view-toggle button.active {
+    background: var(--primary-color, #3498db);
+    border-color: var(--primary-color, #3498db);
+    color: #fff;
+}
+
+/* Collapsible layer views */
+.layer-view {
+    display: none;
+}
+
+.layer-view.active {
+    display: block;
+}
+
+/* Word tooltip for detailed info */
+.word-tooltip {
+    position: relative;
+    cursor: help;
+}
+
+.word-tooltip:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 4px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    z-index: 100;
+}
+
+/* Glagolitic character reference panel */
+.glagolitic-reference {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 0.5rem;
+    padding: 1rem;
+    background: var(--bg-secondary, #f5f5f5);
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+.glagolitic-char {
+    text-align: center;
+    padding: 0.5rem;
+    background: #fff;
+    border-radius: 4px;
+    border: 1px solid var(--border-light, #e0e0e0);
+}
+
+.glagolitic-char .char {
+    font-family: 'Noto Sans Glagolitic', 'Segoe UI Historic', sans-serif;
+    font-size: 1.8em;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.glagolitic-char .eva-code {
+    font-size: 0.75em;
+    color: var(--text-muted, #888);
+}
+
+/* Line-by-line transcription display */
+.transcription-line {
+    margin: 0.75rem 0;
+    padding: 0.75rem;
+    background: #fff;
+    border-left: 3px solid var(--primary-color, #3498db);
+    border-radius: 0 4px 4px 0;
+}
+
+.transcription-line .line-number {
+    font-size: 0.8em;
+    color: var(--text-muted, #888);
+    margin-bottom: 0.25rem;
+}
+
+.transcription-line .line-confidence {
+    float: right;
+    font-size: 0.75em;
+    padding: 0.15rem 0.5rem;
+    border-radius: 10px;
+    background: var(--bg-secondary, #f0f0f0);
+}
+
+.transcription-line .line-confidence.high {
+    background: rgba(46, 204, 113, 0.2);
+    color: #27ae60;
+}
+
+.transcription-line .line-confidence.medium {
+    background: rgba(241, 196, 15, 0.3);
+    color: #d68910;
+}
+
+.transcription-line .line-confidence.low {
+    background: rgba(231, 76, 60, 0.2);
+    color: #c0392b;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .interlinear-five-layer .layer-row {
+        grid-template-columns: 80px 1fr;
+    }
+
+    .layer-glagolitic .layer-content {
+        font-size: 1em;
+    }
+
+    .glagolitic-reference {
+        grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));
+    }
+}
+
+/* Print styles */
+@media print {
+    .view-toggle {
+        display: none;
+    }
+
+    .interlinear-five-layer {
+        background: none;
+        border: 1px solid #ccc;
+    }
+
+    .layer-glagolitic .layer-content {
+        font-size: 1em;
+    }
+}

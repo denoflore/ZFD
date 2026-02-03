@@ -1,0 +1,1596 @@
+{
+  "generated": "2026-02-03T18:13:27.248563",
+  "summary": {
+    "total_folios": 225,
+    "total_lines": 5216,
+    "total_words": 37026,
+    "average_confidence": 0.9
+  },
+  "confidence_distribution": {
+    "high": 37019,
+    "medium": 2,
+    "low": 5
+  },
+  "unmapped_characters": [
+    "%",
+    "v",
+    "z"
+  ],
+  "per_folio": {
+    "f1r": {
+      "total_words": 210,
+      "high_confidence": 210,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f1v": {
+      "total_words": 80,
+      "high_confidence": 80,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f2r": {
+      "total_words": 78,
+      "high_confidence": 78,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f2v": {
+      "total_words": 55,
+      "high_confidence": 55,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f3r": {
+      "total_words": 111,
+      "high_confidence": 111,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f3v": {
+      "total_words": 83,
+      "high_confidence": 83,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f4r": {
+      "total_words": 60,
+      "high_confidence": 60,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f4v": {
+      "total_words": 78,
+      "high_confidence": 78,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f5r": {
+      "total_words": 56,
+      "high_confidence": 56,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f5v": {
+      "total_words": 45,
+      "high_confidence": 45,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f6r": {
+      "total_words": 79,
+      "high_confidence": 79,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f6v": {
+      "total_words": 113,
+      "high_confidence": 113,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f7r": {
+      "total_words": 52,
+      "high_confidence": 52,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f7v": {
+      "total_words": 70,
+      "high_confidence": 70,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f8r": {
+      "total_words": 129,
+      "high_confidence": 129,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f8v": {
+      "total_words": 102,
+      "high_confidence": 102,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f9r": {
+      "total_words": 73,
+      "high_confidence": 73,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f9v": {
+      "total_words": 72,
+      "high_confidence": 72,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f10r": {
+      "total_words": 86,
+      "high_confidence": 86,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f10v": {
+      "total_words": 53,
+      "high_confidence": 53,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f11r": {
+      "total_words": 57,
+      "high_confidence": 57,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f11v": {
+      "total_words": 43,
+      "high_confidence": 43,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f13r": {
+      "total_words": 75,
+      "high_confidence": 75,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f13v": {
+      "total_words": 59,
+      "high_confidence": 59,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f14r": {
+      "total_words": 73,
+      "high_confidence": 73,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f14v": {
+      "total_words": 65,
+      "high_confidence": 65,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f15r": {
+      "total_words": 75,
+      "high_confidence": 75,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f15v": {
+      "total_words": 71,
+      "high_confidence": 71,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f16r": {
+      "total_words": 75,
+      "high_confidence": 75,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f16v": {
+      "total_words": 73,
+      "high_confidence": 73,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f17r": {
+      "total_words": 71,
+      "high_confidence": 71,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 0.9987745098039215
+    },
+    "f17v": {
+      "total_words": 134,
+      "high_confidence": 134,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f18r": {
+      "total_words": 79,
+      "high_confidence": 79,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f18v": {
+      "total_words": 71,
+      "high_confidence": 71,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f19r": {
+      "total_words": 76,
+      "high_confidence": 76,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f19v": {
+      "total_words": 77,
+      "high_confidence": 77,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f20r": {
+      "total_words": 85,
+      "high_confidence": 85,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f20v": {
+      "total_words": 88,
+      "high_confidence": 88,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f21r": {
+      "total_words": 95,
+      "high_confidence": 95,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f21v": {
+      "total_words": 56,
+      "high_confidence": 56,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f22r": {
+      "total_words": 99,
+      "high_confidence": 99,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f22v": {
+      "total_words": 69,
+      "high_confidence": 69,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f23r": {
+      "total_words": 101,
+      "high_confidence": 101,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f23v": {
+      "total_words": 80,
+      "high_confidence": 80,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f24r": {
+      "total_words": 107,
+      "high_confidence": 107,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f24v": {
+      "total_words": 80,
+      "high_confidence": 80,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f25r": {
+      "total_words": 48,
+      "high_confidence": 48,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f25v": {
+      "total_words": 55,
+      "high_confidence": 55,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f26r": {
+      "total_words": 68,
+      "high_confidence": 68,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f26v": {
+      "total_words": 90,
+      "high_confidence": 90,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f27r": {
+      "total_words": 82,
+      "high_confidence": 82,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f27v": {
+      "total_words": 51,
+      "high_confidence": 51,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f28r": {
+      "total_words": 59,
+      "high_confidence": 59,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f28v": {
+      "total_words": 63,
+      "high_confidence": 63,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f29r": {
+      "total_words": 60,
+      "high_confidence": 60,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f29v": {
+      "total_words": 74,
+      "high_confidence": 74,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f30r": {
+      "total_words": 88,
+      "high_confidence": 88,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f30v": {
+      "total_words": 63,
+      "high_confidence": 63,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f31r": {
+      "total_words": 101,
+      "high_confidence": 101,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f31v": {
+      "total_words": 108,
+      "high_confidence": 108,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f32r": {
+      "total_words": 73,
+      "high_confidence": 73,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f32v": {
+      "total_words": 75,
+      "high_confidence": 75,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f33r": {
+      "total_words": 72,
+      "high_confidence": 72,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f33v": {
+      "total_words": 88,
+      "high_confidence": 88,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f34r": {
+      "total_words": 118,
+      "high_confidence": 118,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f34v": {
+      "total_words": 115,
+      "high_confidence": 115,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f35r": {
+      "total_words": 88,
+      "high_confidence": 88,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f35v": {
+      "total_words": 87,
+      "high_confidence": 87,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f36r": {
+      "total_words": 52,
+      "high_confidence": 52,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f36v": {
+      "total_words": 69,
+      "high_confidence": 69,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f37r": {
+      "total_words": 72,
+      "high_confidence": 72,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f37v": {
+      "total_words": 88,
+      "high_confidence": 88,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f38r": {
+      "total_words": 35,
+      "high_confidence": 35,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f38v": {
+      "total_words": 58,
+      "high_confidence": 58,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f39r": {
+      "total_words": 153,
+      "high_confidence": 153,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f39v": {
+      "total_words": 135,
+      "high_confidence": 135,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f40r": {
+      "total_words": 87,
+      "high_confidence": 87,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f40v": {
+      "total_words": 100,
+      "high_confidence": 100,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f41r": {
+      "total_words": 87,
+      "high_confidence": 87,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f41v": {
+      "total_words": 62,
+      "high_confidence": 62,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f42r": {
+      "total_words": 136,
+      "high_confidence": 136,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f42v": {
+      "total_words": 97,
+      "high_confidence": 97,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f43r": {
+      "total_words": 152,
+      "high_confidence": 152,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f43v": {
+      "total_words": 154,
+      "high_confidence": 154,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f44r": {
+      "total_words": 75,
+      "high_confidence": 75,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f44v": {
+      "total_words": 95,
+      "high_confidence": 95,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f45r": {
+      "total_words": 86,
+      "high_confidence": 86,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f45v": {
+      "total_words": 77,
+      "high_confidence": 77,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f46r": {
+      "total_words": 157,
+      "high_confidence": 157,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f46v": {
+      "total_words": 109,
+      "high_confidence": 109,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f47r": {
+      "total_words": 79,
+      "high_confidence": 79,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f47v": {
+      "total_words": 74,
+      "high_confidence": 74,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f48r": {
+      "total_words": 89,
+      "high_confidence": 89,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f48v": {
+      "total_words": 112,
+      "high_confidence": 112,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f49r": {
+      "total_words": 113,
+      "high_confidence": 113,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f49v": {
+      "total_words": 151,
+      "high_confidence": 151,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 0.8846153846153846
+    },
+    "f50r": {
+      "total_words": 87,
+      "high_confidence": 87,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f50v": {
+      "total_words": 96,
+      "high_confidence": 96,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f51r": {
+      "total_words": 83,
+      "high_confidence": 83,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f51v": {
+      "total_words": 72,
+      "high_confidence": 72,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f52r": {
+      "total_words": 62,
+      "high_confidence": 62,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f52v": {
+      "total_words": 74,
+      "high_confidence": 74,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f53r": {
+      "total_words": 52,
+      "high_confidence": 52,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f53v": {
+      "total_words": 74,
+      "high_confidence": 74,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f54r": {
+      "total_words": 100,
+      "high_confidence": 100,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f54v": {
+      "total_words": 90,
+      "high_confidence": 90,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f55r": {
+      "total_words": 124,
+      "high_confidence": 124,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f55v": {
+      "total_words": 94,
+      "high_confidence": 94,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f56r": {
+      "total_words": 97,
+      "high_confidence": 97,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f56v": {
+      "total_words": 86,
+      "high_confidence": 86,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f57r": {
+      "total_words": 83,
+      "high_confidence": 83,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f57v": {
+      "total_words": 122,
+      "high_confidence": 117,
+      "medium_confidence": 2,
+      "low_confidence": 3,
+      "avg_confidence": 0.985629294452824
+    },
+    "f58r": {
+      "total_words": 367,
+      "high_confidence": 367,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 0.9994918699186993
+    },
+    "f58v": {
+      "total_words": 365,
+      "high_confidence": 365,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f65r": {
+      "total_words": 3,
+      "high_confidence": 3,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f65v": {
+      "total_words": 39,
+      "high_confidence": 39,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f66r": {
+      "total_words": 347,
+      "high_confidence": 347,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 0.975609756097561
+    },
+    "f66v": {
+      "total_words": 112,
+      "high_confidence": 112,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f67r1": {
+      "total_words": 155,
+      "high_confidence": 155,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f67r2": {
+      "total_words": 176,
+      "high_confidence": 176,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f67v2": {
+      "total_words": 59,
+      "high_confidence": 59,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f67v1": {
+      "total_words": 71,
+      "high_confidence": 71,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f68r1": {
+      "total_words": 64,
+      "high_confidence": 64,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f68r2": {
+      "total_words": 80,
+      "high_confidence": 80,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f68r3": {
+      "total_words": 102,
+      "high_confidence": 102,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f68v3": {
+      "total_words": 158,
+      "high_confidence": 158,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f68v2": {
+      "total_words": 95,
+      "high_confidence": 95,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f68v1": {
+      "total_words": 96,
+      "high_confidence": 96,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f69r": {
+      "total_words": 164,
+      "high_confidence": 164,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f69v": {
+      "total_words": 132,
+      "high_confidence": 132,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f70r1": {
+      "total_words": 110,
+      "high_confidence": 110,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f70r2": {
+      "total_words": 247,
+      "high_confidence": 247,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f70v2": {
+      "total_words": 140,
+      "high_confidence": 140,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f70v1": {
+      "total_words": 86,
+      "high_confidence": 86,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f71r": {
+      "total_words": 90,
+      "high_confidence": 90,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f71v": {
+      "total_words": 100,
+      "high_confidence": 100,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f72r1": {
+      "total_words": 104,
+      "high_confidence": 104,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f72r2": {
+      "total_words": 110,
+      "high_confidence": 110,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f72r3": {
+      "total_words": 167,
+      "high_confidence": 167,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f72v3": {
+      "total_words": 121,
+      "high_confidence": 121,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f72v2": {
+      "total_words": 110,
+      "high_confidence": 110,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f72v1": {
+      "total_words": 101,
+      "high_confidence": 101,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f73r": {
+      "total_words": 96,
+      "high_confidence": 96,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f73v": {
+      "total_words": 97,
+      "high_confidence": 97,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f75r": {
+      "total_words": 392,
+      "high_confidence": 392,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f75v": {
+      "total_words": 347,
+      "high_confidence": 347,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f76r": {
+      "total_words": 556,
+      "high_confidence": 556,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f76v": {
+      "total_words": 400,
+      "high_confidence": 400,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f77r": {
+      "total_words": 325,
+      "high_confidence": 325,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f77v": {
+      "total_words": 335,
+      "high_confidence": 335,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f78r": {
+      "total_words": 293,
+      "high_confidence": 293,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f78v": {
+      "total_words": 292,
+      "high_confidence": 292,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f79r": {
+      "total_words": 389,
+      "high_confidence": 389,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f79v": {
+      "total_words": 355,
+      "high_confidence": 355,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f80r": {
+      "total_words": 440,
+      "high_confidence": 440,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f80v": {
+      "total_words": 378,
+      "high_confidence": 378,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f81r": {
+      "total_words": 207,
+      "high_confidence": 207,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f81v": {
+      "total_words": 258,
+      "high_confidence": 258,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f82r": {
+      "total_words": 285,
+      "high_confidence": 285,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f82v": {
+      "total_words": 313,
+      "high_confidence": 313,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f83r": {
+      "total_words": 341,
+      "high_confidence": 341,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f83v": {
+      "total_words": 261,
+      "high_confidence": 261,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f84r": {
+      "total_words": 362,
+      "high_confidence": 362,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f84v": {
+      "total_words": 337,
+      "high_confidence": 337,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f85r1": {
+      "total_words": 333,
+      "high_confidence": 333,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f85r2": {
+      "total_words": 157,
+      "high_confidence": 157,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f86v4": {
+      "total_words": 184,
+      "high_confidence": 184,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f86v6": {
+      "total_words": 479,
+      "high_confidence": 479,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f86v5": {
+      "total_words": 381,
+      "high_confidence": 381,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f86v3": {
+      "total_words": 276,
+      "high_confidence": 276,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f87r": {
+      "total_words": 98,
+      "high_confidence": 98,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f87v": {
+      "total_words": 74,
+      "high_confidence": 74,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f88r": {
+      "total_words": 149,
+      "high_confidence": 149,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f88v": {
+      "total_words": 145,
+      "high_confidence": 145,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f89r1": {
+      "total_words": 138,
+      "high_confidence": 138,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f89r2": {
+      "total_words": 237,
+      "high_confidence": 237,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f89v2": {
+      "total_words": 164,
+      "high_confidence": 164,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f89v1": {
+      "total_words": 159,
+      "high_confidence": 159,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f90r1": {
+      "total_words": 69,
+      "high_confidence": 69,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f90r2": {
+      "total_words": 44,
+      "high_confidence": 44,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f90v2": {
+      "total_words": 63,
+      "high_confidence": 63,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f90v1": {
+      "total_words": 78,
+      "high_confidence": 78,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f93r": {
+      "total_words": 148,
+      "high_confidence": 148,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f93v": {
+      "total_words": 70,
+      "high_confidence": 70,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f94r": {
+      "total_words": 80,
+      "high_confidence": 80,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f94v": {
+      "total_words": 91,
+      "high_confidence": 91,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f95r1": {
+      "total_words": 103,
+      "high_confidence": 103,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f95r2": {
+      "total_words": 79,
+      "high_confidence": 79,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f95v2": {
+      "total_words": 59,
+      "high_confidence": 59,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f95v1": {
+      "total_words": 117,
+      "high_confidence": 117,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f96r": {
+      "total_words": 77,
+      "high_confidence": 77,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f96v": {
+      "total_words": 56,
+      "high_confidence": 56,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f99r": {
+      "total_words": 197,
+      "high_confidence": 197,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f99v": {
+      "total_words": 163,
+      "high_confidence": 163,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f100r": {
+      "total_words": 110,
+      "high_confidence": 110,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f100v": {
+      "total_words": 91,
+      "high_confidence": 91,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f101r": {
+      "total_words": 205,
+      "high_confidence": 204,
+      "medium_confidence": 0,
+      "low_confidence": 1,
+      "avg_confidence": 0.989484126984127
+    },
+    "f101v": {
+      "total_words": 199,
+      "high_confidence": 199,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f102r1": {
+      "total_words": 104,
+      "high_confidence": 104,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f102r2": {
+      "total_words": 134,
+      "high_confidence": 134,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f102v2": {
+      "total_words": 184,
+      "high_confidence": 184,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f102v1": {
+      "total_words": 126,
+      "high_confidence": 126,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f103r": {
+      "total_words": 525,
+      "high_confidence": 525,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f103v": {
+      "total_words": 449,
+      "high_confidence": 449,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f104r": {
+      "total_words": 438,
+      "high_confidence": 438,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f104v": {
+      "total_words": 458,
+      "high_confidence": 458,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f105r": {
+      "total_words": 368,
+      "high_confidence": 368,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f105v": {
+      "total_words": 390,
+      "high_confidence": 390,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f106r": {
+      "total_words": 422,
+      "high_confidence": 421,
+      "medium_confidence": 0,
+      "low_confidence": 1,
+      "avg_confidence": 0.9787234042553191
+    },
+    "f106v": {
+      "total_words": 449,
+      "high_confidence": 449,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f107r": {
+      "total_words": 488,
+      "high_confidence": 488,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f107v": {
+      "total_words": 455,
+      "high_confidence": 455,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f108r": {
+      "total_words": 491,
+      "high_confidence": 491,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f108v": {
+      "total_words": 570,
+      "high_confidence": 570,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f111r": {
+      "total_words": 615,
+      "high_confidence": 615,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f111v": {
+      "total_words": 561,
+      "high_confidence": 561,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f112r": {
+      "total_words": 396,
+      "high_confidence": 396,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f112v": {
+      "total_words": 415,
+      "high_confidence": 415,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f113r": {
+      "total_words": 518,
+      "high_confidence": 518,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f113v": {
+      "total_words": 482,
+      "high_confidence": 482,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f114r": {
+      "total_words": 447,
+      "high_confidence": 447,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f114v": {
+      "total_words": 362,
+      "high_confidence": 362,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f115r": {
+      "total_words": 444,
+      "high_confidence": 444,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f115v": {
+      "total_words": 399,
+      "high_confidence": 399,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    },
+    "f116r": {
+      "total_words": 538,
+      "high_confidence": 538,
+      "medium_confidence": 0,
+      "low_confidence": 0,
+      "avg_confidence": 1.0
+    }
+  }
+}

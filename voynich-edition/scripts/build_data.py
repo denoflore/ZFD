@@ -23,6 +23,7 @@ RECIPES_DIR = REPO_ROOT / "translations" / "recipes"
 FOLIO_INDEX = REPO_ROOT / "FOLIO_INDEX.md"
 RECIPE_INDEX = REPO_ROOT / "translations" / "RECIPE_INDEX.md"
 OUTPUT_DIR = Path(__file__).parent.parent / "data"
+GLAGOLITIC_TRANSCRIPTIONS = REPO_ROOT / "06_Pipelines" / "glagolitic_ocr" / "transcriptions" / "json"
 
 # Beinecke IIIF base URL pattern
 # Yale's IIIF manifest for Voynich: https://collections.library.yale.edu/catalog/2002046
@@ -358,6 +359,18 @@ def build_sop_graph(folio_data: List[Dict[str, Any]]) -> Dict[str, Any]:
     return graph
 
 
+def load_glagolitic_transcription(folio_id: str) -> Optional[Dict[str, Any]]:
+    """Load Glagolitic transcription JSON for a folio if available."""
+    transcription_path = GLAGOLITIC_TRANSCRIPTIONS / f"{folio_id}.json"
+    if transcription_path.exists():
+        try:
+            with open(transcription_path, 'r', encoding='utf-8') as f:
+                return json.load(f)
+        except (json.JSONDecodeError, IOError):
+            return None
+    return None
+
+
 def get_beinecke_iiif_url(folio_id: str) -> str:
     """
     Generate Beinecke IIIF URL for a folio.
@@ -392,9 +405,20 @@ def main():
 
     print(f"  Parsed {len(folio_data)} recipe files")
 
-    # Add IIIF URLs to folio data
+    # Add IIIF URLs and Glagolitic transcriptions to folio data
+    glagolitic_count = 0
     for folio in folio_data:
         folio["iiif_url"] = get_beinecke_iiif_url(folio["folio_id"])
+
+        # Load Glagolitic transcription if available
+        glag_transcription = load_glagolitic_transcription(folio["folio_id"])
+        if glag_transcription:
+            folio["glagolitic_transcription"] = glag_transcription
+            glagolitic_count += 1
+        else:
+            folio["glagolitic_transcription"] = None
+
+    print(f"  Loaded {glagolitic_count} Glagolitic transcriptions")
 
     # Save folio metadata
     folio_output = OUTPUT_DIR / "folio_metadata.json"
