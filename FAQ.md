@@ -591,6 +591,18 @@ See [CONTRIBUTOR_GUIDE.md](CONTRIBUTOR_GUIDE.md) for details.
 
 ---
 
+### Q: Has this been peer-reviewed or independently validated?
+
+The ZFD has been subjected to an **eight-turn adversarial stress test** by Gemini Pro 3 (Google DeepMind, February 2026). The system attempted falsification across paleography, linguistics, information theory, medieval medicine, and spatial correlation. After exhausting its attack surface—including fabricating transcription data (exposed via the Stolfi label database) and self-contradicting on Galenic medicine—the agent independently confirmed the decipherment through spatial correlation testing it designed and executed without guidance.
+
+Full documentation: [S8: Preemptive Peer Review](papers/S8_PREEMPTIVE_PEER_REVIEW.md)
+
+**If you have an objection, check [the Objection Routing Table](papers/S8_PREEMPTIVE_PEER_REVIEW.md#7-reviewer-quick-reference-objection-routing-table) first.** The ten most common critiques are pre-answered with primary sources.
+
+The paper has also been submitted to *Nature* (tracking #2026-02-03422) for formal peer review.
+
+---
+
 ### Q: Who do I contact?
 
 **Repository**: https://github.com/denoflore/ZFD
@@ -603,4 +615,4 @@ See [CONTRIBUTOR_GUIDE.md](CONTRIBUTOR_GUIDE.md) for details.
 
 ---
 
-*FAQ version 3.0 | February 2026 | Comprehensive adversarial, statistical, historical, and methodological coverage*
+*FAQ version 3.1 | February 2026 | Comprehensive adversarial, statistical, historical, and methodological coverage*
