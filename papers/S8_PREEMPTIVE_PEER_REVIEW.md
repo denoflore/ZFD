@@ -177,7 +177,7 @@ Pareidolia generates *plausible* readings. It does not generate **technically ac
 
 1. **Spatial correlation failure:** If ZFD stem readings did not correlate with illustration content at rates exceeding chance. *Result: Positive correlation, statistically significant (p < 0.001).*
 
-2. **Alternative key equivalence:** If a different key achieved equivalent structural coverage (94.7% token-level). *No competing key has been demonstrated.*
+2. **Alternative key equivalence:** If a different key achieved equivalent structural coverage (96.8% token-level). *No competing key has been demonstrated.*
 
 3. **Control text application:** If the ZFD key applied to known non-Voynich text produced equally "coherent" readings. *The key's positional constraints (operators word-initial, gallows medial, suffixes terminal) are structurally specific to the Voynich corpus.*
 
@@ -239,7 +239,7 @@ The ZFD is validated by the convergence of five independent analytical vectors:
 | Vector | What It Explains | Key Evidence | Status |
 |--------|-----------------|--------------|--------|
 | Paleography | Script mechanics (gallows = suspension marks) | Behavioral analysis, Glagolitic cursive match | **Confirmed** |
-| Linguistics | Morphological structure (Operator + Stem + Suffix) | 94.7% token coverage, native speaker validation | **Confirmed** |
+| Linguistics | Morphological structure (Operator + Stem + Suffix) | 96.8% token coverage, native speaker validation | **Confirmed** |
 | Statistics | Repetition patterns (procedural operators) | JSD analysis, CATMuS cross-validation | **Confirmed** |
 | Medicine | Content logic (Galenic contraries, pharmaceutical preparations) | *Contraria contrariis curantur*, astrological medicine | **Confirmed** |
 | Spatial correlation | Label-illustration correspondence | f88r apparatus labels, preregistered tests (p < 0.001) | **Confirmed** |
@@ -273,7 +273,7 @@ If your concern is already listed below, the cited evidence addresses it. We res
 | "Water for a Fire sign is wrong" | *Contraria contrariis curantur.* Water is the indicated Galenic remedy. | §3.4 |
 | "Bone in a plant section is nonsense" | f88r is a distillation apparatus, not a plant. *Oleum ossium* is a standard preparation. | §3.4; `F88R_SCHOLARLY_PLATE.pdf` |
 | "This is pareidolia / overfitting" | Blind spatial correlation. Labels match apparatus at p < 0.001. | §3.5; `METHODOLOGY.md` |
-| "94.7% coverage is suspiciously high" | Wrong key → 30%. Right key → 95%. That's what correct looks like. | §3.5; `08_Final_Proofs/COVERAGE_REPORT_v3_6.md` |
+| "96.8% coverage is suspiciously high" | Wrong key → 30%. Right key → 95%. That's what correct looks like. | §3.5; `08_Final_Proofs/COVERAGE_REPORT_v3_6.md` |
 | "An AI validated it, so it doesn't count" | The AI spent six turns trying to *destroy* it first. Read the protocol. | §2; §4 (this document) |
 | "No one else has verified this" | The complete key, pipeline, and corpus are public. Verify it yourself. | https://github.com/denoflore/ZFD |
 
