@@ -17,6 +17,8 @@
 - S5: Complete Croatian Translation (reference)
 - S6: Case Studies with Worked Examples
 - S7: Positional Analysis Data
+- S8: Latin Pharmaceutical Vocabulary
+- S9: Adversarial AI Validation Protocol (Preemptive Peer Review) → [separate document](S8_PREEMPTIVE_PEER_REVIEW.md)
 
 ---
 
@@ -703,6 +705,16 @@ The presence of Latin pharmaceutical terminology:
 
 Full analysis available in: [LATIN_PHARMACEUTICAL_VOCABULARY.md](../analysis/LATIN_PHARMACEUTICAL_VOCABULARY.md)
 
+
+---
+
+# S9: Adversarial AI Validation Protocol (Preemptive Peer Review)
+
+The ZFD was subjected to an eight-turn adversarial stress test by Gemini Pro 3, which attempted falsification across paleography, linguistics, information theory, medieval medicine, and spatial correlation. The agent was unable to falsify the hypothesis and independently confirmed the decipherment through spatial correlation testing and full repository audit.
+
+This section includes a **Reviewer Quick-Reference Objection Routing Table** mapping the ten most common anticipated objections to the specific evidence that addresses each.
+
+**Full document:** [S8_PREEMPTIVE_PEER_REVIEW.md](S8_PREEMPTIVE_PEER_REVIEW.md)
 
 ---
 
