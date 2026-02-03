@@ -66,7 +66,15 @@ The Voynich Manuscript's resistance to decipherment stems not from cryptographic
 
 5. **Cultural blindness:** Croatia's contributions to European history have been systematically overlooked. The same scholarly tradition that forgot Croatia invented the mechanical pencil (Slavoljub Penkala), the torpedo (Ivan Lupis), the necktie (Croatian military uniform), the parachute (Faust Vrancic), and modern fingerprint analysis (Ivan Vucetic) also forgot to check Croatian manuscripts when examining an "unsolvable" medieval text.
 
-Lisa Fagin Davis, a respected paleographer, stated there is "nothing in history to compare [the Voynich script] to." She was correct, but only within the corpus she examined. She never checked Croatian manuscripts. The answer was in Croatian churches the whole time.
+### 1.3 Prior Work: Missing-Watson (2015)
+
+In 2015, the German researcher Beate Missing-Watson independently identified Croatian as the manuscript's language and Glagolitic (which she termed *Hlaholica*) as the source script (Missing-Watson, 2015). Her identification was correct on both counts.
+
+However, Missing-Watson's method did not produce a systematic or reproducible decipherment. Her approach required manual rearrangement of individual letters within each word (e.g., moving a capital letter from the second to first position), followed by dictionary lookup and interpretive reconstruction. She published no character key, no coverage metrics, no corpus-level validation, and no falsification criteria. The worked example she provided (f2r, line 1) yields a self-referential meta-commentary about cryptography rather than pharmaceutical content, requiring substantial interpretive latitude.
+
+The ZFD was developed independently from October 2025 through February 2026 with no knowledge of Missing-Watson's work, which was brought to the author's attention on February 3, 2026, one day after the repository was made public. The independent convergence of two unrelated researchers on the same language and script family, from entirely different methodological starting points, constitutes additional evidence for the Croatian-Glagolitic hypothesis.
+
+The difference between Missing-Watson's work and the ZFD is the difference between identification and decipherment. She correctly identified the door. The ZFD provides the key, the floor plans, and a guided tour of every room.
 
 ---
 
@@ -573,6 +581,16 @@ Additionally:
 
 The convergence of multiple independent lines of evidence, all consistent with a single hypothesis, is the signature of a correct solution.
 
+### 9.6 "Someone already identified Croatian in 2015"
+
+Missing-Watson (2015) proposed Croatian and Glagolitic. Why should the ZFD be taken more seriously?
+
+**Response:** Missing-Watson was right about the language and script, and she deserves credit for that identification. However, identification is not decipherment. Her work provided no systematic character key, no reproducible pipeline, no coverage metrics, no falsification criteria, and no corpus-level validation. Her method required manual letter rearrangement and interpretive reconstruction for each word, making independent verification impossible.
+
+The ZFD provides everything Missing-Watson's work lacked: a complete positional character map, a three-layer grammatical architecture, 96.8% morphological token coverage across 39,903 tokens, native speaker validation, adversarial AI stress testing, spatial correlation, and a public repository where anyone can take the key and test it on any folio.
+
+The fact that two independent researchers, working a decade apart with entirely different methods, converged on the same language and script family is itself evidence for the hypothesis. Independent convergence is the strongest form of confirmation.
+
 ---
 
 ## 10. Complete Translation
@@ -632,6 +650,8 @@ D'Imperio, M. E. (1978). *The Voynich Manuscript: An Elegant Enigma*. National S
 Kennedy, G., and Churchill, R. (2006). *The Voynich Manuscript*. Orion Books.
 
 Landini, G., and Zandbergen, R. (1998). A study of the Voynich manuscript, part I and II. *Cryptologia*, 22(3), 244-274.
+
+Missing-Watson, B. (2015). *Das Voynich Manuskript: Übersetzungsanleitung*. Retrieved from http://kaypacha.info/VoynichUebersetzungsAnleitung_de.pdf
 
 Vrancic, F. (1595). *Machinae Novae*. Venice. [First published parachute design]
 
