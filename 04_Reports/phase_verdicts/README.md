@@ -13,4 +13,4 @@ This folder contains the validation verdicts from each phase of the ZFD project.
 | 8 | PHASE8_RECIPE_TRANSLATIONS.md | Recipe translations |
 | 9 | PHASE9_FOLIO_TRACKER.md | Folio tracking |
 
-Each phase built on previous validations, culminating in 94.7% morphological coverage.
+Each phase built on previous validations, culminating in 96.8% morphological coverage.
