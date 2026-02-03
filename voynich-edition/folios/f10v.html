@@ -27,7 +27,7 @@
     <div class="folio-layout">
       <!-- Scan viewer -->
       <div class="scan-viewer">
-        <img src="https://via.placeholder.com/600x800?text=F10V" alt="Folio F10V scan" id="folio-image">
+        <img src="https://iiif.archive.org/image/iiif/3/voynich%2420/full/800,/0/default.jpg" alt="Folio F10V scan" id="folio-image">
         <div class="viewer-controls">
           <button onclick="zoomIn()">Zoom +</button>
           <button onclick="zoomOut()">Zoom -</button>
@@ -151,6 +151,26 @@
   <script>
     let scale = 1;
     const img = document.getElementById('folio-image');
+    const viewer = document.querySelector('.scan-viewer');
+
+    // Image loading handling
+    img.classList.add('loading');
+    viewer.classList.add('loading');
+
+    img.onload = function() {
+      img.classList.remove('loading');
+      viewer.classList.remove('loading');
+    };
+
+    img.onerror = function() {
+      img.classList.remove('loading');
+      img.classList.add('error');
+      viewer.classList.remove('loading');
+      // Try placeholder as fallback
+      if (!img.src.includes('placeholder')) {
+        img.src = 'https://via.placeholder.com/600x800?text=F10V';
+      }
+    };
 
     function zoomIn() {
       scale = Math.min(scale * 1.2, 4);
