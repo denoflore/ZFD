@@ -1,0 +1,266 @@
+# F73R: Recipe Extraction
+
+**Section:** Herbal B / Astronomical
+**Confidence:** 85%
+**Words:** 323 total, 92 recipe-relevant
+
+---
+
+## Ingredients Identified
+
+| Stem | English | Latin | Category | Occurrences | Status |
+|------|---------|-------|----------|-------------|--------|
+| **ar** | water | *aqua* | liquid | 26 | CONFIRMED |
+| **or** | oil | *oleum* | liquid | 14 | CONFIRMED |
+| **kost** | bone | *os/ossis* | animal | 12 | CONFIRMED |
+| **ol** | oil | *oleum* | liquid | 9 | CONFIRMED |
+| **sal** | salt | *sal* | mineral | 2 | CONFIRMED |
+| **rady** | root | *radix* | plant_part | 2 | CONFIRMED |
+
+## Preparation Methods
+
+| Stem | English | Category | Occurrences |
+|------|---------|----------|-------------|
+| **dal** | then/next | sequence | 15 |
+| **dar** | dose/give | dosing | 5 |
+| **dain** | dose/portion | dosing | 3 |
+| **hedi** | cook/prepare | heat | 2 |
+| **hor** | process/work | general | 2 |
+
+## Labels (Interlinear)
+
+```
+EVA: otoly
+CRO: otroly
+EXP: otrov/pripravaoly
+ENG: extract/prep+oly
+```
+
+```
+EVA: otaly
+CRO: otraly
+EXP: otrov/pripravaaly
+ENG: extract/prep+aly
+```
+
+```
+EVA: okary
+CRO: ostary
+EXP: kostary
+ENG: bone+ary
+```
+
+## Running Text (Interlinear)
+
+```
+EVA: chockhy
+CRO: hocstry
+EXP: hocstry
+ENG: ?
+```
+
+```
+EVA: okedy
+CRO: ostedi
+EXP: kost-edi
+ENG: bone-prepared
+```
+
+```
+EVA: yteeody
+CRO: ytreody
+EXP: ytreody
+ENG: ?
+```
+
+```
+EVA: ypolcheey salchedal chepchey daraly oteos air ar oteosdal chotchy soteees alshey ches al chees cheoly leiir choteey cheteey cheteeeosaiin chetchody chedar ar cheteey oteor ar air alor shetch ytchy cheody ykeydom oteos alar alcheky
+CRO: yplolhei salhedal heplhey daraly otreos air ar otreosdal hotrhy sotrees alšey hes al hes heoly leir hotrei hetrei hetreeosain hetrhody hedar ar hetrei otreor ar air alor šetrh ytrhy heody ysteydom otreos alar alhesty
+EXP: yplolhei salhedal heplhey daraly otrov/pripravaeos air voda otrov/pripravaeosdal hotrhy sotrees tekućinašey hes tekućina hes heoly leir hotrei hetrei hetreeosain hetrhody DA [Lat.] voda hetrei otrov/pripravaeor voda air tekućinaor šetrh ytrhy heody ysteydom otrov/pripravaeos tekućinaar tekućinahesty
+ENG: ? ? ? dose/gift+aly extract/prep+eos ? water extract/prep+eosdal ? ? liquid+šey ? liquid ? ? ? ? ? ? ? give water ? extract/prep+eor water ? liquid+or ? ? ? ? extract/prep+eos liquid+ar liquid+hesty
+```
+
+```
+EVA: otey
+CRO: otrey
+EXP: otrov/pripravaey
+ENG: extract/prep+ey
+```
+
+```
+EVA: okeody
+CRO: osteody
+EXP: kosteody
+ENG: bone+eody
+```
+
+```
+EVA: oteedyl
+CRO: otredil
+EXP: pripraval
+ENG: preparation+l
+```
+
+```
+EVA: okesdy
+CRO: ostesdy
+EXP: kostesdy
+ENG: bone+esdy
+```
+
+```
+EVA: okery
+CRO: ostery
+EXP: kostery
+ENG: bone+ery
+```
+
+```
+EVA: oksedy
+CRO: ostsedi
+EXP: kostsedi
+ENG: bone+sedi
+```
+
+```
+EVA: ykeeory
+CRO: ysteory
+EXP: ysteory
+ENG: ?
+```
+
+```
+EVA: oteeosy
+CRO: otreosy
+EXP: otrov/pripravaeosy
+ENG: extract/prep+eosy
+```
+
+```
+EVA: shekal
+CRO: šestal
+EXP: šestal
+ENG: ?
+```
+
+```
+EVA: oteedyg
+CRO: otredig
+EXP: pripravag
+ENG: preparation+g
+```
+
+```
+EVA: okedal
+CRO: ostedal
+EXP: kostedal
+ENG: bone+edal
+```
+
+```
+EVA: chdy
+CRO: hdy
+EXP: hdy
+ENG: ?
+```
+
+```
+EVA: dalshey
+CRO: dalšey
+EXP: daj-tekšey
+ENG: give liquid+šey
+```
+
+```
+EVA: opaiin
+CRO: oplain
+EXP: oplain
+ENG: ?
+```
+
+```
+EVA: okeos
+CRO: osteos
+EXP: kosteos
+ENG: bone+eos
+```
+
+```
+EVA: oteey dar al opaiin olalaiin sair ar chopchedy chdar orom otoreees olteey okees otar chey oteas ohor opar chey daiin qoiheey scheey dal cheesy
+CRO: otrei dar al oplain olalain sair ar hoplhedi hdar orom otrorees oltrei ostes otrar hey otreas ohor oplar hey dain koihei shei dal hesy
+EXP: otrov/pripravaei DA [Lat.] tekućina oplain uljealain sair voda hoplhedi DA [Lat.] uljeom otrov/pripravaorees uljetrei kostes otrov/pripravaar hey otrov/pripravaeas ohor oplar hey DA [Lat.] koihei shei DA [Lat.] hesy
+ENG: extract/prep+ei give liquid ? oil+alain ? water ? give oil+om extract/prep+orees oil+trei bone+es extract/prep+ar ? extract/prep+eas ? ? ? give ? ? give ?
+```
+
+```
+EVA: okeos
+CRO: osteos
+EXP: kosteos
+ENG: bone+eos
+```
+
+```
+EVA: otad
+CRO: otrad
+EXP: RADIX [Lat.]
+ENG: root
+```
+
+```
+EVA: ootady
+CRO: ootrady
+EXP: ootrady
+ENG: ?
+```
+
+```
+EVA: oky
+CRO: osty
+EXP: kosty
+ENG: bone+y
+```
+
+```
+EVA: chefy
+CRO: hepry
+EXP: hepry
+ENG: ?
+```
+
+```
+EVA: otal
+CRO: otral
+EXP: otrov/pripravaal
+ENG: extract/prep+al
+```
+
+```
+EVA: shek
+CRO: šest
+EXP: šest
+ENG: ?
+```
+
+```
+EVA: ar
+CRO: ar
+EXP: voda
+ENG: water
+```
+
+```
+EVA: kar
+CRO: kar
+EXP: kar
+ENG: ?
+```
+
+```
+EVA: osaiin chedain oteey chedaly okechs chepchees aly oteodal
+CRO: osain hedain otrei hedaly ostehs heplhes aly otreodal
+EXP: osain hedain otrov/pripravaei hedaly kostehs heplhes tekućinay otrov/pripravaeodal
+ENG: ? ? extract/prep+ei ? bone+ehs ? liquid+y extract/prep+eodal
+```
+
+---
+*Generated by ZFD Recipe Extraction Pipeline v1.0*
