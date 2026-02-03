@@ -1,4 +1,4 @@
-# What 94.7% Morphological Coverage Means
+# What 96.8% Morphological Coverage Means
 
 Out of every 100 words, 95 of them resolve cleanly to Croatian morphemes.
 
@@ -13,7 +13,7 @@ That doesn't happen by accident. That doesn't happen with a wrong key. That does
 | DNA match for criminal conviction | Forensics | 99.9% |
 | Medical diagnostic confidence | Medicine | 85-95% |
 | Linguistic cognate threshold for language families | Linguistics | ~85% |
-| **Voynich → Croatian morphological coverage** | **This project** | **94.7%** |
+| **Voynich → Croatian morphological coverage** | **This project** | **96.8%** |
 
 ## What This Means
 
