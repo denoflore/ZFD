@@ -90,8 +90,8 @@ This bilingual structure (Croatian practical + Latin technical) is exactly what 
 
 | Metric | Result |
 |--------|--------|
-| Token coverage | **94.7%** |
-| Known morphemes | 94 |
+| Token coverage | **96.8%** |
+| Known morphemes | 141 |
 | CATMuS medieval stem match | 68.6% |
 | Native speaker confirmed | ✓ |
 | Spatial correlation | p < 0.001 |
