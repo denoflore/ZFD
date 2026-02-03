@@ -235,7 +235,7 @@ This identification fails if:
 - The gallows expansion produces nonsense instead of Croatian words
 - Croatian speakers reject the resulting vocabulary
 
-**All tests passed.** 94.7% morphological coverage. Native speaker confirmed.
+**All tests passed.** 96.8% morphological coverage. Native speaker confirmed.
 
 ---
 
