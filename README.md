@@ -206,6 +206,8 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 | [**GETTING_STARTED.md**](GETTING_STARTED.md) | Learn to decode Voynichese in 10 minutes |
 | [**WHY_GLAGOLITIC.md**](WHY_GLAGOLITIC.md) | The paleographic evidence |
 | [**FAQ.md**](FAQ.md) | Common questions and objections answered |
+| [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | **Complete recipe extraction — every preparation, ingredient, and instruction from all 201 folios** |
+
 
 ### Methodology & Validation
 | Document | Description |
