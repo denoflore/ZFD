@@ -16,6 +16,11 @@ EDITION_ROOT = SCRIPT_DIR.parent
 DATA_DIR = EDITION_ROOT / "data"
 OUTPUT_DIR = EDITION_ROOT
 
+# Internet Archive IIIF pattern
+# Format: https://iiif.archive.org/image/iiif/3/voynich%24{page}/full/{size}/0/default.jpg
+IA_IIIF_BASE = "https://iiif.archive.org/image/iiif/3/voynich%24"
+IA_IIIF_SUFFIX = "/full/800,/0/default.jpg"
+
 # Load data
 def load_json(filename: str) -> Any:
     with open(DATA_DIR / filename, 'r', encoding='utf-8') as f:
@@ -25,6 +30,15 @@ def load_json(filename: str) -> Any:
 def html_escape(text: str) -> str:
     """Safely escape HTML special characters."""
     return escape(str(text)) if text else ""
+
+
+def get_folio_image_url(folio_id: str, page_mapping: Dict[str, int]) -> str:
+    """Get the Internet Archive IIIF URL for a folio."""
+    page_num = page_mapping.get(folio_id)
+    if page_num:
+        return f"{IA_IIIF_BASE}{page_num}{IA_IIIF_SUFFIX}"
+    # Fallback to placeholder if no mapping
+    return f"https://via.placeholder.com/600x800?text={folio_id.upper()}"
 
 
 def get_confidence_class(confidence: int) -> str:
@@ -82,7 +96,7 @@ def render_interlinear_block(block: Dict) -> str:
 </div>'''
 
 
-def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_data: Dict) -> str:
+def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_data: Dict, page_mapping: Dict[str, int]) -> str:
     """Render a complete folio page."""
     folio_id = folio["folio_id"]
     section = folio.get("section", "Unknown")
@@ -162,10 +176,8 @@ def render_folio_page(folio: Dict, all_folios: List, sop_graph: Dict, section_da
     prev_link = f'<a href="{prev_folio}.html">&larr; {prev_folio.upper()}</a>' if prev_folio else '<span></span>'
     next_link = f'<a href="{next_folio}.html">{next_folio.upper()} &rarr;</a>' if next_folio else '<span></span>'
 
-    # Beinecke IIIF URL (using Yale's pattern)
-    iiif_url = f"https://collections.library.yale.edu/iiif/2/1234567/full/800,/0/default.jpg"
-    # Placeholder image for now
-    image_url = f"https://via.placeholder.com/600x800?text={folio_id.upper()}"
+    # Get IIIF image URL from Internet Archive
+    image_url = get_folio_image_url(folio_id, page_mapping)
 
     # Pre-compute variables for template
     folio_upper = folio_id.upper()
@@ -477,8 +489,11 @@ def main():
     section_data = load_json("section_data.json")
     ingredient_index = load_json("ingredient_index.json")
     sop_graph = load_json("sop_graph.json")
+    page_mapping_data = load_json("folio_page_mapping.json")
+    page_mapping = page_mapping_data.get("folios", {})
 
     print(f"  Loaded {len(folio_data)} folios")
+    print(f"  Loaded {len(page_mapping)} page mappings for IIIF")
 
     # Ensure output directories exist
     folios_dir = OUTPUT_DIR / "folios"
@@ -494,7 +509,7 @@ def main():
     # Generate folio pages
     print("\nGenerating folio pages...")
     for i, folio in enumerate(folio_data):
-        folio_html = render_folio_page(folio, folio_data, sop_graph, section_data)
+        folio_html = render_folio_page(folio, folio_data, sop_graph, section_data, page_mapping)
         output_path = folios_dir / f"{folio['folio_id']}.html"
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(folio_html)
