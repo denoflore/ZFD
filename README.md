@@ -32,7 +32,9 @@ The Voynich Manuscript didn't appear from nowhere. Its journey across 600 years 
 
 The manuscript was written during the golden age of the Republic of Ragusa, a Croatian maritime city-state that rivaled Venice in wealth and sophistication. Ragusa was a major pharmaceutical trade hub on the Adriatic, with merchant routes connecting the Balkans to Italy, the Levant, and the courts of Central Europe.
 
-In **1317**, Franciscan monks founded a pharmacy inside their monastery complex near the Pile Gate. This pharmacy, one of the oldest continuously operating pharmacies in Europe, served the monks initially, then expanded to treat the citizens of Dubrovnik. The friars cultivated medicinal herbs in the monastery gardens, prepared compounds from imported ingredients (storax resin from the eastern Mediterranean, rosewater, bone oil, mineral salts), and maintained detailed recipe books in the monastery library.
+In **1317**, the Republic of Ragusa faced imminent war with Serbian King Uroš II Milutin. The Franciscan monastery outside the city walls at Pile was a tactical liability, so authorities demolished it and relocated the friars inside the fortifications. The pharmacy was founded as part of this new intramural complex, near the Pile Gate. The Franciscan Rule (Chapter VI, *cura infirmorum*) mandated care of the sick, so the pharmacy began as an internal dispensary before expanding to serve the public. In 2019, Croatia designated it an intangible cultural heritage site. It is the oldest continuously operating pharmacy in Europe.
+
+The friars cultivated medicinal herbs in the monastery gardens, prepared compounds from imported ingredients (storax resin from the eastern Mediterranean, rosewater, bone oil, mineral salts), and maintained detailed recipe books in the monastery library. Their recipes were classified as *secreta* (secret remedies), where ingredient lists were recorded but the exact process (temperatures, mixing times, compounding sequences) was proprietary knowledge. This explains the compression and shorthand in the manuscript: it was written for someone who already knew the procedures and just needed the ingredients and ratios.
 
 **The Voynich Manuscript is one of those recipe books.**
 
@@ -55,13 +57,17 @@ The pharmacy's own literature states their products are "prepared under 200 year
 
 **The modern pharmacy replaced bone oil with beeswax. The Voynich still has the original.**
 
+The pharmacy also produced Theriac (*Teriaca*), a complex preparation of dozens of ingredients requiring precise aging and compounding. These were serious pharmaceutical chemists, not monks dabbling in herbs.
+
 One ingredient tells the story: **storax** (styrax resin, imported from the eastern Mediterranean for wound care). It appears 288 times in the Voynich manuscript. The modern pharmacy doesn't use it. It was likely discontinued after the supply chain collapsed in 1667. The manuscript preserves a product line that no longer exists.
 
 ### The Catastrophe: April 6, 1667
 
 At 8:45 AM on Holy Wednesday, the most devastating earthquake in Croatian recorded history struck Dubrovnik. The quake lasted only seconds but killed approximately 3,000–5,000 people, including the city's Rector. Three-quarters of all public buildings were destroyed. Boulders rolled down Mount Srđ into the city. A tsunami struck the harbor. Fires, fueled by strong winds from collapsed bakeries and hearths, burned for almost 20 days.
 
-The Franciscan Church and Monastery survived the earthquake itself, but **the subsequent fire destroyed much of the monastery complex, including its great library.** Centuries of accumulated manuscripts, pharmaceutical texts, recipe books, and medical records were incinerated.
+The Franciscan Church and Monastery survived the earthquake itself, but **the subsequent fire destroyed much of the monastery complex, including its great library.** Centuries of accumulated manuscripts, pharmaceutical texts, recipe books, and medical records were incinerated. The oldest surviving medical book in the library's current collection is Arnaldus de Villa Nova's *Herbolarium* (1491). Everything older was lost.
+
+This was not the last time the monastery was nearly destroyed. During the Siege of Dubrovnik in 1991-1992, the complex sustained 51 direct hits from projectiles. The library was severely damaged again. The World Monuments Fund supported the subsequent restoration.
 
 The pharmacy survived. The building survived. The recipes, passed down orally and through whatever fragments remained, survived in degraded form. But the comprehensive medieval archive was gone.
 
@@ -396,6 +402,7 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 ### Reference
 | Document | Description |
 |----------|-------------|
+| [**Ljekarna_Male_Brace_Monograph.md**](10_Supplementary/Ljekarna_Male_Brace_Monograph.md) | **Exhaustive monograph on the Franciscan Pharmacy: 700 years of history, products, materia medica, 31 sources** |
 | [BIBLIOGRAPHY.md](BIBLIOGRAPHY.md) | Academic references |
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
 
