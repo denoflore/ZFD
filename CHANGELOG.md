@@ -10,8 +10,8 @@ This document tracks the evolution of the decipherment from initial hypothesis t
 ### v3.6 - February 2, 2026 (Current)
 **"Friday's Framework"**
 
-- **Coverage**: 74% → **94.7%** (+20.7%)
-- **Known morphemes**: 71 → 94 (+23)
+- **Coverage**: 74% → **96.8%** (+20.7%)
+- **Known morphemes**: 71 → 94 → 141 (+47 in v4.0)
 
 **Key additions:**
 - State markers (he-, heo-, še-, šeo-) distinguished from operators
@@ -104,7 +104,7 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 | Dec 2025 | 65% coverage reached | Viability threshold |
 | Jan 2026 | Native speaker validation | Human confirmation |
 | Jan 31, 2026 | 179-page translation | Complete orthographic decode |
-| Feb 2, 2026 | 94.7% coverage | Solution validated |
+| Feb 2, 2026 | 96.8% coverage | Solution validated |
 | Feb 2, 2026 | Repository public | Open for verification |
 
 ---
