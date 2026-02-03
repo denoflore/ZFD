@@ -315,4 +315,4 @@ The repeated pattern of oil + water + bone + root suggests standardized pharmace
 ---
 
 *Pharmaceutical translations v1.0 | February 2026*
-*Based on ZFD methodology | 94.7% morpheme coverage*
+*Based on ZFD methodology | 96.8% morpheme coverage*
