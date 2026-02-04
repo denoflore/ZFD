@@ -130,20 +130,20 @@ ZFD shows 38.5% -i (mapped from EVA -y), while Croatian corpora show 13.9-17.7%.
 | South Slavic | 95% | 95% | -- | Unchanged |
 | Croatian (not Serbian) | 92% | 92% | -- | Serbian elimination holds |
 | Dalmatian coastal | 85% | 87% | +2 | Bilingual mixing confirmed |
-| Ragusan specifically | 75% | 80% | +5 | Vocabulary + register match |
-| Pharmaceutical register | 95% | 97% | +2 | 4x suffix concentration |
+| Ragusan specifically | 75% | 82% | +7 | V27 speciarii/apotheca + vocabulary match |
+| Pharmaceutical register | 95% | 97% | +2 | 4x suffix concentration, register-controlled JSD |
 | Not random/cipher | 99% | 99% | -- | Unchanged |
-| Early 15th century | 75% | 75% | -- | Needs temporal features |
+| Early 15th century | 75% | 82% | +7 | Zero Italian loanwords, ch- conventions |
 
 ---
 
 ## Remaining Steps
 
-1. **Temporal feature analysis**: Identify innovations post-1438 to pin date window
-2. **Extended jat audit**: Full decoded corpus, not just lexicon stems  
-3. **Native speaker review (Georgie)**: Dialectal recognition of decoded forms
-4. **Monumenta Ragusina V27 deep analysis**: Extract Latin pharmaceutical formulae for chancery register comparison
-5. **JSD with register-controlled subsample**: Extract food/medicine references from Dundo Maroje for apples-to-apples comparison
+1. ~~**Temporal feature analysis**~~: COMPLETE. Zero Italian loanwords pins date pre-1450. See [REMAINING_ANALYSES_REPORT_v1.md](REMAINING_ANALYSES_REPORT_v1.md)
+2. ~~**Extended jat audit**~~: COMPLETE. "Absent jat" confirmed at full corpus scale (14,872 types). See [REMAINING_ANALYSES_REPORT_v1.md](REMAINING_ANALYSES_REPORT_v1.md)
+3. **Native speaker review (Georgie)**: Dialectal recognition of decoded forms. PENDING (human required).
+4. ~~**Monumenta Ragusina V27 deep analysis**~~: COMPLETE. Speciarii, apotheca, medicus documented in 1358-1364 Ragusa. See [REMAINING_ANALYSES_REPORT_v1.md](REMAINING_ANALYSES_REPORT_v1.md)
+5. ~~**JSD with register-controlled subsample**~~: COMPLETE. -ol suffix 30x more concentrated than DM food contexts. See [REMAINING_ANALYSES_REPORT_v1.md](REMAINING_ANALYSES_REPORT_v1.md)
 
 ---
 
