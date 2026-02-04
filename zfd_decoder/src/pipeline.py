@@ -21,10 +21,19 @@ except ImportError:
 
 
 class ZFDPipeline:
-    def __init__(self, data_dir: str = "data"):
+    def __init__(self, data_dir: str = "data", lexicon_file: str = None):
         data_path = Path(data_dir)
+
+        # Prefer lexicon_v2, fall back to lexicon
+        if lexicon_file:
+            lex_path = Path(lexicon_file)
+        elif (data_path / "lexicon_v2.csv").exists():
+            lex_path = data_path / "lexicon_v2.csv"
+        else:
+            lex_path = data_path / "lexicon.csv"
+
         self.operators = OperatorDetector(str(data_path / "operators.json"))
-        self.lexicon = StemLexicon(str(data_path / "lexicon.csv"))
+        self.lexicon = StemLexicon(str(lex_path))
         self.gallows = GallowsExpander(
             str(data_path / "gallows.json"),
             str(data_path / "mid_word.json"),
@@ -55,9 +64,12 @@ class ZFDPipeline:
         suffix = None
 
         # Stage 5: If full word not found, try suffix parsing
+        # Minimum stem length to avoid false positives with short grammar words
+        MIN_STEM_LENGTH = 2
+
         if not stem_data:
             stripped_stem, suffix = self.suffixes.parse(working)
-            if suffix:
+            if suffix and len(stripped_stem) >= MIN_STEM_LENGTH:
                 # Check if stripped stem is in lexicon
                 stripped_data = self.lexicon.lookup(stripped_stem)
                 if stripped_data:
@@ -70,7 +82,7 @@ class ZFDPipeline:
                 else:
                     # Try partial match on stripped stem
                     found = self.lexicon.find_in_text(stripped_stem)
-                    if found:
+                    if found and len(found[0][0]) >= MIN_STEM_LENGTH:
                         stem_candidate = found[0][0]
                         stem_data = found[0][1]
                         token.suffix = suffix['croatian']
@@ -79,6 +91,8 @@ class ZFDPipeline:
                         token.confidence += 0.15
                     else:
                         suffix = None  # No valid suffix, keep full word
+            else:
+                suffix = None  # Stem too short, keep full word
 
         # Stage 6: If still not found, try partial match for gloss only (keep full stem)
         if not stem_data:
@@ -91,7 +105,8 @@ class ZFDPipeline:
         if stem_data:
             token.stem_known = True
             token.stem_gloss = stem_data['gloss']
-            token.confidence += 0.30
+            # Use status-based confidence: CONFIRMED=0.30, CANDIDATE=0.15, MISCELLANY=0.10
+            token.confidence += self.lexicon.confidence_for_status(stem_data['status'])
             token.notes.append(f"Stem: {stem_data['name']} ({stem_data['status']})")
 
         # Stage 6: Build ZFD orthography (Layer 1)
@@ -137,8 +152,19 @@ class ZFDPipeline:
 
     def _build_croatian(self, token: Token) -> str:
         """Build Layer 3: Normalized Croatian."""
-        # Keep as procedural shorthand, not full sentences
-        return token.zfd
+        parts = []
+        if token.operator:
+            parts.append(token.operator)
+        # Use Croatian form if available, otherwise stem
+        if token.stem_known:
+            stem_data = self.lexicon.lookup(token.stem)
+            croatian = stem_data.get('croatian', '') if stem_data else ''
+            parts.append(croatian if croatian else token.stem)
+        else:
+            parts.append(token.stem)
+        if token.suffix:
+            parts.append(token.suffix)
+        return "".join(parts)
 
     def _build_english(self, token: Token) -> str:
         """Build Layer 4: English gloss."""
@@ -202,6 +228,8 @@ class ZFDPipeline:
                 "known_ratio": 0,
                 "average_confidence": 0,
                 "unknown_stem_list": [],
+                "category_distribution": {},
+                "miscellany_stems": 0,
                 "validation": {}
             }
 
@@ -221,6 +249,18 @@ class ZFDPipeline:
         # Find unknown stems for lexicon growth
         unknown_list = list(set(t.stem for t in all_tokens if t.stem and not t.stem_known))
 
+        # Count categories and miscellany stems
+        category_counts = {}
+        miscellany_count = 0
+        for t in all_tokens:
+            if t.stem_known and t.stem:
+                stem_data = self.lexicon.lookup(t.stem)
+                if stem_data:
+                    cat = stem_data.get('category', 'unknown')
+                    category_counts[cat] = category_counts.get(cat, 0) + 1
+                    if stem_data.get('source', '').startswith('miscellany'):
+                        miscellany_count += 1
+
         return {
             "total_tokens": len(all_tokens),
             "operator_counts": operator_counts,
@@ -229,6 +269,8 @@ class ZFDPipeline:
             "known_ratio": known_stems / (known_stems + unknown_stems) if (known_stems + unknown_stems) > 0 else 0,
             "average_confidence": round(avg_confidence, 3),
             "unknown_stem_list": sorted(unknown_list),
+            "category_distribution": category_counts,
+            "miscellany_stems": miscellany_count,
             "validation": {
                 "kost_present": any("kost" in t.stem or "ost" in t.stem for t in all_tokens),
                 "ol_present": any(t.stem in ["ol", "or"] for t in all_tokens),
