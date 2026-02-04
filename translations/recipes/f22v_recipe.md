@@ -1,5 +1,13 @@
 # F22V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006117/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006117/full/600,/0/default.jpg" width="500" alt="Folio 22v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 22v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 208 total, 106 recipe-relevant

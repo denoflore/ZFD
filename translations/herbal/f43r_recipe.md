@@ -1,3 +1,11 @@
+
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006158/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006158/full/600,/0/default.jpg" width="500" alt="Folio 43r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 43r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
 # Recipe Translation: F43R
 
 **Confidence:** 0.33

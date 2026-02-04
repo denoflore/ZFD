@@ -1,5 +1,13 @@
 # F88R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1037112/full/600,/0/default.jpg" width="500" alt="Folio 88r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 88r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Pharmaceutical
 **Confidence:** 100%
 **Words:** 445 total, 253 recipe-relevant

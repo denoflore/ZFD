@@ -1,3 +1,11 @@
+
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006212/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006212/full/600,/0/default.jpg" width="500" alt="Folio 77r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 77r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
 # Recipe Translation: F77R
 
 **Confidence:** 0.34

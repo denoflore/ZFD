@@ -1,5 +1,13 @@
 # F67R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006194/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006194/full/600,/0/default.jpg" width="500" alt="Folio 67r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 67r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal B / Astronomical
 **Confidence:** 100%
 **Words:** 946 total, 357 recipe-relevant

@@ -1,5 +1,13 @@
 # F5R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006084/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006084/full/600,/0/default.jpg" width="500" alt="Folio 5r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 5r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 75%
 **Words:** 147 total, 28 recipe-relevant

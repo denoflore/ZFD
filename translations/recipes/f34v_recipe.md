@@ -1,5 +1,13 @@
 # F34V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006141/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006141/full/600,/0/default.jpg" width="500" alt="Folio 34v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 34v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 325 total, 121 recipe-relevant

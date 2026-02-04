@@ -455,16 +455,160 @@ def transliterate_to_eva(glagolitic_text):
     return ''.join(result)
 
 
+def normalize_glagolitic(char):
+    """
+    Normalize Glagolitic character to uppercase (canonical form).
+
+    Glagolitic Unicode ranges:
+    - Uppercase: U+2C00 to U+2C2E
+    - Lowercase: U+2C30 to U+2C5E
+
+    The lowercase codepoint is exactly 0x30 (48) higher than uppercase.
+    """
+    code = ord(char)
+    # Check if in lowercase Glagolitic range
+    if 0x2C30 <= code <= 0x2C5E:
+        # Convert to uppercase by subtracting 0x30
+        return chr(code - 0x30)
+    return char
+
+
 def transliterate_to_croatian(glagolitic_text):
-    """Convert Glagolitic text to modern Croatian."""
+    """
+    Convert Glagolitic text to modern Croatian phonemic representation.
+
+    Phase 4 of the pipeline: Glagolitic Unicode -> Croatian phonemes.
+    Handles both uppercase and lowercase Glagolitic by normalizing to uppercase.
+    """
     result = []
     for char in glagolitic_text:
-        if char in GLAGOLITIC_ALPHABET:
-            cro = GLAGOLITIC_ALPHABET[char]['croatian']
+        # Normalize lowercase Glagolitic to uppercase
+        normalized = normalize_glagolitic(char)
+        if normalized in GLAGOLITIC_ALPHABET:
+            cro = GLAGOLITIC_ALPHABET[normalized]['croatian']
             result.append(cro)
         else:
+            # Pass through non-Glagolitic characters (spaces, punctuation, etc.)
             result.append(char)
     return ''.join(result)
+
+
+# Morpheme database for Phase 5 reconstruction
+CROATIAN_MORPHEMES = {
+    # Ingredient stems
+    'ol': {'croatian': 'ulje', 'english': 'oil', 'category': 'ingredient'},
+    'or': {'croatian': 'ulje', 'english': 'oil', 'category': 'ingredient'},
+    'kost': {'croatian': 'kost', 'english': 'bone', 'category': 'ingredient'},
+    'sal': {'croatian': 'sol', 'english': 'salt', 'category': 'ingredient'},
+    'sar': {'croatian': 'sol', 'english': 'salt', 'category': 'ingredient'},
+    'ar': {'croatian': 'voda', 'english': 'water', 'category': 'ingredient'},
+    'ros': {'croatian': 'ruza', 'english': 'rose', 'category': 'ingredient'},
+    'stor': {'croatian': 'storaks', 'english': 'storax', 'category': 'ingredient'},
+    'ed': {'croatian': 'korijen', 'english': 'root', 'category': 'ingredient'},
+    'edy': {'croatian': 'korijen', 'english': 'root', 'category': 'ingredient'},
+
+    # Method stems
+    'hor': {'croatian': 'kuhati', 'english': 'cook/boil', 'category': 'method'},
+    'hol': {'croatian': 'mijesati', 'english': 'mix/combine', 'category': 'method'},
+    'dal': {'croatian': 'zatim', 'english': 'then/next', 'category': 'method'},
+    'dar': {'croatian': 'dati', 'english': 'give/dose', 'category': 'method'},
+    'dain': {'croatian': 'dati', 'english': 'give/dose', 'category': 'method'},
+    'daiin': {'croatian': 'dati', 'english': 'give/dose', 'category': 'method'},
+    'sol': {'croatian': 'natopiti', 'english': 'soak', 'category': 'method'},
+
+    # Operators (prefixes)
+    'ko': {'croatian': 'koji', 'english': 'which/who', 'category': 'operator'},
+    'o': {'croatian': 'o', 'english': 'about', 'category': 'operator'},
+    's': {'croatian': 's', 'english': 'with', 'category': 'operator'},
+
+    # Latin terms
+    'oral': {'croatian': 'oralno', 'english': 'by mouth', 'category': 'latin'},
+}
+
+
+def phonemic_to_croatian(phonemic_text):
+    """
+    Convert Croatian phonemic representation to readable Croatian.
+
+    Phase 5 of the pipeline: Croatian phonemes -> readable Croatian words.
+    Identifies known morphemes and expands them to full Croatian words.
+    """
+    words = phonemic_text.split()
+    result = []
+
+    for word in words:
+        # Check if the word matches a known morpheme
+        word_lower = word.lower()
+
+        # Try exact match first
+        if word_lower in CROATIAN_MORPHEMES:
+            morpheme = CROATIAN_MORPHEMES[word_lower]
+            result.append(morpheme['croatian'])
+            continue
+
+        # Try to identify morphemes within the word
+        expanded = expand_word(word_lower)
+        result.append(expanded)
+
+    return ' '.join(result)
+
+
+def expand_word(word):
+    """
+    Expand a Croatian phonemic word by identifying morphemes.
+
+    Uses the operator-stem-suffix model from the character map:
+    - Check for operator prefixes (ko-, o-, s-)
+    - Identify stem morphemes (ol, kost, sal, etc.)
+    - Handle suffixes
+    """
+    if not word:
+        return word
+
+    result_parts = []
+    remaining = word
+
+    # Check for operator prefixes
+    for op in ['ko', 'o', 's']:
+        if remaining.startswith(op) and len(remaining) > len(op):
+            if op in CROATIAN_MORPHEMES:
+                result_parts.append(CROATIAN_MORPHEMES[op]['croatian'])
+                remaining = remaining[len(op):]
+            break
+
+    # Look for known stems in the remaining text
+    found_stem = False
+    for stem in sorted(CROATIAN_MORPHEMES.keys(), key=len, reverse=True):
+        if stem in remaining and CROATIAN_MORPHEMES[stem]['category'] in ['ingredient', 'method']:
+            morpheme = CROATIAN_MORPHEMES[stem]
+            # Replace stem with Croatian equivalent
+            remaining = remaining.replace(stem, morpheme['croatian'], 1)
+            found_stem = True
+            break
+
+    if result_parts:
+        return '-'.join(result_parts) + '-' + remaining if remaining else '-'.join(result_parts)
+    return remaining
+
+
+def full_transliterate(glagolitic_text):
+    """
+    Full pipeline: Glagolitic -> Croatian phonemic -> readable Croatian.
+
+    Combines Phase 4 and Phase 5 for complete translation.
+    Returns a dict with all layers.
+    """
+    # Phase 4: Glagolitic to Croatian phonemic
+    phonemic = transliterate_to_croatian(glagolitic_text)
+
+    # Phase 5: Phonemic to readable Croatian
+    readable = phonemic_to_croatian(phonemic)
+
+    return {
+        'glagolitic': glagolitic_text,
+        'phonemic': phonemic,
+        'croatian': readable
+    }
 
 
 if __name__ == '__main__':

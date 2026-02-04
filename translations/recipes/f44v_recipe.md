@@ -1,5 +1,13 @@
 # F44V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006161/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006161/full/600,/0/default.jpg" width="500" alt="Folio 44v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 44v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 279 total, 120 recipe-relevant

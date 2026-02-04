@@ -1,5 +1,13 @@
 # F27R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006126/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006126/full/600,/0/default.jpg" width="500" alt="Folio 27r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 27r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 222 total, 67 recipe-relevant
