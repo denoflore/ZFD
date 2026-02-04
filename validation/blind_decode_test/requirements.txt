@@ -1,0 +1,19 @@
+# ZFD Blind Decode Falsification Test Requirements
+#
+# This test uses only Python standard library modules.
+# No external dependencies are required.
+#
+# Required Python version: 3.8+
+#
+# Standard library modules used:
+# - hashlib (checksumming)
+# - json (data serialization)
+# - random (shuffling)
+# - statistics (mean, stdev)
+# - datetime (timestamps)
+# - pathlib (file paths)
+# - argparse (CLI)
+# - sys, os (system operations)
+#
+# The test also imports the ZFD pipeline from zfd_decoder/src/
+# which has its own dependencies.

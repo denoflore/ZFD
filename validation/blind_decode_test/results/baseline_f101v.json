@@ -1,0 +1,298 @@
+{
+  "folio": "f101v",
+  "iterations": 10,
+  "base_seed": 42,
+  "coherence_scores": [
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016,
+    0.7016
+  ],
+  "known_ratios": [
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487,
+    0.6486486486486487
+  ],
+  "operator_diversities": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3
+  ],
+  "category_diversities": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "confidence_means": [
+    0.535,
+    0.535,
+    0.535,
+    0.535,
+    0.535,
+    0.535,
+    0.535,
+    0.535,
+    0.535,
+    0.535
+  ],
+  "iteration_data": [
+    {
+      "iteration": 0,
+      "seed": 42,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "da": 1,
+        "ost": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "equipment": 5,
+        "measurement": 1,
+        "preparation": 1
+      }
+    },
+    {
+      "iteration": 1,
+      "seed": 43,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "da": 1,
+        "otr": 4,
+        "ost": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "preparation": 1,
+        "measurement": 1,
+        "equipment": 5
+      }
+    },
+    {
+      "iteration": 2,
+      "seed": 44,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "ost": 1,
+        "otr": 4,
+        "da": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "equipment": 5,
+        "measurement": 1,
+        "preparation": 1
+      }
+    },
+    {
+      "iteration": 3,
+      "seed": 45,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "ost": 1,
+        "da": 1,
+        "otr": 4
+      },
+      "categories": {
+        "ingredient": 17,
+        "equipment": 5,
+        "action": 10,
+        "measurement": 1,
+        "preparation": 1
+      }
+    },
+    {
+      "iteration": 4,
+      "seed": 46,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "ost": 1,
+        "da": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "equipment": 5,
+        "preparation": 1,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 5,
+      "seed": 47,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "da": 1,
+        "ost": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "preparation": 1,
+        "equipment": 5,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 6,
+      "seed": 48,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "ost": 1,
+        "da": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "equipment": 5,
+        "preparation": 1,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 7,
+      "seed": 49,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "da": 1,
+        "ost": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "preparation": 1,
+        "equipment": 5,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 8,
+      "seed": 50,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "da": 1,
+        "ost": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "equipment": 5,
+        "action": 10,
+        "measurement": 1,
+        "preparation": 1
+      }
+    },
+    {
+      "iteration": 9,
+      "seed": 51,
+      "coherence": 0.7016,
+      "known_ratio": 0.6486486486486487,
+      "operator_count": 3,
+      "category_count": 5,
+      "average_confidence": 0.535,
+      "operators": {
+        "otr": 4,
+        "ost": 1,
+        "da": 1
+      },
+      "categories": {
+        "ingredient": 17,
+        "action": 10,
+        "preparation": 1,
+        "equipment": 5,
+        "measurement": 1
+      }
+    }
+  ],
+  "stats": {
+    "coherence_mean": 0.7016,
+    "coherence_std": 0.0,
+    "coherence_min": 0.7016,
+    "coherence_max": 0.7016,
+    "coherence_p5": 0.7016,
+    "coherence_p25": 0.7016,
+    "coherence_p50": 0.7016,
+    "coherence_p75": 0.7016,
+    "coherence_p95": 0.7016,
+    "known_ratio_mean": 0.6486,
+    "known_ratio_std": 0.0,
+    "known_ratio_min": 0.6486,
+    "known_ratio_max": 0.6486,
+    "operator_diversity_mean": 3,
+    "operator_diversity_std": 0.0,
+    "category_diversity_mean": 5,
+    "category_diversity_std": 0.0,
+    "confidence_mean": 0.535,
+    "confidence_std": 0.0
+  }
+}

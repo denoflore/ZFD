@@ -1,0 +1,41 @@
+{
+  "test_date": "2026-02-04T17:12:44.288935",
+  "lexicon_sha256": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
+  "overall_verdict": "FAIL",
+  "folios": {
+    "f10r": {
+      "folio": "f10r",
+      "real_coherence": 0.6234,
+      "real_known_ratio": 0.8667,
+      "shuffled_mean": 0.6234,
+      "shuffled_std": 0.0,
+      "z_score": 0,
+      "p_value": 1.0,
+      "effect_size": 0,
+      "predictions_met": {
+        "operators": true,
+        "stems": false,
+        "categories": true
+      },
+      "shuffled_prediction_rate": 1.0,
+      "category_overlap_score": 0.6667,
+      "verdict": "POSITION_INDEPENDENT",
+      "details": {
+        "coherence_threshold": 0.7,
+        "coherence_pass": false,
+        "p_threshold": 0.01,
+        "p_pass": false,
+        "known_ratio_threshold": 0.3,
+        "known_ratio_pass": true
+      }
+    }
+  },
+  "summary": {
+    "folios_tested": 1,
+    "folios_passing": 0,
+    "folios_required": 4,
+    "overall_p": 1.0,
+    "overall_effect_size": 0.0,
+    "mean_z_score": 0.0
+  }
+}

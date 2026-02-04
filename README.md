@@ -478,6 +478,27 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 5. ✓ Script behaviors match Glagolitic, not Latin
 6. ✓ Positional statistics match shorthand conventions
 
+### Blind Decode Falsification Test
+
+To test whether the ZFD pipeline is detecting real structure or merely generating Croatian-compatible output from any input:
+
+```bash
+cd validation/blind_decode_test
+python run_test.py
+```
+
+This test:
+
+1. Freezes the lexicon (checksummed, no modifications allowed during test)
+2. Decodes 5 preregistered folios using the frozen pipeline
+3. Decodes 100 shuffled versions of each folio through the SAME pipeline
+4. Compares real vs shuffled results with z-scores and empirical p-values
+5. Reports PASS/FAIL with full statistical evidence
+
+If the decoder produces significantly better results on real manuscript text than on shuffled text, the "degrees of freedom" criticism is empirically refuted.
+
+Results: `validation/blind_decode_test/results/BLIND_DECODE_REPORT.md`
+
 ---
 
 ## Reproducibility

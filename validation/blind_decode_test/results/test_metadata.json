@@ -1,0 +1,21 @@
+{
+  "test_date": "2026-02-04T17:11:15.902558",
+  "folios_tested": [
+    "f10r",
+    "f23v",
+    "f47r",
+    "f89r",
+    "f101v"
+  ],
+  "shuffle_iterations": 10,
+  "shuffle_seed": 42,
+  "lexicon_sha256": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
+  "thresholds": {
+    "min_coherence": 0.7,
+    "min_passing_folios": 4,
+    "significance_level": 0.01,
+    "min_category_diversity": 3,
+    "min_known_ratio": 0.3
+  },
+  "overall_verdict": "FAIL"
+}
