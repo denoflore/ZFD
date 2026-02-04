@@ -1,0 +1,299 @@
+{
+  "folio": "f89r",
+  "baseline_type": "char_shuffled",
+  "iterations": 10,
+  "seed_base": 2000,
+  "coherence_scores": [
+    0.5808,
+    0.5808,
+    0.5776,
+    0.5838,
+    0.5868,
+    0.5888,
+    0.5838,
+    0.587,
+    0.5838,
+    0.5961
+  ],
+  "known_ratios": [
+    0.1693121693121693,
+    0.17195767195767195,
+    0.164021164021164,
+    0.17941952506596306,
+    0.18997361477572558,
+    0.19525065963060687,
+    0.1820580474934037,
+    0.18997361477572558,
+    0.17941952506596306,
+    0.20899470899470898
+  ],
+  "category_counts_summary": {
+    "ingredient": 564,
+    "measurement": 51,
+    "action": 182,
+    "equipment": 45,
+    "grammar": 89,
+    "other": 12
+  },
+  "iteration_data": [
+    {
+      "iteration": 0,
+      "seed": 2000,
+      "coherence": 0.5808,
+      "known_ratio": 0.1693121693121693,
+      "total_tokens": 379,
+      "known_stems": 64,
+      "operator_counts": {
+        "da": 9,
+        "h": 9,
+        "ost": 2,
+        "k": 6,
+        "otr": 3,
+        "ko": 4,
+        "š": 2
+      },
+      "category_counts": {
+        "ingredient": 55,
+        "measurement": 9,
+        "action": 19,
+        "equipment": 5,
+        "grammar": 10,
+        "other": 1
+      }
+    },
+    {
+      "iteration": 1,
+      "seed": 2001,
+      "coherence": 0.5808,
+      "known_ratio": 0.17195767195767195,
+      "total_tokens": 379,
+      "known_stems": 65,
+      "operator_counts": {
+        "ost": 4,
+        "h": 3,
+        "da": 5,
+        "k": 2,
+        "otr": 3,
+        "ko": 1
+      },
+      "category_counts": {
+        "ingredient": 51,
+        "other": 1,
+        "action": 16,
+        "equipment": 7,
+        "measurement": 5,
+        "grammar": 3
+      }
+    },
+    {
+      "iteration": 2,
+      "seed": 2002,
+      "coherence": 0.5776,
+      "known_ratio": 0.164021164021164,
+      "total_tokens": 379,
+      "known_stems": 62,
+      "operator_counts": {
+        "š": 1,
+        "h": 5,
+        "ko": 6,
+        "k": 8,
+        "da": 3,
+        "ost": 3
+      },
+      "category_counts": {
+        "ingredient": 48,
+        "action": 17,
+        "grammar": 14,
+        "measurement": 3,
+        "other": 3,
+        "equipment": 3
+      }
+    },
+    {
+      "iteration": 3,
+      "seed": 2003,
+      "coherence": 0.5838,
+      "known_ratio": 0.17941952506596306,
+      "total_tokens": 379,
+      "known_stems": 68,
+      "operator_counts": {
+        "h": 4,
+        "otr": 2,
+        "ko": 2,
+        "da": 6,
+        "k": 7,
+        "ost": 3,
+        "š": 1
+      },
+      "category_counts": {
+        "ingredient": 55,
+        "action": 17,
+        "equipment": 5,
+        "grammar": 9,
+        "measurement": 6,
+        "other": 1
+      }
+    },
+    {
+      "iteration": 4,
+      "seed": 2004,
+      "coherence": 0.5868,
+      "known_ratio": 0.18997361477572558,
+      "total_tokens": 379,
+      "known_stems": 72,
+      "operator_counts": {
+        "h": 2,
+        "š": 4,
+        "da": 8,
+        "k": 5,
+        "otr": 2,
+        "ost": 2,
+        "ko": 1
+      },
+      "category_counts": {
+        "ingredient": 58,
+        "action": 20,
+        "measurement": 8,
+        "grammar": 6,
+        "equipment": 4
+      }
+    },
+    {
+      "iteration": 5,
+      "seed": 2005,
+      "coherence": 0.5888,
+      "known_ratio": 0.19525065963060687,
+      "total_tokens": 379,
+      "known_stems": 74,
+      "operator_counts": {
+        "h": 4,
+        "ko": 4,
+        "ost": 3,
+        "da": 4,
+        "k": 4,
+        "š": 2,
+        "otr": 2
+      },
+      "category_counts": {
+        "ingredient": 56,
+        "action": 24,
+        "grammar": 8,
+        "equipment": 5,
+        "measurement": 4
+      }
+    },
+    {
+      "iteration": 6,
+      "seed": 2006,
+      "coherence": 0.5838,
+      "known_ratio": 0.1820580474934037,
+      "total_tokens": 379,
+      "known_stems": 69,
+      "operator_counts": {
+        "h": 6,
+        "š": 3,
+        "k": 5,
+        "da": 2,
+        "ost": 1,
+        "ko": 1
+      },
+      "category_counts": {
+        "ingredient": 60,
+        "action": 18,
+        "grammar": 6,
+        "other": 1,
+        "measurement": 2,
+        "equipment": 1
+      }
+    },
+    {
+      "iteration": 7,
+      "seed": 2007,
+      "coherence": 0.587,
+      "known_ratio": 0.18997361477572558,
+      "total_tokens": 379,
+      "known_stems": 72,
+      "operator_counts": {
+        "ost": 6,
+        "ko": 3,
+        "da": 4,
+        "h": 3,
+        "k": 3,
+        "otr": 1,
+        "š": 2
+      },
+      "category_counts": {
+        "ingredient": 60,
+        "equipment": 7,
+        "grammar": 6,
+        "measurement": 4,
+        "other": 2,
+        "action": 15
+      }
+    },
+    {
+      "iteration": 8,
+      "seed": 2008,
+      "coherence": 0.5838,
+      "known_ratio": 0.17941952506596306,
+      "total_tokens": 379,
+      "known_stems": 68,
+      "operator_counts": {
+        "otr": 1,
+        "h": 5,
+        "ost": 4,
+        "ko": 4,
+        "da": 6,
+        "š": 2,
+        "k": 8
+      },
+      "category_counts": {
+        "ingredient": 58,
+        "equipment": 5,
+        "action": 15,
+        "grammar": 12,
+        "measurement": 6,
+        "other": 2
+      }
+    },
+    {
+      "iteration": 9,
+      "seed": 2009,
+      "coherence": 0.5961,
+      "known_ratio": 0.20899470899470898,
+      "total_tokens": 379,
+      "known_stems": 79,
+      "operator_counts": {
+        "k": 9,
+        "h": 5,
+        "da": 4,
+        "ko": 6,
+        "otr": 1,
+        "ost": 2
+      },
+      "category_counts": {
+        "ingredient": 63,
+        "action": 21,
+        "grammar": 15,
+        "measurement": 4,
+        "equipment": 3,
+        "other": 1
+      }
+    }
+  ],
+  "stats": {
+    "coherence_mean": 0.5849,
+    "coherence_std": 0.0052,
+    "coherence_min": 0.5776,
+    "coherence_max": 0.5961,
+    "coherence_p5": 0.579,
+    "coherence_p25": 0.5816,
+    "coherence_p50": 0.5838,
+    "coherence_p75": 0.5869,
+    "coherence_p95": 0.5928,
+    "known_ratio_mean": 0.183,
+    "known_ratio_std": 0.0134,
+    "known_ratio_min": 0.164,
+    "known_ratio_max": 0.209
+  }
+}

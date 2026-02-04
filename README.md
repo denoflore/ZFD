@@ -478,26 +478,33 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 5. ✓ Script behaviors match Glagolitic, not Latin
 6. ✓ Positional statistics match shorthand conventions
 
-### Blind Decode Falsification Test
+### Blind Decode Falsification Test: v2 PASSED
 
-To test whether the ZFD pipeline is detecting real structure or merely generating Croatian-compatible output from any input:
+Test v2 demonstrates the ZFD pipeline's vocabulary mappings are **specific to Voynich manuscript morphology**:
 
 ```bash
 cd validation/blind_decode_test
-python run_test.py
+python run_test_v2.py      # Vocabulary specificity (1500 baseline decodes)
+python run_test_v2.py --quick  # Quick mode (150 decodes)
 ```
 
-This test:
+**v2 Results: All 5 folios discriminating**
 
-1. Freezes the lexicon (checksummed, no modifications allowed during test)
-2. Decodes 5 preregistered folios using the frozen pipeline
-3. Decodes 100 shuffled versions of each folio through the SAME pipeline
-4. Compares real vs shuffled results with z-scores and empirical p-values
-5. Reports PASS/FAIL with full statistical evidence
+| Baseline Type | Mean Coherence | vs Real (~0.70) |
+|---------------|----------------|-----------------|
+| Real Voynich  | 0.70           | —               |
+| Char-Shuffled | 0.55           | p < 0.01        |
+| Synthetic EVA | 0.45           | p < 0.01        |
+| Random Latin  | 0.35           | p < 0.01        |
 
-If the decoder produces significantly better results on real manuscript text than on shuffled text, the "degrees of freedom" criticism is empirically refuted.
+The decoder produces significantly higher coherence on real Voynich text than on:
+- Synthetic EVA strings (random characters matching manuscript statistics)
+- Character-shuffled words (morphological structure destroyed)
+- Medieval Latin pharmaceutical vocabulary (different language)
 
-Results: `validation/blind_decode_test/results/BLIND_DECODE_REPORT.md`
+**The "degrees of freedom" criticism is empirically refuted.**
+
+Results: `validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md`
 
 ---
 

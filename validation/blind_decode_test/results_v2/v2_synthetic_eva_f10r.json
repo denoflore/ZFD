@@ -1,0 +1,250 @@
+{
+  "folio": "f10r",
+  "baseline_type": "synthetic_eva",
+  "iterations": 10,
+  "seed_base": 1000,
+  "coherence_scores": [
+    0.2491,
+    0.4105,
+    0.5766,
+    0.2978,
+    0.4706,
+    0.5063,
+    0.4872,
+    0.3999,
+    0.4619,
+    0.4382
+  ],
+  "known_ratios": [
+    0.10227272727272728,
+    0.12359550561797752,
+    0.15730337078651685,
+    0.0898876404494382,
+    0.14606741573033707,
+    0.10112359550561797,
+    0.06741573033707865,
+    0.10227272727272728,
+    0.12359550561797752,
+    0.06741573033707865
+  ],
+  "category_counts_summary": {
+    "ingredient": 85,
+    "grammar": 15,
+    "action": 20,
+    "measurement": 6,
+    "equipment": 14,
+    "other": 1
+  },
+  "iteration_data": [
+    {
+      "iteration": 0,
+      "seed": 1000,
+      "coherence": 0.2491,
+      "known_ratio": 0.10227272727272728,
+      "total_tokens": 89,
+      "known_stems": 9,
+      "operator_counts": {
+        "k": 3
+      },
+      "category_counts": {
+        "ingredient": 8,
+        "grammar": 3,
+        "action": 1
+      }
+    },
+    {
+      "iteration": 1,
+      "seed": 1001,
+      "coherence": 0.4105,
+      "known_ratio": 0.12359550561797752,
+      "total_tokens": 89,
+      "known_stems": 11,
+      "operator_counts": {
+        "k": 1,
+        "h": 2,
+        "da": 1
+      },
+      "category_counts": {
+        "ingredient": 11,
+        "grammar": 1,
+        "action": 2,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 2,
+      "seed": 1002,
+      "coherence": 0.5766,
+      "known_ratio": 0.15730337078651685,
+      "total_tokens": 89,
+      "known_stems": 14,
+      "operator_counts": {
+        "da": 1,
+        "k": 2,
+        "ost": 3,
+        "ko": 1,
+        "h": 1
+      },
+      "category_counts": {
+        "ingredient": 12,
+        "measurement": 1,
+        "grammar": 3,
+        "equipment": 3,
+        "action": 3
+      }
+    },
+    {
+      "iteration": 3,
+      "seed": 1003,
+      "coherence": 0.2978,
+      "known_ratio": 0.0898876404494382,
+      "total_tokens": 89,
+      "known_stems": 8,
+      "operator_counts": {
+        "k": 2,
+        "š": 1
+      },
+      "category_counts": {
+        "ingredient": 7,
+        "action": 2,
+        "grammar": 2
+      }
+    },
+    {
+      "iteration": 4,
+      "seed": 1004,
+      "coherence": 0.4706,
+      "known_ratio": 0.14606741573033707,
+      "total_tokens": 89,
+      "known_stems": 13,
+      "operator_counts": {
+        "k": 2,
+        "h": 1,
+        "da": 1
+      },
+      "category_counts": {
+        "ingredient": 10,
+        "grammar": 2,
+        "action": 3,
+        "equipment": 1,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 5,
+      "seed": 1005,
+      "coherence": 0.5063,
+      "known_ratio": 0.10112359550561797,
+      "total_tokens": 89,
+      "known_stems": 9,
+      "operator_counts": {
+        "otr": 1,
+        "š": 1,
+        "ost": 2,
+        "k": 1,
+        "h": 1
+      },
+      "category_counts": {
+        "ingredient": 8,
+        "equipment": 3,
+        "action": 3,
+        "grammar": 1
+      }
+    },
+    {
+      "iteration": 6,
+      "seed": 1006,
+      "coherence": 0.4872,
+      "known_ratio": 0.06741573033707865,
+      "total_tokens": 89,
+      "known_stems": 6,
+      "operator_counts": {
+        "da": 1,
+        "k": 1,
+        "otr": 2,
+        "h": 1
+      },
+      "category_counts": {
+        "ingredient": 6,
+        "measurement": 1,
+        "grammar": 1,
+        "equipment": 2,
+        "action": 1
+      }
+    },
+    {
+      "iteration": 7,
+      "seed": 1007,
+      "coherence": 0.3999,
+      "known_ratio": 0.10227272727272728,
+      "total_tokens": 89,
+      "known_stems": 9,
+      "operator_counts": {
+        "ko": 1,
+        "ost": 1
+      },
+      "category_counts": {
+        "ingredient": 7,
+        "grammar": 1,
+        "action": 1,
+        "equipment": 1,
+        "other": 1
+      }
+    },
+    {
+      "iteration": 8,
+      "seed": 1008,
+      "coherence": 0.4619,
+      "known_ratio": 0.12359550561797752,
+      "total_tokens": 89,
+      "known_stems": 11,
+      "operator_counts": {
+        "š": 2,
+        "ost": 2,
+        "da": 1,
+        "h": 1
+      },
+      "category_counts": {
+        "ingredient": 11,
+        "action": 3,
+        "equipment": 2,
+        "measurement": 1
+      }
+    },
+    {
+      "iteration": 9,
+      "seed": 1009,
+      "coherence": 0.4382,
+      "known_ratio": 0.06741573033707865,
+      "total_tokens": 89,
+      "known_stems": 6,
+      "operator_counts": {
+        "ost": 2,
+        "k": 1,
+        "da": 1
+      },
+      "category_counts": {
+        "ingredient": 5,
+        "equipment": 2,
+        "action": 1,
+        "grammar": 1,
+        "measurement": 1
+      }
+    }
+  ],
+  "stats": {
+    "coherence_mean": 0.4298,
+    "coherence_std": 0.0971,
+    "coherence_min": 0.2491,
+    "coherence_max": 0.5766,
+    "coherence_p5": 0.271,
+    "coherence_p25": 0.4025,
+    "coherence_p50": 0.45,
+    "coherence_p75": 0.4831,
+    "coherence_p95": 0.545,
+    "known_ratio_mean": 0.1081,
+    "known_ratio_std": 0.03,
+    "known_ratio_min": 0.0674,
+    "known_ratio_max": 0.1573
+  }
+}
