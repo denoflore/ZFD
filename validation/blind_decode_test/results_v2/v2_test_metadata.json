@@ -1,0 +1,20 @@
+{
+  "test_version": "v2",
+  "test_date": "2026-02-04T17:37:50.413892",
+  "folios_tested": [
+    "f10r",
+    "f23v",
+    "f47r",
+    "f89r",
+    "f101v"
+  ],
+  "baseline_types": [
+    "synthetic_eva",
+    "char_shuffled",
+    "random_latin"
+  ],
+  "iterations_per_baseline": 10,
+  "total_baseline_decodes": 150,
+  "lexicon_sha256": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
+  "overall_verdict": "PASS"
+}

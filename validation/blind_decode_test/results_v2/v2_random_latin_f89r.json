@@ -1,0 +1,234 @@
+{
+  "folio": "f89r",
+  "baseline_type": "random_latin",
+  "iterations": 10,
+  "seed_base": 3000,
+  "coherence_scores": [
+    0.3993,
+    0.402,
+    0.4036,
+    0.3983,
+    0.4129,
+    0.4122,
+    0.408,
+    0.4048,
+    0.409,
+    0.3953
+  ],
+  "known_ratios": [
+    0.23218997361477572,
+    0.24010554089709762,
+    0.24538258575197888,
+    0.23218997361477572,
+    0.2691292875989446,
+    0.2638522427440633,
+    0.2559366754617414,
+    0.24802110817941952,
+    0.25857519788918204,
+    0.22427440633245382
+  ],
+  "category_counts_summary": {
+    "ingredient": 699,
+    "grammar": 83,
+    "action": 363,
+    "other": 127,
+    "equipment": 36
+  },
+  "iteration_data": [
+    {
+      "iteration": 0,
+      "seed": 3000,
+      "coherence": 0.3993,
+      "known_ratio": 0.23218997361477572,
+      "total_tokens": 379,
+      "known_stems": 88,
+      "operator_counts": {
+        "k": 6
+      },
+      "category_counts": {
+        "ingredient": 67,
+        "grammar": 6,
+        "action": 38,
+        "other": 15,
+        "equipment": 1
+      }
+    },
+    {
+      "iteration": 1,
+      "seed": 3001,
+      "coherence": 0.402,
+      "known_ratio": 0.24010554089709762,
+      "total_tokens": 379,
+      "known_stems": 91,
+      "operator_counts": {
+        "k": 8
+      },
+      "category_counts": {
+        "ingredient": 65,
+        "action": 28,
+        "other": 13,
+        "equipment": 6,
+        "grammar": 8
+      }
+    },
+    {
+      "iteration": 2,
+      "seed": 3002,
+      "coherence": 0.4036,
+      "known_ratio": 0.24538258575197888,
+      "total_tokens": 379,
+      "known_stems": 93,
+      "operator_counts": {
+        "k": 10
+      },
+      "category_counts": {
+        "ingredient": 68,
+        "action": 32,
+        "equipment": 3,
+        "other": 16,
+        "grammar": 10
+      }
+    },
+    {
+      "iteration": 3,
+      "seed": 3003,
+      "coherence": 0.3983,
+      "known_ratio": 0.23218997361477572,
+      "total_tokens": 379,
+      "known_stems": 88,
+      "operator_counts": {
+        "k": 9
+      },
+      "category_counts": {
+        "ingredient": 65,
+        "other": 10,
+        "action": 34,
+        "grammar": 9,
+        "equipment": 5
+      }
+    },
+    {
+      "iteration": 4,
+      "seed": 3004,
+      "coherence": 0.4129,
+      "known_ratio": 0.2691292875989446,
+      "total_tokens": 379,
+      "known_stems": 102,
+      "operator_counts": {
+        "k": 5
+      },
+      "category_counts": {
+        "ingredient": 73,
+        "action": 39,
+        "other": 16,
+        "equipment": 7,
+        "grammar": 5
+      }
+    },
+    {
+      "iteration": 5,
+      "seed": 3005,
+      "coherence": 0.4122,
+      "known_ratio": 0.2638522427440633,
+      "total_tokens": 379,
+      "known_stems": 100,
+      "operator_counts": {
+        "k": 7
+      },
+      "category_counts": {
+        "ingredient": 76,
+        "other": 13,
+        "action": 46,
+        "grammar": 7,
+        "equipment": 1
+      }
+    },
+    {
+      "iteration": 6,
+      "seed": 3006,
+      "coherence": 0.408,
+      "known_ratio": 0.2559366754617414,
+      "total_tokens": 379,
+      "known_stems": 97,
+      "operator_counts": {
+        "k": 4
+      },
+      "category_counts": {
+        "ingredient": 69,
+        "action": 35,
+        "equipment": 7,
+        "other": 13,
+        "grammar": 4
+      }
+    },
+    {
+      "iteration": 7,
+      "seed": 3007,
+      "coherence": 0.4048,
+      "known_ratio": 0.24802110817941952,
+      "total_tokens": 379,
+      "known_stems": 94,
+      "operator_counts": {
+        "k": 16
+      },
+      "category_counts": {
+        "ingredient": 73,
+        "action": 38,
+        "grammar": 16,
+        "other": 13,
+        "equipment": 1
+      }
+    },
+    {
+      "iteration": 8,
+      "seed": 3008,
+      "coherence": 0.409,
+      "known_ratio": 0.25857519788918204,
+      "total_tokens": 379,
+      "known_stems": 98,
+      "operator_counts": {
+        "k": 9
+      },
+      "category_counts": {
+        "ingredient": 74,
+        "action": 38,
+        "equipment": 2,
+        "grammar": 9,
+        "other": 14
+      }
+    },
+    {
+      "iteration": 9,
+      "seed": 3009,
+      "coherence": 0.3953,
+      "known_ratio": 0.22427440633245382,
+      "total_tokens": 379,
+      "known_stems": 85,
+      "operator_counts": {
+        "k": 9
+      },
+      "category_counts": {
+        "ingredient": 69,
+        "action": 35,
+        "other": 4,
+        "grammar": 9,
+        "equipment": 3
+      }
+    }
+  ],
+  "stats": {
+    "coherence_mean": 0.4045,
+    "coherence_std": 0.006,
+    "coherence_min": 0.3953,
+    "coherence_max": 0.4129,
+    "coherence_p5": 0.3967,
+    "coherence_p25": 0.4,
+    "coherence_p50": 0.4042,
+    "coherence_p75": 0.4087,
+    "coherence_p95": 0.4126,
+    "known_ratio_mean": 0.247,
+    "known_ratio_std": 0.0149,
+    "known_ratio_min": 0.2243,
+    "known_ratio_max": 0.2691
+  }
+}
