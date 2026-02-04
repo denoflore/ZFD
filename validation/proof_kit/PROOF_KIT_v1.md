@@ -188,7 +188,7 @@ The Latin-vocabulary + Slavic-grammar mixing is characteristic of:
 2. Direct comparison with Dubrovnik chancery documents (corpus not yet digitized/available)
 3. Temporal pinning to 1404-1438 specifically (as opposed to broader 14th-15th century)
 
-### Confidence Levels:
+### Initial Confidence Levels (pre-Serbian elimination, pre-temporal analysis):
 - South Slavic: **95%** (grammar diagnostics converge)
 - Croatian: **85%** (contact language profile, but Serbian not fully eliminated)
 - Dalmatian coastal: **80%** (Latin mixing pattern, pharmaceutical context)
@@ -196,14 +196,16 @@ The Latin-vocabulary + Slavic-grammar mixing is characteristic of:
 - Pharmaceutical register: **95%** (suffix concentration, operator semantics, vocabulary)
 - Early 15th century: **75%** (consistent with, but not uniquely pinned to, this window)
 
+*See [Updated Confidence Levels](#updated-confidence-levels-post-remaining-analyses) below for current values after Serbian elimination, corpus comparison, and temporal analysis.*
+
 ---
 
 ## Next Steps (Priority Order):
-1. **Digitize Dubrovnik chancery comparison corpus** (if available from Drzavni arhiv)
-2. **Run JSD comparison** between ZFD suffix distribution and Vinodol suffix distribution
-3. **Extended jat audit** using full decoded corpus, not just lexicon stems
-4. **Temporal feature analysis** identifying innovations that date post-1438
-5. **Georgie (native speaker) review** of decoded forms for dialectal recognition
+1. ~~**Digitize Dubrovnik chancery comparison corpus**~~: COMPLETE. 961K-word corpus assembled. See [CORPUS_COMPARISON_REPORT_v1.md](../corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md)
+2. ~~**Run JSD comparison**~~: COMPLETE. See [CORPUS_COMPARISON_REPORT_v1.md](../corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md)
+3. ~~**Extended jat audit**~~: COMPLETE. Absent jat confirmed at full corpus scale. See [REMAINING_ANALYSES_REPORT_v1.md](../corpus_comparison/REMAINING_ANALYSES_REPORT_v1.md)
+4. ~~**Temporal feature analysis**~~: COMPLETE. Zero Italian loanwords pins date pre-1450. See [REMAINING_ANALYSES_REPORT_v1.md](../corpus_comparison/REMAINING_ANALYSES_REPORT_v1.md)
+5. **Georgie (native speaker) review** of decoded forms for dialectal recognition: PENDING (human required)
 
 
 ---
