@@ -11,6 +11,8 @@
 
 **Validation:**
 - Blind decode falsification tests passed (real Voynich >> shuffled, synthetic, and Latin baselines) | [Results](validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md)
+- 961K-word Ragusan corpus comparison confirms pharmaceutical register fingerprint and Dalmatian coastal origin | [Report](validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md)
+- 15th-century Croatian proof kit: suffix families, operator semantics, jat reflexes, Serbian elimination | [Proof Kit](validation/proof_kit/PROOF_KIT_v1.md)
 - Negative results and failed runs documented and preserved
 - Croatian linguistic alignment confirmed by independent certified native-speaker review (court-certified Croatian translator-interpreter)
 
@@ -35,6 +37,8 @@
 - [Why Glagolitic? The Evidence](#why-glagolitic-the-evidence)
 - [The "Bone" Test (Falsification Protocol)](#the-bone-test-falsification-protocol)
 - [Validation Results](#validation-results)
+- [Corpus Comparison Analysis](#corpus-comparison-analysis)
+- [15th Century Croatian Proof Kit](#15th-century-croatian-proof-kit)
 - [Reproducibility](#reproducibility)
 - [Independent Validation](#independent-validation)
 - [Credits](#credits)
@@ -518,6 +522,63 @@ python validation/blind_decode_test/run_test_v2.py --quick  # Quick (150 decodes
 Hierarchy holds on all five folios: Real > Char-shuffled > Synthetic EVA > Random Latin. The decoder produces significantly higher coherence on real Voynich text than on any non-Voynich input through the same frozen pipeline.
 
 Full test history including both failures: [`validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md`](validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md)
+
+### Corpus Comparison Analysis
+
+**961,484 words** across 8 Ragusan and control corpora tested against ZFD decoded output.
+
+| Corpus | Words | Type | Purpose |
+|--------|-------|------|---------|
+| Dundo Maroje (Drzic, 1551) | 53,670 | Ragusan Croatian comedy | Dialect baseline |
+| Vetranovic poems (1540s) | 138,519 | Ragusan Croatian verse | Dialect baseline |
+| Bunic/Mazibradovic (16thC) | 59,338 | Ragusan Croatian verse | Dialect baseline |
+| Palmotic (1606) | 85,189 | Ragusan Croatian verse | Late control |
+| Monumenta Ragusina V27 (1358-64) | 156,914 | Ragusan Latin chancery | Latin register |
+| Liber Statutorum (1272+) | 213,009 | Ragusan Latin legal | Latin register |
+| Monumenta Serbica | 203,963 | Serbian (mixed) | Contrast corpus |
+| Vinodol Code (1288) | 14,554 | Non-Ragusan Croatian | Geographic control |
+
+**Key finding:** ZFD's suffix concentration (58.4% in top 5 endings) is 4x higher than literary Croatian (14.8-16.1%) and 2.5x higher than Latin legal corpora (21-27%). This is precisely what a restricted pharmaceutical register predicts: few grammatical patterns applied repetitively to many ingredient names.
+
+| Feature | ZFD | Literary Croatian | Expected for Pharma |
+|---------|-----|-------------------|---------------------|
+| TTR (type-token ratio) | 0.121 | 0.190-0.220 | LOW (repetitive) |
+| Top-5 suffix coverage | 58.4% | 14.8-16.1% | HIGH (restricted) |
+| -i ending dominance | 38.5% | 14.9% | HIGH (adjectival) |
+| Prefix coverage | 55.7% | 11.1% | HIGH (operators) |
+| Avg word length | 5.80 | 3.94-4.45 | LONGER (compounds) |
+| Latin loan stems | 92 confirmed | Present | YES (technical) |
+
+Shared Latin pharmaceutical stems confirmed across ZFD and Ragusan Croatian literature: *ol/oleum, sal, mel, vin/vinum, ros/rosa, lavan/lavandula, ment/mentha.* Same bilingual Latin-in-Slavic-grammar mixing pattern that defines Ragusan Republic texts.
+
+Full report: [`validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md`](validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md)
+
+### 15th Century Croatian Proof Kit
+
+Five converging constraint layers independently identifying the decoded ZFD output as 15th-century Ragusan Croatian pharmaceutical text.
+
+**Layer 1: Suffix Family Table.** 5 suffix families cover 65.6% of all tokens, each with a Croatian pharmaceutical mapping: -i (adjectival/plural, 21.0%), -di (past participle, 17.0%), -in/-ain (substance/material, 14.4%), -ol (oil/liquid, 8.9%), -al (substance/generic, 5.1%).
+
+**Layer 2: Closed-Class Operators.** 6 function-word operators cover 55.7% of tokens, mapping to Croatian prepositions and particles: h/ch (process marker, 15.3%), ko/qo (relative "which," 13.8%), s/sh (comitative "with," 8.5%), ost/ok (vessel/container, 6.2%), da (dative/purpose, 6.0%), otr/ot (vessel variant, 5.9%).
+
+**Layer 3: Jat Reflex Audit.** ZFD shows Latin+Slavic mixing with no consistent jat reflex (expected for a pharmaceutical register using Latin technical vocabulary with Croatian grammatical framework). This "absent" pattern is itself a Ragusan fingerprint: the Republic of Ragusa operated bilingually.
+
+**Layer 4: Baseline Comparison.** ZFD vs Vinodol Code (1288, non-Ragusan Croatian legal text): shared Croatian function words *da, od, po, ko, sam, to* confirmed. Structural differences consistent with register difference (pharmaceutical vs legal), not language difference.
+
+**Layer 5: Serbian Elimination Test.** Four independent kill shots: (1) Latin not Greek pharmaceutical vocabulary, (2) Western not Eastern contact language patterns, (3) absence of Serbian-specific morphological markers, (4) Dalmatian coastal rather than continental vocabulary profile.
+
+**Current confidence levels:**
+
+| Claim | Confidence | Evidence |
+|-------|------------|----------|
+| South Slavic | 95% | Grammar, operators, case system |
+| Croatian (not Serbian) | 92% | Latin loans, Western contact, morphology |
+| Dalmatian coastal | 87% | Bilingual mixing, Italian code-switching |
+| Ragusan specifically | 80% | Franciscan pharmacy tradition, matched vocabulary |
+| Pharmaceutical register | 97% | 4x suffix concentration, operator semantics |
+| Early 15th century | 75% | Pre-standardization features (needs temporal analysis) |
+
+Full proof kit: [`validation/proof_kit/PROOF_KIT_v1.md`](validation/proof_kit/PROOF_KIT_v1.md)
 
 ---
 
