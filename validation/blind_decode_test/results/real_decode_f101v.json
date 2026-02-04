@@ -1,0 +1,930 @@
+{
+  "folio": "f101v",
+  "total_tokens": 37,
+  "known_stems": 24,
+  "unknown_stems": 13,
+  "known_ratio": 0.6486486486486487,
+  "operator_counts": {
+    "otr": 4,
+    "ost": 1,
+    "da": 1
+  },
+  "category_counts": {
+    "ingredient": 17,
+    "equipment": 5,
+    "action": 10,
+    "preparation": 1,
+    "measurement": 1
+  },
+  "average_confidence": 0.535,
+  "unknown_stem_list": [
+    "al",
+    "ala",
+    "aldy",
+    "labels",
+    "pllantr",
+    "plrv",
+    "sairaly",
+    "trextr",
+    "ytra"
+  ],
+  "validation": {
+    "kost_present": true,
+    "ol_present": true,
+    "operators_found": true
+  },
+  "coherence": 0.7016,
+  "tokens": [
+    {
+      "id": "f101v.1.2",
+      "eva": "folio",
+      "zfd": "plrolio",
+      "operator": null,
+      "operator_type": null,
+      "stem": "plrolio",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:plrolio=oil]",
+      "croatian": "plrolio",
+      "english": "oil",
+      "confidence": 0.7,
+      "rewrites": [
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.1.3",
+      "eva": "fv",
+      "zfd": "plrv",
+      "operator": null,
+      "operator_type": null,
+      "stem": "plrv",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:plrv=?]",
+      "croatian": "plrv",
+      "english": "[plrv]",
+      "confidence": 0.1,
+      "rewrites": [
+        "gallows: f→pr (unverified)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.3.1",
+      "eva": "labels",
+      "zfd": "labels",
+      "operator": null,
+      "operator_type": null,
+      "stem": "labels",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:labels=?]",
+      "croatian": "labels",
+      "english": "[labels]",
+      "confidence": 0.0,
+      "rewrites": [],
+      "notes": []
+    },
+    {
+      "id": "f101v.4.1",
+      "eva": "sairaly",
+      "zfd": "sairaly",
+      "operator": null,
+      "operator_type": null,
+      "stem": "sairaly",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:sairaly=?]",
+      "croatian": "sairaly",
+      "english": "[sairaly]",
+      "confidence": 0.0,
+      "rewrites": [],
+      "notes": []
+    },
+    {
+      "id": "f101v.5.1",
+      "eva": "otaldy",
+      "zfd": "otraldy",
+      "operator": "otr",
+      "operator_type": "vessel",
+      "stem": "aldy",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[OP:otr][STEM:aldy=?]",
+      "croatian": "otraldy",
+      "english": "vessel [aldy]",
+      "confidence": 0.25,
+      "rewrites": [
+        "operator: ot→otr"
+      ],
+      "notes": [
+        "Operator vessel/container (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.5.2",
+      "eva": "plant",
+      "zfd": "pllantr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "pllantr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:pllantr=?]",
+      "croatian": "pllantr",
+      "english": "[pllantr]",
+      "confidence": 0.25,
+      "rewrites": [
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.6.1",
+      "eva": "otal",
+      "zfd": "otral",
+      "operator": "otr",
+      "operator_type": "vessel",
+      "stem": "al",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[OP:otr][STEM:al=?]",
+      "croatian": "otral",
+      "english": "vessel [al]",
+      "confidence": 0.25,
+      "rewrites": [
+        "operator: ot→otr"
+      ],
+      "notes": [
+        "Operator vessel/container (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.6.2",
+      "eva": "plant",
+      "zfd": "pllantr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "pllantr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:pllantr=?]",
+      "croatian": "pllantr",
+      "english": "[pllantr]",
+      "confidence": 0.25,
+      "rewrites": [
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.7.1",
+      "eva": "yta",
+      "zfd": "ytra",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ytra",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:ytra=?]",
+      "croatian": "ytra",
+      "english": "[ytra]",
+      "confidence": 0.05,
+      "rewrites": [
+        "gallows: t→tr (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.8.1",
+      "eva": "dokor",
+      "zfd": "ostor",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ost",
+      "stem_known": true,
+      "stem_gloss": "bone",
+      "suffix": "or",
+      "suffix_semantic": "oil_related",
+      "expansion": "[STEM:ost=bone][SUF:or=oil_related]",
+      "croatian": "ostor",
+      "english": "bone",
+      "confidence": 0.8500000000000001,
+      "rewrites": [
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "suffix: or→or (oil)"
+      ],
+      "notes": [
+        "Stem: bone (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.8.2",
+      "eva": "plant",
+      "zfd": "pllantr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "pllantr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:pllantr=?]",
+      "croatian": "pllantr",
+      "english": "[pllantr]",
+      "confidence": 0.25,
+      "rewrites": [
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.9.1",
+      "eva": "orar",
+      "zfd": "orar",
+      "operator": null,
+      "operator_type": null,
+      "stem": "or",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "ar",
+      "suffix_semantic": "water_agent",
+      "expansion": "[STEM:or=oil][SUF:ar=water_agent]",
+      "croatian": "orar",
+      "english": "oil",
+      "confidence": 0.44999999999999996,
+      "rewrites": [
+        "suffix: ar→ar (water/agent)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.10.1",
+      "eva": "otorar",
+      "zfd": "otrorar",
+      "operator": "otr",
+      "operator_type": "vessel",
+      "stem": "or",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "ar",
+      "suffix_semantic": "water_agent",
+      "expansion": "[OP:otr][STEM:or=oil][SUF:ar=water_agent]",
+      "croatian": "otrorar",
+      "english": "vessel oil",
+      "confidence": 0.7,
+      "rewrites": [
+        "operator: ot→otr",
+        "suffix: ar→ar (water/agent)"
+      ],
+      "notes": [
+        "Operator vessel/container (CONFIRMED)",
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.11.1",
+      "eva": "otala",
+      "zfd": "otrala",
+      "operator": "otr",
+      "operator_type": "vessel",
+      "stem": "ala",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[OP:otr][STEM:ala=?]",
+      "croatian": "otrala",
+      "english": "vessel [ala]",
+      "confidence": 0.25,
+      "rewrites": [
+        "operator: ot→otr"
+      ],
+      "notes": [
+        "Operator vessel/container (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.11.2",
+      "eva": "plant",
+      "zfd": "pllantr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "pllantr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:pllantr=?]",
+      "croatian": "pllantr",
+      "english": "[pllantr]",
+      "confidence": 0.25,
+      "rewrites": [
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.12.1",
+      "eva": "soraly",
+      "zfd": "ori",
+      "operator": null,
+      "operator_type": null,
+      "stem": "or",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:or=oil][SUF:i=adjectival]",
+      "croatian": "ori",
+      "english": "oil",
+      "confidence": 0.44999999999999996,
+      "rewrites": [
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.13.1",
+      "eva": "okol",
+      "zfd": "ostol",
+      "operator": "ost",
+      "operator_type": "vessel",
+      "stem": "ol",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[OP:ost][STEM:ol=oil]",
+      "croatian": "ostol",
+      "english": "vessel oil",
+      "confidence": 0.55,
+      "rewrites": [
+        "operator: ok→ost"
+      ],
+      "notes": [
+        "Operator vessel/container (CONFIRMED)",
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.14.1",
+      "eva": "arom",
+      "zfd": "arom",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ar",
+      "stem_known": true,
+      "stem_gloss": "water",
+      "suffix": "om",
+      "suffix_semantic": "instrumental",
+      "expansion": "[STEM:ar=water][SUF:om=instrumental]",
+      "croatian": "arom",
+      "english": "with water",
+      "confidence": 0.44999999999999996,
+      "rewrites": [
+        "suffix: om→om (with/by)"
+      ],
+      "notes": [
+        "Stem: water (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.15.1",
+      "eva": "oraram",
+      "zfd": "oram",
+      "operator": null,
+      "operator_type": null,
+      "stem": "or",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "am",
+      "suffix_semantic": "instrumental",
+      "expansion": "[STEM:or=oil][SUF:am=instrumental]",
+      "croatian": "oram",
+      "english": "with oil",
+      "confidence": 0.44999999999999996,
+      "rewrites": [
+        "suffix: am→am (by means of)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.16.1",
+      "eva": "or",
+      "zfd": "or",
+      "operator": null,
+      "operator_type": null,
+      "stem": "or",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:or=oil]",
+      "croatian": "or",
+      "english": "oil",
+      "confidence": 0.3,
+      "rewrites": [],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.17.1",
+      "eva": "dytoly",
+      "zfd": "oli",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ol",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:ol=oil][SUF:i=adjectival]",
+      "croatian": "oli",
+      "english": "oil",
+      "confidence": 0.6499999999999999,
+      "rewrites": [
+        "gallows: t→tr (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.17.2",
+      "eva": "plant",
+      "zfd": "pllantr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "pllantr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:pllantr=?]",
+      "croatian": "pllantr",
+      "english": "[pllantr]",
+      "confidence": 0.25,
+      "rewrites": [
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.18.1",
+      "eva": "olkor",
+      "zfd": "olor",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ol",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "or",
+      "suffix_semantic": "oil_related",
+      "expansion": "[STEM:ol=oil][SUF:or=oil_related]",
+      "croatian": "olor",
+      "english": "oil",
+      "confidence": 0.8500000000000001,
+      "rewrites": [
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "suffix: or→or (oil)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.19.1",
+      "eva": "dolary",
+      "zfd": "oli",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ol",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:ol=oil][SUF:i=adjectival]",
+      "croatian": "oli",
+      "english": "oil",
+      "confidence": 0.44999999999999996,
+      "rewrites": [
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.20.1",
+      "eva": "odor",
+      "zfd": "odor",
+      "operator": null,
+      "operator_type": null,
+      "stem": "odor",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:odor=oil]",
+      "croatian": "odor",
+      "english": "oil",
+      "confidence": 0.3,
+      "rewrites": [],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.21.1",
+      "eva": "olaran",
+      "zfd": "oln",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ol",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": "n",
+      "suffix_semantic": "noun",
+      "expansion": "[STEM:ol=oil][SUF:n=noun]",
+      "croatian": "oln",
+      "english": "oil",
+      "confidence": 0.44999999999999996,
+      "rewrites": [
+        "suffix: n→n (noun ending)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.23.1",
+      "eva": "text",
+      "zfd": "trextr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "trextr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:trextr=?]",
+      "croatian": "trextr",
+      "english": "[trextr]",
+      "confidence": 0.05,
+      "rewrites": [
+        "gallows: t→tr (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f101v.24.1",
+      "eva": "tolchorcheopororodycpheyrsheefolsoiinotsheeyotofoldkchopcholychororchororsyrootdorarrootokoraiinorolodain",
+      "zfd": "trorn",
+      "operator": null,
+      "operator_type": null,
+      "stem": "tror",
+      "stem_known": true,
+      "stem_gloss": "boil/roast",
+      "suffix": "n",
+      "suffix_semantic": "noun",
+      "expansion": "[STEM:tror=boil/roast][SUF:n=noun]",
+      "croatian": "trorn",
+      "english": "boil/roast",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: n→n (noun ending)"
+      ],
+      "notes": [
+        "Stem: boil (CANDIDATE)"
+      ]
+    },
+    {
+      "id": "f101v.25.1",
+      "eva": "oraiinorooromamchorsaiinokorcheeorsheeolqokolfoldolqoorcheeyqokeodoeeorchoysrootokeeodyrootchodaiincthyokodydar",
+      "zfd": "dainar",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "ar",
+      "suffix_semantic": "water_agent",
+      "expansion": "[STEM:dain=given/added][SUF:ar=water_agent]",
+      "croatian": "dainar",
+      "english": "given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: ar→ar (water/agent)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.26.1",
+      "eva": "ycheoroeodaincheokalyykhodycheeodsoraiinqoeeyctheyfoldeocthydainchedodydy",
+      "zfd": "daini",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:dain=given/added][SUF:i=adjectival]",
+      "croatian": "daini",
+      "english": "given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.27.1",
+      "eva": "ksharlolkeeolotalorolaiinokeodykeeydainolcheolfoldopcheolctheyqekeoldyqocthorsheodyqockheeyodaiinshoytolaiirsodaiindygutter",
+      "zfd": "dainr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "r",
+      "suffix_semantic": "agent",
+      "expansion": "[STEM:dain=given/added][SUF:r=agent]",
+      "croatian": "dainr",
+      "english": "given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ck→cst",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: r→r (agent/doer)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.28.1",
+      "eva": "oaiinololordaiinokeeyqokykeoldaiinqockhydaiinolchfolddarqokeoldoloraiinoldaiinkeeolrchqokeeeorsydycheorokeeycholdodargutter",
+      "zfd": "dainr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "r",
+      "suffix_semantic": "agent",
+      "expansion": "[STEM:dain=given/added][SUF:r=agent]",
+      "croatian": "dainr",
+      "english": "given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: ck→cst",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: r→r (agent/doer)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.29.1",
+      "eva": "teealsheolqokeorqkhololchorchokeychorctheeydasfolddaiincheeodycheeykeocheoldaiiindeeorcheedy",
+      "zfd": "dainedi",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "edi",
+      "suffix_semantic": "processed",
+      "expansion": "[STEM:dain=given/added][SUF:edi=processed]",
+      "croatian": "dainedi",
+      "english": "given/added prepared",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: aiin→ain",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: edy→edi (prepared/processed)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.30.1",
+      "eva": "daiindairyteolchorqockholdaiinckheeycheykcheydosfoldiinokeeyckheolcheodykcheoldaiineteeysctheodyctheockhoshoolchor",
+      "zfd": "dadainor",
+      "operator": "da",
+      "operator_type": "dative",
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "or",
+      "suffix_semantic": "oil_related",
+      "expansion": "[OP:da][STEM:dain=given/added][SUF:or=oil_related]",
+      "croatian": "dadainor",
+      "english": "dose given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "operator: da→da",
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ck→cst",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: or→or (oil)"
+      ],
+      "notes": [
+        "Operator dose/give/add (CONFIRMED)",
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.31.1",
+      "eva": "olaiinokeolcheokolchessheeyqoorqokeodycheorokeyfoldoiincheeyctheyoryctheeyqokeeysholodycheoloralarsheyqokarary",
+      "zfd": "osti",
+      "operator": null,
+      "operator_type": null,
+      "stem": "ost",
+      "stem_known": true,
+      "stem_gloss": "bone",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:ost=bone][SUF:i=adjectival]",
+      "croatian": "osti",
+      "english": "bone",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: bone (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.32.1",
+      "eva": "solcholcholyokeeydalqolshckheolcholcthearkeeyfoldcheeoolchsblotoraiinqokeeeysaiirqodaiincheolqokeeydaiincheodam",
+      "zfd": "dainam",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "am",
+      "suffix_semantic": "instrumental",
+      "expansion": "[STEM:dain=given/added][SUF:am=instrumental]",
+      "croatian": "dainam",
+      "english": "with given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ee→e",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ck→cst",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: am→am (by means of)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f101v.33.1",
+      "eva": "teolcheolekcheyfoldorcheolctholblotcholaiincholqkos",
+      "zfd": "treolheolestrheyplroldorheolctrrholblotrholainholqstros",
+      "operator": null,
+      "operator_type": null,
+      "stem": "treolheolestrheyplroldorheolctrrholblotrholainholqstros",
+      "stem_known": true,
+      "stem_gloss": "flour/grain",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:treolheolestrheyplroldorheolctrrholblotrholainholqstros=flour/grain]",
+      "croatian": "treolheolestrheyplroldorheolctrrholblotrholainholqstros",
+      "english": "flour/grain",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)"
+      ],
+      "notes": [
+        "Stem: flour (CONFIRMED)"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,423 @@
+{
+  "folio": "f10r",
+  "total_tokens": 15,
+  "known_stems": 13,
+  "unknown_stems": 2,
+  "known_ratio": 0.8666666666666667,
+  "operator_counts": {
+    "ko": 3
+  },
+  "category_counts": {
+    "ingredient": 5,
+    "action": 10,
+    "grammar": 3
+  },
+  "average_confidence": 0.817,
+  "unknown_stem_list": [
+    "plrr",
+    "trextr"
+  ],
+  "validation": {
+    "kost_present": true,
+    "ol_present": false,
+    "operators_found": true
+  },
+  "coherence": 0.6234,
+  "tokens": [
+    {
+      "id": "f10r.1.2",
+      "eva": "folio",
+      "zfd": "plrolio",
+      "operator": null,
+      "operator_type": null,
+      "stem": "plrolio",
+      "stem_known": true,
+      "stem_gloss": "oil",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:plrolio=oil]",
+      "croatian": "plrolio",
+      "english": "oil",
+      "confidence": 0.7,
+      "rewrites": [
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)"
+      ],
+      "notes": [
+        "Stem: oil (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.1.3",
+      "eva": "fr",
+      "zfd": "plrr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "plrr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:plrr=?]",
+      "croatian": "plrr",
+      "english": "[plrr]",
+      "confidence": 0.1,
+      "rewrites": [
+        "gallows: f→pr (unverified)",
+        "gallows: p→pl (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f10r.3.1",
+      "eva": "text",
+      "zfd": "trextr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "trextr",
+      "stem_known": false,
+      "stem_gloss": "",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:trextr=?]",
+      "croatian": "trextr",
+      "english": "[trextr]",
+      "confidence": 0.05,
+      "rewrites": [
+        "gallows: t→tr (unverified)"
+      ],
+      "notes": []
+    },
+    {
+      "id": "f10r.4.1",
+      "eva": "pchocthyshorocthodychorchypchodolchopchalypchkom",
+      "zfd": "šorom",
+      "operator": null,
+      "operator_type": null,
+      "stem": "šor",
+      "stem_known": true,
+      "stem_gloss": "soak/infuse",
+      "suffix": "om",
+      "suffix_semantic": "instrumental",
+      "expansion": "[STEM:šor=soak/infuse][SUF:om=instrumental]",
+      "croatian": "šorom",
+      "english": "with soak/infuse",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: om→om (with/by)"
+      ],
+      "notes": [
+        "Stem: soak (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.5.1",
+      "eva": "dcheycthoorcharchtyoschairotytcholokydaiinetyd",
+      "zfd": "dheyctrrhoorharhtryošairotrytrholostrydainetryd",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dheyctrrhoorharhtryošairotrytrholostrydainetryd",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": null,
+      "suffix_semantic": null,
+      "expansion": "[STEM:dheyctrrhoorharhtryošairotrytrholostrydainetryd=given/added]",
+      "croatian": "dheyctrrhoorharhtryošairotrytrholostrydainetryd",
+      "english": "given/added",
+      "confidence": 0.8,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.6.1",
+      "eva": "qotorotchydaiinchocthyqotchycholorytydydy",
+      "zfd": "kodaini",
+      "operator": "ko",
+      "operator_type": "relative",
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[OP:ko][STEM:dain=given/added][SUF:i=adjectival]",
+      "croatian": "kodaini",
+      "english": "which given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "operator: qo→ko",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: ct→ctr",
+        "gallows: t→tr (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Operator which/that/quantity (CONFIRMED)",
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.7.1",
+      "eva": "sorchaiinchcthycthockhyoraiinchtchordoiirody",
+      "zfd": "hori",
+      "operator": null,
+      "operator_type": null,
+      "stem": "hor",
+      "stem_known": true,
+      "stem_gloss": "cook/combine",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:hor=cook/combine][SUF:i=adjectival]",
+      "croatian": "hori",
+      "english": "cook/combine",
+      "confidence": 0.75,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: ck→cst",
+        "mid-word: ct→ctr",
+        "gallows: t→tr (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: cook (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.8.1",
+      "eva": "qokchyqotcholcholcthy",
+      "zfd": "koholi",
+      "operator": "ko",
+      "operator_type": "relative",
+      "stem": "hol",
+      "stem_known": true,
+      "stem_gloss": "flour/grain",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[OP:ko][STEM:hol=flour/grain][SUF:i=adjectival]",
+      "croatian": "koholi",
+      "english": "which flour/grain",
+      "confidence": 1.0,
+      "rewrites": [
+        "operator: qo→ko",
+        "mid-word: ch→h",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Operator which/that/quantity (CONFIRMED)",
+        "Stem: flour (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.9.1",
+      "eva": "ycheorcthychorcthaiinqoctholydyplantchytaiinshy",
+      "zfd": "holi",
+      "operator": null,
+      "operator_type": null,
+      "stem": "hol",
+      "stem_known": true,
+      "stem_gloss": "flour/grain",
+      "suffix": "i",
+      "suffix_semantic": "adjectival",
+      "expansion": "[STEM:hol=flour/grain][SUF:i=adjectival]",
+      "croatian": "holi",
+      "english": "flour/grain",
+      "confidence": 0.95,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ct→ctr",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: y→i (adjective marker)"
+      ],
+      "notes": [
+        "Stem: flour (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.10.1",
+      "eva": "dchyqokcholykchaiinytydaiincthplantdaindairam",
+      "zfd": "dainam",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "am",
+      "suffix_semantic": "instrumental",
+      "expansion": "[STEM:dain=given/added][SUF:am=instrumental]",
+      "croatian": "dainam",
+      "english": "with given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: ct→ctr",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: am→am (by means of)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.11.1",
+      "eva": "qotchorchorotolcholcholorplantcholdaiindar",
+      "zfd": "kodainar",
+      "operator": "ko",
+      "operator_type": "relative",
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "ar",
+      "suffix_semantic": "water_agent",
+      "expansion": "[OP:ko][STEM:dain=given/added][SUF:ar=water_agent]",
+      "croatian": "kodainar",
+      "english": "which given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "operator: qo→ko",
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: ar→ar (water/agent)"
+      ],
+      "notes": [
+        "Operator which/that/quantity (CONFIRMED)",
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.12.1",
+      "eva": "oykchorshorchorchykaiiindyplantchodaiinplant",
+      "zfd": "dainr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "r",
+      "suffix_semantic": "agent",
+      "expansion": "[STEM:dain=given/added][SUF:r=agent]",
+      "croatian": "dainr",
+      "english": "given/added",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: aiin→ain",
+        "gallows: k→st (known stem)",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: r→r (agent/doer)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    },
+    {
+      "id": "f10r.13.1",
+      "eva": "oqotarotorcfhycthorosainplantytoiinplant",
+      "zfd": "trorr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "tror",
+      "stem_known": true,
+      "stem_gloss": "boil/roast",
+      "suffix": "r",
+      "suffix_semantic": "agent",
+      "expansion": "[STEM:tror=boil/roast][SUF:r=agent]",
+      "croatian": "trorr",
+      "english": "boil/roast",
+      "confidence": 1.0,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ct→ctr",
+        "gallows: t→tr (known stem)",
+        "gallows: f→pr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: r→r (agent/doer)"
+      ],
+      "notes": [
+        "Stem: boil (CANDIDATE)"
+      ]
+    },
+    {
+      "id": "f10r.14.1",
+      "eva": "rotchoshorqotyqotorcthydplantotarplant",
+      "zfd": "trorr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "tror",
+      "stem_known": true,
+      "stem_gloss": "boil/roast",
+      "suffix": "r",
+      "suffix_semantic": "agent",
+      "expansion": "[STEM:tror=boil/roast][SUF:r=agent]",
+      "croatian": "trorr",
+      "english": "boil/roast",
+      "confidence": 0.95,
+      "rewrites": [
+        "mid-word: ch→h",
+        "mid-word: sh→š",
+        "mid-word: ct→ctr",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: r→r (agent/doer)"
+      ],
+      "notes": [
+        "Stem: boil (CANDIDATE)"
+      ]
+    },
+    {
+      "id": "f10r.15.1",
+      "eva": "rodaiindaiinqotchyqotorplant",
+      "zfd": "dainr",
+      "operator": null,
+      "operator_type": null,
+      "stem": "dain",
+      "stem_known": true,
+      "stem_gloss": "given/added",
+      "suffix": "r",
+      "suffix_semantic": "agent",
+      "expansion": "[STEM:dain=given/added][SUF:r=agent]",
+      "croatian": "dainr",
+      "english": "given/added",
+      "confidence": 0.95,
+      "rewrites": [
+        "mid-word: ii→i",
+        "mid-word: ch→h",
+        "gallows: t→tr (known stem)",
+        "gallows: p→pl (known stem)",
+        "suffix: r→r (agent/doer)"
+      ],
+      "notes": [
+        "Stem: give (CONFIRMED)"
+      ]
+    }
+  ]
+}
