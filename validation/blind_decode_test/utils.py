@@ -31,6 +31,9 @@ def shuffle_eva_text(eva_text: str, seed: int) -> str:
 
     This creates a null baseline: same vocabulary, same word count per line,
     but words randomly reassigned to different positions.
+
+    EVA transcriptions use dots as word separators, so we split on both
+    dots and spaces.
     """
     rng = random.Random(seed)
 
@@ -39,7 +42,9 @@ def shuffle_eva_text(eva_text: str, seed: int) -> str:
     all_words = []
     line_lengths = []
     for line in lines:
-        words = line.strip().split()
+        # EVA uses dots as word separators - normalize to spaces first
+        normalized = line.strip().replace('.', ' ')
+        words = normalized.split()
         # Skip comment lines, headers, section markers, and empty lines
         if not words or words[0].startswith('#') or words[0].startswith('<') or words[0].startswith('=') or words[0].startswith('['):
             line_lengths.append(0)
@@ -50,7 +55,7 @@ def shuffle_eva_text(eva_text: str, seed: int) -> str:
     # Shuffle all words
     rng.shuffle(all_words)
 
-    # Reconstruct with original line lengths
+    # Reconstruct with original line lengths (using dots as separators to match original format)
     shuffled_lines = []
     word_idx = 0
     for i, length in enumerate(line_lengths):
@@ -58,7 +63,7 @@ def shuffle_eva_text(eva_text: str, seed: int) -> str:
             shuffled_lines.append(lines[i])  # preserve comments/headers
         else:
             line_words = all_words[word_idx:word_idx + length]
-            shuffled_lines.append(' '.join(line_words))
+            shuffled_lines.append('.'.join(line_words))
             word_idx += length
 
     return '\n'.join(shuffled_lines)
