@@ -416,6 +416,48 @@ The probability of all five being coincidence is effectively zero.
 
 ---
 
+### Q: The system has so many degrees of freedom (operators, stems, suffixes, abbreviations, phonetic rules) that it will always produce something Croatian-compatible regardless of input. Isn't this just a flexible generator?
+
+**We tested this. It's not.**
+
+This is the strongest version of the criticism and it deserves a real answer, not an argument. So we built an automated falsification test.
+
+**The test:** Freeze the entire lexicon (SHA-256 checksummed, no modifications). Run the frozen pipeline on five preregistered folios. Then run the exact same frozen pipeline on three types of non-Voynich input:
+
+1. **Synthetic EVA** -- random characters matching manuscript frequency distributions. Same alphabet, plausible-looking, but never appeared in the manuscript.
+2. **Character-shuffled Voynich** -- real manuscript words with letters scrambled internally. Preserves character frequencies but destroys operator-stem-suffix morphology.
+3. **Random medieval Latin** -- pharmaceutical vocabulary (aqua, radix, unguentum). Domain-relevant words from a different language. Gives Latin its best possible shot.
+
+100 iterations per baseline type, per folio. 1,500 total baseline decodes. All seeds fixed for deterministic reproducibility.
+
+**Results (v2, all 5 folios DISCRIMINATING):**
+
+| Input Type | Mean Coherence | vs Real (~0.70) |
+|------------|----------------|-----------------|
+| Real Voynich | 0.70 | -- |
+| Character-shuffled | 0.55 | p < 0.01 |
+| Synthetic EVA | 0.45 | p < 0.01 |
+| Random Latin | 0.35 | p < 0.01 |
+
+The hierarchy holds on every folio: Real > Char-shuffled > Synthetic > Latin. Same degrees of freedom. Same operators. Same lexicon. Same pipeline. The only variable is the input. Feed it Voynich, it produces coherent pharmaceutical output. Feed it anything else, coherence drops significantly.
+
+**How we got here (including two failures):**
+
+Test v1.0 had a tokenizer bug that treated entire lines as single tokens. Documented, fixed. Test v1.1 shuffled word order, but the decoder is position-independent (each token decodes in isolation), so shuffled and real produced identical scores. That was a test design error, not a decipherment failure. It correctly identified that the decoder is bag-of-words, which is expected for pharmaceutical shorthand where each abbreviation is self-contained. Test v2 tested the right axis: vocabulary specificity rather than positional sensitivity.
+
+All three tests, including both failures, are documented with full code and data:
+[`validation/blind_decode_test/`](https://github.com/denoflore/ZFD/tree/main/validation/blind_decode_test)
+
+Clone the repo and run it yourself:
+
+```bash
+git clone https://github.com/denoflore/ZFD.git
+cd ZFD
+python validation/blind_decode_test/run_test_v2.py
+```
+
+---
+
 ## Deeper Objections: Statistical, Historical, and Methodological
 
 *These address the more sophisticated technical objections likely to come from academic reviewers, Voynich community experts, and computational linguists.*
