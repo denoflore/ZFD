@@ -60,11 +60,13 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 
 | Folio | Real Coherence | Shuffled Mean +/- SD | Z-score | p-value | Verdict |
 |-------|----------------|----------------------|---------|---------|---------|
-| f10r | 0.7043 | 0.7043 +/- 0.0000 | 0.00 | 1.0000 | MARGINAL |
-| f23v | 0.7655 | 0.7655 +/- 0.0000 | 0.00 | 1.0000 | PASS_PREDICTIONS |
-| f47r | 0.7001 | 0.7001 +/- 0.0000 | 0.00 | 1.0000 | MARGINAL |
-| f89r | 0.6938 | 0.6938 +/- 0.0000 | 0.00 | 1.0000 | POSITION_INDEPENDENT |
-| f101v | 0.7442 | 0.7442 +/- 0.0000 | 0.00 | 1.0000 | PASS_PREDICTIONS |
+| f10r | 0.7043 | 0.7043 +/- 0.0000 | 0.00 | 1.0000 | INCONCLUSIVE* |
+| f23v | 0.7655 | 0.7655 +/- 0.0000 | 0.00 | 1.0000 | INCONCLUSIVE* |
+| f47r | 0.7001 | 0.7001 +/- 0.0000 | 0.00 | 1.0000 | INCONCLUSIVE* |
+| f89r | 0.6938 | 0.6938 +/- 0.0000 | 0.00 | 1.0000 | INCONCLUSIVE* |
+| f101v | 0.7442 | 0.7442 +/- 0.0000 | 0.00 | 1.0000 | INCONCLUSIVE* |
+
+*\*All folios return identical scores for real and shuffled input because the decoder is position-independent. Shuffling word order in a bag-of-words system is a no-op. This is a test design error, not a decipherment result. See v2 for the correct test.*
 
 
 ## Prediction Accuracy
@@ -99,7 +101,7 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 - Z-score: 0.00
 - p-value: 1.0000
 - Effect size: 0.00
-- Verdict: **MARGINAL**
+- Verdict: **INCONCLUSIVE** (position-independent decoder, test cannot discriminate)
 
 ### f23v
 
@@ -118,7 +120,7 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 - Z-score: 0.00
 - p-value: 1.0000
 - Effect size: 0.00
-- Verdict: **PASS_PREDICTIONS**
+- Verdict: **INCONCLUSIVE** (position-independent decoder, test cannot discriminate)
 
 ### f47r
 
@@ -137,7 +139,7 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 - Z-score: 0.00
 - p-value: 1.0000
 - Effect size: 0.00
-- Verdict: **MARGINAL**
+- Verdict: **INCONCLUSIVE** (position-independent decoder, test cannot discriminate)
 
 ### f89r
 
@@ -156,7 +158,7 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 - Z-score: 0.00
 - p-value: 1.0000
 - Effect size: 0.00
-- Verdict: **POSITION_INDEPENDENT**
+- Verdict: **INCONCLUSIVE** (position-independent decoder, test cannot discriminate)
 
 ### f101v
 
@@ -175,7 +177,7 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 - Z-score: 0.00
 - p-value: 1.0000
 - Effect size: 0.00
-- Verdict: **PASS_PREDICTIONS**
+- Verdict: **INCONCLUSIVE** (position-independent decoder, test cannot discriminate)
 
 ## Interpretation
 
@@ -193,11 +195,19 @@ which changes the VOCABULARY rather than the ORDER. See:
 
 ## Key Statement
 
+*The following was the preregistered key statement written before the test ran:*
+
 > "If the shuffled baseline produces coherence scores statistically indistinguishable 
 > from the real decode, this test has failed and the degrees-of-freedom criticism is 
 > valid. If the real decode produces significantly higher coherence than shuffled input 
 > through the same pipeline, the decoder is detecting structure that exists in the 
 > manuscript, not generating it from flexible parameters."
+
+*Post-test note: The shuffled baselines DID produce indistinguishable scores, but this 
+is because the test shuffled word ORDER in a position-independent decoder. This is a 
+test design error (shuffling is a no-op on bag-of-words systems), not evidence for the 
+degrees-of-freedom criticism. The correct test (v2) changes VOCABULARY instead of ORDER 
+and passed on all 5 folios. See: `results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md`*
 
 ---
 
