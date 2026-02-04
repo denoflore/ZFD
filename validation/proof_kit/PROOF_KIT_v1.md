@@ -243,10 +243,18 @@ Serbian eliminated by 4 independent convergent tests. The linguistic similaritie
 South Slavic grammar) are real but are overridden by contact language, institutional, and 
 historical evidence that collectively exclude Serbian origin.
 
-### Updated Confidence Levels (post-Serbian elimination):
+### Updated Confidence Levels (post-remaining analyses):
 - South Slavic: **95%** (unchanged)
-- Croatian: **92%** (up from 85%, Serbian now eliminated)
-- Dalmatian coastal: **85%** (up from 80%, institutional evidence strengthened)
-- Ragusan specifically: **75%** (up from 70%, pharmacy tradition alignment)
-- Pharmaceutical register: **95%** (unchanged)
-- Early 15th century: **75%** (unchanged)
+- Croatian: **92%** (Serbian eliminated by 4 independent tests)
+- Dalmatian coastal: **87%** (bilingual mixing confirmed in corpus comparison)
+- Ragusan specifically: **82%** (V27 speciarii/apotheca + Franciscan pharmacy tradition)
+- Pharmaceutical register: **97%** (4x suffix concentration, register-controlled JSD)
+- Early 15th century: **82%** (zero Italian loanwords, ch- conventions, pre-standardization)
+
+### Temporal Analysis Results (Feb 2026)
+The temporal analysis that was pending at initial publication has now been completed:
+- **Zero Italian loanwords** in ZFD (decisive: Dundo Maroje 1551 has 9 exact + 6 stem matches)
+- **ch- spelling conventions** (12.7% of types, pre-standardization)
+- **V27 pharmaceutical infrastructure** documented: speciarii, apotheca, medicus in 1358-1364 Ragusa
+- **Date window tightened** to approximately 1380-1440
+- Full report: [REMAINING_ANALYSES_REPORT_v1.md](../corpus_comparison/REMAINING_ANALYSES_REPORT_v1.md)
