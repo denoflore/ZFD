@@ -1,10 +1,23 @@
-# The Zuger Functional Decipherment (ZFD)
-## The Voynich Manuscript is Solved
+# Zuger Functional Decipherment of The Voynich Manuscript
 
-**Status:** COMPLETE ✓  
-**Coverage:** 96.8% morphological token coverage  
-**Validation:** Native speaker confirmed (Croatian)  
-**Nature Submission:** Tracking #2026-02-03422  
+## Structural Decipherment Achieved
+
+**Status:** Structural Decipherment Complete ✓
+**Initial pre-release:** August 2025
+
+**Scope:** Writing system mechanics, morphology, and constrained functional semantics
+
+**Coverage:** 96.8% morphological token coverage under frozen lexicon
+
+**Validation:**
+- Blind decode falsification tests passed (real Voynich >> shuffled, synthetic, and Latin baselines) | [Results](validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md)
+- Negative results and failed runs documented and preserved
+- Croatian linguistic alignment confirmed by independent certified native-speaker review (court-certified Croatian translator-interpreter)
+
+**Reproducibility:** Fully automated, deterministic pipeline with published null baselines and one-command execution | [Run tests](validation/blind_decode_test/)
+
+**Methodology:** Operator-stem-suffix shorthand system with preregistered constraints and frozen mappings | [Pipeline](zfd_decoder/)
+
 **Date:** February 2026
 
 ---
