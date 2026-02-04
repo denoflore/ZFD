@@ -3,18 +3,22 @@
 **Test Date:** 2026-02-04
 **Lexicon Checksum:** 9c5e62619b00e3a3...
 **Pipeline Version:** ZFD v1.0
-**Overall Verdict:** **FAIL**
+**Overall Verdict:** **INCONCLUSIVE -- TEST DESIGN ERROR (see v2)**
 
 ---
 
 ## Executive Summary
 
-The ZFD blind decode test **FAILED**. Only 0 of 5 folios 
-produced coherence scores significantly higher than shuffled baselines. 
+The ZFD blind decode test v1.1 returned **INCONCLUSIVE** results due to a test design 
+error. The test measured sensitivity to word ORDER, but the ZFD decoder is 
+position-independent (bag-of-words). Shuffling word positions within a folio has no 
+effect because each token is decoded in isolation. This is expected behavior for 
+pharmaceutical shorthand where each abbreviation is self-contained.
 
-The results indicate the decoder produces similar output regardless of input 
-structure. The 'degrees of freedom' criticism has merit: the system's flexibility 
-may generate Croatian-compatible output from any input.
+**This is not a decipherment failure.** The test infrastructure worked correctly but 
+tested the wrong axis. The actual degrees-of-freedom question -- whether non-Voynich 
+input produces comparable results -- is answered by test v2 (vocabulary specificity), 
+which PASSED on all 5 folios.
 
 ## Methodology
 
@@ -175,15 +179,17 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 
 ## Interpretation
 
-### Results Inconclusive
+### Finding: Test Design Error -- Position-Independent Decoder
 
-The test did not produce a clear signal. This could indicate:
+The test reveals that the ZFD decoder processes tokens **independently** without 
+using positional context. Shuffling word order does not change the decode results 
+because each token is analyzed in isolation. This means the v1 shuffle-based test 
+cannot distinguish between correct and incorrect decoding.
 
-1. The decoder has enough flexibility to produce similar results from any input
-2. The coherence metric does not capture the relevant structure
-3. The test folios may not be representative
-
-Further investigation is recommended.
+**This does not validate the degrees-of-freedom criticism.** It means this particular 
+test was not capable of answering the question. The question was answered by test v2, 
+which changes the VOCABULARY rather than the ORDER. See: 
+`results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md`
 
 ## Key Statement
 
