@@ -1,13 +1,13 @@
 {
-  "test_date": "2026-02-04T17:12:44.288935",
+  "test_date": "2026-02-04T17:20:45.112557",
   "lexicon_sha256": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
   "overall_verdict": "FAIL",
   "folios": {
     "f10r": {
       "folio": "f10r",
-      "real_coherence": 0.6234,
-      "real_known_ratio": 0.8667,
-      "shuffled_mean": 0.6234,
+      "real_coherence": 0.7043,
+      "real_known_ratio": 0.4157,
+      "shuffled_mean": 0.7043,
       "shuffled_std": 0.0,
       "z_score": 0,
       "p_value": 1.0,
@@ -19,6 +19,84 @@
       },
       "shuffled_prediction_rate": 1.0,
       "category_overlap_score": 0.6667,
+      "verdict": "MARGINAL",
+      "details": {
+        "coherence_threshold": 0.7,
+        "coherence_pass": true,
+        "p_threshold": 0.01,
+        "p_pass": false,
+        "known_ratio_threshold": 0.3,
+        "known_ratio_pass": true
+      }
+    },
+    "f23v": {
+      "folio": "f23v",
+      "real_coherence": 0.7655,
+      "real_known_ratio": 0.5783,
+      "shuffled_mean": 0.7655,
+      "shuffled_std": 0.0,
+      "z_score": 0,
+      "p_value": 1.0,
+      "effect_size": 0,
+      "predictions_met": {
+        "operators": true,
+        "stems": true,
+        "categories": true
+      },
+      "shuffled_prediction_rate": 1.0,
+      "category_overlap_score": 1.0,
+      "verdict": "PASS_PREDICTIONS",
+      "details": {
+        "coherence_threshold": 0.7,
+        "coherence_pass": true,
+        "p_threshold": 0.01,
+        "p_pass": false,
+        "known_ratio_threshold": 0.3,
+        "known_ratio_pass": true
+      }
+    },
+    "f47r": {
+      "folio": "f47r",
+      "real_coherence": 0.7001,
+      "real_known_ratio": 0.3902,
+      "shuffled_mean": 0.7001,
+      "shuffled_std": 0.0,
+      "z_score": 0,
+      "p_value": 1.0,
+      "effect_size": 0,
+      "predictions_met": {
+        "operators": true,
+        "stems": false,
+        "categories": true
+      },
+      "shuffled_prediction_rate": 1.0,
+      "category_overlap_score": 0.6667,
+      "verdict": "MARGINAL",
+      "details": {
+        "coherence_threshold": 0.7,
+        "coherence_pass": true,
+        "p_threshold": 0.01,
+        "p_pass": false,
+        "known_ratio_threshold": 0.3,
+        "known_ratio_pass": true
+      }
+    },
+    "f89r": {
+      "folio": "f89r",
+      "real_coherence": 0.6938,
+      "real_known_ratio": 0.3834,
+      "shuffled_mean": 0.6938,
+      "shuffled_std": 0.0,
+      "z_score": 0,
+      "p_value": 1.0,
+      "effect_size": 0,
+      "predictions_met": {
+        "operators": true,
+        "stems": true,
+        "categories": true
+      },
+      "shuffled_prediction_rate": 1.0,
+      "category_overlap_score": 1.0,
       "verdict": "POSITION_INDEPENDENT",
       "details": {
         "coherence_threshold": 0.7,
@@ -28,10 +106,36 @@
         "known_ratio_threshold": 0.3,
         "known_ratio_pass": true
       }
+    },
+    "f101v": {
+      "folio": "f101v",
+      "real_coherence": 0.7442,
+      "real_known_ratio": 0.524,
+      "shuffled_mean": 0.7442,
+      "shuffled_std": 0.0,
+      "z_score": 0,
+      "p_value": 1.0,
+      "effect_size": 0,
+      "predictions_met": {
+        "operators": true,
+        "stems": true,
+        "categories": true
+      },
+      "shuffled_prediction_rate": 1.0,
+      "category_overlap_score": 0.75,
+      "verdict": "PASS_PREDICTIONS",
+      "details": {
+        "coherence_threshold": 0.7,
+        "coherence_pass": true,
+        "p_threshold": 0.01,
+        "p_pass": false,
+        "known_ratio_threshold": 0.3,
+        "known_ratio_pass": true
+      }
     }
   },
   "summary": {
-    "folios_tested": 1,
+    "folios_tested": 5,
     "folios_passing": 0,
     "folios_required": 4,
     "overall_p": 1.0,

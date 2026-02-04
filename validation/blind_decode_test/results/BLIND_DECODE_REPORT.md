@@ -9,7 +9,7 @@
 
 ## Executive Summary
 
-The ZFD blind decode test **FAILED**. Only 0 of 1 folios 
+The ZFD blind decode test **FAILED**. Only 0 of 5 folios 
 produced coherence scores significantly higher than shuffled baselines. 
 
 The results indicate the decoder produces similar output regardless of input 
@@ -56,11 +56,11 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 
 | Folio | Real Coherence | Shuffled Mean +/- SD | Z-score | p-value | Verdict |
 |-------|----------------|----------------------|---------|---------|---------|
-| f10r | 0.6234 | 0.6234 +/- 0.0000 | 0.00 | 1.0000 | POSITION_INDEPENDENT |
-| f23v | 0.0000 | 0.0000 +/- 0.0000 | 0.00 | 1.0000 | N/A |
-| f47r | 0.0000 | 0.0000 +/- 0.0000 | 0.00 | 1.0000 | N/A |
-| f89r | 0.0000 | 0.0000 +/- 0.0000 | 0.00 | 1.0000 | N/A |
-| f101v | 0.0000 | 0.0000 +/- 0.0000 | 0.00 | 1.0000 | N/A |
+| f10r | 0.7043 | 0.7043 +/- 0.0000 | 0.00 | 1.0000 | MARGINAL |
+| f23v | 0.7655 | 0.7655 +/- 0.0000 | 0.00 | 1.0000 | PASS_PREDICTIONS |
+| f47r | 0.7001 | 0.7001 +/- 0.0000 | 0.00 | 1.0000 | MARGINAL |
+| f89r | 0.6938 | 0.6938 +/- 0.0000 | 0.00 | 1.0000 | POSITION_INDEPENDENT |
+| f101v | 0.7442 | 0.7442 +/- 0.0000 | 0.00 | 1.0000 | PASS_PREDICTIONS |
 
 
 ## Prediction Accuracy
@@ -68,10 +68,10 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 | Folio | Operators Found | Stems Found | Categories Match | Shuffled Match Rate |
 |-------|-----------------|-------------|------------------|---------------------|
 | f10r | Yes | No | Yes | 100.0% |
-| f23v | No | No | No | 0.0% |
-| f47r | No | No | No | 0.0% |
-| f89r | No | No | No | 0.0% |
-| f101v | No | No | No | 0.0% |
+| f23v | Yes | Yes | Yes | 100.0% |
+| f47r | Yes | No | Yes | 100.0% |
+| f89r | Yes | Yes | Yes | 100.0% |
+| f101v | Yes | Yes | Yes | 100.0% |
 
 *Shuffled Match Rate indicates how often shuffled baselines accidentally meet the folio-specific predictions.*
 *If this rate exceeds 20%, the predictions may be too loose.*
@@ -81,15 +81,72 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 ### f10r
 
 **Real Decode:**
-- Tokens: 15
-- Known stems: 13 (86.7%)
-- Operators: {'ko': 3}
-- Categories: {'ingredient': 5, 'action': 10, 'grammar': 3}
-- Coherence: 0.6234
+- Tokens: 89
+- Known stems: 37 (41.6%)
+- Operators: {'š': 4, 'h': 17, 'otr': 4, 'ost': 1, 'da': 7, 'ko': 11}
+- Categories: {'ingredient': 30, 'action': 28, 'equipment': 5, 'measurement': 7, 'grammar': 11}
+- Coherence: 0.7043
 
 **Baseline Statistics (10 iterations):**
-- Coherence: 0.6234 +/- 0.0000
-- Range: [0.6234, 0.6234]
+- Coherence: 0.7043 +/- 0.0000
+- Range: [0.7043, 0.7043]
+
+**Statistical Comparison:**
+- Z-score: 0.00
+- p-value: 1.0000
+- Effect size: 0.00
+- Verdict: **MARGINAL**
+
+### f23v
+
+**Real Decode:**
+- Tokens: 83
+- Known stems: 48 (57.8%)
+- Operators: {'š': 7, 'otr': 4, 'h': 8, 'ko': 7, 'ost': 8, 'da': 9}
+- Categories: {'ingredient': 43, 'action': 20, 'equipment': 12, 'grammar': 7, 'measurement': 9, 'other': 1}
+- Coherence: 0.7655
+
+**Baseline Statistics (10 iterations):**
+- Coherence: 0.7655 +/- 0.0000
+- Range: [0.7655, 0.7655]
+
+**Statistical Comparison:**
+- Z-score: 0.00
+- p-value: 1.0000
+- Effect size: 0.00
+- Verdict: **PASS_PREDICTIONS**
+
+### f47r
+
+**Real Decode:**
+- Tokens: 82
+- Known stems: 32 (39.0%)
+- Operators: {'š': 9, 'da': 10, 'h': 27, 'ost': 3, 'ko': 2, 'otr': 2}
+- Categories: {'ingredient': 29, 'action': 39, 'measurement': 10, 'equipment': 5, 'grammar': 2}
+- Coherence: 0.7001
+
+**Baseline Statistics (10 iterations):**
+- Coherence: 0.7001 +/- 0.0000
+- Range: [0.7001, 0.7001]
+
+**Statistical Comparison:**
+- Z-score: 0.00
+- p-value: 1.0000
+- Effect size: 0.00
+- Verdict: **MARGINAL**
+
+### f89r
+
+**Real Decode:**
+- Tokens: 387
+- Known stems: 148 (38.3%)
+- Operators: {'ost': 20, 'k': 2, 'otr': 10, 'h': 79, 'da': 62, 'š': 23, 'ko': 47}
+- Categories: {'ingredient': 129, 'equipment': 30, 'grammar': 49, 'action': 122, 'measurement': 62, 'other': 3, 'preparation': 1}
+- Coherence: 0.6938
+
+**Baseline Statistics (10 iterations):**
+- Coherence: 0.6938 +/- 0.0000
+- Range: [0.6938, 0.6938]
 
 **Statistical Comparison:**
 - Z-score: 0.00
@@ -97,119 +154,36 @@ coherence = 0.30 * known_ratio +       # % of stems matched in lexicon
 - Effect size: 0.00
 - Verdict: **POSITION_INDEPENDENT**
 
-### f23v
-
-**Real Decode:**
-- Tokens: 0
-- Known stems: 0 (0.0%)
-- Operators: {}
-- Categories: {}
-- Coherence: 0.0000
-
-**Baseline Statistics (0 iterations):**
-- Coherence: 0.0000 +/- 0.0000
-- Range: [0.0000, 0.0000]
-
-**Statistical Comparison:**
-- Z-score: 0.00
-- p-value: 1.0000
-- Effect size: 0.00
-- Verdict: **N/A**
-
-### f47r
-
-**Real Decode:**
-- Tokens: 0
-- Known stems: 0 (0.0%)
-- Operators: {}
-- Categories: {}
-- Coherence: 0.0000
-
-**Baseline Statistics (0 iterations):**
-- Coherence: 0.0000 +/- 0.0000
-- Range: [0.0000, 0.0000]
-
-**Statistical Comparison:**
-- Z-score: 0.00
-- p-value: 1.0000
-- Effect size: 0.00
-- Verdict: **N/A**
-
-### f89r
-
-**Real Decode:**
-- Tokens: 0
-- Known stems: 0 (0.0%)
-- Operators: {}
-- Categories: {}
-- Coherence: 0.0000
-
-**Baseline Statistics (0 iterations):**
-- Coherence: 0.0000 +/- 0.0000
-- Range: [0.0000, 0.0000]
-
-**Statistical Comparison:**
-- Z-score: 0.00
-- p-value: 1.0000
-- Effect size: 0.00
-- Verdict: **N/A**
-
 ### f101v
 
 **Real Decode:**
-- Tokens: 0
-- Known stems: 0 (0.0%)
-- Operators: {}
-- Categories: {}
-- Coherence: 0.0000
+- Tokens: 208
+- Known stems: 109 (52.4%)
+- Operators: {'otr': 7, 'ost': 10, 'h': 35, 'š': 9, 'ko': 20, 'da': 16, 'k': 3}
+- Categories: {'ingredient': 104, 'equipment': 17, 'action': 50, 'grammar': 23, 'measurement': 16}
+- Coherence: 0.7442
 
-**Baseline Statistics (0 iterations):**
-- Coherence: 0.0000 +/- 0.0000
-- Range: [0.0000, 0.0000]
+**Baseline Statistics (10 iterations):**
+- Coherence: 0.7442 +/- 0.0000
+- Range: [0.7442, 0.7442]
 
 **Statistical Comparison:**
 - Z-score: 0.00
 - p-value: 1.0000
 - Effect size: 0.00
-- Verdict: **N/A**
+- Verdict: **PASS_PREDICTIONS**
 
 ## Interpretation
 
-### Finding: Position-Independent Decoder
+### Results Inconclusive
 
-The test reveals that the ZFD decoder processes tokens **independently** without 
-using positional context. Shuffling word order does not change the decode results 
-because each token is analyzed in isolation.
+The test did not produce a clear signal. This could indicate:
 
-This is an important finding:
+1. The decoder has enough flexibility to produce similar results from any input
+2. The coherence metric does not capture the relevant structure
+3. The test folios may not be representative
 
-1. **The decoder does not rely on word order** - it treats each Voynich word as 
-   an independent pharmaceutical abbreviation.
-
-2. **The coherence metric measures vocabulary coverage**, not sequential structure. 
-   High coherence indicates the decoder recognizes many words, regardless of their 
-   arrangement.
-
-3. **The 'degrees of freedom' criticism has a different meaning here**: the question 
-   is not whether order matters, but whether the decoder's vocabulary mappings are 
-   genuinely detecting Croatian pharmaceutical terms or are flexible enough to match 
-   anything.
-
-### Implications
-
-A position-independent decoder is consistent with the ZFD hypothesis that Voynich 
-text represents pharmaceutical shorthand, where each word abbreviates a term or 
-instruction. In recipe texts, word order is often less critical than the presence 
-of key ingredients and actions.
-
-However, this test cannot distinguish between:
-- A decoder that correctly identifies Croatian pharmaceutical abbreviations
-- A decoder flexible enough to produce plausible-looking output from any input
-
-Additional validation approaches are needed, such as:
-- Comparing decoded content against manuscript illustrations
-- Testing the decoder on known non-Voynich text
-- Expert review of decoded pharmaceutical content
+Further investigation is recommended.
 
 ## Key Statement
 
@@ -270,4 +244,4 @@ eliminating the possibility of tuning the lexicon to improve results.
 ---
 
 *Report generated by ZFD Blind Decode Falsification Test*
-*2026-02-04 17:12:44*
+*2026-02-04 17:20:45*

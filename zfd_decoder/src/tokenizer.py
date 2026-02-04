@@ -42,7 +42,10 @@ def tokenize_line(line: str, folio: str, line_num: int) -> List[Token]:
         List of Token objects
     """
     tokens = []
-    words = line.strip().split()
+    # EVA transcriptions use dots as word separators, some use spaces
+    # Handle both: replace dots with spaces, then split on whitespace
+    normalized = line.strip().replace('.', ' ')
+    words = normalized.split()
 
     for i, word in enumerate(words):
         # Clean the word (remove any annotation markers)
