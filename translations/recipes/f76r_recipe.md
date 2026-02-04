@@ -1,5 +1,13 @@
 # F76R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006210/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006210/full/600,/0/default.jpg" width="500" alt="Folio 76r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 76r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Biological
 **Confidence:** 100%
 **Words:** 1655 total, 696 recipe-relevant

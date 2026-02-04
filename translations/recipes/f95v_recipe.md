@@ -1,5 +1,13 @@
 # F95V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006242/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006242/full/600,/0/default.jpg" width="500" alt="Folio 95v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 95v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Pharmaceutical
 **Confidence:** 85%
 **Words:** 524 total, 180 recipe-relevant

@@ -1,5 +1,13 @@
 # F114R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006272/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006272/full/600,/0/default.jpg" width="500" alt="Folio 114r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 114r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Recipes/Stars
 **Confidence:** 100%
 **Words:** 1269 total, 466 recipe-relevant

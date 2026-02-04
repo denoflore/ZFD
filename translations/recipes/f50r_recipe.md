@@ -1,5 +1,13 @@
 # F50R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006172/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006172/full/600,/0/default.jpg" width="500" alt="Folio 50r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 50r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 258 total, 123 recipe-relevant

@@ -1,5 +1,13 @@
 # F65V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006191/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006191/full/600,/0/default.jpg" width="500" alt="Folio 65v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 65v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal B / Astronomical
 **Confidence:** 75%
 **Words:** 93 total, 17 recipe-relevant

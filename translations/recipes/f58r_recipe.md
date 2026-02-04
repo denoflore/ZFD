@@ -1,5 +1,13 @@
 # F58R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006188/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006188/full/600,/0/default.jpg" width="500" alt="Folio 58r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 58r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A (cont.)
 **Confidence:** 100%
 **Words:** 1198 total, 466 recipe-relevant

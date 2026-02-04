@@ -1,5 +1,13 @@
 # F83R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006224/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006224/full/600,/0/default.jpg" width="500" alt="Folio 83r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 83r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Biological
 **Confidence:** 85%
 **Words:** 958 total, 456 recipe-relevant

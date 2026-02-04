@@ -1,5 +1,13 @@
 # F89V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006234/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006234/full/600,/0/default.jpg" width="500" alt="Folio 89v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 89v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Pharmaceutical
 **Confidence:** 100%
 **Words:** 940 total, 426 recipe-relevant

@@ -1,5 +1,13 @@
 # F108V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006265/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006265/full/600,/0/default.jpg" width="500" alt="Folio 108v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 108v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Recipes/Stars
 **Confidence:** 100%
 **Words:** 3436 total, 1426 recipe-relevant

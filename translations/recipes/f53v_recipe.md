@@ -1,5 +1,13 @@
 # F53V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006179/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006179/full/600,/0/default.jpg" width="500" alt="Folio 53v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 53v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 209 total, 66 recipe-relevant

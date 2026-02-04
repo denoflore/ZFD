@@ -1,5 +1,13 @@
 # F85R: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006228/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006228/full/600,/0/default.jpg" width="500" alt="Folio 85r of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 85r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Cosmological
 **Confidence:** 100%
 **Words:** 1495 total, 600 recipe-relevant

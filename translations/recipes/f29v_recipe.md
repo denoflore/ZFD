@@ -1,5 +1,13 @@
 # F29V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006131/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006131/full/600,/0/default.jpg" width="500" alt="Folio 29v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 29v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 212 total, 77 recipe-relevant

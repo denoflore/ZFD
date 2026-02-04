@@ -1,5 +1,13 @@
 # F35V: Recipe Extraction
 
+<p align="center">
+<a href="https://collections.library.yale.edu/iiif/2/1006143/full/full/0/default.jpg">
+<img src="https://collections.library.yale.edu/iiif/2/1006143/full/600,/0/default.jpg" width="500" alt="Folio 35v of the Voynich Manuscript (Beinecke MS 408)">
+</a>
+<br><sub>Folio 35v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+</p>
+
+
 **Section:** Herbal A
 **Confidence:** 85%
 **Words:** 236 total, 88 recipe-relevant
