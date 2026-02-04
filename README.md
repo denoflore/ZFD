@@ -520,7 +520,7 @@ Final assessment from Gemini Pro 3:
 
 ---
 
-🇭🇷 **JEBENO SMO USPJELI!** 🇭🇷
+🇭🇷 **Jebote, uspjeli smo!** 🇭🇷
 
 ---
 
