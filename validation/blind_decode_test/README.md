@@ -1,43 +1,39 @@
 # ZFD Blind Decode Falsification Test
 
+## Current Status: v1.1 Complete, v2 In Progress
+
+Test v1.1 established that the ZFD decoder is position-independent (bag-of-words). Shuffling word order within folios produces identical results because each token is decoded in isolation. This is consistent with the pharmaceutical shorthand hypothesis but means the word-order shuffle cannot distinguish a correct decoder from a flexible one.
+
+Test v2 will test whether non-Voynich input produces comparable results through the same frozen pipeline. See [BLIND_DECODE_TEST_LOG.md](BLIND_DECODE_TEST_LOG.md) for the complete history.
+
+---
+
 ## Purpose
 
-This test addresses the "degrees of freedom" criticism: that the ZFD system has so many
-adjustable parameters (operators, layers, abbreviations, phonetic adjustments) that it
-will produce Croatian-compatible output regardless of input.
+This test addresses the "degrees of freedom" criticism: that the ZFD system has so many adjustable parameters (operators, layers, abbreviations, phonetic adjustments) that it will produce Croatian-compatible output regardless of input.
 
 The response is not argument. It is execution.
 
-## Methodology
+## Test v1.1 Results (2026-02-04)
 
-1. **Freeze the lexicon**: The lexicon file is checksummed (SHA-256) at test start and
-   verified at test end. No modifications are permitted during the test run.
+| Folio | Tokens | Known Ratio | Coherence | vs. Shuffled |
+|-------|--------|-------------|-----------|--------------|
+| f10r  | 89     | 41.6%       | 0.7043    | Identical    |
+| f23v  | 83     | 57.8%       | 0.7655    | Identical    |
+| f47r  | 82     | 39.0%       | 0.7001    | Identical    |
+| f89r  | 387    | 38.3%       | 0.6938    | Identical    |
+| f101v | 208    | 52.4%       | 0.7442    | Identical    |
 
-2. **Decode real folios**: Five preregistered test folios are decoded through the
-   frozen pipeline:
-   - f10r (Herbal A - plant preparation)
-   - f23v (Herbal A - plant processing)
-   - f47r (Herbal B - herbal recipe)
-   - f89r (Pharmaceutical - recipe with vessels)
-   - f101v (Recipes/Stars - dosage grid)
+**Verdict:** FAIL on position-sensitivity (expected for bag-of-words decoder).
+**Finding:** Test measured the wrong axis. Word order is irrelevant to a token-independent decoder.
 
-3. **Generate shuffled baselines**: For each folio, 100 shuffled versions are created
-   using deterministic random seeds (42-141). Shuffling preserves word count and line
-   structure but randomizes word positions.
+## Test History
 
-4. **Decode shuffled versions**: Each shuffled version is processed through the SAME
-   pipeline with the SAME frozen lexicon.
+1. **v1.0** (2026-02-04 17:12 UTC): Tokenizer bug. EVA files use dots as word separators, tokenizer split on spaces only. 4/5 folios produced 0 tokens. Results meaningless.
+2. **v1.1** (2026-02-04 17:20 UTC): Tokenizer fixed. All 5 folios produce correct token counts. Shuffled baselines identical to real decode due to position-independent processing.
+3. **v2** (pending): Will test vocabulary specificity, not word order. Synthetic EVA, non-Voynich text, and intra-word character shuffling.
 
-5. **Statistical comparison**: Real decode results are compared against the shuffled
-   distribution using z-scores and empirical p-values.
-
-## Interpretation
-
-- **If real >> shuffled**: The decoder is detecting structure that exists in the
-  manuscript. The "degrees of freedom" cannot explain the results.
-
-- **If real == shuffled**: The decoder produces similar output regardless of input
-  structure. The criticism is valid.
+Full details: [BLIND_DECODE_TEST_LOG.md](BLIND_DECODE_TEST_LOG.md)
 
 ## Running the Test
 
@@ -61,6 +57,7 @@ Results are saved to `results/`:
 - `baseline_<folio>.json` - All shuffled baseline results per folio
 - `comparison_results.json` - Statistical comparison and verdicts
 - `BLIND_DECODE_REPORT.md` - Human-readable final report
+- `BLIND_DECODE_TEST_LOG.md` - Complete test history and rationale
 
 ## Pass/Fail Criteria (Preregistered)
 
@@ -78,9 +75,4 @@ Results are saved to `results/`:
 
 ## Reproducibility
 
-Every run with the same code produces identical results:
-- Shuffling uses fixed seeds (42 + iteration_number)
-- Pipeline parameters are frozen
-- Lexicon is checksummed and verified
-
-Any researcher can clone this repository and run the test to verify results.
+Every run with the same code produces identical results. Shuffling uses fixed seeds (42 + iteration_number). Pipeline parameters are frozen. Lexicon is checksummed and verified.
