@@ -478,33 +478,33 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 5. ✓ Script behaviors match Glagolitic, not Latin
 6. ✓ Positional statistics match shorthand conventions
 
-### Blind Decode Falsification Test: v2 PASSED
+### Blind Decode Falsification Test
 
-Test v2 demonstrates the ZFD pipeline's vocabulary mappings are **specific to Voynich manuscript morphology**:
+Addresses the "degrees of freedom" criticism: does the pipeline produce Croatian-compatible output from any input, or only from Voynich text?
+
+**Test v1.0 (INCONCLUSIVE):** Tokenizer bug treated entire lines as single tokens. Fixed.
+
+**Test v1.1 (INCONCLUSIVE):** Shuffled word order, but decoder is position-independent (bag-of-words). Each token decodes in isolation, so shuffling has no effect. Test design error, not a decipherment failure. Correctly identifies the decoder as bag-of-words, which is expected for pharmaceutical shorthand.
+
+**Test v2: Vocabulary Specificity (PASSED, 5/5 folios discriminating)**
+
+Same frozen lexicon (SHA-256 verified). Same pipeline. Three non-Voynich baselines, 100 iterations each, 1500 total decodes:
 
 ```bash
-cd validation/blind_decode_test
-python run_test_v2.py      # Vocabulary specificity (1500 baseline decodes)
-python run_test_v2.py --quick  # Quick mode (150 decodes)
+python validation/blind_decode_test/run_test_v2.py      # Full (1500 decodes)
+python validation/blind_decode_test/run_test_v2.py --quick  # Quick (150 decodes)
 ```
 
-**v2 Results: All 5 folios discriminating**
+| Input Type | Mean Coherence | vs Real (~0.70) |
+|------------|----------------|-----------------|
+| Real Voynich | 0.70 | -- |
+| Char-Shuffled | 0.55 | p < 0.01 |
+| Synthetic EVA | 0.45 | p < 0.01 |
+| Random Latin | 0.35 | p < 0.01 |
 
-| Baseline Type | Mean Coherence | vs Real (~0.70) |
-|---------------|----------------|-----------------|
-| Real Voynich  | 0.70           | —               |
-| Char-Shuffled | 0.55           | p < 0.01        |
-| Synthetic EVA | 0.45           | p < 0.01        |
-| Random Latin  | 0.35           | p < 0.01        |
+Hierarchy holds on all five folios: Real > Char-shuffled > Synthetic EVA > Random Latin. The decoder produces significantly higher coherence on real Voynich text than on any non-Voynich input through the same frozen pipeline.
 
-The decoder produces significantly higher coherence on real Voynich text than on:
-- Synthetic EVA strings (random characters matching manuscript statistics)
-- Character-shuffled words (morphological structure destroyed)
-- Medieval Latin pharmaceutical vocabulary (different language)
-
-**The "degrees of freedom" criticism is empirically refuted.**
-
-Results: `validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md`
+Full test history including both failures: [`validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md`](validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md)
 
 ---
 
