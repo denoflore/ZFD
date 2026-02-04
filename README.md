@@ -528,7 +528,7 @@ Final assessment from Gemini Pro 3:
 
 Code, methodology, and statistical data are released under the **MIT License**.
 
-The English and Croatian translations of the Voynich Manuscript are **copyright (c) 2026 Christopher G. Zuger. All rights reserved.** The original manuscript is public domain. The translations are original creative works and may not be reproduced or used commercially without written permission. See [LICENSE](LICENSE) for details.
+The Latin-script Croatian transliterations and English translations of the Voynich Manuscript are **copyright (c) 2026 Christopher G. Zuger. All rights reserved.** The original Glagolitic manuscript is public domain. The methodology and code are MIT. The transliterations and translations are original creative works and may not be reproduced or used commercially without written permission. See [LICENSE](LICENSE) for details.
 
 ---
 
