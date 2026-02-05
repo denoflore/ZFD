@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006118/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006118/full/600,/0/default.jpg" width="500" alt="Folio 23r of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006118/full/600,/0/default.jpg" width="500" alt="Folio f23r of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 23r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f23r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Herbal A
-**Confidence:** 85%
-**Words:** 324 total, 166 recipe-relevant
+**Confidence:** 66%
+**Words:** 101 total, 88 resolved (87%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,101 +18,122 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ol** | oil | *oleum* | liquid | 46 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 30 | CONFIRMED |
-| **or** | oil | *oleum* | liquid | 17 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 15 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 4 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 24 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 13 | CANDIDATE |
+| **ol** | oil | *oleum* | liquid | 11 | CONFIRMED |
+| **ost** | bone (medical) | *osteo-* | animal | 7 | CONFIRMED |
+| **ar** | water | *aqua* | liquid | 3 | CONFIRMED |
+| **al** | liquid/water (vessel context) | *aqua* | liquid | 3 | CONFIRMED |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
+| **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
+| **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **hol** | combine | mixing | 18 |
-| **dain** | dose/portion | dosing | 13 |
-| **hor** | process/work | general | 10 |
-| **dal** | then/next | sequence | 8 |
-| **dar** | dose/give | dosing | 3 |
-| **šol** | soak in oil | liquid | 2 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **da-** | dose/add/give | 19 |
+| **ko-** | measure/quantify (variant) | 12 |
+| **h-** | combine/cook (reduced) | 8 |
+| **ot-** | vessel/container (variant) | 4 |
+| **š-** | soak/infuse (Croatian) | 3 |
+| **l-** | The / that (determiner) | 2 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **da** -> *da/dare* (give (Rx imperative)) -- 19x
+- **ost** -> *osteo-* (Bone (medical register)) -- 8x
+
+## Interlinear Translation
 
 ```
 EVA: pydchdom chy fcholdy oty otchol shy opyaiin y yfchy daiin ololdy dal
-CRO: pydhdom hy fholdy otry otrhol šy oplyain y yprhy dain ololdy dal
-EXP: pydhdom hy fholdy otrov/pripravay otrov/pripravahol šy oplyain y yprhy DA [Lat.] uljeoldy DA [Lat.]
-ENG: ? ? ? extract/prep+y extract/prep+hol ? ? ? ? give oil+oldy give
+CRO: pydhdom hy fholdy oty othol šy opyaiin y yfhy daiin ololdy dal
+EXP: i+om kuhaj-i miješati+dy posuda-i posuda-h+ol namoci-i i+aiin i i+y DA/DARE [Lat.] ulje+dy DA/DARE [Lat.]
+ENG: and/with [case] +?pdhd combine/cook (reduced) and/with combine/mix [verbal] vessel/container (variant) and/with vessel/container (variant) [instrumental] soak/infuse (Croatian) and/with and/with [liquid+continuing] and/with and/with [adjective] GIVE (RX IMPERATIVE) +i oil [verbal] GIVE (RX IMPERATIVE) +l
 ```
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: to ar chor daiin chkdain otchy lolchor daiin dam okchol daing
-CRO: to ar hor dain hstdain otrhy lolhor dain dam osthol daing
-EXP: to voda kuhar DA [Lat.] hstdain otrov/pripravahy lolhor DA [Lat.] DA [Lat.] kosthol DA [Lat.]
-ENG: ? water cook give ? extract/prep+hy ? give give bone+hol give
+CRO: to ar hor daiin hstdain othy lolhor daiin dam osthol daing
+EXP: to voda kuhaj-oleum DA/DARE [Lat.] kuhaj-stare+ain posuda-h+y l-ulje DA/DARE [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.]
+ENG: ?to? water combine/cook (reduced) Oil / oleum (variant) GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [plural] vessel/container (variant) [adjective] The / that (determiner) oil GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +m BONE (MEDICAL REGISTER) +h GIVE (RX IMPERATIVE) +ing
 ```
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: dchar ykor ykaiin daiin ctho g
-CRO: dhar ystor ystain dain ctrro g
-EXP: dhar ystor ystain DA [Lat.] ctrro g
-ENG: ? ? ? give ? ?
+CRO: dhar ystor ystaiin daiin ctrro g
+EXP: dh+ar i i+aiin DA/DARE [Lat.] centrum g
+ENG: [instrumental] and/with +?stor and/with [liquid+continuing] GIVE (RX IMPERATIVE) +i Center / control ?g?
 ```
+<sub>[▓▓▓▓░░░░░░] 47% confidence</sub>
 
 ```
 EVA: qokoldy okaiir ykaiil g qokeey ofchol dain yfchor olfchor otchald
-CRO: kostoldy ostair ystail g kostei oprhol dain yprhor olprhor otrhald
-EXP: kost-oldy kostnir ystail g kost-ei oprhol DA [Lat.] yprhor uljeprhor otrov/pripravahald
-ENG: bone-oil+dy of bone+r ? ? bone [state] ? give ? oil+prhor extract/prep+hald
+CRO: kostoldy ostaiir ystaiil g kosteey ofhol dain yfhor olfhor othald
+EXP: ko-stare+dy OSTEO- [Lat.] i g ko-stare+ey ofh+ol DA/DARE [Lat.] i ulje posuda-tekućina
+ENG: measure/quantify (variant) Stand / place / position [verbal] BONE (MEDICAL REGISTER) +ai and/with +?staiil ?g? measure/quantify (variant) Stand / place / position [participle] [instrumental] +?ofh GIVE (RX IMPERATIVE) +in and/with +?fhor oil +?fhor vessel/container (variant) liquid/water (vessel context)
 ```
+<sub>[▓▓▓▓░░░░░░] 46% confidence</sub>
 
 ```
 EVA: ychor qokchol ytom chol dair chol ar ol ol dol dain
-CRO: yhor kosthol ytrom hol dair hol ar ol ol dol dain
-EXP: yhor kosthol ytrom kuh-ulje DA [Lat.] kuh-ulje voda ulje ulje dol DA [Lat.]
-ENG: ? ? ? cook+oil give cook+oil water oil oil ? give
+CRO: yhor kosthol ytom hol dair hol ar ol ol dol dain
+EXP: i ko-stare+ol i+om kuhaj-ulje DA/DARE [Lat.] kuhaj-ulje voda ulje ulje d+ol DA/DARE [Lat.]
+ENG: and/with +?hor measure/quantify (variant) Stand / place / position [instrumental] and/with [case] combine/cook (reduced) oil GIVE (RX IMPERATIVE) +ir combine/cook (reduced) oil water oil oil [instrumental] GIVE (RX IMPERATIVE) +in
 ```
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: tshol ykor qokaiin yky dar okol dchey daiidal dam ytcho ldals
-CRO: tšol ystor kostain ysty dar ostol dhey daidal dam ytrho ldals
-EXP: tšol ystor kost-ain ysty DA [Lat.] kostol dhey daidal DA [Lat.] ytrho DA [Lat.]
-ENG: ? ? bone [noun] ? give bone+ol ? ? give ? give
+CRO: tšol ystor kostaiin ysty dar ostol dhey daiidal dam ytho ldals
+EXP: tš+ol i ko-stare+aiin i+y DA/DARE [Lat.] OSTEO- [Lat.] dh+ey DA/DARE [Lat.] DA/DARE [Lat.] i l-dal+s
+ENG: [instrumental] and/with +?stor measure/quantify (variant) Stand / place / position [liquid+continuing] and/with [adjective] GIVE (RX IMPERATIVE) +r BONE (MEDICAL REGISTER) [participle] GIVE (RX IMPERATIVE) +iid GIVE (RX IMPERATIVE) +m and/with +?tho The / that (determiner) da-l-al [~15]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: okar olchar shaiin qokchol dar qokchol dairo r ol daiin alg
-CRO: ostar olhar šain kosthol dar kosthol dairo r ol dain alg
-EXP: kostar uljehar šain kosthol DA [Lat.] kosthol DA [Lat.] r ulje DA [Lat.] tekućinag
-ENG: bone+ar oil+har ? ? give ? give ? oil give liquid+g
+CRO: ostar olhar šaiin kosthol dar kosthol dairo r ol daiin alg
+EXP: OSTEO- [Lat.] ulje+ar namoci-a+iin ko-stare+ol DA/DARE [Lat.] ko-stare+ol DA/DARE [Lat.] r ulje DA/DARE [Lat.] tekućina
+ENG: BONE (MEDICAL REGISTER) oil [instrumental] soak/infuse (Croatian) [continuation] measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +r measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +iro ?r? oil GIVE (RX IMPERATIVE) +i liquid/water (vessel context)
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: qokshy char daiir qokaiin olol qoaiin ykchy sdiil okchy
-CRO: kostšy har dair kostain olol koain ysthy sdil osthy
-EXP: kostšy kuh-voda DA [Lat.] kost-ain uljeol koain ysthy sdil kosthy
-ENG: ? cook+water give bone [noun] oil+ol ? ? ? bone+hy
+CRO: kostšy har daiir kostaiin olol koaiin ysthy sdiil osthy
+EXP: ko-stare+y kuhaj-voda DA/DARE [Lat.] ko-stare+aiin ulje+ol ko-a+iin i+y sdiil OSTEO- [Lat.]
+ENG: measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) water GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [liquid+continuing] oil [instrumental] measure/quantify (variant) [continuation] and/with [adjective] +?sth ?sdiil? BONE (MEDICAL REGISTER) +h
 ```
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: okol ok shy qokol dydal dshe qokeees y olydaiin dal
-CRO: ostol ost šy kostol dydal dše kostees y olydain dal
-EXP: kostol kost šy kost-ol DA [Lat.] dše kostees y uljeydain DA [Lat.]
-ENG: bone+ol bone ? bone-oil give ? ? ? oil+ydain give
+CRO: ostol ost šy kostol dydal dše kosteees y olydaiin dal
+EXP: OSTEO- [Lat.] OSTEO- [Lat.] namoci-i ko-stare+ol i+al dše ko-stare+s i ulje+aiin DA/DARE [Lat.]
+ENG: BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [instrumental] and/with [locative] ?dše? measure/quantify (variant) Stand / place / position [~15] and/with oil [liquid+continuing] GIVE (RX IMPERATIVE) +l
 ```
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: qok okaiin chkchy syteair odal chal dydar ykain
-CRO: kost ostain hsthy sytreair odal hal dydar ystain
-EXP: kost kostnin hsthy sytreair DA [Lat.] hal DA [Lat.] ystain
-ENG: ? of bone+n ? ? give ? give ?
+CRO: kost ostaiin hsthy syteair odal hal dydar ystain
+EXP: ko-stare OSTEO- [Lat.] kuhaj-stare+y i+ir stabljika+al kuhaj-tekućina i+ar i+ain
+ENG: measure/quantify (variant) Stand / place / position BONE (MEDICAL REGISTER) combine/cook (reduced) Stand / place / position [adjective] and/with [agent] +?stea stalk/stem [locative] combine/cook (reduced) liquid/water (vessel context) and/with [instrumental] and/with [plural]
 ```
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: ykyka dalory
 CRO: ystysta dalory
-EXP: ystysta daj-tekory
-ENG: ? give liquid+ory
+EXP: i DA/DARE [Lat.]
+ENG: and/with +?stysta GIVE (RX IMPERATIVE) +l
 ```
+<sub>[▓▓▓▓░░░░░░] 48% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f23r*
