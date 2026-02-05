@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006238/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006238/full/600,/0/default.jpg" width="500" alt="Folio 93r of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006238/full/600,/0/default.jpg" width="500" alt="Folio f93r of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 93r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f93r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Pharmaceutical
-**Confidence:** 85%
-**Words:** 387 total, 198 recipe-relevant
+**Confidence:** 66%
+**Words:** 148 total, 129 resolved (87%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,252 +18,297 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ol** | oil | *oleum* | liquid | 62 | CONFIRMED |
-| **or** | oil | *oleum* | liquid | 30 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 17 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 10 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 8 | CONFIRMED |
-| **ros** | rose/rosewater | *rosa* | herb | 4 | CONFIRMED |
-| **sal** | salt | *sal* | mineral | 3 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 15 | CANDIDATE |
+| **ol** | oil | *oleum* | liquid | 14 | CONFIRMED |
+| **ctr** | Center / control | *centrum* | general | 12 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 11 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 11 | CANDIDATE |
+| **ost** | bone (medical) | *osteo-* | animal | 7 | CONFIRMED |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
+| **stor** | storax | *storax* | resin | 3 | CONFIRMED |
+| **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
+| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **dain** | dose/portion | dosing | 21 |
-| **dal** | then/next | sequence | 12 |
-| **hor** | process/work | general | 8 |
-| **šol** | soak in oil | liquid | 7 |
-| **hol** | combine | mixing | 7 |
-| **dar** | dose/give | dosing | 6 |
-| **thor** | boil/roast | heat | 2 |
-| **šor** | strain/soak | liquid | 1 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **h-** | combine/cook (reduced) | 18 |
+| **š-** | soak/infuse (Croatian) | 16 |
+| **ko-** | measure/quantify (variant) | 9 |
+| **da-** | dose/add/give | 8 |
+| **ot-** | vessel/container (variant) | 5 |
+| **še-** | Soaked-state / After soaking | 5 |
+| **so-** | with/together (variant) | 5 |
+| **heo-** | State / Result (extended) | 3 |
+| **l-** | The / that (determiner) | 3 |
+| **šeo-** | Soaked-state (extended) | 2 |
+| **he-** | State / Result / After | 2 |
+| **sa-** | with/together | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **da** -> *da/dare* (give (Rx imperative)) -- 8x
+- **ost** -> *osteo-* (Bone (medical register)) -- 5x
+
+## Interlinear Translation
 
 ```
 EVA: kodshol otolsheeos octhodaly opalefom oepchksheey qotodain s oar
-CRO: kodšol otrolšeos octrrodaly oplaleprom oeplhstšei kotrodain s oar
-EXP: kodšol otrov/pripravaolšeos octrrodaly oplaleprom oeplhstšei kotrodain s oar
-ENG: ? extract/prep+olšeos ? ? ? ? ? ?
+CRO: stodšol otolšeeos octrrodaly opalefom oephstšeey kotodain s oar
+EXP: stare+ol posuda-ulje+s centrum+y tekućina+om stare+ey ko-stabljika+ain s o+ar
+ENG: Stand / place / position [instrumental] vessel/container (variant) oil [~15] Center / control [adjective] +?orodal liquid/water (vessel context) [case] Stand / place / position [participle] +?oephše measure/quantify (variant) stalk/stem [plural] ?s? [instrumental]
 ```
+<sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
 ```
 EVA: ycham s chol chotom cthodar sheo s oteodal sofchoshy cthoshol
-CRO: yham s hol hotrom ctrrodar šeo s otreodal soprhošy ctrrošol
-EXP: yham s kuh-ulje hotrom ctrrodar šeo s otrov/pripravaeodal soprhošy ctrrošol
-ENG: ? ? cook+oil ? ? ? ? extract/prep+eodal ? ?
+CRO: yham s hol hotom ctrrodar šeo s oteodal sofhošy ctrrošol
+EXP: i+m s kuhaj-ulje kuhaj-ot+om centrum+ar še-o s posuda-stabljika+al s-fhoš+y centrum+ol
+ENG: and/with [case] ?s? combine/cook (reduced) oil combine/cook (reduced) [case] Center / control [instrumental] Soaked-state / After soaking ?s? vessel/container (variant) stalk/stem [locative] with/together (variant) [adjective] +?fhoš Center / control [instrumental]
 ```
+<sub>[▓▓▓▓▓░░░░░] 53% confidence</sub>
 
 ```
 EVA: dsho dal dalody ytchchy dam chody dal olschodchy qotchd
-CRO: dšo dal dalody ytrhhy dam hody dal olshodhy kotrhd
-EXP: dšo DA [Lat.] daj-tekody ytrhhy DA [Lat.] hody DA [Lat.] uljeshodhy kotrhd
-ENG: ? give give liquid+ody ? give ? give oil+shodhy ?
+CRO: dšo dal dalody ythhy dam hody dal olšhodhy kothd
+EXP: dšo DA/DARE [Lat.] DA/DARE [Lat.] i+y DA/DARE [Lat.] kuhaj-o+dy DA/DARE [Lat.] ulje+y ko-thd
+ENG: ?dšo? GIVE (RX IMPERATIVE) +l GIVE (RX IMPERATIVE) +lo and/with [adjective] +?thh GIVE (RX IMPERATIVE) +m combine/cook (reduced) [verbal] GIVE (RX IMPERATIVE) +l oil [adjective] +?šhodh measure/quantify (variant) +?thd
 ```
+<sub>[▓▓▓▓▓░░░░░] 51% confidence</sub>
 
 ```
 EVA: sol shotol qokchodal shody chotolsotol ykchdg
-CRO: sol šotrol kosthodal šody hotrolsotrol ysthdg
-EXP: sol šotrol kosthodal šody hotrolsotrol ysthdg
-ENG: ? ? ? ? ? ?
+CRO: sol šotol kosthodal šody hotolsotol ysthdg
+EXP: s-l namoci-ot+ol ko-stare+al namoci-o+dy kuhaj-ulje+ol i
+ENG: with/together (variant) soak/infuse (Croatian) [instrumental] measure/quantify (variant) Stand / place / position [locative] soak/infuse (Croatian) [verbal] combine/cook (reduced) oil [instrumental] and/with +?sthdg
 ```
+<sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
 ```
 EVA: ol chody cfhol dol qokol otodarchodain
-CRO: ol hody cplrol dol kostol otrodarhodain
-EXP: ulje hody cplrol dol kost-ol otrov/pripravaodarhodain
-ENG: oil ? ? ? bone-oil extract/prep+odarhodain
+CRO: ol hody cpllol dol kostol otodarhodain
+EXP: ulje kuhaj-o+dy cpll+ol d+ol ko-stare+ol posuda-stabljika+ain
+ENG: oil combine/cook (reduced) [verbal] [instrumental] +?cpll [instrumental] measure/quantify (variant) Stand / place / position [instrumental] vessel/container (variant) stalk/stem [plural]
 ```
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: tor otor s cho s chol sheoees
-CRO: tor otror s ho s hol šeoes
-EXP: tor otrov/pripravaor s ho s kuh-ulje šeoes
-ENG: ? extract/prep+or ? ? ? cook+oil ?
+CRO: tor otor s ho s hol šeoees
+EXP: oleum posuda-oleum s kuhaj-o s kuhaj-ulje šeo-ee+s
+ENG: Oil / oleum (variant) vessel/container (variant) Oil / oleum (variant) ?s? combine/cook (reduced) ?s? combine/cook (reduced) oil Soaked-state (extended) (intensifier) [~15]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: shor shol ody cheodaiin s
-CRO: šor šol ody heodain s
-EXP: s-ulje s-ulje ody heodain s
-ENG: with oil with oil ? ? ?
+CRO: šor šol ody heodaiin s
+EXP: namoci-oleum namoci-ulje o+dy heo-d+aiin s
+ENG: soak/infuse (Croatian) Oil / oleum (variant) soak/infuse (Croatian) oil [verbal] State / Result (extended) [liquid+continuing] ?s?
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: lor sheeody chodaiin sodar
-CRO: lor šeody hodain sodar
-EXP: lor šeody hodain DA [Lat.]
-ENG: ? ? ? give
+CRO: lor šeeody hodaiin sodar
+EXP: l-oleum še-eo+dy kuhaj-stabljika+aiin s-d+ar
+ENG: The / that (determiner) Oil / oleum (variant) Soaked-state / After soaking [verbal] combine/cook (reduced) stalk/stem [liquid+continuing] with/together (variant) [instrumental]
 ```
+<sub>[████████░░] 87% confidence</sub>
 
 ```
 EVA: shodam okcheody ctho ckhol
-CRO: šodam ostheody ctrro cstrol
-EXP: DA [Lat.] kostheody ctrro cstrol
-ENG: give bone+heody ? ?
+CRO: šodam ostheody ctrro cstol
+EXP: namoci-stabljika+m OSTEO- [Lat.] centrum stare+ol
+ENG: soak/infuse (Croatian) stalk/stem [case] BONE (MEDICAL REGISTER) +heo Center / control Stand / place / position [instrumental]
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: ychor chey keol cheol ckhody
-CRO: yhor hey keol heol cstrody
-EXP: yhor hey keol heol cstrody
-ENG: ? ? ? ? ?
+CRO: yhor hey steol heol cstody
+EXP: i he-i stare+ol heo-l stare+dy
+ENG: and/with +?hor State / Result / After and/with Stand / place / position [instrumental] State / Result (extended) Stand / place / position [verbal]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: okeol oteol sodal sheo al sal
-CRO: osteol otreol sodal šeo al sal
-EXP: kosteol otrov/pripravaeol DA [Lat.] šeo tekućina SAL [Lat.]
-ENG: bone+eol extract/prep+eol give ? liquid salt
+CRO: osteol oteol sodal šeo al sal
+EXP: OSTEO- [Lat.] posuda-e+ol s-d+al še-o tekućina s-l
+ENG: BONE (MEDICAL REGISTER) +e vessel/container (variant) [instrumental] with/together (variant) [locative] Soaked-state / After soaking liquid/water (vessel context) with/together
 ```
+<sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: qokor shey okcheor sheedom
-CRO: kostor šey ostheor šedom
-EXP: kostor šey kostheor šedom
-ENG: ? ? bone+heor ?
+CRO: kostor šey ostheor šeedom
+EXP: ko-storaks še-i OSTEO- [Lat.] še-radix + facere+om
+ENG: measure/quantify (variant) storax Soaked-state / After soaking and/with BONE (MEDICAL REGISTER) +heor Soaked-state / After soaking "Process kernel / do / treat" [case]
 ```
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: shodaiin qotchy kchol s
-CRO: šodain kotrhy khol s
-EXP: šodain kotrhy khol s
-ENG: ? ? ? ?
+CRO: šodaiin kothy sthol s
+EXP: namoci-stabljika+aiin ko-th+y stare+ol s
+ENG: soak/infuse (Croatian) stalk/stem [liquid+continuing] measure/quantify (variant) [adjective] Stand / place / position [instrumental] ?s?
 ```
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: ychey ckhos okcheod chs
-CRO: yhey cstros ostheod hs
-EXP: yhey cstros kostheod hs
-ENG: ? ? bone+heod ?
+CRO: yhey cstos ostheod hs
+EXP: i+ey stare+s OSTEO- [Lat.] kuhaj-s
+ENG: and/with [participle] Stand / place / position [~15] BONE (MEDICAL REGISTER) +heod combine/cook (reduced)
 ```
+<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
 
 ```
 EVA: ochol shodal dol cheodam
 CRO: ohol šodal dol heodam
-EXP: ohol DA [Lat.] dol heodam
-ENG: ? give ? ?
+EXP: oh+ol namoci-stabljika+al d+ol heo-da+m
+ENG: [instrumental] soak/infuse (Croatian) stalk/stem [locative] [instrumental] State / Result (extended) da [case]
 ```
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: choshy qokor chckhs
-CRO: hošy kostor hcstrs
-EXP: hošy kostor hcstrs
-ENG: ? ? ?
+CRO: hošy kostor hcsts
+EXP: kuhaj-oš+y ko-storaks kuhaj-stare+s
+ENG: combine/cook (reduced) [adjective] measure/quantify (variant) storax combine/cook (reduced) Stand / place / position [~15]
 ```
+<sub>[███████░░░] 77% confidence</sub>
 
 ```
 EVA: tcheo l cho lch cthody
 CRO: theo l ho lh ctrrody
-EXP: theo l ho lh ctrrody
-ENG: ? ? ? ? ?
+EXP: theo l kuhaj-o l-h centrum+dy
+ENG: ?theo? ?l? combine/cook (reduced) The / that (determiner) Center / control [verbal]
 ```
+<sub>[░░░░░░░░░░] 34% confidence</sub>
 
 ```
 EVA: olkees shodaiin shody
-CRO: olstes šodain šody
-EXP: uljestes šodain šody
-ENG: oil+stes ? ?
+CRO: olstees šodaiin šody
+EXP: ulje+s namoci-stabljika+aiin namoci-o+dy
+ENG: oil [~15] +?stee soak/infuse (Croatian) stalk/stem [liquid+continuing] soak/infuse (Croatian) [verbal]
 ```
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: tchor shol s sheoky
 CRO: thor šol s šeosty
-EXP: thor s-ulje s šeosty
-ENG: ? with oil ? ?
+EXP: torreo namoci-ulje s šeo-stare+y
+ENG: Boil / roast / scorch soak/infuse (Croatian) oil ?s? Soaked-state (extended) Stand / place / position [adjective]
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: ychockhy cthol osos
-CRO: yhocstry ctrrol osos
-EXP: yhocstry ctrrol osos
-ENG: ? ? ?
+CRO: yhocsty ctrrol osos
+EXP: i+y centrum+ol oso+s
+ENG: and/with [adjective] +?hocst Center / control [instrumental] [~15] +?oso
 ```
+<sub>[▓▓▓▓░░░░░░] 46% confidence</sub>
 
 ```
 EVA: dol shol daiin shcthy
-CRO: dol šol dain šctrry
-EXP: dol s-ulje DA [Lat.] šctrry
-ENG: ? with oil give ?
+CRO: dol šol daiin šctrry
+EXP: d+ol namoci-ulje DA/DARE [Lat.] namoci-centrum+y
+ENG: [instrumental] soak/infuse (Croatian) oil GIVE (RX IMPERATIVE) +i soak/infuse (Croatian) Center / control [adjective]
 ```
+<sub>[████████░░] 82% confidence</sub>
 
 ```
 EVA: kchor cthy chokal daiin
-CRO: khor ctrry hostal dain
-EXP: khor ctrry hostal DA [Lat.]
-ENG: ? ? ? give
+CRO: sthor ctrry hostal daiin
+EXP: stare centrum+y kuhaj-kost+al DA/DARE [Lat.]
+ENG: Stand / place / position +?hor Center / control [adjective] combine/cook (reduced) bone (medical) [locative] GIVE (RX IMPERATIVE) +i
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: oain okor shody teols
 CRO: oain ostor šody teols
-EXP: oain kostor šody teols
-ENG: ? bone+or ? ?
+EXP: o+ain OSTEO- [Lat.] namoci-o+dy ulje+s
+ENG: [plural] BONE (MEDICAL REGISTER) +or soak/infuse (Croatian) [verbal] oil [~15]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: ychocthy chotey teeys
-CRO: yhoctrry hotrey teis
-EXP: yhoctrry hotrey teis
-ENG: ? ? ?
+CRO: yhoctrry hotey teeys
+EXP: i+y kuhaj-ot+ey ee+s
+ENG: and/with [adjective] +?hoctrr combine/cook (reduced) [participle] (intensifier) [~15]
 ```
+<sub>[▓▓▓▓░░░░░░] 48% confidence</sub>
 
 ```
 EVA: ysaiin chotar shody
-CRO: ysain hotrar šody
-EXP: ysain hotrar šody
-ENG: ? ? ?
+CRO: ysaiin hotar šody
+EXP: i+aiin kuhaj-ot+ar namoci-o+dy
+ENG: and/with [liquid+continuing] combine/cook (reduced) [instrumental] soak/infuse (Croatian) [verbal]
 ```
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: ocheodaiin tchos sor
-CRO: oheodain thos sor
-EXP: oheodain thos sor
-ENG: ? ? ?
+CRO: oheodaiin thos sor
+EXP: stabljika+aiin tho+s s-r
+ENG: stalk/stem [liquid+continuing] [~15] +?tho with/together (variant)
 ```
+<sub>[▓▓▓▓▓░░░░░] 53% confidence</sub>
 
 ```
 EVA: qokor cheo los ckheody
-CRO: kostor heo los cstreody
-EXP: kostor heo los cstreody
-ENG: ? ? ? ?
+CRO: kostor heo los csteody
+EXP: ko-storaks he-o l-o+s stare+dy
+ENG: measure/quantify (variant) storax State / Result / After The / that (determiner) [~15] Stand / place / position [verbal]
 ```
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: ychor odol cho daiin s
-CRO: yhor odol ho dain s
-EXP: yhor odol ho DA [Lat.] s
-ENG: ? ? ? give ?
+CRO: yhor odol ho daiin s
+EXP: i stabljika+ol kuhaj-o DA/DARE [Lat.] s
+ENG: and/with +?hor stalk/stem [instrumental] combine/cook (reduced) GIVE (RX IMPERATIVE) +i ?s?
 ```
+<sub>[▓▓▓▓▓░░░░░] 51% confidence</sub>
 
 ```
 EVA: dain ckcho ctho cthosm
-CRO: dain cstho ctrro ctrrosm
-EXP: DA [Lat.] cstho ctrro ctrrosm
-ENG: give ? ? ?
+CRO: dain stho ctrro ctrrosm
+EXP: DA/DARE [Lat.] stare centrum centrum+m
+ENG: GIVE (RX IMPERATIVE) +in Stand / place / position Center / control Center / control [case]
 ```
+<sub>[▓▓▓▓▓░░░░░] 54% confidence</sub>
 
 ```
 EVA: shodaiin qokcho cthol
-CRO: šodain kostho ctrrol
-EXP: šodain kostho ctrrol
-ENG: ? ? ?
+CRO: šodaiin kostho ctrrol
+EXP: namoci-stabljika+aiin ko-stare centrum+ol
+ENG: soak/infuse (Croatian) stalk/stem [liquid+continuing] measure/quantify (variant) Stand / place / position Center / control [instrumental]
 ```
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: ol chol cthol olchod
 CRO: ol hol ctrrol olhod
-EXP: ulje kuh-ulje ctrrol uljehod
-ENG: oil cook+oil ? oil+hod
+EXP: ulje kuhaj-ulje centrum+ol ulje
+ENG: oil combine/cook (reduced) oil Center / control [instrumental] oil +?hod
 ```
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: dol chokal schos
-CRO: dol hostal shos
-EXP: dol hostal shos
-ENG: ? ? ?
+CRO: dol hostal šhos
+EXP: d+ol kuhaj-kost+al namoci-ho+s
+ENG: [instrumental] combine/cook (reduced) bone (medical) [locative] soak/infuse (Croatian) [~15]
 ```
+<sub>[███████░░░] 72% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f93r*
