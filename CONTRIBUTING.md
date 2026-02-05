@@ -50,8 +50,8 @@ If you use this work in academic research:
 
 ## Contact
 
-For questions about the methodology or findings, open a GitHub issue.
+For questions about the methodology or findings, open a GitHub issue or email info@denoflore.com.
 
 ---
 
-🇭🇷 **Jebeno smo uspjeli!**
+🇭🇷 **Jebote, uspjeli smo!**
