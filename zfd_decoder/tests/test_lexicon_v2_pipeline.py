@@ -166,6 +166,86 @@ def test_lexicon_v2_schema():
     print(f"  All {len(lex.stems)} entries validated")
 
 
+
+# === COMPOUND MORPHOLOGY TESTS ===
+
+def test_whole_word_precheck_dar():
+    """dar resolves as whole word 'gift' not operator da + residue r."""
+    token = Token(id="test.morph.1", eva="dar")
+    result = pipeline_v2.process_token(token)
+    assert result.stem_known, "dar should be known"
+    assert "gift" in result.stem_gloss.lower(), f"Expected 'gift', got '{result.stem_gloss}'"
+    assert result.operator is None, f"No operator should be stripped, got {result.operator}"
+    print(f"  dar -> {result.stem_gloss} (whole-word, no operator strip)")
+
+
+def test_whole_word_precheck_dain():
+    """dain resolves as whole word 'given/added' not operator da + in."""
+    token = Token(id="test.morph.2", eva="dain")
+    result = pipeline_v2.process_token(token)
+    assert result.stem_known, "dain should be known"
+    assert "given" in result.stem_gloss.lower() or "added" in result.stem_gloss.lower(), \
+        f"Expected 'given/added', got '{result.stem_gloss}'"
+    print(f"  dain -> {result.stem_gloss} (whole-word)")
+
+
+def test_whole_word_does_not_hijack_chol():
+    """chol should still decompose via operator ch->h + ol, not match as whole word."""
+    token = Token(id="test.morph.3", eva="chol")
+    result = pipeline_v2.process_token(token)
+    assert result.operator == "h", f"Expected operator 'h', got {result.operator}"
+    assert "oil" in result.english.lower(), f"Expected 'oil' in english, got {result.english}"
+    print(f"  chol -> op={result.operator} english={result.english} (decomposed correctly)")
+
+
+def test_state_marker_heom():
+    """heom resolves as state marker 'with the [aforementioned]'."""
+    token = Token(id="test.morph.4", eva="heom")
+    result = pipeline_v2.process_token(token)
+    assert result.stem_known, "heom should be known"
+    assert "aforementioned" in result.stem_gloss.lower() or "with the" in result.stem_gloss.lower(), \
+        f"Expected state marker gloss, got '{result.stem_gloss}'"
+    print(f"  heom -> {result.stem_gloss}")
+
+
+def test_state_marker_šeom():
+    """šeom resolves as state marker."""
+    token = Token(id="test.morph.5", eva="šeom")
+    result = pipeline_v2.process_token(token)
+    assert result.stem_known, "šeom should be known"
+    print(f"  šeom -> {result.stem_gloss}")
+
+
+def test_function_word_ain():
+    """ain resolves as substance/thing."""
+    token = Token(id="test.morph.6", eva="ain")
+    result = pipeline_v2.process_token(token)
+    assert result.stem_known, "ain should be known as function word"
+    print(f"  ain -> {result.stem_gloss}")
+
+
+def test_function_word_om():
+    """om resolves as instrumental case marker."""
+    token = Token(id="test.morph.7", eva="om")
+    result = pipeline_v2.process_token(token)
+    assert result.stem_known, "om should be known as case marker"
+    print(f"  om -> {result.stem_gloss}")
+
+
+def test_f88r_known_ratio_improvement():
+    """f88r known ratio should be >= 85% with compound morphology."""
+    import os
+    f88r_path = os.path.join(os.path.dirname(__file__), '..', 'input', 'f88r.txt')
+    if not os.path.exists(f88r_path):
+        print("  f88r.txt not found, skipping")
+        return
+    with open(f88r_path) as f:
+        text = f.read()
+    result = pipeline_v2.process_folio(text, 'f88r')
+    ratio = result['diagnostics']['known_ratio']
+    assert ratio >= 0.85, f"Expected >= 85% known ratio, got {ratio:.1%}"
+    print(f"  f88r known ratio: {ratio:.1%}")
+
 def run_all_tests():
     """Run all v2 tests."""
     print("=" * 60)
@@ -188,6 +268,14 @@ def run_all_tests():
         test_backward_compat_v1_ol,
         test_v2_has_more_known_stems,
         test_lexicon_v2_schema,
+        test_whole_word_precheck_dar,
+        test_whole_word_precheck_dain,
+        test_whole_word_does_not_hijack_chol,
+        test_state_marker_heom,
+        test_state_marker_šeom,
+        test_function_word_ain,
+        test_function_word_om,
+        test_f88r_known_ratio_improvement,
     ]
 
     passed = 0
