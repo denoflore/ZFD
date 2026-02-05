@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006148/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006148/full/600,/0/default.jpg" width="500" alt="Folio 38r of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006148/full/600,/0/default.jpg" width="500" alt="Folio f38r of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 38r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f38r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Herbal A
-**Confidence:** 85%
-**Words:** 97 total, 58 recipe-relevant
+**Confidence:** 70%
+**Words:** 35 total, 33 resolved (94%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,64 +18,79 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **or** | oil | *oleum* | liquid | 13 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 10 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 10 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 6 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 4 | CONFIRMED |
+| **ost** | bone (medical) | *osteo-* | animal | 8 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 4 | CANDIDATE |
+| **y** | and/with | *et* | grammar | 4 | CANDIDATE |
+| **ol** | oil | *oleum* | liquid | 3 | CONFIRMED |
+| **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
+| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **dain** | dose/portion | dosing | 6 |
-| **hor** | process/work | general | 4 |
-| **šol** | soak in oil | liquid | 3 |
-| **hol** | combine | mixing | 2 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **h-** | combine/cook (reduced) | 7 |
+| **da-** | dose/add/give | 3 |
+| **ot-** | vessel/container (variant) | 2 |
+| **ko-** | measure/quantify (variant) | 2 |
+| **he-** | State / Result / After | 2 |
+| **š-** | soak/infuse (Croatian) | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **ost** -> *osteo-* (Bone (medical register)) -- 6x
+- **da** -> *da/dare* (give (Rx imperative)) -- 3x
+
+## Interlinear Translation
 
 ```
 EVA: tolor chockhyoky choiin okshol oly oky
-CRO: tolor hocstryosty hoin ostšol oly osty
-EXP: tolor hocstryosty hoin kostšol uljey kosty
-ENG: ? ? ? bone+šol oil+y bone+y
+CRO: tolor hocstyosty hoiin ostšol oly osty
+EXP: ulje kuhaj-kost+y kuhaj-o+iin OSTEO- [Lat.] ulje+y OSTEO- [Lat.]
+ENG: oil +?tor combine/cook (reduced) bone (medical) [adjective] combine/cook (reduced) [continuation] BONE (MEDICAL REGISTER) +š oil [adjective] BONE (MEDICAL REGISTER)
 ```
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: okseey chodysytoiin otaiin otaiin cthar
-CRO: ostsei hodysytroin otrain otrain ctrrar
-EXP: kostsei hodysytroin pripravnin pripravnin ctrrar
-ENG: bone+sei ? prepared+n prepared+n ?
+CRO: ostseey hodysytoiin otaiin otaiin ctrrar
+EXP: OSTEO- [Lat.] kuhaj-stabljika+iin posuda-a+iin posuda-a+iin centrum+ar
+ENG: BONE (MEDICAL REGISTER) +se combine/cook (reduced) stalk/stem [continuation] vessel/container (variant) [continuation] vessel/container (variant) [continuation] Center / control [instrumental]
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: qokor okaiinotaiin qokchol chokokor
-CRO: kostor ostainotrain kosthol hostostor
-EXP: kostor kostninotrain kosthol hostostor
-ENG: ? of bone+notrain ? ?
+CRO: kostor ostaiinotaiin kosthol hostostor
+EXP: ko-storaks OSTEO- [Lat.] ko-stare+ol kuhaj-kost
+ENG: measure/quantify (variant) storax BONE (MEDICAL REGISTER) +aiinot measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) bone (medical) +?ostor
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: ychok chey chckhchy chka r odaiin daiin sy
-CRO: yhost hey hcstrhy hsta r odain dain sy
-EXP: yhost hey hcstrhy hsta r DA [Lat.] DA [Lat.] sy
-ENG: ? ? ? ? ? give give ?
+CRO: yhost hey hcsthy hsta r odaiin daiin sy
+EXP: i+ost he-i kuhaj-—+y kuhaj-stare r stabljika+aiin DA/DARE [Lat.] s+y
+ENG: and/with [abstract] State / Result / After and/with combine/cook (reduced) Complex cluster [adjective] combine/cook (reduced) Stand / place / position ?r? stalk/stem [liquid+continuing] GIVE (RX IMPERATIVE) +i [adjective]
 ```
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: okor chey kainchor ctho dain ckholdy
-CRO: ostor hey kainhor ctrro dain cstroldy
-EXP: kostor hey kainhor ctrro DA [Lat.] cstroldy
-ENG: bone+or ? ? ? give ?
+CRO: ostor hey stainhor ctrro dain cstoldy
+EXP: OSTEO- [Lat.] he-i stare centrum DA/DARE [Lat.] ulje+dy
+ENG: BONE (MEDICAL REGISTER) +or State / Result / After and/with Stand / place / position +?ainhor Center / control GIVE (RX IMPERATIVE) +in oil [verbal]
 ```
+<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
 ```
 EVA: ysho sho kosdaiin okoy chochor daiin
-CRO: yšo šo kosdain ostoy hohor dain
-EXP: yšo šo kosdain kostoy hohor DA [Lat.]
-ENG: ? ? ? bone+oy ? give
+CRO: yšo šo stosdaiin ostoy hohor daiin
+EXP: i namoci-o stare+aiin OSTEO- [Lat.] kuhaj-obraditi DA/DARE [Lat.]
+ENG: and/with +?šo soak/infuse (Croatian) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) +o combine/cook (reduced) process/work GIVE (RX IMPERATIVE) +i
 ```
+<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f38r*
