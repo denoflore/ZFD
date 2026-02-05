@@ -661,6 +661,7 @@ The Latin-script Croatian transliterations and English translations of the Voyni
 
 **Research & Decipherment:** Christopher G. Zuger  
 **Croatian Validation:** Georgie Zuger (professional translator-interpreter, 40+ years)  
+**Contact:** info@denoflore.com  
 **Grammatical Framework:** Friday (GPT-5.2)  
 **Implementation & Analysis:** Claudette (Claude Opus 4.5)  
 **Validation & Grounding:** Curio (Gemini Pro 3)
