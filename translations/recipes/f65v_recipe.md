@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006191/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006191/full/600,/0/default.jpg" width="500" alt="Folio 65v of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006191/full/600,/0/default.jpg" width="500" alt="Folio f65v of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 65v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f65v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
-**Section:** Herbal B / Astronomical
-**Confidence:** 75%
-**Words:** 93 total, 17 recipe-relevant
+**Section:** Herbal B
+**Confidence:** 65%
+**Words:** 39 total, 35 resolved (90%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,62 +18,81 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **kost** | bone | *os/ossis* | animal | 6 | CONFIRMED |
-| **or** | oil | *oleum* | liquid | 3 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 6 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 6 | CANDIDATE |
+| **ost** | bone (medical) | *osteo-* | animal | 4 | CONFIRMED |
+| **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **šedi** | soak/infuse | liquid | 3 |
-| **dain** | dose/portion | dosing | 1 |
-| **dal** | then/next | sequence | 1 |
-| **hedi** | cook/prepare | heat | 1 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **ko-** | measure/quantify (variant) | 4 |
+| **še-** | Soaked-state / After soaking | 3 |
+| **h-** | combine/cook (reduced) | 3 |
+| **heo-** | State / Result (extended) | 3 |
+| **š-** | soak/infuse (Croatian) | 3 |
+| **da-** | dose/add/give | 2 |
+| **ot-** | vessel/container (variant) | 1 |
+| **šeo-** | Soaked-state (extended) | 1 |
+| **he-** | State / Result / After | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **da** -> *da/dare* (give (Rx imperative)) -- 2x
+- **ost** -> *osteo-* (Bone (medical register)) -- 2x
+
+## Interlinear Translation
 
 ```
 EVA: cphy fchecfhy dydchepain shety qopy fol chpdy
-CRO: cplly fhecplry dydheplain šetry koply fol hpldy
-EXP: cplly fhecplry dydheplain šetry koply fol hpldy
-ENG: ? ? ? ? ? ? ?
+CRO: cplly fhecplly dydhepain šety kopy fol hpdy
+EXP: cpll+y fhecpll+y i+ain še-t+y ko-p+y f+ol kuhaj-p+dy
+ENG: [adjective] +?cpll [adjective] +?fhecpll and/with [plural] +?ddhep Soaked-state / After soaking [adjective] measure/quantify (variant) [adjective] [instrumental] combine/cook (reduced) [verbal]
 ```
+<sub>[▓▓▓▓▓░░░░░] 53% confidence</sub>
 
 ```
 EVA: daiin sheek l odyyteo qop air cheoteey dalam
-CRO: dain šest l odyytreo kopl air heotrei dalam
-EXP: DA [Lat.] šest l odyytreo kopl air heotrei DA [Lat.]
-ENG: give ? ? ? ? ? ? give
+CRO: daiin šeest l odyyteo kop air heoteey dalam
+EXP: DA/DARE [Lat.] še-stare l stabljika ko-p a+ir heo-te+ey DA/DARE [Lat.]
+ENG: GIVE (RX IMPERATIVE) +i Soaked-state / After soaking Stand / place / position ?l? stalk/stem +?yyteo measure/quantify (variant) [agent] State / Result (extended) [participle] GIVE (RX IMPERATIVE) +la
 ```
+<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
 
 ```
 EVA: ytal cheot shky yeas cheody
-CRO: ytral heot šsty yeas heody
-EXP: ytral heot šsty yeas heody
-ENG: ? ? ? ? ?
+CRO: ytal heot šsty yeas heody
+EXP: i+al heo-t namoci-stare+y i+s heo-d+y
+ENG: and/with [locative] State / Result (extended) soak/infuse (Croatian) Stand / place / position [adjective] and/with [~15] State / Result (extended) [adjective]
 ```
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: toeedy otor shedyyteey sheody qokesd yfchey
-CRO: toedi otror šediytrei šeody kostesd yprhey
-EXP: toedi otrov/pripravaor močenoytrei šeody kostesd yprhey
-ENG: ? extract/prep+or soaked+ytrei ? ? ?
+CRO: toeedy otor šedyyteey šeody kostesd yfhey
+EXP: toe+edy posuda-oleum še-i+ey šeo-d+y ko-stare i+ey
+ENG: [verbal] vessel/container (variant) Oil / oleum (variant) Soaked-state / After soaking and/with [participle] Soaked-state (extended) [adjective] measure/quantify (variant) Stand / place / position and/with [participle]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: dshedy okeody qokdshckhy choky chokeody okey dy
-CRO: dšedi osteody kostdšcstry hosty hosteody ostey dy
-EXP: dšedi kosteody kostdšcstry hosty hosteody kostey dy
-ENG: ? bone+eody ? ? ? bone+ey ?
+CRO: dšedy osteody kostdšcsty hosty hosteody ostey dy
+EXP: dš+edy OSTEO- [Lat.] ko-stare+y kuhaj-kost+y kuhaj-kost+dy OSTEO- [Lat.] d+y
+ENG: [verbal] BONE (MEDICAL REGISTER) +eo measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) bone (medical) [adjective] combine/cook (reduced) bone (medical) [verbal] BONE (MEDICAL REGISTER) [adjective]
 ```
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: qo ytchey shckhh cphyykchhdy chedy shckhdy
-CRO: ko ytrhey šcstrh cpllyysthhdy hedi šcstrdy
-EXP: ko ytrhey šcstrh cpllyysthhdy kuhano šcstrdy
-ENG: ? ? ? ? cooked ?
+CRO: ko ythey šcsth cpllyysthhdy hedy šcstdy
+EXP: k i+ey namoci-— stare+dy he-d+y namoci-stare+dy
+ENG: vessel (short) and/with [participle] soak/infuse (Croatian) Complex cluster Stand / place / position [verbal] +?cpllyyhh State / Result / After [adjective] soak/infuse (Croatian) Stand / place / position [verbal]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f65v*
