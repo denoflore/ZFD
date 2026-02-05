@@ -184,3 +184,14 @@ warm,calid,temperature,warm/hot,calidus,toplo,modifier,MISCELLANY,miscellany_new
 cold,frigid,temperature,cold,frigidus,hladno,modifier,MISCELLANY,miscellany_new
 upon,super,preposition,upon/over,super,na/nad,grammar,MISCELLANY,miscellany_new
 with,cum,preposition,with,cum,s/sa,grammar,MISCELLANY,miscellany_new
+state_this,he,state marker,the/this (demonstrative),hic/haec,ov/taj,grammar,CANDIDATE,morphology_analysis
+state_that_which,heo,state marker,that which/the one,illud quod,ono što,grammar,CANDIDATE,morphology_analysis
+state_with_the,še,state marker,with the (comitative+article),cum illo,sa tim,grammar,CANDIDATE,morphology_analysis
+state_with_that,šeo,state marker,with that which,cum illo quod,sa onim,grammar,CANDIDATE,morphology_analysis
+instrumental,om,case particle,with/by (instrumental),cum/-o,-om,grammar,CONFIRMED,morphology_analysis
+substance,ain,case particle,substance/thing,res/materia,stvar,grammar,CONFIRMED,morphology_analysis
+state_instr,heom,compound,with the [aforementioned],cum illo,sa tim,grammar,CANDIDATE,morphology_analysis
+state_gen,heos,compound,of the [aforementioned],illius,od toga,grammar,CANDIDATE,morphology_analysis
+state_dat,heodi,compound,to/for the [aforementioned],illi,tome,grammar,CANDIDATE,morphology_analysis
+state_with_instr,šeom,compound,with the [instrument],cum instrumento,sa tim,grammar,CANDIDATE,morphology_analysis
+salt_substance,sain,compound,salt-substance/brine,sal+res,solina,grammar,CANDIDATE,morphology_analysis
