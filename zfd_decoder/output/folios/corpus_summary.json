@@ -1,0 +1,2045 @@
+{
+  "total_folios": 225,
+  "total_tokens": 37024,
+  "total_known": 36770,
+  "corpus_ratio": 0.9931395851339672,
+  "section_stats": {
+    "herbal_a": {
+      "folios": 112,
+      "tokens": 9595,
+      "known": 9510
+    },
+    "herbal_b": {
+      "folios": 6,
+      "tokens": 1233,
+      "known": 1215
+    },
+    "astronomical": {
+      "folios": 26,
+      "tokens": 3031,
+      "known": 3008
+    },
+    "biological": {
+      "folios": 26,
+      "tokens": 8675,
+      "known": 8635
+    },
+    "pharmaceutical": {
+      "folios": 55,
+      "tokens": 14490,
+      "known": 14402
+    }
+  },
+  "top_unknown_stems": [
+    [
+      "cplrhy",
+      8
+    ],
+    [
+      "plrhdy",
+      7
+    ],
+    [
+      "oplrhdy",
+      6
+    ],
+    [
+      "oplrhy",
+      5
+    ],
+    [
+      "eplr",
+      4
+    ],
+    [
+      "plr",
+      4
+    ],
+    [
+      "cplrhhy",
+      3
+    ],
+    [
+      "plrhy",
+      3
+    ],
+    [
+      "eplrhdy",
+      3
+    ],
+    [
+      "eplrhy",
+      3
+    ],
+    [
+      "oplry",
+      3
+    ],
+    [
+      "estrhdy",
+      3
+    ],
+    [
+      "x",
+      3
+    ],
+    [
+      "ocplrhy",
+      3
+    ],
+    [
+      "eplry",
+      3
+    ],
+    [
+      "ey",
+      3
+    ],
+    [
+      "eey",
+      3
+    ],
+    [
+      "y",
+      3
+    ],
+    [
+      "oplral",
+      3
+    ],
+    [
+      "estrey",
+      3
+    ],
+    [
+      "lplrhy",
+      3
+    ],
+    [
+      "streody",
+      3
+    ],
+    [
+      "plrho",
+      2
+    ],
+    [
+      "oplr",
+      2
+    ],
+    [
+      "cplrhdy",
+      2
+    ],
+    [
+      "ctrrhhy",
+      2
+    ],
+    [
+      "etry",
+      2
+    ],
+    [
+      "etral",
+      2
+    ],
+    [
+      "oplrais",
+      2
+    ],
+    [
+      "ctrrhy",
+      2
+    ],
+    [
+      "ocplrhdy",
+      2
+    ],
+    [
+      "cstrhy",
+      2
+    ],
+    [
+      "aiplrhhy",
+      2
+    ],
+    [
+      "oeplry",
+      2
+    ],
+    [
+      "aiplrhy",
+      2
+    ],
+    [
+      "plrahys",
+      1
+    ],
+    [
+      "cplrham",
+      1
+    ],
+    [
+      "plrhoy",
+      1
+    ],
+    [
+      "oplrydy\u0161o",
+      1
+    ],
+    [
+      "yplhocplry",
+      1
+    ],
+    [
+      "plr\u0161ody",
+      1
+    ],
+    [
+      "rodsplr",
+      1
+    ],
+    [
+      "plrhodes",
+      1
+    ],
+    [
+      "plrais",
+      1
+    ],
+    [
+      "plr\u0161odhy",
+      1
+    ],
+    [
+      "plhoplryhy",
+      1
+    ],
+    [
+      "yplrhy",
+      1
+    ],
+    [
+      "haplrdy",
+      1
+    ],
+    [
+      "ocplrhhg",
+      1
+    ],
+    [
+      "adeodyystrectrrhhy",
+      1
+    ]
+  ],
+  "category_distribution": {
+    "unknown": 24047,
+    "ingredient": 7606,
+    "grammar": 4923,
+    "action": 164,
+    "latin_pharma": 28,
+    "body_part": 2
+  },
+  "folio_results": [
+    {
+      "folio": "f1r",
+      "section": "herbal_a",
+      "tokens": 210,
+      "known": 209,
+      "ratio": 0.9952380952380953,
+      "avg_conf": 0.515
+    },
+    {
+      "folio": "f1v",
+      "section": "herbal_a",
+      "tokens": 80,
+      "known": 80,
+      "ratio": 1.0,
+      "avg_conf": 0.524
+    },
+    {
+      "folio": "f2r",
+      "section": "herbal_a",
+      "tokens": 78,
+      "known": 78,
+      "ratio": 1.0,
+      "avg_conf": 0.555
+    },
+    {
+      "folio": "f2v",
+      "section": "herbal_a",
+      "tokens": 55,
+      "known": 55,
+      "ratio": 1.0,
+      "avg_conf": 0.584
+    },
+    {
+      "folio": "f3r",
+      "section": "herbal_a",
+      "tokens": 111,
+      "known": 111,
+      "ratio": 1.0,
+      "avg_conf": 0.556
+    },
+    {
+      "folio": "f3v",
+      "section": "herbal_a",
+      "tokens": 83,
+      "known": 82,
+      "ratio": 0.9879518072289156,
+      "avg_conf": 0.524
+    },
+    {
+      "folio": "f4r",
+      "section": "herbal_a",
+      "tokens": 60,
+      "known": 60,
+      "ratio": 1.0,
+      "avg_conf": 0.566
+    },
+    {
+      "folio": "f4v",
+      "section": "herbal_a",
+      "tokens": 78,
+      "known": 78,
+      "ratio": 1.0,
+      "avg_conf": 0.583
+    },
+    {
+      "folio": "f5r",
+      "section": "herbal_a",
+      "tokens": 56,
+      "known": 55,
+      "ratio": 0.9821428571428571,
+      "avg_conf": 0.514
+    },
+    {
+      "folio": "f5v",
+      "section": "herbal_a",
+      "tokens": 45,
+      "known": 45,
+      "ratio": 1.0,
+      "avg_conf": 0.573
+    },
+    {
+      "folio": "f6r",
+      "section": "herbal_a",
+      "tokens": 79,
+      "known": 79,
+      "ratio": 1.0,
+      "avg_conf": 0.542
+    },
+    {
+      "folio": "f6v",
+      "section": "herbal_a",
+      "tokens": 113,
+      "known": 113,
+      "ratio": 1.0,
+      "avg_conf": 0.49
+    },
+    {
+      "folio": "f7r",
+      "section": "herbal_a",
+      "tokens": 52,
+      "known": 52,
+      "ratio": 1.0,
+      "avg_conf": 0.631
+    },
+    {
+      "folio": "f7v",
+      "section": "herbal_a",
+      "tokens": 70,
+      "known": 70,
+      "ratio": 1.0,
+      "avg_conf": 0.532
+    },
+    {
+      "folio": "f8r",
+      "section": "herbal_a",
+      "tokens": 129,
+      "known": 127,
+      "ratio": 0.9844961240310077,
+      "avg_conf": 0.55
+    },
+    {
+      "folio": "f8v",
+      "section": "herbal_a",
+      "tokens": 102,
+      "known": 102,
+      "ratio": 1.0,
+      "avg_conf": 0.58
+    },
+    {
+      "folio": "f9r",
+      "section": "herbal_a",
+      "tokens": 73,
+      "known": 73,
+      "ratio": 1.0,
+      "avg_conf": 0.555
+    },
+    {
+      "folio": "f9v",
+      "section": "herbal_a",
+      "tokens": 72,
+      "known": 72,
+      "ratio": 1.0,
+      "avg_conf": 0.595
+    },
+    {
+      "folio": "f10r",
+      "section": "herbal_a",
+      "tokens": 86,
+      "known": 85,
+      "ratio": 0.9883720930232558,
+      "avg_conf": 0.536
+    },
+    {
+      "folio": "f10v",
+      "section": "herbal_a",
+      "tokens": 53,
+      "known": 53,
+      "ratio": 1.0,
+      "avg_conf": 0.577
+    },
+    {
+      "folio": "f11r",
+      "section": "herbal_a",
+      "tokens": 57,
+      "known": 56,
+      "ratio": 0.9824561403508771,
+      "avg_conf": 0.482
+    },
+    {
+      "folio": "f11v",
+      "section": "herbal_a",
+      "tokens": 43,
+      "known": 43,
+      "ratio": 1.0,
+      "avg_conf": 0.508
+    },
+    {
+      "folio": "f13r",
+      "section": "herbal_a",
+      "tokens": 75,
+      "known": 75,
+      "ratio": 1.0,
+      "avg_conf": 0.501
+    },
+    {
+      "folio": "f13v",
+      "section": "herbal_a",
+      "tokens": 59,
+      "known": 59,
+      "ratio": 1.0,
+      "avg_conf": 0.553
+    },
+    {
+      "folio": "f14r",
+      "section": "herbal_a",
+      "tokens": 73,
+      "known": 73,
+      "ratio": 1.0,
+      "avg_conf": 0.523
+    },
+    {
+      "folio": "f14v",
+      "section": "herbal_a",
+      "tokens": 65,
+      "known": 65,
+      "ratio": 1.0,
+      "avg_conf": 0.53
+    },
+    {
+      "folio": "f15r",
+      "section": "herbal_a",
+      "tokens": 75,
+      "known": 75,
+      "ratio": 1.0,
+      "avg_conf": 0.593
+    },
+    {
+      "folio": "f15v",
+      "section": "herbal_a",
+      "tokens": 71,
+      "known": 71,
+      "ratio": 1.0,
+      "avg_conf": 0.515
+    },
+    {
+      "folio": "f16r",
+      "section": "herbal_a",
+      "tokens": 75,
+      "known": 74,
+      "ratio": 0.9866666666666667,
+      "avg_conf": 0.521
+    },
+    {
+      "folio": "f16v",
+      "section": "herbal_a",
+      "tokens": 73,
+      "known": 72,
+      "ratio": 0.9863013698630136,
+      "avg_conf": 0.551
+    },
+    {
+      "folio": "f17r",
+      "section": "herbal_a",
+      "tokens": 71,
+      "known": 69,
+      "ratio": 0.971830985915493,
+      "avg_conf": 0.514
+    },
+    {
+      "folio": "f17v",
+      "section": "herbal_a",
+      "tokens": 134,
+      "known": 133,
+      "ratio": 0.9925373134328358,
+      "avg_conf": 0.532
+    },
+    {
+      "folio": "f18r",
+      "section": "herbal_a",
+      "tokens": 79,
+      "known": 78,
+      "ratio": 0.9873417721518988,
+      "avg_conf": 0.566
+    },
+    {
+      "folio": "f18v",
+      "section": "herbal_a",
+      "tokens": 71,
+      "known": 71,
+      "ratio": 1.0,
+      "avg_conf": 0.497
+    },
+    {
+      "folio": "f19r",
+      "section": "herbal_a",
+      "tokens": 76,
+      "known": 76,
+      "ratio": 1.0,
+      "avg_conf": 0.523
+    },
+    {
+      "folio": "f19v",
+      "section": "herbal_a",
+      "tokens": 77,
+      "known": 77,
+      "ratio": 1.0,
+      "avg_conf": 0.541
+    },
+    {
+      "folio": "f20r",
+      "section": "herbal_a",
+      "tokens": 85,
+      "known": 84,
+      "ratio": 0.9882352941176471,
+      "avg_conf": 0.561
+    },
+    {
+      "folio": "f20v",
+      "section": "herbal_a",
+      "tokens": 88,
+      "known": 86,
+      "ratio": 0.9772727272727273,
+      "avg_conf": 0.508
+    },
+    {
+      "folio": "f21r",
+      "section": "herbal_a",
+      "tokens": 95,
+      "known": 94,
+      "ratio": 0.9894736842105263,
+      "avg_conf": 0.588
+    },
+    {
+      "folio": "f21v",
+      "section": "herbal_a",
+      "tokens": 56,
+      "known": 55,
+      "ratio": 0.9821428571428571,
+      "avg_conf": 0.569
+    },
+    {
+      "folio": "f22r",
+      "section": "herbal_a",
+      "tokens": 99,
+      "known": 97,
+      "ratio": 0.9797979797979798,
+      "avg_conf": 0.539
+    },
+    {
+      "folio": "f22v",
+      "section": "herbal_a",
+      "tokens": 69,
+      "known": 69,
+      "ratio": 1.0,
+      "avg_conf": 0.601
+    },
+    {
+      "folio": "f23r",
+      "section": "herbal_a",
+      "tokens": 101,
+      "known": 100,
+      "ratio": 0.9900990099009901,
+      "avg_conf": 0.534
+    },
+    {
+      "folio": "f23v",
+      "section": "herbal_a",
+      "tokens": 80,
+      "known": 79,
+      "ratio": 0.9875,
+      "avg_conf": 0.534
+    },
+    {
+      "folio": "f24r",
+      "section": "herbal_a",
+      "tokens": 107,
+      "known": 107,
+      "ratio": 1.0,
+      "avg_conf": 0.506
+    },
+    {
+      "folio": "f24v",
+      "section": "herbal_a",
+      "tokens": 80,
+      "known": 79,
+      "ratio": 0.9875,
+      "avg_conf": 0.517
+    },
+    {
+      "folio": "f25r",
+      "section": "herbal_a",
+      "tokens": 48,
+      "known": 48,
+      "ratio": 1.0,
+      "avg_conf": 0.572
+    },
+    {
+      "folio": "f25v",
+      "section": "herbal_a",
+      "tokens": 55,
+      "known": 55,
+      "ratio": 1.0,
+      "avg_conf": 0.585
+    },
+    {
+      "folio": "f26r",
+      "section": "herbal_a",
+      "tokens": 68,
+      "known": 66,
+      "ratio": 0.9705882352941176,
+      "avg_conf": 0.571
+    },
+    {
+      "folio": "f26v",
+      "section": "herbal_a",
+      "tokens": 90,
+      "known": 88,
+      "ratio": 0.9777777777777777,
+      "avg_conf": 0.507
+    },
+    {
+      "folio": "f27r",
+      "section": "herbal_a",
+      "tokens": 82,
+      "known": 82,
+      "ratio": 1.0,
+      "avg_conf": 0.528
+    },
+    {
+      "folio": "f27v",
+      "section": "herbal_a",
+      "tokens": 51,
+      "known": 48,
+      "ratio": 0.9411764705882353,
+      "avg_conf": 0.542
+    },
+    {
+      "folio": "f28r",
+      "section": "herbal_a",
+      "tokens": 59,
+      "known": 59,
+      "ratio": 1.0,
+      "avg_conf": 0.597
+    },
+    {
+      "folio": "f28v",
+      "section": "herbal_a",
+      "tokens": 63,
+      "known": 63,
+      "ratio": 1.0,
+      "avg_conf": 0.569
+    },
+    {
+      "folio": "f29r",
+      "section": "herbal_a",
+      "tokens": 60,
+      "known": 60,
+      "ratio": 1.0,
+      "avg_conf": 0.596
+    },
+    {
+      "folio": "f29v",
+      "section": "herbal_a",
+      "tokens": 74,
+      "known": 74,
+      "ratio": 1.0,
+      "avg_conf": 0.571
+    },
+    {
+      "folio": "f30r",
+      "section": "herbal_a",
+      "tokens": 88,
+      "known": 88,
+      "ratio": 1.0,
+      "avg_conf": 0.567
+    },
+    {
+      "folio": "f30v",
+      "section": "herbal_a",
+      "tokens": 63,
+      "known": 63,
+      "ratio": 1.0,
+      "avg_conf": 0.61
+    },
+    {
+      "folio": "f31r",
+      "section": "herbal_a",
+      "tokens": 101,
+      "known": 99,
+      "ratio": 0.9801980198019802,
+      "avg_conf": 0.569
+    },
+    {
+      "folio": "f31v",
+      "section": "herbal_a",
+      "tokens": 108,
+      "known": 106,
+      "ratio": 0.9814814814814815,
+      "avg_conf": 0.53
+    },
+    {
+      "folio": "f32r",
+      "section": "herbal_a",
+      "tokens": 73,
+      "known": 71,
+      "ratio": 0.9726027397260274,
+      "avg_conf": 0.514
+    },
+    {
+      "folio": "f32v",
+      "section": "herbal_a",
+      "tokens": 75,
+      "known": 73,
+      "ratio": 0.9733333333333334,
+      "avg_conf": 0.541
+    },
+    {
+      "folio": "f33r",
+      "section": "herbal_a",
+      "tokens": 72,
+      "known": 70,
+      "ratio": 0.9722222222222222,
+      "avg_conf": 0.546
+    },
+    {
+      "folio": "f33v",
+      "section": "herbal_a",
+      "tokens": 88,
+      "known": 87,
+      "ratio": 0.9886363636363636,
+      "avg_conf": 0.527
+    },
+    {
+      "folio": "f34r",
+      "section": "herbal_a",
+      "tokens": 118,
+      "known": 115,
+      "ratio": 0.9745762711864406,
+      "avg_conf": 0.55
+    },
+    {
+      "folio": "f34v",
+      "section": "herbal_a",
+      "tokens": 115,
+      "known": 114,
+      "ratio": 0.991304347826087,
+      "avg_conf": 0.545
+    },
+    {
+      "folio": "f35r",
+      "section": "herbal_a",
+      "tokens": 88,
+      "known": 88,
+      "ratio": 1.0,
+      "avg_conf": 0.561
+    },
+    {
+      "folio": "f35v",
+      "section": "herbal_a",
+      "tokens": 87,
+      "known": 87,
+      "ratio": 1.0,
+      "avg_conf": 0.551
+    },
+    {
+      "folio": "f36r",
+      "section": "herbal_a",
+      "tokens": 52,
+      "known": 51,
+      "ratio": 0.9807692307692307,
+      "avg_conf": 0.553
+    },
+    {
+      "folio": "f36v",
+      "section": "herbal_a",
+      "tokens": 69,
+      "known": 69,
+      "ratio": 1.0,
+      "avg_conf": 0.546
+    },
+    {
+      "folio": "f37r",
+      "section": "herbal_a",
+      "tokens": 72,
+      "known": 72,
+      "ratio": 1.0,
+      "avg_conf": 0.581
+    },
+    {
+      "folio": "f37v",
+      "section": "herbal_a",
+      "tokens": 88,
+      "known": 88,
+      "ratio": 1.0,
+      "avg_conf": 0.553
+    },
+    {
+      "folio": "f38r",
+      "section": "herbal_a",
+      "tokens": 35,
+      "known": 35,
+      "ratio": 1.0,
+      "avg_conf": 0.633
+    },
+    {
+      "folio": "f38v",
+      "section": "herbal_a",
+      "tokens": 58,
+      "known": 58,
+      "ratio": 1.0,
+      "avg_conf": 0.522
+    },
+    {
+      "folio": "f39r",
+      "section": "herbal_a",
+      "tokens": 153,
+      "known": 149,
+      "ratio": 0.9738562091503268,
+      "avg_conf": 0.527
+    },
+    {
+      "folio": "f39v",
+      "section": "herbal_a",
+      "tokens": 135,
+      "known": 132,
+      "ratio": 0.9777777777777777,
+      "avg_conf": 0.53
+    },
+    {
+      "folio": "f40r",
+      "section": "herbal_a",
+      "tokens": 87,
+      "known": 85,
+      "ratio": 0.9770114942528736,
+      "avg_conf": 0.562
+    },
+    {
+      "folio": "f40v",
+      "section": "herbal_a",
+      "tokens": 100,
+      "known": 99,
+      "ratio": 0.99,
+      "avg_conf": 0.567
+    },
+    {
+      "folio": "f41r",
+      "section": "herbal_a",
+      "tokens": 87,
+      "known": 86,
+      "ratio": 0.9885057471264368,
+      "avg_conf": 0.655
+    },
+    {
+      "folio": "f41v",
+      "section": "herbal_a",
+      "tokens": 62,
+      "known": 61,
+      "ratio": 0.9838709677419355,
+      "avg_conf": 0.579
+    },
+    {
+      "folio": "f42r",
+      "section": "herbal_a",
+      "tokens": 136,
+      "known": 136,
+      "ratio": 1.0,
+      "avg_conf": 0.585
+    },
+    {
+      "folio": "f42v",
+      "section": "herbal_a",
+      "tokens": 97,
+      "known": 97,
+      "ratio": 1.0,
+      "avg_conf": 0.578
+    },
+    {
+      "folio": "f43r",
+      "section": "herbal_a",
+      "tokens": 152,
+      "known": 151,
+      "ratio": 0.993421052631579,
+      "avg_conf": 0.533
+    },
+    {
+      "folio": "f43v",
+      "section": "herbal_a",
+      "tokens": 154,
+      "known": 153,
+      "ratio": 0.9935064935064936,
+      "avg_conf": 0.532
+    },
+    {
+      "folio": "f44r",
+      "section": "herbal_a",
+      "tokens": 75,
+      "known": 75,
+      "ratio": 1.0,
+      "avg_conf": 0.549
+    },
+    {
+      "folio": "f44v",
+      "section": "herbal_a",
+      "tokens": 95,
+      "known": 95,
+      "ratio": 1.0,
+      "avg_conf": 0.537
+    },
+    {
+      "folio": "f45r",
+      "section": "herbal_a",
+      "tokens": 86,
+      "known": 86,
+      "ratio": 1.0,
+      "avg_conf": 0.554
+    },
+    {
+      "folio": "f45v",
+      "section": "herbal_a",
+      "tokens": 77,
+      "known": 77,
+      "ratio": 1.0,
+      "avg_conf": 0.517
+    },
+    {
+      "folio": "f46r",
+      "section": "herbal_a",
+      "tokens": 157,
+      "known": 154,
+      "ratio": 0.9808917197452229,
+      "avg_conf": 0.568
+    },
+    {
+      "folio": "f46v",
+      "section": "herbal_a",
+      "tokens": 109,
+      "known": 109,
+      "ratio": 1.0,
+      "avg_conf": 0.542
+    },
+    {
+      "folio": "f47r",
+      "section": "herbal_a",
+      "tokens": 79,
+      "known": 78,
+      "ratio": 0.9873417721518988,
+      "avg_conf": 0.546
+    },
+    {
+      "folio": "f47v",
+      "section": "herbal_a",
+      "tokens": 74,
+      "known": 74,
+      "ratio": 1.0,
+      "avg_conf": 0.543
+    },
+    {
+      "folio": "f48r",
+      "section": "herbal_a",
+      "tokens": 89,
+      "known": 89,
+      "ratio": 1.0,
+      "avg_conf": 0.554
+    },
+    {
+      "folio": "f48v",
+      "section": "herbal_a",
+      "tokens": 112,
+      "known": 112,
+      "ratio": 1.0,
+      "avg_conf": 0.555
+    },
+    {
+      "folio": "f49r",
+      "section": "herbal_a",
+      "tokens": 113,
+      "known": 113,
+      "ratio": 1.0,
+      "avg_conf": 0.548
+    },
+    {
+      "folio": "f49v",
+      "section": "herbal_a",
+      "tokens": 151,
+      "known": 149,
+      "ratio": 0.9867549668874173,
+      "avg_conf": 0.564
+    },
+    {
+      "folio": "f50r",
+      "section": "herbal_a",
+      "tokens": 87,
+      "known": 86,
+      "ratio": 0.9885057471264368,
+      "avg_conf": 0.607
+    },
+    {
+      "folio": "f50v",
+      "section": "herbal_a",
+      "tokens": 96,
+      "known": 96,
+      "ratio": 1.0,
+      "avg_conf": 0.594
+    },
+    {
+      "folio": "f51r",
+      "section": "herbal_a",
+      "tokens": 83,
+      "known": 83,
+      "ratio": 1.0,
+      "avg_conf": 0.583
+    },
+    {
+      "folio": "f51v",
+      "section": "herbal_a",
+      "tokens": 72,
+      "known": 71,
+      "ratio": 0.9861111111111112,
+      "avg_conf": 0.608
+    },
+    {
+      "folio": "f52r",
+      "section": "herbal_a",
+      "tokens": 62,
+      "known": 62,
+      "ratio": 1.0,
+      "avg_conf": 0.563
+    },
+    {
+      "folio": "f52v",
+      "section": "herbal_a",
+      "tokens": 74,
+      "known": 74,
+      "ratio": 1.0,
+      "avg_conf": 0.571
+    },
+    {
+      "folio": "f53r",
+      "section": "herbal_a",
+      "tokens": 52,
+      "known": 51,
+      "ratio": 0.9807692307692307,
+      "avg_conf": 0.502
+    },
+    {
+      "folio": "f53v",
+      "section": "herbal_a",
+      "tokens": 74,
+      "known": 74,
+      "ratio": 1.0,
+      "avg_conf": 0.559
+    },
+    {
+      "folio": "f54r",
+      "section": "herbal_a",
+      "tokens": 100,
+      "known": 100,
+      "ratio": 1.0,
+      "avg_conf": 0.516
+    },
+    {
+      "folio": "f54v",
+      "section": "herbal_a",
+      "tokens": 90,
+      "known": 90,
+      "ratio": 1.0,
+      "avg_conf": 0.513
+    },
+    {
+      "folio": "f55r",
+      "section": "herbal_a",
+      "tokens": 124,
+      "known": 124,
+      "ratio": 1.0,
+      "avg_conf": 0.518
+    },
+    {
+      "folio": "f55v",
+      "section": "herbal_a",
+      "tokens": 94,
+      "known": 94,
+      "ratio": 1.0,
+      "avg_conf": 0.536
+    },
+    {
+      "folio": "f56r",
+      "section": "herbal_a",
+      "tokens": 97,
+      "known": 97,
+      "ratio": 1.0,
+      "avg_conf": 0.632
+    },
+    {
+      "folio": "f56v",
+      "section": "herbal_a",
+      "tokens": 86,
+      "known": 86,
+      "ratio": 1.0,
+      "avg_conf": 0.619
+    },
+    {
+      "folio": "f57r",
+      "section": "herbal_a",
+      "tokens": 83,
+      "known": 80,
+      "ratio": 0.963855421686747,
+      "avg_conf": 0.558
+    },
+    {
+      "folio": "f57v",
+      "section": "herbal_a",
+      "tokens": 122,
+      "known": 109,
+      "ratio": 0.8934426229508197,
+      "avg_conf": 0.383
+    },
+    {
+      "folio": "f58r",
+      "section": "herbal_b",
+      "tokens": 367,
+      "known": 367,
+      "ratio": 1.0,
+      "avg_conf": 0.55
+    },
+    {
+      "folio": "f58v",
+      "section": "herbal_b",
+      "tokens": 365,
+      "known": 362,
+      "ratio": 0.9917808219178083,
+      "avg_conf": 0.562
+    },
+    {
+      "folio": "f65r",
+      "section": "herbal_b",
+      "tokens": 3,
+      "known": 3,
+      "ratio": 1.0,
+      "avg_conf": 0.417
+    },
+    {
+      "folio": "f65v",
+      "section": "herbal_b",
+      "tokens": 39,
+      "known": 39,
+      "ratio": 1.0,
+      "avg_conf": 0.562
+    },
+    {
+      "folio": "f66r",
+      "section": "herbal_b",
+      "tokens": 347,
+      "known": 336,
+      "ratio": 0.968299711815562,
+      "avg_conf": 0.538
+    },
+    {
+      "folio": "f66v",
+      "section": "herbal_b",
+      "tokens": 112,
+      "known": 108,
+      "ratio": 0.9642857142857143,
+      "avg_conf": 0.562
+    },
+    {
+      "folio": "f67r1",
+      "section": "astronomical",
+      "tokens": 155,
+      "known": 155,
+      "ratio": 1.0,
+      "avg_conf": 0.517
+    },
+    {
+      "folio": "f67r2",
+      "section": "astronomical",
+      "tokens": 176,
+      "known": 171,
+      "ratio": 0.9715909090909091,
+      "avg_conf": 0.47
+    },
+    {
+      "folio": "f67v1",
+      "section": "astronomical",
+      "tokens": 71,
+      "known": 71,
+      "ratio": 1.0,
+      "avg_conf": 0.55
+    },
+    {
+      "folio": "f67v2",
+      "section": "astronomical",
+      "tokens": 59,
+      "known": 56,
+      "ratio": 0.9491525423728814,
+      "avg_conf": 0.461
+    },
+    {
+      "folio": "f68r1",
+      "section": "astronomical",
+      "tokens": 64,
+      "known": 64,
+      "ratio": 1.0,
+      "avg_conf": 0.579
+    },
+    {
+      "folio": "f68r2",
+      "section": "astronomical",
+      "tokens": 80,
+      "known": 79,
+      "ratio": 0.9875,
+      "avg_conf": 0.566
+    },
+    {
+      "folio": "f68r3",
+      "section": "astronomical",
+      "tokens": 102,
+      "known": 102,
+      "ratio": 1.0,
+      "avg_conf": 0.552
+    },
+    {
+      "folio": "f68v1",
+      "section": "astronomical",
+      "tokens": 96,
+      "known": 96,
+      "ratio": 1.0,
+      "avg_conf": 0.508
+    },
+    {
+      "folio": "f68v2",
+      "section": "astronomical",
+      "tokens": 95,
+      "known": 95,
+      "ratio": 1.0,
+      "avg_conf": 0.551
+    },
+    {
+      "folio": "f68v3",
+      "section": "astronomical",
+      "tokens": 158,
+      "known": 157,
+      "ratio": 0.9936708860759493,
+      "avg_conf": 0.566
+    },
+    {
+      "folio": "f69r",
+      "section": "astronomical",
+      "tokens": 164,
+      "known": 164,
+      "ratio": 1.0,
+      "avg_conf": 0.457
+    },
+    {
+      "folio": "f69v",
+      "section": "astronomical",
+      "tokens": 132,
+      "known": 132,
+      "ratio": 1.0,
+      "avg_conf": 0.49
+    },
+    {
+      "folio": "f70r1",
+      "section": "astronomical",
+      "tokens": 110,
+      "known": 110,
+      "ratio": 1.0,
+      "avg_conf": 0.508
+    },
+    {
+      "folio": "f70r2",
+      "section": "astronomical",
+      "tokens": 247,
+      "known": 246,
+      "ratio": 0.9959514170040485,
+      "avg_conf": 0.499
+    },
+    {
+      "folio": "f70v1",
+      "section": "astronomical",
+      "tokens": 86,
+      "known": 86,
+      "ratio": 1.0,
+      "avg_conf": 0.545
+    },
+    {
+      "folio": "f70v2",
+      "section": "astronomical",
+      "tokens": 140,
+      "known": 140,
+      "ratio": 1.0,
+      "avg_conf": 0.497
+    },
+    {
+      "folio": "f71r",
+      "section": "astronomical",
+      "tokens": 90,
+      "known": 90,
+      "ratio": 1.0,
+      "avg_conf": 0.55
+    },
+    {
+      "folio": "f71v",
+      "section": "astronomical",
+      "tokens": 100,
+      "known": 99,
+      "ratio": 0.99,
+      "avg_conf": 0.528
+    },
+    {
+      "folio": "f72r1",
+      "section": "astronomical",
+      "tokens": 104,
+      "known": 102,
+      "ratio": 0.9807692307692307,
+      "avg_conf": 0.547
+    },
+    {
+      "folio": "f72r2",
+      "section": "astronomical",
+      "tokens": 110,
+      "known": 110,
+      "ratio": 1.0,
+      "avg_conf": 0.535
+    },
+    {
+      "folio": "f72r3",
+      "section": "astronomical",
+      "tokens": 167,
+      "known": 165,
+      "ratio": 0.9880239520958084,
+      "avg_conf": 0.512
+    },
+    {
+      "folio": "f72v1",
+      "section": "astronomical",
+      "tokens": 101,
+      "known": 98,
+      "ratio": 0.9702970297029703,
+      "avg_conf": 0.504
+    },
+    {
+      "folio": "f72v2",
+      "section": "astronomical",
+      "tokens": 110,
+      "known": 109,
+      "ratio": 0.990909090909091,
+      "avg_conf": 0.536
+    },
+    {
+      "folio": "f72v3",
+      "section": "astronomical",
+      "tokens": 121,
+      "known": 120,
+      "ratio": 0.9917355371900827,
+      "avg_conf": 0.538
+    },
+    {
+      "folio": "f73r",
+      "section": "astronomical",
+      "tokens": 96,
+      "known": 95,
+      "ratio": 0.9895833333333334,
+      "avg_conf": 0.533
+    },
+    {
+      "folio": "f73v",
+      "section": "astronomical",
+      "tokens": 97,
+      "known": 96,
+      "ratio": 0.9896907216494846,
+      "avg_conf": 0.524
+    },
+    {
+      "folio": "f75r",
+      "section": "biological",
+      "tokens": 392,
+      "known": 390,
+      "ratio": 0.9948979591836735,
+      "avg_conf": 0.594
+    },
+    {
+      "folio": "f75v",
+      "section": "biological",
+      "tokens": 347,
+      "known": 346,
+      "ratio": 0.9971181556195965,
+      "avg_conf": 0.571
+    },
+    {
+      "folio": "f76r",
+      "section": "biological",
+      "tokens": 555,
+      "known": 551,
+      "ratio": 0.9927927927927928,
+      "avg_conf": 0.545
+    },
+    {
+      "folio": "f76v",
+      "section": "biological",
+      "tokens": 400,
+      "known": 398,
+      "ratio": 0.995,
+      "avg_conf": 0.574
+    },
+    {
+      "folio": "f77r",
+      "section": "biological",
+      "tokens": 325,
+      "known": 324,
+      "ratio": 0.9969230769230769,
+      "avg_conf": 0.631
+    },
+    {
+      "folio": "f77v",
+      "section": "biological",
+      "tokens": 335,
+      "known": 333,
+      "ratio": 0.9940298507462687,
+      "avg_conf": 0.588
+    },
+    {
+      "folio": "f78r",
+      "section": "biological",
+      "tokens": 293,
+      "known": 293,
+      "ratio": 1.0,
+      "avg_conf": 0.587
+    },
+    {
+      "folio": "f78v",
+      "section": "biological",
+      "tokens": 292,
+      "known": 291,
+      "ratio": 0.9965753424657534,
+      "avg_conf": 0.549
+    },
+    {
+      "folio": "f79r",
+      "section": "biological",
+      "tokens": 389,
+      "known": 389,
+      "ratio": 1.0,
+      "avg_conf": 0.563
+    },
+    {
+      "folio": "f79v",
+      "section": "biological",
+      "tokens": 355,
+      "known": 353,
+      "ratio": 0.9943661971830986,
+      "avg_conf": 0.592
+    },
+    {
+      "folio": "f80r",
+      "section": "biological",
+      "tokens": 440,
+      "known": 439,
+      "ratio": 0.9977272727272727,
+      "avg_conf": 0.604
+    },
+    {
+      "folio": "f80v",
+      "section": "biological",
+      "tokens": 378,
+      "known": 376,
+      "ratio": 0.9947089947089947,
+      "avg_conf": 0.59
+    },
+    {
+      "folio": "f81r",
+      "section": "biological",
+      "tokens": 207,
+      "known": 205,
+      "ratio": 0.9903381642512077,
+      "avg_conf": 0.541
+    },
+    {
+      "folio": "f81v",
+      "section": "biological",
+      "tokens": 258,
+      "known": 256,
+      "ratio": 0.9922480620155039,
+      "avg_conf": 0.542
+    },
+    {
+      "folio": "f82r",
+      "section": "biological",
+      "tokens": 285,
+      "known": 285,
+      "ratio": 1.0,
+      "avg_conf": 0.605
+    },
+    {
+      "folio": "f82v",
+      "section": "biological",
+      "tokens": 313,
+      "known": 313,
+      "ratio": 1.0,
+      "avg_conf": 0.627
+    },
+    {
+      "folio": "f83r",
+      "section": "biological",
+      "tokens": 341,
+      "known": 338,
+      "ratio": 0.9912023460410557,
+      "avg_conf": 0.591
+    },
+    {
+      "folio": "f83v",
+      "section": "biological",
+      "tokens": 261,
+      "known": 261,
+      "ratio": 1.0,
+      "avg_conf": 0.625
+    },
+    {
+      "folio": "f84r",
+      "section": "biological",
+      "tokens": 362,
+      "known": 361,
+      "ratio": 0.9972375690607734,
+      "avg_conf": 0.572
+    },
+    {
+      "folio": "f84v",
+      "section": "biological",
+      "tokens": 337,
+      "known": 337,
+      "ratio": 1.0,
+      "avg_conf": 0.568
+    },
+    {
+      "folio": "f85r1",
+      "section": "biological",
+      "tokens": 333,
+      "known": 330,
+      "ratio": 0.990990990990991,
+      "avg_conf": 0.569
+    },
+    {
+      "folio": "f85r2",
+      "section": "biological",
+      "tokens": 157,
+      "known": 157,
+      "ratio": 1.0,
+      "avg_conf": 0.539
+    },
+    {
+      "folio": "f86v3",
+      "section": "biological",
+      "tokens": 276,
+      "known": 275,
+      "ratio": 0.9963768115942029,
+      "avg_conf": 0.561
+    },
+    {
+      "folio": "f86v4",
+      "section": "biological",
+      "tokens": 184,
+      "known": 184,
+      "ratio": 1.0,
+      "avg_conf": 0.502
+    },
+    {
+      "folio": "f86v5",
+      "section": "biological",
+      "tokens": 381,
+      "known": 378,
+      "ratio": 0.9921259842519685,
+      "avg_conf": 0.53
+    },
+    {
+      "folio": "f86v6",
+      "section": "biological",
+      "tokens": 479,
+      "known": 472,
+      "ratio": 0.9853862212943633,
+      "avg_conf": 0.589
+    },
+    {
+      "folio": "f87r",
+      "section": "pharmaceutical",
+      "tokens": 98,
+      "known": 98,
+      "ratio": 1.0,
+      "avg_conf": 0.535
+    },
+    {
+      "folio": "f87v",
+      "section": "pharmaceutical",
+      "tokens": 74,
+      "known": 72,
+      "ratio": 0.972972972972973,
+      "avg_conf": 0.546
+    },
+    {
+      "folio": "f88r",
+      "section": "pharmaceutical",
+      "tokens": 149,
+      "known": 147,
+      "ratio": 0.9865771812080537,
+      "avg_conf": 0.551
+    },
+    {
+      "folio": "f88v",
+      "section": "pharmaceutical",
+      "tokens": 145,
+      "known": 145,
+      "ratio": 1.0,
+      "avg_conf": 0.576
+    },
+    {
+      "folio": "f89r1",
+      "section": "pharmaceutical",
+      "tokens": 138,
+      "known": 137,
+      "ratio": 0.9927536231884058,
+      "avg_conf": 0.542
+    },
+    {
+      "folio": "f89r2",
+      "section": "pharmaceutical",
+      "tokens": 237,
+      "known": 235,
+      "ratio": 0.9915611814345991,
+      "avg_conf": 0.551
+    },
+    {
+      "folio": "f89v1",
+      "section": "pharmaceutical",
+      "tokens": 159,
+      "known": 157,
+      "ratio": 0.9874213836477987,
+      "avg_conf": 0.552
+    },
+    {
+      "folio": "f89v2",
+      "section": "pharmaceutical",
+      "tokens": 164,
+      "known": 163,
+      "ratio": 0.9939024390243902,
+      "avg_conf": 0.528
+    },
+    {
+      "folio": "f90r1",
+      "section": "pharmaceutical",
+      "tokens": 69,
+      "known": 68,
+      "ratio": 0.9855072463768116,
+      "avg_conf": 0.597
+    },
+    {
+      "folio": "f90r2",
+      "section": "pharmaceutical",
+      "tokens": 44,
+      "known": 44,
+      "ratio": 1.0,
+      "avg_conf": 0.508
+    },
+    {
+      "folio": "f90v1",
+      "section": "pharmaceutical",
+      "tokens": 78,
+      "known": 76,
+      "ratio": 0.9743589743589743,
+      "avg_conf": 0.596
+    },
+    {
+      "folio": "f90v2",
+      "section": "pharmaceutical",
+      "tokens": 63,
+      "known": 62,
+      "ratio": 0.9841269841269841,
+      "avg_conf": 0.521
+    },
+    {
+      "folio": "f93r",
+      "section": "pharmaceutical",
+      "tokens": 148,
+      "known": 147,
+      "ratio": 0.9932432432432432,
+      "avg_conf": 0.521
+    },
+    {
+      "folio": "f93v",
+      "section": "pharmaceutical",
+      "tokens": 70,
+      "known": 70,
+      "ratio": 1.0,
+      "avg_conf": 0.589
+    },
+    {
+      "folio": "f94r",
+      "section": "pharmaceutical",
+      "tokens": 80,
+      "known": 79,
+      "ratio": 0.9875,
+      "avg_conf": 0.574
+    },
+    {
+      "folio": "f94v",
+      "section": "pharmaceutical",
+      "tokens": 91,
+      "known": 90,
+      "ratio": 0.989010989010989,
+      "avg_conf": 0.575
+    },
+    {
+      "folio": "f95r1",
+      "section": "pharmaceutical",
+      "tokens": 103,
+      "known": 103,
+      "ratio": 1.0,
+      "avg_conf": 0.614
+    },
+    {
+      "folio": "f95r2",
+      "section": "pharmaceutical",
+      "tokens": 79,
+      "known": 77,
+      "ratio": 0.9746835443037974,
+      "avg_conf": 0.587
+    },
+    {
+      "folio": "f95v1",
+      "section": "pharmaceutical",
+      "tokens": 117,
+      "known": 117,
+      "ratio": 1.0,
+      "avg_conf": 0.595
+    },
+    {
+      "folio": "f95v2",
+      "section": "pharmaceutical",
+      "tokens": 59,
+      "known": 58,
+      "ratio": 0.9830508474576272,
+      "avg_conf": 0.553
+    },
+    {
+      "folio": "f96r",
+      "section": "pharmaceutical",
+      "tokens": 77,
+      "known": 77,
+      "ratio": 1.0,
+      "avg_conf": 0.558
+    },
+    {
+      "folio": "f96v",
+      "section": "pharmaceutical",
+      "tokens": 56,
+      "known": 56,
+      "ratio": 1.0,
+      "avg_conf": 0.475
+    },
+    {
+      "folio": "f99r",
+      "section": "pharmaceutical",
+      "tokens": 197,
+      "known": 197,
+      "ratio": 1.0,
+      "avg_conf": 0.553
+    },
+    {
+      "folio": "f99v",
+      "section": "pharmaceutical",
+      "tokens": 163,
+      "known": 163,
+      "ratio": 1.0,
+      "avg_conf": 0.613
+    },
+    {
+      "folio": "f100r",
+      "section": "pharmaceutical",
+      "tokens": 110,
+      "known": 106,
+      "ratio": 0.9636363636363636,
+      "avg_conf": 0.561
+    },
+    {
+      "folio": "f100v",
+      "section": "pharmaceutical",
+      "tokens": 91,
+      "known": 91,
+      "ratio": 1.0,
+      "avg_conf": 0.576
+    },
+    {
+      "folio": "f101r",
+      "section": "pharmaceutical",
+      "tokens": 205,
+      "known": 204,
+      "ratio": 0.9951219512195122,
+      "avg_conf": 0.555
+    },
+    {
+      "folio": "f101v",
+      "section": "pharmaceutical",
+      "tokens": 199,
+      "known": 199,
+      "ratio": 1.0,
+      "avg_conf": 0.549
+    },
+    {
+      "folio": "f102r1",
+      "section": "pharmaceutical",
+      "tokens": 104,
+      "known": 104,
+      "ratio": 1.0,
+      "avg_conf": 0.556
+    },
+    {
+      "folio": "f102r2",
+      "section": "pharmaceutical",
+      "tokens": 134,
+      "known": 129,
+      "ratio": 0.9626865671641791,
+      "avg_conf": 0.504
+    },
+    {
+      "folio": "f102v1",
+      "section": "pharmaceutical",
+      "tokens": 126,
+      "known": 126,
+      "ratio": 1.0,
+      "avg_conf": 0.552
+    },
+    {
+      "folio": "f102v2",
+      "section": "pharmaceutical",
+      "tokens": 184,
+      "known": 184,
+      "ratio": 1.0,
+      "avg_conf": 0.508
+    },
+    {
+      "folio": "f103r",
+      "section": "pharmaceutical",
+      "tokens": 525,
+      "known": 524,
+      "ratio": 0.9980952380952381,
+      "avg_conf": 0.59
+    },
+    {
+      "folio": "f103v",
+      "section": "pharmaceutical",
+      "tokens": 449,
+      "known": 447,
+      "ratio": 0.9955456570155902,
+      "avg_conf": 0.557
+    },
+    {
+      "folio": "f104r",
+      "section": "pharmaceutical",
+      "tokens": 438,
+      "known": 436,
+      "ratio": 0.9954337899543378,
+      "avg_conf": 0.59
+    },
+    {
+      "folio": "f104v",
+      "section": "pharmaceutical",
+      "tokens": 458,
+      "known": 457,
+      "ratio": 0.9978165938864629,
+      "avg_conf": 0.577
+    },
+    {
+      "folio": "f105r",
+      "section": "pharmaceutical",
+      "tokens": 368,
+      "known": 364,
+      "ratio": 0.9891304347826086,
+      "avg_conf": 0.531
+    },
+    {
+      "folio": "f105v",
+      "section": "pharmaceutical",
+      "tokens": 390,
+      "known": 387,
+      "ratio": 0.9923076923076923,
+      "avg_conf": 0.533
+    },
+    {
+      "folio": "f106r",
+      "section": "pharmaceutical",
+      "tokens": 421,
+      "known": 419,
+      "ratio": 0.995249406175772,
+      "avg_conf": 0.587
+    },
+    {
+      "folio": "f106v",
+      "section": "pharmaceutical",
+      "tokens": 449,
+      "known": 446,
+      "ratio": 0.9933184855233853,
+      "avg_conf": 0.567
+    },
+    {
+      "folio": "f107r",
+      "section": "pharmaceutical",
+      "tokens": 488,
+      "known": 483,
+      "ratio": 0.9897540983606558,
+      "avg_conf": 0.572
+    },
+    {
+      "folio": "f107v",
+      "section": "pharmaceutical",
+      "tokens": 455,
+      "known": 453,
+      "ratio": 0.9956043956043956,
+      "avg_conf": 0.6
+    },
+    {
+      "folio": "f108r",
+      "section": "pharmaceutical",
+      "tokens": 491,
+      "known": 483,
+      "ratio": 0.9837067209775967,
+      "avg_conf": 0.603
+    },
+    {
+      "folio": "f108v",
+      "section": "pharmaceutical",
+      "tokens": 570,
+      "known": 570,
+      "ratio": 1.0,
+      "avg_conf": 0.598
+    },
+    {
+      "folio": "f111r",
+      "section": "pharmaceutical",
+      "tokens": 615,
+      "known": 612,
+      "ratio": 0.9951219512195122,
+      "avg_conf": 0.576
+    },
+    {
+      "folio": "f111v",
+      "section": "pharmaceutical",
+      "tokens": 561,
+      "known": 560,
+      "ratio": 0.9982174688057041,
+      "avg_conf": 0.586
+    },
+    {
+      "folio": "f112r",
+      "section": "pharmaceutical",
+      "tokens": 396,
+      "known": 393,
+      "ratio": 0.9924242424242424,
+      "avg_conf": 0.542
+    },
+    {
+      "folio": "f112v",
+      "section": "pharmaceutical",
+      "tokens": 415,
+      "known": 413,
+      "ratio": 0.9951807228915662,
+      "avg_conf": 0.584
+    },
+    {
+      "folio": "f113r",
+      "section": "pharmaceutical",
+      "tokens": 518,
+      "known": 516,
+      "ratio": 0.9961389961389961,
+      "avg_conf": 0.602
+    },
+    {
+      "folio": "f113v",
+      "section": "pharmaceutical",
+      "tokens": 482,
+      "known": 479,
+      "ratio": 0.9937759336099585,
+      "avg_conf": 0.578
+    },
+    {
+      "folio": "f114r",
+      "section": "pharmaceutical",
+      "tokens": 447,
+      "known": 445,
+      "ratio": 0.9955257270693513,
+      "avg_conf": 0.567
+    },
+    {
+      "folio": "f114v",
+      "section": "pharmaceutical",
+      "tokens": 362,
+      "known": 360,
+      "ratio": 0.994475138121547,
+      "avg_conf": 0.61
+    },
+    {
+      "folio": "f115r",
+      "section": "pharmaceutical",
+      "tokens": 444,
+      "known": 443,
+      "ratio": 0.9977477477477478,
+      "avg_conf": 0.588
+    },
+    {
+      "folio": "f115v",
+      "section": "pharmaceutical",
+      "tokens": 399,
+      "known": 397,
+      "ratio": 0.9949874686716792,
+      "avg_conf": 0.584
+    },
+    {
+      "folio": "f116r",
+      "section": "pharmaceutical",
+      "tokens": 538,
+      "known": 534,
+      "ratio": 0.9925650557620818,
+      "avg_conf": 0.531
+    }
+  ]
+}
