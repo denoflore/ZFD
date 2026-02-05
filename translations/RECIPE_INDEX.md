@@ -1,335 +1,228 @@
-# Voynich Manuscript: Complete Recipe Index
+# ZFD Recipe Index v2.0
 
-## The Zuger Functional Decipherment — All Recipes Extracted
+**Generated:** 2026-02-05
+**Decoder:** ZFD v2.0 (unified lexicon, 296 morphemes from 14 sources)
+**Total folios:** 201
+**Total words:** 42,357
+**Resolution rate:** 96.1%
+**Latin terms detected:** 5,313
 
-This index catalogs every recipe, preparation instruction, and pharmaceutical
-procedure identified across all 201 folios of the Voynich Manuscript.
+## Section Summary
 
-**No one fabricates 179 pages of bone poultice instructions for a prank.**
+| Section | Folios | Avg Confidence |
+|---------|--------|----------------|
+| Astronomical | 14 | 68% |
+| Biological/Balneological | 22 | 78% |
+| Herbal A | 112 | 70% |
+| Herbal B | 6 | 70% |
+| Pharmaceutical | 47 | 72% |
 
----
+## Folio Index
 
-## Summary Statistics
-
-- **Folios analyzed:** 201
-- **Folios with recipe content:** 201 (100%)
-- **Unique ingredients identified:** 13
-- **Total ingredient mentions:** 36794
-- **Unique preparation methods:** 12
-- **Latin pharmaceutical terms found:** 4
-
----
-
-## Top 20 Ingredients (by frequency)
-
-| Rank | Stem | English | Latin | Total Mentions |
-|------|------|---------|-------|----------------|
-| 1 | **ol** | oil | *oleum* | 10732 |
-| 2 | **kost** | bone | *os/ossis* | 10325 |
-| 3 | **ar** | water | *aqua* | 8854 |
-| 4 | **or** | oil | *oleum* | 5468 |
-| 5 | **sal** | salt | *sal* | 613 |
-| 6 | **sar** | salt | *sal* | 346 |
-| 7 | **stor** | storax | *storax* | 288 |
-| 8 | **ros** | rose/rosewater | *rosa* | 101 |
-| 9 | **edy** | root/prepared root | *radix* | 51 |
-| 10 | **rady** | root | *radix* | 6 |
-| 11 | **aloe** | aloe | *aloe* | 4 |
-| 12 | **salp** | saltpeter | *sal petrae* | 3 |
-| 13 | **arg** | silver | *argentum* | 3 |
-
----
-
-## Preparation Methods (by frequency)
-
-| Stem | English | Category | Total Mentions |
-|------|---------|----------|----------------|
-| **dain** | dose/portion | dosing | 2929 |
-| **hedi** | cook/prepare | heat | 2820 |
-| **dar** | dose/give | dosing | 1339 |
-| **hol** | combine | mixing | 1259 |
-| **šedi** | soak/infuse | liquid | 1211 |
-| **dal** | then/next | sequence | 1162 |
-| **hor** | process/work | general | 928 |
-| **šol** | soak in oil | liquid | 385 |
-| **šor** | strain/soak | liquid | 217 |
-| **thor** | boil/roast | heat | 135 |
-| **kal** | cauldron/heat vessel | equipment | 97 |
-| **shor** | soak/infuse | liquid | 10 |
-
----
-
-## Latin Pharmaceutical Vocabulary
-
-| Term | Latin | English | Category | Occurrences |
-|------|-------|---------|----------|-------------|
-| **oral** | *oralis* | by mouth | administration | 70 |
-| **dolor** | *dolor* | pain | condition | 4 |
-| **ana** | *ana* | equal parts | measurement | 2 |
-| **orolaly** | *oraliter* | orally | administration | 1 |
-
----
-
-## Recipes by Manuscript Section
-
-### Herbal A (112 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F1R](recipes/f1r_recipe.md) | 85% | ar, ol, or, kost | dain, dar, hol | — |
-| [F1V](recipes/f1v_recipe.md) | 85% | ol, ar, or, kost | dar, šol, hol | — |
-| [F2R](recipes/f2r_recipe.md) | 85% | ol, or, sal, kost | dain, hol, hor | — |
-| [F2V](recipes/f2v_recipe.md) | 75% | or, ol, ar | hor, dain, hol | — |
-| [F3R](recipes/f3r_recipe.md) | 85% | ol, or, kost, ar | hor, hol, dain | — |
-| [F3V](recipes/f3v_recipe.md) | 85% | or, ol, ar, kost | hor, thor, dain | — |
-| [F4R](recipes/f4r_recipe.md) | 85% | ol, or, ar, kost | dain, hol, hor | — |
-| [F4V](recipes/f4v_recipe.md) | 85% | or, ol, ar, kost | dain, hor, hol | — |
-| [F5R](recipes/f5r_recipe.md) | 75% | or, ol, kost, ar | dain, hol | — |
-| [F5V](recipes/f5v_recipe.md) | 85% | or, ol, ar, kost | hol, hor, dain | — |
-| [F6R](recipes/f6r_recipe.md) | 85% | ar, or, ol, kost | dain, hor, hol | — |
-| [F6V](recipes/f6v_recipe.md) | 85% | ar, or, ol, kost | hor, hol, dain | — |
-| [F7R](recipes/f7r_recipe.md) | 85% | ol, kost, or, ar | dain, šol, hol | — |
-| [F7V](recipes/f7v_recipe.md) | 85% | ol, or, kost, ar | dain, šol, hor | — |
-| [F8R](recipes/f8r_recipe.md) | 85% | ol, ar, or, kost | dain, šol, hol | — |
-| [F8V](recipes/f8v_recipe.md) | 85% | ar, ol, or, kost | hol, hor, dain | — |
-| [F9R](recipes/f9r_recipe.md) | 85% | or, ol, ar, kost | hol, dain, šor | — |
-| [F9V](recipes/f9v_recipe.md) | 85% | ol, or, ar, kost | hor, dain, hol | — |
-| [F10R](recipes/f10r_recipe.md) | 85% | or, ol, ar, kost | hol, dain, hor | — |
-| [F10V](recipes/f10v_recipe.md) | 85% | or, ol, kost, ar | dain, hol, hor | — |
-| [F11R](recipes/f11r_recipe.md) | 75% | ol, or, kost | dain, hol, šol | — |
-| [F11V](recipes/f11v_recipe.md) | 85% | or, ol, kost, ar | hor, hol, šol | — |
-| [F13R](recipes/f13r_recipe.md) | 85% | or, ol, kost, stor | hor, hol, thor | — |
-| [F13V](recipes/f13v_recipe.md) | 85% | ol, kost, or, ros | dain, hor, hol | — |
-| [F14R](recipes/f14r_recipe.md) | 85% | ol, or, kost, ar | dain, hol, hor | — |
-| [F14V](recipes/f14v_recipe.md) | 85% | or, ol, kost, ar | dain, hor, thor | — |
-| [F15R](recipes/f15r_recipe.md) | 85% | or, ol, kost, ar | dain, hor, šor | — |
-| [F15V](recipes/f15v_recipe.md) | 85% | or, ol, kost, ar | hor, hol, dain | — |
-| [F16R](recipes/f16r_recipe.md) | 85% | or, ol, kost, sal | hor, dain, thor | — |
-| [F16V](recipes/f16v_recipe.md) | 85% | or, ar, ol, kost | hor, hol, dain | — |
-| [F17R](recipes/f17r_recipe.md) | 85% | or, ar, ol, kost | hol, dar, hor | — |
-| [F17V](recipes/f17v_recipe.md) | 85% | ol, or, kost, ar | hol, dain, hor | — |
-| [F18R](recipes/f18r_recipe.md) | 85% | ol, or, ar, kost | hol, hor, dar | — |
-| [F18V](recipes/f18v_recipe.md) | 85% | kost, ol, or, ar | hol, hor, dal | — |
-| [F19R](recipes/f19r_recipe.md) | 85% | or, ar, ol, kost | hor, dain, hol | — |
-| [F19V](recipes/f19v_recipe.md) | 85% | or, ol, kost, ar | hol, hor, dain | — |
-| [F20R](recipes/f20r_recipe.md) | 85% | ol, or, ar, kost | dain, hol, hor | — |
-| [F20V](recipes/f20v_recipe.md) | 100% | ol, or, ar, kost | hol, dain, šol | oral |
-| [F21R](recipes/f21r_recipe.md) | 85% | ol, or, kost, ar | hol, hor, dain | — |
-| [F21V](recipes/f21v_recipe.md) | 85% | ol, kost, or, ar | dain, hol, šol | — |
-| [F22R](recipes/f22r_recipe.md) | 85% | ol, or, kost, ar | dain, hol, hor | — |
-| [F22V](recipes/f22v_recipe.md) | 85% | or, ol, kost, ar | dain, hor, šor | — |
-| [F23R](recipes/f23r_recipe.md) | 85% | ol, kost, or, ar | hol, dain, hor | — |
-| [F23V](recipes/f23v_recipe.md) | 85% | ol, or, kost, ar | dain, hol, šol | — |
-| [F24R](recipes/f24r_recipe.md) | 85% | ol, ar, or, kost | hor, dain, dal | — |
-| [F24V](recipes/f24v_recipe.md) | 85% | ol, ar, or, kost | hol, dal, dain | — |
-| [F25R](recipes/f25r_recipe.md) | 85% | ol, or, ar, kost | dain, hol, hor | — |
-| [F25V](recipes/f25v_recipe.md) | 85% | or, kost, ol, ar | dain, hor, hol | — |
-| [F26R](recipes/f26r_recipe.md) | 85% | kost, ar, ol, sal | hedi, dain, dar | — |
-| [F26V](recipes/f26v_recipe.md) | 85% | ar, kost, or, ol | dar, hedi, šedi | — |
-| [F27R](recipes/f27r_recipe.md) | 85% | ol, or, ar, kost | hol, dain, šol | — |
-| [F27V](recipes/f27v_recipe.md) | 85% | ol, kost, or, ar | hor, dar, šol | — |
-| [F28R](recipes/f28r_recipe.md) | 85% | ol, or, ar, kost | hol, dain, hor | — |
-| [F28V](recipes/f28v_recipe.md) | 85% | ol, or, ar, kost | hol, dain, šor | — |
-| [F29R](recipes/f29r_recipe.md) | 85% | or, kost, ol, ar | hol, hor, šor | — |
-| [F29V](recipes/f29v_recipe.md) | 85% | or, ol, ar, kost | hor, hol, dain | — |
-| [F30R](recipes/f30r_recipe.md) | 85% | or, ar, ol, kost | hor, dain, hol | — |
-| [F30V](recipes/f30v_recipe.md) | 85% | or, ol, ar, kost | hor, dain, hol | — |
-| [F31R](recipes/f31r_recipe.md) | 85% | kost, ar, ol, or | dain, hedi, dar | — |
-| [F31V](recipes/f31v_recipe.md) | 85% | ar, kost, ol, or | hol, dain, dal | — |
-| [F32R](recipes/f32r_recipe.md) | 85% | ol, or, kost, ar | dain, hor, hol | — |
-| [F32V](recipes/f32v_recipe.md) | 85% | ol, or, ar, kost | dain, hol, hor | — |
-| [F33R](recipes/f33r_recipe.md) | 85% | ar, kost, or, ol | hedi, dain, dar | — |
-| [F33V](recipes/f33v_recipe.md) | 85% | ar, or, kost, ol | dain, dar, dal | — |
-| [F34R](recipes/f34r_recipe.md) | 85% | ar, ol, kost, or | dal, dar, dain | — |
-| [F34V](recipes/f34v_recipe.md) | 85% | ar, kost, ol, or | dain, dar, hedi | — |
-| [F35R](recipes/f35r_recipe.md) | 85% | or, ol, ar, kost | dain, hor, hol | — |
-| [F35V](recipes/f35v_recipe.md) | 85% | ol, ar, or, kost | dain, hor, hol | — |
-| [F36R](recipes/f36r_recipe.md) | 100% | ol, or, ar, kost | hol, dain, hor | oral |
-| [F36V](recipes/f36v_recipe.md) | 85% | or, ar, ol, kost | hor, dain, thor | — |
-| [F37R](recipes/f37r_recipe.md) | 85% | or, ol, kost, ar | hor, dain, šor | — |
-| [F37V](recipes/f37v_recipe.md) | 85% | or, ol, ar, kost | dain, hor, šor | — |
-| [F38R](recipes/f38r_recipe.md) | 85% | or, ol, kost, stor | dain, hor, šol | — |
-| [F38V](recipes/f38v_recipe.md) | 85% | ol, kost, or, ar | dain, hol, hor | — |
-| [F39R](recipes/f39r_recipe.md) | 85% | ol, ar, kost, or | dar, hedi, dain | — |
-| [F39V](recipes/f39v_recipe.md) | 85% | ar, or, kost, ol | dain, dal, hor | — |
-| [F40R](recipes/f40r_recipe.md) | 85% | ar, kost, ol, or | dain, dar, hedi | — |
-| [F40V](recipes/f40v_recipe.md) | 85% | kost, ar, ol, or | hedi, dain, dar | — |
-| [F41R](recipes/f41r_recipe.md) | 85% | kost, ar, or, sal | hedi, dal, šedi | — |
-| [F41V](recipes/f41v_recipe.md) | 85% | ol, kost, ar, or | dain, dal, dar | — |
-| [F42R](recipes/f42r_recipe.md) | 85% | ol, ar, or, kost | šol, dain, hol | — |
-| [F42V](recipes/f42v_recipe.md) | 85% | ol, ar, or, kost | hol, dain, hor | — |
-| [F43R](recipes/f43r_recipe.md) | 85% | ar, ol, or, kost | hedi, dain, dar | — |
-| [F43V](recipes/f43v_recipe.md) | 85% | ar, ol, kost, or | hedi, dar, dal | — |
-| [F44R](recipes/f44r_recipe.md) | 85% | ol, kost, or, ar | hol, hor, šol | — |
-| [F44V](recipes/f44v_recipe.md) | 85% | ol, or, kost, ar | hor, hol, šol | — |
-| [F45R](recipes/f45r_recipe.md) | 85% | ol, ar, kost, or | dain, dal, hol | — |
-| [F45V](recipes/f45v_recipe.md) | 85% | ol, or, kost, ar | hol, hor, šol | — |
-| [F46R](recipes/f46r_recipe.md) | 85% | ol, ar, kost, or | dain, hedi, dar | — |
-| [F46V](recipes/f46v_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, šedi | — |
-| [F47R](recipes/f47r_recipe.md) | 85% | ol, or, kost, ar | hol, dain, hor | — |
-| [F47V](recipes/f47v_recipe.md) | 85% | ol, ar, or, sal | hol, dain, šol | — |
-| [F48R](recipes/f48r_recipe.md) | 85% | ol, kost, ar, or | dain, dal, hedi | — |
-| [F48V](recipes/f48v_recipe.md) | 85% | ar, ol, or, kost | hedi, dal, šedi | — |
-| [F49R](recipes/f49r_recipe.md) | 85% | or, ol, ar, kost | hor, dain, hol | — |
-| [F49V](recipes/f49v_recipe.md) | 85% | ol, or, ar, kost | dain, hol, hor | — |
-| [F50R](recipes/f50r_recipe.md) | 85% | ar, kost, ol, or | hedi, dar, dal | — |
-| [F50V](recipes/f50v_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, dar | — |
-| [F51R](recipes/f51r_recipe.md) | 85% | ol, kost, or, ar | dain, dal, hol | — |
-| [F51V](recipes/f51v_recipe.md) | 85% | ol, kost, ar, or | dain, dar, hol | — |
-| [F52R](recipes/f52r_recipe.md) | 85% | ol, kost, ar, or | hol, dain, dal | — |
-| [F52V](recipes/f52v_recipe.md) | 85% | or, ol, ar, kost | dain, hor, hol | — |
-| [F53R](recipes/f53r_recipe.md) | 85% | ol, kost, or, ar | dar, dain, hol | — |
-| [F53V](recipes/f53v_recipe.md) | 85% | ol, or, kost, ar | dain, dal, hol | — |
-| [F54R](recipes/f54r_recipe.md) | 85% | ol, or, ar, kost | dain, hol, hor | — |
-| [F54V](recipes/f54v_recipe.md) | 85% | ol, kost, ar, or | dain, hol, dar | — |
-| [F55R](recipes/f55r_recipe.md) | 85% | ar, kost, ol, or | dain, dar, dal | — |
-| [F55V](recipes/f55v_recipe.md) | 85% | ar, kost, ol, or | dain, hedi, dar | — |
-| [F56R](recipes/f56r_recipe.md) | 85% | ol, or, ar, kost | hol, hor, dain | — |
-| [F56V](recipes/f56v_recipe.md) | 85% | ol, or, kost, ar | hol, dain, hor | — |
-| [F57R](recipes/f57r_recipe.md) | 85% | kost, ol, ar, or | dain, šedi, hedi | — |
-| [F57V](recipes/f57v_recipe.md) | 85% | ar, ol, kost, or | dar, dal, dain | — |
-
-### Herbal A (cont.) (2 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F58R](recipes/f58r_recipe.md) | 100% | ar, ol, or, kost | dal, hol, šol | oral |
-| [F58V](recipes/f58v_recipe.md) | 85% | kost, ar, ol, or | dain, dal, hol | — |
-
-### Herbal B / Astronomical (18 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F65R](recipes/f65r_recipe.md) | 20% | ar |  | — |
-| [F65V](recipes/f65v_recipe.md) | 75% | kost, or, ol | šedi, dain, dal | — |
-| [F66R](recipes/f66r_recipe.md) | 85% | kost, ol, ar, or | hedi, dal, dain | — |
-| [F66V](recipes/f66v_recipe.md) | 85% | ar, kost, ol, or | dal, dain, kal | — |
-| [F67R](recipes/f67r_recipe.md) | 100% | ar, ol, or, kost | dain, dar, dal | oral |
-| [F67V](recipes/f67v_recipe.md) | 100% | ol, ar, or, kost | dain, dal, dar | oral |
-| [F68R](recipes/f68r_recipe.md) | 85% | ol, or, kost, ar | dar, hol, dal | — |
-| [F68V](recipes/f68v_recipe.md) | 85% | ol, kost, ar, or | dain, hol, dar | — |
-| [F69R](recipes/f69r_recipe.md) | 85% | ar, kost, ol, or | dar, hol, hor | — |
-| [F69V](recipes/f69v_recipe.md) | 85% | ar, kost, ol, sar | dal, hol, hor | — |
-| [F70R](recipes/f70r_recipe.md) | 85% | ar, ol, kost, or | dal, dar, dain | — |
-| [F70V](recipes/f70v_recipe.md) | 85% | ar, ol, kost, sal | dal, dain, dar | — |
-| [F71R](recipes/f71r_recipe.md) | 85% | ar, ol, kost, sar | dar, hedi, hol | — |
-| [F71V](recipes/f71v_recipe.md) | 85% | ar, or, ol, kost | hor, dal, dar | — |
-| [F72R](recipes/f72r_recipe.md) | 100% | ar, ol, kost, or | dal, dain, dar | oral |
-| [F72V](recipes/f72v_recipe.md) | 85% | ol, ar, kost, or | dal, hedi, dar | — |
-| [F73R](recipes/f73r_recipe.md) | 85% | ar, or, kost, ol | dal, dar, dain | — |
-| [F73V](recipes/f73v_recipe.md) | 100% | ol, kost, ar, or | hol, dal, hor | oral |
-
-### Biological (20 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F75R](recipes/f75r_recipe.md) | 85% | kost, ar, ol, or | šedi, hedi, dar | — |
-| [F75V](recipes/f75v_recipe.md) | 85% | ol, kost, ar, or | hedi, šedi, dal | — |
-| [F76R](recipes/f76r_recipe.md) | 100% | kost, ol, ar, or | hedi, šedi, dal | oral |
-| [F76V](recipes/f76v_recipe.md) | 85% | kost, ol, ar, or | hedi, šedi, dal | — |
-| [F77R](recipes/f77r_recipe.md) | 100% | kost, ol, ar, or | hedi, šedi, dain | oral |
-| [F77V](recipes/f77v_recipe.md) | 100% | kost, ol, ar, or | hedi, šedi, dal | oral |
-| [F78R](recipes/f78r_recipe.md) | 85% | kost, ol, ar, or | hedi, šedi, dar | — |
-| [F78V](recipes/f78v_recipe.md) | 85% | ol, kost, ar, or | hedi, šedi, dal | — |
-| [F79R](recipes/f79r_recipe.md) | 85% | ol, kost, ar, or | šedi, hedi, hol | — |
-| [F79V](recipes/f79v_recipe.md) | 85% | kost, ol, ar, or | hedi, šedi, dar | — |
-| [F80R](recipes/f80r_recipe.md) | 100% | kost, ol, or, ar | hedi, šedi, dar | oral |
-| [F80V](recipes/f80v_recipe.md) | 85% | ol, kost, ar, or | hedi, šedi, šol | — |
-| [F81R](recipes/f81r_recipe.md) | 85% | ol, kost, ar, or | hedi, šedi, hol | — |
-| [F81V](recipes/f81v_recipe.md) | 85% | ol, kost, ar, sal | hedi, šedi, dain | — |
-| [F82R](recipes/f82r_recipe.md) | 85% | kost, ol, ar, or | hedi, šedi, dain | — |
-| [F82V](recipes/f82v_recipe.md) | 100% | kost, ol, ar, or | hedi, šedi, dal | oral |
-| [F83R](recipes/f83r_recipe.md) | 85% | kost, ol, ar, or | hedi, šedi, dal | — |
-| [F83V](recipes/f83v_recipe.md) | 85% | ol, kost, ar, or | hedi, šedi, dal | — |
-| [F84R](recipes/f84r_recipe.md) | 85% | kost, ol, ar, or | šedi, hedi, dar | — |
-| [F84V](recipes/f84v_recipe.md) | 100% | kost, ol, ar, or | šedi, hedi, dain | dolor |
-
-### Pharmaceutical (24 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F87R](recipes/f87r_recipe.md) | 85% | ol, or, sal, ar | dal, dain, dar | — |
-| [F87V](recipes/f87v_recipe.md) | 100% | ol, or, ar, sal | dain, dar, hol | oral |
-| [F88R](recipes/f88r_recipe.md) | 100% | ol, or, kost, ar | hol, hor, dal | oral |
-| [F88V](recipes/f88v_recipe.md) | 85% | ol, or, kost, ar | dain, dar, dal | — |
-| [F89R](recipes/f89r_recipe.md) | 85% | ol, kost, or, ar | dain, dal, hol | — |
-| [F89V](recipes/f89v_recipe.md) | 100% | ol, ar, or, kost | dain, dar, dal | oral |
-| [F90R](recipes/f90r_recipe.md) | 85% | ol, kost, or, ar | dar, hol, hor | — |
-| [F90V](recipes/f90v_recipe.md) | 85% | ol, or, kost, ar | dain, dar, šor | — |
-| [F93R](recipes/f93r_recipe.md) | 85% | ol, or, kost, ar | dain, dal, hor | — |
-| [F93V](recipes/f93v_recipe.md) | 85% | ol, kost, ar, or | dain, hol, dar | — |
-| [F94R](recipes/f94r_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, dal | — |
-| [F94V](recipes/f94v_recipe.md) | 85% | ar, kost, or, ol | dain, dar, šedi | — |
-| [F95R](recipes/f95r_recipe.md) | 85% | ar, kost, ol, or | dain, hedi, šedi | — |
-| [F95V](recipes/f95v_recipe.md) | 85% | ar, kost, ol, or | dain, šedi, dar | — |
-| [F96R](recipes/f96r_recipe.md) | 85% | ol, or, kost, ar | hol, dain, hor | — |
-| [F96V](recipes/f96v_recipe.md) | 100% | ar, or, sar, ol | dar, dain, dal | oral |
-| [F99R](recipes/f99r_recipe.md) | 85% | ol, kost, or, ar | dain, hol, hor | — |
-| [F99V](recipes/f99v_recipe.md) | 85% | ol, kost, or, ar | hol, dal, dain | — |
-| [F100R](recipes/f100r_recipe.md) | 85% | ol, or, kost, ar | hor, dain, hol | — |
-| [F100V](recipes/f100v_recipe.md) | 100% | ol, or, kost, ar | hol, hor, dain | oral |
-| [F101R](recipes/f101r_recipe.md) | 85% | ol, or, kost, ar | dain, hol, dar | — |
-| [F101V](recipes/f101v_recipe.md) | 100% | ol, or, kost, ar | dain, hor, hol | oral |
-| [F102R](recipes/f102r_recipe.md) | 100% | ol, kost, or, ar | dain, dar, hol | orolaly, oral |
-| [F102V](recipes/f102v_recipe.md) | 85% | or, ol, kost, ar | dain, hol, hor | — |
-
-### Recipes/Stars (23 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F103R](recipes/f103r_recipe.md) | 100% | kost, ol, ar, or | šedi, hedi, dar | oral |
-| [F103V](recipes/f103v_recipe.md) | 85% | kost, ar, ol, or | hedi, šedi, dain | — |
-| [F104R](recipes/f104r_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, hol | — |
-| [F104V](recipes/f104v_recipe.md) | 85% | kost, ol, ar, or | hedi, dain, dar | — |
-| [F105R](recipes/f105r_recipe.md) | 100% | ol, kost, ar, or | hedi, dain, dar | oral |
-| [F105V](recipes/f105v_recipe.md) | 100% | ar, ol, or, kost | dain, hedi, dal | oral |
-| [F106R](recipes/f106r_recipe.md) | 100% | kost, ar, ol, or | hedi, dar, šedi | oral |
-| [F106V](recipes/f106v_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, šedi | — |
-| [F107R](recipes/f107r_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, hol | — |
-| [F107V](recipes/f107v_recipe.md) | 100% | kost, ol, ar, or | hedi, dain, hol | oral |
-| [F108R](recipes/f108r_recipe.md) | 100% | kost, ar, ol, or | hedi, dain, dar | oral |
-| [F108V](recipes/f108v_recipe.md) | 100% | kost, ar, ol, or | dain, hedi, dar | oral, ana |
-| [F111R](recipes/f111r_recipe.md) | 85% | kost, ar, ol, or | hedi, dain, dar | — |
-| [F111V](recipes/f111v_recipe.md) | 85% | kost, ar, ol, or | hedi, dain, šedi | — |
-| [F112R](recipes/f112r_recipe.md) | 100% | kost, ar, ol, or | hedi, šedi, dal | oral |
-| [F112V](recipes/f112v_recipe.md) | 85% | kost, ar, ol, or | dain, hedi, dal | — |
-| [F113R](recipes/f113r_recipe.md) | 85% | ar, kost, ol, or | hedi, dain, hol | — |
-| [F113V](recipes/f113v_recipe.md) | 100% | ar, ol, kost, or | hedi, dar, dain | oral |
-| [F114R](recipes/f114r_recipe.md) | 100% | ar, kost, ol, or | dain, hedi, dar | dolor, oral |
-| [F114V](recipes/f114v_recipe.md) | 85% | ol, kost, ar, or | dain, hedi, dal | — |
-| [F115R](recipes/f115r_recipe.md) | 85% | ar, kost, or, ol | hedi, dain, dar | — |
-| [F115V](recipes/f115v_recipe.md) | 85% | kost, ar, ol, or | hedi, dain, šedi | — |
-| [F116R](recipes/f116r_recipe.md) | 85% | kost, ar, ol, or | hedi, šedi, dain | — |
-
-### Cosmological (2 folios)
-
-| Folio | Confidence | Key Ingredients | Key Processes | Latin Terms |
-|-------|------------|-----------------|---------------|-------------|
-| [F85R](recipes/f85r_recipe.md) | 100% | ar, or, ol, kost | hedi, dain, dar | oral |
-| [F86V](recipes/f86v_recipe.md) | 85% | ar, ol, kost, or | dain, hedi, dar | — |
+| Folio | Section | Words | Resolved | Confidence | Link |
+|-------|---------|-------|----------|------------|------|
+| [f1r](recipes/f1r_recipe.md) | Herbal A | 210 | 92% | 68% | [view](recipes/f1r_recipe.md) |
+| [f1v](recipes/f1v_recipe.md) | Herbal A | 80 | 95% | 69% | [view](recipes/f1v_recipe.md) |
+| [f2r](recipes/f2r_recipe.md) | Herbal A | 78 | 92% | 65% | [view](recipes/f2r_recipe.md) |
+| [f2v](recipes/f2v_recipe.md) | Herbal A | 55 | 98% | 73% | [view](recipes/f2v_recipe.md) |
+| [f3r](recipes/f3r_recipe.md) | Herbal A | 111 | 94% | 74% | [view](recipes/f3r_recipe.md) |
+| [f3v](recipes/f3v_recipe.md) | Herbal A | 83 | 92% | 70% | [view](recipes/f3v_recipe.md) |
+| [f4r](recipes/f4r_recipe.md) | Herbal A | 60 | 98% | 76% | [view](recipes/f4r_recipe.md) |
+| [f4v](recipes/f4v_recipe.md) | Herbal A | 78 | 92% | 67% | [view](recipes/f4v_recipe.md) |
+| [f5r](recipes/f5r_recipe.md) | Herbal A | 56 | 96% | 67% | [view](recipes/f5r_recipe.md) |
+| [f5v](recipes/f5v_recipe.md) | Herbal A | 45 | 91% | 72% | [view](recipes/f5v_recipe.md) |
+| [f6r](recipes/f6r_recipe.md) | Herbal A | 79 | 95% | 73% | [view](recipes/f6r_recipe.md) |
+| [f6v](recipes/f6v_recipe.md) | Herbal A | 113 | 92% | 70% | [view](recipes/f6v_recipe.md) |
+| [f7r](recipes/f7r_recipe.md) | Herbal A | 52 | 92% | 62% | [view](recipes/f7r_recipe.md) |
+| [f7v](recipes/f7v_recipe.md) | Herbal A | 70 | 97% | 66% | [view](recipes/f7v_recipe.md) |
+| [f8r](recipes/f8r_recipe.md) | Herbal A | 129 | 91% | 64% | [view](recipes/f8r_recipe.md) |
+| [f8v](recipes/f8v_recipe.md) | Herbal A | 102 | 100% | 74% | [view](recipes/f8v_recipe.md) |
+| [f9r](recipes/f9r_recipe.md) | Herbal A | 73 | 92% | 67% | [view](recipes/f9r_recipe.md) |
+| [f9v](recipes/f9v_recipe.md) | Herbal A | 72 | 97% | 73% | [view](recipes/f9v_recipe.md) |
+| [f10r](recipes/f10r_recipe.md) | Herbal A | 86 | 97% | 72% | [view](recipes/f10r_recipe.md) |
+| [f10v](recipes/f10v_recipe.md) | Herbal A | 53 | 96% | 73% | [view](recipes/f10v_recipe.md) |
+| [f11r](recipes/f11r_recipe.md) | Herbal A | 57 | 91% | 67% | [view](recipes/f11r_recipe.md) |
+| [f11v](recipes/f11v_recipe.md) | Herbal A | 43 | 98% | 65% | [view](recipes/f11v_recipe.md) |
+| [f13r](recipes/f13r_recipe.md) | Herbal A | 75 | 88% | 65% | [view](recipes/f13r_recipe.md) |
+| [f13v](recipes/f13v_recipe.md) | Herbal A | 59 | 97% | 73% | [view](recipes/f13v_recipe.md) |
+| [f14r](recipes/f14r_recipe.md) | Herbal A | 73 | 96% | 69% | [view](recipes/f14r_recipe.md) |
+| [f14v](recipes/f14v_recipe.md) | Herbal A | 65 | 94% | 60% | [view](recipes/f14v_recipe.md) |
+| [f15r](recipes/f15r_recipe.md) | Herbal A | 75 | 96% | 70% | [view](recipes/f15r_recipe.md) |
+| [f15v](recipes/f15v_recipe.md) | Herbal A | 71 | 90% | 75% | [view](recipes/f15v_recipe.md) |
+| [f16r](recipes/f16r_recipe.md) | Herbal A | 75 | 87% | 65% | [view](recipes/f16r_recipe.md) |
+| [f16v](recipes/f16v_recipe.md) | Herbal A | 73 | 95% | 71% | [view](recipes/f16v_recipe.md) |
+| [f17r](recipes/f17r_recipe.md) | Herbal A | 71 | 92% | 64% | [view](recipes/f17r_recipe.md) |
+| [f17v](recipes/f17v_recipe.md) | Herbal A | 134 | 94% | 73% | [view](recipes/f17v_recipe.md) |
+| [f18r](recipes/f18r_recipe.md) | Herbal A | 79 | 91% | 71% | [view](recipes/f18r_recipe.md) |
+| [f18v](recipes/f18v_recipe.md) | Herbal A | 71 | 86% | 63% | [view](recipes/f18v_recipe.md) |
+| [f19r](recipes/f19r_recipe.md) | Herbal A | 76 | 93% | 68% | [view](recipes/f19r_recipe.md) |
+| [f19v](recipes/f19v_recipe.md) | Herbal A | 77 | 92% | 67% | [view](recipes/f19v_recipe.md) |
+| [f20r](recipes/f20r_recipe.md) | Herbal A | 85 | 98% | 69% | [view](recipes/f20r_recipe.md) |
+| [f20v](recipes/f20v_recipe.md) | Herbal A | 88 | 91% | 73% | [view](recipes/f20v_recipe.md) |
+| [f21r](recipes/f21r_recipe.md) | Herbal A | 95 | 94% | 73% | [view](recipes/f21r_recipe.md) |
+| [f21v](recipes/f21v_recipe.md) | Herbal A | 56 | 88% | 60% | [view](recipes/f21v_recipe.md) |
+| [f22r](recipes/f22r_recipe.md) | Herbal A | 99 | 92% | 69% | [view](recipes/f22r_recipe.md) |
+| [f22v](recipes/f22v_recipe.md) | Herbal A | 69 | 96% | 72% | [view](recipes/f22v_recipe.md) |
+| [f23r](recipes/f23r_recipe.md) | Herbal A | 101 | 87% | 66% | [view](recipes/f23r_recipe.md) |
+| [f23v](recipes/f23v_recipe.md) | Herbal A | 80 | 92% | 68% | [view](recipes/f23v_recipe.md) |
+| [f24r](recipes/f24r_recipe.md) | Herbal A | 107 | 93% | 71% | [view](recipes/f24r_recipe.md) |
+| [f24v](recipes/f24v_recipe.md) | Herbal A | 80 | 92% | 63% | [view](recipes/f24v_recipe.md) |
+| [f25r](recipes/f25r_recipe.md) | Herbal A | 48 | 96% | 70% | [view](recipes/f25r_recipe.md) |
+| [f25v](recipes/f25v_recipe.md) | Herbal A | 55 | 93% | 68% | [view](recipes/f25v_recipe.md) |
+| [f26r](recipes/f26r_recipe.md) | Herbal A | 68 | 88% | 68% | [view](recipes/f26r_recipe.md) |
+| [f26v](recipes/f26v_recipe.md) | Herbal A | 90 | 98% | 71% | [view](recipes/f26v_recipe.md) |
+| [f27r](recipes/f27r_recipe.md) | Herbal A | 82 | 98% | 71% | [view](recipes/f27r_recipe.md) |
+| [f27v](recipes/f27v_recipe.md) | Herbal A | 51 | 82% | 50% | [view](recipes/f27v_recipe.md) |
+| [f28r](recipes/f28r_recipe.md) | Herbal A | 59 | 92% | 66% | [view](recipes/f28r_recipe.md) |
+| [f28v](recipes/f28v_recipe.md) | Herbal A | 63 | 90% | 73% | [view](recipes/f28v_recipe.md) |
+| [f29r](recipes/f29r_recipe.md) | Herbal A | 60 | 95% | 75% | [view](recipes/f29r_recipe.md) |
+| [f29v](recipes/f29v_recipe.md) | Herbal A | 74 | 89% | 66% | [view](recipes/f29v_recipe.md) |
+| [f30r](recipes/f30r_recipe.md) | Herbal A | 88 | 95% | 70% | [view](recipes/f30r_recipe.md) |
+| [f30v](recipes/f30v_recipe.md) | Herbal A | 63 | 95% | 69% | [view](recipes/f30v_recipe.md) |
+| [f31r](recipes/f31r_recipe.md) | Herbal A | 101 | 97% | 73% | [view](recipes/f31r_recipe.md) |
+| [f31v](recipes/f31v_recipe.md) | Herbal A | 108 | 95% | 72% | [view](recipes/f31v_recipe.md) |
+| [f32r](recipes/f32r_recipe.md) | Herbal A | 73 | 93% | 68% | [view](recipes/f32r_recipe.md) |
+| [f32v](recipes/f32v_recipe.md) | Herbal A | 75 | 92% | 71% | [view](recipes/f32v_recipe.md) |
+| [f33r](recipes/f33r_recipe.md) | Herbal A | 72 | 97% | 79% | [view](recipes/f33r_recipe.md) |
+| [f33v](recipes/f33v_recipe.md) | Herbal A | 88 | 99% | 72% | [view](recipes/f33v_recipe.md) |
+| [f34r](recipes/f34r_recipe.md) | Herbal A | 118 | 93% | 67% | [view](recipes/f34r_recipe.md) |
+| [f34v](recipes/f34v_recipe.md) | Herbal A | 115 | 98% | 77% | [view](recipes/f34v_recipe.md) |
+| [f35r](recipes/f35r_recipe.md) | Herbal A | 88 | 92% | 73% | [view](recipes/f35r_recipe.md) |
+| [f35v](recipes/f35v_recipe.md) | Herbal A | 87 | 93% | 71% | [view](recipes/f35v_recipe.md) |
+| [f36r](recipes/f36r_recipe.md) | Herbal A | 52 | 88% | 63% | [view](recipes/f36r_recipe.md) |
+| [f36v](recipes/f36v_recipe.md) | Herbal A | 69 | 91% | 68% | [view](recipes/f36v_recipe.md) |
+| [f37r](recipes/f37r_recipe.md) | Herbal A | 72 | 96% | 75% | [view](recipes/f37r_recipe.md) |
+| [f37v](recipes/f37v_recipe.md) | Herbal A | 88 | 92% | 68% | [view](recipes/f37v_recipe.md) |
+| [f38r](recipes/f38r_recipe.md) | Herbal A | 35 | 94% | 70% | [view](recipes/f38r_recipe.md) |
+| [f38v](recipes/f38v_recipe.md) | Herbal A | 58 | 88% | 68% | [view](recipes/f38v_recipe.md) |
+| [f39r](recipes/f39r_recipe.md) | Herbal A | 153 | 97% | 73% | [view](recipes/f39r_recipe.md) |
+| [f39v](recipes/f39v_recipe.md) | Herbal A | 135 | 97% | 77% | [view](recipes/f39v_recipe.md) |
+| [f40r](recipes/f40r_recipe.md) | Herbal A | 87 | 95% | 79% | [view](recipes/f40r_recipe.md) |
+| [f40v](recipes/f40v_recipe.md) | Herbal A | 100 | 93% | 77% | [view](recipes/f40v_recipe.md) |
+| [f41r](recipes/f41r_recipe.md) | Herbal A | 87 | 91% | 67% | [view](recipes/f41r_recipe.md) |
+| [f41v](recipes/f41v_recipe.md) | Herbal A | 62 | 97% | 68% | [view](recipes/f41v_recipe.md) |
+| [f42r](recipes/f42r_recipe.md) | Herbal A | 136 | 97% | 74% | [view](recipes/f42r_recipe.md) |
+| [f42v](recipes/f42v_recipe.md) | Herbal A | 97 | 92% | 70% | [view](recipes/f42v_recipe.md) |
+| [f43r](recipes/f43r_recipe.md) | Herbal A | 152 | 95% | 72% | [view](recipes/f43r_recipe.md) |
+| [f43v](recipes/f43v_recipe.md) | Herbal A | 154 | 97% | 76% | [view](recipes/f43v_recipe.md) |
+| [f44r](recipes/f44r_recipe.md) | Herbal A | 75 | 93% | 62% | [view](recipes/f44r_recipe.md) |
+| [f44v](recipes/f44v_recipe.md) | Herbal A | 95 | 96% | 74% | [view](recipes/f44v_recipe.md) |
+| [f45r](recipes/f45r_recipe.md) | Herbal A | 86 | 98% | 74% | [view](recipes/f45r_recipe.md) |
+| [f45v](recipes/f45v_recipe.md) | Herbal A | 77 | 90% | 65% | [view](recipes/f45v_recipe.md) |
+| [f46r](recipes/f46r_recipe.md) | Herbal A | 157 | 95% | 74% | [view](recipes/f46r_recipe.md) |
+| [f46v](recipes/f46v_recipe.md) | Herbal A | 109 | 94% | 73% | [view](recipes/f46v_recipe.md) |
+| [f47r](recipes/f47r_recipe.md) | Herbal A | 79 | 96% | 76% | [view](recipes/f47r_recipe.md) |
+| [f47v](recipes/f47v_recipe.md) | Herbal A | 74 | 93% | 69% | [view](recipes/f47v_recipe.md) |
+| [f48r](recipes/f48r_recipe.md) | Herbal A | 89 | 92% | 69% | [view](recipes/f48r_recipe.md) |
+| [f48v](recipes/f48v_recipe.md) | Herbal A | 112 | 96% | 73% | [view](recipes/f48v_recipe.md) |
+| [f49r](recipes/f49r_recipe.md) | Herbal A | 113 | 96% | 69% | [view](recipes/f49r_recipe.md) |
+| [f49v](recipes/f49v_recipe.md) | Herbal A | 131 | 88% | 65% | [view](recipes/f49v_recipe.md) |
+| [f50r](recipes/f50r_recipe.md) | Herbal A | 87 | 100% | 75% | [view](recipes/f50r_recipe.md) |
+| [f50v](recipes/f50v_recipe.md) | Herbal A | 96 | 96% | 76% | [view](recipes/f50v_recipe.md) |
+| [f51r](recipes/f51r_recipe.md) | Herbal A | 83 | 94% | 68% | [view](recipes/f51r_recipe.md) |
+| [f51v](recipes/f51v_recipe.md) | Herbal A | 72 | 94% | 68% | [view](recipes/f51v_recipe.md) |
+| [f52r](recipes/f52r_recipe.md) | Herbal A | 62 | 89% | 66% | [view](recipes/f52r_recipe.md) |
+| [f52v](recipes/f52v_recipe.md) | Herbal A | 74 | 95% | 71% | [view](recipes/f52v_recipe.md) |
+| [f53r](recipes/f53r_recipe.md) | Herbal A | 52 | 92% | 67% | [view](recipes/f53r_recipe.md) |
+| [f53v](recipes/f53v_recipe.md) | Herbal A | 74 | 92% | 69% | [view](recipes/f53v_recipe.md) |
+| [f54r](recipes/f54r_recipe.md) | Herbal A | 100 | 91% | 67% | [view](recipes/f54r_recipe.md) |
+| [f54v](recipes/f54v_recipe.md) | Herbal A | 90 | 94% | 73% | [view](recipes/f54v_recipe.md) |
+| [f55r](recipes/f55r_recipe.md) | Herbal A | 124 | 96% | 77% | [view](recipes/f55r_recipe.md) |
+| [f55v](recipes/f55v_recipe.md) | Herbal A | 94 | 97% | 75% | [view](recipes/f55v_recipe.md) |
+| [f56r](recipes/f56r_recipe.md) | Herbal A | 97 | 93% | 72% | [view](recipes/f56r_recipe.md) |
+| [f56v](recipes/f56v_recipe.md) | Herbal A | 86 | 95% | 75% | [view](recipes/f56v_recipe.md) |
+| [f57r](recipes/f57r_recipe.md) | Herbal A | 83 | 94% | 65% | [view](recipes/f57r_recipe.md) |
+| [f57v](recipes/f57v_recipe.md) | Herbal A | 122 | 60% | 50% | [view](recipes/f57v_recipe.md) |
+| [f58r](recipes/f58r_recipe.md) | Herbal B | 367 | 96% | 73% | [view](recipes/f58r_recipe.md) |
+| [f58v](recipes/f58v_recipe.md) | Herbal B | 365 | 98% | 78% | [view](recipes/f58v_recipe.md) |
+| [f65r](recipes/f65r_recipe.md) | Herbal B | 3 | 100% | 67% | [view](recipes/f65r_recipe.md) |
+| [f65v](recipes/f65v_recipe.md) | Herbal B | 39 | 90% | 65% | [view](recipes/f65v_recipe.md) |
+| [f66r](recipes/f66r_recipe.md) | Herbal B | 318 | 95% | 68% | [view](recipes/f66r_recipe.md) |
+| [f66v](recipes/f66v_recipe.md) | Herbal B | 112 | 96% | 71% | [view](recipes/f66v_recipe.md) |
+| [f67r](recipes/f67r_recipe.md) | Astronomical | 331 | 92% | 63% | [view](recipes/f67r_recipe.md) |
+| [f67v](recipes/f67v_recipe.md) | Astronomical | 130 | 94% | 62% | [view](recipes/f67v_recipe.md) |
+| [f68r](recipes/f68r_recipe.md) | Astronomical | 246 | 92% | 61% | [view](recipes/f68r_recipe.md) |
+| [f68v](recipes/f68v_recipe.md) | Astronomical | 349 | 95% | 66% | [view](recipes/f68v_recipe.md) |
+| [f69r](recipes/f69r_recipe.md) | Astronomical | 159 | 96% | 69% | [view](recipes/f69r_recipe.md) |
+| [f69v](recipes/f69v_recipe.md) | Astronomical | 132 | 92% | 63% | [view](recipes/f69v_recipe.md) |
+| [f70r](recipes/f70r_recipe.md) | Astronomical | 378 | 88% | 67% | [view](recipes/f70r_recipe.md) |
+| [f70v](recipes/f70v_recipe.md) | Astronomical | 226 | 97% | 74% | [view](recipes/f70v_recipe.md) |
+| [f71r](recipes/f71r_recipe.md) | Astronomical | 90 | 99% | 75% | [view](recipes/f71r_recipe.md) |
+| [f71v](recipes/f71v_recipe.md) | Astronomical | 100 | 97% | 78% | [view](recipes/f71v_recipe.md) |
+| [f72r](recipes/f72r_recipe.md) | Astronomical | 381 | 96% | 68% | [view](recipes/f72r_recipe.md) |
+| [f72v](recipes/f72v_recipe.md) | Astronomical | 332 | 94% | 64% | [view](recipes/f72v_recipe.md) |
+| [f73r](recipes/f73r_recipe.md) | Astronomical | 96 | 99% | 75% | [view](recipes/f73r_recipe.md) |
+| [f73v](recipes/f73v_recipe.md) | Astronomical | 97 | 96% | 62% | [view](recipes/f73v_recipe.md) |
+| [f75r](recipes/f75r_recipe.md) | Biological/Balneological | 392 | 99% | 77% | [view](recipes/f75r_recipe.md) |
+| [f75v](recipes/f75v_recipe.md) | Biological/Balneological | 351 | 99% | 79% | [view](recipes/f75v_recipe.md) |
+| [f76r](recipes/f76r_recipe.md) | Biological/Balneological | 556 | 97% | 78% | [view](recipes/f76r_recipe.md) |
+| [f76v](recipes/f76v_recipe.md) | Biological/Balneological | 400 | 96% | 75% | [view](recipes/f76v_recipe.md) |
+| [f77r](recipes/f77r_recipe.md) | Biological/Balneological | 325 | 99% | 77% | [view](recipes/f77r_recipe.md) |
+| [f77v](recipes/f77v_recipe.md) | Biological/Balneological | 335 | 99% | 77% | [view](recipes/f77v_recipe.md) |
+| [f78r](recipes/f78r_recipe.md) | Biological/Balneological | 293 | 99% | 77% | [view](recipes/f78r_recipe.md) |
+| [f78v](recipes/f78v_recipe.md) | Biological/Balneological | 292 | 98% | 80% | [view](recipes/f78v_recipe.md) |
+| [f79r](recipes/f79r_recipe.md) | Biological/Balneological | 389 | 100% | 81% | [view](recipes/f79r_recipe.md) |
+| [f79v](recipes/f79v_recipe.md) | Biological/Balneological | 355 | 98% | 78% | [view](recipes/f79v_recipe.md) |
+| [f80r](recipes/f80r_recipe.md) | Biological/Balneological | 440 | 98% | 77% | [view](recipes/f80r_recipe.md) |
+| [f80v](recipes/f80v_recipe.md) | Biological/Balneological | 378 | 99% | 81% | [view](recipes/f80v_recipe.md) |
+| [f81r](recipes/f81r_recipe.md) | Biological/Balneological | 207 | 98% | 79% | [view](recipes/f81r_recipe.md) |
+| [f81v](recipes/f81v_recipe.md) | Biological/Balneological | 258 | 97% | 78% | [view](recipes/f81v_recipe.md) |
+| [f82r](recipes/f82r_recipe.md) | Biological/Balneological | 285 | 100% | 78% | [view](recipes/f82r_recipe.md) |
+| [f82v](recipes/f82v_recipe.md) | Biological/Balneological | 313 | 98% | 79% | [view](recipes/f82v_recipe.md) |
+| [f83r](recipes/f83r_recipe.md) | Biological/Balneological | 341 | 99% | 79% | [view](recipes/f83r_recipe.md) |
+| [f83v](recipes/f83v_recipe.md) | Biological/Balneological | 262 | 99% | 80% | [view](recipes/f83v_recipe.md) |
+| [f84r](recipes/f84r_recipe.md) | Biological/Balneological | 362 | 98% | 79% | [view](recipes/f84r_recipe.md) |
+| [f84v](recipes/f84v_recipe.md) | Biological/Balneological | 337 | 99% | 77% | [view](recipes/f84v_recipe.md) |
+| [f85r](recipes/f85r_recipe.md) | Biological/Balneological | 490 | 97% | 76% | [view](recipes/f85r_recipe.md) |
+| [f86v](recipes/f86v_recipe.md) | Biological/Balneological | 1320 | 97% | 74% | [view](recipes/f86v_recipe.md) |
+| [f87r](recipes/f87r_recipe.md) | Pharmaceutical | 98 | 95% | 66% | [view](recipes/f87r_recipe.md) |
+| [f87v](recipes/f87v_recipe.md) | Pharmaceutical | 74 | 80% | 56% | [view](recipes/f87v_recipe.md) |
+| [f88r](recipes/f88r_recipe.md) | Pharmaceutical | 149 | 97% | 76% | [view](recipes/f88r_recipe.md) |
+| [f88v](recipes/f88v_recipe.md) | Pharmaceutical | 145 | 95% | 73% | [view](recipes/f88v_recipe.md) |
+| [f89r](recipes/f89r_recipe.md) | Pharmaceutical | 375 | 95% | 70% | [view](recipes/f89r_recipe.md) |
+| [f89v](recipes/f89v_recipe.md) | Pharmaceutical | 323 | 93% | 68% | [view](recipes/f89v_recipe.md) |
+| [f90r](recipes/f90r_recipe.md) | Pharmaceutical | 113 | 88% | 66% | [view](recipes/f90r_recipe.md) |
+| [f90v](recipes/f90v_recipe.md) | Pharmaceutical | 141 | 94% | 65% | [view](recipes/f90v_recipe.md) |
+| [f93r](recipes/f93r_recipe.md) | Pharmaceutical | 148 | 87% | 66% | [view](recipes/f93r_recipe.md) |
+| [f93v](recipes/f93v_recipe.md) | Pharmaceutical | 70 | 86% | 63% | [view](recipes/f93v_recipe.md) |
+| [f94r](recipes/f94r_recipe.md) | Pharmaceutical | 80 | 98% | 76% | [view](recipes/f94r_recipe.md) |
+| [f94v](recipes/f94v_recipe.md) | Pharmaceutical | 91 | 96% | 76% | [view](recipes/f94v_recipe.md) |
+| [f95r](recipes/f95r_recipe.md) | Pharmaceutical | 182 | 100% | 81% | [view](recipes/f95r_recipe.md) |
+| [f95v](recipes/f95v_recipe.md) | Pharmaceutical | 176 | 98% | 75% | [view](recipes/f95v_recipe.md) |
+| [f96r](recipes/f96r_recipe.md) | Pharmaceutical | 77 | 91% | 65% | [view](recipes/f96r_recipe.md) |
+| [f96v](recipes/f96v_recipe.md) | Pharmaceutical | 56 | 82% | 61% | [view](recipes/f96v_recipe.md) |
+| [f99r](recipes/f99r_recipe.md) | Pharmaceutical | 197 | 94% | 68% | [view](recipes/f99r_recipe.md) |
+| [f99v](recipes/f99v_recipe.md) | Pharmaceutical | 163 | 99% | 72% | [view](recipes/f99v_recipe.md) |
+| [f100r](recipes/f100r_recipe.md) | Pharmaceutical | 110 | 95% | 69% | [view](recipes/f100r_recipe.md) |
+| [f100v](recipes/f100v_recipe.md) | Pharmaceutical | 91 | 97% | 64% | [view](recipes/f100v_recipe.md) |
+| [f101r](recipes/f101r_recipe.md) | Pharmaceutical | 205 | 93% | 71% | [view](recipes/f101r_recipe.md) |
+| [f101v](recipes/f101v_recipe.md) | Pharmaceutical | 199 | 94% | 74% | [view](recipes/f101v_recipe.md) |
+| [f102r](recipes/f102r_recipe.md) | Pharmaceutical | 238 | 95% | 64% | [view](recipes/f102r_recipe.md) |
+| [f102v](recipes/f102v_recipe.md) | Pharmaceutical | 310 | 96% | 68% | [view](recipes/f102v_recipe.md) |
+| [f103r](recipes/f103r_recipe.md) | Pharmaceutical | 525 | 98% | 80% | [view](recipes/f103r_recipe.md) |
+| [f103v](recipes/f103v_recipe.md) | Pharmaceutical | 449 | 98% | 80% | [view](recipes/f103v_recipe.md) |
+| [f104r](recipes/f104r_recipe.md) | Pharmaceutical | 438 | 97% | 75% | [view](recipes/f104r_recipe.md) |
+| [f104v](recipes/f104v_recipe.md) | Pharmaceutical | 458 | 96% | 73% | [view](recipes/f104v_recipe.md) |
+| [f105r](recipes/f105r_recipe.md) | Pharmaceutical | 368 | 96% | 70% | [view](recipes/f105r_recipe.md) |
+| [f105v](recipes/f105v_recipe.md) | Pharmaceutical | 773 | 93% | 69% | [view](recipes/f105v_recipe.md) |
+| [f106r](recipes/f106r_recipe.md) | Pharmaceutical | 824 | 96% | 73% | [view](recipes/f106r_recipe.md) |
+| [f106v](recipes/f106v_recipe.md) | Pharmaceutical | 878 | 98% | 77% | [view](recipes/f106v_recipe.md) |
+| [f107r](recipes/f107r_recipe.md) | Pharmaceutical | 959 | 97% | 78% | [view](recipes/f107r_recipe.md) |
+| [f107v](recipes/f107v_recipe.md) | Pharmaceutical | 898 | 99% | 81% | [view](recipes/f107v_recipe.md) |
+| [f108r](recipes/f108r_recipe.md) | Pharmaceutical | 961 | 98% | 78% | [view](recipes/f108r_recipe.md) |
+| [f108v](recipes/f108v_recipe.md) | Pharmaceutical | 1102 | 99% | 79% | [view](recipes/f108v_recipe.md) |
+| [f111r](recipes/f111r_recipe.md) | Pharmaceutical | 1199 | 97% | 76% | [view](recipes/f111r_recipe.md) |
+| [f111v](recipes/f111v_recipe.md) | Pharmaceutical | 1085 | 98% | 80% | [view](recipes/f111v_recipe.md) |
+| [f112r](recipes/f112r_recipe.md) | Pharmaceutical | 767 | 98% | 76% | [view](recipes/f112r_recipe.md) |
+| [f112v](recipes/f112v_recipe.md) | Pharmaceutical | 808 | 98% | 77% | [view](recipes/f112v_recipe.md) |
+| [f113r](recipes/f113r_recipe.md) | Pharmaceutical | 875 | 96% | 75% | [view](recipes/f113r_recipe.md) |
+| [f113v](recipes/f113v_recipe.md) | Pharmaceutical | 482 | 97% | 77% | [view](recipes/f113v_recipe.md) |
+| [f114r](recipes/f114r_recipe.md) | Pharmaceutical | 447 | 95% | 72% | [view](recipes/f114r_recipe.md) |
+| [f114v](recipes/f114v_recipe.md) | Pharmaceutical | 362 | 98% | 74% | [view](recipes/f114v_recipe.md) |
+| [f115r](recipes/f115r_recipe.md) | Pharmaceutical | 444 | 97% | 73% | [view](recipes/f115r_recipe.md) |
+| [f115v](recipes/f115v_recipe.md) | Pharmaceutical | 399 | 97% | 73% | [view](recipes/f115v_recipe.md) |
+| [f116r](recipes/f116r_recipe.md) | Pharmaceutical | 538 | 98% | 79% | [view](recipes/f116r_recipe.md) |
 
 ---
 
-## Ingredient Concordance
-
-Which folios contain which ingredients:
-
-**ol** (oil): F1R, F1V, F2R, F2V, F3R, F3V, F4R, F4V, F5R, F5V, F6R, F6V, F7R, F7V, F8R, F8V, F9R, F9V, F10R, F10V, F11R, F11V, F13R, F13V, F14R, F14V, F15R, F15V, F16R, F16V ...+170 more
-**or** (oil): F1R, F1V, F2R, F2V, F3R, F3V, F4R, F4V, F5R, F5V, F6R, F6V, F7R, F7V, F8R, F8V, F9R, F9V, F10R, F10V, F11R, F11V, F13R, F13V, F14R, F14V, F15R, F15V, F16R, F16V ...+169 more
-**ar** (water): F1R, F1V, F2R, F2V, F3R, F3V, F4R, F4V, F5R, F5V, F6R, F6V, F7R, F7V, F8R, F8V, F9R, F9V, F10R, F10V, F11V, F13R, F14R, F14V, F15R, F15V, F16R, F16V, F17R, F17V ...+168 more
-**kost** (bone): F1R, F1V, F2R, F3R, F3V, F4R, F4V, F5R, F5V, F6R, F6V, F7R, F7V, F8R, F8V, F9R, F9V, F10R, F10V, F11R, F11V, F13R, F13V, F14R, F14V, F15R, F15V, F16R, F16V, F17R ...+167 more
-**sal** (salt): F2R, F6V, F8V, F9R, F10V, F15R, F16R, F16V, F21R, F22V, F24V, F26R, F26V, F30R, F31R, F31V, F33R, F34R, F37V, F39R, F39V, F40R, F40V, F41R, F42V, F43R, F47V, F51V, F52V, F54R ...+77 more
-**stor** (storax): F3V, F6V, F9R, F13R, F14R, F15R, F15V, F17R, F17V, F19R, F19V, F23R, F23V, F25V, F29V, F31V, F32R, F33V, F34R, F37R, F37V, F38R, F39V, F40R, F42V, F43R, F49V, F50V, F51V, F52V ...+47 more
-**sar** (salt): F6V, F8V, F9R, F17V, F23V, F24R, F26V, F33V, F35V, F39V, F42V, F43R, F47V, F51R, F52V, F54R, F57R, F57V, F58R, F58V, F67R, F68V, F69R, F69V, F70V, F71R, F71V, F72R, F72V, F75R ...+45 more
-**ros** (rose/rosewater): F8R, F9V, F13V, F15R, F25R, F29V, F40R, F40V, F43V, F53R, F54R, F56V, F57V, F66R, F66V, F67R, F67V, F68V, F69V, F70V, F71R, F71V, F72R, F86V, F87R, F87V, F88R, F88V, F89V, F93R ...+13 more
-**edy** (root/prepared root): F1R, F11V, F13R, F13V, F18R, F19R, F20V, F33V, F39R, F40V, F46V, F47R, F48V, F55V, F58R, F66R, F67R, F68R, F73V, F75R, F75V, F76R, F77V, F81V, F82V, F83R, F83V, F84V, F88R, F89R ...+8 more
-**aloe** (aloe): F55R, F70R, F85R
-**rady** (root): F73R, F82R, F89V
-**salp** (saltpeter): F66R, F111V
-**arg** (silver): F11V, F52V
-
----
-
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
-*Source: INTERLINEAR_QUADRILINGUAL.md (201 folios, 4-layer format)*
-*Total folios with recipe content: 201/201*
+*Generated by ZFD Pipeline v2.0*
