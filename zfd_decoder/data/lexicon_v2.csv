@@ -203,3 +203,11 @@ etr,etr,extractum patterns,extract/tincture,extractum,ekstrakt,preparation,CANDI
 cstr,cstr,concentrated form marker,concentrated preparation,constrictum,zgušnjeni,preparation,CANDIDATE,morphology_analysis
 ey,ey,standalone x3,liquid/fluid,,,preparation,CANDIDATE,corpus_frequency
 eey,eey,standalone x3 intensified,distilled fluid,,,preparation,CANDIDATE,corpus_frequency
+aloin,aloin,aloe extract,aloe extract/aloin,aloinum,aloin,ingredient,CANDIDATE,MS650_cross_reference
+stroy,stroy,resin variant,storax/resin,storax,smola,ingredient,CANDIDATE,morphology_analysis
+eos,eos,them/those (Latin),them/those,eos,ih,grammar,CANDIDATE,MS650_cross_reference
+eoy,eoy,by/from that (suffix variant),by/from that,eo,tim,grammar,CANDIDATE,morphology_analysis
+eal,eal,binding + container,vessel/container,,,preparation,CANDIDATE,corpus_frequency
+airal,airal,aerial/vaporous vessel,vapor vessel/alembic,aerium,zracni,preparation,CANDIDATE,morphology_analysis
+tram,tram,compound instrument,by compound means,,,grammar,CANDIDATE,morphology_analysis
+lstry,lstry,the root (adj),the root-prepared,,,preparation,CANDIDATE,morphology_analysis
