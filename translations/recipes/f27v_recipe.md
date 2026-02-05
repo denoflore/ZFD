@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006127/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006127/full/600,/0/default.jpg" width="500" alt="Folio 27v of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006127/full/600,/0/default.jpg" width="500" alt="Folio f27v of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 27v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f27v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Herbal A
-**Confidence:** 85%
-**Words:** 126 total, 36 recipe-relevant
+**Confidence:** 50%
+**Words:** 51 total, 42 resolved (82%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,77 +18,94 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ol** | oil | *oleum* | liquid | 8 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 7 | CONFIRMED |
-| **or** | oil | *oleum* | liquid | 6 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 11 | CANDIDATE |
+| **y** | and/with | *et* | grammar | 6 | CANDIDATE |
+| **ost** | bone (medical) | *osteo-* | animal | 6 | CONFIRMED |
+| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
+| **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **hor** | process/work | general | 6 |
-| **dar** | dose/give | dosing | 2 |
-| **šol** | soak in oil | liquid | 1 |
-| **hol** | combine | mixing | 1 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **š-** | soak/infuse (Croatian) | 11 |
+| **h-** | combine/cook (reduced) | 7 |
+| **so-** | with/together (variant) | 1 |
+| **ot-** | vessel/container (variant) | 1 |
+| **he-** | State / Result / After | 1 |
+| **ko-** | measure/quantify (variant) | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **ost** -> *osteo-* (Bone (medical register)) -- 5x
+- **da** -> *da/dare* (give (Rx imperative)) -- 1x
+
+## Interlinear Translation
 
 ```
 EVA: fochof chof cho sho soly shol ytchor ofchory kchorchor
-CRO: fohopr hopr ho šo soly šol ytrhor oprhory khorhor
-EXP: fohopr hopr ho šo soly s-ulje ytrhor oprhory khorhor
-ENG: ? ? ? ? ? with oil ? ? ?
+CRO: fohof hof ho šo soly šol ythor ofhory sthorhor
+EXP: fohof kuhaj-of kuhaj-o namoci-o s-l+y namoci-ulje i obraditi+y stare
+ENG: ?fohof? combine/cook (reduced) +?of combine/cook (reduced) soak/infuse (Croatian) with/together (variant) [adjective] soak/infuse (Croatian) oil and/with +?thor process/work [adjective] Stand / place / position +?horhor
 ```
+<sub>[▓▓▓▓░░░░░░] 47% confidence</sub>
 
 ```
 EVA: dchy chkar otchy shy shy dchy dshy kchy cheo da dy dchy
-CRO: dhy hstar otrhy šy šy dhy dšy khy heo da dy dhy
-EXP: dhy hstar otrov/pripravahy šy šy dhy dšy khy heo DA [Lat.] dy dhy
-ENG: ? ? extract/prep+hy ? ? ? ? ? ? give ? ?
+CRO: dhy hstar othy šy šy dhy dšy sthy heo da dy dhy
+EXP: dh+y kuhaj-stare+ar posuda-h+y namoci-i namoci-i dh+y dš+y stare+y he-o DA/DARE [Lat.] d+y dh+y
+ENG: [adjective] +?dh combine/cook (reduced) Stand / place / position [instrumental] vessel/container (variant) [adjective] soak/infuse (Croatian) and/with soak/infuse (Croatian) and/with [adjective] +?dh [adjective] +?dš Stand / place / position [adjective] State / Result / After GIVE (RX IMPERATIVE) [adjective] [adjective] +?dh
 ```
+<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: kchey kchy dchokchy dsho dchir chodchy etcheody shld
-CRO: khey khy dhosthy dšo dhir hodhy etrheody šld
-EXP: khey khy dhosthy dšo dhir hodhy etrheody šld
-ENG: ? ? ? ? ? ? ? ?
+CRO: sthey sthy dhosthy dšo dhir hodhy etheody šld
+EXP: stare+ey stare+y kost+y dšo dh+ir kuhaj-stabljika+y etheo+dy namoci-ld
+ENG: Stand / place / position [participle] Stand / place / position [adjective] bone (medical) [adjective] ?dšo? [agent] combine/cook (reduced) stalk/stem [adjective] [verbal] +?etheo soak/infuse (Croatian) +?ld
 ```
+<sub>[▓▓▓▓▓░░░░░] 51% confidence</sub>
 
 ```
 EVA: okcho chy kcheed chl chol kodo oksho doeeeesm
-CRO: ostho hy khed hl hol kodo ostšo doeesm
-EXP: kostho hy khed hl kuh-ulje kodo kostšo doeesm
-ENG: bone+ho ? ? ? cook+oil ? bone+šo ?
+CRO: ostho hy stheed hl hol stodo ostšo doeeeesm
+EXP: OSTEO- [Lat.] kuhaj-i stare kuhaj-l kuhaj-ulje stare OSTEO- [Lat.] ee+m
+ENG: BONE (MEDICAL REGISTER) +ho combine/cook (reduced) and/with Stand / place / position +?heed combine/cook (reduced) combine/cook (reduced) oil Stand / place / position +?odo BONE (MEDICAL REGISTER) +šo (intensifier) [case] +?doees
 ```
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: qoky shkeeo schodar shkolchotchy cthodol
-CRO: kosty šsteo shodar šstolhotrhy ctrrodol
-EXP: kosty šsteo shodar šstolhotrhy ctrrodol
-ENG: ? ? ? ? ?
+CRO: kosty šsteeo šhodar šstolhothy ctrrodol
+EXP: ko-stare+y namoci-stare namoci-stabljika+ar namoci-stare+y centrum+ol
+ENG: measure/quantify (variant) Stand / place / position [adjective] soak/infuse (Croatian) Stand / place / position soak/infuse (Croatian) stalk/stem [instrumental] soak/infuse (Croatian) Stand / place / position [adjective] +?olhoth Center / control [instrumental]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: dsho kchrrr okeedydchschysotchdy
-CRO: dšo khrrr ostedidhshysotrhdy
-EXP: dšo khrrr kost-edidhshysotrhdy
-ENG: ? ? bone-prepared+dhshysotrhdy
+CRO: dšo sthrrr osteedydhšhysothdy
+EXP: dšo stare OSTEO- [Lat.]
+ENG: ?dšo? Stand / place / position +?hrrr BONE (MEDICAL REGISTER) +eedydhšhysoth
 ```
+<sub>[░░░░░░░░░░] 20% confidence</sub>
 
 ```
 EVA: sho sho ykcho shdydchdchschsaotchdy
-CRO: šo šo ystho šdydhdhshsaotrhdy
-EXP: šo šo ystho šdydhdhshsaotrhdy
-ENG: ? ? ? ?
+CRO: šo šo ystho šdydhdhšhsaothdy
+EXP: namoci-o namoci-o i namoci-i+dy
+ENG: soak/infuse (Croatian) soak/infuse (Croatian) and/with +?stho soak/infuse (Croatian) and/with [verbal] +?ddhdhšhsaoth
 ```
+<sub>[░░░░░░░░░░] 36% confidence</sub>
 
 ```
 EVA: okshes okchokshy
 CRO: ostšes osthostšy
-EXP: kostšes kosthostšy
-ENG: bone+šes bone+hostšy
+EXP: OSTEO- [Lat.] OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +še BONE (MEDICAL REGISTER) +hostš
 ```
+<sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f27v*
