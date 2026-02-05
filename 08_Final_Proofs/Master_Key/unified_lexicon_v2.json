@@ -1,0 +1,2598 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "generated": "2026-02-05",
+    "description": "Unified ZFD lexicon merging all morpheme sources",
+    "sources": [
+      "al_ar_duality",
+      "proof_kit",
+      "herbal_lexicon_v3_6",
+      "character_reference",
+      "zfd_core_theory",
+      "botanical_glossary",
+      "miscellany_mining",
+      "pharmaceutical_morphemes"
+    ],
+    "counts": {
+      "operators": 22,
+      "stems": 239,
+      "suffixes": 21,
+      "latin_terms": 10,
+      "state_markers": 4
+    }
+  },
+  "operators": {
+    "qo": {
+      "form": "qo",
+      "type": "operator",
+      "meaning_en": "measure/quantify",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "ko": {
+      "form": "ko",
+      "type": "operator",
+      "meaning_en": "measure/quantify (variant)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "ch": {
+      "form": "ch",
+      "type": "operator",
+      "meaning_en": "combine/cook",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "h": {
+      "form": "h",
+      "type": "operator",
+      "meaning_en": "combine/cook (reduced)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "sh": {
+      "form": "sh",
+      "type": "operator",
+      "meaning_en": "soak/infuse",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "š": {
+      "form": "š",
+      "type": "operator",
+      "meaning_en": "soak/infuse (Croatian)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "da": {
+      "form": "da",
+      "type": "operator",
+      "meaning_en": "dose/add/give",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "ok": {
+      "form": "ok",
+      "type": "operator",
+      "meaning_en": "vessel/container",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "ot": {
+      "form": "ot",
+      "type": "operator",
+      "meaning_en": "vessel/container (variant)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "he": {
+      "form": "he-",
+      "type": "operator",
+      "meaning_en": "State / Result / After",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "heo": {
+      "form": "heo-",
+      "type": "operator",
+      "meaning_en": "State / Result (extended)",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "še": {
+      "form": "še-",
+      "type": "operator",
+      "meaning_en": "Soaked-state / After soaking",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "šeo": {
+      "form": "šeo-",
+      "type": "operator",
+      "meaning_en": "Soaked-state (extended)",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "l": {
+      "form": "l-",
+      "type": "operator",
+      "meaning_en": "The / that (determiner)",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "lh": {
+      "form": "lh-",
+      "type": "operator",
+      "meaning_en": "The (before h-)",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "lš": {
+      "form": "lš-",
+      "type": "operator",
+      "meaning_en": "The (before š-)",
+      "meaning_hr": null,
+      "latin": "—",
+      "confidence": "CONFIRMED"
+    },
+    "sa": {
+      "form": "sa",
+      "type": "operator",
+      "meaning_en": "with/together",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "so": {
+      "form": "so",
+      "type": "operator",
+      "meaning_en": "with/together (variant)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "yk": {
+      "form": "yk",
+      "type": "operator",
+      "meaning_en": "measure-vessel (compound)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "pc": {
+      "form": "pc",
+      "type": "operator",
+      "meaning_en": "prepare (compound)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "tc": {
+      "form": "tc",
+      "type": "operator",
+      "meaning_en": "heat-treat (compound)",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    },
+    "cth": {
+      "form": "cth-",
+      "type": "operator",
+      "meaning_en": "~20",
+      "meaning_hr": null,
+      "latin": null,
+      "confidence": "CONFIRMED"
+    }
+  },
+  "state_markers": {
+    "he": {
+      "form": "he",
+      "type": "state_marker",
+      "meaning_en": "state/result/after"
+    },
+    "heo": {
+      "form": "heo",
+      "type": "state_marker",
+      "meaning_en": "state/result (extended)"
+    },
+    "še": {
+      "form": "še",
+      "type": "state_marker",
+      "meaning_en": "soaked-state/after soaking"
+    },
+    "šeo": {
+      "form": "šeo",
+      "type": "state_marker",
+      "meaning_en": "soaked-state (extended)"
+    }
+  },
+  "stems": {
+    "ed": {
+      "form": "ed",
+      "type": "stem",
+      "meaning_en": "\"Process kernel / do / treat\"",
+      "meaning_hr": null,
+      "latin": "radix + facere",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "edy": {
+      "form": "edy",
+      "type": "stem",
+      "meaning_en": "Root / prepared root",
+      "meaning_hr": null,
+      "latin": "radix",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "rady": {
+      "form": "rady",
+      "type": "stem",
+      "meaning_en": "Root / prepared root (full)",
+      "meaning_hr": null,
+      "latin": "radix",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "kost": {
+      "form": "kost",
+      "type": "stem",
+      "meaning_en": "Bone (Slavic)",
+      "meaning_hr": null,
+      "latin": "kost",
+      "category": "animal",
+      "confidence": "CONFIRMED"
+    },
+    "kosti": {
+      "form": "kosti",
+      "type": "stem",
+      "meaning_en": "Bone + state",
+      "meaning_hr": null,
+      "latin": "kost + -i",
+      "category": "animal",
+      "confidence": "CONFIRMED"
+    },
+    "ar": {
+      "form": "ar",
+      "type": "stem",
+      "meaning_en": "water",
+      "meaning_hr": "voda",
+      "latin": "aqua",
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "ol": {
+      "form": "ol",
+      "type": "stem",
+      "meaning_en": "oil",
+      "meaning_hr": "ulje",
+      "latin": "oleum",
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "or": {
+      "form": "or",
+      "type": "stem",
+      "meaning_en": "Oil / oleum (variant)",
+      "meaning_hr": null,
+      "latin": "oleum",
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "vin": {
+      "form": "vin",
+      "type": "stem",
+      "meaning_en": "Wine",
+      "meaning_hr": null,
+      "latin": "vinum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "vinor": {
+      "form": "vinor",
+      "type": "stem",
+      "meaning_en": "Wine (extended)",
+      "meaning_hr": null,
+      "latin": "vinum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "lac": {
+      "form": "lac",
+      "type": "stem",
+      "meaning_en": "Milk",
+      "meaning_hr": null,
+      "latin": "lac",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "laco": {
+      "form": "laco",
+      "type": "stem",
+      "meaning_en": "Milk (extended)",
+      "meaning_hr": null,
+      "latin": "lac",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "mel": {
+      "form": "mel",
+      "type": "stem",
+      "meaning_en": "Honey",
+      "meaning_hr": null,
+      "latin": "mel",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "syr": {
+      "form": "syr",
+      "type": "stem",
+      "meaning_en": "Syrup / potion",
+      "meaning_hr": null,
+      "latin": "syrupus",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "syrop": {
+      "form": "syrop",
+      "type": "stem",
+      "meaning_en": "Syrup / potion (full)",
+      "meaning_hr": null,
+      "latin": "syrupus",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "ykal": {
+      "form": "ykal",
+      "type": "stem",
+      "meaning_en": "Broth / decoction",
+      "meaning_hr": null,
+      "latin": "—",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "shor": {
+      "form": "shor",
+      "type": "stem",
+      "meaning_en": "Soak / Infuse",
+      "meaning_hr": null,
+      "latin": "sorbere",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "chor": {
+      "form": "chor",
+      "type": "stem",
+      "meaning_en": "Cook / Combine",
+      "meaning_hr": null,
+      "latin": "coquere",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "dar": {
+      "form": "dar",
+      "type": "stem",
+      "meaning_en": "Add / Portion / Seed",
+      "meaning_hr": null,
+      "latin": "dare / granum",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "dain": {
+      "form": "dain",
+      "type": "stem",
+      "meaning_en": "Add (plural)",
+      "meaning_hr": null,
+      "latin": "dare",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "daiin": {
+      "form": "daiin",
+      "type": "stem",
+      "meaning_en": "Add (extended)",
+      "meaning_hr": null,
+      "latin": "dare",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "thor": {
+      "form": "thor",
+      "type": "stem",
+      "meaning_en": "Boil / roast / scorch",
+      "meaning_hr": null,
+      "latin": "torreo",
+      "category": "liquid",
+      "confidence": "CANDIDATE"
+    },
+    "thar": {
+      "form": "thar",
+      "type": "stem",
+      "meaning_en": "Boil (variant)",
+      "meaning_hr": null,
+      "latin": "torreo",
+      "category": "liquid",
+      "confidence": "CANDIDATE"
+    },
+    "kair": {
+      "form": "kair",
+      "type": "stem",
+      "meaning_en": "fire/heat",
+      "meaning_hr": "vatra",
+      "latin": "ignis",
+      "category": "property",
+      "confidence": "CONFIRMED"
+    },
+    "fair": {
+      "form": "fair",
+      "type": "stem",
+      "meaning_en": "Fire (variant)",
+      "meaning_hr": null,
+      "latin": "carbo",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "kar": {
+      "form": "kar",
+      "type": "stem",
+      "meaning_en": "Fire (reduced)",
+      "meaning_hr": null,
+      "latin": "carbo",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "char": {
+      "form": "char",
+      "type": "stem",
+      "meaning_en": "Char / burn",
+      "meaning_hr": null,
+      "latin": "carbo",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "okal": {
+      "form": "okal",
+      "type": "stem",
+      "meaning_en": "Pot / jar",
+      "meaning_hr": null,
+      "latin": "olla / calix",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "okar": {
+      "form": "okar",
+      "type": "stem",
+      "meaning_en": "Pot (variant)",
+      "meaning_hr": null,
+      "latin": "olla / calix",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "otal": {
+      "form": "otal",
+      "type": "stem",
+      "meaning_en": "Pot (alt)",
+      "meaning_hr": null,
+      "latin": "olla / calix",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "kal": {
+      "form": "kal",
+      "type": "stem",
+      "meaning_en": "vessel/pot",
+      "meaning_hr": "posuda",
+      "latin": "calix",
+      "category": "equipment",
+      "confidence": "CONFIRMED"
+    },
+    "phar": {
+      "form": "phar",
+      "type": "stem",
+      "meaning_en": "flask",
+      "meaning_hr": "bočica",
+      "latin": "phiala",
+      "category": "equipment",
+      "confidence": "CONFIRMED"
+    },
+    "sar": {
+      "form": "sar",
+      "type": "stem",
+      "meaning_en": "Salt",
+      "meaning_hr": null,
+      "latin": "sal",
+      "category": "mineral",
+      "confidence": "CONFIRMED"
+    },
+    "sal": {
+      "form": "sal",
+      "type": "stem",
+      "meaning_en": "Salt (Latin)",
+      "meaning_hr": null,
+      "latin": "sal",
+      "category": "mineral",
+      "confidence": "CONFIRMED"
+    },
+    "amar": {
+      "form": "amar",
+      "type": "stem",
+      "meaning_en": "Bitter herb / resin",
+      "meaning_hr": null,
+      "latin": "amarus",
+      "category": "plant_part",
+      "confidence": "CANDIDATE"
+    },
+    "sul": {
+      "form": "sul",
+      "type": "stem",
+      "meaning_en": "Sulfur",
+      "meaning_hr": null,
+      "latin": "sulphur",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "arg": {
+      "form": "arg",
+      "type": "stem",
+      "meaning_en": "Silver / silver salts",
+      "meaning_hr": null,
+      "latin": "argentum",
+      "category": "mineral",
+      "confidence": "CONFIRMED"
+    },
+    "cuper": {
+      "form": "cuper",
+      "type": "stem",
+      "meaning_en": "Copper / verdigris",
+      "meaning_hr": null,
+      "latin": "cuprum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "cupr": {
+      "form": "cupr",
+      "type": "stem",
+      "meaning_en": "Copper (reduced)",
+      "meaning_hr": null,
+      "latin": "cuprum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "copr": {
+      "form": "copr",
+      "type": "stem",
+      "meaning_en": "Copper (variant)",
+      "meaning_hr": null,
+      "latin": "cuprum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "fer": {
+      "form": "fer",
+      "type": "stem",
+      "meaning_en": "Iron / filings",
+      "meaning_hr": null,
+      "latin": "ferrum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "salp": {
+      "form": "salp",
+      "type": "stem",
+      "meaning_en": "Saltpeter",
+      "meaning_hr": null,
+      "latin": "sal petrae",
+      "category": "mineral",
+      "confidence": "CONFIRMED"
+    },
+    "alum": {
+      "form": "alum",
+      "type": "stem",
+      "meaning_en": "Alum",
+      "meaning_hr": null,
+      "latin": "alumen",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "calc": {
+      "form": "calc",
+      "type": "stem",
+      "meaning_en": "Lime / quickite",
+      "meaning_hr": null,
+      "latin": "calx",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "flor": {
+      "form": "flor",
+      "type": "stem",
+      "meaning_en": "Flower",
+      "meaning_hr": null,
+      "latin": "flos",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ros": {
+      "form": "ros",
+      "type": "stem",
+      "meaning_en": "rose/rosewater",
+      "meaning_hr": "ruža",
+      "latin": "rosa",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "rosar": {
+      "form": "rosar",
+      "type": "stem",
+      "meaning_en": "Rose (extended)",
+      "meaning_hr": null,
+      "latin": "rosa",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "rosol": {
+      "form": "rosol",
+      "type": "stem",
+      "meaning_en": "Rose-oil",
+      "meaning_hr": null,
+      "latin": "rosa + oleum",
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "myr": {
+      "form": "myr",
+      "type": "stem",
+      "meaning_en": "Myrrh resin",
+      "meaning_hr": null,
+      "latin": "myrrha",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "myrrh": {
+      "form": "myrrh",
+      "type": "stem",
+      "meaning_en": "Myrrh (full)",
+      "meaning_hr": null,
+      "latin": "myrrha",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "myron": {
+      "form": "myron",
+      "type": "stem",
+      "meaning_en": "Myrrh (Greek)",
+      "meaning_hr": null,
+      "latin": "myrrha",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "aloe": {
+      "form": "aloe",
+      "type": "stem",
+      "meaning_en": "aloe",
+      "meaning_hr": "aloja",
+      "latin": "aloe",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "galb": {
+      "form": "galb",
+      "type": "stem",
+      "meaning_en": "galbanum",
+      "meaning_hr": "galbanum",
+      "latin": "galbanum",
+      "category": "resin",
+      "confidence": "CONFIRMED"
+    },
+    "stor": {
+      "form": "stor",
+      "type": "stem",
+      "meaning_en": "storax",
+      "meaning_hr": "storaks",
+      "latin": "storax",
+      "category": "resin",
+      "confidence": "CONFIRMED"
+    },
+    "opop": {
+      "form": "opop",
+      "type": "stem",
+      "meaning_en": "Opopanax gum",
+      "meaning_hr": null,
+      "latin": "opopanax",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "camph": {
+      "form": "camph",
+      "type": "stem",
+      "meaning_en": "Camphor",
+      "meaning_hr": null,
+      "latin": "camphora",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "anis": {
+      "form": "anis",
+      "type": "stem",
+      "meaning_en": "anise",
+      "meaning_hr": "anis",
+      "latin": "anisum",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "cori": {
+      "form": "cori",
+      "type": "stem",
+      "meaning_en": "Coriander",
+      "meaning_hr": null,
+      "latin": "coriandrum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ment": {
+      "form": "ment",
+      "type": "stem",
+      "meaning_en": "mint",
+      "meaning_hr": "metvica",
+      "latin": "mentha",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "salv": {
+      "form": "salv",
+      "type": "stem",
+      "meaning_en": "sage",
+      "meaning_hr": "kadulja",
+      "latin": "salvia",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "fenn": {
+      "form": "fenn",
+      "type": "stem",
+      "meaning_en": "Fennel",
+      "meaning_hr": null,
+      "latin": "feniculum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ruta": {
+      "form": "ruta",
+      "type": "stem",
+      "meaning_en": "Rue",
+      "meaning_hr": null,
+      "latin": "ruta",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "hyss": {
+      "form": "hyss",
+      "type": "stem",
+      "meaning_en": "Hyssop",
+      "meaning_hr": null,
+      "latin": "hyssopus",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "malv": {
+      "form": "malv",
+      "type": "stem",
+      "meaning_en": "mallow",
+      "meaning_hr": "sljez",
+      "latin": "malva",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "genist": {
+      "form": "genist",
+      "type": "stem",
+      "meaning_en": "Genista (broom)",
+      "meaning_hr": null,
+      "latin": "genista",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "verb": {
+      "form": "verb",
+      "type": "stem",
+      "meaning_en": "Vervain / verbena",
+      "meaning_hr": null,
+      "latin": "verbena",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "plant": {
+      "form": "plant",
+      "type": "stem",
+      "meaning_en": "Plantain herb",
+      "meaning_hr": null,
+      "latin": "plantago",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "canel": {
+      "form": "canel",
+      "type": "stem",
+      "meaning_en": "Cinnamon",
+      "meaning_hr": null,
+      "latin": "cannella",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "canol": {
+      "form": "canol",
+      "type": "stem",
+      "meaning_en": "Cinnamon (variant)",
+      "meaning_hr": null,
+      "latin": "cannella",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "zing": {
+      "form": "zing",
+      "type": "stem",
+      "meaning_en": "Ginger",
+      "meaning_hr": null,
+      "latin": "zingiber",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "zinger": {
+      "form": "zinger",
+      "type": "stem",
+      "meaning_en": "Ginger (full)",
+      "meaning_hr": null,
+      "latin": "zingiber",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "zinor": {
+      "form": "zinor",
+      "type": "stem",
+      "meaning_en": "Ginger (extended)",
+      "meaning_hr": null,
+      "latin": "zingiber",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "piper": {
+      "form": "piper",
+      "type": "stem",
+      "meaning_en": "Pepper",
+      "meaning_hr": null,
+      "latin": "piper",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "cera": {
+      "form": "cera",
+      "type": "stem",
+      "meaning_en": "Wax",
+      "meaning_hr": null,
+      "latin": "cera",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "axun": {
+      "form": "axun",
+      "type": "stem",
+      "meaning_en": "Lard / animal fat",
+      "meaning_hr": null,
+      "latin": "axungia",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "axung": {
+      "form": "axung",
+      "type": "stem",
+      "meaning_en": "Lard (full)",
+      "meaning_hr": null,
+      "latin": "axungia",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "axor": {
+      "form": "axor",
+      "type": "stem",
+      "meaning_en": "Lard (variant)",
+      "meaning_hr": null,
+      "latin": "axungia",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "case": {
+      "form": "case",
+      "type": "stem",
+      "meaning_en": "Cheese / curd",
+      "meaning_hr": null,
+      "latin": "caseus",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ova": {
+      "form": "ova",
+      "type": "stem",
+      "meaning_en": "Egg / yolk",
+      "meaning_hr": null,
+      "latin": "ovum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "melk": {
+      "form": "melk",
+      "type": "stem",
+      "meaning_en": "Butter / clarified fat",
+      "meaning_hr": null,
+      "latin": "—",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "ung": {
+      "form": "ung",
+      "type": "stem",
+      "meaning_en": "Ointment / salve",
+      "meaning_hr": null,
+      "latin": "unguentum",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "musc": {
+      "form": "musc",
+      "type": "stem",
+      "meaning_en": "Musk",
+      "meaning_hr": null,
+      "latin": "muscus",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ambra": {
+      "form": "ambra",
+      "type": "stem",
+      "meaning_en": "Ambergris",
+      "meaning_hr": null,
+      "latin": "ambra",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "perla": {
+      "form": "perla",
+      "type": "stem",
+      "meaning_en": "Pearl (ground)",
+      "meaning_hr": null,
+      "latin": "perla",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "coral": {
+      "form": "coral",
+      "type": "stem",
+      "meaning_en": "Coral",
+      "meaning_hr": null,
+      "latin": "corallium",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ivor": {
+      "form": "ivor",
+      "type": "stem",
+      "meaning_en": "Ivory (dust)",
+      "meaning_hr": null,
+      "latin": "ebur → ivor",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "lapis": {
+      "form": "lapis",
+      "type": "stem",
+      "meaning_en": "Lapis / stone",
+      "meaning_hr": null,
+      "latin": "lapis lazuli",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "asaf": {
+      "form": "asaf",
+      "type": "stem",
+      "meaning_en": "Asafoetida",
+      "meaning_hr": null,
+      "latin": "asa foetida",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "asafot": {
+      "form": "asafot",
+      "type": "stem",
+      "meaning_en": "Asafoetida (full)",
+      "meaning_hr": null,
+      "latin": "asa foetida",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "asafor": {
+      "form": "asafor",
+      "type": "stem",
+      "meaning_en": "Asafoetida (variant)",
+      "meaning_hr": null,
+      "latin": "asa foetida",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "nard": {
+      "form": "nard",
+      "type": "stem",
+      "meaning_en": "Spikenard",
+      "meaning_hr": null,
+      "latin": "nardus",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "nardi": {
+      "form": "nardi",
+      "type": "stem",
+      "meaning_en": "Spikenard (genitive)",
+      "meaning_hr": null,
+      "latin": "nardus",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "nardor": {
+      "form": "nardor",
+      "type": "stem",
+      "meaning_en": "Spikenard (extended)",
+      "meaning_hr": null,
+      "latin": "nardus",
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ty": {
+      "form": "ty",
+      "type": "stem",
+      "meaning_en": "Preposition: in/with",
+      "meaning_hr": null,
+      "latin": "in",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "aiin": {
+      "form": "aiin",
+      "type": "stem",
+      "meaning_en": "Repetition / plural",
+      "meaning_hr": null,
+      "latin": "iterum",
+      "category": "general",
+      "confidence": "LOW"
+    },
+    "st": {
+      "form": "st",
+      "type": "stem",
+      "meaning_en": "Stand / place / position",
+      "meaning_hr": null,
+      "latin": "stare",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "tr": {
+      "form": "tr",
+      "type": "stem",
+      "meaning_en": "Through / trans",
+      "meaning_hr": null,
+      "latin": "trans",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "ctr": {
+      "form": "ctr",
+      "type": "stem",
+      "meaning_en": "Center / control",
+      "meaning_hr": null,
+      "latin": "centrum",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "hctr": {
+      "form": "hctr",
+      "type": "stem",
+      "meaning_en": "Heated-center compound",
+      "meaning_hr": null,
+      "latin": "—",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "csth": {
+      "form": "csth",
+      "type": "stem",
+      "meaning_en": "Complex cluster",
+      "meaning_hr": null,
+      "latin": "—",
+      "category": "general",
+      "confidence": "CANDIDATE"
+    },
+    "croatian": {
+      "form": "croatian",
+      "type": "stem",
+      "meaning_en": "ulje",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "english": {
+      "form": "english",
+      "type": "stem",
+      "meaning_en": "oil",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "category": {
+      "form": "category",
+      "type": "stem",
+      "meaning_en": "ingredient",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Term": {
+      "form": "Term",
+      "type": "stem",
+      "meaning_en": "Latin",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "oral": {
+      "form": "oral",
+      "type": "stem",
+      "meaning_en": "oralis",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "orolaly": {
+      "form": "orolaly",
+      "type": "stem",
+      "meaning_en": "oraliter",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "dolor": {
+      "form": "dolor",
+      "type": "stem",
+      "meaning_en": "dolor",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "da": {
+      "form": "da",
+      "type": "stem",
+      "meaning_en": "da",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ana": {
+      "form": "ana",
+      "type": "stem",
+      "meaning_en": "ana",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Metric": {
+      "form": "Metric",
+      "type": "stem",
+      "meaning_en": "Value",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "k": {
+      "form": "k",
+      "type": "stem",
+      "meaning_en": "vessel (short)",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ee": {
+      "form": "ee",
+      "type": "stem",
+      "meaning_en": "(intensifier)",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "od": {
+      "form": "od",
+      "type": "stem",
+      "meaning_en": "stalk/stem",
+      "meaning_hr": "stabljika",
+      "latin": "caulis",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "Marker": {
+      "form": "Marker",
+      "type": "stem",
+      "meaning_en": "Meaning",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Token": {
+      "form": "Token",
+      "type": "stem",
+      "meaning_en": "Frequency",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "figure": {
+      "form": "figure",
+      "type": "stem",
+      "meaning_en": "~5",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Word": {
+      "form": "Word",
+      "type": "stem",
+      "meaning_en": "Parse",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "qokaldy": {
+      "form": "qokaldy",
+      "type": "stem",
+      "meaning_en": "qo + kal + dy",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "cholal": {
+      "form": "cholal",
+      "type": "stem",
+      "meaning_en": "ch + ol + al",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "shedy": {
+      "form": "shedy",
+      "type": "stem",
+      "meaning_en": "sh + ed + y",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "darar": {
+      "form": "darar",
+      "type": "stem",
+      "meaning_en": "da + ar + ar",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "okeey": {
+      "form": "okeey",
+      "type": "stem",
+      "meaning_en": "ok + ee + y",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Section": {
+      "form": "Section",
+      "type": "stem",
+      "meaning_en": "Folios",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Herbal": {
+      "form": "Herbal",
+      "type": "stem",
+      "meaning_en": "4",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Biological": {
+      "form": "Biological",
+      "type": "stem",
+      "meaning_en": "4",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Recipes": {
+      "form": "Recipes",
+      "type": "stem",
+      "meaning_en": "2",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Pharmaceutical": {
+      "form": "Pharmaceutical",
+      "type": "stem",
+      "meaning_en": "**8**",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "kuša": {
+      "form": "kuša",
+      "type": "stem",
+      "meaning_en": "Salvia officinalis",
+      "meaning_hr": "kuša",
+      "latin": "sage",
+      "category": "\"kuša v belom vini kuhai\" = cook sage in white wine",
+      "confidence": "CONFIRMED"
+    },
+    "ružmarin(a)": {
+      "form": "ružmarin(a)",
+      "type": "stem",
+      "meaning_en": "Rosmarinus officinalis",
+      "meaning_hr": "ružmarin(a)",
+      "latin": "rosemary",
+      "category": "\"ružmarina i smažera od smreki\"",
+      "confidence": "CONFIRMED"
+    },
+    "smreka": {
+      "form": "smreka",
+      "type": "stem",
+      "meaning_en": "Picea albis / Juniperus",
+      "meaning_hr": "smreka",
+      "latin": "juniper/spruce",
+      "category": "resin from conifer; \"smažer od smreki\" = resin of juniper",
+      "confidence": "CONFIRMED"
+    },
+    "kopriva": {
+      "form": "kopriva",
+      "type": "stem",
+      "meaning_en": "Urtica dioica",
+      "meaning_hr": "kopriva",
+      "latin": "nettle",
+      "category": "Very high",
+      "confidence": "CONFIRMED"
+    },
+    "komorač": {
+      "form": "komorač",
+      "type": "stem",
+      "meaning_en": "Foeniculum vulgare",
+      "meaning_hr": "komorač",
+      "latin": "fennel",
+      "category": "Very high",
+      "confidence": "CONFIRMED"
+    },
+    "ružmarin": {
+      "form": "ružmarin",
+      "type": "stem",
+      "meaning_en": "Rosmarinus officinalis",
+      "meaning_hr": "ružmarin",
+      "latin": "rosemary",
+      "category": "Very high",
+      "confidence": "CONFIRMED"
+    },
+    "trputac": {
+      "form": "trputac",
+      "type": "stem",
+      "meaning_en": "Plantago spp.",
+      "meaning_hr": "trputac",
+      "latin": "plantain",
+      "category": "Very high",
+      "confidence": "CONFIRMED"
+    },
+    "smokva": {
+      "form": "smokva",
+      "type": "stem",
+      "meaning_en": "Ficus carica",
+      "meaning_hr": "smokva",
+      "latin": "fig",
+      "category": "High",
+      "confidence": "CONFIRMED"
+    },
+    "kamilica": {
+      "form": "kamilica",
+      "type": "stem",
+      "meaning_en": "Matricaria chamomilla",
+      "meaning_hr": "kamilica",
+      "latin": "chamomile",
+      "category": "High",
+      "confidence": "CONFIRMED"
+    },
+    "sljez": {
+      "form": "sljez",
+      "type": "stem",
+      "meaning_en": "Althaea officinalis",
+      "meaning_hr": "sljez",
+      "latin": "marshmallow",
+      "category": "High",
+      "confidence": "CONFIRMED"
+    },
+    "lipa": {
+      "form": "lipa",
+      "type": "stem",
+      "meaning_en": "Tilia spp.",
+      "meaning_hr": "lipa",
+      "latin": "linden",
+      "category": "High",
+      "confidence": "CONFIRMED"
+    },
+    "glog": {
+      "form": "glog",
+      "type": "stem",
+      "meaning_en": "Crataegus spp.",
+      "meaning_hr": "glog",
+      "latin": "hawthorn",
+      "category": "High",
+      "confidence": "CONFIRMED"
+    },
+    "Salvia": {
+      "form": "Salvia",
+      "type": "stem",
+      "meaning_en": "salv (sage)",
+      "meaning_hr": "Salvia",
+      "latin": "kuša, žalfija, kadulja",
+      "category": "Multiple",
+      "confidence": "CONFIRMED"
+    },
+    "Mentha": {
+      "form": "Mentha",
+      "type": "stem",
+      "meaning_en": "ment (mint)",
+      "meaning_hr": "Mentha",
+      "latin": "metvica, nana, menta",
+      "category": "ML, Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Malva": {
+      "form": "Malva",
+      "type": "stem",
+      "meaning_en": "malv (mallow)",
+      "meaning_hr": "Malva",
+      "latin": "sljez",
+      "category": "ML, Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Plantago": {
+      "form": "Plantago",
+      "type": "stem",
+      "meaning_en": "plant (plantain)",
+      "meaning_hr": "Plantago",
+      "latin": "trputac, babini zubi",
+      "category": "Brek, Dan",
+      "confidence": "CONFIRMED"
+    },
+    "Rosa": {
+      "form": "Rosa",
+      "type": "stem",
+      "meaning_en": "ros (rose)",
+      "meaning_hr": "Rosa",
+      "latin": "ruža",
+      "category": "Standard",
+      "confidence": "CONFIRMED"
+    },
+    "Foeniculum": {
+      "form": "Foeniculum",
+      "type": "stem",
+      "meaning_en": "fenn (fennel)",
+      "meaning_hr": "Foeniculum",
+      "latin": "komorač",
+      "category": "Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Hyssopus": {
+      "form": "Hyssopus",
+      "type": "stem",
+      "meaning_en": "hyss (hyssop)",
+      "meaning_hr": "Hyssopus",
+      "latin": "izop, juzop",
+      "category": "Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Anisum": {
+      "form": "Anisum",
+      "type": "stem",
+      "meaning_en": "anis (anise)",
+      "meaning_hr": "Anisum",
+      "latin": "ane, anež",
+      "category": "Dur",
+      "confidence": "CONFIRMED"
+    },
+    "Coriandrum": {
+      "form": "Coriandrum",
+      "type": "stem",
+      "meaning_en": "cori (coriander)",
+      "meaning_hr": "Coriandrum",
+      "latin": "korijander",
+      "category": "Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Zingiber": {
+      "form": "Zingiber",
+      "type": "stem",
+      "meaning_en": "zing (ginger)",
+      "meaning_hr": "Zingiber",
+      "latin": "đumbir, ingver",
+      "category": "Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Piper": {
+      "form": "Piper",
+      "type": "stem",
+      "meaning_en": "piper (pepper)",
+      "meaning_hr": "Piper",
+      "latin": "papar, biber",
+      "category": "ML, Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Cinnamomum": {
+      "form": "Cinnamomum",
+      "type": "stem",
+      "meaning_en": "canel (cinnamon)",
+      "meaning_hr": "Cinnamomum",
+      "latin": "cimet",
+      "category": "Standard",
+      "confidence": "CONFIRMED"
+    },
+    "Genista": {
+      "form": "Genista",
+      "type": "stem",
+      "meaning_en": "genist (broom)",
+      "meaning_hr": "Genista",
+      "latin": "žukva, brnistra",
+      "category": "Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Verbena": {
+      "form": "Verbena",
+      "type": "stem",
+      "meaning_en": "verb (vervain)",
+      "meaning_hr": "Verbena",
+      "latin": "verbena, sporiš",
+      "category": "Brek",
+      "confidence": "CONFIRMED"
+    },
+    "Absinthium": {
+      "form": "Absinthium",
+      "type": "stem",
+      "meaning_en": "absint",
+      "meaning_hr": "Absinthium",
+      "latin": "pelin, akšenac",
+      "category": "wormwood",
+      "confidence": "CONFIRMED"
+    },
+    "Sambucus": {
+      "form": "Sambucus",
+      "type": "stem",
+      "meaning_en": "sambuc",
+      "meaning_hr": "Sambucus",
+      "latin": "bazga, habat, abad, abdov",
+      "category": "elder",
+      "confidence": "CONFIRMED"
+    },
+    "Urtica": {
+      "form": "Urtica",
+      "type": "stem",
+      "meaning_en": "urtic",
+      "meaning_hr": "Urtica",
+      "latin": "kopriva",
+      "category": "nettle",
+      "confidence": "CONFIRMED"
+    },
+    "Papaver": {
+      "form": "Papaver",
+      "type": "stem",
+      "meaning_en": "papav",
+      "meaning_hr": "Papaver",
+      "latin": "mak",
+      "category": "poppy",
+      "confidence": "CONFIRMED"
+    },
+    "Hypericum": {
+      "form": "Hypericum",
+      "type": "stem",
+      "meaning_en": "(not in misc.)",
+      "meaning_hr": "Hypericum",
+      "latin": "gospina trava, kantarion",
+      "category": "St. John's wort",
+      "confidence": "CONFIRMED"
+    },
+    "Matricaria": {
+      "form": "Matricaria",
+      "type": "stem",
+      "meaning_en": "(not in misc.)",
+      "meaning_hr": "Matricaria",
+      "latin": "kamilica",
+      "category": "chamomile",
+      "confidence": "CONFIRMED"
+    },
+    "Tilia": {
+      "form": "Tilia",
+      "type": "stem",
+      "meaning_en": "(not in misc.)",
+      "meaning_hr": "Tilia",
+      "latin": "lipa",
+      "category": "linden",
+      "confidence": "CONFIRMED"
+    },
+    "Crataegus": {
+      "form": "Crataegus",
+      "type": "stem",
+      "meaning_en": "(not in misc.)",
+      "meaning_hr": "Crataegus",
+      "latin": "glog",
+      "category": "hawthorn",
+      "confidence": "CONFIRMED"
+    },
+    "Rosmarinus": {
+      "form": "Rosmarinus",
+      "type": "stem",
+      "meaning_en": "(not in misc.)",
+      "meaning_hr": "Rosmarinus",
+      "latin": "ružmarin",
+      "category": "rosemary",
+      "confidence": "CONFIRMED"
+    },
+    "Althaea": {
+      "form": "Althaea",
+      "type": "stem",
+      "meaning_en": "(marshmallow in ZFD)",
+      "meaning_hr": "Althaea",
+      "latin": "bijeli sljez",
+      "category": "marshmallow",
+      "confidence": "CONFIRMED"
+    },
+    "Chelidonium": {
+      "form": "Chelidonium",
+      "type": "stem",
+      "meaning_en": "chelid",
+      "meaning_hr": "Chelidonium",
+      "latin": "rosopas, rusa",
+      "category": "celandine",
+      "confidence": "CONFIRMED"
+    },
+    "Salix": {
+      "form": "Salix",
+      "type": "stem",
+      "meaning_en": "(not in misc.)",
+      "meaning_hr": "Salix",
+      "latin": "vrba",
+      "category": "willow",
+      "confidence": "CONFIRMED"
+    },
+    "kuhai": {
+      "form": "kuhai",
+      "type": "stem",
+      "meaning_en": "coque",
+      "meaning_hr": "kuhai",
+      "latin": "cook/boil",
+      "category": "\"kuša v belom vini kuhai\"",
+      "confidence": "CONFIRMED"
+    },
+    "stavi": {
+      "form": "stavi",
+      "type": "stem",
+      "meaning_en": "appone",
+      "meaning_hr": "stavi",
+      "latin": "place/apply",
+      "category": "\"zvanu stavi\" (apply outside)",
+      "confidence": "CONFIRMED"
+    },
+    "maži": {
+      "form": "maži",
+      "type": "stem",
+      "meaning_en": "unge",
+      "meaning_hr": "maži",
+      "latin": "smear/anoint",
+      "category": "\"onem maži zubi\" (smear teeth with it)",
+      "confidence": "CONFIRMED"
+    },
+    "uzmi": {
+      "form": "uzmi",
+      "type": "stem",
+      "meaning_en": "recipe",
+      "meaning_hr": "uzmi",
+      "latin": "take",
+      "category": "\"uzmi korijen od...\"",
+      "confidence": "CONFIRMED"
+    },
+    "satri": {
+      "form": "satri",
+      "type": "stem",
+      "meaning_en": "tere",
+      "meaning_hr": "satri",
+      "latin": "grind",
+      "category": "Standard recipe verb",
+      "confidence": "CONFIRMED"
+    },
+    "miješaj": {
+      "form": "miješaj",
+      "type": "stem",
+      "meaning_en": "misce",
+      "meaning_hr": "miješaj",
+      "latin": "mix",
+      "category": "Standard recipe verb",
+      "confidence": "CONFIRMED"
+    },
+    "pij": {
+      "form": "pij",
+      "type": "stem",
+      "meaning_en": "bibe",
+      "meaning_hr": "pij",
+      "latin": "drink",
+      "category": "Standard recipe verb",
+      "confidence": "CONFIRMED"
+    },
+    "operi": {
+      "form": "operi",
+      "type": "stem",
+      "meaning_en": "lava",
+      "meaning_hr": "operi",
+      "latin": "wash",
+      "category": "Standard recipe verb",
+      "confidence": "CONFIRMED"
+    },
+    "procijedi": {
+      "form": "procijedi",
+      "type": "stem",
+      "meaning_en": "cola",
+      "meaning_hr": "procijedi",
+      "latin": "strain",
+      "category": "Standard recipe verb",
+      "confidence": "CONFIRMED"
+    },
+    "zubi": {
+      "form": "zubi",
+      "type": "stem",
+      "meaning_en": "dentes",
+      "meaning_hr": "zubi",
+      "latin": "teeth",
+      "category": "\"za zubi pomoć\" (help for teeth)",
+      "confidence": "CONFIRMED"
+    },
+    "oči": {
+      "form": "oči",
+      "type": "stem",
+      "meaning_en": "oculi",
+      "meaning_hr": "oči",
+      "latin": "eyes",
+      "category": "Frequent in eye recipes",
+      "confidence": "CONFIRMED"
+    },
+    "glava": {
+      "form": "glava",
+      "type": "stem",
+      "meaning_en": "caput",
+      "meaning_hr": "glava",
+      "latin": "head",
+      "category": "Headache texts",
+      "confidence": "CONFIRMED"
+    },
+    "bubreg": {
+      "form": "bubreg",
+      "type": "stem",
+      "meaning_en": "ren",
+      "meaning_hr": "bubreg",
+      "latin": "kidney",
+      "category": "Stone recipes",
+      "confidence": "CONFIRMED"
+    },
+    "rane": {
+      "form": "rane",
+      "type": "stem",
+      "meaning_en": "vulnera",
+      "meaning_hr": "rane",
+      "latin": "wounds",
+      "category": "Wound treatment texts",
+      "confidence": "CONFIRMED"
+    },
+    "koža": {
+      "form": "koža",
+      "type": "stem",
+      "meaning_en": "cutis",
+      "meaning_hr": "koža",
+      "latin": "skin",
+      "category": "Skin conditions",
+      "confidence": "CONFIRMED"
+    },
+    "krv": {
+      "form": "krv",
+      "type": "stem",
+      "meaning_en": "sanguis",
+      "meaning_hr": "krv",
+      "latin": "blood",
+      "category": "Bleeding recipes",
+      "confidence": "CONFIRMED"
+    },
+    "Latin": {
+      "form": "Latin",
+      "type": "stem",
+      "meaning_en": "English",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "recipe": {
+      "form": "recipe",
+      "type": "stem",
+      "meaning_en": "take",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "fiat": {
+      "form": "fiat",
+      "type": "stem",
+      "meaning_en": "let be made",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "valet": {
+      "form": "valet",
+      "type": "stem",
+      "meaning_en": "it is effective",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "calide": {
+      "form": "calide",
+      "type": "stem",
+      "meaning_en": "warm",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "mane": {
+      "form": "mane",
+      "type": "stem",
+      "meaning_en": "in the morning",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "super": {
+      "form": "super",
+      "type": "stem",
+      "meaning_en": "upon",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Category": {
+      "form": "Category",
+      "type": "stem",
+      "meaning_en": "v1",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "ingredient": {
+      "form": "ingredient",
+      "type": "stem",
+      "meaning_en": "49",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "action": {
+      "form": "action",
+      "type": "stem",
+      "meaning_en": "16",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "grammar": {
+      "form": "grammar",
+      "type": "stem",
+      "meaning_en": "21",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "equipment": {
+      "form": "equipment",
+      "type": "stem",
+      "meaning_en": "8",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "Status": {
+      "form": "Status",
+      "type": "stem",
+      "meaning_en": "Count",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "CONFIRMED": {
+      "form": "CONFIRMED",
+      "type": "stem",
+      "meaning_en": "74",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "CANDIDATE": {
+      "form": "CANDIDATE",
+      "type": "stem",
+      "meaning_en": "23",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "MISCELLANY": {
+      "form": "MISCELLANY",
+      "type": "stem",
+      "meaning_en": "88",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "general",
+      "confidence": "CONFIRMED"
+    },
+    "qokal": {
+      "form": "qokal",
+      "type": "stem",
+      "meaning_en": "qo-kal-∅",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "qokar": {
+      "form": "qokar",
+      "type": "stem",
+      "meaning_en": "qo-kar-∅",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "dal": {
+      "form": "dal",
+      "type": "stem",
+      "meaning_en": "da-l-al",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "okaly": {
+      "form": "okaly",
+      "type": "stem",
+      "meaning_en": "ok-al-y",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "okary": {
+      "form": "okary",
+      "type": "stem",
+      "meaning_en": "ok-ar-y",
+      "meaning_hr": null,
+      "latin": null,
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "al": {
+      "form": "al",
+      "type": "stem",
+      "meaning_en": "liquid/water (vessel context)",
+      "meaning_hr": "tekućina",
+      "latin": "aqua",
+      "category": "liquid",
+      "confidence": "CONFIRMED"
+    },
+    "kor": {
+      "form": "kor",
+      "type": "stem",
+      "meaning_en": "coriander",
+      "meaning_hr": "korijander",
+      "latin": "coriandrum",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "list": {
+      "form": "list",
+      "type": "stem",
+      "meaning_en": "leaf",
+      "meaning_hr": "list",
+      "latin": "folium",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "cvijet": {
+      "form": "cvijet",
+      "type": "stem",
+      "meaning_en": "flower",
+      "meaning_hr": "cvijet",
+      "latin": "flos",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "kora": {
+      "form": "kora",
+      "type": "stem",
+      "meaning_en": "bark",
+      "meaning_hr": "kora",
+      "latin": "cortex",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "sjeme": {
+      "form": "sjeme",
+      "type": "stem",
+      "meaning_en": "seed",
+      "meaning_hr": "sjeme",
+      "latin": "semen",
+      "category": "plant_part",
+      "confidence": "CONFIRMED"
+    },
+    "ost": {
+      "form": "ost",
+      "type": "stem",
+      "meaning_en": "bone (medical)",
+      "meaning_hr": "kost",
+      "latin": "osteo-",
+      "category": "animal",
+      "confidence": "CONFIRMED"
+    },
+    "stal": {
+      "form": "stal",
+      "type": "stem",
+      "meaning_en": "cauldron",
+      "meaning_hr": "kotao",
+      "latin": "caldarium",
+      "category": "equipment",
+      "confidence": "CONFIRMED"
+    },
+    "ostar": {
+      "form": "ostar",
+      "type": "stem",
+      "meaning_en": "large vessel",
+      "meaning_hr": "posuda",
+      "latin": "olla",
+      "category": "equipment",
+      "confidence": "CONFIRMED"
+    },
+    "mir": {
+      "form": "mir",
+      "type": "stem",
+      "meaning_en": "myrrh",
+      "meaning_hr": "smirna",
+      "latin": "myrrha",
+      "category": "resin",
+      "confidence": "CONFIRMED"
+    },
+    "kamf": {
+      "form": "kamf",
+      "type": "stem",
+      "meaning_en": "camphor",
+      "meaning_hr": "kamfor",
+      "latin": "camphora",
+      "category": "resin",
+      "confidence": "CONFIRMED"
+    },
+    "fen": {
+      "form": "fen",
+      "type": "stem",
+      "meaning_en": "fennel",
+      "meaning_hr": "komorač",
+      "latin": "feniculum",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "rut": {
+      "form": "rut",
+      "type": "stem",
+      "meaning_en": "rue",
+      "meaning_hr": "rutvica",
+      "latin": "ruta",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "hisop": {
+      "form": "hisop",
+      "type": "stem",
+      "meaning_en": "hyssop",
+      "meaning_hr": "izop",
+      "latin": "hyssopus",
+      "category": "herb",
+      "confidence": "CONFIRMED"
+    },
+    "cinam": {
+      "form": "cinam",
+      "type": "stem",
+      "meaning_en": "cinnamon",
+      "meaning_hr": "cimet",
+      "latin": "cinnamomum",
+      "category": "spice",
+      "confidence": "CONFIRMED"
+    },
+    "ging": {
+      "form": "ging",
+      "type": "stem",
+      "meaning_en": "ginger",
+      "meaning_hr": "đumbir",
+      "latin": "zingiber",
+      "category": "spice",
+      "confidence": "CONFIRMED"
+    },
+    "pip": {
+      "form": "pip",
+      "type": "stem",
+      "meaning_en": "pepper",
+      "meaning_hr": "papar",
+      "latin": "piper",
+      "category": "spice",
+      "confidence": "CONFIRMED"
+    },
+    "glav": {
+      "form": "glav",
+      "type": "stem",
+      "meaning_en": "head",
+      "meaning_hr": "glava",
+      "latin": "caput",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "želud": {
+      "form": "želud",
+      "type": "stem",
+      "meaning_en": "stomach",
+      "meaning_hr": "želudac",
+      "latin": "stomachus",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "jetr": {
+      "form": "jetr",
+      "type": "stem",
+      "meaning_en": "liver",
+      "meaning_hr": "jetra",
+      "latin": "hepar",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "src": {
+      "form": "src",
+      "type": "stem",
+      "meaning_en": "heart",
+      "meaning_hr": "srce",
+      "latin": "cor",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "oko": {
+      "form": "oko",
+      "type": "stem",
+      "meaning_en": "eye",
+      "meaning_hr": "oko",
+      "latin": "oculus",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "žuč": {
+      "form": "žuč",
+      "type": "stem",
+      "meaning_en": "bile",
+      "meaning_hr": "žuč",
+      "latin": "bilis",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "rana": {
+      "form": "rana",
+      "type": "stem",
+      "meaning_en": "wound",
+      "meaning_hr": "rana",
+      "latin": "vulnus",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "bol": {
+      "form": "bol",
+      "type": "stem",
+      "meaning_en": "pain",
+      "meaning_hr": "bol",
+      "latin": "dolor",
+      "category": "body",
+      "confidence": "CONFIRMED"
+    },
+    "hol": {
+      "form": "hol",
+      "type": "stem",
+      "meaning_en": "combine/mix",
+      "meaning_hr": "miješati",
+      "latin": null,
+      "category": "action",
+      "confidence": "CONFIRMED"
+    },
+    "hor": {
+      "form": "hor",
+      "type": "stem",
+      "meaning_en": "process/work",
+      "meaning_hr": "obraditi",
+      "latin": null,
+      "category": "action",
+      "confidence": "CONFIRMED"
+    },
+    "šol": {
+      "form": "šol",
+      "type": "stem",
+      "meaning_en": "soak in oil",
+      "meaning_hr": "namočiti",
+      "latin": null,
+      "category": "action",
+      "confidence": "CONFIRMED"
+    },
+    "šor": {
+      "form": "šor",
+      "type": "stem",
+      "meaning_en": "strain/soak",
+      "meaning_hr": "procijediti",
+      "latin": null,
+      "category": "action",
+      "confidence": "CONFIRMED"
+    },
+    "dan": {
+      "form": "dan",
+      "type": "stem",
+      "meaning_en": "day/give",
+      "meaning_hr": "dan/dati",
+      "latin": "dies/dare",
+      "category": "action",
+      "confidence": "CONFIRMED"
+    },
+    "star": {
+      "form": "star",
+      "type": "stem",
+      "meaning_en": "heat (strong)",
+      "meaning_hr": "vrelina",
+      "latin": null,
+      "category": "property",
+      "confidence": "CONFIRMED"
+    },
+    "hlad": {
+      "form": "hlad",
+      "type": "stem",
+      "meaning_en": "cold",
+      "meaning_hr": "hladno",
+      "latin": "frigidus",
+      "category": "property",
+      "confidence": "CONFIRMED"
+    },
+    "suš": {
+      "form": "suš",
+      "type": "stem",
+      "meaning_en": "dry",
+      "meaning_hr": "suho",
+      "latin": "siccus",
+      "category": "property",
+      "confidence": "CONFIRMED"
+    },
+    "mokar": {
+      "form": "mokar",
+      "type": "stem",
+      "meaning_en": "wet",
+      "meaning_hr": "mokro",
+      "latin": "humidus",
+      "category": "property",
+      "confidence": "CONFIRMED"
+    },
+    "gorak": {
+      "form": "gorak",
+      "type": "stem",
+      "meaning_en": "bitter",
+      "meaning_hr": "gorko",
+      "latin": "amarus",
+      "category": "property",
+      "confidence": "CONFIRMED"
+    },
+    "sam": {
+      "form": "sam",
+      "type": "stem",
+      "meaning_en": "self/alone",
+      "meaning_hr": "sam",
+      "latin": null,
+      "category": "grammar",
+      "confidence": "CONFIRMED"
+    },
+    "y": {
+      "form": "y",
+      "type": "stem",
+      "meaning_en": "and/with",
+      "meaning_hr": "i",
+      "latin": "et",
+      "category": "grammar",
+      "confidence": "CONFIRMED"
+    }
+  },
+  "suffixes": {
+    "edi": {
+      "form": "edi",
+      "type": "suffix",
+      "meaning_en": "Active process / doing",
+      "grammatical_function": null,
+      "confidence": "CONFIRMED"
+    },
+    "dy": {
+      "form": "dy",
+      "type": "suffix",
+      "meaning_en": "active process (variant)",
+      "grammatical_function": "verbal",
+      "confidence": "CONFIRMED"
+    },
+    "ei": {
+      "form": "ei",
+      "type": "suffix",
+      "meaning_en": "resulting state (variant)",
+      "grammatical_function": "participle",
+      "confidence": "CONFIRMED"
+    },
+    "ey": {
+      "form": "ey",
+      "type": "suffix",
+      "meaning_en": "resulting state",
+      "grammatical_function": "participle",
+      "confidence": "CONFIRMED"
+    },
+    "i": {
+      "form": "i",
+      "type": "suffix",
+      "meaning_en": "adjectival (variant)",
+      "grammatical_function": "adjective",
+      "confidence": "CONFIRMED"
+    },
+    "y": {
+      "form": "y",
+      "type": "suffix",
+      "meaning_en": "adjectival/state",
+      "grammatical_function": "adjective",
+      "confidence": "CONFIRMED"
+    },
+    "ain": {
+      "form": "ain",
+      "type": "suffix",
+      "meaning_en": "plural/collective",
+      "grammatical_function": "plural",
+      "confidence": "CONFIRMED"
+    },
+    "in": {
+      "form": "in",
+      "type": "suffix",
+      "meaning_en": "plural (reduced)",
+      "grammatical_function": "plural",
+      "confidence": "CONFIRMED"
+    },
+    "al": {
+      "form": "al",
+      "type": "suffix",
+      "meaning_en": "container/vessel context",
+      "grammatical_function": "locative",
+      "confidence": "CONFIRMED"
+    },
+    "ol": {
+      "form": "ol",
+      "type": "suffix",
+      "meaning_en": "oil/liquid context",
+      "grammatical_function": "instrumental",
+      "confidence": "CONFIRMED"
+    },
+    "ar": {
+      "form": "ar",
+      "type": "suffix",
+      "meaning_en": "water/liquid context",
+      "grammatical_function": "instrumental",
+      "confidence": "CONFIRMED"
+    },
+    "iin": {
+      "form": "-iin",
+      "type": "suffix",
+      "meaning_en": "continuation",
+      "grammatical_function": null,
+      "confidence": "CONFIRMED"
+    },
+    "aiin": {
+      "form": "-aiin",
+      "type": "suffix",
+      "meaning_en": "liquid+continuing",
+      "grammatical_function": null,
+      "confidence": "CONFIRMED"
+    },
+    "m": {
+      "form": "m",
+      "type": "suffix",
+      "meaning_en": "dative/instrumental",
+      "grammatical_function": "case",
+      "confidence": "CONFIRMED"
+    },
+    "ir": {
+      "form": "ir",
+      "type": "suffix",
+      "meaning_en": "agent/doer",
+      "grammatical_function": "agent",
+      "confidence": "CONFIRMED"
+    },
+    "s": {
+      "form": "-s",
+      "type": "suffix",
+      "meaning_en": "~15",
+      "grammatical_function": null,
+      "confidence": "CONFIRMED"
+    },
+    "edy": {
+      "form": "edy",
+      "type": "suffix",
+      "meaning_en": "active process",
+      "grammatical_function": "verbal",
+      "confidence": "CONFIRMED"
+    },
+    "an": {
+      "form": "an",
+      "type": "suffix",
+      "meaning_en": "pertaining to",
+      "grammatical_function": "adjective",
+      "confidence": "CONFIRMED"
+    },
+    "ity": {
+      "form": "ity",
+      "type": "suffix",
+      "meaning_en": "quality/state",
+      "grammatical_function": "abstract",
+      "confidence": "CONFIRMED"
+    },
+    "ost": {
+      "form": "ost",
+      "type": "suffix",
+      "meaning_en": "quality (Slavic)",
+      "grammatical_function": "abstract",
+      "confidence": "CONFIRMED"
+    },
+    "om": {
+      "form": "om",
+      "type": "suffix",
+      "meaning_en": "instrumental (full)",
+      "grammatical_function": "case",
+      "confidence": "CONFIRMED"
+    }
+  },
+  "latin_terms": {
+    "ost": {
+      "form": "ost",
+      "type": "latin_term",
+      "meaning_en": "Bone (medical register)",
+      "latin_full": "osteo-",
+      "category": "pharmaceutical"
+    },
+    "oste": {
+      "form": "oste",
+      "type": "latin_term",
+      "meaning_en": "Bone (medical extended)",
+      "latin_full": "osteo-",
+      "category": "pharmaceutical"
+    },
+    "osteo": {
+      "form": "osteo",
+      "type": "latin_term",
+      "meaning_en": "Bone (full Latin)",
+      "latin_full": "osteum",
+      "category": "pharmaceutical"
+    },
+    "coque": {
+      "form": "coque",
+      "type": "latin_term",
+      "meaning_en": "cook",
+      "latin_full": null,
+      "category": "pharmaceutical"
+    },
+    "oral": {
+      "form": "oral",
+      "type": "latin_term",
+      "meaning_en": "by mouth/orally",
+      "latin_full": "oralis",
+      "category": "administration"
+    },
+    "orolaly": {
+      "form": "orolaly",
+      "type": "latin_term",
+      "meaning_en": "orally (expanded)",
+      "latin_full": "oraliter",
+      "category": "administration"
+    },
+    "dolor": {
+      "form": "dolor",
+      "type": "latin_term",
+      "meaning_en": "pain",
+      "latin_full": "dolor",
+      "category": "symptom"
+    },
+    "ana": {
+      "form": "ana",
+      "type": "latin_term",
+      "meaning_en": "equal parts (Rx)",
+      "latin_full": "ana",
+      "category": "dosing"
+    },
+    "da": {
+      "form": "da",
+      "type": "latin_term",
+      "meaning_en": "give (Rx imperative)",
+      "latin_full": "da/dare",
+      "category": "instruction"
+    },
+    "recipe": {
+      "form": "recipe",
+      "type": "latin_term",
+      "meaning_en": "take (Rx)",
+      "latin_full": "recipe",
+      "category": "instruction"
+    }
+  }
+}
