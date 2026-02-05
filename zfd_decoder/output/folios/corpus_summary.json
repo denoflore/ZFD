@@ -1,8 +1,8 @@
 {
   "total_folios": 225,
   "total_tokens": 37024,
-  "total_known": 36992,
-  "corpus_ratio": 0.9991356957649092,
+  "total_known": 37000,
+  "corpus_ratio": 0.999351771823682,
   "section_stats": {
     "herbal_a": {
       "folios": 112,
@@ -17,17 +17,17 @@
     "astronomical": {
       "folios": 26,
       "tokens": 3031,
-      "known": 3030
+      "known": 3031
     },
     "biological": {
       "folios": 26,
       "tokens": 8675,
-      "known": 8671
+      "known": 8672
     },
     "pharmaceutical": {
       "folios": 55,
       "tokens": 14490,
-      "known": 14476
+      "known": 14482
     }
   },
   "top_unknown_stems": [
@@ -64,14 +64,6 @@
       1
     ],
     [
-      "stroy",
-      1
-    ],
-    [
-      "aloin",
-      1
-    ],
-    [
       "oxy",
       1
     ],
@@ -80,27 +72,7 @@
       1
     ],
     [
-      "eos",
-      1
-    ],
-    [
       "cplhhy",
-      1
-    ],
-    [
-      "lstry",
-      1
-    ],
-    [
-      "eoy",
-      1
-    ],
-    [
-      "eal",
-      1
-    ],
-    [
-      "airal",
       1
     ],
     [
@@ -116,20 +88,16 @@
       1
     ],
     [
-      "tram",
-      1
-    ],
-    [
       "xoin",
       1
     ]
   ],
   "category_distribution": {
-    "unknown": 20002,
+    "unknown": 19712,
     "action": 608,
-    "ingredient": 7199,
-    "preparation": 4332,
-    "grammar": 4404,
+    "ingredient": 7203,
+    "preparation": 4465,
+    "grammar": 4565,
     "equipment": 417,
     "latin_pharma": 28,
     "body_part": 2
@@ -197,7 +165,7 @@
       "tokens": 78,
       "known": 78,
       "ratio": 1.0,
-      "avg_conf": 0.572
+      "avg_conf": 0.573
     },
     {
       "folio": "f5r",
@@ -205,7 +173,7 @@
       "tokens": 56,
       "known": 56,
       "ratio": 1.0,
-      "avg_conf": 0.537
+      "avg_conf": 0.538
     },
     {
       "folio": "f5v",
@@ -229,7 +197,7 @@
       "tokens": 113,
       "known": 113,
       "ratio": 1.0,
-      "avg_conf": 0.483
+      "avg_conf": 0.484
     },
     {
       "folio": "f7r",
@@ -365,7 +333,7 @@
       "tokens": 75,
       "known": 75,
       "ratio": 1.0,
-      "avg_conf": 0.524
+      "avg_conf": 0.523
     },
     {
       "folio": "f16v",
@@ -405,7 +373,7 @@
       "tokens": 71,
       "known": 71,
       "ratio": 1.0,
-      "avg_conf": 0.494
+      "avg_conf": 0.495
     },
     {
       "folio": "f19r",
@@ -437,7 +405,7 @@
       "tokens": 88,
       "known": 88,
       "ratio": 1.0,
-      "avg_conf": 0.515
+      "avg_conf": 0.513
     },
     {
       "folio": "f21r",
@@ -445,7 +413,7 @@
       "tokens": 95,
       "known": 95,
       "ratio": 1.0,
-      "avg_conf": 0.585
+      "avg_conf": 0.584
     },
     {
       "folio": "f21v",
@@ -493,7 +461,7 @@
       "tokens": 107,
       "known": 107,
       "ratio": 1.0,
-      "avg_conf": 0.496
+      "avg_conf": 0.494
     },
     {
       "folio": "f24v",
@@ -501,7 +469,7 @@
       "tokens": 80,
       "known": 80,
       "ratio": 1.0,
-      "avg_conf": 0.512
+      "avg_conf": 0.511
     },
     {
       "folio": "f25r",
@@ -525,7 +493,7 @@
       "tokens": 68,
       "known": 68,
       "ratio": 1.0,
-      "avg_conf": 0.587
+      "avg_conf": 0.584
     },
     {
       "folio": "f26v",
@@ -533,7 +501,7 @@
       "tokens": 90,
       "known": 90,
       "ratio": 1.0,
-      "avg_conf": 0.529
+      "avg_conf": 0.525
     },
     {
       "folio": "f27r",
@@ -573,7 +541,7 @@
       "tokens": 60,
       "known": 60,
       "ratio": 1.0,
-      "avg_conf": 0.589
+      "avg_conf": 0.588
     },
     {
       "folio": "f29v",
@@ -613,7 +581,7 @@
       "tokens": 108,
       "known": 108,
       "ratio": 1.0,
-      "avg_conf": 0.534
+      "avg_conf": 0.531
     },
     {
       "folio": "f32r",
@@ -637,7 +605,7 @@
       "tokens": 72,
       "known": 72,
       "ratio": 1.0,
-      "avg_conf": 0.564
+      "avg_conf": 0.565
     },
     {
       "folio": "f33v",
@@ -741,7 +709,7 @@
       "tokens": 135,
       "known": 135,
       "ratio": 1.0,
-      "avg_conf": 0.533
+      "avg_conf": 0.534
     },
     {
       "folio": "f40r",
@@ -749,7 +717,7 @@
       "tokens": 87,
       "known": 87,
       "ratio": 1.0,
-      "avg_conf": 0.561
+      "avg_conf": 0.562
     },
     {
       "folio": "f40v",
@@ -773,7 +741,7 @@
       "tokens": 62,
       "known": 62,
       "ratio": 1.0,
-      "avg_conf": 0.592
+      "avg_conf": 0.594
     },
     {
       "folio": "f42r",
@@ -789,7 +757,7 @@
       "tokens": 97,
       "known": 97,
       "ratio": 1.0,
-      "avg_conf": 0.568
+      "avg_conf": 0.567
     },
     {
       "folio": "f43r",
@@ -837,7 +805,7 @@
       "tokens": 77,
       "known": 77,
       "ratio": 1.0,
-      "avg_conf": 0.512
+      "avg_conf": 0.514
     },
     {
       "folio": "f46r",
@@ -845,7 +813,7 @@
       "tokens": 157,
       "known": 156,
       "ratio": 0.9936305732484076,
-      "avg_conf": 0.585
+      "avg_conf": 0.584
     },
     {
       "folio": "f46v",
@@ -885,7 +853,7 @@
       "tokens": 112,
       "known": 112,
       "ratio": 1.0,
-      "avg_conf": 0.554
+      "avg_conf": 0.555
     },
     {
       "folio": "f49r",
@@ -925,7 +893,7 @@
       "tokens": 83,
       "known": 83,
       "ratio": 1.0,
-      "avg_conf": 0.595
+      "avg_conf": 0.593
     },
     {
       "folio": "f51v",
@@ -933,7 +901,7 @@
       "tokens": 72,
       "known": 72,
       "ratio": 1.0,
-      "avg_conf": 0.615
+      "avg_conf": 0.616
     },
     {
       "folio": "f52r",
@@ -941,7 +909,7 @@
       "tokens": 62,
       "known": 62,
       "ratio": 1.0,
-      "avg_conf": 0.554
+      "avg_conf": 0.555
     },
     {
       "folio": "f52v",
@@ -965,7 +933,7 @@
       "tokens": 74,
       "known": 74,
       "ratio": 1.0,
-      "avg_conf": 0.559
+      "avg_conf": 0.557
     },
     {
       "folio": "f54r",
@@ -981,7 +949,7 @@
       "tokens": 90,
       "known": 90,
       "ratio": 1.0,
-      "avg_conf": 0.508
+      "avg_conf": 0.511
     },
     {
       "folio": "f55r",
@@ -1021,7 +989,7 @@
       "tokens": 83,
       "known": 83,
       "ratio": 1.0,
-      "avg_conf": 0.598
+      "avg_conf": 0.599
     },
     {
       "folio": "f57v",
@@ -1029,7 +997,7 @@
       "tokens": 122,
       "known": 114,
       "ratio": 0.9344262295081968,
-      "avg_conf": 0.395
+      "avg_conf": 0.396
     },
     {
       "folio": "f58r",
@@ -1037,7 +1005,7 @@
       "tokens": 367,
       "known": 367,
       "ratio": 1.0,
-      "avg_conf": 0.534
+      "avg_conf": 0.533
     },
     {
       "folio": "f58v",
@@ -1045,7 +1013,7 @@
       "tokens": 365,
       "known": 365,
       "ratio": 1.0,
-      "avg_conf": 0.558
+      "avg_conf": 0.56
     },
     {
       "folio": "f65r",
@@ -1077,7 +1045,7 @@
       "tokens": 112,
       "known": 112,
       "ratio": 1.0,
-      "avg_conf": 0.578
+      "avg_conf": 0.58
     },
     {
       "folio": "f67r1",
@@ -1085,15 +1053,15 @@
       "tokens": 155,
       "known": 155,
       "ratio": 1.0,
-      "avg_conf": 0.528
+      "avg_conf": 0.527
     },
     {
       "folio": "f67r2",
       "section": "astronomical",
       "tokens": 176,
-      "known": 175,
-      "ratio": 0.9943181818181818,
-      "avg_conf": 0.483
+      "known": 176,
+      "ratio": 1.0,
+      "avg_conf": 0.484
     },
     {
       "folio": "f67v1",
@@ -1109,7 +1077,7 @@
       "tokens": 59,
       "known": 59,
       "ratio": 1.0,
-      "avg_conf": 0.474
+      "avg_conf": 0.477
     },
     {
       "folio": "f68r1",
@@ -1125,7 +1093,7 @@
       "tokens": 80,
       "known": 80,
       "ratio": 1.0,
-      "avg_conf": 0.573
+      "avg_conf": 0.571
     },
     {
       "folio": "f68r3",
@@ -1133,7 +1101,7 @@
       "tokens": 102,
       "known": 102,
       "ratio": 1.0,
-      "avg_conf": 0.554
+      "avg_conf": 0.553
     },
     {
       "folio": "f68v1",
@@ -1141,7 +1109,7 @@
       "tokens": 96,
       "known": 96,
       "ratio": 1.0,
-      "avg_conf": 0.53
+      "avg_conf": 0.525
     },
     {
       "folio": "f68v2",
@@ -1149,7 +1117,7 @@
       "tokens": 95,
       "known": 95,
       "ratio": 1.0,
-      "avg_conf": 0.577
+      "avg_conf": 0.576
     },
     {
       "folio": "f68v3",
@@ -1157,7 +1125,7 @@
       "tokens": 158,
       "known": 158,
       "ratio": 1.0,
-      "avg_conf": 0.58
+      "avg_conf": 0.581
     },
     {
       "folio": "f69r",
@@ -1165,7 +1133,7 @@
       "tokens": 164,
       "known": 164,
       "ratio": 1.0,
-      "avg_conf": 0.459
+      "avg_conf": 0.46
     },
     {
       "folio": "f69v",
@@ -1173,7 +1141,7 @@
       "tokens": 132,
       "known": 132,
       "ratio": 1.0,
-      "avg_conf": 0.488
+      "avg_conf": 0.485
     },
     {
       "folio": "f70r1",
@@ -1181,7 +1149,7 @@
       "tokens": 110,
       "known": 110,
       "ratio": 1.0,
-      "avg_conf": 0.515
+      "avg_conf": 0.511
     },
     {
       "folio": "f70r2",
@@ -1205,7 +1173,7 @@
       "tokens": 140,
       "known": 140,
       "ratio": 1.0,
-      "avg_conf": 0.492
+      "avg_conf": 0.494
     },
     {
       "folio": "f71r",
@@ -1213,7 +1181,7 @@
       "tokens": 90,
       "known": 90,
       "ratio": 1.0,
-      "avg_conf": 0.549
+      "avg_conf": 0.547
     },
     {
       "folio": "f71v",
@@ -1221,7 +1189,7 @@
       "tokens": 100,
       "known": 100,
       "ratio": 1.0,
-      "avg_conf": 0.51
+      "avg_conf": 0.511
     },
     {
       "folio": "f72r1",
@@ -1237,7 +1205,7 @@
       "tokens": 110,
       "known": 110,
       "ratio": 1.0,
-      "avg_conf": 0.524
+      "avg_conf": 0.522
     },
     {
       "folio": "f72r3",
@@ -1245,7 +1213,7 @@
       "tokens": 167,
       "known": 167,
       "ratio": 1.0,
-      "avg_conf": 0.513
+      "avg_conf": 0.509
     },
     {
       "folio": "f72v1",
@@ -1253,7 +1221,7 @@
       "tokens": 101,
       "known": 101,
       "ratio": 1.0,
-      "avg_conf": 0.522
+      "avg_conf": 0.52
     },
     {
       "folio": "f72v2",
@@ -1261,7 +1229,7 @@
       "tokens": 110,
       "known": 110,
       "ratio": 1.0,
-      "avg_conf": 0.54
+      "avg_conf": 0.537
     },
     {
       "folio": "f72v3",
@@ -1269,7 +1237,7 @@
       "tokens": 121,
       "known": 121,
       "ratio": 1.0,
-      "avg_conf": 0.54
+      "avg_conf": 0.537
     },
     {
       "folio": "f73r",
@@ -1277,7 +1245,7 @@
       "tokens": 96,
       "known": 96,
       "ratio": 1.0,
-      "avg_conf": 0.539
+      "avg_conf": 0.535
     },
     {
       "folio": "f73v",
@@ -1285,7 +1253,7 @@
       "tokens": 97,
       "known": 97,
       "ratio": 1.0,
-      "avg_conf": 0.537
+      "avg_conf": 0.536
     },
     {
       "folio": "f75r",
@@ -1293,7 +1261,7 @@
       "tokens": 392,
       "known": 392,
       "ratio": 1.0,
-      "avg_conf": 0.597
+      "avg_conf": 0.598
     },
     {
       "folio": "f75v",
@@ -1307,8 +1275,8 @@
       "folio": "f76r",
       "section": "biological",
       "tokens": 555,
-      "known": 554,
-      "ratio": 0.9981981981981982,
+      "known": 555,
+      "ratio": 1.0,
       "avg_conf": 0.549
     },
     {
@@ -1325,7 +1293,7 @@
       "tokens": 325,
       "known": 325,
       "ratio": 1.0,
-      "avg_conf": 0.635
+      "avg_conf": 0.634
     },
     {
       "folio": "f77v",
@@ -1413,7 +1381,7 @@
       "tokens": 313,
       "known": 313,
       "ratio": 1.0,
-      "avg_conf": 0.628
+      "avg_conf": 0.627
     },
     {
       "folio": "f83r",
@@ -1421,7 +1389,7 @@
       "tokens": 341,
       "known": 341,
       "ratio": 1.0,
-      "avg_conf": 0.605
+      "avg_conf": 0.606
     },
     {
       "folio": "f83v",
@@ -1429,7 +1397,7 @@
       "tokens": 261,
       "known": 261,
       "ratio": 1.0,
-      "avg_conf": 0.627
+      "avg_conf": 0.626
     },
     {
       "folio": "f84r",
@@ -1453,7 +1421,7 @@
       "tokens": 333,
       "known": 333,
       "ratio": 1.0,
-      "avg_conf": 0.57
+      "avg_conf": 0.571
     },
     {
       "folio": "f85r2",
@@ -1461,7 +1429,7 @@
       "tokens": 157,
       "known": 157,
       "ratio": 1.0,
-      "avg_conf": 0.536
+      "avg_conf": 0.535
     },
     {
       "folio": "f86v3",
@@ -1477,7 +1445,7 @@
       "tokens": 184,
       "known": 184,
       "ratio": 1.0,
-      "avg_conf": 0.508
+      "avg_conf": 0.507
     },
     {
       "folio": "f86v5",
@@ -1485,7 +1453,7 @@
       "tokens": 381,
       "known": 381,
       "ratio": 1.0,
-      "avg_conf": 0.524
+      "avg_conf": 0.525
     },
     {
       "folio": "f86v6",
@@ -1493,7 +1461,7 @@
       "tokens": 479,
       "known": 478,
       "ratio": 0.9979123173277662,
-      "avg_conf": 0.585
+      "avg_conf": 0.586
     },
     {
       "folio": "f87r",
@@ -1501,7 +1469,7 @@
       "tokens": 98,
       "known": 98,
       "ratio": 1.0,
-      "avg_conf": 0.543
+      "avg_conf": 0.544
     },
     {
       "folio": "f87v",
@@ -1509,7 +1477,7 @@
       "tokens": 74,
       "known": 73,
       "ratio": 0.9864864864864865,
-      "avg_conf": 0.547
+      "avg_conf": 0.543
     },
     {
       "folio": "f88r",
@@ -1517,7 +1485,7 @@
       "tokens": 149,
       "known": 149,
       "ratio": 1.0,
-      "avg_conf": 0.548
+      "avg_conf": 0.547
     },
     {
       "folio": "f88v",
@@ -1525,7 +1493,7 @@
       "tokens": 145,
       "known": 145,
       "ratio": 1.0,
-      "avg_conf": 0.593
+      "avg_conf": 0.592
     },
     {
       "folio": "f89r1",
@@ -1533,7 +1501,7 @@
       "tokens": 138,
       "known": 138,
       "ratio": 1.0,
-      "avg_conf": 0.546
+      "avg_conf": 0.545
     },
     {
       "folio": "f89r2",
@@ -1541,7 +1509,7 @@
       "tokens": 237,
       "known": 237,
       "ratio": 1.0,
-      "avg_conf": 0.551
+      "avg_conf": 0.55
     },
     {
       "folio": "f89v1",
@@ -1549,7 +1517,7 @@
       "tokens": 159,
       "known": 159,
       "ratio": 1.0,
-      "avg_conf": 0.567
+      "avg_conf": 0.568
     },
     {
       "folio": "f89v2",
@@ -1557,7 +1525,7 @@
       "tokens": 164,
       "known": 164,
       "ratio": 1.0,
-      "avg_conf": 0.528
+      "avg_conf": 0.527
     },
     {
       "folio": "f90r1",
@@ -1565,7 +1533,7 @@
       "tokens": 69,
       "known": 69,
       "ratio": 1.0,
-      "avg_conf": 0.612
+      "avg_conf": 0.615
     },
     {
       "folio": "f90r2",
@@ -1573,7 +1541,7 @@
       "tokens": 44,
       "known": 44,
       "ratio": 1.0,
-      "avg_conf": 0.498
+      "avg_conf": 0.499
     },
     {
       "folio": "f90v1",
@@ -1589,7 +1557,7 @@
       "tokens": 63,
       "known": 63,
       "ratio": 1.0,
-      "avg_conf": 0.529
+      "avg_conf": 0.532
     },
     {
       "folio": "f93r",
@@ -1621,7 +1589,7 @@
       "tokens": 91,
       "known": 91,
       "ratio": 1.0,
-      "avg_conf": 0.582
+      "avg_conf": 0.584
     },
     {
       "folio": "f95r1",
@@ -1629,7 +1597,7 @@
       "tokens": 103,
       "known": 103,
       "ratio": 1.0,
-      "avg_conf": 0.622
+      "avg_conf": 0.623
     },
     {
       "folio": "f95r2",
@@ -1645,7 +1613,7 @@
       "tokens": 117,
       "known": 117,
       "ratio": 1.0,
-      "avg_conf": 0.603
+      "avg_conf": 0.602
     },
     {
       "folio": "f95v2",
@@ -1677,7 +1645,7 @@
       "tokens": 197,
       "known": 197,
       "ratio": 1.0,
-      "avg_conf": 0.558
+      "avg_conf": 0.559
     },
     {
       "folio": "f99v",
@@ -1685,14 +1653,14 @@
       "tokens": 163,
       "known": 163,
       "ratio": 1.0,
-      "avg_conf": 0.61
+      "avg_conf": 0.611
     },
     {
       "folio": "f100r",
       "section": "pharmaceutical",
       "tokens": 110,
-      "known": 109,
-      "ratio": 0.990909090909091,
+      "known": 110,
+      "ratio": 1.0,
       "avg_conf": 0.56
     },
     {
@@ -1701,7 +1669,7 @@
       "tokens": 91,
       "known": 91,
       "ratio": 1.0,
-      "avg_conf": 0.565
+      "avg_conf": 0.563
     },
     {
       "folio": "f101r",
@@ -1709,7 +1677,7 @@
       "tokens": 205,
       "known": 205,
       "ratio": 1.0,
-      "avg_conf": 0.545
+      "avg_conf": 0.544
     },
     {
       "folio": "f101v",
@@ -1725,7 +1693,7 @@
       "tokens": 104,
       "known": 104,
       "ratio": 1.0,
-      "avg_conf": 0.559
+      "avg_conf": 0.558
     },
     {
       "folio": "f102r2",
@@ -1733,7 +1701,7 @@
       "tokens": 134,
       "known": 134,
       "ratio": 1.0,
-      "avg_conf": 0.529
+      "avg_conf": 0.528
     },
     {
       "folio": "f102v1",
@@ -1741,7 +1709,7 @@
       "tokens": 126,
       "known": 126,
       "ratio": 1.0,
-      "avg_conf": 0.557
+      "avg_conf": 0.559
     },
     {
       "folio": "f102v2",
@@ -1749,7 +1717,7 @@
       "tokens": 184,
       "known": 184,
       "ratio": 1.0,
-      "avg_conf": 0.513
+      "avg_conf": 0.511
     },
     {
       "folio": "f103r",
@@ -1765,7 +1733,7 @@
       "tokens": 449,
       "known": 448,
       "ratio": 0.9977728285077951,
-      "avg_conf": 0.56
+      "avg_conf": 0.559
     },
     {
       "folio": "f104r",
@@ -1781,15 +1749,15 @@
       "tokens": 458,
       "known": 458,
       "ratio": 1.0,
-      "avg_conf": 0.578
+      "avg_conf": 0.577
     },
     {
       "folio": "f105r",
       "section": "pharmaceutical",
       "tokens": 368,
-      "known": 366,
-      "ratio": 0.9945652173913043,
-      "avg_conf": 0.533
+      "known": 367,
+      "ratio": 0.9972826086956522,
+      "avg_conf": 0.534
     },
     {
       "folio": "f105v",
@@ -1819,8 +1787,8 @@
       "folio": "f107r",
       "section": "pharmaceutical",
       "tokens": 488,
-      "known": 487,
-      "ratio": 0.9979508196721312,
+      "known": 488,
+      "ratio": 1.0,
       "avg_conf": 0.56
     },
     {
@@ -1829,7 +1797,7 @@
       "tokens": 455,
       "known": 455,
       "ratio": 1.0,
-      "avg_conf": 0.6
+      "avg_conf": 0.601
     },
     {
       "folio": "f108r",
@@ -1845,14 +1813,14 @@
       "tokens": 570,
       "known": 570,
       "ratio": 1.0,
-      "avg_conf": 0.6
+      "avg_conf": 0.601
     },
     {
       "folio": "f111r",
       "section": "pharmaceutical",
       "tokens": 615,
-      "known": 614,
-      "ratio": 0.9983739837398374,
+      "known": 615,
+      "ratio": 1.0,
       "avg_conf": 0.59
     },
     {
@@ -1861,14 +1829,14 @@
       "tokens": 561,
       "known": 561,
       "ratio": 1.0,
-      "avg_conf": 0.59
+      "avg_conf": 0.589
     },
     {
       "folio": "f112r",
       "section": "pharmaceutical",
       "tokens": 396,
-      "known": 395,
-      "ratio": 0.9974747474747475,
+      "known": 396,
+      "ratio": 1.0,
       "avg_conf": 0.549
     },
     {
@@ -1885,7 +1853,7 @@
       "tokens": 518,
       "known": 518,
       "ratio": 1.0,
-      "avg_conf": 0.597
+      "avg_conf": 0.598
     },
     {
       "folio": "f113v",
@@ -1917,15 +1885,15 @@
       "tokens": 444,
       "known": 444,
       "ratio": 1.0,
-      "avg_conf": 0.587
+      "avg_conf": 0.588
     },
     {
       "folio": "f115v",
       "section": "pharmaceutical",
       "tokens": 399,
-      "known": 397,
-      "ratio": 0.9949874686716792,
-      "avg_conf": 0.586
+      "known": 398,
+      "ratio": 0.9974937343358395,
+      "avg_conf": 0.587
     },
     {
       "folio": "f116r",
@@ -1933,7 +1901,7 @@
       "tokens": 538,
       "known": 538,
       "ratio": 1.0,
-      "avg_conf": 0.536
+      "avg_conf": 0.537
     }
   ]
 }
