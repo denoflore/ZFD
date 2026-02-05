@@ -44,6 +44,32 @@ class ZFDPipeline:
     def process_token(self, token: Token) -> Token:
         """Process a single token through all pipeline stages."""
 
+        # Stage 0: Whole-word pre-check for GRAMMAR entries only.
+        # Before stripping operators, check if the full EVA token matches
+        # a known grammar/state marker entry. This prevents operator stripping
+        # from destroying compound function words like 'dain' (given/added) -> da+in
+        # or 'dar' (gift) -> da+r, and catches state markers like 'heom', 'šeom'.
+        # Only fires for grammar category to avoid hijacking ingredient words
+        # like 'chol' that should decompose via operator+stem.
+        precheck_word = token.eva
+        precheck_data = self.lexicon.lookup(precheck_word)
+
+        if precheck_data and precheck_data.get('category') == 'grammar':
+            # Grammar/function word -- skip operator stripping entirely
+            token.stem = precheck_word
+            token.stem_known = True
+            token.stem_gloss = precheck_data['gloss']
+            token.confidence += self.lexicon.confidence_for_status(precheck_data['status'])
+            token.notes.append(f"Stem: {precheck_data['name']} ({precheck_data['status']}) [whole-word]")
+
+            # Build output layers
+            token.zfd = self._build_zfd(token)
+            token.expansion = self._build_expansion(token)
+            token.croatian = self._build_croatian(token)
+            token.english = self._build_english(token)
+            token.confidence = min(1.0, token.confidence)
+            return token
+
         # Stage 1: Operator detection
         working = self.operators.apply_to_token(token)
 
