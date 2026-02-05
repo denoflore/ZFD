@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006085/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006085/full/600,/0/default.jpg" width="500" alt="Folio 5v of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006085/full/600,/0/default.jpg" width="500" alt="Folio f5v of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 5v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f5v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Herbal A
-**Confidence:** 85%
-**Words:** 147 total, 75 recipe-relevant
+**Confidence:** 72%
+**Words:** 45 total, 41 resolved (91%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,65 +18,79 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **or** | oil | *oleum* | liquid | 20 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 20 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 1 | CONFIRMED |
+| **ol** | oil | *oleum* | liquid | 7 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 5 | CANDIDATE |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 3 | CONFIRMED |
+| **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
+| **ost** | bone (medical) | *osteo-* | animal | 2 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **hol** | combine | mixing | 9 |
-| **hor** | process/work | general | 8 |
-| **dain** | dose/portion | dosing | 8 |
-| **dar** | dose/give | dosing | 2 |
-| **šol** | soak in oil | liquid | 1 |
-| **dal** | then/next | sequence | 1 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **da-** | dose/add/give | 10 |
+| **h-** | combine/cook (reduced) | 9 |
+| **ot-** | vessel/container (variant) | 5 |
+| **ko-** | measure/quantify (variant) | 2 |
+| **š-** | soak/infuse (Croatian) | 2 |
+| **še-** | Soaked-state / After soaking | 1 |
+| **heo-** | State / Result (extended) | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **da** -> *da/dare* (give (Rx imperative)) -- 10x
+- **ost** -> *osteo-* (Bone (medical register)) -- 1x
+
+## Interlinear Translation
 
 ```
 EVA: kocheor chor ytchey pshod chols chodaiin ytoiiin daiin
-CRO: koheor hor ytrhey pšod hols hodain ytroiin dain
-EXP: koheor kuhar ytrhey pšod kuh-uljes hodain ytroiin DA [Lat.]
-ENG: ? cook ? ? cook+oil+s ? ? give
+CRO: stoheor hor ythey pšod hols hodaiin ytoiiin daiin
+EXP: stare kuhaj-oleum i+ey stabljika kuhaj-ulje+s kuhaj-stabljika+aiin i+iin DA/DARE [Lat.]
+ENG: Stand / place / position +?oheor combine/cook (reduced) Oil / oleum (variant) and/with [participle] stalk/stem combine/cook (reduced) oil [~15] combine/cook (reduced) stalk/stem [liquid+continuing] and/with [continuation] GIVE (RX IMPERATIVE) +i
 ```
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: dchol sy chol otaiin dain cthor chots ychopordg
-CRO: dhol sy hol otrain dain ctrror hotrs yhoplordg
-EXP: dhol sy kuh-ulje pripravnin DA [Lat.] ctrror hotrs yhoplordg
-ENG: ? ? cook+oil prepared+n give ? ? ?
+CRO: dhol sy hol otaiin dain ctrror hots yhopordg
+EXP: dh+ol s+y kuhaj-ulje posuda-a+iin DA/DARE [Lat.] centrum kuhaj-ot+s i
+ENG: [instrumental] [adjective] combine/cook (reduced) oil vessel/container (variant) [continuation] GIVE (RX IMPERATIVE) +in Center / control combine/cook (reduced) [~15] and/with +?hopordg
 ```
+<sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
 ```
 EVA: qotcho ytor daiin daiin otchor daiir qo darchor do
-CRO: kotrho ytror dain dain otrhor dair ko darhor do
-EXP: kotrho ytror DA [Lat.] DA [Lat.] otrov/pripravahor DA [Lat.] ko darhor do
-ENG: ? ? give give extract/prep+hor give ? dose/gift+hor ?
+CRO: kotho ytor daiin daiin othor daiir ko darhor do
+EXP: ko-tho i DA/DARE [Lat.] DA/DARE [Lat.] posuda-obraditi DA/DARE [Lat.] k DA/DARE [Lat.] do
+ENG: measure/quantify (variant) +?tho and/with +?tor GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +i vessel/container (variant) process/work GIVE (RX IMPERATIVE) +i vessel (short) GIVE (RX IMPERATIVE) +r ?do?
 ```
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: qotor shees otol ykoiin shol daiin cthor okchy taiin
-CRO: kotror šes otrol ystoin šol dain ctrror osthy tain
-EXP: kotror šes otrov/pripravaol ystoin s-ulje DA [Lat.] ctrror kosthy tain
-ENG: ? ? extract/prep+ol ? with oil give ? bone+hy ?
+CRO: kotor šees otol ystoiin šol daiin ctrror osthy taiin
+EXP: ko-oleum še-e+s posuda-ulje i+iin namoci-ulje DA/DARE [Lat.] centrum OSTEO- [Lat.] t+aiin
+ENG: measure/quantify (variant) Oil / oleum (variant) Soaked-state / After soaking [~15] vessel/container (variant) oil and/with [continuation] soak/infuse (Croatian) oil GIVE (RX IMPERATIVE) +i Center / control BONE (MEDICAL REGISTER) +h [liquid+continuing]
 ```
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: shokeeol chor cheotol otchol daiin dal chol chotaiin
-CRO: šosteol hor heotrol otrhol dain dal hol hotrain
-EXP: šosteol kuhar heotrol otrov/pripravahol DA [Lat.] DA [Lat.] kuh-ulje hotrain
-ENG: ? cook ? extract/prep+hol give give cook+oil ?
+CRO: šosteeol hor heotol othol daiin dal hol hotaiin
+EXP: namoci-kost+ol kuhaj-oleum heo-t+ol posuda-h+ol DA/DARE [Lat.] DA/DARE [Lat.] kuhaj-ulje kuhaj-ot+aiin
+ENG: soak/infuse (Croatian) bone (medical) [instrumental] combine/cook (reduced) Oil / oleum (variant) State / Result (extended) [instrumental] vessel/container (variant) [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +l combine/cook (reduced) oil combine/cook (reduced) [liquid+continuing]
 ```
+<sub>[████████░░] 82% confidence</sub>
 
 ```
 EVA: otol chol dairodg
-CRO: otrol hol dairodg
-EXP: otrov/pripravaol kuh-ulje dairodg
-ENG: extract/prep+ol cook+oil ?
+CRO: otol hol dairodg
+EXP: posuda-ulje kuhaj-ulje DA/DARE [Lat.]
+ENG: vessel/container (variant) oil combine/cook (reduced) oil GIVE (RX IMPERATIVE) +irg
 ```
+<sub>[████████░░] 86% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f5v*
