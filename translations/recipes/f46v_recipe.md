@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006165/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006165/full/600,/0/default.jpg" width="500" alt="Folio 46v of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006165/full/600,/0/default.jpg" width="500" alt="Folio f46v of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 46v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f46v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Herbal A
-**Confidence:** 85%
-**Words:** 328 total, 85 recipe-relevant
+**Confidence:** 73%
+**Words:** 109 total, 103 resolved (94%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,115 +18,144 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ar** | water | *aqua* | liquid | 26 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 18 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 9 | CONFIRMED |
-| **or** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **edy** | root/prepared root | *radix* | plant_part | 1 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 14 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
+| **ost** | bone (medical) | *osteo-* | animal | 8 | CONFIRMED |
+| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
+| **ar** | water | *aqua* | liquid | 3 | CONFIRMED |
+| **ctr** | Center / control | *centrum* | general | 3 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
+| **edy** | Root / prepared root | *radix* | plant_part | 1 | CONFIRMED |
+| **al** | liquid/water (vessel context) | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **hedi** | cook/prepare | heat | 10 |
-| **dain** | dose/portion | dosing | 9 |
-| **šedi** | soak/infuse | liquid | 5 |
-| **hol** | combine | mixing | 2 |
-| **dar** | dose/give | dosing | 2 |
-| **dal** | then/next | sequence | 1 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **h-** | combine/cook (reduced) | 14 |
+| **da-** | dose/add/give | 11 |
+| **he-** | State / Result / After | 11 |
+| **ot-** | vessel/container (variant) | 7 |
+| **ko-** | measure/quantify (variant) | 7 |
+| **še-** | Soaked-state / After soaking | 5 |
+| **š-** | soak/infuse (Croatian) | 2 |
+| **lš-** | The (before š-) | 1 |
+| **sa-** | with/together | 1 |
+| **l-** | The / that (determiner) | 1 |
+| **šeo-** | Soaked-state (extended) | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **da** -> *da/dare* (give (Rx imperative)) -- 11x
+- **ost** -> *osteo-* (Bone (medical register)) -- 8x
+
+## Interlinear Translation
 
 ```
 EVA: pody lshed ypdy shedy opchedy ytedy oepchol yfchey tochsy okas ykchdy daiin
-CRO: pody lšed ypldy šedi oplhedi ytredi oeplhol yprhey tohsy ostas ysthdy dain
-EXP: pody lšed ypldy močeno oplhedi ytredi oeplhol yprhey tohsy kostas ysthdy DA [Lat.]
-ENG: ? ? ? soaked ? ? ? ? ? bone+as ? give
+CRO: pody lšed ypdy šedy ophedy ytedy oephol yfhey tohsy ostas ysthdy daiin
+EXP: po+dy lš-radix + facere i+dy še-d+y oph+edy i+edy oeph+ol i+ey tohs+y OSTEO- [Lat.] i+dy DA/DARE [Lat.]
+ENG: [verbal] The (before š-) "Process kernel / do / treat" and/with [verbal] Soaked-state / After soaking [adjective] [verbal] and/with [verbal] [instrumental] +?oeph and/with [participle] [adjective] +?tohs BONE (MEDICAL REGISTER) +a and/with [verbal] GIVE (RX IMPERATIVE) +i
 ```
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: ytasr aiin otchdy okaly daiin qokedy otar ar oldy otedy saim okey tody daiin
-CRO: ytrasr ain otrhdy ostaly dain kostedi otrar ar oldy otredi saim ostey tody dain
-EXP: ytrasr ain otrov/pripravahdy kostaly DA [Lat.] kost-edi otrov/pripravaar voda uljedy priprava saim kostey tody DA [Lat.]
-ENG: ? ? extract/prep+hdy bone+aly give bone-preparation extract/prep+ar water oil+dy preparation ? bone+ey ? give
+CRO: ytasr aiin othdy ostaly daiin kostedy otar ar oldy otedy saim ostey tody daiin
+EXP: i a+iin posuda-h+dy OSTEO- [Lat.] DA/DARE [Lat.] ko-stare+edy posuda-voda voda ulje+dy posuda-e+dy s-i+m OSTEO- [Lat.] to+dy DA/DARE [Lat.]
+ENG: and/with +?tasr [continuation] vessel/container (variant) [verbal] BONE (MEDICAL REGISTER) +al GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [verbal] vessel/container (variant) water water oil [verbal] vessel/container (variant) [verbal] with/together [case] BONE (MEDICAL REGISTER) [verbal] GIVE (RX IMPERATIVE) +i
 ```
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: ytchey keody chockhdy chotal okalshdy shdy qokar oty qoty shedy chedy dam
-CRO: ytrhey keody hocstrdy hotral ostalšdy šdy kostar otry kotry šedi hedi dam
-EXP: ytrhey keody hocstrdy hotral kostalšdy šdy kost-ar otrov/pripravay kotry močeno kuhano DA [Lat.]
-ENG: ? ? ? ? bone+alšdy ? bone-water extract/prep+y ? soaked cooked give
+CRO: ythey steody hocstdy hotal ostalšdy šdy kostar oty koty šedy hedy dam
+EXP: i+ey stare+dy kuhaj-stare+dy kuhaj-ot+al OSTEO- [Lat.] namoci-d+y ko-stare+ar posuda-i ko-t+y še-d+y he-d+y DA/DARE [Lat.]
+ENG: and/with [participle] Stand / place / position [verbal] combine/cook (reduced) Stand / place / position [verbal] combine/cook (reduced) [locative] BONE (MEDICAL REGISTER) +alš soak/infuse (Croatian) [adjective] measure/quantify (variant) Stand / place / position [instrumental] vessel/container (variant) and/with measure/quantify (variant) [adjective] Soaked-state / After soaking [adjective] State / Result / After [adjective] GIVE (RX IMPERATIVE) +m
 ```
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: ydaiin chckhy chdal olar chckhdy chdody tar cham kedy daiin ykaiir shckhefy
-CRO: ydain hcstry hdal olar hcstrdy hdody tar ham kedi dain ystair šcstrepry
-EXP: DA [Lat.] hcstry DA [Lat.] uljear hcstrdy hdody tar ham kedi DA [Lat.] ystair šcstrepry
-ENG: give ? give oil+ar ? ? ? ? ? give ? ?
+CRO: ydaiin hcsty hdal olar hcstdy hdody tar ham stedy daiin ystaiir šcstefy
+EXP: i+aiin kuhaj-stare+y kuhaj-d+al ulje+ar kuhaj-stare+dy kuhaj-do+dy t+ar kuhaj-a+m stare+edy DA/DARE [Lat.] i+ir namoci-stare+y
+ENG: and/with [liquid+continuing] combine/cook (reduced) Stand / place / position [adjective] combine/cook (reduced) [locative] oil [instrumental] combine/cook (reduced) Stand / place / position [verbal] combine/cook (reduced) [verbal] [instrumental] combine/cook (reduced) [case] Stand / place / position [verbal] GIVE (RX IMPERATIVE) +i and/with [agent] +?stai soak/infuse (Croatian) Stand / place / position [adjective]
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: lodaiin shedy qokedy chdy okedy dykalydaiin chedy okeedy s ar air cthy
-CRO: lodain šedi kostedi hdy ostedi dystalydain hedi ostedi s ar air ctrry
-EXP: lodain močeno kost-edi hdy kost-edi dystalydain kuhano kost-edi s voda air ctrry
-ENG: ? soaked bone-preparation ? bone-prepared ? cooked bone-prepared ? water ? ?
+CRO: lodaiin šedy kostedy hdy ostedy dystalydaiin hedy osteedy s ar air ctrry
+EXP: l-stabljika+aiin še-d+y ko-stare+edy kuhaj-d+y OSTEO- [Lat.] kotao+aiin he-d+y OSTEO- [Lat.] s voda a+ir centrum+y
+ENG: The / that (determiner) stalk/stem [liquid+continuing] Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [verbal] combine/cook (reduced) [adjective] BONE (MEDICAL REGISTER) cauldron [liquid+continuing] State / Result / After [adjective] BONE (MEDICAL REGISTER) +e ?s? water [agent] Center / control [adjective]
 ```
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: tos aiirchar chedy olaiin qotedy sheedyqokaldy qokedy dair chody cthhy m
-CRO: tos airhar hedi olain kotredi šediqostaldy kostedi dair hody ctrrhy m
-EXP: tos airhar kuhano uljeain kotredi močenoqostaldy kost-edi DA [Lat.] hody ctrrhy m
-ENG: ? ? cooked oil+ain ? soaked+qostaldy bone-preparation give ? ? ?
+CRO: tos aiirhar hedy olaiin kotedy šeedykostaldy kostedy dair hody ctrrhy m
+EXP: to+s aiirh+ar he-d+y ulje+aiin ko-t+edy še-radix+dy ko-stare+edy DA/DARE [Lat.] kuhaj-o+dy centrum+y m
+ENG: [~15] +?to [instrumental] +?aiirh State / Result / After [adjective] oil [liquid+continuing] measure/quantify (variant) [verbal] Soaked-state / After soaking Root / prepared root [verbal] measure/quantify (variant) Stand / place / position [verbal] GIVE (RX IMPERATIVE) +ir combine/cook (reduced) [verbal] Center / control [adjective] ?m?
 ```
+<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
 
 ```
 EVA: dchedy cheeky dam ched l chedy chedy
-CRO: dhedi hesty dam hed l hedi hedi
-EXP: dhedi hesty DA [Lat.] hed l kuhano kuhano
-ENG: ? ? give ? ? cooked cooked
+CRO: dhedy heesty dam hed l hedy hedy
+EXP: dh+edy he-stare+y DA/DARE [Lat.] he-d l he-d+y he-d+y
+ENG: [verbal] State / Result / After Stand / place / position [adjective] GIVE (RX IMPERATIVE) +m State / Result / After ?l? State / Result / After [adjective] State / Result / After [adjective]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
 
 ```
 EVA: okeedchsy qokeedy chetedar or aicky
-CRO: ostedhsy kostedi hetredar or aicsty
-EXP: kostedhsy kost-edi hetredar ulje aicsty
-ENG: bone+edhsy bone-preparation ? oil ?
+CRO: osteedhsy kosteedy hetedar or aisty
+EXP: OSTEO- [Lat.] ko-stare+edy he-radix + facere+ar oleum stare+y
+ENG: BONE (MEDICAL REGISTER) +eedhs measure/quantify (variant) Stand / place / position [verbal] State / Result / After "Process kernel / do / treat" [instrumental] Oil / oleum (variant) Stand / place / position [adjective]
 ```
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: yteedy shedy checkhdy chtedy daim
-CRO: ytredi šedi hecstrdy htredi daim
-EXP: ytredi močeno hecstrdy htredi DA [Lat.]
-ENG: ? soaked ? ? give
+CRO: yteedy šedy hecstdy htedy daim
+EXP: i+edy še-d+y he-stare+dy kuhaj-t+edy DA/DARE [Lat.]
+ENG: and/with [verbal] Soaked-state / After soaking [adjective] State / Result / After Stand / place / position [verbal] combine/cook (reduced) [verbal] GIVE (RX IMPERATIVE) +i
 ```
+<sub>[███████░░░] 77% confidence</sub>
 
 ```
 EVA: sheol or chey okaiin daim oty om
-CRO: šeol or hey ostain daim otry om
-EXP: šeol ulje hey kostnin DA [Lat.] otrov/pripravay om
-ENG: ? oil ? of bone+n give extract/prep+y ?
+CRO: šeol or hey ostaiin daim oty om
+EXP: šeo-l oleum he-i OSTEO- [Lat.] DA/DARE [Lat.] posuda-i o+m
+ENG: Soaked-state (extended) Oil / oleum (variant) State / Result / After and/with BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +i vessel/container (variant) and/with [case]
 ```
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: tolshey otedy chocpheod oty dam
-CRO: tolšey otredi hocplleod otry dam
-EXP: tolšey priprava hocplleod otrov/pripravay DA [Lat.]
-ENG: ? preparation ? extract/prep+y give
+CRO: tolšey otedy hocplleod oty dam
+EXP: ulje+ey posuda-e+dy kuhaj-stabljika posuda-i DA/DARE [Lat.]
+ENG: oil [participle] vessel/container (variant) [verbal] combine/cook (reduced) stalk/stem +?ocplle vessel/container (variant) and/with GIVE (RX IMPERATIVE) +m
 ```
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: dair aly chdam chcthy chdam
 CRO: dair aly hdam hctrry hdam
-EXP: DA [Lat.] tekućinay DA [Lat.] hctrry DA [Lat.]
-ENG: give liquid+y give ? give
+EXP: DA/DARE [Lat.] tekućina+y kuhaj-da+m kuhaj-centrum+y kuhaj-da+m
+ENG: GIVE (RX IMPERATIVE) +ir liquid/water (vessel context) [adjective] combine/cook (reduced) da [case] combine/cook (reduced) Center / control [adjective] combine/cook (reduced) da [case]
 ```
+<sub>[████████░░] 87% confidence</sub>
 
 ```
 EVA: ykar chedy
-CRO: ystar hedi
-EXP: ystar kuhano
-ENG: ? cooked
+CRO: ystar hedy
+EXP: i+ar he-d+y
+ENG: and/with [instrumental] State / Result / After [adjective]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f46v*
