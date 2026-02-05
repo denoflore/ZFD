@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 ZFD Folio Decode Pipeline
-Usage: python main.py <folio_id> <eva_file>
+Usage: python main.py <folio_id> <eva_file> [--lexicon path/to/lexicon.csv]
 """
 
 import sys
@@ -16,13 +16,27 @@ from output import generate_json, generate_csv, generate_markdown
 
 
 def main():
-    if len(sys.argv) < 3:
-        print("Usage: python main.py <folio_id> <eva_file>")
+    # Parse args (simple, no argparse dependency)
+    args = sys.argv[1:]
+    lexicon_file = None
+
+    if '--lexicon' in args:
+        idx = args.index('--lexicon')
+        if idx + 1 < len(args):
+            lexicon_file = args[idx + 1]
+            args = args[:idx] + args[idx+2:]
+        else:
+            print("Error: --lexicon requires a path argument")
+            sys.exit(1)
+
+    if len(args) < 2:
+        print("Usage: python main.py <folio_id> <eva_file> [--lexicon path/to/lexicon.csv]")
         print("Example: python main.py f88r input/f88r.txt")
+        print("         python main.py f88r input/f88r.txt --lexicon data/lexicon.csv")
         sys.exit(1)
 
-    folio = sys.argv[1]
-    eva_file = sys.argv[2]
+    folio = args[0]
+    eva_file = args[1]
 
     # Read EVA text
     with open(eva_file, encoding='utf-8') as f:
@@ -30,7 +44,7 @@ def main():
 
     # Initialize pipeline
     data_dir = Path(__file__).parent / "data"
-    pipeline = ZFDPipeline(data_dir=str(data_dir))
+    pipeline = ZFDPipeline(data_dir=str(data_dir), lexicon_file=lexicon_file)
 
     # Process folio
     print(f"Processing folio {folio}...")
