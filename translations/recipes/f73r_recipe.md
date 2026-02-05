@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006206/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006206/full/600,/0/default.jpg" width="500" alt="Folio 73r of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006206/full/600,/0/default.jpg" width="500" alt="Folio f73r of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 73r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f73r. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
-**Section:** Herbal B / Astronomical
-**Confidence:** 85%
-**Words:** 323 total, 92 recipe-relevant
+**Section:** Astronomical
+**Confidence:** 75%
+**Words:** 96 total, 95 resolved (99%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,236 +18,279 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ar** | water | *aqua* | liquid | 26 | CONFIRMED |
-| **or** | oil | *oleum* | liquid | 14 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 12 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 9 | CONFIRMED |
-| **sal** | salt | *sal* | mineral | 2 | CONFIRMED |
-| **rady** | root | *radix* | plant_part | 2 | CONFIRMED |
+| **ost** | bone (medical) | *osteo-* | animal | 11 | CONFIRMED |
+| **al** | liquid/water (vessel context) | *aqua* | liquid | 10 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 7 | CANDIDATE |
+| **ar** | water | *aqua* | liquid | 6 | CONFIRMED |
+| **ee** | (intensifier) |  | general | 6 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 4 | CANDIDATE |
+| **ol** | oil | *oleum* | liquid | 3 | CONFIRMED |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 3 | CONFIRMED |
+| **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
+| **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **dal** | then/next | sequence | 15 |
-| **dar** | dose/give | dosing | 5 |
-| **dain** | dose/portion | dosing | 3 |
-| **hedi** | cook/prepare | heat | 2 |
-| **hor** | process/work | general | 2 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **ot-** | vessel/container (variant) | 18 |
+| **he-** | State / Result / After | 15 |
+| **h-** | combine/cook (reduced) | 6 |
+| **da-** | dose/add/give | 5 |
+| **še-** | Soaked-state / After soaking | 3 |
+| **sa-** | with/together | 2 |
+| **heo-** | State / Result (extended) | 2 |
+| **so-** | with/together (variant) | 1 |
+| **l-** | The / that (determiner) | 1 |
+| **ko-** | measure/quantify (variant) | 1 |
+| **š-** | soak/infuse (Croatian) | 1 |
 
-## Labels (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **ost** -> *osteo-* (Bone (medical register)) -- 12x
+- **da** -> *da/dare* (give (Rx imperative)) -- 5x
+
+## Interlinear Translation
 
 ```
 EVA: otoly
-CRO: otroly
-EXP: otrov/pripravaoly
-ENG: extract/prep+oly
+CRO: otoly
+EXP: posuda-ulje+y
+ENG: vessel/container (variant) oil [adjective]
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: otaly
-CRO: otraly
-EXP: otrov/pripravaaly
-ENG: extract/prep+aly
+CRO: otaly
+EXP: posuda-tekućina+y
+ENG: vessel/container (variant) liquid/water (vessel context) [adjective]
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: okary
 CRO: ostary
-EXP: kostary
-ENG: bone+ary
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER)
 ```
-
-## Running Text (Interlinear)
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: chockhy
-CRO: hocstry
-EXP: hocstry
-ENG: ?
+CRO: hocsty
+EXP: kuhaj-stare+y
+ENG: combine/cook (reduced) Stand / place / position [adjective]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: okedy
-CRO: ostedi
-EXP: kost-edi
-ENG: bone-prepared
+CRO: ostedy
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER)
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: yteeody
-CRO: ytreody
-EXP: ytreody
-ENG: ?
+CRO: yteeody
+EXP: i+dy
+ENG: and/with [verbal] +?teeo
 ```
+<sub>[▓▓▓▓░░░░░░] 43% confidence</sub>
 
 ```
 EVA: ypolcheey salchedal chepchey daraly oteos air ar oteosdal chotchy soteees alshey ches al chees cheoly leiir choteey cheteey cheteeeosaiin chetchody chedar ar cheteey oteor ar air alor shetch ytchy cheody ykeydom oteos alar alcheky
-CRO: yplolhei salhedal heplhey daraly otreos air ar otreosdal hotrhy sotrees alšey hes al hes heoly leir hotrei hetrei hetreeosain hetrhody hedar ar hetrei otreor ar air alor šetrh ytrhy heody ysteydom otreos alar alhesty
-EXP: yplolhei salhedal heplhey daraly otrov/pripravaeos air voda otrov/pripravaeosdal hotrhy sotrees tekućinašey hes tekućina hes heoly leir hotrei hetrei hetreeosain hetrhody DA [Lat.] voda hetrei otrov/pripravaeor voda air tekućinaor šetrh ytrhy heody ysteydom otrov/pripravaeos tekućinaar tekućinahesty
-ENG: ? ? ? dose/gift+aly extract/prep+eos ? water extract/prep+eosdal ? ? liquid+šey ? liquid ? ? ? ? ? ? ? give water ? extract/prep+eor water ? liquid+or ? ? ? ? extract/prep+eos liquid+ar liquid+hesty
+CRO: ypolheey salhedal hephey daraly oteos air ar oteosdal hothy soteees alšey hes al hees heoly leiir hoteey heteey heteeeosaiin hethody hedar ar heteey oteor ar air alor šeth ythy heody ysteydom oteos alar alhesty
+EXP: i+ey s-radix + facere+al he-ph+ey DA/DARE [Lat.] posuda-eo+s a+ir voda posuda-eosd+al kuhaj-oth+y s-ee+s tekućina+ey he-s tekućina he-e+s heo-l+y l-ei+ir kuhaj-ote+ey he-te+ey he-ee+aiin he-tho+dy he-d+ar voda he-te+ey posuda-oleum voda a+ir tekućina še-th i+y heo-d+y i+om posuda-eo+s tekućina+ar tekućina+y
+ENG: and/with [participle] +?polhe with/together "Process kernel / do / treat" [locative] State / Result / After [participle] GIVE (RX IMPERATIVE) +r vessel/container (variant) [~15] [agent] water vessel/container (variant) [locative] combine/cook (reduced) [adjective] +?oth with/together (variant) (intensifier) [~15] liquid/water (vessel context) [participle] State / Result / After liquid/water (vessel context) State / Result / After [~15] State / Result (extended) [adjective] The / that (determiner) [agent] combine/cook (reduced) [participle] State / Result / After [participle] State / Result / After (intensifier) [liquid+continuing] State / Result / After [verbal] State / Result / After [instrumental] water State / Result / After [participle] vessel/container (variant) Oil / oleum (variant) water [agent] liquid/water (vessel context) Soaked-state / After soaking and/with [adjective] State / Result (extended) [adjective] and/with [case] +?steyd vessel/container (variant) [~15] liquid/water (vessel context) [instrumental] liquid/water (vessel context) [adjective] +?hest
 ```
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: otey
-CRO: otrey
-EXP: otrov/pripravaey
-ENG: extract/prep+ey
+CRO: otey
+EXP: posuda-e+y
+ENG: vessel/container (variant) [adjective]
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: okeody
 CRO: osteody
-EXP: kosteody
-ENG: bone+eody
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +eo
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: oteedyl
-CRO: otredil
-EXP: pripraval
-ENG: preparation+l
+CRO: oteedyl
+EXP: posuda-ee
+ENG: vessel/container (variant) (intensifier)
 ```
+<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
 
 ```
 EVA: okesdy
 CRO: ostesdy
-EXP: kostesdy
-ENG: bone+esdy
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +es
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: okery
 CRO: ostery
-EXP: kostery
-ENG: bone+ery
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +er
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: oksedy
-CRO: ostsedi
-EXP: kostsedi
-ENG: bone+sedi
+CRO: ostsedy
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +s
 ```
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: ykeeory
-CRO: ysteory
-EXP: ysteory
-ENG: ?
+CRO: ysteeory
+EXP: i+y
+ENG: and/with [adjective] +?steeor
 ```
+<sub>[░░░░░░░░░░] 25% confidence</sub>
 
 ```
 EVA: oteeosy
-CRO: otreosy
-EXP: otrov/pripravaeosy
-ENG: extract/prep+eosy
+CRO: oteeosy
+EXP: posuda-ee+y
+ENG: vessel/container (variant) (intensifier) [adjective]
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: shekal
 CRO: šestal
-EXP: šestal
-ENG: ?
+EXP: še-stare+al
+ENG: Soaked-state / After soaking Stand / place / position [locative]
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: oteedyg
-CRO: otredig
-EXP: pripravag
-ENG: preparation+g
+CRO: oteedyg
+EXP: posuda-ee
+ENG: vessel/container (variant) (intensifier)
 ```
+<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
 
 ```
 EVA: okedal
 CRO: ostedal
-EXP: kostedal
-ENG: bone+edal
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +ed
 ```
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: chdy
 CRO: hdy
-EXP: hdy
-ENG: ?
+EXP: kuhaj-d+y
+ENG: combine/cook (reduced) [adjective]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: dalshey
 CRO: dalšey
-EXP: daj-tekšey
-ENG: give liquid+šey
+EXP: DA/DARE [Lat.]
+ENG: GIVE (RX IMPERATIVE) +lš
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: opaiin
-CRO: oplain
-EXP: oplain
-ENG: ?
+CRO: opaiin
+EXP: op+aiin
+ENG: [liquid+continuing]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: okeos
 CRO: osteos
-EXP: kosteos
-ENG: bone+eos
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +eo
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: oteey dar al opaiin olalaiin sair ar chopchedy chdar orom otoreees olteey okees otar chey oteas ohor opar chey daiin qoiheey scheey dal cheesy
-CRO: otrei dar al oplain olalain sair ar hoplhedi hdar orom otrorees oltrei ostes otrar hey otreas ohor oplar hey dain koihei shei dal hesy
-EXP: otrov/pripravaei DA [Lat.] tekućina oplain uljealain sair voda hoplhedi DA [Lat.] uljeom otrov/pripravaorees uljetrei kostes otrov/pripravaar hey otrov/pripravaeas ohor oplar hey DA [Lat.] koihei shei DA [Lat.] hesy
-ENG: extract/prep+ei give liquid ? oil+alain ? water ? give oil+om extract/prep+orees oil+trei bone+es extract/prep+ar ? extract/prep+eas ? ? ? give ? ? give ?
+CRO: oteey dar al opaiin olalaiin sair ar hophedy hdar orom otoreees olteey ostees otar hey oteas ohor opar hey daiin koiheey šheey dal heesy
+EXP: posuda-e+ey DA/DARE [Lat.] tekućina op+aiin ulje+aiin s-ir voda kuhaj-oph+edy kuhaj-d+ar oleum+om posuda-oleum+s ulje+ey OSTEO- [Lat.] posuda-voda he-i posuda-ea+s obraditi op+ar he-i DA/DARE [Lat.] ko-ihe+ey namoci-e+y DA/DARE [Lat.] he-es+y
+ENG: vessel/container (variant) [participle] GIVE (RX IMPERATIVE) +r liquid/water (vessel context) [liquid+continuing] oil [liquid+continuing] with/together water combine/cook (reduced) [verbal] combine/cook (reduced) [instrumental] Oil / oleum (variant) [case] vessel/container (variant) Oil / oleum (variant) [~15] oil [participle] BONE (MEDICAL REGISTER) +ee vessel/container (variant) water State / Result / After and/with vessel/container (variant) [~15] process/work [instrumental] State / Result / After and/with GIVE (RX IMPERATIVE) +i measure/quantify (variant) [participle] soak/infuse (Croatian) (state/result/after) [adjective] GIVE (RX IMPERATIVE) +l State / Result / After [adjective]
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: okeos
 CRO: osteos
-EXP: kosteos
-ENG: bone+eos
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER) +eo
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: otad
-CRO: otrad
-EXP: RADIX [Lat.]
-ENG: root
+CRO: otad
+EXP: posuda-ad
+ENG: vessel/container (variant)
 ```
+<sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
 ```
 EVA: ootady
-CRO: ootrady
-EXP: ootrady
-ENG: ?
+CRO: ootady
+EXP: oota+dy
+ENG: [verbal] +?oota
 ```
+<sub>[░░░░░░░░░░] 33% confidence</sub>
 
 ```
 EVA: oky
 CRO: osty
-EXP: kosty
-ENG: bone+y
+EXP: OSTEO- [Lat.]
+ENG: BONE (MEDICAL REGISTER)
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: chefy
-CRO: hepry
-EXP: hepry
-ENG: ?
+CRO: hefy
+EXP: he-f+y
+ENG: State / Result / After [adjective]
 ```
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: otal
-CRO: otral
-EXP: otrov/pripravaal
-ENG: extract/prep+al
+CRO: otal
+EXP: posuda-tekućina
+ENG: vessel/container (variant) liquid/water (vessel context)
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: shek
 CRO: šest
-EXP: šest
-ENG: ?
+EXP: še-stare
+ENG: Soaked-state / After soaking Stand / place / position
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: ar
@@ -255,20 +298,24 @@ CRO: ar
 EXP: voda
 ENG: water
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: kar
-CRO: kar
-EXP: kar
-ENG: ?
+CRO: star
+EXP: stare+ar
+ENG: Stand / place / position [instrumental]
 ```
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: osaiin chedain oteey chedaly okechs chepchees aly oteodal
-CRO: osain hedain otrei hedaly ostehs heplhes aly otreodal
-EXP: osain hedain otrov/pripravaei hedaly kostehs heplhes tekućinay otrov/pripravaeodal
-ENG: ? ? extract/prep+ei ? bone+ehs ? liquid+y extract/prep+eodal
+CRO: osaiin hedain oteey hedaly ostehs hephees aly oteodal
+EXP: os+aiin he-d+ain posuda-e+ey he-dal+y OSTEO- [Lat.] he-ee+s tekućina+y posuda-stabljika+al
+ENG: [liquid+continuing] State / Result / After [plural] vessel/container (variant) [participle] State / Result / After da-l-al [adjective] BONE (MEDICAL REGISTER) +eh State / Result / After (intensifier) [~15] liquid/water (vessel context) [adjective] vessel/container (variant) stalk/stem [locative]
 ```
+<sub>[████████░░] 82% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f73r*
