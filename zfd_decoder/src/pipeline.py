@@ -12,12 +12,14 @@ try:
     from .gallows import GallowsExpander
     from .suffixes import SuffixParser
     from .stems import StemLexicon
+    from .compound import CompoundDecomposer
 except ImportError:
     from tokenizer import Token, tokenize_folio
     from operators import OperatorDetector
     from gallows import GallowsExpander
     from suffixes import SuffixParser
     from stems import StemLexicon
+    from compound import CompoundDecomposer
 
 
 class ZFDPipeline:
@@ -40,6 +42,13 @@ class ZFDPipeline:
             self.lexicon.stems
         )
         self.suffixes = SuffixParser(str(data_path / "suffixes.json"))
+
+        # Compound decomposer (optional, needs unified lexicon)
+        unified_path = data_path / "unified_lexicon_v2.json"
+        if unified_path.exists():
+            self.compound = CompoundDecomposer(str(unified_path))
+        else:
+            self.compound = None
 
     def process_token(self, token: Token) -> Token:
         """Process a single token through all pipeline stages."""
@@ -121,6 +130,21 @@ class ZFDPipeline:
             if found:
                 stem_data = found[0][1]
                 # Keep the full stem_candidate, just use the match for the gloss
+
+        # Stage 6b: Compound decomposition fallback
+        # If stem still unknown, try decomposing the EVA token into morphemes
+        if not stem_data and self.compound:
+            parts = self.compound.decompose(token.eva)
+            if parts:
+                gloss = self.compound.build_gloss(parts)
+                token.stem = stem_candidate
+                token.stem_known = True
+                token.stem_gloss = gloss
+                token.confidence += 0.10  # lower confidence for compound decomp
+                token.notes.append(
+                    f"Compound: {self.compound.format_decomposition(parts)}")
+                stem_data = {'name': 'compound', 'status': 'CANDIDATE',
+                             'gloss': gloss, 'category': 'compound'}
 
         token.stem = stem_candidate
         if stem_data:
