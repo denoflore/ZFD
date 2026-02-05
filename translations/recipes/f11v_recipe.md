@@ -2,15 +2,15 @@
 
 <p align="center">
 <a href="https://collections.library.yale.edu/iiif/2/1006097/full/full/0/default.jpg">
-<img src="https://collections.library.yale.edu/iiif/2/1006097/full/600,/0/default.jpg" width="500" alt="Folio 11v of the Voynich Manuscript (Beinecke MS 408)">
+<img src="https://collections.library.yale.edu/iiif/2/1006097/full/600,/0/default.jpg" width="500" alt="Folio f11v of the Voynich Manuscript (Beinecke MS 408)">
 </a>
-<br><sub>Folio 11v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
+<br><sub>Folio f11v. Beinecke MS 408. Click for full resolution. Image: Yale Beinecke Library (public domain).</sub>
 </p>
 
-
 **Section:** Herbal A
-**Confidence:** 85%
-**Words:** 113 total, 56 recipe-relevant
+**Confidence:** 65%
+**Words:** 43 total, 42 resolved (98%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
 
 ---
 
@@ -18,67 +18,80 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **or** | oil | *oleum* | liquid | 14 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 11 | CONFIRMED |
-| **kost** | bone | *os/ossis* | animal | 6 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 4 | CONFIRMED |
-| **edy** | root/prepared root | *radix* | plant_part | 1 | CONFIRMED |
-| **arg** | silver | *argentum* | metal | 1 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 7 | CANDIDATE |
+| **y** | and/with | *et* | grammar | 5 | CANDIDATE |
+| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
+| **ctr** | Center / control | *centrum* | general | 3 | CANDIDATE |
+| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
+| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
+| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
+| **arg** | Silver / silver salts | *argentum* | mineral | 1 | CONFIRMED |
 
 ## Preparation Methods
 
-| Stem | English | Category | Occurrences |
-|------|---------|----------|-------------|
-| **hor** | process/work | general | 7 |
-| **hol** | combine | mixing | 4 |
-| **šol** | soak in oil | liquid | 3 |
-| **dain** | dose/portion | dosing | 2 |
-| **thor** | boil/roast | heat | 2 |
-| **šor** | strain/soak | liquid | 1 |
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **š-** | soak/infuse (Croatian) | 6 |
+| **ko-** | measure/quantify (variant) | 6 |
+| **da-** | dose/add/give | 4 |
+| **h-** | combine/cook (reduced) | 4 |
+| **ot-** | vessel/container (variant) | 1 |
+| **so-** | with/together (variant) | 1 |
 
-## Running Text (Interlinear)
+## Latin Pharmaceutical Terms
+
+- **da** -> *da/dare* (give (Rx imperative)) -- 4x
+
+## Interlinear Translation
 
 ```
 EVA: poldchody shcphy shordy qotyshol cphar dan y
-CRO: poldhody šcplly šordy kotryšol cpllar dan y
-EXP: poldhody šcplly s-uljedy kotryšol cpllar DA [Lat.] y
-ENG: ? ? with oil+dy ? ? give ?
+CRO: poldhody šcplly šordy kotyšol cpllar dan y
+EXP: ulje+dy namoci-cpll+y namoci-oleum+dy ko-in+ol cpll+ar DA/DARE [Lat.] i
+ENG: oil [verbal] soak/infuse (Croatian) [adjective] +?cpll soak/infuse (Croatian) Oil / oleum (variant) [verbal] measure/quantify (variant) Preposition: in/with [instrumental] [instrumental] +?cpll GIVE (RX IMPERATIVE) +n and/with
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: shol dy chckhy shcthy daiin damykchy dain dchy
-CRO: šol dy hcstry šctrry dain damysthy dain dhy
-EXP: s-ulje dy hcstry šctrry DA [Lat.] damysthy DA [Lat.] dhy
-ENG: with oil ? ? ? give ? give ?
+CRO: šol dy hcsty šctrry daiin damysthy dain dhy
+EXP: namoci-ulje d+y kuhaj-stare+y namoci-centrum+y DA/DARE [Lat.] DA/DARE [Lat.] DA/DARE [Lat.] dh+y
+ENG: soak/infuse (Croatian) oil [adjective] combine/cook (reduced) Stand / place / position [adjective] soak/infuse (Croatian) Center / control [adjective] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +myh GIVE (RX IMPERATIVE) +in [adjective] +?dh
 ```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: otchor dy kchy tchy ar qokchdoky chol dy dy
-CRO: otrhor dy khy thy ar kosthdosty hol dy dy
-EXP: otrov/pripravahor dy khy thy voda kosthdosty kuh-ulje dy dy
-ENG: extract/prep+hor ? ? ? water ? cook+oil ? ?
+CRO: othor dy sthy thy ar kosthdosty hol dy dy
+EXP: posuda-obraditi d+y stare+y th+y voda ko-stare+y kuhaj-ulje d+y d+y
+ENG: vessel/container (variant) process/work [adjective] Stand / place / position [adjective] [adjective] +?th water measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) oil [adjective] [adjective]
 ```
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: qokchor chololer chyky dchy qokyctho tchey tan
 CRO: kosthor hololer hysty dhy kostyctrro they tan
-EXP: kosthor kuh-uljeoler hysty dhy kostyctrro they tan
-ENG: ? cook+oil+oler ? ? ? ? ?
+EXP: ko-stare kuhaj-ulje kuhaj-i+y dh+y ko-stare th+ey t+an
+ENG: measure/quantify (variant) Stand / place / position combine/cook (reduced) oil +?oler combine/cook (reduced) and/with [adjective] [adjective] +?dh measure/quantify (variant) Stand / place / position +?yctrro [participle] [adjective]
 ```
+<sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
 ```
 EVA: soydy qoteey qotchor dy ddycthor shy arg
-CRO: soydy kotrei kotrhor dy ddyctrror šy arg
-EXP: soydy kotrei kotrhor dy ddyctrror šy vodag
-ENG: ? ? ? ? ? ? water+g
+CRO: soydy koteey kothor dy ddyctrror šy arg
+EXP: s-i+dy ko-te+ey ko-torreo d+y centrum namoci-i argentum
+ENG: with/together (variant) and/with [verbal] measure/quantify (variant) [participle] measure/quantify (variant) Boil / roast / scorch [adjective] Center / control +?ddyror soak/infuse (Croatian) and/with Silver / silver salts
 ```
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: ycheor ksho dor cthey schold
-CRO: yheor kšo dor ctrrey shold
-EXP: yheor kšo dor ctrrey shold
-ENG: ? ? ? ? ?
+CRO: yheor stšo dor ctrrey šhold
+EXP: i stare oleum centrum+ey namoci-miješati
+ENG: and/with +?heor Stand / place / position Oil / oleum (variant) Center / control [participle] soak/infuse (Croatian) combine/mix
 ```
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ---
-*Generated by ZFD Recipe Extraction Pipeline v1.0*
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f11v*
