@@ -1,0 +1,1243 @@
+{
+  "pipeline_version": "2.0",
+  "lexicon_version": "1.0.0 (309 morphemes)",
+  "generated": "2026-02-05",
+  "totals": {
+    "folios_processed": 201,
+    "total_words": 42357,
+    "fully_resolved": 26965,
+    "partially_resolved": 13724,
+    "unknown": 1668,
+    "latin_detected": 5313
+  },
+  "sections": {
+    "Pharmaceutical": {
+      "count": 47,
+      "avg_confidence": 0.723
+    },
+    "Herbal A": {
+      "count": 112,
+      "avg_confidence": 0.697
+    },
+    "Herbal B": {
+      "count": 6,
+      "avg_confidence": 0.703
+    },
+    "Astronomical": {
+      "count": 14,
+      "avg_confidence": 0.676
+    },
+    "Biological/Balneological": {
+      "count": 22,
+      "avg_confidence": 0.78
+    }
+  },
+  "folios": {
+    "f100r": {
+      "confidence": 0.69,
+      "words": 110,
+      "resolved": 105,
+      "section": "Pharmaceutical"
+    },
+    "f100v": {
+      "confidence": 0.64,
+      "words": 91,
+      "resolved": 88,
+      "section": "Pharmaceutical"
+    },
+    "f101r": {
+      "confidence": 0.71,
+      "words": 205,
+      "resolved": 191,
+      "section": "Pharmaceutical"
+    },
+    "f101v": {
+      "confidence": 0.74,
+      "words": 199,
+      "resolved": 187,
+      "section": "Pharmaceutical"
+    },
+    "f102r": {
+      "confidence": 0.64,
+      "words": 238,
+      "resolved": 226,
+      "section": "Pharmaceutical"
+    },
+    "f102v": {
+      "confidence": 0.68,
+      "words": 310,
+      "resolved": 298,
+      "section": "Pharmaceutical"
+    },
+    "f103r": {
+      "confidence": 0.8,
+      "words": 525,
+      "resolved": 516,
+      "section": "Pharmaceutical"
+    },
+    "f103v": {
+      "confidence": 0.8,
+      "words": 449,
+      "resolved": 442,
+      "section": "Pharmaceutical"
+    },
+    "f104r": {
+      "confidence": 0.75,
+      "words": 438,
+      "resolved": 424,
+      "section": "Pharmaceutical"
+    },
+    "f104v": {
+      "confidence": 0.73,
+      "words": 458,
+      "resolved": 438,
+      "section": "Pharmaceutical"
+    },
+    "f105r": {
+      "confidence": 0.7,
+      "words": 368,
+      "resolved": 355,
+      "section": "Pharmaceutical"
+    },
+    "f105v": {
+      "confidence": 0.69,
+      "words": 773,
+      "resolved": 719,
+      "section": "Pharmaceutical"
+    },
+    "f106r": {
+      "confidence": 0.73,
+      "words": 824,
+      "resolved": 788,
+      "section": "Pharmaceutical"
+    },
+    "f106v": {
+      "confidence": 0.77,
+      "words": 878,
+      "resolved": 863,
+      "section": "Pharmaceutical"
+    },
+    "f107r": {
+      "confidence": 0.78,
+      "words": 959,
+      "resolved": 932,
+      "section": "Pharmaceutical"
+    },
+    "f107v": {
+      "confidence": 0.81,
+      "words": 898,
+      "resolved": 885,
+      "section": "Pharmaceutical"
+    },
+    "f108r": {
+      "confidence": 0.78,
+      "words": 961,
+      "resolved": 946,
+      "section": "Pharmaceutical"
+    },
+    "f108v": {
+      "confidence": 0.79,
+      "words": 1102,
+      "resolved": 1094,
+      "section": "Pharmaceutical"
+    },
+    "f10r": {
+      "confidence": 0.72,
+      "words": 86,
+      "resolved": 83,
+      "section": "Herbal A"
+    },
+    "f10v": {
+      "confidence": 0.73,
+      "words": 53,
+      "resolved": 51,
+      "section": "Herbal A"
+    },
+    "f111r": {
+      "confidence": 0.76,
+      "words": 1199,
+      "resolved": 1165,
+      "section": "Pharmaceutical"
+    },
+    "f111v": {
+      "confidence": 0.8,
+      "words": 1085,
+      "resolved": 1067,
+      "section": "Pharmaceutical"
+    },
+    "f112r": {
+      "confidence": 0.76,
+      "words": 767,
+      "resolved": 749,
+      "section": "Pharmaceutical"
+    },
+    "f112v": {
+      "confidence": 0.77,
+      "words": 808,
+      "resolved": 792,
+      "section": "Pharmaceutical"
+    },
+    "f113r": {
+      "confidence": 0.75,
+      "words": 875,
+      "resolved": 839,
+      "section": "Pharmaceutical"
+    },
+    "f113v": {
+      "confidence": 0.77,
+      "words": 482,
+      "resolved": 469,
+      "section": "Pharmaceutical"
+    },
+    "f114r": {
+      "confidence": 0.72,
+      "words": 447,
+      "resolved": 425,
+      "section": "Pharmaceutical"
+    },
+    "f114v": {
+      "confidence": 0.74,
+      "words": 362,
+      "resolved": 353,
+      "section": "Pharmaceutical"
+    },
+    "f115r": {
+      "confidence": 0.73,
+      "words": 444,
+      "resolved": 431,
+      "section": "Pharmaceutical"
+    },
+    "f115v": {
+      "confidence": 0.73,
+      "words": 399,
+      "resolved": 388,
+      "section": "Pharmaceutical"
+    },
+    "f116r": {
+      "confidence": 0.79,
+      "words": 538,
+      "resolved": 525,
+      "section": "Pharmaceutical"
+    },
+    "f11r": {
+      "confidence": 0.67,
+      "words": 57,
+      "resolved": 52,
+      "section": "Herbal A"
+    },
+    "f11v": {
+      "confidence": 0.65,
+      "words": 43,
+      "resolved": 42,
+      "section": "Herbal A"
+    },
+    "f13r": {
+      "confidence": 0.65,
+      "words": 75,
+      "resolved": 66,
+      "section": "Herbal A"
+    },
+    "f13v": {
+      "confidence": 0.73,
+      "words": 59,
+      "resolved": 57,
+      "section": "Herbal A"
+    },
+    "f14r": {
+      "confidence": 0.69,
+      "words": 73,
+      "resolved": 70,
+      "section": "Herbal A"
+    },
+    "f14v": {
+      "confidence": 0.6,
+      "words": 65,
+      "resolved": 61,
+      "section": "Herbal A"
+    },
+    "f15r": {
+      "confidence": 0.7,
+      "words": 75,
+      "resolved": 72,
+      "section": "Herbal A"
+    },
+    "f15v": {
+      "confidence": 0.75,
+      "words": 71,
+      "resolved": 64,
+      "section": "Herbal A"
+    },
+    "f16r": {
+      "confidence": 0.65,
+      "words": 75,
+      "resolved": 65,
+      "section": "Herbal A"
+    },
+    "f16v": {
+      "confidence": 0.71,
+      "words": 73,
+      "resolved": 69,
+      "section": "Herbal A"
+    },
+    "f17r": {
+      "confidence": 0.64,
+      "words": 71,
+      "resolved": 65,
+      "section": "Herbal A"
+    },
+    "f17v": {
+      "confidence": 0.73,
+      "words": 134,
+      "resolved": 126,
+      "section": "Herbal A"
+    },
+    "f18r": {
+      "confidence": 0.71,
+      "words": 79,
+      "resolved": 72,
+      "section": "Herbal A"
+    },
+    "f18v": {
+      "confidence": 0.63,
+      "words": 71,
+      "resolved": 61,
+      "section": "Herbal A"
+    },
+    "f19r": {
+      "confidence": 0.68,
+      "words": 76,
+      "resolved": 71,
+      "section": "Herbal A"
+    },
+    "f19v": {
+      "confidence": 0.67,
+      "words": 77,
+      "resolved": 71,
+      "section": "Herbal A"
+    },
+    "f1r": {
+      "confidence": 0.68,
+      "words": 210,
+      "resolved": 193,
+      "section": "Herbal A"
+    },
+    "f1v": {
+      "confidence": 0.69,
+      "words": 80,
+      "resolved": 76,
+      "section": "Herbal A"
+    },
+    "f20r": {
+      "confidence": 0.69,
+      "words": 85,
+      "resolved": 83,
+      "section": "Herbal A"
+    },
+    "f20v": {
+      "confidence": 0.73,
+      "words": 88,
+      "resolved": 80,
+      "section": "Herbal A"
+    },
+    "f21r": {
+      "confidence": 0.73,
+      "words": 95,
+      "resolved": 89,
+      "section": "Herbal A"
+    },
+    "f21v": {
+      "confidence": 0.6,
+      "words": 56,
+      "resolved": 49,
+      "section": "Herbal A"
+    },
+    "f22r": {
+      "confidence": 0.69,
+      "words": 99,
+      "resolved": 91,
+      "section": "Herbal A"
+    },
+    "f22v": {
+      "confidence": 0.72,
+      "words": 69,
+      "resolved": 66,
+      "section": "Herbal A"
+    },
+    "f23r": {
+      "confidence": 0.66,
+      "words": 101,
+      "resolved": 88,
+      "section": "Herbal A"
+    },
+    "f23v": {
+      "confidence": 0.68,
+      "words": 80,
+      "resolved": 74,
+      "section": "Herbal A"
+    },
+    "f24r": {
+      "confidence": 0.71,
+      "words": 107,
+      "resolved": 99,
+      "section": "Herbal A"
+    },
+    "f24v": {
+      "confidence": 0.63,
+      "words": 80,
+      "resolved": 74,
+      "section": "Herbal A"
+    },
+    "f25r": {
+      "confidence": 0.7,
+      "words": 48,
+      "resolved": 46,
+      "section": "Herbal A"
+    },
+    "f25v": {
+      "confidence": 0.68,
+      "words": 55,
+      "resolved": 51,
+      "section": "Herbal A"
+    },
+    "f26r": {
+      "confidence": 0.68,
+      "words": 68,
+      "resolved": 60,
+      "section": "Herbal A"
+    },
+    "f26v": {
+      "confidence": 0.71,
+      "words": 90,
+      "resolved": 88,
+      "section": "Herbal A"
+    },
+    "f27r": {
+      "confidence": 0.71,
+      "words": 82,
+      "resolved": 80,
+      "section": "Herbal A"
+    },
+    "f27v": {
+      "confidence": 0.5,
+      "words": 51,
+      "resolved": 42,
+      "section": "Herbal A"
+    },
+    "f28r": {
+      "confidence": 0.66,
+      "words": 59,
+      "resolved": 54,
+      "section": "Herbal A"
+    },
+    "f28v": {
+      "confidence": 0.73,
+      "words": 63,
+      "resolved": 57,
+      "section": "Herbal A"
+    },
+    "f29r": {
+      "confidence": 0.75,
+      "words": 60,
+      "resolved": 57,
+      "section": "Herbal A"
+    },
+    "f29v": {
+      "confidence": 0.66,
+      "words": 74,
+      "resolved": 66,
+      "section": "Herbal A"
+    },
+    "f2r": {
+      "confidence": 0.65,
+      "words": 78,
+      "resolved": 72,
+      "section": "Herbal A"
+    },
+    "f2v": {
+      "confidence": 0.73,
+      "words": 55,
+      "resolved": 54,
+      "section": "Herbal A"
+    },
+    "f30r": {
+      "confidence": 0.7,
+      "words": 88,
+      "resolved": 84,
+      "section": "Herbal A"
+    },
+    "f30v": {
+      "confidence": 0.69,
+      "words": 63,
+      "resolved": 60,
+      "section": "Herbal A"
+    },
+    "f31r": {
+      "confidence": 0.73,
+      "words": 101,
+      "resolved": 98,
+      "section": "Herbal A"
+    },
+    "f31v": {
+      "confidence": 0.72,
+      "words": 108,
+      "resolved": 103,
+      "section": "Herbal A"
+    },
+    "f32r": {
+      "confidence": 0.68,
+      "words": 73,
+      "resolved": 68,
+      "section": "Herbal A"
+    },
+    "f32v": {
+      "confidence": 0.71,
+      "words": 75,
+      "resolved": 69,
+      "section": "Herbal A"
+    },
+    "f33r": {
+      "confidence": 0.79,
+      "words": 72,
+      "resolved": 70,
+      "section": "Herbal A"
+    },
+    "f33v": {
+      "confidence": 0.72,
+      "words": 88,
+      "resolved": 87,
+      "section": "Herbal A"
+    },
+    "f34r": {
+      "confidence": 0.67,
+      "words": 118,
+      "resolved": 110,
+      "section": "Herbal A"
+    },
+    "f34v": {
+      "confidence": 0.77,
+      "words": 115,
+      "resolved": 113,
+      "section": "Herbal A"
+    },
+    "f35r": {
+      "confidence": 0.73,
+      "words": 88,
+      "resolved": 81,
+      "section": "Herbal A"
+    },
+    "f35v": {
+      "confidence": 0.71,
+      "words": 87,
+      "resolved": 81,
+      "section": "Herbal A"
+    },
+    "f36r": {
+      "confidence": 0.63,
+      "words": 52,
+      "resolved": 46,
+      "section": "Herbal A"
+    },
+    "f36v": {
+      "confidence": 0.68,
+      "words": 69,
+      "resolved": 63,
+      "section": "Herbal A"
+    },
+    "f37r": {
+      "confidence": 0.75,
+      "words": 72,
+      "resolved": 69,
+      "section": "Herbal A"
+    },
+    "f37v": {
+      "confidence": 0.68,
+      "words": 88,
+      "resolved": 81,
+      "section": "Herbal A"
+    },
+    "f38r": {
+      "confidence": 0.7,
+      "words": 35,
+      "resolved": 33,
+      "section": "Herbal A"
+    },
+    "f38v": {
+      "confidence": 0.68,
+      "words": 58,
+      "resolved": 51,
+      "section": "Herbal A"
+    },
+    "f39r": {
+      "confidence": 0.73,
+      "words": 153,
+      "resolved": 148,
+      "section": "Herbal A"
+    },
+    "f39v": {
+      "confidence": 0.77,
+      "words": 135,
+      "resolved": 131,
+      "section": "Herbal A"
+    },
+    "f3r": {
+      "confidence": 0.74,
+      "words": 111,
+      "resolved": 104,
+      "section": "Herbal A"
+    },
+    "f3v": {
+      "confidence": 0.7,
+      "words": 83,
+      "resolved": 76,
+      "section": "Herbal A"
+    },
+    "f40r": {
+      "confidence": 0.79,
+      "words": 87,
+      "resolved": 83,
+      "section": "Herbal A"
+    },
+    "f40v": {
+      "confidence": 0.77,
+      "words": 100,
+      "resolved": 93,
+      "section": "Herbal A"
+    },
+    "f41r": {
+      "confidence": 0.67,
+      "words": 87,
+      "resolved": 79,
+      "section": "Herbal A"
+    },
+    "f41v": {
+      "confidence": 0.68,
+      "words": 62,
+      "resolved": 60,
+      "section": "Herbal A"
+    },
+    "f42r": {
+      "confidence": 0.74,
+      "words": 136,
+      "resolved": 132,
+      "section": "Herbal A"
+    },
+    "f42v": {
+      "confidence": 0.7,
+      "words": 97,
+      "resolved": 89,
+      "section": "Herbal A"
+    },
+    "f43r": {
+      "confidence": 0.72,
+      "words": 152,
+      "resolved": 145,
+      "section": "Herbal A"
+    },
+    "f43v": {
+      "confidence": 0.76,
+      "words": 154,
+      "resolved": 150,
+      "section": "Herbal A"
+    },
+    "f44r": {
+      "confidence": 0.62,
+      "words": 75,
+      "resolved": 70,
+      "section": "Herbal A"
+    },
+    "f44v": {
+      "confidence": 0.74,
+      "words": 95,
+      "resolved": 91,
+      "section": "Herbal A"
+    },
+    "f45r": {
+      "confidence": 0.74,
+      "words": 86,
+      "resolved": 84,
+      "section": "Herbal A"
+    },
+    "f45v": {
+      "confidence": 0.65,
+      "words": 77,
+      "resolved": 69,
+      "section": "Herbal A"
+    },
+    "f46r": {
+      "confidence": 0.74,
+      "words": 157,
+      "resolved": 149,
+      "section": "Herbal A"
+    },
+    "f46v": {
+      "confidence": 0.73,
+      "words": 109,
+      "resolved": 103,
+      "section": "Herbal A"
+    },
+    "f47r": {
+      "confidence": 0.76,
+      "words": 79,
+      "resolved": 76,
+      "section": "Herbal A"
+    },
+    "f47v": {
+      "confidence": 0.69,
+      "words": 74,
+      "resolved": 69,
+      "section": "Herbal A"
+    },
+    "f48r": {
+      "confidence": 0.69,
+      "words": 89,
+      "resolved": 82,
+      "section": "Herbal A"
+    },
+    "f48v": {
+      "confidence": 0.73,
+      "words": 112,
+      "resolved": 108,
+      "section": "Herbal A"
+    },
+    "f49r": {
+      "confidence": 0.69,
+      "words": 113,
+      "resolved": 109,
+      "section": "Herbal A"
+    },
+    "f49v": {
+      "confidence": 0.65,
+      "words": 131,
+      "resolved": 115,
+      "section": "Herbal A"
+    },
+    "f4r": {
+      "confidence": 0.76,
+      "words": 60,
+      "resolved": 59,
+      "section": "Herbal A"
+    },
+    "f4v": {
+      "confidence": 0.67,
+      "words": 78,
+      "resolved": 72,
+      "section": "Herbal A"
+    },
+    "f50r": {
+      "confidence": 0.75,
+      "words": 87,
+      "resolved": 87,
+      "section": "Herbal A"
+    },
+    "f50v": {
+      "confidence": 0.76,
+      "words": 96,
+      "resolved": 92,
+      "section": "Herbal A"
+    },
+    "f51r": {
+      "confidence": 0.68,
+      "words": 83,
+      "resolved": 78,
+      "section": "Herbal A"
+    },
+    "f51v": {
+      "confidence": 0.68,
+      "words": 72,
+      "resolved": 68,
+      "section": "Herbal A"
+    },
+    "f52r": {
+      "confidence": 0.66,
+      "words": 62,
+      "resolved": 55,
+      "section": "Herbal A"
+    },
+    "f52v": {
+      "confidence": 0.71,
+      "words": 74,
+      "resolved": 70,
+      "section": "Herbal A"
+    },
+    "f53r": {
+      "confidence": 0.67,
+      "words": 52,
+      "resolved": 48,
+      "section": "Herbal A"
+    },
+    "f53v": {
+      "confidence": 0.69,
+      "words": 74,
+      "resolved": 68,
+      "section": "Herbal A"
+    },
+    "f54r": {
+      "confidence": 0.67,
+      "words": 100,
+      "resolved": 91,
+      "section": "Herbal A"
+    },
+    "f54v": {
+      "confidence": 0.73,
+      "words": 90,
+      "resolved": 85,
+      "section": "Herbal A"
+    },
+    "f55r": {
+      "confidence": 0.77,
+      "words": 124,
+      "resolved": 119,
+      "section": "Herbal A"
+    },
+    "f55v": {
+      "confidence": 0.75,
+      "words": 94,
+      "resolved": 91,
+      "section": "Herbal A"
+    },
+    "f56r": {
+      "confidence": 0.72,
+      "words": 97,
+      "resolved": 90,
+      "section": "Herbal A"
+    },
+    "f56v": {
+      "confidence": 0.75,
+      "words": 86,
+      "resolved": 82,
+      "section": "Herbal A"
+    },
+    "f57r": {
+      "confidence": 0.65,
+      "words": 83,
+      "resolved": 78,
+      "section": "Herbal A"
+    },
+    "f57v": {
+      "confidence": 0.5,
+      "words": 122,
+      "resolved": 73,
+      "section": "Herbal A"
+    },
+    "f58r": {
+      "confidence": 0.73,
+      "words": 367,
+      "resolved": 352,
+      "section": "Herbal B"
+    },
+    "f58v": {
+      "confidence": 0.78,
+      "words": 365,
+      "resolved": 357,
+      "section": "Herbal B"
+    },
+    "f5r": {
+      "confidence": 0.67,
+      "words": 56,
+      "resolved": 54,
+      "section": "Herbal A"
+    },
+    "f5v": {
+      "confidence": 0.72,
+      "words": 45,
+      "resolved": 41,
+      "section": "Herbal A"
+    },
+    "f65r": {
+      "confidence": 0.67,
+      "words": 3,
+      "resolved": 3,
+      "section": "Herbal B"
+    },
+    "f65v": {
+      "confidence": 0.65,
+      "words": 39,
+      "resolved": 35,
+      "section": "Herbal B"
+    },
+    "f66r": {
+      "confidence": 0.68,
+      "words": 318,
+      "resolved": 303,
+      "section": "Herbal B"
+    },
+    "f66v": {
+      "confidence": 0.71,
+      "words": 112,
+      "resolved": 108,
+      "section": "Herbal B"
+    },
+    "f67r": {
+      "confidence": 0.63,
+      "words": 331,
+      "resolved": 304,
+      "section": "Astronomical"
+    },
+    "f67v": {
+      "confidence": 0.62,
+      "words": 130,
+      "resolved": 122,
+      "section": "Astronomical"
+    },
+    "f68r": {
+      "confidence": 0.61,
+      "words": 246,
+      "resolved": 227,
+      "section": "Astronomical"
+    },
+    "f68v": {
+      "confidence": 0.66,
+      "words": 349,
+      "resolved": 331,
+      "section": "Astronomical"
+    },
+    "f69r": {
+      "confidence": 0.69,
+      "words": 159,
+      "resolved": 152,
+      "section": "Astronomical"
+    },
+    "f69v": {
+      "confidence": 0.63,
+      "words": 132,
+      "resolved": 122,
+      "section": "Astronomical"
+    },
+    "f6r": {
+      "confidence": 0.73,
+      "words": 79,
+      "resolved": 75,
+      "section": "Herbal A"
+    },
+    "f6v": {
+      "confidence": 0.7,
+      "words": 113,
+      "resolved": 104,
+      "section": "Herbal A"
+    },
+    "f70r": {
+      "confidence": 0.67,
+      "words": 378,
+      "resolved": 334,
+      "section": "Astronomical"
+    },
+    "f70v": {
+      "confidence": 0.74,
+      "words": 226,
+      "resolved": 219,
+      "section": "Astronomical"
+    },
+    "f71r": {
+      "confidence": 0.75,
+      "words": 90,
+      "resolved": 89,
+      "section": "Astronomical"
+    },
+    "f71v": {
+      "confidence": 0.78,
+      "words": 100,
+      "resolved": 97,
+      "section": "Astronomical"
+    },
+    "f72r": {
+      "confidence": 0.68,
+      "words": 381,
+      "resolved": 366,
+      "section": "Astronomical"
+    },
+    "f72v": {
+      "confidence": 0.64,
+      "words": 332,
+      "resolved": 312,
+      "section": "Astronomical"
+    },
+    "f73r": {
+      "confidence": 0.75,
+      "words": 96,
+      "resolved": 95,
+      "section": "Astronomical"
+    },
+    "f73v": {
+      "confidence": 0.62,
+      "words": 97,
+      "resolved": 93,
+      "section": "Astronomical"
+    },
+    "f75r": {
+      "confidence": 0.77,
+      "words": 392,
+      "resolved": 387,
+      "section": "Biological/Balneological"
+    },
+    "f75v": {
+      "confidence": 0.79,
+      "words": 351,
+      "resolved": 346,
+      "section": "Biological/Balneological"
+    },
+    "f76r": {
+      "confidence": 0.78,
+      "words": 556,
+      "resolved": 542,
+      "section": "Biological/Balneological"
+    },
+    "f76v": {
+      "confidence": 0.75,
+      "words": 400,
+      "resolved": 385,
+      "section": "Biological/Balneological"
+    },
+    "f77r": {
+      "confidence": 0.77,
+      "words": 325,
+      "resolved": 323,
+      "section": "Biological/Balneological"
+    },
+    "f77v": {
+      "confidence": 0.77,
+      "words": 335,
+      "resolved": 331,
+      "section": "Biological/Balneological"
+    },
+    "f78r": {
+      "confidence": 0.77,
+      "words": 293,
+      "resolved": 289,
+      "section": "Biological/Balneological"
+    },
+    "f78v": {
+      "confidence": 0.8,
+      "words": 292,
+      "resolved": 286,
+      "section": "Biological/Balneological"
+    },
+    "f79r": {
+      "confidence": 0.81,
+      "words": 389,
+      "resolved": 388,
+      "section": "Biological/Balneological"
+    },
+    "f79v": {
+      "confidence": 0.78,
+      "words": 355,
+      "resolved": 349,
+      "section": "Biological/Balneological"
+    },
+    "f7r": {
+      "confidence": 0.62,
+      "words": 52,
+      "resolved": 48,
+      "section": "Herbal A"
+    },
+    "f7v": {
+      "confidence": 0.66,
+      "words": 70,
+      "resolved": 68,
+      "section": "Herbal A"
+    },
+    "f80r": {
+      "confidence": 0.77,
+      "words": 440,
+      "resolved": 433,
+      "section": "Biological/Balneological"
+    },
+    "f80v": {
+      "confidence": 0.81,
+      "words": 378,
+      "resolved": 375,
+      "section": "Biological/Balneological"
+    },
+    "f81r": {
+      "confidence": 0.79,
+      "words": 207,
+      "resolved": 203,
+      "section": "Biological/Balneological"
+    },
+    "f81v": {
+      "confidence": 0.78,
+      "words": 258,
+      "resolved": 251,
+      "section": "Biological/Balneological"
+    },
+    "f82r": {
+      "confidence": 0.78,
+      "words": 285,
+      "resolved": 285,
+      "section": "Biological/Balneological"
+    },
+    "f82v": {
+      "confidence": 0.79,
+      "words": 313,
+      "resolved": 308,
+      "section": "Biological/Balneological"
+    },
+    "f83r": {
+      "confidence": 0.79,
+      "words": 341,
+      "resolved": 339,
+      "section": "Biological/Balneological"
+    },
+    "f83v": {
+      "confidence": 0.8,
+      "words": 262,
+      "resolved": 260,
+      "section": "Biological/Balneological"
+    },
+    "f84r": {
+      "confidence": 0.79,
+      "words": 362,
+      "resolved": 356,
+      "section": "Biological/Balneological"
+    },
+    "f84v": {
+      "confidence": 0.77,
+      "words": 337,
+      "resolved": 335,
+      "section": "Biological/Balneological"
+    },
+    "f85r": {
+      "confidence": 0.76,
+      "words": 490,
+      "resolved": 477,
+      "section": "Biological/Balneological"
+    },
+    "f86v": {
+      "confidence": 0.74,
+      "words": 1320,
+      "resolved": 1282,
+      "section": "Biological/Balneological"
+    },
+    "f87r": {
+      "confidence": 0.66,
+      "words": 98,
+      "resolved": 93,
+      "section": "Pharmaceutical"
+    },
+    "f87v": {
+      "confidence": 0.56,
+      "words": 74,
+      "resolved": 59,
+      "section": "Pharmaceutical"
+    },
+    "f88r": {
+      "confidence": 0.76,
+      "words": 149,
+      "resolved": 145,
+      "section": "Pharmaceutical"
+    },
+    "f88v": {
+      "confidence": 0.73,
+      "words": 145,
+      "resolved": 138,
+      "section": "Pharmaceutical"
+    },
+    "f89r": {
+      "confidence": 0.7,
+      "words": 375,
+      "resolved": 355,
+      "section": "Pharmaceutical"
+    },
+    "f89v": {
+      "confidence": 0.68,
+      "words": 323,
+      "resolved": 302,
+      "section": "Pharmaceutical"
+    },
+    "f8r": {
+      "confidence": 0.64,
+      "words": 129,
+      "resolved": 118,
+      "section": "Herbal A"
+    },
+    "f8v": {
+      "confidence": 0.74,
+      "words": 102,
+      "resolved": 102,
+      "section": "Herbal A"
+    },
+    "f90r": {
+      "confidence": 0.66,
+      "words": 113,
+      "resolved": 100,
+      "section": "Pharmaceutical"
+    },
+    "f90v": {
+      "confidence": 0.65,
+      "words": 141,
+      "resolved": 133,
+      "section": "Pharmaceutical"
+    },
+    "f93r": {
+      "confidence": 0.66,
+      "words": 148,
+      "resolved": 129,
+      "section": "Pharmaceutical"
+    },
+    "f93v": {
+      "confidence": 0.63,
+      "words": 70,
+      "resolved": 60,
+      "section": "Pharmaceutical"
+    },
+    "f94r": {
+      "confidence": 0.76,
+      "words": 80,
+      "resolved": 78,
+      "section": "Pharmaceutical"
+    },
+    "f94v": {
+      "confidence": 0.76,
+      "words": 91,
+      "resolved": 87,
+      "section": "Pharmaceutical"
+    },
+    "f95r": {
+      "confidence": 0.81,
+      "words": 182,
+      "resolved": 182,
+      "section": "Pharmaceutical"
+    },
+    "f95v": {
+      "confidence": 0.75,
+      "words": 176,
+      "resolved": 172,
+      "section": "Pharmaceutical"
+    },
+    "f96r": {
+      "confidence": 0.65,
+      "words": 77,
+      "resolved": 70,
+      "section": "Pharmaceutical"
+    },
+    "f96v": {
+      "confidence": 0.61,
+      "words": 56,
+      "resolved": 46,
+      "section": "Pharmaceutical"
+    },
+    "f99r": {
+      "confidence": 0.68,
+      "words": 197,
+      "resolved": 186,
+      "section": "Pharmaceutical"
+    },
+    "f99v": {
+      "confidence": 0.72,
+      "words": 163,
+      "resolved": 161,
+      "section": "Pharmaceutical"
+    },
+    "f9r": {
+      "confidence": 0.67,
+      "words": 73,
+      "resolved": 67,
+      "section": "Herbal A"
+    },
+    "f9v": {
+      "confidence": 0.73,
+      "words": 72,
+      "resolved": 70,
+      "section": "Herbal A"
+    }
+  }
+}
