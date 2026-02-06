@@ -30,6 +30,7 @@
 
 - [Documentation](#-documentation)
 - [What Is This?](#what-is-this)
+- [**Why This Isn't Another Failed Theory**](#why-this-isnt-another-failed-theory)
 - [Historical Provenance: From Ragusa to Yale](#-historical-provenance-from-ragusa-to-yale)
 - [Why 112 Years of Failure: The Category Error](#why-112-years-of-failure-the-category-error)
 - [But What Does It Actually Say?](#but-what-does-it-actually-say)
@@ -147,6 +148,72 @@ This repository contains:
 **The mystery is over.**
 
 ---
+
+## Why This Isn't Another Failed Theory
+
+Every few years, someone claims to have decoded the Voynich Manuscript. Every time, it falls apart under scrutiny. The claims are linguistic: "these characters map to Arabic" or "this looks like abbreviated Latin." Linguists disagree, the mapping breaks down on the next page, and the theory dies.
+
+This one is different. Not because the linguistics are better (they are), but because **the evidence doesn't depend on linguistics at all.**
+
+### The Forensic Accounting Test
+
+Forget the script. Forget the character mapping. Forget whether Glagolitic cursive looks like Voynichese. Ask one question:
+
+**Does the decoded text describe the right products, made from the right ingredients, using the right methods, sold by the right institution, in the right city, at the right time?**
+
+The answer is yes, and the proof comes from tax records.
+
+### Three Datasets, Zero Overlap in Origin
+
+| Source | What It Is | Date | Who Created It |
+|--------|-----------|------|---------------|
+| **Monumenta Ragusina V27** | Government customs and council records | 1359-1364 | The Republic of Ragusa (published 1895 by JAZU) |
+| **Ljekarna Male Brace** | Franciscan pharmacy ingredient records | Est. 1317, continuous | Franciscan monks in Dubrovnik |
+| **ZFD decoded lexicon** | Morphological inventory from the decoded manuscript | Proposed 1380-1440 | Whoever wrote the Voynich Manuscript |
+
+These three sources were created by different people, for different purposes, at different times. None references the others. V27 is a government administrative record published in 1895. The pharmacy is a continuously operating institution. The manuscript is the object being tested. **There is no mechanism by which a decipherment could be "fitted" to match all three simultaneously unless it is correct.**
+
+### The Result
+
+**11 pharmaceutical ingredients appear in all three sources.** Salt traded through Ragusan customs, stocked in the Franciscan pharmacy, and named in the decoded manuscript. Same for oil, honey, wine, wax, silver, iron, rose, pepper, aloe, and water. These aren't cherry-picked. They're the product of a systematic scan of all 156,914 words in V27 against all 304 decoded stems against all 34 documented Ljekarna historical ingredients.
+
+An additional **26 ingredients** match between the decoded manuscript and the pharmacy but are absent from V27. This is where it gets interesting.
+
+### The Sage Test (Why Absence Is Proof)
+
+Sage, mint, rosemary, and lavender appear in the decoded manuscript and in the pharmacy's recipes. They do NOT appear in V27's customs records.
+
+This is correct. V27 is a customs ledger. You do not import sage to Dalmatia. It grows wild on the rocks. You do not tax a Franciscan monk for picking rosemary in the monastery garden. Customs records track what crosses the border, not what grows in the backyard.
+
+**If the decipherment had found "sage" in the import records, it would be a historical error.** The decoded text correctly distinguishes between imported commodities (pepper, aloe, silver) and locally cultivated herbs (sage, mint, rosemary). It respects the economic geography of 14th-century Dubrovnik.
+
+The odds of a random or fitted decipherment coincidentally reproducing the import-versus-domestic taxonomy of a medieval Adriatic port city are astronomically low.
+
+### The Time Gate
+
+New World ingredients (cocoa butter, vanilla, tobacco) appear in the pharmacy's modern products. They appear in neither V27 nor the decoded manuscript. Correct: they didn't exist in Europe before 1492. The manuscript's radiocarbon date is 1404-1438. A single New World ingredient would kill the theory. There are none.
+
+### The Verb Lock
+
+The decoded text doesn't just contain ingredients (the nouns). It contains **91 procedural terms** (the verbs) that match the standard Antidotarium Nicolai recipe format used across European pharmacies from the 12th century onward: Recipe/uzmi (take), Misce/misc (mix), Tere/satri (grind), Coque/kuhai (cook), Cola/col (strain), Distilla/distil (distill). Both Latin and Croatian forms of the same verbs, exactly what you'd expect from a bilingual Ragusan pharmacist.
+
+The manuscript doesn't just list what's on the shelf. It describes how to make what's on the shelf.
+
+### Why This Matters
+
+Previous Voynich "solutions" can be attacked because they rest on subjective interpretation of an unknown script. This evidence rests on customs records, institutional archives, and commodity economics. **Linguistics is subjective. Trade law is absolute.**
+
+No alternative decipherment has ever produced a vocabulary set that simultaneously locks to:
+1. A specific city's government trade records
+2. A specific institution's ingredient lists
+3. The correct import/domestic distinction for that city's economic geography
+4. The correct temporal window (no post-1492 ingredients)
+5. A complete set of pharmaceutical procedure verbs matching the era's standard recipe format
+
+The decoded Voynich Manuscript is an economically verified model of a 15th-century Ragusan pharmacy.
+
+Full analysis: [V27 Triple Provenance Lock Report](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md) | V27 source: [Internet Archive](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt)
+
 
 ## 🏛️ Historical Provenance: From Ragusa to Yale
 
@@ -566,6 +633,8 @@ Shared Latin pharmaceutical stems confirmed across ZFD and Ragusan Croatian lite
 Full report: [`validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md`](validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md)
 
 ### V27 Triple Provenance Lock (NEW: February 2026)
+
+> For the non-technical summary of this evidence, see [Why This Isn't Another Failed Theory](#why-this-isnt-another-failed-theory) above.
 
 **The strongest single piece of evidence for Ragusan provenance.** Three independent, immutable historical datasets converge on the same pharmaceutical vocabulary:
 
