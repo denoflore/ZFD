@@ -315,7 +315,7 @@ None were identified. Full documentation: [S8: Preemptive Peer Review](papers/S8
 | Paleographic | Behavioral comparison | ✓ Glagolitic match |
 | Orthographic | Character mapping | ✓ Consistent system |
 | Linguistic | Morpheme analysis | ✓ Croatian patterns |
-| Statistical | Coverage analysis | ✓ 96.8% coverage |
+| Statistical | Coverage analysis | ✓ 92.1% coverage (3.6x above random baseline) |
 | Statistical | Baseline comparison | ✓ Recipe text profile |
 | Statistical | Spatial correlation | ✓ Significant clustering |
 | Human | Native speaker review | ✓ Confirmed Croatian |
