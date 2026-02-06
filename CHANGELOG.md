@@ -10,7 +10,7 @@ This document tracks the evolution of the decipherment from initial hypothesis t
 ### v4.0 - February 3, 2026 (Current)
 **"Complete Inventory"**
 
-- **Coverage**: 94.7% → **96.8%** (+2.1 percentage points)
+- **Coverage**: 94.7% → **92.1%** (+2.1 percentage points)
 - **Known morphemes**: 94 → **141** (+47)
 
 **Why coverage increased:**
@@ -25,7 +25,7 @@ Three validated sources contributed new morphemes:
 
 **Remaining unknowns:** 325 words (1,296 tokens, 3.2% of corpus). Average frequency 4.0 — mostly 2-3 character fragments consistent with hyper-abbreviated shorthand margins.
 
-**Note:** With single-character documented suffixes (`i`, `y`) included, coverage reaches 98.5%. The conservative 96.8% figure excludes these to avoid trivial substring inflation.
+**Note:** With single-character documented suffixes (`i`, `y`) included, coverage reaches 98.5%. The conservative 92.1% figure excludes these to avoid trivial substring inflation.
 
 **Documentation:**
 - `08_Final_Proofs/COVERAGE_REPORT_v4_0.md` (full analysis with source attribution)
@@ -136,7 +136,7 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 | Feb 2, 2026 | Repository public | Open for verification |
 | Feb 2, 2026 | Nature submission | Tracking #2026-02-03422 |
 | Feb 2, 2026 | Adversarial AI validation | 8-turn Gemini Pro 3 stress test passed |
-| Feb 3, 2026 | **96.8% coverage (v4.0)** | +Latin pharma, +spatial correlation, +lexicon fills |
+| Feb 3, 2026 | **92.1% coverage (v4.0)** | +Latin pharma, +spatial correlation, +lexicon fills |
 
 ---
 
@@ -179,7 +179,7 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 - Medical register (ost-)
 - Latin pharmaceutical macaronic layer (oral, dolor, ana, fac)
 - Spatial correlation morphemes (ostol, oldar, hetr)
-- Final coverage: 94.7% → 96.8%
+- Final coverage: 94.7% → 92.1%
 
 ---
 
