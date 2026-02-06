@@ -719,6 +719,39 @@ Zero Italian vocabulary in ZFD. Venetian cultural influence was pervasive in Rag
 
 ---
 
+## Validation Source Inventory
+
+The ZFD has been validated against 14 independent manuscripts and corpora spanning the 8th through 19th centuries. No single source drives the conclusion. The evidence is cumulative and cross-reinforcing.
+
+### Primary Comparison Texts (Full Corpus Analysis)
+
+| # | Source | Date | Words | What It Proves |
+|---|--------|------|-------|---------------|
+| 1 | **Monumenta Ragusina V27** (Libri Reformationum Tomus III) | 1359-1364 | 156,914 | Triple provenance lock: 11 ingredients in customs records + pharmacy + decoded MS. Economic geography validated. [Internet Archive](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt) |
+| 2 | **Beinecke MS 650 Pharmamiscellany** | 15th c. | ~30,000 | 55-page Latin apothecary manual. Recipe structure, abbreviation conventions, and verb inventory match ZFD morphology. Antidotarium-style format confirmed. |
+| 3 | **Vinodolski Zakonik** (Vinodol Code) | 1288 | ~8,000 | Oldest Croatian legal codex. Shared function words (da, od, po, ko, sam, to). Grammar baseline. JSD = 0.28 vs ZFD. |
+| 4 | **Dundo Maroje** (Marin Drzic) | 1551 | ~25,000 | Ragusan comedy. 9 Italian loanwords + 6 stems vs ZFD's zero. Proves ZFD predates Venetian cultural influence (pre-1450). Register-controlled JSD: ZFD -ol suffix at 30x the rate. |
+| 5 | **CATMuS Medieval Dataset** | 8th-16th c. | 160,000+ lines | 200+ manuscripts from Ecole nationale des chartes. 68.6% ZFD stem match against medieval Latin pharmaceutical vocabulary. |
+| 6 | **Corpus of Old Slavic Texts** | 11th c. | 19 MSS | Old Bulgarian/Old Russian comparative baseline. Establishes South Slavic vs East Slavic differentiation. |
+| 7 | **Sulek Imenik Bilja** | 1879 | Full lexicon | Croatian botanical nomenclature. Plant name cross-referencing for herbal section validation. |
+| 8 | **Ljekarna Male Brace ingredient records** | 1317-present | 34 historical ingredients | Franciscan pharmacy inventory. 94% of historical ingredients confirmed by at least one other source. |
+
+### Secondary/Supporting Texts
+
+| # | Source | Date | What It Proves |
+|---|--------|------|---------------|
+| 9 | **Vetranovic** (poetry) | 1540s | Zero Italian loanwords (like ZFD), confirming pre-Venetian-influence temporal window. |
+| 10 | **Liber de Coquina** | 14th c. | Medieval cookbook. ZFD entropy profile matches "cookbook/recipe manual" register. |
+| 11 | **Apicius** | 4th-5th c. | Roman cookbook. Entropy profile comparison confirms instructional-manual statistical fingerprint. |
+| 12 | **Antidotarium Nicolai** | c. 1150 | Salerno School recipe format. ZFD's 91 procedural terms match the standard pharmaceutical verb set. |
+| 13 | **Croatian Botanical Glossary** (from Glagolitic ljekaruse) | Medieval | Plant morphology terms and action verbs. Cross-referenced against ZFD herbal section vocabulary. |
+| 14 | **Consolidated Scribal Lexicon** (from MS 650) | 15th c. | Full abbreviation conventions: suspension, contraction, special symbols, Tironian notes. Confirms ZFD shorthand is standard, not novel. |
+
+No alternative Voynich decipherment has been validated against more than one or two external sources. The ZFD has been tested against 14.
+
+---
+
+
 ## Reproducibility
 
 ```bash
