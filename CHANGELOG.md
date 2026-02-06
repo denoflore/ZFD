@@ -50,7 +50,7 @@ This document tracks the evolution of the decipherment from initial hypothesis t
 
 ## Version History
 
-### v4.0 - February 3, 2026 (Current)
+### v4.0 - February 3, 2026
 **"Complete Inventory"**
 
 - **Coverage**: 94.7% → **92.1%** (+2.1 percentage points)
@@ -180,6 +180,8 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 | Feb 2, 2026 | Nature submission | Tracking #2026-02-03422 |
 | Feb 2, 2026 | Adversarial AI validation | 8-turn Gemini Pro 3 stress test passed |
 | Feb 3, 2026 | **92.1% coverage (v4.0)** | +Latin pharma, +spatial correlation, +lexicon fills |
+| Feb 6, 2026 | Honesty audit (v4.1.0) | 96.8% corrected to 92.1%, overclaims fixed across 12 files |
+| Feb 6, 2026 | Data integrity fix (v4.1.1) | Lexicon purged, stems populated, dictionaries unified |
 
 ---
 
@@ -252,6 +254,11 @@ The following hypotheses were tested and **rejected**:
 | v3.0 | k→sk expansion | Corrected to k→st |
 | v2.0 | sh- as "she" | Corrected to š- (Croatian orthography) |
 | v1.0 | Shape-based mapping | Abandoned for functional classification |
+| v4.1.0 | 96.8% coverage claim | Corrected to 92.1% (3.6x above random baseline) |
+| v4.1.0 | "kost 2000+ times" | Replaced with ok-/ost- pattern clustering data (in progress) |
+| v4.1.1 | unified_lexicon_v2.json | 24 garbage entries from table header parsing. Replaced by v3 |
+| v4.1.1 | stems_top500.csv | Was empty (2 lines). Populated with 500 corpus-frequency entries |
+| v4.1.1 | CROATIAN_MORPHEMES (21 entries) | Synced to 319 entries from canonical lexicon |
 
 ---
 
@@ -280,4 +287,4 @@ https://github.com/denoflore/ZFD
 ---
 
 *Changelog maintained since September 2025*
-*Last updated: February 3, 2026*
+*Last updated: February 6, 2026*
