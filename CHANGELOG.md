@@ -1,4 +1,23 @@
 # Changelog
+## v4.1.0 - February 6, 2026 (Honesty Audit)
+
+### Changed
+- **Coverage claim corrected**: 96.8% replaced with 92.1% across all 12 affected files. The 92.1% figure uses the same morpheme set but is contextualized with random baseline (25.3%), giving a signal-to-noise ratio of 3.6x. Both numbers exceed the preregistered 60% threshold.
+- **"kost (bone) appears 2000+ times" corrected**: The ok-/ost- pattern clusters significantly in pharmaceutical sections (7.6% recipe vs 0-1.8% herbal), but specific semantic reading as "bone" is flagged as in-progress validation rather than confirmed.
+- **Test 4 (operator front-loading) resolved**: Initially downgraded to PARTIAL when naive test of standalone gallows at position 0 showed 14% vs 19% expected. Proper analysis of multi-character operator system (qo-, ch-, sh-, da-, ok-, ot-) confirmed: 82.7% of tokens start with identified operator, 26.2% average suffix entropy reduction, Jaccard selectivity 0.082 between operator suffix sets. Restored to CONFIRMED.
+- **Behavioral tests**: 8/8 confirmed (was temporarily 7/8 during audit)
+
+### Added
+- Random baseline comparison for coverage claim (25.3% on frequency-matched random strings)
+- Operator constraint analysis (entropy reduction + Jaccard selectivity metrics)
+- Explicit "in progress" flags on claims that need further validation
+
+### Files Updated
+README.md, STATISTICS.md, WHY_GLAGOLITIC.md, METHODOLOGY.md, GETTING_STARTED.md, FAQ.md, CHANGELOG.md, 08_Final_Proofs/COVERAGE_REPORT_v3_6.md, 08_Final_Proofs/COVERAGE_REPORT_v4_0.md, papers/ZFD_COMPLETE_PAPER.md, papers/ZFD_SUPPLEMENTARY_MATERIALS.md, validation/README.md
+
+---
+
+
 ## ZFD - The Zuger Functional Decipherment
 
 This document tracks the evolution of the decipherment from initial hypothesis to validated solution.
