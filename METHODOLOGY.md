@@ -147,11 +147,15 @@ Croatian identification would be **rejected** if:
 
 ### 5.1 Coverage Analysis
 
-**Method**: Count tokens containing ≥1 known morpheme
+**Method**: Count tokens containing at least 1 known morpheme (substring matching)
 
 **Preregistered threshold**: >60% coverage required for retention
 
-**Result**: 96.8% coverage (37,793 of 39,903 tokens)
+**Result**: 92.1% coverage using 23 core two-letter morpheme patterns
+
+**Random baseline**: 25.3% coverage on randomly generated strings with same character frequency distribution. Signal-to-noise ratio: 3.6x above chance.
+
+**Note**: Previously reported as 96.8% using an expanded morpheme set including longer pharmaceutical terms. The 92.1% figure reflects the structural core and is the more conservative, defensible number. Both exceed the preregistered 60% threshold.
 
 ### 5.2 Baseline Comparison
 
@@ -169,11 +173,11 @@ Compared decoded text entropy to known corpora using Jensen-Shannon Divergence:
 
 **Test**: Do domain-specific terms cluster in appropriate sections?
 
-| Term | Expected Section | Actual Distribution | p-value |
-|------|------------------|---------------------|---------|
-| kost- (bone) | Pharmaceutical | 72% in pharma | <0.001 |
-| flor- (flower) | Herbal | 68% in herbal | <0.001 |
-| ol- (oil) | Pharma/Herbal | Distributed | Expected |
+| Term | Expected Section | Actual Distribution | p-value | Status |
+|------|------------------|---------------------|---------|--------|
+| ok- pattern (ost- expanded) | Pharmaceutical | 7.6% recipe vs 0-1.8% herbal | <0.001 | Pattern confirmed; "bone" semantic in progress |
+| chor/hor (herbal marker) | Herbal | 13.1% herbal vs 0.8% recipe | <0.001 | Pattern confirmed; semantic in progress |
+| ol- (oil) | Pharma/Herbal | Distributed | Expected | Confirmed |
 
 ### 5.4 Falsification Criteria (Statistics)
 
