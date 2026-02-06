@@ -1,28 +1,55 @@
-# Voynich Master Key v1.1 — Unified Table
+# Voynich Master Key v1.2 -- Unified Table
 
-This update fuses the v1.0 operator mechanics with folio-scale validation and suffix promotions from the 10-folio batch.
-It retains the **prefix-operator spine + stem + suffix/nomenclator** model and records manuscript-wide behavior.
+**Updated:** 2026-02-06 (honesty audit)
 
-## What changed from v1.0 → v1.1
-- **Suffix promotions (evidence-based):** `-dy` and `-in` ⇒ **CONFIRMED** (improve template coverage in a majority of folios).
-- `-ol` and `-al` ⇒ remain **PROVISIONAL** (section-limited effect, strongest in Herbal/Recipe pages).
-- Added **historical analogue notes** per operator role (for context; not prescriptive lexemes).
-- Aggregated a **top-500 stem list** with category guesses from operator-signature clustering (random 10 folios).
+## What Changed: v1.1 -> v1.2
 
-## Evidence snapshot (10-folio batch)
-- Mean template coverage ≈ **93%**; mean H(3|12) ≈ **0.38** (prefix-gated third-slot persists page-by-page).
-- Procedural **cadence** (e.g., Q→C→S→…) is strong in **Herbal/Recipe** sections; weaker or absent in Astronomical/Zodiac/Bio.
-- Stem clusters partition by section: INGREDIENT/PROCESS families concentrate in Herbal/Recipe.
+- **unified_lexicon_v2.json DEPRECATED.** Replaced by unified_lexicon_v3.json.
+  - Purged 24 garbage entries (table headers parsed as stems: "Herbal: 4", "CONFIRMED: 74", etc.)
+  - Separated 36 Croatian/Latin botanical reference terms from 304 Voynichese stems
+  - Cleaned all category fields (no more sentence-length categories)
+  - Added source tracking for every entry
+- **stems_top500.csv POPULATED.** Was 2 lines (header + 1 entry). Now 500 entries with corpus frequencies.
+  - 268 stems from canonical lexicon with frequency counts
+  - 232 unlisted residuals from operator/suffix stripping (candidates for future classification)
+- **character_reference.py SYNCED.** CROATIAN_MORPHEMES upgraded from 21 to 319 entries, auto-generated from unified lexicon.
+
+## Canonical Source of Truth
+
+**`zfd_decoder/data/lexicon_v2.csv`** is the single canonical source. Everything else derives from it:
+
+| File | Purpose | Auto-generated? |
+|------|---------|-----------------|
+| lexicon_v2.csv | Canonical morpheme definitions | NO (hand-curated) |
+| unified_lexicon_v3.json | Machine-readable unified format | YES (from lexicon_v2.csv + sources) |
+| stems_top500.csv | Corpus frequency analysis | YES (from lexicon + IVTFF corpus) |
+| character_reference.py | OCR pipeline morphemes | YES (from unified_lexicon_v3.json) |
+
+## Current Counts
+
+| Component | Count |
+|-----------|-------|
+| Operators | 22 |
+| Voynichese stems | 304 |
+| Suffixes | 22 |
+| Latin terms | 10 |
+| State markers | 4 |
+| Reference botanical | 36 |
 
 ## Files
-- Operators: `MasterKey_v1_1__operators.csv`
-- Suffixes: `MasterKey_v1_1__suffixes.csv`
-- Stems (top 500): `MasterKey_v1_1__stems_top500.csv`
 
-## Apply the key
-1. Segment tokens as **OP** + **STEM** (+ **SUF?**). Prefer 2-letter operators (`qo/ch/sh/da/ok/ot`).  
-2. Tag roles (Q,C,S,D,V1,V2); run clustering to assign {{INGR}}/{{UNIT}}/{{PROC}}/{{VESSEL}}.  
-3. Treat **-dy**, **-in** as active nomenclators; consider **-ol**, **-al** in Herbal/Recipe pages.  
-4. Promote/demote only if they increase coverage or cadence fit on held-out folios (p<0.05).
+- `unified_lexicon_v3.json` -- The unified lexicon (CURRENT)
+- `unified_lexicon_v2.json` -- DEPRECATED (contains 24 garbage entries)
+- `MasterKey_v1_1__operators.csv` -- Operator table with entropy metrics
+- `MasterKey_v1_1__suffixes.csv` -- Suffix table with status
+- `MasterKey_v1_1__stems_top500.csv` -- Top 500 stems by corpus frequency
+
+## Apply the Key
+
+1. Segment tokens as **OP** + **STEM** (+ **SUF?**). Prefer 2-letter operators (`qo/ch/sh/da/ok/ot`).
+2. Look up stem in unified_lexicon_v3.json stems section.
+3. If not found, check if operator stripping reveals a known stem.
+4. Tag confidence: CONFIRMED stems get full weight, CANDIDATE stems get flagged.
+5. Treat suffixes -dy, -in as active markers; -ol, -al as context-dependent.
 
 _No vibes: every addition must buy predictability, coverage, or adjacency fit._
