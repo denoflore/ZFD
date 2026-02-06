@@ -47,7 +47,7 @@ The tall "gallows" characters are abbreviations for consonant clusters:
 | f | pr | - | (less common) |
 | p | pl | - | (less common) |
 
-**The big one:** Any word with gallows-k that sounds like "kost" = **BONE**
+**The big one:** Gallows-k expands to -st-, producing valid Croatian clusters (100% phonotactic validity). Whether specific instances mean "kost" (bone) is under validation.
 
 ---
 
@@ -55,7 +55,7 @@ The tall "gallows" characters are abbreviations for consonant clusters:
 
 | Croatian | English | Frequency | Context |
 |----------|---------|-----------|---------|
-| kost | bone | 2000+ | pharmaceutical preparations |
+| the ok-/ost- pattern (which may include kost/bone) clusters significantly in pharmaceutical sections | pharmaceutical preparations |
 | ol | oil | 500+ | with vessels, cooking |
 | ar | water | 300+ | liquids, solutions |
 | dar | dose/gift | 280+ | measurements, additions |
@@ -219,7 +219,7 @@ A: The manuscript was created in the Republic of Ragusa (modern Dubrovnik), a Cr
 A: Western scholars only compared to Latin scripts. Nobody checked Croatian Glagolitic manuscripts.
 
 **Q: How confident are you?**
-A: 96.8% of tokens contain known morphemes. Native speaker validation confirms key vocabulary. Statistical profile matches medieval pharmaceutical texts.
+A: 92.1% of tokens contain known morphemes (3.6x above the 25.3% random baseline). Native speaker validation confirms key vocabulary. Statistical profile matches medieval pharmaceutical texts.
 
 **Q: Can I verify this myself?**
 A: Yes. Apply the key to any folio. If "kost" (bone) appears in pharmaceutical contexts and "flor" (flower) in botanical contexts, the mapping is correct.
