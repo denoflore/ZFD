@@ -1,4 +1,28 @@
 # Changelog
+## v4.1.1 - February 6, 2026 (Data Integrity Fix)
+
+### Fixed
+- **unified_lexicon_v2.json: 24 garbage entries purged.** Table headers ("Herbal: 4", "CONFIRMED: 74", "ingredient: 49", etc.) were parsed as stems during lexicon build. Replaced by unified_lexicon_v3.json with 304 clean Voynichese stems, 36 botanical reference terms separated into own section, 58 garbage category fields normalized.
+- **stems_top500.csv: populated from corpus.** Was 2 lines (header + "f,MIXED/OTHER,2"). Now 500 entries with frequencies from 39,903-token corpus. 268 matched to canonical lexicon, 232 unlisted residuals flagged for classification.
+- **character_reference.py: CROATIAN_MORPHEMES synced.** Was 21 hardcoded entries. Now 319 entries auto-generated from unified_lexicon_v3.json. This was why the OCR pipeline's English output column showed "?" for nearly every line.
+
+### Added
+- unified_lexicon_v3.json (canonical, clean, source-tracked)
+- Suffix 'di' added (1,626 corpus occurrences, was completely absent from all dictionaries)
+- reference_botanical section separating Croatian/Latin plant names from Voynichese morphemes
+- Canonical source hierarchy documented: lexicon_v2.csv -> unified_lexicon_v3.json -> character_reference.py
+
+### Deprecated
+- unified_lexicon_v2.json (marked DEPRECATED, retained for audit trail)
+
+### Impact Assessment
+- Core results UNAFFECTED: 92.1% coverage, 8/8 behavioral tests, blind decode, corpus comparison, entropy -- none consumed the corrupted files
+- OCR pipeline English output WAS broken (21-entry dict meant ~90% unresolved morphemes) -- now fixed
+- Master Key deliverables WERE empty/corrupted for anyone trying to reproduce -- now functional
+
+---
+
+
 ## v4.1.0 - February 6, 2026 (Honesty Audit)
 
 ### Changed
