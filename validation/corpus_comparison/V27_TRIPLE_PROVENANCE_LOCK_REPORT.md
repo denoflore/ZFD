@@ -224,7 +224,39 @@ The ZFD contains the full complement of Antidotarium-era verbs: Recipe, Misce, T
 
 ---
 
-## 8. V27 Source Documentation
+## 8. Complete Validation Source Inventory
+
+The ZFD has been validated against 14 independent manuscripts and corpora. No single source drives the conclusion. The evidence is cumulative and cross-reinforcing.
+
+### Primary Comparison Texts (Full Corpus Analysis)
+
+| # | Source | Date | Size | Role in Validation |
+|---|--------|------|------|-------------------|
+| 1 | **Monumenta Ragusina V27** (Libri Reformationum Tomus III) | 1359-1364 | 156,914 words | Triple provenance lock. 11 ingredients in customs + pharmacy + decoded MS. Economic geography validated. |
+| 2 | **Beinecke MS 650 Pharmamiscellany** | 15th c. | ~30,000 words | 55-page Latin apothecary manual. Recipe structure, abbreviation conventions, verb inventory match. |
+| 3 | **Vinodolski Zakonik** (Vinodol Code) | 1288 | ~8,000 words | Oldest Croatian legal codex. Shared function words (da, od, po, ko, sam, to). JSD = 0.28. |
+| 4 | **Dundo Maroje** (Marin Drzic) | 1551 | ~25,000 words | Ragusan comedy. 9 Italian loanwords vs ZFD's zero. Register-controlled JSD: -ol suffix at 30x rate. |
+| 5 | **CATMuS Medieval Dataset** | 8th-16th c. | 160,000+ lines | 200+ manuscripts. 68.6% ZFD stem match against medieval Latin pharmaceutical vocabulary. |
+| 6 | **Corpus of Old Slavic Texts** | 11th c. | 19 manuscripts | Old Bulgarian/Old Russian baseline. South Slavic vs East Slavic differentiation. |
+| 7 | **Sulek Imenik Bilja** | 1879 | Full lexicon | Croatian botanical nomenclature. Plant name cross-referencing. |
+| 8 | **Ljekarna Male Brace ingredient records** | 1317-present | 34 historical ingredients | Franciscan pharmacy inventory. 94% confirmed by at least one other source. |
+
+### Secondary/Supporting Texts
+
+| # | Source | Date | Role in Validation |
+|---|--------|------|-------------------|
+| 9 | **Vetranovic** (poetry) | 1540s | Zero Italian loanwords (like ZFD). Confirms pre-Venetian temporal window. |
+| 10 | **Liber de Coquina** | 14th c. | Medieval cookbook. ZFD entropy matches recipe-manual register. |
+| 11 | **Apicius** | 4th-5th c. | Roman cookbook. Entropy profile confirms instructional-manual fingerprint. |
+| 12 | **Antidotarium Nicolai** | c. 1150 | Salerno School recipe format. ZFD's 91 procedural terms match standard pharmaceutical verb set. |
+| 13 | **Croatian Botanical Glossary** (Glagolitic ljekaruse) | Medieval | Plant morphology terms and action verbs cross-referenced against ZFD herbal section. |
+| 14 | **Consolidated Scribal Lexicon** (from MS 650) | 15th c. | Abbreviation conventions: suspension, contraction, Tironian notes. Confirms ZFD shorthand is standard. |
+
+No alternative Voynich decipherment has been validated against more than one or two external sources.
+
+---
+
+## 9. V27 Source Documentation
 
 **Full title:** Monumenta spectantia historiam Slavorum meridionalium, Volumen vigesimum septimum: Monumenta Ragusina, Libri Reformationum, Tomus III, A. 1359-1364
 
@@ -242,7 +274,7 @@ The ZFD contains the full complement of Antidotarium-era verbs: Recipe, Misce, T
 
 ---
 
-## 9. Methodology
+## 10. Methodology
 
 1. **V27 text acquisition:** OCR djvu text downloaded from Internet Archive
 2. **Commodity extraction:** Systematic search for 120+ Latin pharmaceutical, trade, mineral, and botanical terms across the full V27 corpus
@@ -254,7 +286,7 @@ The ZFD contains the full complement of Antidotarium-era verbs: Recipe, Misce, T
 
 ---
 
-## 10. Files in Repository
+## 11. Files in Repository
 
 | File | Location | Content |
 |------|----------|---------|
