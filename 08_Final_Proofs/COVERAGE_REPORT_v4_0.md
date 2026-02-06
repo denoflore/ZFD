@@ -12,7 +12,7 @@
 |--------|:-----:|:----:|:-----:|
 | Morpheme inventory | 94 | 141 | +47 |
 | Unique words covered | 7,347 / 7,859 (93.5%) | 7,534 / 7,859 (95.9%) | +187 words |
-| **Token coverage** | **94.7%** | **96.8%** | **+2.1 pp** |
+| **Token coverage** | **94.7%** | **92.1%** | **+2.1 pp** |
 | Remaining unknown tokens | 2,110 | 1,296 | −814 |
 | Remaining unknown words | 512 | 325 | −187 |
 | Avg unknown frequency | 4.1 | 4.0 | — |
@@ -103,7 +103,7 @@ The unknowns are overwhelmingly **2–3 character fragments** with single-digit 
 | li | 12 | l- + -i |
 | ls | 11 | Consonant cluster |
 
-**Note:** If single-character documented suffixes `i` and `y` are included (methodologically defensible—both CONFIRMED in lexicon), coverage reaches **98.5%** with only 173 unknown words (593 tokens). The conservative 96.8% figure excludes these to avoid trivial substring inflation.
+**Note:** If single-character documented suffixes `i` and `y` are included (methodologically defensible—both CONFIRMED in lexicon), coverage reaches **98.5%** with only 173 unknown words (593 tokens). The conservative 92.1% figure excludes these to avoid trivial substring inflation.
 
 ---
 
@@ -122,7 +122,7 @@ Pipeline: `06_Pipelines/coverage_v40.py`
 | Version | Date | Coverage | Morphemes | Change |
 |---------|------|:--------:|:---------:|--------|
 | v3.6b | Jan 2026 | 94.7% | 94 | Friday's state markers, medical bone register |
-| **v4.0** | **Feb 3, 2026** | **96.8%** | **141** | **Latin pharma layer, spatial correlation, lexicon fill** |
+| **v4.0** | **Feb 3, 2026** | **92.1%** | **141** | **Latin pharma layer, spatial correlation, lexicon fill** |
 
 ---
 
