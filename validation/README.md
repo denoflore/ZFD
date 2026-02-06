@@ -62,7 +62,7 @@ python blind_decode_test/run_test.py --quick  # 10 iterations
 
 | Metric | Result |
 |--------|--------|
-| Token coverage | 96.8% |
+| Token coverage | 92.1% |
 | CATMuS stem match | 68.6% |
 | Phonotactic validity | 100% |
 | Spatial correlation | p < 0.001 |
