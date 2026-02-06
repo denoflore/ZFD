@@ -7,7 +7,7 @@
 
 **Scope:** Writing system mechanics, morphology, and constrained functional semantics
 
-**Coverage:** 96.8% morphological token coverage under frozen lexicon
+**Coverage:** 92.1% morphological token coverage (3.6x above random baseline) under frozen lexicon
 
 **Validation:**
 - Blind decode falsification tests passed (real Voynich >> shuffled, synthetic, and Latin baselines) | [Results](validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md)
@@ -68,7 +68,7 @@
 |----------|-------------|
 | [**METHODOLOGY.md**](METHODOLOGY.md) | Preregistered criteria, falsification tests |
 | [VALIDATION_RESULTS_JAN2026.md](VALIDATION_RESULTS_JAN2026.md) | Statistical validation results |
-| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | 96.8% coverage analysis |
+| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | 92.1% coverage analysis |
 
 </details>
 
@@ -468,7 +468,7 @@ From the paper, Section 4.3:
 
 | Metric | Result |
 |--------|--------|
-| Token coverage | **96.8%** |
+| Token coverage | **92.1%** |
 | Known morphemes | 141 |
 | CATMuS stem match | 68.6% |
 | Native speaker confirmed | ✓ |
