@@ -12,7 +12,7 @@
 The Voynich Manuscript is a 15th-century Croatian apothecary manual written in angular Glagolitic cursive using medieval shorthand conventions. We provide:
 
 - Complete character mapping (EVA → Croatian)
-- 96.8% morphological token coverage
+- 92.1% morphological token coverage
 - Native speaker validation
 - Statistical validation against medieval corpora
 - 179-page Croatian translation
@@ -74,7 +74,7 @@ However, Missing-Watson did not produce a decipherment. Her method required manu
 
 The ZFD was developed independently from October 2025 with no knowledge of Missing-Watson's work, which was brought to the author's attention on February 3, 2026, one day after the repository went public.
 
-The distinction is between identification and decipherment. Identification says "this is Croatian in Glagolitic." Decipherment provides a complete key, 96.8% coverage, native speaker validation, spatial correlation, and a public pipeline anyone can run. Two independent researchers converging on the same language and script from entirely different methods is itself strong evidence for the hypothesis.
+The distinction is between identification and decipherment. Identification says "this is Croatian in Glagolitic." Decipherment provides a complete key, 92.1% coverage, native speaker validation, spatial correlation, and a public pipeline anyone can run. Two independent researchers converging on the same language and script from entirely different methods is itself strong evidence for the hypothesis.
 
 Missing-Watson, B. (2015). *Das Voynich Manuskript: Übersetzungsanleitung*. http://kaypacha.info/VoynichUebersetzungsAnleitung_de.pdf
 
@@ -90,7 +90,7 @@ Our decipherment provides positive evidence of meaningful content:
 - Semantic coherence (recipe patterns match medieval pharmacy)
 - Native speaker recognition
 
-A hoax would not produce 96.8% coverage with Croatian morphemes that a native speaker confirms as real vocabulary.
+A hoax would not produce 92.1% coverage with Croatian morphemes that a native speaker confirms as real vocabulary.
 
 ---
 
@@ -110,15 +110,15 @@ A hoax would not produce 96.8% coverage with Croatian morphemes that a native sp
 
 ## Technical Questions
 
-### Q: What is "96.8% coverage" and why does it matter?
+### Q: What is "92.1% coverage" and why does it matter?
 
-We identified 94 morphemes (prefixes, stems, suffixes) that account for 96.8% of all tokens in the manuscript. This means:
+We identified 94 morphemes (prefixes, stems, suffixes) that account for 92.1% of all tokens in the manuscript. This means:
 
 - 37,793 of 39,903 word-tokens contain at least one known Croatian morpheme
 - Only 5.3% remain unidentified (mostly plant names and rare abbreviations)
 - The coverage is not cherry-picked - it's corpus-wide
 
-For comparison, if you applied random Croatian morphemes to random text, you'd expect ~5-10% accidental matches. 96.8% is statistically impossible by chance.
+For comparison, if you applied random Croatian morphemes to random text, you'd expect ~5-10% accidental matches. 92.1% is statistically impossible by chance.
 
 ---
 
@@ -183,7 +183,7 @@ git clone https://github.com/denoflore/ZFD
 python 06_Pipelines/coverage_v36b.py
 
 # Check the output
-# You'll see 96.8% coverage with 94 morphemes
+# You'll see 92.1% coverage with 94 morphemes
 ```
 
 Or manually:
@@ -254,7 +254,7 @@ The script looks "mysterious" to us because:
 - kostal (bone-vessel) - 182 occurrences
 - kostar (bone-water) - 149 occurrences
 
-Total: 2000+ tokens with kost- morpheme, clustering in pharmaceutical sections.
+Total: significant clustering of ost- pattern in pharmaceutical sections- morpheme, clustering in pharmaceutical sections.
 
 Plus 93 other morphemes with similar validation. That's a solution.
 
@@ -282,7 +282,7 @@ We designed the methodology specifically to prevent this:
 3. **Blind validation** - Native speaker reviewed vocabulary without context
 4. **Reproducibility** - Anyone can run the analysis
 
-If you can find a better explanation for 96.8% Croatian morpheme coverage with spatial correlation and native speaker recognition, publish it.
+If you can find a better explanation for 92.1% Croatian morpheme coverage with spatial correlation and native speaker recognition, publish it.
 
 ---
 
@@ -378,7 +378,7 @@ The decipherment process was:
 
 The pharmaceutical interpretation **emerged from** the decipherment. We didn't start with "this should be a pharmacy text" and work backwards.
 
-Additionally: pareidolia cannot explain 96.8% morphological coverage, 100% phonotactic validity, native speaker confirmation, spatial correlation (p < 0.001), and 68.6% CATMuS medieval stem overlap. All simultaneously. By chance.
+Additionally: pareidolia cannot explain 92.1% morphological coverage, 100% phonotactic validity, native speaker confirmation, spatial correlation (p < 0.001), and 68.6% CATMuS medieval stem overlap. All simultaneously. By chance.
 
 ---
 
@@ -398,7 +398,7 @@ The Quevedo Protocol (Quevedo Vinueza, January 2026, Zenodo) proposes that the V
 - **No native speaker validation:** No linguist confirms the readings
 - **"daiin" as noise:** Claims the most frequent token is a mechanical artifact (machine "resting state"), whereas ZFD decodes it as "dain" (dose/portion) - a meaningful pharmaceutical term
 
-**The ZFD produces readable Croatian text validated by a native speaker at 96.8% coverage. That's the difference between hypothesis and demonstration.**
+**The ZFD produces readable Croatian text validated by a native speaker at 92.1% coverage. That's the difference between hypothesis and demonstration.**
 
 ---
 
@@ -406,7 +406,7 @@ The Quevedo Protocol (Quevedo Vinueza, January 2026, Zenodo) proposes that the V
 
 With five questions:
 
-1. Explain why 96.8% of tokens resolve to valid Croatian morphemes **by chance**
+1. Explain why 92.1% of tokens resolve to valid Croatian morphemes **by chance**
 2. Explain why the character key produces phonotactically valid Croatian 100% of the time **by chance**
 3. Explain why "orolaly" appears as a **label on a recipe page** - exactly where "orally" would appear in a contemporary apothecary manual - **by chance**
 4. Explain why a native Croatian speaker with 40+ years professional translation experience confirms the readings **by chance**
@@ -489,7 +489,7 @@ Gaskell & Bowern demonstrated that humans intentionally writing meaningless text
 Their experiment shows that some Voynich features *could* emerge from gibberish production. It does not show that the Voynich *is* gibberish. The same statistical properties are also consistent with heavily abbreviated natural language.
 
 More importantly, their gibberish texts did NOT produce:
-- 96.8% morphological coverage in a specific natural language
+- 92.1% morphological coverage in a specific natural language
 - Spatial correlation between semantic content and manuscript sections
 - Native speaker recognition of vocabulary
 - Bilingual code-mixing with period-appropriate Latin pharmaceutical terms
@@ -618,7 +618,7 @@ Because previous claims share specific, identifiable failures that ZFD doesn't s
 |---|---|---|
 | No systematic key | ✓ Most | Complete character map |
 | No full translations | ✓ All | 201 folios translated |
-| No statistical validation | ✓ Most | 96.8% coverage, p < 0.001 |
+| No statistical validation | ✓ Most | 92.1% coverage, p < 0.001 |
 | No native speaker | ✓ All | Professional translator confirms |
 | Not reproducible | ✓ All | Pipeline on GitHub |
 | No falsification testing | ✓ All | Preregistered, all passed |
