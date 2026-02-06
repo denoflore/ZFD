@@ -1,4 +1,24 @@
 # Changelog
+## v4.1.2 - February 6, 2026 (V27 Triple Provenance Lock)
+
+### Added
+- **V27 Triple Provenance Lock Analysis** (CRITICAL NEW FINDING)
+  - Systematic commodity extraction from Monumenta Ragusina V27 (1359-1364): 60 trade terms found
+  - Triple cross-match: V27 trade records x Ljekarna Male Brace ingredients x ZFD decoded stems
+  - 11 pharmaceutical ingredients confirmed in ALL THREE independent sources
+  - 26 additional ZFD+Ljekarna double matches with explained V27 absence pattern
+  - 94% of Ljekarna historical ingredients confirmed in at least 1 other source
+  - New report: `validation/corpus_comparison/V27_TRIPLE_PROVENANCE_REPORT.md`
+  - V27 raw text archived: `10_Supplementary/vol27_libri_reformationum.txt`
+  - Source: https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt
+
+### Changed
+- README.md: Added V27 Triple Provenance Lock section to Validation Results
+- README.md: Updated Ragusan provenance confidence 82% -> 91%
+- README.md: Added cross-reference from "Ingredient Match" to new V27 analysis
+
+---
+
 ## v4.1.1 - February 6, 2026 (Data Integrity Fix)
 
 ### Fixed
