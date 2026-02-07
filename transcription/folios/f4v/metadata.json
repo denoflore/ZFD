@@ -1,0 +1,22 @@
+{
+  "folio": "f4v",
+  "section": "herbal",
+  "quire": "A (Rene) / I (Beinecke)",
+  "bifolio": "bA4 = f4+f5",
+  "currier_language": "A",
+  "currier_hand": "1",
+  "rene_subset": "H",
+  "iiif_id": "1006083",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006083/full/full/0/default.jpg",
+  "condition": "Standard herbal folio with single plant illustration and text wrapping around it.",
+  "layout": {
+    "type": "herbal_single_plant",
+    "description": "Single plant centered on page. Text wraps around the plant illustration with plant-break markers (<->) indicating where the illustration interrupts each line.",
+    "text_lines": 14
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from EVA transcription (H=Hermes primary) using ZFD 7-layer constraint stack.",
+  "total_lines": 14,
+  "total_words_eva": 83,
+  "plant_text_breaks": 13
+}
