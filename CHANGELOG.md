@@ -1,5 +1,28 @@
 # Changelog
 
+## v4.2.0 - February 7, 2026 (Full Paper Rebuild)
+
+### Changed
+- ZFD_COMPLETE_PAPER.md: Complete rebuild incorporating all February 2026 validation work
+- 708 lines → 977 lines (59.6KB, up from 36KB)
+
+### Added to Paper
+- Section 5 rewrite: 961,484-word corpus comparison across 8 corpora, register-controlled JSD, suffix concentration analysis
+- Section 7 expansion: Full blind decode test history (v1.0 inconclusive, v1.1 inconclusive, v2 passed 5/5 folios)
+- Section 8 (NEW): V27 Triple Provenance Lock - external economic validation, 60-term commodity extraction, 11 triple-confirmed ingredients, absence analysis, verb lock (91 procedural terms)
+- Section 9 (NEW): Temporal and Register Analysis - Italian loanword dating, extended jat audit, 5-layer suffix fingerprint, confidence levels
+- Section 10 rewrite: Ragusan pharmaceutical ecosystem (speciarii, medicus), provenance generalization
+- Section 11: New objection 11.7 addressing "common ingredients" criticism
+- Section 12 (NEW): Full 14-source validation inventory
+- Supplementary materials S9-S12 added
+- Fixed section numbering bug (old paper had Section 8 header with 9.x subsections)
+- Updated abstract to reflect all new evidence lines
+
+### Also Changed
+- V27_TRIPLE_PROVENANCE_LOCK_REPORT.md: Merged full methodology report into single canonical document (v1.1)
+- Deleted duplicate V27_TRIPLE_PROVENANCE_REPORT.md (content merged into LOCK_REPORT)
+
+
 ## v4.2.0 - February 7, 2026 (Paper v2.0 Full Rebuild)
 
 ### Added
