@@ -159,7 +159,7 @@ This one is different. Not because the linguistics are better (they are), but be
 
 Forget the script. Forget the character mapping. Forget whether Glagolitic cursive looks like Voynichese. Ask one question:
 
-**Does the decoded text describe the right products, made from the right ingredients, using the right methods, sold by the right institution, in the right city, at the right time?**
+**Does the decoded text describe the right products, made from the right ingredients, using the right methods, in the right professional context, in the right city, at the right time?**
 
 The answer is yes, and the proof comes from tax records.
 
@@ -168,7 +168,7 @@ The answer is yes, and the proof comes from tax records.
 | Source | What It Is | Date | Who Created It |
 |--------|-----------|------|---------------|
 | **Monumenta Ragusina V27** | Government customs and council records | 1359-1364 | The Republic of Ragusa (published 1895 by JAZU) |
-| **Ljekarna Male Brace** | Franciscan pharmacy ingredient records | Est. 1317, continuous | Franciscan monks in Dubrovnik |
+| **Ljekarna Male Braće** | Franciscan pharmacy ingredient records (best-surviving Ragusan apothecary archive) | Est. 1317, continuous | Franciscan monks in Dubrovnik |
 | **ZFD decoded lexicon** | Morphological inventory from the decoded manuscript | Proposed 1380-1440 | Whoever wrote the Voynich Manuscript |
 
 These three sources were created by different people, for different purposes, at different times. None references the others. V27 is a government administrative record published in 1895. The pharmacy is a continuously operating institution. The manuscript is the object being tested. **There is no mechanism by which a decipherment could be "fitted" to match all three simultaneously unless it is correct.**
@@ -205,12 +205,12 @@ Previous Voynich "solutions" can be attacked because they rest on subjective int
 
 No alternative decipherment has ever produced a vocabulary set that simultaneously locks to:
 1. A specific city's government trade records
-2. A specific institution's ingredient lists
+2. A documented institutional pharmacy's ingredient lists
 3. The correct import/domestic distinction for that city's economic geography
 4. The correct temporal window (no post-1492 ingredients)
 5. A complete set of pharmaceutical procedure verbs matching the era's standard recipe format
 
-The decoded Voynich Manuscript is an economically verified model of a 15th-century Ragusan pharmacy.
+The decoded Voynich Manuscript is an economically verified product of Ragusa's 15th-century pharmaceutical industry.
 
 Full analysis: [V27 Triple Provenance Lock Report](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md) | V27 source: [Internet Archive](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt)
 
@@ -223,17 +223,19 @@ The Voynich Manuscript didn't appear from nowhere. Its journey across 600 years 
 
 The manuscript was written during the golden age of the Republic of Ragusa, a Croatian maritime city-state that rivaled Venice in wealth and sophistication. Ragusa was a major pharmaceutical trade hub on the Adriatic, with merchant routes connecting the Balkans to Italy, the Levant, and the courts of Central Europe.
 
-In **1317**, the Republic of Ragusa faced imminent war with Serbian King Uroš II Milutin. The Franciscan monastery outside the city walls at Pile was a tactical liability, so authorities demolished it and relocated the friars inside the fortifications. The pharmacy was founded as part of this new intramural complex, near the Pile Gate. The Franciscan Rule (Chapter VI, *cura infirmorum*) mandated care of the sick, so the pharmacy began as an internal dispensary before expanding to serve the public. In 2019, Croatia designated it an intangible cultural heritage site. It is the oldest continuously operating pharmacy in Europe.
+Ragusa supported a documented pharmaceutical infrastructure. The Monumenta Ragusina V27 (1359-1364) records *speciarii* (independent apothecaries) operating under city regulation, *medicus* (licensed physicians) in private practice, and an active import trade in pharmaceutical commodities through the port. The city's Liber Statutorum established formal licensing for apothecaries and physicians, confirming multiple competing pharmaceutical operations within the Republic.
+
+The best-documented of these is the **Franciscan Pharmacy (Ljekarna Male Braće)**, founded in **1317** when the Republic relocated the Franciscan monastery inside the city walls during a military threat from Serbian King Uroš II Milutin. The pharmacy began as an internal monastic dispensary under the Franciscan Rule (Chapter VI, *cura infirmorum*) before expanding to serve the public. It is the oldest continuously operating pharmacy in Europe, designated a Croatian intangible cultural heritage site in 2019.
 
 The friars cultivated medicinal herbs in the monastery gardens, prepared compounds from imported ingredients (storax resin from the eastern Mediterranean, rosewater, bone oil, mineral salts), and maintained detailed recipe books in the monastery library. Their recipes were classified as *secreta* (secret remedies), where ingredient lists were recorded but the exact process (temperatures, mixing times, compounding sequences) was proprietary knowledge. This explains the compression and shorthand in the manuscript: it was written for someone who already knew the procedures and just needed the ingredients and ratios.
 
-**The Voynich Manuscript is one of those recipe books.**
+**The Voynich Manuscript is a Ragusan pharmaceutical recipe book.** The Franciscan Pharmacy is the prime candidate institution given its documented medieval recipe tradition, its continuous operation spanning the manuscript's production window, and the striking overlap between its historical ingredient inventory and the decoded text. However, independent apothecaries (*speciarii*) and guild practitioners also operated in Ragusa during this period. The manuscript could have originated from any pharmaceutical operation within the Republic's well-documented apothecary ecosystem.
 
 It was written in angular Glagolitic cursive, the local Croatian liturgical and administrative script, using standard medieval pharmaceutical shorthand to compress ingredient lists and preparation instructions. The author wasn't hiding anything. He was writing fast. The "code" is just a pharmacist's professional notation, optimized for daily reference by someone who already knew the vocabulary.
 
 ### The Ingredient Match
 
-The Franciscan Pharmacy still operates today and still sells products made from what they describe as "ancient Franciscan recipes." The overlap with the Voynich manuscript's decoded content is striking:
+The Franciscan Pharmacy still operates today and still sells products made from what they describe as "ancient Franciscan recipes." As the best-surviving institutional archive from Ragusa's medieval pharmaceutical industry, it provides the most detailed comparison point for the decoded manuscript. The overlap is striking:
 
 | Modern Pharmacy Product | Voynich Extraction | Manuscript Evidence |
 |------------------------|-------------------|-------------------|
@@ -244,9 +246,11 @@ The Franciscan Pharmacy still operates today and still sells products made from 
 | Bergamot anti-wrinkle cream | Herbal A catalog entries | Ingredient + application instructions |
 | Cold-pressed soaps | **ol** (oil) + processing operators | Oil-based preparation sequences |
 
-The pharmacy's own literature states their products are "prepared under 200 year old recipes," but the pharmacy has been operating since 1317. The **medieval** recipe archive (1317-1667) was largely destroyed. What survived became the basis for the "200 year old" recipes still in use. The older, original formulations, including bone-oil preparations no longer commercially viable, are preserved in the Voynich Manuscript.
+The pharmacy's own literature states their products are "prepared under 200 year old recipes," but the pharmacy has been operating since 1317. The **medieval** recipe archive (1317-1667) was largely destroyed in the 1667 earthquake and fire. What survived became the basis for the "200 year old" recipes still in use. The older, original formulations, including bone-oil preparations no longer commercially viable, are preserved in the Voynich Manuscript.
 
 **The modern pharmacy replaced bone oil with beeswax. The Voynich still has the original.**
+
+Whether the manuscript was written by a Franciscan friar, an independent *speciarius*, or another practitioner within Ragusa's pharmaceutical network, the ingredient vocabulary and preparation methods point to the same professional context: a working Ragusan apothecary in the early 15th century.
 
 <p align="center">
 <img src="images/f13v_rose_recipe.jpg" width="400" alt="Folio 13v of the Voynich Manuscript, containing the rose cream recipe that matches the Franciscan Pharmacy's modern bestseller.">
@@ -269,7 +273,7 @@ This was not the last time the monastery was nearly destroyed. During the Siege 
 
 The pharmacy survived. The building survived. The recipes, passed down orally and through whatever fragments remained, survived in degraded form. But the comprehensive medieval archive was gone.
 
-**Except for one book that had already left the building.**
+**Except for one book that had already left Ragusa.**
 
 <p align="center">
 <img src="images/f85v_86r_rosette_foldout.jpg" width="600" alt="Folios 85v-86r, the famous rosette foldout page of the Voynich Manuscript.">
@@ -280,9 +284,9 @@ The pharmacy survived. The building survived. The recipes, passed down orally an
 
 The manuscript's documented chain of custody reads like a European road trip through the courts of power. But the standard story has problems, and the physical evidence tells a different story than the received narrative.
 
-**c. 1391-1438 (Production Window):** The manuscript is produced at the Franciscan friary in Dubrovnik during the provincial administration of **Nicholas of Zadar**, who governed the Franciscan Province of Dalmatia through the entire radiocarbon-dated period (1391-1403+). Prosopographical records from notarial archives (Miljan 2025) document a functioning intellectual community: friars studying at Bologna and Padua, books circulating freely between friaries, bequests earmarked for purchasing texts, and a library with active manuscript production. **Dominic of Trogir** served as guardian of the Dubrovnik friary at the turn of the 15th century, precisely when the vellum was prepared. Books in Franciscan custody regularly traveled with friars across the Dalmatia-Italy-Central Europe network and sometimes never returned.
+**c. 1391-1438 (Production Window):** The manuscript is produced within the pharmaceutical community of the Republic of Ragusa (modern Dubrovnik). The Franciscan Province of Dalmatia, administered by **Nicholas of Zadar** through the radiocarbon-dated period (1391-1403+), maintained a functioning intellectual community: friars studying at Bologna and Padua, books circulating freely between friaries, bequests earmarked for purchasing texts, and a library with active manuscript production (Miljan 2025). The Franciscan pharmacy, founded 1317, is the prime candidate institution, but independent *speciarii* (documented in V27, 1359-1364) also operated under city regulation. **Dominic of Trogir** served as guardian of the Dubrovnik friary at the turn of the 15th century, precisely when the vellum was prepared. Books in Franciscan custody regularly traveled with friars across the Dalmatia-Italy-Central Europe network and sometimes never returned.
 
-**Before 1600 (Departure from Dubrovnik):** The manuscript leaves the Franciscan network through an unknown mechanism. The Franciscan order maintained extensive connections between Dalmatia, the Italian peninsula, and the Habsburg courts. Books moved along these routes routinely. Miljan's dissertation documents cases where manuscripts left friaries permanently after prelate deaths (*ius spolii*, papal property rights) or through long-term borrowing that became permanent. The Dubrovnik-Venice-Prague corridor was a well-traveled path for both trade goods and intellectual property.
+**Before 1600 (Departure from Ragusa):** The manuscript leaves the Ragusan pharmaceutical community through an unknown mechanism. The Franciscan order maintained extensive connections between Dalmatia, the Italian peninsula, and the Habsburg courts. Books moved along these routes routinely. Miljan's dissertation documents cases where manuscripts left friaries permanently after prelate deaths (*ius spolii*, papal property rights) or through long-term borrowing that became permanent. Independent apothecaries and merchants also maintained trade connections along the Dubrovnik-Venice-Prague corridor, a well-traveled path for both trade goods and intellectual property.
 
 **c. 1599-1608 (Prague):** The manuscript surfaces in the court of **Emperor Rudolf II** in Prague. Rudolf reportedly paid 600 gold ducats, believing it to be a lost work of Roger Bacon. The standard attribution credits **John Dee** (1527-1608) as the seller, based on circumstantial evidence: Dee had 630 ducats in October 1586, and his son later noted Dee owned "a booke containing nothing butt Hieroglyphicks." However, Dee's meticulous diaries never record such a sale. An alternative and better-documented candidate is **Carl Widemann**, an Augsburg alchemical manuscript collector who sold Rudolf "a couple of remarkable/rare books" for 600 florins in 1599, the only transaction in Rudolf's records matching this amount.
 
@@ -304,13 +308,13 @@ The manuscript's documented chain of custody reads like a European road trip thr
 
 The 1667 earthquake didn't just destroy buildings. It destroyed **context**.
 
-If the manuscript had remained in the Franciscan library alongside its companion volumes (other recipe books in the same notation, Glagolitic reference materials, pharmaceutical inventories), any competent Slavic paleographer could have read it. The script is not obscure. Angular Glagolitic was widely used in Croatian churches and monasteries. The shorthand conventions are documented in other surviving Glagolitic manuscripts.
+If the manuscript had remained in Ragusa alongside its companion volumes (other recipe books in the same notation, Glagolitic reference materials, pharmaceutical inventories), any competent Slavic paleographer could have read it. The script is not obscure. Angular Glagolitic was widely used in Croatian churches and monasteries. The shorthand conventions are documented in other surviving Glagolitic manuscripts.
 
 But by the time anyone in the modern era tried to read it, all the contextual clues were gone. The manuscript had been removed from Croatia to Prague before the earthquake. The library that would have identified it was ash. The Glagolitic manuscript tradition was studied primarily by Croatian and Serbian scholars who never had access to the Voynich. And Western European scholars, who did have access, compared it exclusively to Latin paleography.
 
 Nobody checked Croatian manuscripts because nobody thought to look there.
 
-Meanwhile, in Dubrovnik, the Franciscan Pharmacy kept operating. The monks kept making rose cream and lavender water from oral tradition and whatever recipe fragments survived. They knew they had ancient formulations. They just didn't know that the original written recipes were sitting in a climate-controlled vault at Yale, cataloged as an "unsolvable mystery."
+Meanwhile, in Dubrovnik, the Franciscan Pharmacy kept operating. The monks kept making rose cream and lavender water from oral tradition and whatever recipe fragments survived. They knew they had ancient formulations. They just didn't know that a Ragusan pharmaceutical manuscript, quite possibly from their own medieval archive, was sitting in a climate-controlled vault at Yale, cataloged as an "unsolvable mystery."
 
 **You can still walk into the pharmacy today, buy the rose cream for 30 euros, and hold in your hands a product whose original recipe is written on folio 13v of Beinecke MS 408.**
 
@@ -690,7 +694,7 @@ Five converging constraint layers independently identifying the decoded ZFD outp
 | South Slavic | 95% | Grammar, operators, case system |
 | Croatian (not Serbian) | 92% | Latin loans, Western contact, morphology |
 | Dalmatian coastal | 87% | Bilingual mixing, Italian code-switching |
-| Ragusan specifically | 91% | V27 triple provenance lock (11 ingredients in trade records + pharmacy + MS), speciarii/apotheca, Franciscan pharmacy tradition |
+| Ragusan specifically | 91% | V27 triple provenance lock (11 ingredients in trade records + pharmacy + MS), speciarii/apotheca, documented pharmaceutical infrastructure |
 | Pharmaceutical register | 97% | 4x suffix concentration, register-controlled JSD |
 | Early 15th century | 82% | Zero Italian loanwords, ch- conventions, pre-standardization |
 
