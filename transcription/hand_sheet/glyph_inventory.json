@@ -1,0 +1,534 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "date": "2026-02-07",
+    "manuscript": "Beinecke MS 408 (Voynich Manuscript)",
+    "methodology": "Behavioral paleography via 7-layer constraint stack",
+    "exemplar_folios": ["f1r", "f3r", "f13v", "f33v", "f56r", "f67r", "f77r", "f85v-86r", "f87r", "f88r", "f99r"],
+    "notes": "Glyph identifiers use EVA notation as reference keys. Sound values follow ZFD Croatian mapping."
+  },
+  "glyphs": {
+    "vowels": [
+      {
+        "eva_id": "o",
+        "zfd_sound": "/o/",
+        "glagolitic_source": "On (U+2C10)",
+        "confidence": "HIGH",
+        "form_description": "Small circle or near-circle, ~2mm diameter",
+        "stroke_count": 1,
+        "stroke_description": "Single clockwise rotation from ~11 o'clock position",
+        "positional_behavior": {
+          "initial": 0.32,
+          "medial": 0.55,
+          "final": 0.13
+        },
+        "initial_function": "Topic marker operator (o- = about)",
+        "speed_variants": {
+          "careful": "Perfectly circular, fully closed",
+          "standard": "Near-circular, fully closed",
+          "rapid": "Slightly elliptical, may not fully close"
+        },
+        "confusable_with": ["a (when circle not fully closed at rapid speed)"],
+        "frequency_rank": 1,
+        "estimated_corpus_count": 5000
+      },
+      {
+        "eva_id": "a",
+        "zfd_sound": "/a/",
+        "glagolitic_source": "Az (U+2C00)",
+        "confidence": "MEDIUM",
+        "form_description": "Circle with rightward connector tail from upper right",
+        "stroke_count": 1,
+        "stroke_description": "Circle with continuous rightward tail, or circle then tail with pen lift",
+        "positional_behavior": {
+          "initial": 0.08,
+          "medial": 0.87,
+          "final": 0.05
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Clear circle + distinct tail",
+          "standard": "Circle + flowing tail",
+          "rapid": "Reduced to cursive 'a' shape, circle portion abbreviated"
+        },
+        "confusable_with": ["o (when tail is unclear)"],
+        "frequency_rank": 3,
+        "estimated_corpus_count": 3500
+      },
+      {
+        "eva_id": "e",
+        "zfd_sound": "/e/",
+        "glagolitic_source": "Est (U+2C05)",
+        "confidence": "MEDIUM",
+        "form_description": "Small crescent or c-shape, open to the right",
+        "stroke_count": 1,
+        "stroke_description": "Single leftward curve forming open crescent",
+        "positional_behavior": {
+          "initial": 0.01,
+          "medial": 0.986,
+          "final": 0.004
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Clear crescent with defined opening",
+          "standard": "Consistent crescent",
+          "rapid": "Minimal variation; highly stable character"
+        },
+        "confusable_with": ["First element of 'ch' and 'sh' clusters (identical shape)"],
+        "frequency_rank": 2,
+        "estimated_corpus_count": 4500,
+        "critical_note": "Identical in shape to the 'c' component of ch/sh clusters. Context determines whether this is standalone /e/ or part of a cluster."
+      },
+      {
+        "eva_id": "i",
+        "zfd_sound": "/i/",
+        "glagolitic_source": "Izhe (U+2C09)",
+        "confidence": "MEDIUM",
+        "form_description": "Short vertical stroke with optional slight rightward curve at top",
+        "stroke_count": 1,
+        "stroke_description": "Single downstroke",
+        "positional_behavior": {
+          "initial": 0.002,
+          "medial": 0.998,
+          "final": 0.0
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Distinct individual strokes",
+          "standard": "Clear strokes",
+          "rapid": "Multiple 'i' strokes may merge into wavy line"
+        },
+        "confusable_with": ["n (positional: final 'i'-shape = n)", "l (height difference)", "single minim of 'aiin' ligature"],
+        "frequency_rank": 4,
+        "estimated_corpus_count": 3000,
+        "critical_note": "Often appears in sequences (ii, iii) as part of ligature units like 'aiin'. These sequences should be analyzed as ligature components, not individual letters."
+      },
+      {
+        "eva_id": "y",
+        "zfd_sound": "/i/ (adjective suffix)",
+        "glagolitic_source": "Jer (U+2C1B)",
+        "confidence": "MEDIUM",
+        "form_description": "Like 'i' but with descending tail below baseline, curving leftward",
+        "stroke_count": 1,
+        "stroke_description": "Downstroke continuing below baseline with leftward curve",
+        "positional_behavior": {
+          "initial": 0.05,
+          "medial": 0.10,
+          "final": 0.845
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Full descender with clear leftward curve",
+          "standard": "Moderate descender",
+          "rapid": "Short hook below baseline"
+        },
+        "confusable_with": ["i (if descender is very short)"],
+        "frequency_rank": 5,
+        "estimated_corpus_count": 2800
+      }
+    ],
+    "consonants": [
+      {
+        "eva_id": "n",
+        "zfd_sound": "/n/",
+        "glagolitic_source": "Nash (U+2C0E)",
+        "confidence": "MEDIUM",
+        "form_description": "Short vertical stroke, similar to 'i'",
+        "stroke_count": 1,
+        "stroke_description": "Single downstroke",
+        "positional_behavior": {
+          "initial": 0.02,
+          "medial": 0.03,
+          "final": 0.954
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Distinct from 'i' by context",
+          "standard": "Identical to 'i' in form",
+          "rapid": "Identical to 'i' in form"
+        },
+        "confusable_with": ["i (visually identical; distinguished by final position)"],
+        "frequency_rank": 8,
+        "estimated_corpus_count": 1500,
+        "critical_note": "Visually identical to 'i'. The ZFD system uses POSITION to disambiguate: word-final 'i'-shape = /n/ (noun ending)."
+      },
+      {
+        "eva_id": "r",
+        "zfd_sound": "/r/",
+        "glagolitic_source": "Rtsi (U+2C12)",
+        "confidence": "MEDIUM",
+        "form_description": "Short stroke with hook or rightward curve",
+        "stroke_count": 1,
+        "stroke_description": "Downstroke with terminal hook",
+        "positional_behavior": {
+          "initial": 0.05,
+          "medial": 0.22,
+          "final": 0.734
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Clear hook distinguishing from 'i'",
+          "standard": "Hook present",
+          "rapid": "Hook may be minimal"
+        },
+        "confusable_with": ["i/n (if hook is minimal)"],
+        "frequency_rank": 7,
+        "estimated_corpus_count": 1800
+      },
+      {
+        "eva_id": "l",
+        "zfd_sound": "/l/",
+        "glagolitic_source": "Lyudi (U+2C0B)",
+        "confidence": "MEDIUM",
+        "form_description": "Vertical stroke, slightly taller than 'i', may have small foot/serif",
+        "stroke_count": 1,
+        "stroke_description": "Single downstroke, slightly taller than 'i'",
+        "positional_behavior": {
+          "initial": 0.02,
+          "medial": 0.45,
+          "final": 0.530
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Clearly taller than 'i'",
+          "standard": "Height difference visible",
+          "rapid": "Height difference may be reduced"
+        },
+        "confusable_with": ["i (if height difference is reduced at speed)"],
+        "frequency_rank": 9,
+        "estimated_corpus_count": 1200
+      },
+      {
+        "eva_id": "d",
+        "zfd_sound": "/d/",
+        "glagolitic_source": "Dobro (U+2C03)",
+        "confidence": "MEDIUM",
+        "form_description": "Baseline loop with ascending stroke, taller than x-height but shorter than gallows",
+        "stroke_count": 2,
+        "stroke_description": "Baseline loop (counterclockwise) + ascending stroke",
+        "positional_behavior": {
+          "initial": 0.26,
+          "medial": 0.50,
+          "final": 0.24
+        },
+        "initial_function": "Dative/directional operator (d- = to/until)",
+        "speed_variants": {
+          "careful": "Clear loop and ascending stroke",
+          "standard": "Flowing loop-ascender combination",
+          "rapid": "Loop may be compressed"
+        },
+        "confusable_with": ["Gallows (but gallows are distinctly taller)"],
+        "frequency_rank": 6,
+        "estimated_corpus_count": 2500
+      },
+      {
+        "eva_id": "s",
+        "zfd_sound": "/s/",
+        "glagolitic_source": "Slovo (U+2C13)",
+        "confidence": "LOW",
+        "form_description": "Curved or angled stroke, typically part of 'sh' cluster",
+        "stroke_count": 1,
+        "stroke_description": "Curved stroke connecting to following 'h' element",
+        "positional_behavior": {
+          "initial": 0.40,
+          "medial": 0.55,
+          "final": 0.05
+        },
+        "initial_function": "Part of 'sh' operator cluster",
+        "speed_variants": {
+          "careful": "Distinct curve",
+          "standard": "Flowing into 'h'",
+          "rapid": "May merge with 'h'"
+        },
+        "confusable_with": [],
+        "frequency_rank": 10,
+        "estimated_corpus_count": 800,
+        "critical_note": "Rarely appears standalone. Almost always part of 'sh' cluster."
+      },
+      {
+        "eva_id": "m",
+        "zfd_sound": "/m/",
+        "glagolitic_source": "Myslete (U+2C0D)",
+        "confidence": "LOW",
+        "form_description": "Short stroke, possibly multiple minims",
+        "stroke_count": 1,
+        "stroke_description": "Short stroke at word-final position",
+        "positional_behavior": {
+          "initial": 0.01,
+          "medial": 0.08,
+          "final": 0.914
+        },
+        "initial_function": null,
+        "speed_variants": {
+          "careful": "Distinct from 'n'",
+          "standard": "Context-dependent",
+          "rapid": "May be ambiguous"
+        },
+        "confusable_with": ["n (both final-position short strokes)"],
+        "frequency_rank": 14,
+        "estimated_corpus_count": 300
+      }
+    ],
+    "operators": [
+      {
+        "eva_id": "q",
+        "zfd_sound": "/k/",
+        "glagolitic_source": "Kako (U+2C0C) cursive",
+        "confidence": "HIGH",
+        "form_description": "Distinctive descending character with connector to following 'o'",
+        "stroke_count": 1,
+        "stroke_description": "Descending stroke with connecting tail",
+        "positional_behavior": {
+          "initial": 0.985,
+          "medial": 0.01,
+          "final": 0.005
+        },
+        "initial_function": "Relative/quantity operator: qo = ko- (which/that/quantity)",
+        "speed_variants": {
+          "careful": "Distinct descender + clear connection to 'o'",
+          "standard": "Flowing qo unit",
+          "rapid": "qo may appear as single glyph"
+        },
+        "confusable_with": [],
+        "frequency_rank": 11,
+        "estimated_corpus_count": 1000,
+        "critical_note": "Almost always followed by 'o'. The combination 'qo' should be treated as a single operator unit = /ko/."
+      },
+      {
+        "eva_id": "ch",
+        "zfd_sound": "/h/ or /x/",
+        "glagolitic_source": "Xer (U+2C17)",
+        "confidence": "HIGH",
+        "form_description": "Crescent ('c' = 'e' shape) connected to vertical/curved stroke ('h')",
+        "stroke_count": 2,
+        "stroke_description": "Crescent (leftward curve) + connected vertical/curved stroke",
+        "positional_behavior": {
+          "initial": 0.50,
+          "medial": 0.45,
+          "final": 0.05
+        },
+        "initial_function": "Action/directional operator: ch- = h- (combine/cook)",
+        "speed_variants": {
+          "careful": "Clear two-part construction",
+          "standard": "Flowing connected unit",
+          "rapid": "Single fluid stroke"
+        },
+        "confusable_with": ["Standalone 'e' followed by separate character (context resolves)"],
+        "frequency_rank": 3,
+        "estimated_corpus_count": 3000,
+        "critical_note": "The 'c' component is visually identical to standalone 'e'. Ligature context determines reading."
+      },
+      {
+        "eva_id": "sh",
+        "zfd_sound": "/sh/",
+        "glagolitic_source": "Sha (U+2C1A)",
+        "confidence": "HIGH",
+        "form_description": "'s' curve connected to 'ch' unit",
+        "stroke_count": 2,
+        "stroke_description": "S-curve + crescent-h unit",
+        "positional_behavior": {
+          "initial": 0.58,
+          "medial": 0.38,
+          "final": 0.04
+        },
+        "initial_function": "Comitative operator: sh- = s-/sh- (with/soak)",
+        "speed_variants": {
+          "careful": "All three components distinguishable",
+          "standard": "Flowing three-part unit",
+          "rapid": "May compress to two visible components"
+        },
+        "confusable_with": [],
+        "frequency_rank": 6,
+        "estimated_corpus_count": 2000
+      }
+    ],
+    "gallows": [
+      {
+        "eva_id": "k",
+        "zfd_sound": "/-st-/ or /-sk-/",
+        "glagolitic_source": "Kako (U+2C0C) tall form",
+        "confidence": "HIGH",
+        "form_description": "Tall vertical stem with single loop at top",
+        "stroke_count": 2,
+        "stroke_description": "Vertical stem downstroke + loop construction at top",
+        "ascender_height_ratio": 2.5,
+        "positional_behavior": {
+          "initial": 0.05,
+          "medial": 0.899,
+          "final": 0.05
+        },
+        "expansion_rules": {
+          "primary": "st",
+          "secondary": "sk",
+          "context": "Apply when producing known stem (kost, kal, kar) or in gallows position"
+        },
+        "speed_variants": {
+          "careful": "Well-formed loop, clear vertical stem",
+          "standard": "Flowing but distinct",
+          "rapid": "Loop may be simplified"
+        },
+        "confusable_with": ["t-gallows (distinguished by loop geometry)"],
+        "frequency_rank": 12,
+        "estimated_corpus_count": 2000,
+        "status": "CONFIRMED",
+        "key_productions": ["kost (bone)", "korist (use)", "kal (vessel)", "ostar (large vessel)"]
+      },
+      {
+        "eva_id": "t",
+        "zfd_sound": "/-tr-/ or /-tv-/",
+        "glagolitic_source": "Tvrdo (U+2C14) tall form",
+        "confidence": "HIGH",
+        "form_description": "Tall vertical stem with angular or offset loop at top",
+        "stroke_count": 2,
+        "stroke_description": "Vertical stem + differently-oriented loop than k-gallows",
+        "ascender_height_ratio": 2.5,
+        "positional_behavior": {
+          "initial": 0.05,
+          "medial": 0.853,
+          "final": 0.10
+        },
+        "expansion_rules": {
+          "primary": "tr",
+          "secondary": "tv",
+          "context": "Apply when producing known stem or following o-"
+        },
+        "speed_variants": {
+          "careful": "Distinct loop orientation from k-gallows",
+          "standard": "Loop difference visible",
+          "rapid": "May require context to distinguish from k"
+        },
+        "confusable_with": ["k-gallows (distinguished by loop geometry)"],
+        "frequency_rank": 13,
+        "estimated_corpus_count": 1500,
+        "status": "CONFIRMED",
+        "key_productions": ["otr- (treated)", "itra (liver)", "otvori (open)"]
+      },
+      {
+        "eva_id": "f",
+        "zfd_sound": "/-pr-/ or /-fr-/",
+        "glagolitic_source": "Frt (U+2C16) tall form",
+        "confidence": "HIGH",
+        "form_description": "Elaborate tall character with double loops or additional flourishes",
+        "stroke_count": 3,
+        "stroke_description": "More complex construction than k/t gallows",
+        "ascender_height_ratio": 3.0,
+        "positional_behavior": {
+          "initial": 0.10,
+          "medial": 0.727,
+          "final": 0.17
+        },
+        "expansion_rules": {
+          "primary": "pr",
+          "secondary": "fr",
+          "context": "Apply in initial position or after vowel"
+        },
+        "speed_variants": {
+          "careful": "Full elaborate construction",
+          "standard": "Recognizable but somewhat simplified",
+          "rapid": "May reduce to core structure"
+        },
+        "confusable_with": ["p-gallows (similar complexity level)"],
+        "frequency_rank": 15,
+        "estimated_corpus_count": 800,
+        "status": "CONFIRMED",
+        "key_productions": ["upra (direction)", "cpho- (from)"]
+      },
+      {
+        "eva_id": "p",
+        "zfd_sound": "/-pl-/ or /-sp-/",
+        "glagolitic_source": "Pokoj (U+2C11) tall form",
+        "confidence": "MEDIUM",
+        "form_description": "Tall character with distinctive loop orientation",
+        "stroke_count": 2,
+        "stroke_description": "Vertical stem + loop with different orientation than k/t",
+        "ascender_height_ratio": 2.5,
+        "positional_behavior": {
+          "initial": 0.10,
+          "medial": 0.655,
+          "final": 0.25
+        },
+        "expansion_rules": {
+          "primary": "pl",
+          "secondary": "sp",
+          "context": "Apply in initial position or after vowel"
+        },
+        "speed_variants": {
+          "careful": "Distinct loop form",
+          "standard": "Recognizable",
+          "rapid": "May be ambiguous with other gallows"
+        },
+        "confusable_with": ["f-gallows", "k-gallows"],
+        "frequency_rank": 16,
+        "estimated_corpus_count": 600,
+        "status": "CONFIRMED",
+        "key_productions": ["spoj (join)", "plod (fruit)"]
+      }
+    ],
+    "bench_gallows": [
+      {
+        "eva_id": "ckh",
+        "zfd_sound": "/h/ + /-st-/",
+        "form_description": "Crescent + k-gallows + h-stroke compound",
+        "stroke_count": 3,
+        "positional_behavior": {
+          "initial": 0.15,
+          "medial": 0.80,
+          "final": 0.05
+        },
+        "notes": "Compound abbreviation mark combining ch-operator function with k-gallows cluster"
+      },
+      {
+        "eva_id": "cth",
+        "zfd_sound": "/h/ + /-tr-/",
+        "form_description": "Crescent + t-gallows + h-stroke compound",
+        "stroke_count": 3,
+        "positional_behavior": {
+          "initial": 0.15,
+          "medial": 0.80,
+          "final": 0.05
+        },
+        "notes": "Common compound: ch + t-gallows"
+      },
+      {
+        "eva_id": "cph",
+        "zfd_sound": "/h/ + /-pl-/",
+        "form_description": "Crescent + p-gallows + h-stroke compound",
+        "stroke_count": 3,
+        "positional_behavior": {
+          "initial": 0.15,
+          "medial": 0.80,
+          "final": 0.05
+        },
+        "notes": "Less common compound"
+      },
+      {
+        "eva_id": "cfh",
+        "zfd_sound": "/h/ + /-pr-/",
+        "form_description": "Crescent + f-gallows + h-stroke compound",
+        "stroke_count": 4,
+        "positional_behavior": {
+          "initial": 0.15,
+          "medial": 0.80,
+          "final": 0.05
+        },
+        "notes": "Least common bench gallows"
+      }
+    ],
+    "special_characters": [
+      {
+        "eva_id": "@252",
+        "zfd_sound": "unknown (decorative initial)",
+        "form_description": "Large weirdo: V with underbar or sideways K, thick brushed strokes with swallowtail serifs",
+        "location": "f1r paragraph 2 initial",
+        "notes": "Possibly rubricator's mark, not part of normal script inventory"
+      },
+      {
+        "eva_id": "@253",
+        "zfd_sound": "unknown (decorative initial)",
+        "form_description": "Like @252 with additional squiggly line rising between the two horns",
+        "location": "f1r paragraph 3 initial",
+        "notes": "Possibly rubricator's mark"
+      }
+    ]
+  }
+}

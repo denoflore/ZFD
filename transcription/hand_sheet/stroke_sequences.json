@@ -1,0 +1,484 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "date": "2026-02-07",
+    "manuscript": "Beinecke MS 408 (Voynich Manuscript)",
+    "methodology": "Ductus analysis from manuscript images, cross-referenced with Glagolitic Angular Cursive source forms",
+    "direction_codes": {
+      "↓": "downstroke",
+      "↑": "upstroke",
+      "→": "rightward",
+      "←": "leftward",
+      "↻": "clockwise rotation",
+      "↺": "counterclockwise rotation",
+      "↰": "leftward curve below baseline"
+    }
+  },
+  "stroke_sequences": {
+    "vowels": {
+      "o": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↻",
+            "description": "Clockwise circle from ~11 o'clock position",
+            "start": "11 o'clock",
+            "end": "11 o'clock (closure)",
+            "type": "circle"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "left side of circle",
+        "exit_point": "right side (connects to next character or lifts)",
+        "speed_sensitivity": "low -- becomes elliptical at rapid speed",
+        "diagnostic": "Fully closed circle with NO exit tail"
+      },
+      "a": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↻→",
+            "description": "Clockwise circle flowing into rightward exit tail",
+            "start": "11 o'clock",
+            "end": "rightward tail extension",
+            "type": "circle_with_tail"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "left side of circle",
+        "exit_point": "rightward tail (connects to next character)",
+        "speed_sensitivity": "medium -- circle reduces to cursive 'a' at rapid speed",
+        "diagnostic": "Rightward connector tail present"
+      },
+      "e": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "←↓",
+            "description": "Leftward-then-downward crescent, open to the right",
+            "start": "upper right",
+            "end": "lower right",
+            "type": "crescent"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "upper right",
+        "exit_point": "lower right (connects to next character)",
+        "speed_sensitivity": "very low -- most stable character across all speeds",
+        "diagnostic": "Open crescent, never closes. Identical to 'c' in ch/sh."
+      },
+      "i": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Short downstroke within x-height",
+            "start": "top of x-height",
+            "end": "baseline",
+            "type": "minim"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "top",
+        "exit_point": "baseline (connects right or lifts)",
+        "speed_sensitivity": "high in sequences -- multiple 'i' merge into wavy line at speed",
+        "diagnostic": "Short minim, no descender. Identical to 'n' in final position."
+      },
+      "y": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓↰",
+            "description": "Downstroke through x-height continuing below baseline with leftward curve",
+            "start": "top of x-height",
+            "end": "below baseline with leftward curve",
+            "type": "minim_with_descender"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "top",
+        "exit_point": "descender tip (usually terminal/word-final)",
+        "speed_sensitivity": "medium -- descender shortens at speed",
+        "diagnostic": "Descender below baseline distinguishes from 'i'"
+      }
+    },
+    "consonants": {
+      "n": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Short downstroke, identical to 'i'",
+            "start": "top of x-height",
+            "end": "baseline",
+            "type": "minim"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "top",
+        "exit_point": "baseline",
+        "speed_sensitivity": "same as 'i'",
+        "diagnostic": "Positional: word-final minim = /n/. Visually identical to 'i'."
+      },
+      "r": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓→",
+            "description": "Downstroke with terminal rightward hook",
+            "start": "top of x-height",
+            "end": "rightward hook at baseline",
+            "type": "hooked_minim"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "top",
+        "exit_point": "rightward hook",
+        "speed_sensitivity": "medium -- hook may reduce at speed",
+        "diagnostic": "Terminal hook distinguishes from 'i'/'n'"
+      },
+      "l": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Downstroke, taller than 'i' by ~50%",
+            "start": "above x-height (~1.5x height)",
+            "end": "baseline",
+            "type": "tall_minim"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "above x-height",
+        "exit_point": "baseline",
+        "speed_sensitivity": "medium -- height difference reduces at speed",
+        "diagnostic": "Taller than 'i' but shorter than gallows"
+      },
+      "d": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↺",
+            "description": "Counterclockwise baseline loop",
+            "start": "right side",
+            "end": "top of loop",
+            "type": "loop"
+          },
+          {
+            "number": 2,
+            "direction": "↑",
+            "description": "Ascending stroke from top of loop",
+            "start": "top of loop",
+            "end": "~1.5-2x x-height",
+            "type": "ascender"
+          }
+        ],
+        "total_strokes": 2,
+        "pen_lifts": 0,
+        "entry_point": "right side of baseline loop",
+        "exit_point": "top of ascender (free) or curves back",
+        "speed_sensitivity": "medium -- loop compresses, ascender shortens",
+        "diagnostic": "Baseline loop + ascender combination. Ascender shorter than gallows."
+      },
+      "s": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "curved",
+            "description": "Curved stroke, almost always part of 'sh' cluster",
+            "start": "varies",
+            "end": "connects to following ch",
+            "type": "connector_curve"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "varies",
+        "exit_point": "flows into 'ch'",
+        "speed_sensitivity": "medium",
+        "diagnostic": "Rarely standalone; look for following 'ch' to confirm 'sh'"
+      },
+      "m": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Short stroke, word-final position",
+            "start": "top of x-height",
+            "end": "baseline",
+            "type": "minim"
+          }
+        ],
+        "total_strokes": 1,
+        "pen_lifts": 0,
+        "entry_point": "top",
+        "exit_point": "baseline",
+        "speed_sensitivity": "low",
+        "diagnostic": "Position-dependent, word-final after vowel+a/o"
+      }
+    },
+    "gallows": {
+      "k": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Vertical stem downstroke from top of ascender zone",
+            "start": "~3x x-height above baseline",
+            "end": "baseline",
+            "type": "stem"
+          },
+          {
+            "number": 2,
+            "direction": "↻",
+            "description": "Single clockwise loop at top of stem, extending RIGHT",
+            "start": "top of stem",
+            "end": "reconnects to stem below start",
+            "type": "loop_right"
+          }
+        ],
+        "total_strokes": 2,
+        "pen_lifts": 1,
+        "entry_point": "baseline from left",
+        "exit_point": "baseline to right",
+        "speed_sensitivity": "medium -- loop simplifies but right orientation preserved",
+        "diagnostic": "Single RIGHT-side loop. Distinguishes from t (LEFT-side loop).",
+        "expansion": "st/sk",
+        "glagolitic_source": "Kako tall ascender"
+      },
+      "t": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Vertical stem downstroke from top of ascender zone",
+            "start": "~3x x-height above baseline",
+            "end": "baseline",
+            "type": "stem"
+          },
+          {
+            "number": 2,
+            "direction": "↺",
+            "description": "Single counterclockwise loop at top of stem, extending LEFT",
+            "start": "top of stem",
+            "end": "reconnects to stem below start",
+            "type": "loop_left"
+          }
+        ],
+        "total_strokes": 2,
+        "pen_lifts": 1,
+        "entry_point": "baseline from left",
+        "exit_point": "baseline to right",
+        "speed_sensitivity": "medium -- loop simplifies but left orientation preserved",
+        "diagnostic": "Single LEFT-side loop. Distinguishes from k (RIGHT-side loop).",
+        "expansion": "tr/tv",
+        "glagolitic_source": "Tvrdo tall ascender"
+      },
+      "f": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Tall vertical stem, taller than k/t",
+            "start": "~3.5x x-height above baseline",
+            "end": "baseline",
+            "type": "tall_stem"
+          },
+          {
+            "number": 2,
+            "direction": "↻",
+            "description": "First loop (right side) at top of stem",
+            "start": "top of stem",
+            "end": "mid-stem",
+            "type": "loop_right_upper"
+          },
+          {
+            "number": 3,
+            "direction": "↺",
+            "description": "Second loop (left side) below first",
+            "start": "below first loop",
+            "end": "reconnects to stem",
+            "type": "loop_left_lower"
+          }
+        ],
+        "total_strokes": 3,
+        "pen_lifts": 1,
+        "entry_point": "baseline from left",
+        "exit_point": "baseline to right",
+        "speed_sensitivity": "high -- double loop may simplify to single elaborate loop",
+        "diagnostic": "DOUBLE LOOPS (right+left) and taller stem. Most complex gallows.",
+        "expansion": "pr/fr",
+        "glagolitic_source": "Frt tall ascender"
+      },
+      "p": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓",
+            "description": "Tall vertical stem, similar height to f",
+            "start": "~3.5x x-height above baseline",
+            "end": "baseline",
+            "type": "tall_stem"
+          },
+          {
+            "number": 2,
+            "direction": "↻↓",
+            "description": "Loop with forward (rightward-downward) extension",
+            "start": "top of stem",
+            "end": "reconnects to stem, with forward pennant",
+            "type": "loop_forward"
+          }
+        ],
+        "total_strokes": 2,
+        "pen_lifts": 1,
+        "entry_point": "baseline from left",
+        "exit_point": "baseline to right",
+        "speed_sensitivity": "medium",
+        "diagnostic": "Single FORWARD loop (rightward-downward). Different orientation from k/t lateral loops.",
+        "expansion": "pl/sp",
+        "glagolitic_source": "Pokoj tall ascender"
+      }
+    },
+    "operators": {
+      "qo": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↓←",
+            "description": "q-descending stroke with leftward curve",
+            "start": "above x-height",
+            "end": "below baseline",
+            "type": "descender"
+          },
+          {
+            "number": 2,
+            "direction": "↻",
+            "description": "o-circle entered directly from q-tail",
+            "start": "from q-tail continuation",
+            "end": "circle closure",
+            "type": "circle"
+          }
+        ],
+        "total_strokes": 2,
+        "pen_lifts": 0,
+        "entry_point": "word-initial",
+        "exit_point": "right side of o-circle",
+        "speed_sensitivity": "low -- qo maintains its form at all speeds",
+        "diagnostic": "Zero pen-lift construction proves single ligature unit"
+      },
+      "ch": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "←↓",
+            "description": "Crescent (c/e shape)",
+            "start": "upper right",
+            "end": "lower right, continues into h",
+            "type": "crescent"
+          },
+          {
+            "number": 2,
+            "direction": "↓",
+            "description": "h-stroke, vertical or slightly curved",
+            "start": "from crescent exit",
+            "end": "baseline",
+            "type": "h_stroke"
+          }
+        ],
+        "total_strokes": 2,
+        "pen_lifts": 0,
+        "entry_point": "upper right of crescent",
+        "exit_point": "baseline of h-stroke",
+        "speed_sensitivity": "low",
+        "diagnostic": "Continuous crescent-to-h movement with zero pen lift"
+      },
+      "sh": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "curved→",
+            "description": "s-curve leading into ch",
+            "start": "word-initial or medial",
+            "end": "connects to crescent",
+            "type": "s_curve"
+          },
+          {
+            "number": 2,
+            "direction": "←↓",
+            "description": "Crescent (same as ch)",
+            "start": "from s-curve",
+            "end": "lower right, continues into h",
+            "type": "crescent"
+          },
+          {
+            "number": 3,
+            "direction": "↓",
+            "description": "h-stroke",
+            "start": "from crescent",
+            "end": "baseline",
+            "type": "h_stroke"
+          }
+        ],
+        "total_strokes": 3,
+        "pen_lifts": 0,
+        "entry_point": "s-curve start",
+        "exit_point": "baseline of h-stroke",
+        "speed_sensitivity": "medium -- s may merge with crescent at speed",
+        "diagnostic": "Three-component unit with zero pen lifts"
+      }
+    },
+    "ligature_units": {
+      "aiin": {
+        "strokes": [
+          {
+            "number": 1,
+            "direction": "↻→",
+            "description": "a-circle with rightward tail",
+            "start": "circle start",
+            "end": "tail connects to first minim",
+            "type": "circle_with_tail"
+          },
+          {
+            "number": 2,
+            "direction": "↓",
+            "description": "First connected minim",
+            "start": "from a-tail",
+            "end": "baseline (connects to next minim)",
+            "type": "connected_minim"
+          },
+          {
+            "number": 3,
+            "direction": "↓",
+            "description": "Second connected minim",
+            "start": "from first minim baseline connection",
+            "end": "baseline (connects to third minim)",
+            "type": "connected_minim"
+          },
+          {
+            "number": 4,
+            "direction": "↓",
+            "description": "Third minim (= final n)",
+            "start": "from second minim baseline connection",
+            "end": "baseline (terminal)",
+            "type": "connected_minim"
+          }
+        ],
+        "total_strokes": 4,
+        "pen_lifts": 0,
+        "entry_point": "a-circle",
+        "exit_point": "baseline of final minim",
+        "speed_sensitivity": "high -- minims merge into wavy pattern at speed",
+        "diagnostic": "ZERO PEN LIFTS across all four components. This is a SINGLE GRAPHIC UNIT.",
+        "zfd_value": "-ain (substance/thing suffix)"
+      }
+    }
+  }
+}
