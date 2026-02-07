@@ -1,4 +1,24 @@
 # Changelog
+
+## v4.2.0 - February 7, 2026 (Paper v2.0 Full Rebuild)
+
+### Added
+- ZFD_COMPLETE_PAPER v2.0: Complete rebuild incorporating all validation work through February 2026
+- New sections: Blind Decode Falsification Tests (v1.0/v1.1/v2, 1500 decodes)
+- New sections: External Economic Validation (V27 Triple Provenance Lock, 60 commodity terms)
+- New sections: 961K-word Corpus Comparison (8 corpora, suffix concentration analysis)
+- New sections: Temporal and Register Analysis (Italian loanword dating, extended jat audit)
+- New sections: 15th Century Croatian Proof Kit (5 constraint layers)
+- New sections: 91 Procedural Terms / Antidotarium Match
+- Expanded: Validation Source Inventory (14 independent sources)
+- Expanded: Falsification criteria (8 testable conditions, all passed)
+- Supplementary materials S9-S12 added to index
+
+### Changed
+- Provenance language aligned with README v4.1.3 (Ragusan pharmaceutical community, Franciscan as prime candidate)
+- Adversarial validation section updated with full 8-turn summary
+- References expanded with V27 source citation
+- Paper now 27 pages, 6741 words (vs v1.0: 24 pages, 6337 words)
 ## v4.1.3 - February 7, 2026 (Provenance Generalization)
 
 ### Changed
