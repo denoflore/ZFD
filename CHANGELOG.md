@@ -1,4 +1,18 @@
 # Changelog
+## v4.1.3 - February 7, 2026 (Provenance Generalization)
+
+### Changed
+- **README.md: Broadened provenance attribution from Franciscan-specific to Republic of Ragusa pharmaceutical community**
+  - Franciscan Pharmacy (Ljekarna Male Braće) remains prime candidate institution
+  - Added V27-documented speciarii (independent apothecaries) and medicus as alternative candidates
+  - Origin now attributed to "pharmaceutical community of the Republic of Ragusa" rather than "Franciscan friary"
+  - Chain of custody departure header: "Departure from Dubrovnik" -> "Departure from Ragusa"
+  - All ingredient tables, recipe matches, and Ljekarna comparisons preserved as primary evidence
+  - Fixed Ljekarna spelling (Braće)
+  - Rationale: V27 records confirm multiple pharmaceutical operations in Ragusa; overclaiming a single institution weakens the defensible position that the manuscript is Ragusan
+
+---
+
 ## v4.1.2 - February 6, 2026 (V27 Triple Provenance Lock)
 
 ### Added
