@@ -1,0 +1,41 @@
+{
+  "folio": "f88r",
+  "section": "pharmaceutical",
+  "quire": "O (Rene) / XV (Beinecke)",
+  "bifolio": "bO2 = f88+f89",
+  "currier_language": "A",
+  "currier_hand": "4",
+  "rene_subset": "P",
+  "stolfi_subset": "pha",
+  "iiif_id": "1037112",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg",
+  "condition": "Good overall. Three horizontal registers of illustrations with text blocks between. Minor ink fading in lower portions. Colors well-preserved (red, green, brown).",
+  "layout": {
+    "registers": 3,
+    "top_register": {
+      "labels": 6,
+      "plants": 5,
+      "text_block": "P1 (5 lines)",
+      "container_illustrations": 1
+    },
+    "middle_register": {
+      "labels": 6,
+      "plants": 5,
+      "text_block": "P2 (5 lines)",
+      "container_illustrations": 1
+    },
+    "bottom_register": {
+      "labels": 3,
+      "plants": 2,
+      "text_block": "P3 (6 lines)",
+      "container_illustrations": 1
+    }
+  },
+  "validation_status": {
+    "curio_validated_labels": ["okol (ostol = bone oil)", "otorchety (otrorhetri = treated heated fluid)"],
+    "spatial_correlation": "Labels spatially correlated with pharmaceutical apparatus components",
+    "gold_standard": true
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from manuscript image using 7-layer constraint stack"
+}

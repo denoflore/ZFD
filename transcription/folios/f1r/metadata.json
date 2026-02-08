@@ -1,0 +1,59 @@
+{
+  "folio": "f1r",
+  "section": "text_only",
+  "section_notes": "Opening/title page of the manuscript. Classified as text-only despite containing a small plant illustration with green/tan leaves in the middle area. Part of Herbal Section A (f1r-f57v).",
+  "quire": "A (Rene) / I (Beinecke)",
+  "bifolio": "bA1 = f1+f8",
+  "currier_language": "A",
+  "currier_hand": "1",
+  "rene_subset": "H",
+  "stolfi_subset": "ha",
+  "iiif_id": "1006076",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006076/full/full/0/default.jpg",
+  "condition": "Excellent. This is the most carefully written folio in the manuscript. Brown ink on vellum with good contrast. Maximum deliberation in letterform construction, clearest word boundaries of any folio. Baseline extremely consistent. Two decorative initials (@252, @253) in heavier red/brown ink. Minor age-related darkening at edges. Colors in plant illustration (green, tan) well-preserved.",
+  "layout": {
+    "type": "paragraph_with_titles",
+    "paragraphs": 4,
+    "paragraph_1": {
+      "lines": "4.6",
+      "line_range": "L1-L5",
+      "title_line": "L6",
+      "special_features": "No decorative initial"
+    },
+    "paragraph_2": {
+      "lines": "2.4",
+      "line_range": "L7-L9",
+      "title_line": "L10",
+      "special_features": "Large decorative weirdo initial @252 at paragraph start"
+    },
+    "paragraph_3": {
+      "lines": "9.5",
+      "line_range": "L11-L20",
+      "title_line": "L21",
+      "special_features": "Large decorative weirdo initial @253 at paragraph start"
+    },
+    "paragraph_4": {
+      "lines": "5.5",
+      "line_range": "L22-L27",
+      "title_line": "L28",
+      "special_features": "No decorative initial"
+    },
+    "title_lines": "Right-justified short lines after each paragraph, unique to f1r. Possibly section headings, table of contents entries, or summary labels.",
+    "illustration": "Small plant illustration with green and tan leaves in the middle area, between paragraphs 2 and 3. Standard herbal-section botanical rendering style."
+  },
+  "decorative_initials": {
+    "@252": "V-shape with underbar or sideways-K form. Thick red/brown brushed strokes with swallowtail serifs. Begins paragraph 2. NOT part of normal script inventory -- likely a rubricator mark or decorative initial by a different hand or instrument.",
+    "@253": "Similar to @252 but with an additional squiggly ascending line between the two horns. Same thick red/brown strokes and swallowtail serifs. Begins paragraph 3."
+  },
+  "validation_status": {
+    "key_readings": [
+      "ostol (from EVA okol, L24) = bone oil -- matches gold-standard validation from f88r",
+      "stol (from EVA kol, L15) = bone-oil -- consistent with ostol validation",
+      "dain (from EVA daiin, multiple lines) = given/substance -- high-frequency confirmed morpheme"
+    ],
+    "spatial_correlation": "Limited spatial correlation possible (text-dominant page with minimal illustration). Paragraph-title structure may encode document organization.",
+    "gold_standard": false
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from manuscript image using 7-layer constraint stack. EVA source: Takahashi (H=Hermes, primary)."
+}

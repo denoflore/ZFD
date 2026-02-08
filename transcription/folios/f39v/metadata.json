@@ -1,0 +1,16 @@
+{
+  "folio": "f39v",
+  "section": "herbal",
+  "quire": "E (Rene) / V (Beinecke)",
+  "currier_language": "A",
+  "currier_hand": "1",
+  "iiif_id": "1006151",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006151/full/full/0/default.jpg",
+  "condition": "Standard herbal folio with plant illustration and text.",
+  "layout": {
+    "type": "herbal_single_plant",
+    "text_lines": 14
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading using ZFD 7-layer constraint stack with automated parsing"
+}

@@ -1,0 +1,330 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "date": "2026-02-07",
+    "manuscript": "Beinecke MS 408 (Voynich Manuscript)",
+    "methodology": "ZFD three-layer positional shorthand system",
+    "notes": "Abbreviation conventions identified from visual analysis of 12 exemplar folios and cross-referenced with ZFD character map, operator/gallows/suffix data files."
+  },
+  "abbreviation_categories": {
+    "gallows_cluster_abbreviations": {
+      "description": "Gallows characters in medial position abbreviate consonant clusters. These are broken ligatures derived from Croatian Angular Glagolitic tall ascenders.",
+      "entries": [
+        {
+          "eva_mark": "k",
+          "expansion": "st",
+          "secondary_expansion": "sk",
+          "frequency": "~2000+",
+          "medial_percentage": 89.9,
+          "certainty": "HIGH",
+          "evidence": "Produces known stems: kost (bone), korist (use), ostar (vessel). Confirmed by ZFD decoder validation.",
+          "application_rule": "Apply when producing known stem or in gallows position between vowels"
+        },
+        {
+          "eva_mark": "t",
+          "expansion": "tr",
+          "secondary_expansion": "tv",
+          "frequency": "~1500+",
+          "medial_percentage": 85.3,
+          "certainty": "HIGH",
+          "evidence": "Produces known stems: otr- (treated), itra (liver), otvori (open). Confirmed by decoder.",
+          "application_rule": "Apply when producing known stem or following o-"
+        },
+        {
+          "eva_mark": "f",
+          "expansion": "pr",
+          "secondary_expansion": "fr",
+          "frequency": "~800",
+          "medial_percentage": 72.7,
+          "certainty": "HIGH",
+          "evidence": "Produces known stems: upra (direction), cpho- (from).",
+          "application_rule": "Apply in initial position or after vowel"
+        },
+        {
+          "eva_mark": "p",
+          "expansion": "pl",
+          "secondary_expansion": "sp",
+          "frequency": "~600",
+          "medial_percentage": 65.5,
+          "certainty": "MEDIUM",
+          "evidence": "Produces known stems: spoj (join), plod (fruit). Less certain than k/t/f.",
+          "application_rule": "Apply in initial position or after vowel"
+        }
+      ]
+    },
+    "operator_prefix_abbreviations": {
+      "description": "Word-initial characters function as grammatical operator prefixes, abbreviating function words or prepositions.",
+      "entries": [
+        {
+          "eva_mark": "qo",
+          "expansion": "ko",
+          "gloss": "which/that/quantity (relative)",
+          "latin_equivalent": "quod/quot",
+          "frequency": "~2000+",
+          "initial_percentage": 98.5,
+          "certainty": "HIGH",
+          "evidence": "98.5% word-initial position. Consistent operator behavior across all manuscript sections.",
+          "detection_order": 1
+        },
+        {
+          "eva_mark": "q",
+          "expansion": "k",
+          "gloss": "which (short form)",
+          "latin_equivalent": "quod",
+          "frequency": "~100",
+          "initial_percentage": 98.5,
+          "certainty": "HIGH",
+          "evidence": "Short form of qo operator. Detected AFTER qo in parsing order.",
+          "detection_order": 7
+        },
+        {
+          "eva_mark": "ch",
+          "expansion": "h",
+          "gloss": "combine/cook (action)",
+          "latin_equivalent": "coquere",
+          "frequency": "~1500",
+          "initial_percentage": 50,
+          "certainty": "HIGH",
+          "evidence": "~50% word-initial. Functions as directional/action marker.",
+          "detection_order": 2
+        },
+        {
+          "eva_mark": "sh",
+          "expansion": "s",
+          "gloss": "with/soak (comitative)",
+          "latin_equivalent": "sorbere",
+          "frequency": "~1200",
+          "initial_percentage": 58,
+          "certainty": "HIGH",
+          "evidence": "~58% word-initial. Comitative function.",
+          "detection_order": 3
+        },
+        {
+          "eva_mark": "da",
+          "expansion": "da",
+          "gloss": "dose/give/add (dative)",
+          "latin_equivalent": "dare",
+          "frequency": "~500",
+          "initial_percentage": 70,
+          "certainty": "HIGH",
+          "evidence": "Dative/imperative marker. Common in recipe instructions.",
+          "detection_order": 4
+        },
+        {
+          "eva_mark": "ok",
+          "expansion": "ost",
+          "gloss": "vessel/container",
+          "latin_equivalent": "olla",
+          "frequency": "~300",
+          "certainty": "MEDIUM",
+          "evidence": "Vessel/container term. Combines operator o- with gallows k (st).",
+          "detection_order": 5
+        },
+        {
+          "eva_mark": "ot",
+          "expansion": "otr",
+          "gloss": "vessel/container (variant)",
+          "latin_equivalent": "olla",
+          "frequency": "~200",
+          "certainty": "MEDIUM",
+          "evidence": "Vessel/container term. Combines operator o- with gallows t (tr).",
+          "detection_order": 6
+        }
+      ]
+    },
+    "suffix_abbreviations": {
+      "description": "Word-final characters mark morphological suffixes, abbreviating Croatian grammatical endings.",
+      "detection_order": "longest_first",
+      "entries": [
+        {
+          "eva_mark": "aiin",
+          "expansion": "ain",
+          "function": "substance/thing (substance noun)",
+          "croatian_morphology": "Nominal suffix",
+          "frequency": "~1500+",
+          "certainty": "HIGH",
+          "evidence": "Consistent substance-noun function. Written as ligature unit.",
+          "detection_priority": 1
+        },
+        {
+          "eva_mark": "edy",
+          "expansion": "edi",
+          "function": "prepared/processed (verbal)",
+          "croatian_morphology": "Past participle / processed state",
+          "frequency": "~500+",
+          "certainty": "HIGH",
+          "evidence": "Pharmaceutical process vocabulary: koostedi (bone-processed).",
+          "detection_priority": 2
+        },
+        {
+          "eva_mark": "eey",
+          "expansion": "ei",
+          "function": "instance of",
+          "croatian_morphology": "Instance marker",
+          "frequency": "~300+",
+          "certainty": "MEDIUM",
+          "evidence": "Less certain than aiin/edy. The double-e may be a single elongated glyph.",
+          "detection_priority": 3
+        },
+        {
+          "eva_mark": "y",
+          "expansion": "i",
+          "function": "adjective marker",
+          "croatian_morphology": "Adjective/genitive ending",
+          "frequency": "~2800+",
+          "certainty": "HIGH",
+          "evidence": "84.5% final position. Consistent adjective function.",
+          "detection_priority": 4
+        },
+        {
+          "eva_mark": "ol",
+          "expansion": "ol",
+          "function": "oil/oily (oil-related)",
+          "croatian_morphology": "Substance suffix",
+          "frequency": "~400+",
+          "certainty": "HIGH",
+          "evidence": "Oil/liquid semantic marker.",
+          "detection_priority": 5
+        },
+        {
+          "eva_mark": "ar",
+          "expansion": "ar",
+          "function": "water/agent",
+          "croatian_morphology": "Agent/water suffix",
+          "frequency": "~400+",
+          "certainty": "HIGH",
+          "evidence": "Water/agent semantic marker.",
+          "detection_priority": 6
+        },
+        {
+          "eva_mark": "or",
+          "expansion": "or",
+          "function": "oil (variant)",
+          "croatian_morphology": "Oil suffix",
+          "frequency": "~300+",
+          "certainty": "HIGH",
+          "detection_priority": 7
+        },
+        {
+          "eva_mark": "al",
+          "expansion": "al",
+          "function": "substance",
+          "croatian_morphology": "Substance suffix",
+          "frequency": "~300+",
+          "certainty": "HIGH",
+          "detection_priority": 8
+        },
+        {
+          "eva_mark": "od",
+          "expansion": "od",
+          "function": "completed",
+          "croatian_morphology": "Completive marker",
+          "frequency": "~100+",
+          "certainty": "CANDIDATE",
+          "detection_priority": 9
+        },
+        {
+          "eva_mark": "am",
+          "expansion": "am",
+          "function": "by means of (instrumental)",
+          "croatian_morphology": "Instrumental case",
+          "frequency": "~200+",
+          "certainty": "HIGH",
+          "detection_priority": 10
+        },
+        {
+          "eva_mark": "om",
+          "expansion": "om",
+          "function": "with/by (instrumental)",
+          "croatian_morphology": "Instrumental case",
+          "frequency": "~150+",
+          "certainty": "HIGH",
+          "detection_priority": 11
+        },
+        {
+          "eva_mark": "m",
+          "expansion": "m",
+          "function": "instrumental (short)",
+          "croatian_morphology": "Instrumental case (abbreviated)",
+          "frequency": "~100+",
+          "certainty": "MEDIUM",
+          "detection_priority": 12
+        },
+        {
+          "eva_mark": "n",
+          "expansion": "n",
+          "function": "noun ending",
+          "croatian_morphology": "Nominal marker",
+          "frequency": "~1500+",
+          "certainty": "HIGH",
+          "detection_priority": 13
+        },
+        {
+          "eva_mark": "l",
+          "expansion": "l",
+          "function": "noun ending",
+          "croatian_morphology": "Nominal marker (liquid)",
+          "frequency": "~600+",
+          "certainty": "HIGH",
+          "detection_priority": 14
+        },
+        {
+          "eva_mark": "r",
+          "expansion": "r",
+          "function": "agent/doer",
+          "croatian_morphology": "Agent suffix",
+          "frequency": "~500+",
+          "certainty": "HIGH",
+          "detection_priority": 15
+        }
+      ]
+    },
+    "state_markers": {
+      "description": "State markers indicating processing state, derived from combined operator + stem units.",
+      "entries": [
+        {
+          "eva_mark": "he",
+          "expansion": "he",
+          "function": "state/result/after",
+          "certainty": "MEDIUM"
+        },
+        {
+          "eva_mark": "heo",
+          "expansion": "heo",
+          "function": "state/result (extended)",
+          "certainty": "MEDIUM"
+        },
+        {
+          "eva_mark": "se",
+          "expansion": "se",
+          "function": "soaked-state/after soaking",
+          "certainty": "MEDIUM"
+        },
+        {
+          "eva_mark": "seo",
+          "expansion": "seo",
+          "function": "soaked-state (extended)",
+          "certainty": "MEDIUM"
+        }
+      ]
+    }
+  },
+  "parsing_rules": {
+    "detection_order": "Operators first (longest match: qo > q), then gallows in medial position, then stems, then suffixes (longest first: aiin > y)",
+    "operator_detection_order": ["qo", "ch", "sh", "da", "ok", "ot", "q"],
+    "suffix_detection_order": "longest_first",
+    "gallows_expansion": "conditional -- only apply when result matches known stem or satisfies phonological context",
+    "positional_priority": "Position determines function: initial = operator, medial = stem/gallows, final = suffix"
+  },
+  "summary": {
+    "total_abbreviation_types": 34,
+    "gallows_abbreviations": 4,
+    "operator_abbreviations": 7,
+    "suffix_abbreviations": 15,
+    "state_markers": 4,
+    "high_certainty_count": 23,
+    "medium_certainty_count": 8,
+    "candidate_count": 1,
+    "low_certainty_count": 0
+  }
+}

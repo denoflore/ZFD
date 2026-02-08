@@ -1,0 +1,29 @@
+{
+  "folio": "f5r",
+  "section": "herbal",
+  "quire": "A (Rene) / I (Beinecke)",
+  "bifolio": "bA4 = f4+f5",
+  "currier_language": "A",
+  "currier_hand": "1",
+  "rene_subset": "H",
+  "iiif_id": "1006084",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006084/full/full/0/default.jpg",
+  "condition": "Herbal page. Standard herbal-section layout with plant illustration and surrounding text.",
+  "layout": {
+    "type": "herbal",
+    "total_lines": 7,
+    "description": "Herbal page with plant illustration and text wrapping around it. Seven lines of text, single text block."
+  },
+  "validation_status": {
+    "key_readings": [
+      "otrol (from EVA otol, L2) = treat-oil -- ot->otr operator + ol suffix",
+      "kostain (from EVA qokaiin, L2) = which-bone-substance -- qo->ko + k->st + aiin->ain",
+      "dain (from EVA daiin, L5/L7) = given/substance -- high-frequency confirmed morpheme",
+      "hohtri (from EVA chocthy, L4) = cook-cook-treat-adj -- matches f1r L8 validated compound"
+    ],
+    "spatial_correlation": "Herbal page with plant illustration. Text likely describes plant preparation.",
+    "gold_standard": false
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from manuscript image using 7-layer constraint stack. EVA source: Takahashi (H=Hermes, primary)."
+}

@@ -1,0 +1,48 @@
+{
+  "folio": "f71r",
+  "section": "zodiac",
+  "section_detail": "Aries light",
+  "quire": "L (Rene) / X (Beinecke)",
+  "currier_language": "?",
+  "currier_hand": "?",
+  "iiif_id": "1006202",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006202/full/full/0/default.jpg",
+  "condition": "Circular zodiac diagram. Six concentric circles forming three narrow bands. Colors present. Text in circular rings readable with minor uncertainty marks in EVA transcription.",
+  "layout": {
+    "type": "circular_diagram",
+    "concentric_circles": 6,
+    "bands": 3,
+    "center": {
+      "illustration": "Goat-like animal nibbling at a bush, standing on scalloped ground",
+      "non_voynich_text": "ab*i*l (non-Voynich word below animal)"
+    },
+    "outer_band": {
+      "nymphs": 10,
+      "description": "10 nymphs in barrels, each with a star/flower and a label",
+      "labels": ["L2", "L3", "L4", "L5", "L6", "L7", "L8", "L9", "L10", "L11"]
+    },
+    "inner_band": {
+      "nymphs": 5,
+      "description": "5 nymphs in barrels, each with a star/flower and a label",
+      "labels": ["L13", "L14", "L15", "L16", "L17"]
+    },
+    "text_rings": {
+      "outer_ring": "L1 -- continuous circular text",
+      "middle_ring": "L12 -- continuous circular text (with gap at end)",
+      "inner_ring": "L18 -- continuous circular text"
+    }
+  },
+  "line_count": 18,
+  "label_count": 15,
+  "ring_text_count": 3,
+  "validation_status": {
+    "notable_readings": [
+      "!!okol in L12 may be 'ostol' (bone oil) -- same as validated f88r label",
+      "Zodiac vocabulary expected to differ from pharmaceutical sections"
+    ],
+    "spatial_correlation": "Labels spatially correlated with nymph positions around zodiac circle; clock positions noted",
+    "gold_standard": false
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from manuscript image using 7-layer constraint stack. EVA (Hermes) transcription used as reference crosswalk."
+}

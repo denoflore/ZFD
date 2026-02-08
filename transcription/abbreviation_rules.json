@@ -1,0 +1,134 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "date": "2026-02-07",
+    "description": "Machine-readable abbreviation rules for automated Voynich-to-Croatian transcription pipeline",
+    "methodology": "ZFD three-layer positional shorthand system",
+    "source": "Derived from Phases 1-4 analysis"
+  },
+  "parsing_pipeline": {
+    "step_order": ["operator_detection", "suffix_detection", "gallows_expansion", "direct_mapping", "validation"],
+    "operator_detection": {
+      "position": "word_initial",
+      "match_strategy": "longest_first",
+      "detection_order": ["qo", "ch", "sh", "da", "ok", "ot", "q"],
+      "rules": [
+        {"eva": "qo", "croatian": "ko", "gloss": "which/that/quantity", "certainty": "HIGH"},
+        {"eva": "ch", "croatian": "h", "gloss": "combine/cook/action", "certainty": "HIGH"},
+        {"eva": "sh", "croatian": "s", "gloss": "with/soak", "certainty": "HIGH"},
+        {"eva": "da", "croatian": "da", "gloss": "dose/give/add", "certainty": "HIGH"},
+        {"eva": "ok", "croatian": "ost", "gloss": "vessel/container", "certainty": "MEDIUM"},
+        {"eva": "ot", "croatian": "otr", "gloss": "vessel/treated", "certainty": "MEDIUM"},
+        {"eva": "q", "croatian": "k", "gloss": "which (short)", "certainty": "HIGH"}
+      ],
+      "notes": "q must be checked LAST to avoid splitting qo into q+o. Not every initial o/d is an operator; check if operator reading produces known vocabulary."
+    },
+    "suffix_detection": {
+      "position": "word_final",
+      "match_strategy": "longest_first",
+      "rules": [
+        {"eva": "aiin", "croatian": "ain", "function": "substance_noun", "certainty": "HIGH", "priority": 1},
+        {"eva": "aiiin", "croatian": "ain", "function": "substance_noun_extended", "certainty": "HIGH", "priority": 1},
+        {"eva": "edy", "croatian": "edi", "function": "processed_verbal", "certainty": "HIGH", "priority": 2},
+        {"eva": "eey", "croatian": "ei", "function": "instance", "certainty": "MEDIUM", "priority": 3},
+        {"eva": "y", "croatian": "i", "function": "adjective", "certainty": "HIGH", "priority": 4},
+        {"eva": "ol", "croatian": "ol", "function": "oil_related", "certainty": "HIGH", "priority": 5},
+        {"eva": "ar", "croatian": "ar", "function": "water_agent", "certainty": "HIGH", "priority": 6},
+        {"eva": "or", "croatian": "or", "function": "oil_variant", "certainty": "HIGH", "priority": 7},
+        {"eva": "al", "croatian": "al", "function": "substance", "certainty": "HIGH", "priority": 8},
+        {"eva": "od", "croatian": "od", "function": "completed", "certainty": "CANDIDATE", "priority": 9},
+        {"eva": "am", "croatian": "am", "function": "instrumental", "certainty": "HIGH", "priority": 10},
+        {"eva": "om", "croatian": "om", "function": "instrumental", "certainty": "HIGH", "priority": 11},
+        {"eva": "n", "croatian": "n", "function": "noun_ending", "certainty": "HIGH", "priority": 12},
+        {"eva": "l", "croatian": "l", "function": "noun_ending", "certainty": "HIGH", "priority": 13},
+        {"eva": "r", "croatian": "r", "function": "agent", "certainty": "HIGH", "priority": 14},
+        {"eva": "m", "croatian": "m", "function": "instrumental_short", "certainty": "MEDIUM", "priority": 15}
+      ]
+    },
+    "gallows_expansion": {
+      "position": "word_medial",
+      "match_strategy": "conditional",
+      "rules": [
+        {
+          "eva": "k",
+          "primary": "st",
+          "secondary": "sk",
+          "certainty": "HIGH",
+          "condition": "Apply when producing known stem or in standard gallows position between vowels",
+          "medial_percentage": 89.9
+        },
+        {
+          "eva": "t",
+          "primary": "tr",
+          "secondary": "tv",
+          "certainty": "HIGH",
+          "condition": "Apply when producing known stem or following o-",
+          "medial_percentage": 85.3
+        },
+        {
+          "eva": "f",
+          "primary": "pr",
+          "secondary": "fr",
+          "certainty": "HIGH",
+          "condition": "Apply in initial position or after vowel",
+          "medial_percentage": 72.7
+        },
+        {
+          "eva": "p",
+          "primary": "pl",
+          "secondary": "sp",
+          "certainty": "MEDIUM",
+          "condition": "Apply in initial position or after vowel",
+          "medial_percentage": 65.5
+        }
+      ],
+      "bench_gallows": [
+        {"eva": "cth", "expansion": "htr", "certainty": "HIGH"},
+        {"eva": "ckh", "expansion": "hst", "certainty": "HIGH"},
+        {"eva": "cph", "expansion": "hpl", "certainty": "HIGH"},
+        {"eva": "cfh", "expansion": "hpr", "certainty": "MEDIUM"}
+      ]
+    },
+    "direct_mapping": {
+      "vowels": {
+        "o": "o", "a": "a", "e": "e", "i": "i"
+      },
+      "consonants": {
+        "r": "r", "l": "l", "d": "d", "n": "n", "s": "s", "m": "m"
+      },
+      "notes": "i and n are visually identical; position determines reading (medial=i, final=n)"
+    },
+    "validation": {
+      "lexicon_file": "zfd_decoder/data/unified_lexicon_v2.json",
+      "checks": [
+        "Result matches known stem in unified_lexicon_v2",
+        "Result satisfies Croatian phonotactic constraints",
+        "Result is plausible in pharmaceutical/botanical genre context",
+        "Operator + stem + suffix structure is morphologically valid"
+      ]
+    }
+  },
+  "ligature_units": {
+    "description": "Character sequences that should be parsed as single units, not decomposed",
+    "units": [
+      {"eva": "qo", "value": "ko", "type": "operator"},
+      {"eva": "ch", "value": "h", "type": "operator"},
+      {"eva": "sh", "value": "sh", "type": "operator"},
+      {"eva": "aiin", "value": "ain", "type": "suffix"},
+      {"eva": "aiiin", "value": "ain", "type": "suffix"}
+    ]
+  },
+  "state_markers": [
+    {"eva": "he", "value": "he", "function": "state/result"},
+    {"eva": "heo", "value": "heo", "function": "state/result extended"},
+    {"eva": "se", "value": "se", "function": "soaked state"},
+    {"eva": "seo", "value": "seo", "function": "soaked state extended"}
+  ],
+  "latin_terms": [
+    {"eva_pattern": "ost", "latin": "os (bone)", "certainty": "HIGH"},
+    {"eva_pattern": "oral", "latin": "oralis (by mouth)", "certainty": "HIGH"},
+    {"eva_pattern": "dol", "latin": "dolor (pain)", "certainty": "MEDIUM"},
+    {"eva_pattern": "sal", "latin": "sal (salt)", "certainty": "HIGH"},
+    {"eva_pattern": "ana", "latin": "ana (equal parts)", "certainty": "MEDIUM"}
+  ]
+}

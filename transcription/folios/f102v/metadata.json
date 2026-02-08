@@ -1,0 +1,52 @@
+{
+  "folio": "f102v2",
+  "section": "pharmaceutical",
+  "quire": "Unknown (six-panel fold-out)",
+  "bifolio": "Part of six-panel fold-out containing f102v2",
+  "currier_language": "A",
+  "currier_hand": "?",
+  "rene_subset": "P",
+  "stolfi_subset": "pha",
+  "iiif_id": "1006253",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006253/full/full/0/default.jpg",
+  "condition": "Six-panel fold-out folio. Two text blocks, three rows of plant illustrations with labels. Some labels faded (L9, L16, L25, L29). Transcriber uncertainty marks (!, !!, ?) present on multiple lines.",
+  "layout": {
+    "type": "six-panel fold-out",
+    "text_blocks": 2,
+    "plant_rows": 3,
+    "container_labels": {
+      "top_container_top": "L1",
+      "top_container_bottom": "L2",
+      "bottom_container": "L24"
+    },
+    "row_1_plants": {
+      "labels": "L3-L9",
+      "count": 7,
+      "description": "Heart-shaped leaf, oblong three-lobed leaf, wing-shaped leaf, cube root, short wing-shaped leaf, spatula leaf, oblong many-fingered leaf"
+    },
+    "row_2_plants": {
+      "labels": "L10-L16",
+      "count": 7,
+      "description": "Wrapped candy flower, comb-shaped leaf, comb-shaped leaf with claws, pine-like leaves, clubsuit-shaped fingers, round leaf with knob-shaped fingers, cypress-like plant with chestnut tuber"
+    },
+    "row_3_plants": {
+      "labels": "L25-L29",
+      "count": 5,
+      "description": "Small root, dark roots, carrot plant, round serrated leaf, faded label"
+    },
+    "text_block_1": "L17-L23 (7 lines)",
+    "text_block_2": "L30-L38 (9 lines)"
+  },
+  "notable_readings": {
+    "orolaly": "Confirmed Latin pharmaceutical term meaning 'orally', found in L37 region (EVA: okeo.r!oly)",
+    "dol": "Possible Latin 'dolor' (pain), found in L20",
+    "sal": "Latin 'salt', found in L34"
+  },
+  "validation_status": {
+    "confirmed_terms": ["orolaly (orally, Latin pharmaceutical)", "sal (salt)", "dol (possibly dolor/pain)"],
+    "spatial_correlation": "Labels spatially correlated with plant and container illustrations",
+    "gold_standard": false
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from manuscript image using 7-layer constraint stack"
+}

@@ -1,0 +1,51 @@
+{
+  "folio": "f2r",
+  "section": "herbal",
+  "quire": "A (Rene) / I (Beinecke)",
+  "bifolio": "bA2 = f2+f7",
+  "currier_language": "A",
+  "currier_hand": "1",
+  "rene_subset": "H",
+  "stolfi_subset": "hea",
+  "iiif_id": "1006078",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006078/full/full/0/default.jpg",
+  "condition": "Good overall. Single plant centered on page. Colors (green, red) present. Dark overpaint on root and leaves. Ink legible throughout; minor ambiguity at line ends (L2, L4) flagged by transcribers with '!' marks.",
+  "layout": {
+    "description": "One plant centered on page. Text wraps around the plant in two paragraphs, left- and right-justified.",
+    "plant": {
+      "root": "Left-right symmetrical, planar, like a headless stick figure with outstretched arms. Dark overpaint.",
+      "stem": "Short and thin.",
+      "branches": "Two main branches, almost upright, slightly bent. Irregular thickness. Light-colored with a dark vein along the middle.",
+      "leaves": "Dark overpaint, shaped like a triangular fan with five lanceolated fingers. Medium-length stalk.",
+      "flowers": "Three, on tip of main branch. Longish stalk. Chalyx: oblong oval swelling. Petals: many, narrow and long (shaving-brush shape)."
+    },
+    "paragraphs": {
+      "P1": {
+        "lines": "L1-L7",
+        "position": "Top of page, slightly narrower",
+        "interruption": "Interrupted by three flowers"
+      },
+      "P2": {
+        "lines": "L8-L13",
+        "position": "Near bottom of page",
+        "interruption": "Interrupted by two branches"
+      }
+    },
+    "label": {
+      "line": "L14",
+      "position": "On plant body",
+      "eva_source": "U (Stolfi from scanned image)"
+    }
+  },
+  "petersen_identification": {
+    "plant_number": 2,
+    "tentative_id": "Cyanus segetum (cornflower, Centaurea cyanus)",
+    "confidence": "Tentative. Flower shape and branching match, but leaves of Centaurea cyanus are long/thin with smooth edges, unlike the fan-shaped leaves on f2r.",
+    "historical_use": "Infusions of Centaurea cyanus were used as a febrifuge (whole plant) and eye wash (flowers only)."
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from EVA transcription (H=Hermes primary, cross-checked with C and F) using ZFD 7-layer constraint stack.",
+  "total_lines": 14,
+  "total_words_eva": 73,
+  "plant_text_breaks": 18
+}

@@ -1,0 +1,34 @@
+{
+  "folio": "f5v",
+  "section": "herbal",
+  "quire": "A (Rene) / I (Beinecke)",
+  "bifolio": "bA4 = f4+f5",
+  "currier_language": "A",
+  "currier_hand": "1",
+  "rene_subset": "H",
+  "iiif_id": "1006085",
+  "iiif_url": "https://collections.library.yale.edu/iiif/2/1006085/full/full/0/default.jpg",
+  "condition": "Herbal page. Standard herbal-section layout with plant illustration and surrounding text.",
+  "layout": {
+    "type": "herbal",
+    "total_lines": 6,
+    "description": "Herbal page with plant illustration and text wrapping around it. Six lines of text, single text block."
+  },
+  "validation_status": {
+    "key_readings": [
+      "otrol (from EVA otol, L4 and L6) = treat-oil -- ot->otr operator + ol suffix, appears twice",
+      "dain (from EVA daiin, L1/L3/L4/L5) = given/substance -- high-frequency confirmed morpheme",
+      "hotrain (from EVA chotaiin, L5) = cook-treat-substance -- ch->h + t->tr + aiin->ain",
+      "otrhol (from EVA otchol, L5) = treat-cook-oil -- ot->otr + ch->h + ol suffix"
+    ],
+    "spatial_correlation": "Herbal page with plant illustration. Text likely describes plant preparation.",
+    "gold_standard": false,
+    "notable_anomalies": [
+      "otrol appears in both L4 and L6 -- repeated treated-oil reference anchors both lines",
+      "dairodg (L6) and ihoplor[?]dg (L2) contain unusual dg terminal sequences not seen elsewhere",
+      "Special glyph @S in L2 (s<!@S>y) is not part of normal script inventory"
+    ]
+  },
+  "transcription_date": "2026-02-07",
+  "transcription_method": "Direct paleographic reading from manuscript image using 7-layer constraint stack. EVA source: Takahashi (H=Hermes, primary)."
+}
