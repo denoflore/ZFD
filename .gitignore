@@ -25,3 +25,7 @@ Thumbs.db
 *.egg-info/
 dist/
 build/
+
+# Converted manuscript images (large, derived from JP2 originals)
+images/jp2_converted/
+images/fullres/
