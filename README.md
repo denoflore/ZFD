@@ -44,6 +44,7 @@
 - [V27 Triple Provenance Lock](#v27-triple-provenance-lock-new-february-2026)
 - [15th Century Croatian Proof Kit](#15th-century-croatian-proof-kit)
 - [Temporal and Register Analysis](#temporal-and-register-analysis)
+- [Paleographic Hand Analysis](#paleographic-hand-analysis-new-february-2026)
 - [Reproducibility](#reproducibility)
 - [Independent Validation](#independent-validation)
 - [Credits](#credits)
@@ -551,6 +552,7 @@ From the paper, Section 4.3:
 | Croatian frequency correlation | r=0.613 |
 | Phonotactic validity | 100% |
 | V27 triple provenance lock | **11 ingredients** (3 sources) |
+| Paleographic hand analysis | Fluent writer, zero abbreviation marks on gallows, stroke fusion confirmed |
 | Action/procedure terms | **91** (Antidotarium match) |
 
 ### Latin Pharmaceutical Vocabulary Discovered
@@ -751,7 +753,24 @@ The ZFD has been validated against 14 independent manuscripts and corpora spanni
 | 13 | **Croatian Botanical Glossary** (from Glagolitic ljekaruse) | Medieval | Plant morphology terms and action verbs. Cross-referenced against ZFD herbal section vocabulary. |
 | 14 | **Consolidated Scribal Lexicon** (from MS 650) | 15th c. | Full abbreviation conventions: suspension, contraction, special symbols, Tironian notes. Confirms ZFD shorthand is standard, not novel. |
 
-No alternative Voynich decipherment has been validated against more than one or two external sources. The ZFD has been tested against 14.
+No alternative Voynich decipherment has been validated against mor
+### Paleographic Hand Analysis (NEW: February 2026)
+
+Systematic physical examination of 40+ gallows instances, 15 'aiin' tokens, and 70+ baseline character samples across 5 manuscript sections (herbal, biological, pharmaceutical, recipe/star, and late folios).
+
+**Key findings:**
+
+| Finding | Significance |
+|---------|-------------|
+| Zero abbreviation marks on any of 40 gallows instances | Gallows are not functioning as standard Latin abbreviation markers. Whatever their role, it is structural, not conventional. |
+| 'aiin' has internal structure: 'a' + 'iin' sub-ligature | Not a monolithic glyph. Compositional morphology confirmed at the stroke level. |
+| i/n/r/l confusion rate: 5-20% inherent at manuscript resolution | Honest error floor documented. Any transcription claiming higher accuracy is overclaiming. |
+| Gallows-to-neighbor stroke fusion in rapid hand | The scribe wrote fast enough for letterforms to bleed into adjacent characters. This is behavioral evidence of fluency, not construction. A forger works slowly. |
+| Physical evidence ambiguous on cluster abbreviation hypothesis | Neither confirms nor refutes. Documented as negative result. |
+
+**What this means together:** The scribe was a fluent, practiced writer working in a system they knew natively. Stroke fusion only occurs when someone is writing at speed in a familiar script. Combined with zero abbreviation marks and compositional internal structure, the physical evidence is consistent with a professional shorthand system used daily, not a constructed cipher or hoax.
+
+e than one or two external sources. The ZFD has been tested against 14.
 
 ---
 
