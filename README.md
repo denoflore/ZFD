@@ -646,6 +646,24 @@ EVA transcriptions impose discrete Latin-alphabet segmentation on connected curs
 python validation/transcription_robustness/run_robustness.py
 ```
 
+### Layer-Stratified Perturbation Test (June 2026: one positive, two honest negatives)
+
+The three-layer positional model makes a falsifiable prediction the flat-noise test can't check: an edit in a layer's home position should maximally disturb that layer's parsed output. This test makes **exactly one character edit per touched word** (identical dose per layer: one gallows swap, the word-initial operator char, or one suffix-zone i/n/r/l char) and measures conditionally, with class-aware operator comparison.
+
+| Edited layer | n | Stem change | Op-class change | Suffix change |
+| ------------ | --- | ----------- | --------------- | ------------- |
+| Gallows | 350 | 0.314 | 0.083 | 0.094 |
+| Operator initial | 478 | 0.471 | **0.398** | 0.109 |
+| Suffix zone | 504 | 0.530 | 0.058 | 0.133 |
+
+**Confirmed:** operator information is positionally encoded. Word-initial edits flip the operator class at ~5-6x the rate of edits anywhere else in the word (40% vs 6-8%), a clean diagonal effect that a non-positional system has no reason to produce.
+
+**Not confirmed (preserved as negative results):** the gallows and suffix diagonals. Stem extraction is whole-word coupled (any edit can shift parse boundaries and reshuffle the residual stem), and the parsed suffix field is robust to all edit types. An earlier version of this test reported a large gallows-vs-suffix stem differential; that result was a word-segmentation artifact and is retracted in the test's own documentation. These negatives constrain how the three-layer claim should be stated: positional **operator** encoding is demonstrated; per-layer stem/suffix isolation is not.
+
+```
+python validation/transcription_robustness/run_layer_stratified.py
+```
+
 ### Corpus Comparison Analysis
 
 **961,484 words** across 8 Ragusan and control corpora tested against ZFD decoded output.

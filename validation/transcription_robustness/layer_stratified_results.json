@@ -1,0 +1,36 @@
+{
+  "test_date": "2026-06-10T03:47:31.637742",
+  "design": "exposure-normalized, one edit per touched word, conditional measurement, class-aware operators",
+  "config": {
+    "lexicon_file": "lexicon_v2.csv",
+    "lexicon_sha256": "68fb55f2b4c7725b300cab5c438d7abbc25837f5a6b8a499747193241423741b",
+    "compound_decomposer": true
+  },
+  "matrix": {
+    "gallows": {
+      "n_edits": 350,
+      "stem_change": 0.3143,
+      "op_class_change": 0.0829,
+      "suffix_change": 0.0943
+    },
+    "operator": {
+      "n_edits": 478,
+      "stem_change": 0.4707,
+      "op_class_change": 0.3975,
+      "suffix_change": 0.1088
+    },
+    "suffix": {
+      "n_edits": 504,
+      "stem_change": 0.5298,
+      "op_class_change": 0.0575,
+      "suffix_change": 0.1329
+    }
+  },
+  "verdict": {
+    "operator_positionally_encoded": true,
+    "operator_diagonal_ratio": 4.8,
+    "gallows_diagonal_confirmed": false,
+    "suffix_diagonal_confirmed": false,
+    "summary": "Operator information is positionally encoded (40% class change for word-initial edits vs 8% for edits elsewhere). Gallows and suffix diagonals NOT confirmed: stem extraction is whole-word coupled and the parsed suffix field is robust to all edit types. Honest negatives preserved."
+  }
+}

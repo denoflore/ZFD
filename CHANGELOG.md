@@ -2,6 +2,16 @@
 
 ## v4.3.0 - June 9, 2026 (Validation Audit: Config Pinning + Robustness)
 
+### v4.3.1 addendum (same day)
+- **New layer-stratified perturbation test** (`run_layer_stratified.py`):
+  exposure-normalized, one edit per touched word, conditional measurement,
+  class-aware operators. CONFIRMED: operator information is positionally
+  encoded (~40% op-class change for word-initial edits vs 6-8% elsewhere,
+  a 5-6x diagonal). NOT CONFIRMED: gallows and suffix diagonals (stem
+  extraction is whole-word coupled; suffix field robust to all edits).
+  An earlier segmentation-artifact result is retracted inside the test's
+  own documentation. Negative results preserved.
+
 - **Found and fixed configuration drift** in the blind decode test: published
   v2 numbers came from frozen `lexicon.csv` + no compound decomposition, but
   the shipping pipeline silently auto-selects `lexicon_v2.csv` and auto-enables
