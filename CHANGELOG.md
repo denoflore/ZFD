@@ -2,6 +2,17 @@
 
 ## v4.3.0 - June 9, 2026 (Validation Audit: Config Pinning + Robustness)
 
+### v4.3.2 addendum (same day)
+- **New decoy language test, Tier 1** (`validation/decoy_language_test/`):
+  frozen EVA->phoneme key, ZFD lexicon excluded, full 201-folio corpus
+  matched against 7 independent dictionaries (hr/sl/cs/sk/pl/it/la) with
+  per-language shuffled-null lift calibration and bootstrap CIs.
+  NULL RESULT preserved in full: no Croatian advantage at this resolution
+  (all languages 3.5-4.9x lift, overlapping CIs). POSITIVE: uniform ~4x
+  lift over shuffled nulls shows Voynichese character order is word-shaped;
+  glyph-soup hoax disfavored. Burden of language-specific proof sits on
+  the external provenance locks and structural results, stated explicitly.
+
 ### v4.3.1 addendum (same day)
 - **New layer-stratified perturbation test** (`run_layer_stratified.py`):
   exposure-normalized, one edit per touched word, conditional measurement,

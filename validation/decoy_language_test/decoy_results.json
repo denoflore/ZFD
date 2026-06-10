@@ -1,0 +1,183 @@
+{
+  "test_date": "2026-06-10T05:34:29.879483",
+  "design": "Tier 1 decoy: frozen EVA->phoneme key, swapped dictionaries, per-language shuffled-null lift",
+  "corpus": {
+    "tokens": 35812,
+    "types": 6385,
+    "folios": 201
+  },
+  "frozen_key": {
+    "char_key": {
+      "ch": "h",
+      "sh": "\u0161",
+      "a": "a",
+      "e": "e",
+      "i": "i",
+      "o": "o",
+      "y": "i",
+      "g": "g",
+      "d": "d",
+      "k": "k",
+      "p": "p",
+      "t": "t",
+      "s": "s",
+      "f": "f",
+      "c": "c",
+      "l": "l",
+      "m": "m",
+      "n": "n",
+      "r": "r"
+    },
+    "gallows": {
+      "k": "st",
+      "t": "tr",
+      "f": "pr",
+      "p": "pl"
+    },
+    "suffixes": [
+      "dy",
+      "in",
+      "an",
+      "ol",
+      "al",
+      "um",
+      "us",
+      "nt",
+      "la",
+      "pl",
+      "ts",
+      "ro",
+      "lf",
+      "y"
+    ],
+    "operator_prefixes": [
+      "ot",
+      "qo",
+      "ok",
+      "ch",
+      "sh",
+      "da",
+      "q"
+    ]
+  },
+  "languages": {
+    "croatian": {
+      "dict_size": 53167,
+      "dict_sha256": "9c517653968a69389ee240b658b12c9db3ea00ce5415086ab76ade5a725e469d",
+      "token_weighted": {
+        "exact_rate": 0.114,
+        "exact_null": 0.0239,
+        "exact_lift": 4.758,
+        "prefix4_rate": 0.2175,
+        "prefix4_null": 0.0534,
+        "prefix4_lift": 4.072,
+        "prefix4_lift_ci95": [
+          3.056,
+          5.558
+        ]
+      }
+    },
+    "slovenian": {
+      "dict_size": 242205,
+      "dict_sha256": "e157aabf1a20d21f639d04cf79f019ff1a3eb623c6780a726ffa4293787fa0ab",
+      "token_weighted": {
+        "exact_rate": 0.1901,
+        "exact_null": 0.0373,
+        "exact_lift": 5.097,
+        "prefix4_rate": 0.2622,
+        "prefix4_null": 0.0708,
+        "prefix4_lift": 3.702,
+        "prefix4_lift_ci95": [
+          2.816,
+          4.984
+        ]
+      }
+    },
+    "czech": {
+      "dict_size": 241373,
+      "dict_sha256": "d8e8c88c006fdae72dac8c85df11b0c99a773e05a4ab0fcbe92244876668ca74",
+      "token_weighted": {
+        "exact_rate": 0.1663,
+        "exact_null": 0.049,
+        "exact_lift": 3.392,
+        "prefix4_rate": 0.3427,
+        "prefix4_null": 0.0973,
+        "prefix4_lift": 3.522,
+        "prefix4_lift_ci95": [
+          2.886,
+          4.43
+        ]
+      }
+    },
+    "slovak": {
+      "dict_size": 154457,
+      "dict_sha256": "3e3dbd5c6af8431a3a47652c69692f3f86d0cd82deb4418e49a057a33ef56063",
+      "token_weighted": {
+        "exact_rate": 0.1943,
+        "exact_null": 0.0464,
+        "exact_lift": 4.19,
+        "prefix4_rate": 0.3141,
+        "prefix4_null": 0.0883,
+        "prefix4_lift": 3.556,
+        "prefix4_lift_ci95": [
+          2.836,
+          4.525
+        ]
+      }
+    },
+    "polish": {
+      "dict_size": 297133,
+      "dict_sha256": "215fd73aa47b11e7fdd2e4d655e9fe37be4acdae16ff833badcfdfce79110aad",
+      "token_weighted": {
+        "exact_rate": 0.255,
+        "exact_null": 0.0651,
+        "exact_lift": 3.915,
+        "prefix4_rate": 0.3799,
+        "prefix4_null": 0.1079,
+        "prefix4_lift": 3.521,
+        "prefix4_lift_ci95": [
+          2.864,
+          4.471
+        ]
+      }
+    },
+    "italian": {
+      "dict_size": 95012,
+      "dict_sha256": "bae1e3501dcd2a923669592493b3fde6c02aae7c7aab83bf5e5b49077e73dd64",
+      "token_weighted": {
+        "exact_rate": 0.1078,
+        "exact_null": 0.0237,
+        "exact_lift": 4.551,
+        "prefix4_rate": 0.2402,
+        "prefix4_null": 0.0547,
+        "prefix4_lift": 4.395,
+        "prefix4_lift_ci95": [
+          3.201,
+          6.281
+        ]
+      }
+    },
+    "latin": {
+      "dict_size": 48370,
+      "dict_sha256": "53ace08b27eda93ea84e625f11443c40ddd0286f822710d0a8c14d00fde4d916",
+      "token_weighted": {
+        "exact_rate": 0.1737,
+        "exact_null": 0.0299,
+        "exact_lift": 5.802,
+        "prefix4_rate": 0.2125,
+        "prefix4_null": 0.0431,
+        "prefix4_lift": 4.932,
+        "prefix4_lift_ci95": [
+          3.444,
+          7.74
+        ]
+      }
+    }
+  },
+  "verdict": {
+    "croatian_lift": 4.072,
+    "best_decoy": "latin",
+    "best_decoy_lift": 4.932,
+    "croatian_beats_all_decoys": false
+  }
+}

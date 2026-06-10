@@ -664,6 +664,20 @@ The three-layer positional model makes a falsifiable prediction the flat-noise t
 python validation/transcription_robustness/run_layer_stratified.py
 ```
 
+### Decoy Language Test, Tier 1 (June 2026: null result, preserved in full)
+
+The strongest standing criticism of any Voynich decipherment: "a flexible enough mapping decodes the manuscript into whatever language you aimed at." This test holds the EVA-to-phoneme key **fixed** (the paleographically motivated 19-character map, gallows expansions, operator prefixes, suffix codebook), excludes the ZFD lexicon entirely, and swaps only the target dictionary: all 6,385 word types across all 201 folios matched against Croatian, Slovenian, Czech, Slovak, Polish, Italian, and Latin under byte-identical rules, each language calibrated against its own character-shuffled null (LIFT = real rate / null rate, bootstrap CIs).
+
+**Result: no Croatian advantage at this resolution.** All seven languages lift 3.5-4.9x over their own nulls with overlapping confidence intervals (Croatian 4.07 [3.06-5.56]; Latin nominally highest at 4.93). **What the uniform lift does show:** Voynichese character order is word-shaped; shuffling destroys ~75-80% of dictionary matching in every language, so a glyph-soup hoax lifts at ~1.0 and is strongly disfavored, even though no specific language is favored.
+
+**What this means for the claim structure:** language-specific evidence does not live at the raw wordlist layer. It lives in the external provenance locks (V27: import/domestic taxonomy, temporal gating, recipe continuity) that no mapping flexibility can fit, and in demonstrated structure (positional operator encoding). The paper's wording follows the evidence. Tier 2, the adversarial refit of the full mapping per decoy language followed by the downstream provenance locks, is the decisive version and is specced for autonomous implementation.
+
+Full report: [`validation/decoy_language_test/DECOY_TEST_REPORT.md`](validation/decoy_language_test/DECOY_TEST_REPORT.md)
+
+```
+python validation/decoy_language_test/run_decoy_test.py
+```
+
 ### Corpus Comparison Analysis
 
 **961,484 words** across 8 Ragusan and control corpora tested against ZFD decoded output.
