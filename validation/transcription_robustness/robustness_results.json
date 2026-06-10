@@ -1,0 +1,171 @@
+{
+  "test_date": "2026-06-10T03:21:52.491792",
+  "config": {
+    "lexicon_file": "lexicon_v2.csv",
+    "lexicon_sha256": "68fb55f2b4c7725b300cab5c438d7abbc25837f5a6b8a499747193241423741b",
+    "compound_decomposer": true
+  },
+  "confusion_set": "inrl",
+  "rates": [
+    0.05,
+    0.1,
+    0.2
+  ],
+  "iterations": 20,
+  "folios": {
+    "f10r": {
+      "clean_coverage": 0.9888,
+      "clean_coherence": 0.9058,
+      "rates": {
+        "0.05": {
+          "coverage_mean": 0.9876,
+          "coherence_mean": 0.9046,
+          "stem_identity_mean": 0.9522,
+          "stem_identity_std": 0.015,
+          "gloss_identity_mean": 0.9579
+        },
+        "0.1": {
+          "coverage_mean": 0.9882,
+          "coherence_mean": 0.9042,
+          "stem_identity_mean": 0.9056,
+          "stem_identity_std": 0.026,
+          "gloss_identity_mean": 0.914
+        },
+        "0.2": {
+          "coverage_mean": 0.9871,
+          "coherence_mean": 0.9038,
+          "stem_identity_mean": 0.8427,
+          "stem_identity_std": 0.04,
+          "gloss_identity_mean": 0.8579
+        }
+      }
+    },
+    "f23v": {
+      "clean_coverage": 0.988,
+      "clean_coherence": 0.906,
+      "rates": {
+        "0.05": {
+          "coverage_mean": 0.988,
+          "coherence_mean": 0.9053,
+          "stem_identity_mean": 0.9301,
+          "stem_identity_std": 0.0249,
+          "gloss_identity_mean": 0.9542
+        },
+        "0.1": {
+          "coverage_mean": 0.988,
+          "coherence_mean": 0.9045,
+          "stem_identity_mean": 0.8849,
+          "stem_identity_std": 0.0352,
+          "gloss_identity_mean": 0.9205
+        },
+        "0.2": {
+          "coverage_mean": 0.988,
+          "coherence_mean": 0.903,
+          "stem_identity_mean": 0.7789,
+          "stem_identity_std": 0.0317,
+          "gloss_identity_mean": 0.8476
+        }
+      }
+    },
+    "f47r": {
+      "clean_coverage": 0.9878,
+      "clean_coherence": 0.9037,
+      "rates": {
+        "0.05": {
+          "coverage_mean": 0.9872,
+          "coherence_mean": 0.9034,
+          "stem_identity_mean": 0.9488,
+          "stem_identity_std": 0.0206,
+          "gloss_identity_mean": 0.9555
+        },
+        "0.1": {
+          "coverage_mean": 0.9878,
+          "coherence_mean": 0.9034,
+          "stem_identity_mean": 0.9049,
+          "stem_identity_std": 0.0331,
+          "gloss_identity_mean": 0.9122
+        },
+        "0.2": {
+          "coverage_mean": 0.9878,
+          "coherence_mean": 0.9029,
+          "stem_identity_mean": 0.8207,
+          "stem_identity_std": 0.0486,
+          "gloss_identity_mean": 0.8341
+        }
+      }
+    },
+    "f89r": {
+      "clean_coverage": 0.9871,
+      "clean_coherence": 0.9059,
+      "rates": {
+        "0.05": {
+          "coverage_mean": 0.9867,
+          "coherence_mean": 0.9053,
+          "stem_identity_mean": 0.955,
+          "stem_identity_std": 0.0101,
+          "gloss_identity_mean": 0.9628
+        },
+        "0.1": {
+          "coverage_mean": 0.9857,
+          "coherence_mean": 0.9046,
+          "stem_identity_mean": 0.9081,
+          "stem_identity_std": 0.0151,
+          "gloss_identity_mean": 0.9235
+        },
+        "0.2": {
+          "coverage_mean": 0.9845,
+          "coherence_mean": 0.9032,
+          "stem_identity_mean": 0.8244,
+          "stem_identity_std": 0.0176,
+          "gloss_identity_mean": 0.8543
+        }
+      }
+    },
+    "f101v": {
+      "clean_coverage": 0.9808,
+      "clean_coherence": 0.9012,
+      "rates": {
+        "0.05": {
+          "coverage_mean": 0.981,
+          "coherence_mean": 0.901,
+          "stem_identity_mean": 0.957,
+          "stem_identity_std": 0.0162,
+          "gloss_identity_mean": 0.9668
+        },
+        "0.1": {
+          "coverage_mean": 0.9808,
+          "coherence_mean": 0.9004,
+          "stem_identity_mean": 0.9154,
+          "stem_identity_std": 0.0193,
+          "gloss_identity_mean": 0.9341
+        },
+        "0.2": {
+          "coverage_mean": 0.9805,
+          "coherence_mean": 0.8996,
+          "stem_identity_mean": 0.8401,
+          "stem_identity_std": 0.0266,
+          "gloss_identity_mean": 0.8767
+        }
+      }
+    }
+  },
+  "aggregate": {
+    "0.05": {
+      "coverage": 0.9861,
+      "stem_identity": 0.9486
+    },
+    "0.1": {
+      "coverage": 0.9861,
+      "stem_identity": 0.9038
+    },
+    "0.2": {
+      "coverage": 0.9856,
+      "stem_identity": 0.8214
+    }
+  },
+  "fingerprint": {
+    "structural_flat": true,
+    "semantic_graded_degradation": true,
+    "verdict": "LAYERED-REAL-SYSTEM"
+  }
+}

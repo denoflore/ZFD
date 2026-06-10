@@ -608,6 +608,44 @@ Hierarchy holds on all five folios: Real > Char-shuffled > Synthetic EVA > Rando
 
 Full test history including both failures: [`validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md`](validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md)
 
+### Test v3: Dual-Configuration Re-Audit (PASSED, June 2026)
+
+A June 2026 fresh-clone audit found that the published v2 numbers could not be reproduced by default. Root cause: **configuration drift**. The v2 test ran against the frozen `lexicon.csv` (the pinned SHA `9c5e62...`) with no compound decomposition, but two later additions (`lexicon_v2.csv`, auto-preferred by the pipeline loader, and the `CompoundDecomposer`, auto-enabled when `unified_lexicon_v2.json` exists) silently changed the default configuration after publication. In keeping with this project's policy of preserving negative results, the full failure is documented, fixed, and re-tested.
+
+**The fix:** `run_test_v3.py` pins every configuration explicitly, **asserts the lexicon SHA-256 at load time** (a mismatch refuses to run), stamps the full configuration into every results record, and runs **both** configurations side by side with z-scores and empirical p-values (30 iterations per baseline).
+
+```
+python validation/blind_decode_test/run_test_v3.py
+```
+
+| Configuration | Real (mean) | Char-Shuffled | Synthetic EVA | Random Latin | Discriminating |
+| ------------- | ----------- | ------------- | ------------- | ------------ | -------------- |
+| Frozen (Feb 2026) | 0.73 | 0.53 | 0.44 | 0.36 | **5/5 folios** |
+| Current shipping  | 0.90 | 0.81 | 0.76 | 0.57 | **5/5 folios** |
+
+The hierarchy (real > char-shuffled > synthetic EVA > random Latin) holds on every folio under **both** configurations. All real-vs-null deltas are significant (weakest cell: z = 1.9, one-tailed p < 0.05; strongest: z = 37).
+
+**The honest caveat this audit forces:** absolute coverage is not evidence. Under the current permissive configuration, character-shuffled gibberish reaches ~94% coverage. The evidential weight of the decipherment lives in the real-vs-null **deltas**, the preserved hierarchy, and the external provenance locks (V27 / Ljekarna) that no lexicon flexibility can fit. Lexicon growth must be accompanied by null-baseline tracking: every future lexicon revision re-runs v3 and reports both configurations.
+
+Full report: [`results_v3/V3_DUAL_CONFIG_REPORT.md`](validation/blind_decode_test/results_v3/V3_DUAL_CONFIG_REPORT.md)
+
+### Transcription Robustness Test (PASSED, June 2026)
+
+EVA transcriptions impose discrete Latin-alphabet segmentation on connected cursive with hooks, loops, and modifiers. The paleographic hand analysis documented an inherent **5-20% i/n/r/l confusion floor** at manuscript resolution, so the decipherment must survive its own error band. This test injects i/n/r/l confusions at the documented rates and measures two metrics with deliberately different failure modes:
+
+| Noise rate | Coverage (structural) | Stem identity (semantic) |
+| ---------- | --------------------- | ------------------------ |
+| 0% (clean) | 0.986 | 1.000 |
+| 5%  | 0.987 | 0.947 |
+| 10% | 0.986 | 0.904 |
+| 20% | 0.986 | 0.821 |
+
+**The fingerprint:** an accept-anything decoder is flat on both metrics; a brittle cipher collapses on both. A layered real system is flat on structure and degrades **linearly** on semantics, which is exactly what ZFD does. The decoder is provably sensitive to letter identity at the meaning level while the morphological structure absorbs transcription noise. High-frequency ingredient identifications (kost: 2,000+, ol: 10,000+ tokens) are aggregate counts and remain statistically stable at the worst-case error floor, so the headline claims cannot be artifacts of transcription bugginess.
+
+```
+python validation/transcription_robustness/run_robustness.py
+```
+
 ### Corpus Comparison Analysis
 
 **961,484 words** across 8 Ragusan and control corpora tested against ZFD decoded output.
@@ -781,6 +819,8 @@ e than one or two external sources. The ZFD has been tested against 14.
 git clone https://github.com/denoflore/ZFD
 python 06_Pipelines/coverage_v36b.py
 python validation/run_all.py
+python validation/blind_decode_test/run_test_v3.py          # dual-config, SHA-asserted
+python validation/transcription_robustness/run_robustness.py
 ```
 
 All data and code provided for independent verification.

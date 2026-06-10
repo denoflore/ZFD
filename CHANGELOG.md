@@ -1,5 +1,26 @@
 # Changelog
 
+## v4.3.0 - June 9, 2026 (Validation Audit: Config Pinning + Robustness)
+
+- **Found and fixed configuration drift** in the blind decode test: published
+  v2 numbers came from frozen `lexicon.csv` + no compound decomposition, but
+  the shipping pipeline silently auto-selects `lexicon_v2.csv` and auto-enables
+  the CompoundDecomposer. No fresh clone ran the published configuration.
+- **New `run_test_v3.py`**: dual-configuration vocabulary specificity test.
+  Explicit configs, lexicon SHA-256 asserted at load, config stamped into
+  results, z-scores + empirical p-values. Result: 5/5 folios discriminating
+  under BOTH the frozen and the current configuration; hierarchy never inverts.
+- **New `validation/transcription_robustness/`**: i/n/r/l confusion injection
+  at the documented 5-20% paleographic error floor. Coverage flat (structural
+  robustness); stem identity degrades linearly 0.95 -> 0.90 -> 0.82
+  (semantic sensitivity). Fingerprint verdict: LAYERED-REAL-SYSTEM.
+- **Honest reframing in README**: absolute coverage is not evidence (shuffled
+  gibberish reaches ~94% under the permissive config); evidential weight =
+  real-vs-null deltas + hierarchy + external provenance locks.
+- `decoder.decode_eva_text` now accepts an explicit pipeline argument
+  (backward compatible) so test configurations are controlled, not ambient.
+- Repo audit fix: harness EVA path resolved against repo-root `voynich_data/`.
+
 ## v4.2.0 - February 7, 2026 (Full Paper Rebuild)
 
 ### Changed

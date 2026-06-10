@@ -30,7 +30,7 @@ def get_pipeline() -> ZFDPipeline:
     return _pipeline
 
 
-def decode_eva_text(eva_text: str, folio_id: str) -> Dict[str, Any]:
+def decode_eva_text(eva_text: str, folio_id: str, pipeline: 'ZFDPipeline' = None) -> Dict[str, Any]:
     """
     Decode EVA text through the ZFD pipeline.
 
@@ -41,7 +41,8 @@ def decode_eva_text(eva_text: str, folio_id: str) -> Dict[str, Any]:
     Returns:
         Structured results dict with all metrics
     """
-    pipeline = get_pipeline()
+    if pipeline is None:
+        pipeline = get_pipeline()
 
     # Run the full pipeline
     result = pipeline.process_folio(eva_text, folio_id)

@@ -1,0 +1,356 @@
+{
+  "test_date": "2026-06-10T03:24:36.770130",
+  "test_version": "v3-dual-config",
+  "iterations_per_baseline": 30,
+  "interpretation_contract": "Absolute coverage is not evidence. Evidence = real-vs-null deltas, significance, and preserved ordering hierarchy.",
+  "configs": {
+    "frozen_feb2026": {
+      "config_name": "frozen_feb2026",
+      "config": {
+        "description": "Configuration of the published v2 test (Feb 2026): frozen v1 lexicon, no compound decomposition.",
+        "lexicon_file": "lexicon.csv",
+        "lexicon_sha256": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
+        "compound_decomposer": false
+      },
+      "iterations_per_baseline": 30,
+      "folios": {
+        "f10r": {
+          "real_coherence": 0.7011,
+          "real_known_ratio": 0.427,
+          "eva_sha256": "97cb43ab2ce81070c6a8f34a3937f29c9f9fa5507cee0c1d43424a38a5829995",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.5115,
+              "coherence_std": 0.0644,
+              "known_ratio_mean": 0.1918,
+              "z_score": 2.94,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.3884,
+              "coherence_std": 0.0826,
+              "known_ratio_mean": 0.1206,
+              "z_score": 3.79,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.3455,
+              "coherence_std": 0.0559,
+              "known_ratio_mean": 0.2442,
+              "z_score": 6.36,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f23v": {
+          "real_coherence": 0.7778,
+          "real_known_ratio": 0.6265,
+          "eva_sha256": "767a8240ddd5dcdb7433e9a108c91f0885597dc746aaac29e19765d9ef5e6455",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.5424,
+              "coherence_std": 0.0868,
+              "known_ratio_mean": 0.3068,
+              "z_score": 2.71,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.3754,
+              "coherence_std": 0.0836,
+              "known_ratio_mean": 0.1216,
+              "z_score": 4.81,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.3426,
+              "coherence_std": 0.0549,
+              "known_ratio_mean": 0.2454,
+              "z_score": 7.92,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f47r": {
+          "real_coherence": 0.7073,
+          "real_known_ratio": 0.439,
+          "eva_sha256": "daab9655d30d8a0ce9abf955274142b98f123e63484d1243e8980aec5f5dc7cd",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.4112,
+              "coherence_std": 0.0883,
+              "known_ratio_mean": 0.1663,
+              "z_score": 3.35,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.3751,
+              "coherence_std": 0.0835,
+              "known_ratio_mean": 0.1207,
+              "z_score": 3.98,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.3422,
+              "coherence_std": 0.0552,
+              "known_ratio_mean": 0.2443,
+              "z_score": 6.62,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f89r": {
+          "real_coherence": 0.6955,
+          "real_known_ratio": 0.3938,
+          "eva_sha256": "8fda1021320bbcf41e601baf02737c12f1792121effe5aad9ad465d02e6e51b3",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.5872,
+              "coherence_std": 0.0064,
+              "known_ratio_mean": 0.1877,
+              "z_score": 16.92,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.5405,
+              "coherence_std": 0.0249,
+              "known_ratio_mean": 0.1139,
+              "z_score": 6.22,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.4013,
+              "coherence_std": 0.0079,
+              "known_ratio_mean": 0.2433,
+              "z_score": 37.3,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f101v": {
+          "real_coherence": 0.7585,
+          "real_known_ratio": 0.5769,
+          "eva_sha256": "4c8890e11e79446cf6a91e2339cd4111d0d58260d550951c81b784951de6fd98",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.6007,
+              "coherence_std": 0.0253,
+              "known_ratio_mean": 0.2488,
+              "z_score": 6.24,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.5008,
+              "coherence_std": 0.0511,
+              "known_ratio_mean": 0.1147,
+              "z_score": 5.04,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.3897,
+              "coherence_std": 0.0352,
+              "known_ratio_mean": 0.248,
+              "z_score": 10.48,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        }
+      },
+      "discriminating_folios": 5,
+      "hierarchy_holds": true
+    },
+    "current_shipping": {
+      "config_name": "current_shipping",
+      "config": {
+        "description": "Default shipping configuration (auto-selected by ZFDPipeline): lexicon_v2.csv + compound decomposer.",
+        "lexicon_file": "lexicon_v2.csv",
+        "lexicon_sha256": "68fb55f2b4c7725b300cab5c438d7abbc25837f5a6b8a499747193241423741b",
+        "compound_decomposer": true
+      },
+      "iterations_per_baseline": 30,
+      "folios": {
+        "f10r": {
+          "real_coherence": 0.9058,
+          "real_known_ratio": 0.9888,
+          "eva_sha256": "97cb43ab2ce81070c6a8f34a3937f29c9f9fa5507cee0c1d43424a38a5829995",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.7838,
+              "coherence_std": 0.0534,
+              "known_ratio_mean": 0.9135,
+              "z_score": 2.28,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.7295,
+              "coherence_std": 0.0548,
+              "known_ratio_mean": 0.9189,
+              "z_score": 3.21,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.562,
+              "coherence_std": 0.0368,
+              "known_ratio_mean": 0.7659,
+              "z_score": 9.35,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f23v": {
+          "real_coherence": 0.906,
+          "real_known_ratio": 0.988,
+          "eva_sha256": "767a8240ddd5dcdb7433e9a108c91f0885597dc746aaac29e19765d9ef5e6455",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.7869,
+              "coherence_std": 0.0633,
+              "known_ratio_mean": 0.9386,
+              "z_score": 1.88,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.724,
+              "coherence_std": 0.0562,
+              "known_ratio_mean": 0.9187,
+              "z_score": 3.24,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.5622,
+              "coherence_std": 0.0381,
+              "known_ratio_mean": 0.7671,
+              "z_score": 9.03,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f47r": {
+          "real_coherence": 0.9037,
+          "real_known_ratio": 0.9878,
+          "eva_sha256": "daab9655d30d8a0ce9abf955274142b98f123e63484d1243e8980aec5f5dc7cd",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.7653,
+              "coherence_std": 0.0628,
+              "known_ratio_mean": 0.9789,
+              "z_score": 2.2,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.7242,
+              "coherence_std": 0.0561,
+              "known_ratio_mean": 0.9181,
+              "z_score": 3.2,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.5619,
+              "coherence_std": 0.0385,
+              "known_ratio_mean": 0.7654,
+              "z_score": 8.88,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f89r": {
+          "real_coherence": 0.9059,
+          "real_known_ratio": 0.9871,
+          "eva_sha256": "8fda1021320bbcf41e601baf02737c12f1792121effe5aad9ad465d02e6e51b3",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.8496,
+              "coherence_std": 0.0036,
+              "known_ratio_mean": 0.9323,
+              "z_score": 15.49,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.8381,
+              "coherence_std": 0.0089,
+              "known_ratio_mean": 0.9163,
+              "z_score": 7.64,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.5869,
+              "coherence_std": 0.0096,
+              "known_ratio_mean": 0.7775,
+              "z_score": 33.28,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        },
+        "f101v": {
+          "real_coherence": 0.9012,
+          "real_known_ratio": 0.9808,
+          "eva_sha256": "4c8890e11e79446cf6a91e2339cd4111d0d58260d550951c81b784951de6fd98",
+          "baselines": {
+            "char_shuffled": {
+              "coherence_mean": 0.8505,
+              "coherence_std": 0.0168,
+              "known_ratio_mean": 0.9429,
+              "z_score": 3.01,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "synthetic_eva": {
+              "coherence_mean": 0.8045,
+              "coherence_std": 0.0406,
+              "known_ratio_mean": 0.9157,
+              "z_score": 2.38,
+              "empirical_p": 0.0323,
+              "significant": true
+            },
+            "random_latin": {
+              "coherence_mean": 0.5829,
+              "coherence_std": 0.0184,
+              "known_ratio_mean": 0.775,
+              "z_score": 17.33,
+              "empirical_p": 0.0323,
+              "significant": true
+            }
+          },
+          "verdict": "DISCRIMINATING"
+        }
+      },
+      "discriminating_folios": 5,
+      "hierarchy_holds": true
+    }
+  }
+}
