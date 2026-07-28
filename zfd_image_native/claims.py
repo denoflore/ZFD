@@ -272,11 +272,11 @@ def _parity_authority_failures(
         ):
             failures.append("CANONICAL_PAGE_LAYER_AUTHORITY_MISMATCH")
             continue
-        source = (
-            evidence_sources.get(page_layer.get("source_id"))
-            if isinstance(evidence_sources, Mapping)
-            else None
-        )
+        source = None
+        if isinstance(evidence_sources, Mapping):
+            source = evidence_sources.get(page_layer.get("source_receipt_sha256"))
+            if source is None:
+                source = evidence_sources.get(page_layer.get("source_id"))
         if (
             not isinstance(source, Mapping)
             or not _self_hash_valid(source)

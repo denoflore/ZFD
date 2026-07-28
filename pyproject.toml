@@ -24,9 +24,10 @@ zfd-native = "zfd_image_native.cli:main"
 zfd-visual-index = "zfd_visual_index.cli:main"
 zfd-review = "zfd_gold.cli:main"
 zfd-comparanda = "zfd_comparative_gold.cli:main"
+zfd-parity = "zfd_parity_corpus.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["zfd_image_native*", "zfd_visual_index*", "zfd_gold*", "zfd_comparative_gold*"]
+include = ["zfd_image_native*", "zfd_visual_index*", "zfd_gold*", "zfd_comparative_gold*", "zfd_parity_corpus*"]
 
 [tool.pytest.ini_options]
 addopts = "-ra"

@@ -45,7 +45,7 @@ _IMPLEMENTATION_PATHS = (
     "zfd_comparative_gold/core.py",
 )
 _ENVIRONMENT_AUTHORITY_SHA256 = {
-    "pyproject.toml": "253a0de61caa4bb9cf617fb9554814a28e45bc931fe32b1b2ff62d5005b09522",
+    "pyproject.toml": "27df4b2b594ac76df4526219d1722cbd7d9ea8682b03b27cd62370466124d0f9",
     "requirements-image-native.txt": "56599eacb0f2a0465bdea8869d0111e661b8e5ae22c58153f66078ae7056e7aa",
 }
 _MAVROV_TRUST_ANCHOR = {

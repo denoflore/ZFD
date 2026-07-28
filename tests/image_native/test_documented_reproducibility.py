@@ -84,3 +84,18 @@ def test_comparative_counts_match_the_committed_ledger() -> None:
     assert "GAMS Zrcalo" in readme
     assert "There is no verified shorthand corpus" in readme
     assert "--source-id nsk-mavrov-r7822" in guide
+
+
+def test_corpus_parity_command_documents_safe_unresolved_authority() -> None:
+    readme = _read("README.md")
+    guide = _read("docs/IMAGE_NATIVE_OCR.md")
+    parity = _read("docs/CORPUS_PARITY.md")
+
+    for document in (readme, guide, parity):
+        assert "zfd-parity" in document
+        assert "PARITY_PROMOTION_AUTHORITY_UNPINNED" in document
+    assert "build-parity-corpus" in guide
+    assert "validate-parity-corpus" in guide
+    assert "CURRENT_IMPLEMENTATION_MISMATCH" in guide
+    assert "exactly six files" in parity
+    assert "completion_claim_allowed=false" in parity

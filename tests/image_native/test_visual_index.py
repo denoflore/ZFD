@@ -491,10 +491,13 @@ def test_validate_page_cli_rejects_a_different_page_argument(tmp_path: Path, cap
     assert "PAGE_ID_ARGUMENT_RECEIPT_MISMATCH" in capsys.readouterr().out
 
 
-def test_stage_b_package_does_not_stale_stage_a_implementation_receipt() -> None:
+def test_stage_a_contract_changes_leave_retained_v2b_explicitly_stale() -> None:
     run = read_json(ROOT / "data" / "image_native" / "receipts-v2b" / "ocr_run_receipt.json")
 
-    assert stage_a_implementation_sha256() == run["implementation_sha256"]
+    assert run["implementation_sha256"] == (
+        "1ae19f5fa094e361c385dfa0e4ce37e26349d4b5992f3f20bc925a10c60c111d"
+    )
+    assert stage_a_implementation_sha256() != run["implementation_sha256"]
 
 
 def test_visual_index_primary_lane_has_no_inherited_text_dependency() -> None:

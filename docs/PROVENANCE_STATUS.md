@@ -51,6 +51,12 @@ to terminology to translation parity. Complete translation remains blocked.
   scribal layers have not been mapped to exact canvases. The whole source is
   therefore registered as 1460 to 1471 and remains quarantined pending hand
   boundaries and page or line level training lineage.
+- [Frašćić Psalter, 1463, ÖNB Cod. slav. 77](https://data.onb.ac.at/rec/AC14377621)
+  supplies 278 official canvases written by Petar Frašćić at Lindar in Croatian
+  Church Slavonic semi-uncial. It is a dated longhand control. Its angular and
+  cursive status are not asserted, no shorthand evidence is present, and all
+  pixels remain quarantined pending hand boundaries, lineage, and resolution of
+  the provider reuse terms because the IIIF manifest supplies no rights URI.
 - [Berčić 6, 1460](https://nlr.ru/manuscripts/RA1527/elektronnyiy-katalog?ab=8AB79B29-8EC4-48ED-825E-D59299230ADA)
   and [Berčić 7, 1472](https://nlr.ru/manuscripts/RA1527/elektronnyiy-katalog?ab=361033B1-E34B-4752-A039-99E72655E014)
   are exact dated wills classified by the National Library of Russia as
@@ -89,9 +95,10 @@ for publication language.
 
 ## Comparative asset receipt
 
-The committed comparative ledger inventories 2,670 local files, 1,827 unique
-pixel payloads, and 1,713 saved canvas mappings. It records 703 cross source
+The committed comparative ledger inventories 2,948 local files, 2,105 unique
+pixel payloads, and 1,991 saved canvas mappings. It records 703 cross source
 duplicate groups between Petrisov and the folder labelled Novak, plus 70 exact
-Istarski triplicate groups. Petrisov, GAMS Zrcalo, and Mavrov have saved file to
-canvas mapping. Zero comparative assets are training ready. No separately
-verified shorthand corpus has been registered.
+Istarski triplicate groups. Petrisov, GAMS Zrcalo, Mavrov, and Frašćić have saved
+file to canvas mapping. Zero comparative assets are training ready. No evidence
+for a separately attested fifteenth century Glagolitic shorthand system has been
+registered.

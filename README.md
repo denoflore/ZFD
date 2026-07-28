@@ -96,10 +96,19 @@ configuration, geometry, run identity, and its own receipt hash. Any missing
 diplomatic, terminology, translation, review, or adjudication layer keeps the
 record unresolved.
 
+The `zfd-parity` command materialises the canonical page and region authority
+as an exact six file bundle. Its current safe boundary emits all records
+unresolved and rejects every promotion input with
+`PARITY_PROMOTION_AUTHORITY_UNPINNED`. See
+[`docs/CORPUS_PARITY.md`](docs/CORPUS_PARITY.md) for the command, file contract,
+and authority prerequisites. The retained v2b Stage A receipts become stale
+when image native implementation files change, so a current v2c freeze is the
+next executable receipt before a durable parity bundle can be built.
+
 ## Comparative Glagolitic evidence
 
-The local comparative inventory contains 2,670 registered asset records and
-1,827 unique pixel payloads across 6 collections. Exactly 1,713 assets have saved
+The local comparative inventory contains 2,948 registered asset records and
+2,105 unique pixel payloads across 7 collections. Exactly 1,991 assets have saved
 canvas mappings. Zero assets are training ready.
 
 | Local set | Assets | Unique pixels | Current disposition |
@@ -110,8 +119,9 @@ canvas mappings. Zero assets are training ready.
 | Istarski razvod, 1546 | 214 | 74 | Office cursive control; quarantined pending canvas mapping and exact duplicate collapse |
 | Vinodolski zakon | 40 | 40 | Later control with unresolved hand; quarantined pending canvas mapping |
 | Mavrov brevijar, 1460 to 1471 | 848 | 848 | Formal and calendar layers remain unmapped; quarantined pending hand boundaries and line level lineage |
+| Frašćić Psalter, 1463, ÖNB Cod. slav. 77 | 278 | 278 | Croatian Church Slavonic semi-uncial longhand control; quarantined pending hand boundaries, lineage, and rights resolution |
 
-The source authority register now contains 17 target, manuscript, terminology,
+The source authority register now contains 18 target, manuscript, terminology,
 Latin, and negative control records. It includes exact dated NLR Glagolitic
 cursive wills from 1460 and 1472, the 1403 to 1404 Hrvoje formal hand, and the
 Bodleian fifteenth century Glagolitic book control. All four are reference only.
@@ -120,9 +130,10 @@ The two NLR exhibition images and their rights-aware receipt are preserved under
 The receipt SHA 256 is
 `14b26222ab01e09fdba6b65108389e6796809e63e9b55560e275e3d8a8cf22e2`.
 
-There is no verified shorthand corpus and no balanced fifteenth century set of
-angular, cursive, shorthand, and longhand hands yet. That is a direct blocker
-for a defensible recognizer.
+There is no verified shorthand corpus. Evidence for a separately attested
+fifteenth century Glagolitic shorthand system is absent, and there is no
+balanced set of angular, cursive, and longhand hands yet. Those absences
+directly block a defensible recognizer.
 
 Comparative receipts are in:
 

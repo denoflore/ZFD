@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from hashlib import sha256
 
+import pytest
+
 from zfd_image_native.io import canonical_json
 from zfd_image_native.parity import validate_page_parity
 
@@ -330,6 +332,22 @@ def test_unknown_only_ocr_cannot_confirm_translation() -> None:
 
     assert report.ok is False
     assert "OCR_UNRESOLVED_UNKNOWN_GRAPHEMES_PRESENT" in report.reasons
+
+
+@pytest.mark.parametrize("grapheme_ids", [1, [{}]])
+def test_malformed_ocr_grapheme_ids_fail_closed_without_type_error(
+    grapheme_ids: object,
+) -> None:
+    record, authority = _complete_fixture()
+    ocr = dict(record["ocr"])
+    ocr.pop("receipt_sha256")
+    ocr["grapheme_ids"] = grapheme_ids
+    record["ocr"] = _seal(ocr)
+
+    report = validate_page_parity(record, authority)
+
+    assert report.ok is False
+    assert "OCR_GRAPHEME_IDS_INVALID" in report.reasons
 
 
 def test_malformed_geometry_and_historical_evidence_fail_closed() -> None:

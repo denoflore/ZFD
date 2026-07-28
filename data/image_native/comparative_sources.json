@@ -110,6 +110,41 @@
         "direct_relpath": "meta/canvas_mapping.json",
         "local_name_field": "local_name"
       }
+    },
+    {
+      "source_id": "onb-frascic-psalter-cod-slav-77-1463",
+      "registered_source_id": "onb-frascic-psalter-cod-slav-77-1463",
+      "local_subpath": "Frascic_Psalter_1463_ONB_Cod_slav_77",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 278,
+      "manifest_relpath": "meta/manifest.json",
+      "manifest_sha256": "549340357111904908c4a27fa8288d1c444c76f984c9a4ce46c393c81b7c02f6",
+      "manifest_uri": "https://api.onb.ac.at/iiif/presentation/v3/manifest/10004B90",
+      "catalogue_locator": "https://data.onb.ac.at/rec/AC14377621",
+      "digital_object_locator": "https://data.onb.ac.at/rep/10004B90",
+      "rights_locator": "https://www.onb.ac.at/en/use/",
+      "required_attribution": "Austrian National Library",
+      "rights_status": "manifest_has_no_rights_uri_provider_reuse_terms_apply_third_party_rights_unresolved",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "resolved_canvas_mapping",
+      "training_disposition": "quarantine_pending_hand_boundary_and_lineage",
+      "angular_status": "unresolved_not_catalogued",
+      "cursive_status": "not_catalogued_as_cursive",
+      "shorthand_status": "unattested_in_catalogue",
+      "longhand_status": "catalogued_semi_uncial_control",
+      "pixel_labels_present": false,
+      "inherited_transcription_used": false,
+      "training_ready": false,
+      "source_metadata_sha256": "4bd8c55cfed7fbf28052be648630abc339265c6b71514cd1695dc3bd38aacdf7",
+      "asset_mapping_sha256": "f33b9a22af00ee0d47a2bd6b546c78e691c3c8a282da0b3277b0f2a41b8e18bb",
+      "acquisition_receipt_sha256": "d0cf9a35feb7f538e4a96ec74287e319ec4a78bd7aced6f192d23cd8fa407eeb",
+      "catalogue_authority_sha256": "4fa2c653dad624f1cd10fb5220151439846a8aa49cb735ec74988c64c4592c9e",
+      "digital_object_authority_sha256": "912bd879bdff8dd77b78f611d72cb5692f0d836d7f87b99dc482d8cfac944fe2",
+      "rights_authority_sha256": "7a1efc1e38b75040915c7c27e3186043cbe38d7fc8352215b2c294784361b98c",
+      "mapping": {
+        "direct_relpath": "meta/canvas_mapping.json",
+        "local_name_field": "local_name"
+      }
     }
   ]
 }

@@ -102,9 +102,124 @@ The fixed endpoint inclusive pilot is:
 
 These pairs test queue construction, endpoint handling, and review mechanics.
 They do not establish the calendar transition or manuscript wide hand
-boundaries. Qualified review requires sealed image crops, primary and blinded
-independent observations, a distinct adjudicator, explicit uncertainty, and
-coverage of all 847 adjacencies plus any internal page regions with mixed hands.
+boundaries. Qualified review requires sealed pixel region bindings, primary and
+independently authored observations, a distinct adjudicator, explicit
+uncertainty, registered reviewer identities, a commit then reveal blinding
+protocol, and coverage of all 847 adjacencies plus any internal page regions
+with mixed hands.
+
+## Run a pilot pair review
+
+Read one immutable pair task ID from the pilot file, then create and validate a
+full page task. `--left-region x y width height` and `--right-region x y width
+height` may be supplied when a reviewer must inspect a smaller explicit region.
+The command validates the complete registered queue authority and derives the
+source root from the registered source mount.
+
+```powershell
+$queueRoot = "06_Pipelines\comparative_review_runs\mavrov-20260728-v1"
+$reviewRoot = "$queueRoot\review\pilot-000"
+$pilot = Get-Content "$queueRoot\hand_boundary_pilot.jsonl" |
+  Select-Object -First 1 |
+  ConvertFrom-Json
+
+.venv\Scripts\zfd-comparanda create-review-task `
+  --repository-root . `
+  --queue-root $queueRoot `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --pair-task-id $pilot.pair_task_id `
+  --output "$reviewRoot\task.json"
+
+.venv\Scripts\zfd-comparanda validate-review-task `
+  --repository-root . `
+  --queue-root $queueRoot `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --task "$reviewRoot\task.json"
+```
+
+Each task rehashes the two source files, decodes each image to RGB, hashes the
+decoded pixels, and hashes the pixels inside the full page or explicit region.
+It joins both sides to the exact queue row and pilot row receipts. Any later
+change to source bytes, decoded dimensions, geometry, queue order, or receipt
+breaks validation.
+
+Two reviewer workflow IDs create separate JSON drafts. The first uses
+`review_role=primary`; the second uses
+`review_role=independent_reviewer`. Both drafts contain exactly these fields:
+
+```text
+schema, task_id, reviewer_id, review_role, source_lane,
+inherited_text_used, other_observation_seen, boundary_decision, certainty,
+evidence_codes, uncertainty_codes
+```
+
+`source_lane` is `human_image_only_blinded`.
+`inherited_text_used=false` and `other_observation_seen=false` are mandatory.
+These fields record a reviewer attestation. Shared directory access supplies no
+access isolation, signature, registered identity, or commit then reveal proof.
+The sealed record therefore keeps `blinding_verified=false`,
+`identity_authority_state=self_asserted_unverified`, and
+`qualified_review_authority_allowed=false`.
+The controlled boundary decisions are `same_hand`, `different_hand`, and
+`uncertain`. Moderate, low, and uncertain decisions require at least one
+controlled uncertainty code. The schema has no field for free text, a named
+hand, character reading, diplomatic label, semantic label, OCR output,
+transcription, transliteration, or translation.
+
+Seal and validate each draft independently:
+
+```powershell
+.venv\Scripts\zfd-comparanda seal-review-observation `
+  --repository-root . `
+  --queue-root $queueRoot `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --task "$reviewRoot\task.json" `
+  --draft "$reviewRoot\primary.draft.json" `
+  --output "$reviewRoot\primary.json"
+
+.venv\Scripts\zfd-comparanda validate-review-observation `
+  --repository-root . `
+  --queue-root $queueRoot `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --task "$reviewRoot\task.json" `
+  --observation "$reviewRoot\primary.json"
+```
+
+Repeat those commands for the independent reviewer. A third distinct workflow
+ID then supplies an adjudication draft. The adjudicator ID must differ from both
+reviewer IDs. This string distinction is workflow evidence and supplies no
+proof that three people participated. A decisive result following reviewer
+disagreement requires a controlled conflict resolution code. An unresolved
+result preserves `boundary_decision=uncertain` and its uncertainty codes.
+
+```powershell
+.venv\Scripts\zfd-comparanda seal-review-adjudication `
+  --repository-root . `
+  --queue-root $queueRoot `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --task "$reviewRoot\task.json" `
+  --primary "$reviewRoot\primary.json" `
+  --independent "$reviewRoot\independent.json" `
+  --draft "$reviewRoot\adjudication.draft.json" `
+  --output "$reviewRoot\adjudication.json"
+
+.venv\Scripts\zfd-comparanda validate-review-adjudication `
+  --repository-root . `
+  --queue-root $queueRoot `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --task "$reviewRoot\task.json" `
+  --primary "$reviewRoot\primary.json" `
+  --independent "$reviewRoot\independent.json" `
+  --adjudication "$reviewRoot\adjudication.json"
+```
+
+All drafts and sealed records stay under `build/comparative_review` or
+`06_Pipelines/comparative_review_runs`. Sealed outputs use exclusive creation.
+Review writes require a clean reachable Git commit. Every task binds the review
+implementation hash, commit, and worktree state. One adjudication records a
+controlled workflow decision for its pilot pair. Named hand assignment,
+training promotion, data split assignment, OCR accuracy, scientific boundary
+authority, and manuscript wide hand authority all remain blocked.
 
 ## Training and scientific status
 

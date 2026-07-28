@@ -142,7 +142,9 @@ def _authority_reasons(
     ocr = layers.get("ocr")
     if page is not None:
         source_id = page.get("source_id")
-        source = _authority_receipt(authority, "sources", str(source_id))
+        source = _authority_receipt(
+            authority, "sources", str(page.get("source_receipt_sha256"))
+        ) or _authority_receipt(authority, "sources", str(source_id))
         if source is None or not _receipt_valid(source):
             reasons.append("PAGE_SOURCE_AUTHORITY_MISSING")
         else:
@@ -159,7 +161,9 @@ def _authority_reasons(
 
     if terminology is not None:
         source_id = terminology.get("source_id")
-        source = _authority_receipt(authority, "sources", str(source_id))
+        source = _authority_receipt(
+            authority, "sources", str(terminology.get("source_receipt_sha256"))
+        ) or _authority_receipt(authority, "sources", str(source_id))
         if source is None or not _receipt_valid(source):
             reasons.append("TERMINOLOGY_SOURCE_AUTHORITY_MISSING")
         else:
@@ -232,6 +236,8 @@ def _authority_reasons(
                     continue
                 id_sets[field] = set(identifiers)
 
+            ocr_grapheme_ids = ocr.get("grapheme_ids")
+            ocr_grapheme_ids_valid = _valid_identifier_list(ocr_grapheme_ids)
             if len(counts) == 4:
                 if (
                     counts["recognized_count"]
@@ -240,8 +246,9 @@ def _authority_reasons(
                     != counts["candidate_count"]
                 ):
                     reasons.append("OCR_UNKNOWN_REJECTION_CONSERVATION_MISMATCH")
-                if counts["recognized_count"] + counts["unknown_count"] != len(
-                    ocr.get("grapheme_ids", [])
+                if ocr_grapheme_ids_valid and (
+                    counts["recognized_count"] + counts["unknown_count"]
+                    != len(ocr_grapheme_ids)
                 ):
                     reasons.append("OCR_GRAPHEME_COUNT_CONSERVATION_MISMATCH")
                 if counts["unknown_count"] > 0:
@@ -269,8 +276,7 @@ def _authority_reasons(
                 }
                 if any(counts.get(field) != count for field, count in expected_counts.items()):
                     reasons.append("OCR_UNKNOWN_REJECTION_ID_COUNT_MISMATCH")
-                ocr_grapheme_ids = ocr.get("grapheme_ids")
-                if not isinstance(ocr_grapheme_ids, list) or set(ocr_grapheme_ids) != (
+                if not ocr_grapheme_ids_valid or set(ocr_grapheme_ids) != (
                     recognized_ids | unknown_ids
                 ):
                     reasons.append("OCR_GRAPHEME_DISPOSITION_MISMATCH")

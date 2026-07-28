@@ -128,6 +128,42 @@ inventory SHA 256 is
 `fb292f1449467b135b1272be1e9d7d212314bb43a0c067210de5e6ac538049d9`.
 The directory is local evidence and is excluded from Git.
 
+## Whole corpus parity materialisation
+
+The installed `zfd-parity` command constructs one canonical record per Stage A
+region and one recomputed disposition per Yale page. It writes the exact six
+file authority described in [`CORPUS_PARITY.md`](CORPUS_PARITY.md). The current
+boundary accepts no translation layer overlay because OCR artifact, reviewer,
+adjudication, and terminology passage authorities are not pinned. Such an input
+returns `PARITY_PROMOTION_AUTHORITY_UNPINNED`. Every output therefore remains
+unresolved, and `completion_claim_allowed` remains false.
+
+After the current implementation is committed, freeze Stage A v2c from the
+preserved pixels and run:
+
+```powershell
+$stageARun = "06_Pipelines\image_native_runs\20260728-v2c"
+$parityRun = "06_Pipelines\image_native_runs\20260728-parity-v1"
+
+.venv\Scripts\zfd-parity build-parity-corpus `
+  --repository-root . `
+  --stage-a-receipts "$stageARun\receipts" `
+  --stage-a-corpus "$stageARun\corpus" `
+  --manifest "$stageARun\receipts\voynich_pages.jsonl" `
+  --output-root $parityRun
+
+.venv\Scripts\zfd-parity validate-parity-corpus `
+  --repository-root . `
+  --stage-a-receipts "$stageARun\receipts" `
+  --stage-a-corpus "$stageARun\corpus" `
+  --manifest "$stageARun\receipts\voynich_pages.jsonl" `
+  --parity-root $parityRun
+```
+
+The existing v2b receipts currently return
+`CURRENT_IMPLEMENTATION_MISMATCH` against this implementation. That failure is
+required and prevents a stale run from becoming publication authority.
+
 ## Page local visual index
 
 Stage B opens the complete frozen Stage A run before it issues a page handle.
@@ -290,9 +326,17 @@ whole 1460 to 1471 source remains quarantined:
   --width 2000
 ```
 
-The resulting local comparative ledger contains 2,670 assets, 1,827 unique
-pixel payloads, and 1,713 mapped canvases. Zero assets are training ready. No
-separately verified shorthand corpus has been registered.
+The complete official Frašćić Psalter IIIF Presentation 3 manifest supplies 278
+canvases. The acquisition receipt and saved canvas mapping are held under
+`F:\Dropbox\0 ZFD\00_GM\Frascic_Psalter_1463_ONB_Cod_slav_77`. This dated
+1463 Croatian Church Slavonic semi-uncial source is a longhand control. Its
+angular and cursive status remain unresolved, shorthand remains unattested, and
+the pixels remain quarantined under the provider reuse terms.
+
+The resulting local comparative ledger contains 2,948 assets, 2,105 unique
+pixel payloads, and 1,991 mapped canvases. Zero assets are training ready. No
+evidence for a separately attested fifteenth century Glagolitic shorthand system
+has been registered.
 
 ## Quarantined Kraken geometry environment
 
