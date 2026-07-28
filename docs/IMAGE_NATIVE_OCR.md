@@ -234,6 +234,27 @@ Register and validate local comparative manuscript lineage:
   --source-register data\image_native\source_register.json
 ```
 
+Build and independently rehash the immutable Mavrov hand review queue after the
+package commit is clean and reachable:
+
+```powershell
+.venv\Scripts\zfd-comparanda build-queue `
+  --repository-root . `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --output-root 06_Pipelines\comparative_review_runs\mavrov-20260728-v1
+
+.venv\Scripts\zfd-comparanda validate-queue `
+  --repository-root . `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --queue-root 06_Pipelines\comparative_review_runs\mavrov-20260728-v1
+```
+
+The queue contains 848 explicit unknown hand rows and eight fixed adjacent page
+workflow seeds. It emits no hand boundary, line annotation, split, diplomatic,
+OCR, terminology, or translation authority. Dirty and unversioned package
+provenance cannot write a run. Full source and output contracts are in
+[`COMPARATIVE_GOLD_PROTOCOL.md`](COMPARATIVE_GOLD_PROTOCOL.md).
+
 The frozen Stage A receipt accounts for 210 surfaces, 337 candidate regions,
 22,516 provisional line groups, and 490,595 grapheme components. Every grapheme
 remains an explicit unknown. This receipt predates the Cartesian fragment

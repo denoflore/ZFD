@@ -131,6 +131,28 @@ Comparative receipts are in:
 - [`data/image_native/comparative_duplicate_groups.jsonl`](data/image_native/comparative_duplicate_groups.jsonl)
 - [`data/image_native/comparative_asset_summary.json`](data/image_native/comparative_asset_summary.json)
 
+The Mavrov review queue has its own command surface bound to pixels. It fixes
+the official authority for 848 canvases, preserves manifest order, emits the
+accepted eight adjacent page workflow seeds, and keeps every hand and split
+unresolved:
+
+```powershell
+.venv\Scripts\zfd-comparanda build-queue `
+  --repository-root . `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --output-root 06_Pipelines\comparative_review_runs\mavrov-20260728-v1
+
+.venv\Scripts\zfd-comparanda validate-queue `
+  --repository-root . `
+  --source-mount "F:\Dropbox\0 ZFD\00_GM" `
+  --queue-root 06_Pipelines\comparative_review_runs\mavrov-20260728-v1
+```
+
+Queue creation leaves all 848 assets quarantined, with zero training ready
+assets and null hand, line, and split authorities. See
+[`docs/COMPARATIVE_GOLD_PROTOCOL.md`](docs/COMPARATIVE_GOLD_PROTOCOL.md) for the
+trust anchors, allowed output roots, fixed pilot, and review limits.
+
 ## Clean Windows setup
 
 Run from the repository root in PowerShell:
