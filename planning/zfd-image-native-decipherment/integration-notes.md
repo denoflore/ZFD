@@ -72,7 +72,14 @@ The previously named `tools/fiwb_plan.py` helper is absent. A repository-wide
 file search found no FIWB checker, so no result is invented for that command.
 The executable integrated gate is:
 
-- locked Windows suite: `203 passed in 14.87s`
+- populated Windows working checkout: `203 passed in 14.27s`
+- pinned clean primary environment: no broken requirements and `203 passed in
+  14.18s`
+- clean Windows clone with the exact 210 registered source pixels populated at
+  their manifest paths: `203 passed in 12.44s`
+- clean clone validation of the preserved v2b bundle: archival integrity,
+  artifact integrity, and freshness all true; 210 pages, 670 regions, zero
+  errors, and zero confirmed translated pages or regions
 - v2b receipt validation against the preserved F corpus: 210 pages, 670 regions,
   zero archival, artifact, or freshness errors
 - source register: zero errors across 17 records

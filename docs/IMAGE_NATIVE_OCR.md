@@ -96,6 +96,12 @@ component hashes, exact counts, and one combined disposition hash. The large
 component rows remain under `--corpus`. Artifact integrity, receipt structure,
 and current-code freshness are reported separately.
 
+Freshness validation rehashes every image named by the supplied manifest. Each
+resolved image path must remain inside `--repository-root`. Populate the clone
+with `acquire`, a byte-for-byte copy, or same-volume hardlinks at the registered
+paths. A directory junction that resolves to pixels outside the clone is
+rejected as `CURRENT_PAGE_IMAGE_OUTSIDE_REPOSITORY`.
+
 The preserved Stage A v1 records under `data\image_native` currently return
 `archival_integrity_ok=true`, `freshness_ok=false`, and `ok=false`. Freshness is
 blocked by the current schema, implementation, configuration, and dependency
