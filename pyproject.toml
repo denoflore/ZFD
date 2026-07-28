@@ -22,9 +22,10 @@ test = ["pytest==9.1.1"]
 [project.scripts]
 zfd-native = "zfd_image_native.cli:main"
 zfd-visual-index = "zfd_visual_index.cli:main"
+zfd-review = "zfd_gold.cli:main"
 
 [tool.setuptools.packages.find]
-include = ["zfd_image_native*", "zfd_visual_index*"]
+include = ["zfd_image_native*", "zfd_visual_index*", "zfd_gold*"]
 
 [tool.pytest.ini_options]
 addopts = "-ra"

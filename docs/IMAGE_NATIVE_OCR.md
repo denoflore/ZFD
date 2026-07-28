@@ -188,6 +188,39 @@ actual open set grapheme recognizer still requires human image aligned
 diplomatic labels, qualified independent adjudication, a leakage resistant
 split, a held out calibration receipt, and measured unknown rejection.
 
+Create and validate one unlabelled image aligned task for f1r line 0047:
+
+```powershell
+.venv\Scripts\zfd-review create-task `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b `
+  --page-id yale-ms-408:iiif:1006076 `
+  --visual-index-receipt 06_Pipelines\image_native_runs\20260728-v2b\visual_index\20260728-v1\1006076.json `
+  --line-id yale-ms-408:iiif:1006076:ocr:8afd977e833d1ebc:line:0047 `
+  --output 06_Pipelines\image_native_runs\20260728-v2b\review\20260728-v1\f1r-line-0047.task.json `
+  --crop-output 06_Pipelines\image_native_runs\20260728-v2b\review\20260728-v1\f1r-line-0047.png
+
+.venv\Scripts\zfd-review validate-task `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b `
+  --page-id yale-ms-408:iiif:1006076 `
+  --visual-index-receipt 06_Pipelines\image_native_runs\20260728-v2b\visual_index\20260728-v1\1006076.json `
+  --task 06_Pipelines\image_native_runs\20260728-v2b\review\20260728-v1\f1r-line-0047.task.json `
+  --crop 06_Pipelines\image_native_runs\20260728-v2b\review\20260728-v1\f1r-line-0047.png
+```
+
+`zfd-review seal-observation` accepts a primary or independent reviewer draft.
+It requires exhaustive dispositions for every provisional component and rehashes
+the exact task pixels. `seal-adjudication` requires those two sealed observations
+plus a third distinct identity. Opaque visual classes are retained as visual
+evidence. They do not become diplomatic characters. Task, observation, and
+adjudication receipts all keep semantic authority at zero, block accuracy
+claims, and record inherited text use as false.
+
 Register and validate local comparative manuscript lineage:
 
 ```powershell

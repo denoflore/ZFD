@@ -243,6 +243,29 @@ the frozen `corpus` or `receipts` directories. Every candidate keeps
 `semantic_class_authority_count` remains zero and
 `accuracy_claim_allowed` remains false.
 
+Create the first image aligned review task from one f1r line after the visual
+receipt has been frozen:
+
+```powershell
+.venv\Scripts\zfd-review create-task `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b `
+  --page-id yale-ms-408:iiif:1006076 `
+  --visual-index-receipt 06_Pipelines\image_native_runs\20260728-v2b\visual_index\20260728-v1\1006076.json `
+  --line-id yale-ms-408:iiif:1006076:ocr:8afd977e833d1ebc:line:0047 `
+  --output 06_Pipelines\image_native_runs\20260728-v2b\review\20260728-v1\f1r-line-0047.task.json `
+  --crop-output 06_Pipelines\image_native_runs\20260728-v2b\review\20260728-v1\f1r-line-0047.png
+```
+
+The task has no prefilled label or split. It binds the source image, frozen
+Stage A line, every provisional component, the complete visual index receipt,
+and a lossless line crop. Human observations and independent adjudication use
+the same `zfd-review` command. Opaque form decisions remain ineligible for model
+authority until qualified reviewers, diplomatic label authority, and a sealed
+leakage resistant split are present.
+
 Register the local comparative assets without copying their pixels:
 
 ```powershell

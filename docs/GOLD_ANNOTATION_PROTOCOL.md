@@ -20,6 +20,34 @@ Each gold row requires an annotator ID. Held-out evaluation rows require an
 independent reviewer and adjudicator. Disagreements retain both observations and
 the adjudication rationale. Expert uncertainty is a valid final state.
 
+## Executable visual form task and review receipts
+
+`zfd-review create-task` accepts a frozen Stage A authority and a validated page
+local visual receipt. It emits one `zfd.line_visual_form_review_task.v1` JSON file
+and one lossless line crop. The task binds the page and image hash, line and
+region geometry, every candidate component, both upstream receipt chains, and
+the raw crop pixels. Its split is unassigned. It contains no label and carries
+`sequence_authority_status=not_established`.
+
+An observation draft covers every task component through a visible glyph,
+merge, split, nontext disposition, or explicit unresolved disposition. Sealing
+the draft rehashes the task crop and every proposed glyph span. The permitted
+first pass class is a task local opaque form such as `opaque:0001`. A script
+character, expanded reading, language assignment, or translation cannot enter
+this receipt.
+
+Two sealed observations use the roles `primary_annotator` and
+`independent_reviewer`. `zfd-review seal-adjudication` requires a third distinct
+identity, keeps both source observations, and records coded rationales. Every
+source observation glyph must be cited by an adjudicated visual span or receive
+an explicit controlled disposition. Grouped source references retain one to
+many merge and split disagreements. Even a
+fully resolved opaque sequence has `semantic_class_authority_count=0`,
+`authority_promotion_eligible=false`,
+`diplomatic_sequence_authority_eligible=false`, and
+`accuracy_claim_allowed=false`. Promotion requires a separate byte bound
+diplomatic label authority and leakage resistant split.
+
 ## Leakage resistant splits
 
 Split by lineage root, manuscript, hand, and style. Exact duplicates, crops,
