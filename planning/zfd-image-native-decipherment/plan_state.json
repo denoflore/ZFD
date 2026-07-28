@@ -1,0 +1,112 @@
+{
+  "slug": "zfd-image-native-decipherment",
+  "spec_source": null,
+  "planning_dir": "planning/zfd-image-native-decipherment",
+  "created_utc": "2026-07-27T06:47:27+00:00",
+  "current_phase": "PUSH",
+  "phases": {
+    "SPARK": {
+      "status": "gated",
+      "backward_read": "Re-read Chris's full request, ownership clarification, merged repository receipt, local corpus preservation constraint, and evidence discipline. The spec preserves the whole ask and separates inventory completion from unsupported certainty.",
+      "forward_read": "Checked ABSORB against the spec. The first move substrate tools are unavailable in this seat and the semantic Knowledge Board call stalled; that failure must be recorded. Repo, local corpus, canon claims, and primary external research remain required before design.",
+      "gated_utc": "2026-07-27T07:11:43+00:00"
+    },
+    "ABSORB": {
+      "status": "gated",
+      "backward_read": "Re-read the full ask and SPARK. Research preserves the complete corpus objective, the image-native boundary, source rights, uncertainty, and publication scope. It records the unavailable substrate tools without inventing a result.",
+      "forward_read": "Checked VIBE requirements against the audit. The questions must settle evidence layers, completion semantics, legacy artefact status, OCR targets, source rights, split isolation, translation review, and provenance falsifiers.",
+      "gated_utc": "2026-07-27T07:33:40+00:00"
+    },
+    "VIBE": {
+      "status": "gated",
+      "backward_read": "Re-read SPARK and ABSORB. The answers preserve the whole-corpus goal, image-native boundary, explicit unknowns, rights controls, and honest publication language.",
+      "forward_read": "Checked HARDEN against the emergent evidence spine. HARDEN must attack forced alphabet assignment, dataset leakage, filename joins, semantic confidence inflation, rights ambiguity, and provenance circularity.",
+      "gated_utc": "2026-07-27T07:53:38+00:00"
+    },
+    "HARDEN": {
+      "status": "gated",
+      "backward_read": "Re-read SPARK, ABSORB, and VIBE. The design keeps the whole manuscript ledger, pixel authority, separate inference layers, source rights, expert review, and direct publication scope.",
+      "forward_read": "Checked GROUND requirements. Exact local map shapes, IIIF fields, image paths, package versions, file encodings, CLI callers, and current test behaviour must be measured before tests or implementation.",
+      "gated_utc": "2026-07-27T08:07:51+00:00"
+    },
+    "GROUND": {
+      "status": "gated",
+      "backward_read": "Re-read the complete ask and HARDEN. GROUND preserves the 210-surface authority, image-only boundary, whole-corpus parity, separate terminology and translation layers, rights state, and unresolved outcomes.",
+      "forward_read": "Checked FORGE against reality. Tests must first kill EVA imports, missing rights, ambiguous page identity, duplicate leakage, false translated status, absent gold metrics, encoding faults, and silent corpus omissions.",
+      "gated_utc": "2026-07-28T01:47:33+00:00"
+    },
+    "FORGE": {
+      "status": "gated",
+      "backward_read": "Re-read the full request, acceptance contract, gated evidence, and six sections. The build retains pixel authority, 210-surface identity, open-set unknowns, source rights, leakage isolation, separate inference layers, exact parity joins, Windows reproducibility, and blocked unsupported claims.",
+      "forward_read": "Checked VERIFY and the executable order. Acceptance tests must be written and observed red before implementation, then the image-native package, whole-corpus receipts, gold metrics, terminology evidence, documentation, and independent reviews must satisfy the section contracts.",
+      "gated_utc": "2026-07-28T02:51:21+00:00"
+    },
+    "VERIFY": {
+      "status": "gated",
+      "backward_read": "Re-read the full ask, acceptance contract, source register, corpus execution section, independent reviews, and integrated receipts. Stage A now accounts for all 210 surfaces and 670 candidate regions from pixels, preserves open-set unknowns, binds compact receipts to local artifacts, and blocks unsupported OCR, translation, terminology, and provenance claims.",
+      "forward_read": "Checked PUSH against the verified boundary. Publication must include only the bounded package, tests, compact receipts, source authorities, reviews, and quarantine banners; ignored pixels and models stay local. The F planning subtree must be hash-preserved before an exact fast-forward, and the larger decipherment programme must remain explicitly unfinished.",
+      "gated_utc": "2026-07-28T07:23:39Z"
+    },
+    "PUSH": {
+      "status": "pending",
+      "backward_read": null,
+      "forward_read": null,
+      "gated_utc": null
+    }
+  },
+  "sections": [
+    {
+      "id": "01",
+      "slug": "evidence-identity",
+      "title": "Evidence identity",
+      "deps": []
+    },
+    {
+      "id": "02",
+      "slug": "image-native-ocr",
+      "title": "Image native OCR",
+      "deps": [
+        "01"
+      ]
+    },
+    {
+      "id": "03",
+      "slug": "validation-gates",
+      "title": "Validation gates",
+      "deps": [
+        "01",
+        "02"
+      ]
+    },
+    {
+      "id": "04",
+      "slug": "terminology-translation",
+      "title": "Terminology translation",
+      "deps": [
+        "01",
+        "03"
+      ]
+    },
+    {
+      "id": "05",
+      "slug": "portability-claims",
+      "title": "Portability claims",
+      "deps": [
+        "01",
+        "03"
+      ]
+    },
+    {
+      "id": "06",
+      "slug": "corpus-execution",
+      "title": "Corpus execution",
+      "deps": [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ]
+    }
+  ]
+}

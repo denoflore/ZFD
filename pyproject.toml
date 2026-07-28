@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools==82.0.1", "wheel==0.47.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "zfd-image-native"
+version = "0.1.0"
+description = "Image native evidence, OCR, and parity gates for ZFD"
+readme = "docs/IMAGE_NATIVE_OCR.md"
+requires-python = ">=3.12"
+license = {file = "LICENSE"}
+authors = [{name = "Christopher G. Zuger"}]
+dependencies = [
+  "numpy==2.5.0",
+  "opencv-python==4.13.0.92",
+  "Pillow==12.2.0",
+]
+
+[project.optional-dependencies]
+test = ["pytest==9.1.1"]
+
+[project.scripts]
+zfd-native = "zfd_image_native.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["zfd_image_native*"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests", "zfd_decoder/tests", "scripts"]
+filterwarnings = ["error"]

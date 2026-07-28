@@ -1,0 +1,12 @@
+# Receipt authority hashes raw bytes. Keep repository text stable across platforms.
+/.gitattributes text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.toml text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.ps1 text eol=lf
+*.sh text eol=lf

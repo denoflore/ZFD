@@ -8,9 +8,9 @@ from typing import List, Tuple, Dict
 
 class GallowsExpander:
     def __init__(self, gallows_file: str, mid_word_file: str, lexicon: Dict[str, dict]):
-        with open(gallows_file) as f:
+        with open(gallows_file, encoding='utf-8') as f:
             self.gallows = {g['eva']: g for g in json.load(f)['gallows']}
-        with open(mid_word_file) as f:
+        with open(mid_word_file, encoding='utf-8') as f:
             data = json.load(f)
             # Sort by priority and length (longest first)
             self.substitutions = sorted(

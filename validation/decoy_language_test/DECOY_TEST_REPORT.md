@@ -1,5 +1,16 @@
 # Decoy Language Test, Tier 1: Results and Honest Interpretation
 
+> [!WARNING]
+> Legacy inherited transcription hypothesis. Image native OCR, translation, and provenance remain unconfirmed.
+
+<!-- zfd-evidence-status
+evidence_status: legacy_eva_derived_hypothesis
+primary_input: inherited_transcription
+image_native_confirmed: false
+translation_confirmed: false
+provenance_confirmed: false
+-->
+
 **Date:** June 9, 2026
 **Verdict: NULL RESULT for language-specific discrimination. POSITIVE for word-structure.**
 

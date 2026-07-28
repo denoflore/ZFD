@@ -1,0 +1,101 @@
+{
+  "schema_version": "1.0.0",
+  "models": [
+    {
+      "model_id": "kraken-blla-zenodo-14602569",
+      "model_type": "segmentation",
+      "stable_locator": "https://doi.org/10.5281/zenodo.14602569",
+      "acquisition_uri": "https://raw.githubusercontent.com/achimrabus/polyscriptor/6b9bfcf3b604235a50d45b9fc020e8ab4d06b7a2/pagexml/blla.mlmodel",
+      "pinned_revision": "6b9bfcf3b604235a50d45b9fc020e8ab4d06b7a2",
+      "license_spdx": "Apache-2.0",
+      "software": "kraken==6.0.0",
+      "output_layer": "baseline_and_region_geometry_only",
+      "primary_lane_allowed": false,
+      "diplomatic_label_allowed": false,
+      "quarantine_status": "comparative_only_unvalidated_on_voynich",
+      "training_scope": {
+        "sources": ["cBAD 2019 train, validation, and test partitions"],
+        "epochs": 50,
+        "script_balance": "Latin-heavy multiscript layout data"
+      },
+      "reported_metrics": [],
+      "limitations": [
+        "Training data skews toward Latin script and simple layouts.",
+        "The model card identifies tilted, vertical, and decorated writing as weak cases.",
+        "Voynich page and line segmentation accuracy has not been measured on adjudicated gold."
+      ],
+      "files": [
+        {
+          "name": "blla.mlmodel",
+          "cache_relpath": "build/vendor/polyscriptor/pagexml/blla.mlmodel",
+          "byte_length": 5047020,
+          "sha256": "77a638a83c9e535620827a09e410ed36391e9e8e8126d5796a0f15b978186056"
+        }
+      ]
+    },
+    {
+      "model_id": "rabus-crnn-ctc-glagolitic-16549a7f",
+      "model_type": "recognition",
+      "stable_locator": "https://huggingface.co/achimrabus/crnn-ctc-glagolitic",
+      "acquisition_uri": "https://huggingface.co/achimrabus/crnn-ctc-glagolitic/tree/16549a7fbae1a75b4193dfdb77541724a482d04c",
+      "pinned_revision": "16549a7fbae1a75b4193dfdb77541724a482d04c",
+      "license_spdx": "Apache-2.0",
+      "software": "custom-pytorch-crnn-ctc",
+      "output_layer": "latin_transliteration_with_abbreviation_expansion",
+      "primary_lane_allowed": false,
+      "diplomatic_label_allowed": false,
+      "quarantine_status": "comparative_only_unvalidated_on_registered_hands",
+      "training_scope": {
+        "sources": [
+          "Cod. Vind. Slav. 3, Breviary of Vid of Omisalj",
+          "Second Beram Breviary"
+        ],
+        "period": "fourteenth to fifteenth century",
+        "train_lines": 23203,
+        "validation_lines": 1361,
+        "vocabulary_symbols": 76
+      },
+      "reported_metrics": [
+        {
+          "name": "character_error_rate",
+          "value": 0.0533,
+          "split": "publisher validation split",
+          "source_locator": "https://huggingface.co/achimrabus/crnn-ctc-glagolitic/blob/16549a7fbae1a75b4193dfdb77541724a482d04c/README.md",
+          "zfd_held_out": false
+        }
+      ],
+      "limitations": [
+        "The model outputs Latin transliteration and expands common abbreviations.",
+        "The training data contains only two manuscript sources.",
+        "No source-excluded result exists for the registered ZFD comparative hands.",
+        "No Voynich recognition result from this model may be treated as diplomatic text."
+      ],
+      "files": [
+        {
+          "name": "best_model.pt",
+          "cache_relpath": "build/models/crnn-ctc-glagolitic/best_model.pt",
+          "byte_length": 42669937,
+          "sha256": "ee2544d9f8e5de7bf9c153834bc02dd8d122315920851993f91fe7c8d152e613"
+        },
+        {
+          "name": "model_config.json",
+          "cache_relpath": "build/models/crnn-ctc-glagolitic/model_config.json",
+          "byte_length": 565,
+          "sha256": "a793115a34f6a8c5a3df51b156eda779bb1eef2a4737c36a0905d61a88d46efc"
+        },
+        {
+          "name": "README.md",
+          "cache_relpath": "build/models/crnn-ctc-glagolitic/README.md",
+          "byte_length": 5854,
+          "sha256": "b7d4910da30deddc21889ef1ae2096890ee4bfa14f56984a9920c285c0543039"
+        },
+        {
+          "name": "symbols.txt",
+          "cache_relpath": "build/models/crnn-ctc-glagolitic/symbols.txt",
+          "byte_length": 191,
+          "sha256": "529240565648f682211dd2b06fc8bcc16bc17cb4fc68ba5fefa1cb6e8c16850f"
+        }
+      ]
+    }
+  ]
+}

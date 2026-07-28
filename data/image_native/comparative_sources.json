@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0.0",
+  "sources": [
+    {
+      "source_id": "nsk-petrisov-r4001",
+      "registered_source_id": "nsk-petrisov-r4001",
+      "local_subpath": "Petrisov_zbornik",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 703,
+      "manifest_relpath": "meta/manifest (2).json",
+      "manifest_sha256": "84339304a7585ab6858dbb76dea2fc27880997b46124cb2cc715f88e0e07c7aa",
+      "manifest_uri": "https://digitalna.nsk.hr/admin/api.php?storage=iiif.m&ri=15967",
+      "rights_status": "public_domain",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "resolved_canvas_mapping",
+      "training_disposition": "quarantine_pending_three_hand_attribution",
+      "mapping": {
+        "index_relpath": "meta/PZB_rename_index.json",
+        "url_csv_relpath": "meta/Petrisov_zbornik_urls.csv",
+        "local_name_field": "dst_name",
+        "source_name_field": "src_name",
+        "url_label_field": "Label",
+        "url_uri_field": "Url",
+        "allow_manifest_mapping": true
+      }
+    },
+    {
+      "source_id": "gams-zrcalo-1445",
+      "registered_source_id": "gams-zrcalo-1445",
+      "local_subpath": "GAMS_Zrcalo_1445",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 162,
+      "manifest_relpath": "meta/manifest.json",
+      "manifest_sha256": "bb9d7bd412807267c906c09e7874e56934a96edae57348aed82c40502f0ce330",
+      "manifest_uri": "https://digi.vatlib.it/iiif/MSS_Borg.ill.9/manifest.json",
+      "rights_status": "study_only_vatican_permission_required_for_publication",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "resolved_canvas_mapping",
+      "training_disposition": "quarantine_study_only_no_training_authorization",
+      "mapping": {
+        "direct_relpath": "meta/canvas_mapping.json",
+        "local_name_field": "local_name"
+      }
+    },
+    {
+      "source_id": "nsk-novak-1368-local",
+      "registered_source_id": "nsk-novak-1368",
+      "local_subpath": "Misal_kneza_Novaka",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 703,
+      "manifest_relpath": "meta/manifest.json",
+      "manifest_sha256": "641d6f59cda3dc5e64385464d1acd21c166a466e55dd4d5b351968b3a1cccbb6",
+      "manifest_uri": "https://digitalna.nsk.hr/iiif/record/19456/manifest",
+      "rights_status": "contract_restricted",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "misidentified_petrisov_r4001",
+      "training_disposition": "excluded_misidentified_and_contract_restricted",
+      "mapping": {
+        "index_relpath": "meta/MKN_rename_index.json",
+        "url_csv_relpath": "meta/Misal kneza Novaka.csv",
+        "local_name_field": "new_filename",
+        "source_name_field": "original_filename",
+        "url_label_field": "Label",
+        "url_uri_field": "Url",
+        "allow_manifest_mapping": false
+      }
+    },
+    {
+      "source_id": "nsk-istarski-r3677-local",
+      "registered_source_id": "nsk-istarski-r3677",
+      "local_subpath": "Istarski_razvod",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 214,
+      "manifest_relpath": "meta/IRZ_manifest.json",
+      "manifest_sha256": "6d0a05a9345625cb05ca0cdf3c32fadd8fbee4e27cb5052836a0e6eafa5d3d50",
+      "manifest_uri": "https://digitalna.nsk.hr/admin/api.php?storage=iiif.m&ri=14616",
+      "rights_status": "public_domain",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "unresolved_canvas_mapping_with_exact_triplicates",
+      "training_disposition": "quarantine_pending_canvas_mapping_and_deduplication"
+    },
+    {
+      "source_id": "nsk-vinodolski-r4080-local",
+      "registered_source_id": "nsk-vinodolski-r4080",
+      "local_subpath": "Vinodolski_zakon",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 40,
+      "manifest_relpath": "meta/manifest.json",
+      "manifest_sha256": "f68bdf7024e244450eaab139e35a6b4343004bff1a67b0195cac4f2148f3a2d0",
+      "manifest_uri": "https://digitalna.nsk.hr/admin/api.php?storage=iiif.m&ri=11569",
+      "rights_status": "public_domain",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "unresolved_canvas_mapping",
+      "training_disposition": "quarantine_control_only_pending_canvas_mapping"
+    },
+    {
+      "source_id": "nsk-mavrov-r7822",
+      "registered_source_id": "nsk-mavrov-r7822",
+      "local_subpath": "Mavrov_brevijar_1460",
+      "asset_glob": "img/*.jpg",
+      "expected_asset_count": 848,
+      "manifest_relpath": "meta/manifest.json",
+      "manifest_sha256": "789a7a8eb6d584cefc999d2ae3099dbbc8c4366fdc4b840c1eab0f95ed6742df",
+      "manifest_uri": "https://digitalna.nsk.hr/admin/api.php?storage=iiif.m&ri=16161",
+      "rights_status": "public_domain",
+      "source_identity_status": "resolved",
+      "local_asset_identity_status": "resolved_canvas_mapping",
+      "training_disposition": "quarantine_pending_hand_boundary_and_lineage",
+      "mapping": {
+        "direct_relpath": "meta/canvas_mapping.json",
+        "local_name_field": "local_name"
+      }
+    }
+  ]
+}

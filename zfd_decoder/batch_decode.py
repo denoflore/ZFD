@@ -83,7 +83,7 @@ def process_all(input_dir='input', data_dir='data', output_dir='output/folios'):
     for folio_file in folio_files:
         folio_id = folio_file.stem
         
-        with open(folio_file) as f:
+        with open(folio_file, encoding='utf-8') as f:
             text = f.read().strip()
         
         if not text:
@@ -157,7 +157,7 @@ def write_folio_report(output_path, folio_id, section, result):
     filepath = output_path / f'{folio_id}.md'
     diag = result['diagnostics']
     
-    with open(filepath, 'w') as f:
+    with open(filepath, 'w', encoding='utf-8', newline='\n') as f:
         f.write(f'# {folio_id} - {section}\n\n')
         f.write(f'Known: {diag["known_stems"]}/{diag["known_stems"]+diag["unknown_stems"]} ')
         f.write(f'({diag["known_ratio"]:.1%}) | ')
@@ -187,11 +187,11 @@ def write_corpus_summary(output_path, stats):
         'folio_results': stats['folio_results'],
     }
     
-    with open(output_path / 'corpus_summary.json', 'w') as f:
+    with open(output_path / 'corpus_summary.json', 'w', encoding='utf-8', newline='\n') as f:
         json.dump(summary, f, indent=2)
     
     # Also write markdown summary
-    with open(output_path / 'CORPUS_SUMMARY.md', 'w') as f:
+    with open(output_path / 'CORPUS_SUMMARY.md', 'w', encoding='utf-8', newline='\n') as f:
         f.write('# ZFD Corpus Decode Summary\n\n')
         ratio = summary['corpus_ratio']
         f.write(f'**{stats["total_folios"]} folios | '

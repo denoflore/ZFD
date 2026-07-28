@@ -1,5 +1,16 @@
 # ZFD Phase 9: Pharmaceutical Section Folio Tracker
 
+> [!WARNING]
+> Legacy inherited transcription hypothesis. Image native OCR, translation, and provenance remain unconfirmed.
+
+<!-- zfd-evidence-status
+evidence_status: legacy_eva_derived_hypothesis
+primary_input: inherited_transcription
+image_native_confirmed: false
+translation_confirmed: false
+provenance_confirmed: false
+-->
+
 **Created:** 2026-02-01
 **Objective:** Complete translation of entire pharmaceutical section
 

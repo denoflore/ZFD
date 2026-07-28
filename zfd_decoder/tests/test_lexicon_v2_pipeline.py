@@ -68,14 +68,12 @@ def test_confirmed_token_confidence():
             misc_stem = variant
             break
 
-    if misc_stem:
-        token_misc = Token(id="test.v2.misc", eva=misc_stem)
-        result_misc = pipeline_v2.process_token(token_misc)
-        assert result_conf.confidence > result_misc.confidence, \
-            f"CONFIRMED ({result_conf.confidence}) should beat MISCELLANY ({result_misc.confidence})"
-        print(f"  CONFIRMED 'sar' conf={result_conf.confidence:.2f} > MISCELLANY '{misc_stem}' conf={result_misc.confidence:.2f}")
-    else:
-        print("  No MISCELLANY entries found to compare (skipped)")
+    assert misc_stem is not None, "V2 fixture has no MISCELLANY entry"
+    token_misc = Token(id="test.v2.misc", eva=misc_stem)
+    result_misc = pipeline_v2.process_token(token_misc)
+    assert result_conf.confidence > result_misc.confidence, \
+        f"CONFIRMED ({result_conf.confidence}) should beat MISCELLANY ({result_misc.confidence})"
+    print(f"  CONFIRMED 'sar' conf={result_conf.confidence:.2f} > MISCELLANY '{misc_stem}' conf={result_misc.confidence:.2f}")
 
 
 def test_croatian_output():
@@ -89,11 +87,9 @@ def test_croatian_output():
 
 def test_croatian_kost():
     """kost produces Croatian 'kost'."""
-    # Need to test via a token that resolves to kost
-    token = Token(id="test.v2.hr2", eva="sar")
-    result = pipeline_v2.process_token(token)
-    croatian_form = pipeline_v2.lexicon.get_croatian("sar")
-    print(f"  sar -> croatian form in lexicon: '{croatian_form}'")
+    croatian_form = pipeline_v2.lexicon.get_croatian("kost")
+    assert croatian_form == "kost", f"Expected 'kost', got '{croatian_form}'"
+    print(f"  kost -> croatian form in lexicon: '{croatian_form}'")
 
 
 def test_get_category():
@@ -134,15 +130,15 @@ def test_backward_compat_v1_ol():
 
 def test_v2_has_more_known_stems():
     """V2 lexicon resolves more stems than v1 on same input."""
-    test_text = "qokeedy.chol.sar.daiin.shedy.okal.ol"
+    test_text = "absint.acet.aloin.amyl"
     result_v2 = pipeline_v2.process_folio(test_text, "cmp")
     result_v1 = pipeline_v1.process_folio(test_text, "cmp")
 
     known_v2 = result_v2["diagnostics"]["known_stems"]
     known_v1 = result_v1["diagnostics"]["known_stems"]
 
-    assert known_v2 >= known_v1, \
-        f"v2 ({known_v2}) should resolve >= v1 ({known_v1})"
+    assert known_v2 > known_v1, \
+        f"v2 ({known_v2}) should resolve more than v1 ({known_v1})"
     print(f"  v2 known: {known_v2}, v1 known: {known_v1}")
 
 
@@ -237,10 +233,8 @@ def test_f88r_known_ratio_improvement():
     """f88r known ratio should be >= 85% with compound morphology."""
     import os
     f88r_path = os.path.join(os.path.dirname(__file__), '..', 'input', 'f88r.txt')
-    if not os.path.exists(f88r_path):
-        print("  f88r.txt not found, skipping")
-        return
-    with open(f88r_path) as f:
+    assert os.path.exists(f88r_path), f"Required fixture is missing: {f88r_path}"
+    with open(f88r_path, encoding='utf-8') as f:
         text = f.read()
     result = pipeline_v2.process_folio(text, 'f88r')
     ratio = result['diagnostics']['known_ratio']

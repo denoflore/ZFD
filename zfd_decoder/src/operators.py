@@ -10,7 +10,7 @@ from pathlib import Path
 
 class OperatorDetector:
     def __init__(self, operators_file: str):
-        with open(operators_file) as f:
+        with open(operators_file, encoding='utf-8') as f:
             data = json.load(f)
         self.operators = {op['eva']: op for op in data['operators']}
         self.detection_order = data['detection_order']

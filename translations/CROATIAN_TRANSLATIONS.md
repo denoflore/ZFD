@@ -1,5 +1,16 @@
 # Voynich → Croatian Translations
 
+> [!WARNING]
+> Legacy inherited transcription hypothesis. Image native OCR, translation, and provenance remain unconfirmed.
+
+<!-- zfd-evidence-status
+evidence_status: legacy_eva_derived_hypothesis
+primary_input: inherited_transcription
+image_native_confirmed: false
+translation_confirmed: false
+provenance_confirmed: false
+-->
+
 **Generated:** 2026-02-02  
 **Words translated:** 8604  
 **Latin terms identified:** 6

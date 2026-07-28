@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0",
+  "complete_translation": {
+    "status": "blocked",
+    "required_receipts": ["page_translation_parity_210", "region_translation_parity_all", "expert_adjudication"],
+    "blocking_reasons": ["pixel_to_translation_parity_absent", "unresolved_pages_present"]
+  },
+  "ragusan_provenance": {
+    "status": "blocked",
+    "required_receipts": ["image_native_reading", "dated_ragusan_controls", "negative_city_controls", "independent_historical_review"],
+    "blocking_reasons": ["primary_reading_unestablished", "city_specific_comparison_incomplete"]
+  },
+  "ocr_accuracy": {
+    "status": "blocked",
+    "required_receipts": ["held_out_gold_metrics", "leakage_audit", "calibration_report"],
+    "blocking_reasons": ["adjudicated_gold_absent", "metrics_not_measured"]
+  },
+  "image_native_segmentation": {
+    "status": "blocked",
+    "required_receipts": ["current_whole_corpus_run", "held_out_segmentation_metrics", "curved_layout_coverage"],
+    "blocking_reasons": ["frozen_receipt_predates_current_detector", "segmentation_gold_pending", "curved_layout_lane_absent"]
+  },
+  "script_identification": {
+    "status": "blocked",
+    "required_receipts": ["held_out_script_classification", "independent_palaeographic_review"],
+    "blocking_reasons": ["diplomatic_graphemes_unestablished", "comparative_hands_incomplete"]
+  },
+  "historical_language_identification": {
+    "status": "blocked",
+    "required_receipts": ["adjudicated_diplomatic_corpus", "language_control_evaluation", "independent_linguistic_review"],
+    "blocking_reasons": ["image_native_reading_absent", "language_evidence_absent"]
+  },
+  "genre_identification": {
+    "status": "blocked",
+    "required_receipts": ["adjudicated_translation_sample", "dated_genre_controls", "independent_genre_review"],
+    "blocking_reasons": ["semantic_reading_absent", "genre_controls_incomplete"]
+  },
+  "manuscript_date": {
+    "status": "blocked",
+    "required_receipts": ["material_date_receipt", "writing_date_evidence", "dating_review"],
+    "blocking_reasons": ["parchment_radiocarbon_is_not_writing_date", "writing_date_unestablished"]
+  },
+  "palaeographic_match": {
+    "status": "blocked",
+    "required_receipts": ["hand_attributed_comparanda", "held_out_palaeographic_evaluation", "independent_palaeographic_review"],
+    "blocking_reasons": ["training_ready_comparanda_zero", "target_graphemes_unadjudicated"]
+  },
+  "historical_terminology_resolution": {
+    "status": "blocked",
+    "required_receipts": ["registered_primary_passages", "terminology_adjudication", "source_asset_hashes"],
+    "blocking_reasons": ["historical_forms_unresolved", "primary_passage_joins_absent"]
+  },
+  "corpus_pixel_translation_parity": {
+    "status": "blocked",
+    "required_receipts": ["page_translation_parity_210", "region_translation_parity_all", "canonical_record_recomputation"],
+    "blocking_reasons": ["confirmed_translated_pages_zero", "confirmed_translated_regions_zero"]
+  },
+  "geographic_provenance": {
+    "status": "blocked",
+    "required_receipts": ["image_native_reading", "dated_positive_geographic_controls", "negative_geographic_controls", "independent_historical_review"],
+    "blocking_reasons": ["script_language_genre_unestablished", "geographic_controls_incomplete"]
+  },
+  "institutional_provenance": {
+    "status": "blocked",
+    "required_receipts": ["image_native_reading", "institutional_archive_match", "independent_archive_review"],
+    "blocking_reasons": ["institutional_evidence_absent", "semantic_reading_absent"]
+  }
+}

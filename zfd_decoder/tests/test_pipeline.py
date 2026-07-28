@@ -25,7 +25,7 @@ def test_qokeedy():
     assert result.operator == "ko", f"qo should map to ko, got {result.operator}"
     assert "kost" in result.stem or "st" in result.zfd, f"k should expand to st, got {result.zfd}"
     assert result.confidence >= 0.5, f"High-confidence token, got {result.confidence}"
-    print(f"✓ qokeedy → {result.zfd} ({result.english})")
+    print(f"[PASS] qokeedy -> {result.zfd} ({result.english})")
 
 
 def test_daiin():
@@ -34,7 +34,7 @@ def test_daiin():
 
     assert result.operator == "da", f"da is dose operator, got {result.operator}"
     assert "ain" in result.zfd or result.suffix == "ain", f"Should have ain suffix"
-    print(f"✓ daiin → {result.zfd} ({result.english})")
+    print(f"[PASS] daiin -> {result.zfd} ({result.english})")
 
 
 def test_chol():
@@ -45,7 +45,7 @@ def test_chol():
     assert result.stem_known, f"chol should be known"
     assert "flour" in (result.stem_gloss or "").lower() or "grain" in (result.stem_gloss or "").lower(), \
         f"Expected flour/grain, got {result.stem_gloss}"
-    print(f"✓ chol → {result.zfd} (flour/grain, whole-word)")
+    print(f"[PASS] chol -> {result.zfd} (flour/grain, whole-word)")
 
 
 def test_shedy():
@@ -53,7 +53,7 @@ def test_shedy():
     result = pipeline.process_token(token)
 
     assert result.operator == "š", f"sh maps to š, got {result.operator}"
-    print(f"✓ shedy → {result.zfd} ({result.english})")
+    print(f"[PASS] shedy -> {result.zfd} ({result.english})")
 
 
 def test_okal():
@@ -61,7 +61,11 @@ def test_okal():
     result = pipeline.process_token(token)
 
     # okal should be recognized as pot/vessel
-    print(f"✓ okal → {result.zfd} ({result.english}) [stem_known={result.stem_known}]")
+    assert result.stem_known, "okal should be a known whole-word stem"
+    assert any(
+        word in (result.stem_gloss or "").lower() for word in ("pot", "jar", "vessel")
+    ), f"Expected a vessel gloss, got {result.stem_gloss}"
+    print(f"[PASS] okal -> {result.zfd} ({result.english}) [stem_known={result.stem_known}]")
 
 
 def test_sar():
@@ -70,7 +74,7 @@ def test_sar():
 
     assert result.stem_known, f"sar is salt, got stem_known={result.stem_known}"
     assert "salt" in result.stem_gloss.lower(), f"gloss should be salt, got {result.stem_gloss}"
-    print(f"✓ sar → {result.zfd} ({result.english})")
+    print(f"[PASS] sar -> {result.zfd} ({result.english})")
 
 
 def test_ol():
@@ -80,7 +84,7 @@ def test_ol():
 
     assert result.operator is None, f"ol has no operator, got {result.operator}"
     assert result.stem_known, f"ol is oil"
-    print(f"✓ ol → {result.zfd} ({result.english})")
+    print(f"[PASS] ol -> {result.zfd} ({result.english})")
 
 
 def test_gallows_k():
@@ -89,7 +93,7 @@ def test_gallows_k():
     result = pipeline.process_token(token)
 
     assert "st" in result.zfd, f"k expands to st, got {result.zfd}"
-    print(f"✓ keedy → {result.zfd}")
+    print(f"[PASS] keedy -> {result.zfd}")
 
 
 def test_gallows_t():
@@ -98,7 +102,7 @@ def test_gallows_t():
     result = pipeline.process_token(token)
 
     assert "tr" in result.zfd, f"t expands to tr, got {result.zfd}"
-    print(f"✓ otedy → {result.zfd}")
+    print(f"[PASS] otedy -> {result.zfd}")
 
 
 def test_dar():
@@ -106,7 +110,11 @@ def test_dar():
     token = Token(id="test.1.11", eva="dar")
     result = pipeline.process_token(token)
 
-    print(f"✓ dar → {result.zfd} ({result.english}) [stem_known={result.stem_known}]")
+    assert result.stem_known, "dar should be a known whole-word stem"
+    assert any(
+        word in (result.stem_gloss or "").lower() for word in ("gift", "dose")
+    ), f"Expected gift or dose gloss, got {result.stem_gloss}"
+    print(f"[PASS] dar -> {result.zfd} ({result.english}) [stem_known={result.stem_known}]")
 
 
 def run_all_tests():
@@ -137,10 +145,10 @@ def run_all_tests():
             test()
             passed += 1
         except AssertionError as e:
-            print(f"✗ {test.__name__}: {e}")
+            print(f"[FAIL] {test.__name__}: {e}")
             failed += 1
         except Exception as e:
-            print(f"✗ {test.__name__}: ERROR - {e}")
+            print(f"[FAIL] {test.__name__}: ERROR - {e}")
             failed += 1
 
     print()

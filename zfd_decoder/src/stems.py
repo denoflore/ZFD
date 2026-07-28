@@ -12,7 +12,7 @@ class StemLexicon:
         self.stems: Dict[str, dict] = {}
         self.v2 = False
 
-        with open(lexicon_file) as f:
+        with open(lexicon_file, encoding='utf-8', newline='') as f:
             reader = csv.DictReader(f)
             fieldnames = reader.fieldnames or []
             self.v2 = 'croatian' in fieldnames

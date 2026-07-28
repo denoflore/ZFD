@@ -1,5 +1,48 @@
 # Changelog
 
+> [!WARNING]
+> Legacy inherited transcription claims below remain unconfirmed by image native OCR, translation parity, or provenance evidence.
+
+<!-- zfd-evidence-status
+evidence_status: legacy_eva_derived_hypothesis
+primary_input: inherited_transcription
+image_native_confirmed: false
+translation_confirmed: false
+provenance_confirmed: false
+-->
+
+## Unreleased image-native evidence foundation
+
+- Added the isolated `zfd_image_native` package. Primary recognition accepts
+  registered manuscript pixels and emits provisional page, region, line,
+  grapheme, alternative, confidence, and explicit unknown records.
+- Added the 210-surface Yale authority, exact acquisition and freshness checks,
+  source and rights validation, duplicate lineage controls, model quarantine,
+  held out metric authority, and strict publication claim gates.
+- Added a seven-layer pixel to translation parity validator. Unknown graphemes,
+  missing joins, malformed geometry, unregistered evidence, unreviewed nontext
+  exclusions, and receipt type aliases block completion.
+- Registered 2,670 comparative assets across the dated source ledger. Zero are
+  currently training ready.
+- Frozen the current v2b Stage A run: 210 pages, 670 candidate regions, 30,141
+  provisional lines, 356,739 explicit unknown graphemes, and 4,953,273 rejected
+  components. OCR metrics remain unmeasured and confirmed translations remain
+  zero.
+- Replaced the 1,170,540,526-byte embedded rejection ledger with a 3,671,402-byte
+  page ledger whose hashes bind all 5,310,012 component dispositions to their
+  page OCR artifacts.
+- Bound the quarantined Kraken geometry comparison to the current v2b run across
+  all 210 pages. Its 2,088 regions and 7,554 lines remain unreviewed and carry no
+  recognition labels or accuracy claim. Rebound one Rabus line probe and kept
+  its output explicitly rejected from the primary lane.
+- Registered exact dated NLR Glagolitic cursive wills from 1460 and 1472, the
+  Hrvoje Missal formal hand, and the Bodleian MS Canon. Liturg. 414 control.
+  Rights and unresolved hand boundaries keep all four outside training.
+- Added LF checkout rules for byte-hashed Python and JSONL authorities so fresh
+  Windows checkouts preserve implementation and manifest identities.
+- Corrected public wording so inherited decoder results remain visibly legacy
+  evidence and cannot establish OCR, translation, language, genre, or provenance.
+
 ## v4.3.0 - June 9, 2026 (Validation Audit: Config Pinning + Robustness)
 
 ### v4.3.2 addendum (same day)

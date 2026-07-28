@@ -18,7 +18,7 @@ class CompoundDecomposer:
 
     def __init__(self, unified_lexicon_path: str):
         """Load morpheme dictionary from unified lexicon JSON."""
-        with open(unified_lexicon_path) as f:
+        with open(unified_lexicon_path, encoding='utf-8') as f:
             unified = json.load(f)
 
         self.morphemes = {}

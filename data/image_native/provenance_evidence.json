@@ -1,0 +1,48 @@
+{
+  "schema_version": "1.0.0",
+  "programme_status": "hypothesis_unresolved",
+  "records": [
+    {
+      "evidence_id": "sadovski-2021-split-1455",
+      "source_id": "sadovski-kornprobst-2021",
+      "source_type": "peer_reviewed_secondary_study",
+      "historical_scope": "Split, 1455-1472",
+      "passage_locator": "pp. 222-223, section 6",
+      "stable_locator": "https://doi.org/10.1080/09518967.2021.1964062",
+      "observed_claim": "A 1455 salary list records a chancellor of the Slavic script in Split, while the permanent communal translator office was established in 1472.",
+      "script_evidence": "littera_sclava_term_only_script_not_resolved",
+      "evidentiary_role": "regional_administrative_literacy_control",
+      "bearing_on_zfd": "Confirms a fifteenth century South Slavic administrative context without identifying the script, hand, genre, or Voynich source.",
+      "prohibited_inference": "This record cannot establish a Glagolitic reading or a Split provenance.",
+      "local_artifact_status": "remote_access_local_cache_failed_zero_bytes_removed"
+    },
+    {
+      "evidence_id": "sadovski-2021-dubrovnik-chancery",
+      "source_id": "sadovski-kornprobst-2021",
+      "source_type": "peer_reviewed_secondary_study",
+      "historical_scope": "Dubrovnik and Venetian Dalmatia, fifteenth century",
+      "passage_locator": "pp. 223-225, section 6",
+      "stable_locator": "https://doi.org/10.1080/09518967.2021.1964062",
+      "observed_claim": "Dubrovnik's Slavic chancery primarily handled communication with surrounding Slavic rulers. Slavic records form a small fraction of the preserved archive.",
+      "script_evidence": "slavic_language_chancery_script_unspecified_in_passage",
+      "evidentiary_role": "ragusan_provenance_negative_control",
+      "bearing_on_zfd": "Weakens an unqualified claim that an ordinary fifteenth century Ragusan manuscript should be expected in a Slavic chancery hand.",
+      "prohibited_inference": "A small preserved fraction is not proof that an undocumented manuscript could not have existed.",
+      "local_artifact_status": "remote_access_local_cache_failed_zero_bytes_removed"
+    },
+    {
+      "evidence_id": "sadovski-2021-ragusan-testaments",
+      "source_id": "sadovski-kornprobst-2021",
+      "source_type": "peer_reviewed_secondary_study",
+      "historical_scope": "Dubrovnik, 1466-1524",
+      "passage_locator": "p. 225, section 6",
+      "stable_locator": "https://doi.org/10.1080/09518967.2021.1964062",
+      "observed_claim": "The study identifies Gost Radin's 1466 testament as unrepresentative of ordinary Ragusan production and dates the first preserved Slavic testaments for an ordinary Ragusan merchant and woman to 1517 in Cyrillic and 1524 in Latin script.",
+      "script_evidence": "cyrillic_1517_latin_1524",
+      "evidentiary_role": "script_and_genre_negative_control",
+      "bearing_on_zfd": "Provides no affirmative fifteenth century Ragusan Glagolitic comparator for an ordinary medical or recipe manuscript.",
+      "prohibited_inference": "Dates of first preserved examples are not dates of first historical use.",
+      "local_artifact_status": "remote_access_local_cache_failed_zero_bytes_removed"
+    }
+  ]
+}

@@ -1,5 +1,16 @@
 # Voynich Manuscript: Complete Quadrilingual Interlinear
 
+> [!WARNING]
+> Legacy inherited transcription hypothesis. Image native OCR, translation, and provenance remain unconfirmed.
+
+<!-- zfd-evidence-status
+evidence_status: legacy_eva_derived_hypothesis
+primary_input: inherited_transcription
+image_native_confirmed: false
+translation_confirmed: false
+provenance_confirmed: false
+-->
+
 ## Four Layers: EVA / Croatian Shorthand / Croatian-Latin Expanded / English
 
 **All 201 Folios**

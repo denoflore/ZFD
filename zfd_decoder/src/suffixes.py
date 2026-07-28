@@ -8,7 +8,7 @@ from typing import Tuple, Optional
 
 class SuffixParser:
     def __init__(self, suffixes_file: str):
-        with open(suffixes_file) as f:
+        with open(suffixes_file, encoding='utf-8') as f:
             data = json.load(f)
         # Sort by length (longest first)
         self.suffixes = sorted(

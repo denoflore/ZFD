@@ -1,5 +1,16 @@
 # V3 Dual-Configuration Audit Report
 
+> [!WARNING]
+> Legacy inherited transcription hypothesis. Image native OCR, translation, and provenance remain unconfirmed.
+
+<!-- zfd-evidence-status
+evidence_status: legacy_eva_derived_hypothesis
+primary_input: inherited_transcription
+image_native_confirmed: false
+translation_confirmed: false
+provenance_confirmed: false
+-->
+
 **Date:** June 9, 2026
 **Status:** PASSED under both configurations (5/5 folios discriminating in each)
 
