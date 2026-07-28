@@ -250,6 +250,49 @@ def _git_state() -> tuple[str | None, bool | None]:
         return None, None
 
 
+def _implementation_sha256_at_git_commit(commit: str) -> str | None:
+    root = Path(__file__).resolve().parents[1]
+    try:
+        object_type = subprocess.run(
+            ["git", "cat-file", "-t", commit],
+            cwd=root,
+            capture_output=True,
+            check=True,
+        ).stdout.strip()
+        if object_type != b"commit":
+            return None
+        listed = subprocess.run(
+            ["git", "ls-tree", "-r", "-z", "--name-only", commit, "--", "zfd_visual_index"],
+            cwd=root,
+            capture_output=True,
+            check=True,
+        ).stdout
+        paths = sorted(
+            path
+            for path in listed.decode("utf-8").split("\0")
+            if path.startswith("zfd_visual_index/") and path.endswith(".py")
+        )
+        if not paths:
+            return None
+        inventory = []
+        for path in paths:
+            blob = subprocess.run(
+                ["git", "show", f"{commit}:{path}"],
+                cwd=root,
+                capture_output=True,
+                check=True,
+            ).stdout
+            inventory.append(
+                {
+                    "path": path.removeprefix("zfd_visual_index/"),
+                    "sha256": sha256(blob).hexdigest(),
+                }
+            )
+        return _value_sha256(inventory)
+    except (OSError, UnicodeDecodeError, subprocess.CalledProcessError):
+        return None
+
+
 def _bitmap_int(bitmap_hex: str, descriptor_size: int) -> int:
     expected_length = (descriptor_size * descriptor_size + 3) // 4
     if (
@@ -753,8 +796,6 @@ def validate_page_local_visual_index(
         errors.append("RECEIPT_HASH_MISMATCH")
     if receipt.get("schema") != RECEIPT_SCHEMA or receipt.get("schema_version") != RECEIPT_SCHEMA_VERSION:
         errors.append("RECEIPT_SCHEMA_INVALID")
-    if receipt.get("implementation_sha256") != _implementation_sha256():
-        errors.append("IMPLEMENTATION_HASH_MISMATCH")
     if receipt.get("semantic_class_authority_count") != 0 or receipt.get("accuracy_claim_allowed") is not False:
         errors.append("UNSUPPORTED_AUTHORITY_OR_ACCURACY_CLAIM")
     if receipt.get("confirmed_translated") is not False or receipt.get("inherited_text_used") is not False:
@@ -791,15 +832,44 @@ def validate_page_local_visual_index(
             raise ValueError("Visual index action identity is malformed")
         git_commit = receipt.get("implementation_git_commit")
         git_dirty = receipt.get("implementation_git_worktree_dirty")
-        if git_commit is not None and (not isinstance(git_commit, str) or not re.fullmatch(r"[0-9a-f]{40}", git_commit)):
+        if (git_commit is None) != (git_dirty is None):
+            raise ValueError("Visual index git state pair is malformed")
+        if git_commit is not None and (
+            not isinstance(git_commit, str)
+            or not re.fullmatch(r"[0-9a-f]{40}", git_commit)
+        ):
             raise ValueError("Visual index git commit is malformed")
         if git_dirty is not None and not isinstance(git_dirty, bool):
             raise ValueError("Visual index git state is malformed")
+        receipt_implementation = receipt.get("implementation_sha256")
+        current_implementation = _implementation_sha256()
+        if git_commit is not None:
+            committed_implementation = _implementation_sha256_at_git_commit(git_commit)
+            if committed_implementation is None:
+                errors.append("VISUAL_INDEX_GIT_PROVENANCE_UNAVAILABLE")
+            elif receipt_implementation != committed_implementation:
+                errors.append("IMPLEMENTATION_HASH_MISMATCH")
+        elif receipt_implementation != current_implementation:
+            errors.append("IMPLEMENTATION_HASH_MISMATCH")
         expected = index_page_candidates(
             page,
             config=config,
         )
-        if canonical_json(asdict(expected)) != canonical_json(dict(receipt)):
+        expected_payload = asdict(expected)
+        for historical_field in (
+            "implementation_sha256",
+            "implementation_git_commit",
+            "implementation_git_worktree_dirty",
+        ):
+            expected_payload[historical_field] = receipt.get(historical_field)
+        expected_payload["receipt_sha256"] = _value_sha256(
+            {
+                key: value
+                for key, value in expected_payload.items()
+                if key != "receipt_sha256"
+            }
+        )
+        if canonical_json(expected_payload) != canonical_json(dict(receipt)):
             errors.append("VISUAL_INDEX_RECOMPUTE_MISMATCH")
     except Exception as error:
         errors.append(f"VISUAL_INDEX_RECOMPUTE_FAILED:{type(error).__name__}")

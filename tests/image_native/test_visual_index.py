@@ -6,6 +6,7 @@ from dataclasses import asdict, dataclass
 from hashlib import sha256
 from pathlib import Path
 import shutil
+import subprocess
 
 from PIL import Image, ImageDraw
 import pytest
@@ -16,6 +17,7 @@ from zfd_image_native.models import PageRecord
 from zfd_image_native.ocr import OpenSetConfig
 from zfd_image_native.receipts import freeze_stage_a_receipts
 from zfd_image_native.receipts import _implementation_sha256 as stage_a_implementation_sha256
+import zfd_visual_index.core as visual_index_core
 from zfd_visual_index.cli import main as visual_index_main
 from zfd_visual_index import (
     VisualIndexConfig,
@@ -346,10 +348,17 @@ def test_canonical_grouping_projection_is_stable_under_stage_row_permutation(
     assert first_projection == second_projection
 
 
-def test_visual_index_receipt_recomputes_and_rejects_semantic_tampering(tmp_path: Path) -> None:
+def test_visual_index_receipt_recomputes_and_rejects_semantic_tampering(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     fixture = _stage_a_fixture(tmp_path)
     run = fixture.open()
     receipt = index_page_candidates(run.page(fixture.page_id))
+    monkeypatch.setattr(
+        visual_index_core,
+        "_implementation_sha256_at_git_commit",
+        lambda _commit: receipt.implementation_sha256,
+    )
 
     assert validate_page_local_visual_index(asdict(receipt), run) == ()
     tampered = asdict(receipt)
@@ -368,6 +377,74 @@ def test_visual_index_receipt_recomputes_and_rejects_semantic_tampering(tmp_path
     malformed["candidates"] = None
     errors = validate_page_local_visual_index(_rehash_receipt(malformed), run)
     assert "CANDIDATE_COLLECTION_MALFORMED" in errors
+
+
+def test_visual_index_validation_preserves_historical_git_state(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    fixture = _stage_a_fixture(tmp_path)
+    run = fixture.open()
+    receipt = index_page_candidates(run.page(fixture.page_id))
+    monkeypatch.setattr(
+        visual_index_core,
+        "_implementation_sha256_at_git_commit",
+        lambda _commit: receipt.implementation_sha256,
+    )
+
+    monkeypatch.setattr(
+        visual_index_core,
+        "_git_state",
+        lambda: ("f" * 40, not bool(receipt.implementation_git_worktree_dirty)),
+    )
+
+    assert validate_page_local_visual_index(asdict(receipt), run) == ()
+
+
+def test_visual_index_rejects_unavailable_historical_git_commit(tmp_path: Path) -> None:
+    fixture = _stage_a_fixture(tmp_path)
+    run = fixture.open()
+    receipt = asdict(index_page_candidates(run.page(fixture.page_id)))
+    receipt["implementation_git_commit"] = "0" * 40
+
+    errors = validate_page_local_visual_index(_rehash_receipt(receipt), run)
+
+    assert "VISUAL_INDEX_GIT_PROVENANCE_UNAVAILABLE" in errors
+
+
+def test_visual_index_rejects_git_tree_as_creation_commit(tmp_path: Path) -> None:
+    fixture = _stage_a_fixture(tmp_path)
+    run = fixture.open()
+    receipt = asdict(index_page_candidates(run.page(fixture.page_id)))
+    receipt["implementation_git_commit"] = subprocess.run(
+        ["git", "rev-parse", "HEAD^{tree}"],
+        cwd=ROOT,
+        capture_output=True,
+        text=True,
+        encoding="utf-8",
+        check=True,
+    ).stdout.strip()
+
+    errors = validate_page_local_visual_index(_rehash_receipt(receipt), run)
+
+    assert "VISUAL_INDEX_GIT_PROVENANCE_UNAVAILABLE" in errors
+
+
+def test_dirty_receipt_cannot_borrow_current_inspector_implementation(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
+    fixture = _stage_a_fixture(tmp_path)
+    run = fixture.open()
+    receipt = asdict(index_page_candidates(run.page(fixture.page_id)))
+    receipt["implementation_git_worktree_dirty"] = True
+    monkeypatch.setattr(
+        visual_index_core,
+        "_implementation_sha256_at_git_commit",
+        lambda _commit: "0" * 64,
+    )
+
+    errors = validate_page_local_visual_index(_rehash_receipt(receipt), run)
+
+    assert "IMPLEMENTATION_HASH_MISMATCH" in errors
 
 
 def test_visual_index_output_cannot_overlap_frozen_stage_a(tmp_path: Path) -> None:
