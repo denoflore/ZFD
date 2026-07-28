@@ -23,11 +23,16 @@ from zfd_image_native.rabus_compare import (
 
 
 ROOT = Path(__file__).resolve().parents[2]
-MODEL_ROOT = ROOT / "build" / "models" / "crnn-ctc-glagolitic"
 
 
-def test_ordered_symbols_preserve_duplicate_class_ids() -> None:
-    symbols = load_ordered_symbols(MODEL_ROOT / "symbols.txt")
+def test_ordered_symbols_preserve_duplicate_class_ids(tmp_path: Path) -> None:
+    expected = [f"s{class_id}" for class_id in range(1, 77)]
+    expected[1] = "2"
+    expected[12] = "2"
+    symbol_path = tmp_path / "symbols.txt"
+    symbol_path.write_text("\n".join(expected) + "\n", encoding="utf-8")
+
+    symbols = load_ordered_symbols(symbol_path)
 
     assert len(symbols) == 76
     assert symbols[1] == "2"  # class ID 2

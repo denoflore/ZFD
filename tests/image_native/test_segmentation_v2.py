@@ -7,6 +7,7 @@ from pathlib import Path
 import cv2
 import numpy as np
 from PIL import Image
+import pytest
 
 from zfd_image_native import ocr as ocr_module
 from zfd_image_native.io import sha256_file
@@ -22,6 +23,16 @@ from zfd_image_native.ocr import (
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / "data" / "image_native" / "voynich_pages.jsonl"
+
+
+def _acquired_page(iiif_id: str) -> PageRecord:
+    page = next(
+        page for page in load_page_manifest(MANIFEST) if page.iiif_id == iiif_id
+    )
+    image_path = ROOT / page.image_path if page.image_path else None
+    if image_path is None or not image_path.is_file():
+        pytest.skip(f"requires acquired Yale image {iiif_id}")
+    return PageRecord(**{**page.__dict__, "image_path": str(image_path)})
 
 
 def _run(start_x: int) -> list[_Component]:
@@ -40,7 +51,7 @@ def test_disconnected_same_y_components_do_not_form_one_line() -> None:
 
 
 def test_real_cartesian_fragments_obey_continuity_and_expose_rejections() -> None:
-    page = next(page for page in load_page_manifest(MANIFEST) if page.iiif_id == "1006076")
+    page = _acquired_page("1006076")
     config = OpenSetConfig()
     result = process_page(page, config)
 
@@ -55,7 +66,7 @@ def test_real_cartesian_fragments_obey_continuity_and_expose_rejections() -> Non
 
 
 def test_radial_page_is_flagged_for_layout_review_without_external_model() -> None:
-    page = next(page for page in load_page_manifest(MANIFEST) if page.iiif_id == "1006187")
+    page = _acquired_page("1006187")
     result = process_page(page, OpenSetConfig())
 
     assert result.layout_disposition == "layout_review_required"
