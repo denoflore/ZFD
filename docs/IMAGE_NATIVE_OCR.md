@@ -14,6 +14,9 @@ evidence.
 - A curved or radial text lane has not been implemented. Circular and strongly
   curved layouts remain a segmentation blocker.
 - Diplomatic labels remain null when no registered recognizer is available.
+- Stage B page local visual indexing derives binary component descriptors and
+  deterministic visual neighbours. The descriptor cutoff and distances are
+  uncalibrated. They carry no grapheme or script identity.
 - OCR accuracy is `not_measured` until a leakage resistant held-out gold set is
   adjudicated.
 - Existing decoder and translation artifacts are quarantined comparison material.
@@ -124,6 +127,66 @@ preserved at
 inventory SHA 256 is
 `fb292f1449467b135b1272be1e9d7d212314bb43a0c067210de5e6ac538049d9`.
 The directory is local evidence and is excluded from Git.
+
+## Page local visual index
+
+Stage B opens the complete frozen Stage A run before it issues a page handle.
+The opener verifies the preservation inventory, byte compares the local compact
+receipts with the committed authority, runs the Stage A validator, derives each
+artifact path from the frozen page receipt, rehashes the registered pixels, and
+recomputes the OCR identity. A caller selected geometry JSON cannot enter this
+lane.
+
+Validate the authority from the repository root:
+
+```powershell
+.venv\Scripts\zfd-visual-index validate-stage-a `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b
+```
+
+Index the retained Stage A component hypotheses on f1r:
+
+```powershell
+.venv\Scripts\zfd-visual-index index-page `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b `
+  --page-id yale-ms-408:iiif:1006076 `
+  --output 06_Pipelines\image_native_runs\20260728-v2b\visual_index\20260728-v1\1006076.json
+```
+
+The output is a `zfd.page_local_visual_index.v1` receipt. It records exact
+pixel crops, coarse binary descriptors, Hamming and aspect distance components,
+canonical page local exemplars, explicit cluster membership, and visual
+neighbours with self matches excluded. The grouping cutoff is marked
+`heuristic_unvalidated`. The receipt sets
+`identity_recognition_status=not_run_no_adjudicated_registry`,
+`semantic_class_authority_count=0`, `accuracy_claim_allowed=false`, and
+`confirmed_translated=false`. Candidate `unknown_score` and
+`recognition_confidence` remain null because no calibration receipt exists.
+
+Validate a saved receipt by recomputing it from the same pixels and frozen
+geometry:
+
+```powershell
+.venv\Scripts\zfd-visual-index validate-page `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b `
+  --page-id yale-ms-408:iiif:1006076 `
+  --receipt 06_Pipelines\image_native_runs\20260728-v2b\visual_index\20260728-v1\1006076.json
+```
+
+The visual index is a runnable page local descriptor and candidate identity
+layer. An
+actual open set grapheme recognizer still requires human image aligned
+diplomatic labels, qualified independent adjudication, a leakage resistant
+split, a held out calibration receipt, and measured unknown rejection.
 
 Register and validate local comparative manuscript lineage:
 

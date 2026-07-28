@@ -21,6 +21,10 @@ As of 28 July 2026:
   ink density gates, records rejected components, and exposes layouts needing
   review. A curved or radial text lane is still absent. The pipeline does not
   yet recognize Glagolitic or Voynich graphemes.
+- The Stage B visual index derives coarse binary shape descriptors from the
+  registered pixels and groups them into deterministic page local exemplars.
+  It assigns no letter, script, word, language, or semantic identity. Its
+  uncalibrated descriptor distances are visual indexing evidence only.
 - The legacy decoder reports character coverage over inherited text records.
   That number is not OCR accuracy, semantic confidence, or translation proof.
 
@@ -85,6 +89,7 @@ The current compact v2b receipt set consists of:
 - [`data/image_native/receipts-v2b/page_parity.jsonl`](data/image_native/receipts-v2b/page_parity.jsonl)
 - [`data/image_native/receipts-v2b/region_parity.jsonl`](data/image_native/receipts-v2b/region_parity.jsonl)
 - [`data/image_native/receipts-v2b/corpus_stage_a_summary.json`](data/image_native/receipts-v2b/corpus_stage_a_summary.json)
+- [`data/image_native/receipts-v2b/preservation_receipt.json`](data/image_native/receipts-v2b/preservation_receipt.json)
 
 Every frozen row binds source identity, image SHA 256, OCR output SHA 256,
 configuration, geometry, run identity, and its own receipt hash. Any missing
@@ -210,6 +215,33 @@ is versioned under `data\image_native\receipts-v2b`; its large OCR artifacts liv
 under ignored `build` storage and the dated F evidence bundle.
 Scientific acceptance separately requires reviewed geometry, leakage resistant
 gold data, measured metrics, and qualified adjudication.
+
+Validate the preserved v2b authority once, then build a page local visual index
+for f1r:
+
+```powershell
+.venv\Scripts\zfd-visual-index validate-stage-a `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b
+
+.venv\Scripts\zfd-visual-index index-page `
+  --repository-root . `
+  --manifest data\image_native\voynich_pages.jsonl `
+  --stage-a-root 06_Pipelines\image_native_runs\20260728-v2b `
+  --authority-root data\image_native\receipts-v2b `
+  --page-id yale-ms-408:iiif:1006076 `
+  --output 06_Pipelines\image_native_runs\20260728-v2b\visual_index\20260728-v1\1006076.json
+```
+
+The command rehashes the complete preservation inventory, byte compares the
+seven local receipt files with the committed authority, validates Stage A, and
+derives the page artifact path from its frozen receipt. Output cannot overlap
+the frozen `corpus` or `receipts` directories. Every candidate keeps
+`diplomatic_label`, `unknown_score`, and `recognition_confidence` null.
+`semantic_class_authority_count` remains zero and
+`accuracy_claim_allowed` remains false.
 
 Register the local comparative assets without copying their pixels:
 
