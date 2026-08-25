@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal B
-**Confidence:** 78%
+**Confidence:** 80%
 **Words:** 365 total, 357 resolved (98%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,15 +19,15 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 72 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 49 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 39 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 35 | CONFIRMED |
 | **y** | and/with | *et* | grammar | 30 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 27 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 15 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 15 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 26 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 14 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 14 | CANDIDATE |
 | **stal** | cauldron | *caldarium* | equipment | 9 | CANDIDATE |
+| **ostal** | pot/jar | *olla* | equipment | 9 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 5 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -57,15 +57,15 @@
 EVA: tol shokchy opaiin opaiin chofaly ypar ypal opal opaldaiin
 CRO: tol šosthy opaiin opaiin hofaly ypar ypal opal opaldaiin
 EXP: t+ol namoci-kost+y op+aiin op+aiin kuhaj-tekućina+y i+ar i+al op+al tekućina+aiin
-ENG: [instrumental] soak/infuse (Croatian) bone (medical) [adjective] [liquid+continuing] [liquid+continuing] combine/cook (reduced) liquid/water (vessel context) [adjective] and/with [instrumental] and/with [locative] [locative] liquid/water (vessel context) [liquid+continuing]
+ENG: [instrumental] soak/infuse (Croatian) bone [adjective] [liquid+continuing] [liquid+continuing] combine/cook (reduced) liquid/water (vessel context) [adjective] and/with [instrumental] and/with [locative] [locative] liquid/water (vessel context) [liquid+continuing]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: dair or sheaiin tair y qotalody saiin okeody qotair ar alor orky
 CRO: dair or šeaiin tair y kotalody saiin osteody kotair ar alor orsty
-EXP: DA/DARE [Lat.] oleum še-a+iin ta+ir i ko-tekućina+dy s-i+in OSTEO- [Lat.] ko-ta+ir voda tekućina oleum+y
-ENG: GIVE (RX IMPERATIVE) +ir Oil / oleum (variant) Soaked-state / After soaking [continuation] [agent] and/with measure/quantify (variant) liquid/water (vessel context) [verbal] with/together [plural] BONE (MEDICAL REGISTER) +eo measure/quantify (variant) [agent] water liquid/water (vessel context) Oil / oleum (variant) [adjective]
+EXP: DA/DARE [Lat.] ulje še-a+iin ta+ir i ko-tekućina+dy s-i+in OSTEO- [Lat.] ko-ta+ir voda tekućina ulje+y
+ENG: GIVE (RX IMPERATIVE) +ir oil Soaked-state / After soaking [continuation] [agent] and/with measure/quantify (variant) liquid/water (vessel context) [verbal] with/together [plural] BONE (MEDICAL REGISTER) +eo measure/quantify (variant) [agent] water liquid/water (vessel context) oil [adjective]
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
@@ -80,32 +80,32 @@ ENG: stalk/stem [locative] measure/quantify (variant) [plural] soak/infuse (Croa
 ```
 EVA: or aiin okair y dairal qokal qokaiin qokaly okar olkaly okal
 CRO: or aiin ostair y dairal kostal kostaiin kostaly ostar olstaly ostal
-EXP: oleum a+iin OSTEO- [Lat.] i DA/DARE [Lat.] ko-stare+al ko-stare+aiin ko-kotao+y OSTEO- [Lat.] ulje+y OSTEO- [Lat.]
-ENG: Oil / oleum (variant) [continuation] BONE (MEDICAL REGISTER) +a and/with GIVE (RX IMPERATIVE) +ir measure/quantify (variant) Stand / place / position [locative] measure/quantify (variant) Stand / place / position [liquid+continuing] measure/quantify (variant) cauldron [adjective] BONE (MEDICAL REGISTER) oil [adjective] +?stal BONE (MEDICAL REGISTER)
+EXP: ulje a+iin OSTEO- [Lat.] i DA/DARE [Lat.] ko-stare+al ko-stare+aiin ko-kotao+y OSTEO- [Lat.] ulje+y OSTEO- [Lat.]
+ENG: oil [continuation] BONE (MEDICAL REGISTER) +a and/with GIVE (RX IMPERATIVE) +ir measure/quantify (variant) Stand / place / position [locative] measure/quantify (variant) Stand / place / position [liquid+continuing] measure/quantify (variant) cauldron [adjective] BONE (MEDICAL REGISTER) oil [adjective] +?stal BONE (MEDICAL REGISTER)
 ```
 <sub>[████████░░] 88% confidence</sub>
 
 ```
 EVA: faiir ofaror qotaiin sholy qotaiin yqokaly okal qokaly okaly
 CRO: faiir ofaror kotaiin šoly kotaiin ykostaly ostal kostaly ostaly
-EXP: fai+ir voda ko-t+aiin namoci-ulje+y ko-t+aiin yk-kost+y OSTEO- [Lat.] ko-kotao+y OSTEO- [Lat.]
-ENG: [agent] +?fai water +?ofor measure/quantify (variant) [liquid+continuing] soak/infuse (Croatian) oil [adjective] measure/quantify (variant) [liquid+continuing] measure-vessel (compound) bone (medical) [adjective] BONE (MEDICAL REGISTER) measure/quantify (variant) cauldron [adjective] BONE (MEDICAL REGISTER) +al
+EXP: fai+ir voda ko-t+aiin namoci-ulje+y ko-t+aiin yk-lonac+y OSTEO- [Lat.] ko-kotao+y OSTEO- [Lat.]
+ENG: [agent] +?fai water +?ofor measure/quantify (variant) [liquid+continuing] soak/infuse (Croatian) oil [adjective] measure/quantify (variant) [liquid+continuing] measure-vessel (compound) pot/jar [adjective] BONE (MEDICAL REGISTER) measure/quantify (variant) cauldron [adjective] BONE (MEDICAL REGISTER)
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: qokair or aly shor daiin choly dal ykaiin org fchey okaly oky
 CRO: kostair or aly šor daiin holy dal ystaiin org fhey ostaly osty
-EXP: ko-stare+ir oleum tekućina+y namoci-oleum DA/DARE [Lat.] kuhaj-ulje+y DA/DARE [Lat.] i+aiin oleum fh+ey OSTEO- [Lat.] OSTEO- [Lat.]
-ENG: measure/quantify (variant) Stand / place / position [agent] Oil / oleum (variant) liquid/water (vessel context) [adjective] soak/infuse (Croatian) Oil / oleum (variant) GIVE (RX IMPERATIVE) +i combine/cook (reduced) oil [adjective] GIVE (RX IMPERATIVE) +l and/with [liquid+continuing] Oil / oleum (variant) [participle] BONE (MEDICAL REGISTER) +al BONE (MEDICAL REGISTER)
+EXP: ko-stare+ir ulje tekućina+y namoci-ulje DA/DARE [Lat.] kuhaj-ulje+y DA/DARE [Lat.] i+aiin ulje fh+ey OSTEO- [Lat.] OSTEO- [Lat.]
+ENG: measure/quantify (variant) Stand / place / position [agent] oil liquid/water (vessel context) [adjective] soak/infuse (Croatian) oil GIVE (RX IMPERATIVE) +i combine/cook (reduced) oil [adjective] GIVE (RX IMPERATIVE) +l and/with [liquid+continuing] oil [participle] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER)
 ```
-<sub>[████████░░] 82% confidence</sub>
+<sub>[████████░░] 85% confidence</sub>
 
 ```
 EVA: y daiin qokeey qokar lchedy qokalor sheols oteor aiin cheky
 CRO: y daiin kosteey kostar lhedy kostalor šeols oteor aiin hesty
-EXP: i DA/DARE [Lat.] ko-stare+ey ko-stare+ar lh-e+dy ko-kotao šeo-l+s posuda-oleum a+iin he-stare+y
-ENG: and/with GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] The (before h-) [verbal] measure/quantify (variant) cauldron Soaked-state (extended) [~15] vessel/container (variant) Oil / oleum (variant) [continuation] State / Result / After Stand / place / position [adjective]
+EXP: i DA/DARE [Lat.] ko-stare+ey ko-stare+ar lh-e+dy ko-kotao šeo-l+s posuda-ulje a+iin he-stare+y
+ENG: and/with GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] The (before h-) [verbal] measure/quantify (variant) cauldron Soaked-state (extended) [~15] vessel/container (variant) oil [continuation] State / Result / After Stand / place / position [adjective]
 ```
 <sub>[████████░░] 86% confidence</sub>
 
@@ -120,42 +120,42 @@ ENG: [liquid+continuing] Stand / place / position [participle] GIVE (RX IMPERATI
 ```
 EVA: salal qolaiin chockhey tcholy qokaiin qokaiinos orcheey olaly
 CRO: salal kolaiin hocstey tholy kostaiin kostaiinos orheey olaly
-EXP: s-l+al ko-l+aiin kuhaj-stare+ey miješati+y ko-stare+aiin ko-stare+s oleum+ey ulje+y
-ENG: with/together [locative] measure/quantify (variant) [liquid+continuing] combine/cook (reduced) Stand / place / position [participle] combine/mix [adjective] measure/quantify (variant) Stand / place / position [liquid+continuing] measure/quantify (variant) Stand / place / position [~15] Oil / oleum (variant) [participle] oil [adjective]
+EXP: s-l+al ko-l+aiin kuhaj-stare+ey brasno+y ko-stare+aiin ko-stare+s ulje+ey ulje+y
+ENG: with/together [locative] measure/quantify (variant) [liquid+continuing] combine/cook (reduced) Stand / place / position [participle] flour/grain [adjective] measure/quantify (variant) Stand / place / position [liquid+continuing] measure/quantify (variant) Stand / place / position [~15] oil [participle] oil [adjective]
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: ykair shey key ctholy qotalom qokal qokaiin okal okaldy ory
 CRO: ystair šey stey ctrroly kotalom kostal kostaiin ostal ostaldy ory
-EXP: i+ir še-i stare+ey centrum+y ko-tekućina+om ko-stare+al ko-stare+aiin OSTEO- [Lat.] OSTEO- [Lat.] oleum+y
-ENG: and/with [agent] Soaked-state / After soaking and/with Stand / place / position [participle] Center / control [adjective] measure/quantify (variant) liquid/water (vessel context) [case] measure/quantify (variant) Stand / place / position [locative] measure/quantify (variant) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +al Oil / oleum (variant) [adjective]
+EXP: i+ir še-i stare+ey smjesa+y ko-tekućina+om ko-stare+al ko-stare+aiin OSTEO- [Lat.] OSTEO- [Lat.] ulje+y
+ENG: and/with [agent] Soaked-state / After soaking and/with Stand / place / position [participle] compound mixture [adjective] measure/quantify (variant) liquid/water (vessel context) [case] measure/quantify (variant) Stand / place / position [locative] measure/quantify (variant) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) oil [adjective]
 ```
-<sub>[████████░░] 86% confidence</sub>
+<sub>[█████████░] 91% confidence</sub>
 
 ```
 EVA: tcholshol tor qokairor y ykaiin dory okaiir chodaiin otals
 CRO: tholšol tor kostairor y ystaiin dory ostaiir hodaiin otals
-EXP: miješati+ol oleum ko-stare i i+aiin oleum+y OSTEO- [Lat.] kuhaj-stabljika+aiin posuda-tekućina+s
-ENG: combine/mix [instrumental] Oil / oleum (variant) measure/quantify (variant) Stand / place / position +?airor and/with and/with [liquid+continuing] Oil / oleum (variant) [adjective] BONE (MEDICAL REGISTER) +ai combine/cook (reduced) stalk/stem [liquid+continuing] vessel/container (variant) liquid/water (vessel context) [~15]
+EXP: brasno+ol ulje ko-stare i i+aiin ulje+y OSTEO- [Lat.] kuhaj-stabljika+aiin posuda-tekućina+s
+ENG: flour/grain [instrumental] oil measure/quantify (variant) Stand / place / position +?airor and/with and/with [liquid+continuing] oil [adjective] BONE (MEDICAL REGISTER) combine/cook (reduced) stalk/stem [liquid+continuing] vessel/container (variant) liquid/water (vessel context) [~15]
 ```
-<sub>[███████░░░] 78% confidence</sub>
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: oreeey cheekey cheal qokey chedal dy tolair opchey poaly cfhy
 CRO: oreeey heestey heal kostey hedal dy tolair ophey poaly cplly
-EXP: oleum+ey he-stare+ey he-tekućina ko-stare+ey he-d+al d+y ulje+ir oph+ey tekućina+y cpll+y
-ENG: Oil / oleum (variant) [participle] State / Result / After Stand / place / position [participle] State / Result / After liquid/water (vessel context) measure/quantify (variant) Stand / place / position [participle] State / Result / After [locative] [adjective] oil [agent] [participle] +?oph liquid/water (vessel context) [adjective] [adjective] +?cpll
+EXP: ulje+ey he-stare+ey he-tekućina ko-stare+ey he-d+al d+y ulje+ir oph+ey tekućina+y cpll+y
+ENG: oil [participle] State / Result / After Stand / place / position [participle] State / Result / After liquid/water (vessel context) measure/quantify (variant) Stand / place / position [participle] State / Result / After [locative] [adjective] oil [agent] [participle] +?oph liquid/water (vessel context) [adjective] [adjective] +?cpll
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: qoeear alkeain ytal chor alor okal chcthy tal ckshy kar
 CRO: koeear alsteain ytal hor alor ostal hctrry tal stšy star
-EXP: ko-ee+ar tekućina+ain i+al kuhaj-oleum tekućina OSTEO- [Lat.] kuhaj-centrum+y t+al stare+y stare+ar
-ENG: measure/quantify (variant) (intensifier) [instrumental] liquid/water (vessel context) [plural] and/with [locative] combine/cook (reduced) Oil / oleum (variant) liquid/water (vessel context) BONE (MEDICAL REGISTER) combine/cook (reduced) Center / control [adjective] [locative] Stand / place / position [adjective] Stand / place / position [instrumental]
+EXP: ko-ee+ar tekućina+ain i+al kuhaj-ulje tekućina OSTEO- [Lat.] kuhaj-smjesa+y t+al stare+y stare+ar
+ENG: measure/quantify (variant) (intensifier) [instrumental] liquid/water (vessel context) [plural] and/with [locative] combine/cook (reduced) oil liquid/water (vessel context) BONE (MEDICAL REGISTER) combine/cook (reduced) compound mixture [adjective] [locative] Stand / place / position [adjective] Stand / place / position [instrumental]
 ```
-<sub>[████████░░] 81% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: shar air alos chol oeear sho qotal chol talar tar ar opam
@@ -177,9 +177,9 @@ ENG: measure/quantify (variant) [continuation] vessel/container (variant) liquid
 EVA: ykaiin qokair okaly qokal chaly cheockhey olaly taldar al
 CRO: ystaiin kostair ostaly kostal haly heocstey olaly taldar al
 EXP: i+aiin ko-stare+ir OSTEO- [Lat.] ko-stare+al kuhaj-tekućina+y heo-stare+ey ulje+y tekućina+ar tekućina
-ENG: and/with [liquid+continuing] measure/quantify (variant) Stand / place / position [agent] BONE (MEDICAL REGISTER) +al measure/quantify (variant) Stand / place / position [locative] combine/cook (reduced) liquid/water (vessel context) [adjective] State / Result (extended) Stand / place / position [participle] oil [adjective] liquid/water (vessel context) [instrumental] liquid/water (vessel context)
+ENG: and/with [liquid+continuing] measure/quantify (variant) Stand / place / position [agent] BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [locative] combine/cook (reduced) liquid/water (vessel context) [adjective] State / Result (extended) Stand / place / position [participle] oil [adjective] liquid/water (vessel context) [instrumental] liquid/water (vessel context)
 ```
-<sub>[████████░░] 82% confidence</sub>
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: daiin alal dal qokiir otal chodol qokeal cheol chos okeeam
@@ -201,9 +201,9 @@ ENG: [liquid+continuing] combine/cook (reduced) liquid/water (vessel context) So
 EVA: okair chokal cheoldy qokor olkam cheol dar chokeey okalchy
 CRO: ostair hostal heoldy kostor olstam heol dar hosteey ostalhy
 EXP: OSTEO- [Lat.] kuhaj-kost+al heo-l+dy ko-storaks ulje+m heo-l DA/DARE [Lat.] kuhaj-kost+ey OSTEO- [Lat.]
-ENG: BONE (MEDICAL REGISTER) +a combine/cook (reduced) bone (medical) [locative] State / Result (extended) [verbal] measure/quantify (variant) storax oil [case] State / Result (extended) GIVE (RX IMPERATIVE) +r combine/cook (reduced) bone (medical) [participle] BONE (MEDICAL REGISTER) +alh
+ENG: BONE (MEDICAL REGISTER) +a combine/cook (reduced) bone [locative] State / Result (extended) [verbal] measure/quantify (variant) storax oil [case] State / Result (extended) GIVE (RX IMPERATIVE) +r combine/cook (reduced) bone [participle] BONE (MEDICAL REGISTER) +h
 ```
-<sub>[███████░░░] 78% confidence</sub>
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: tolain ar ykeain qokeey otal chol okal ar chety chkalar ol
@@ -240,10 +240,10 @@ ENG: [adjective] +?phš Soaked-state (extended) [participle] soak/infuse (Croati
 ```
 EVA: qokal daiin qokal cham qokalcheol okorair ainarals okom daly
 CRO: kostal daiin kostal ham kostalheol ostorair ainarals ostom daly
-EXP: ko-stare+al DA/DARE [Lat.] ko-stare+al kuhaj-a+m ko-kotao+ol OSTEO- [Lat.] voda+s OSTEO- [Lat.] DA/DARE [Lat.]
-ENG: measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [locative] combine/cook (reduced) [case] measure/quantify (variant) cauldron [instrumental] BONE (MEDICAL REGISTER) +ora water [~15] +?ainal BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +l
+EXP: ko-stare+al DA/DARE [Lat.] ko-stare+al kuhaj-a+m ko-kotao+ol OSTEO- [Lat.] stvar+s OSTEO- [Lat.] DA/DARE [Lat.]
+ENG: measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [locative] combine/cook (reduced) [case] measure/quantify (variant) cauldron [instrumental] BONE (MEDICAL REGISTER) +ora substance/thing [~15] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +l
 ```
-<sub>[███████░░░] 78% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: qotain okeor sheey qokeol okeoly qokaly qokairor tas ykal
@@ -257,9 +257,9 @@ ENG: measure/quantify (variant) [plural] BONE (MEDICAL REGISTER) +eor Soaked-sta
 EVA: ykaly qokal ol ar qokeos okalar okos al shekar qokair alam
 CRO: ystaly kostal ol ar kosteos ostalar ostos al šestar kostair alam
 EXP: i+y ko-stare+al ulje voda ko-stare+s OSTEO- [Lat.] OSTEO- [Lat.] tekućina še-stare+ar ko-stare+ir tekućina+m
-ENG: and/with [adjective] +?stal measure/quantify (variant) Stand / place / position [locative] oil water measure/quantify (variant) Stand / place / position [~15] BONE (MEDICAL REGISTER) +al BONE (MEDICAL REGISTER) +o liquid/water (vessel context) Soaked-state / After soaking Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [agent] liquid/water (vessel context) [case]
+ENG: and/with [adjective] +?stal measure/quantify (variant) Stand / place / position [locative] oil water measure/quantify (variant) Stand / place / position [~15] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +o liquid/water (vessel context) Soaked-state / After soaking Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [agent] liquid/water (vessel context) [case]
 ```
-<sub>[████████░░] 83% confidence</sub>
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: qokar s aiin al y qokchedy qoekaly odaiin qokar chos alaiin om
@@ -273,9 +273,9 @@ ENG: measure/quantify (variant) Stand / place / position [instrumental] ?s? [con
 EVA: ycheo ckhy okey okal otaly okaldy okeor sheey
 CRO: yheo csty ostey ostal otaly ostaldy osteor šeey
 EXP: i stare+y OSTEO- [Lat.] OSTEO- [Lat.] posuda-tekućina+y OSTEO- [Lat.] OSTEO- [Lat.] še-e+y
-ENG: and/with +?heo Stand / place / position [adjective] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) vessel/container (variant) liquid/water (vessel context) [adjective] BONE (MEDICAL REGISTER) +al BONE (MEDICAL REGISTER) +eor Soaked-state / After soaking [adjective]
+ENG: and/with +?heo Stand / place / position [adjective] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) vessel/container (variant) liquid/water (vessel context) [adjective] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +eor Soaked-state / After soaking [adjective]
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: polal keeo oleeckhey dalar ykeeody choar ckhar yfair ylam
@@ -296,18 +296,18 @@ ENG: GIVE (RX IMPERATIVE) +i Soaked-state (extended) Stand / place / position [a
 ```
 EVA: tcheor chor kar okal qokeey qotal shol qokain ar oetalchg
 CRO: theor hor star ostal kosteey kotal šol kostain ar oetalhg
-EXP: oleum kuhaj-oleum stare+ar OSTEO- [Lat.] ko-stare+ey ko-t+al namoci-ulje ko-stare+ain voda tekućina
-ENG: Oil / oleum (variant) +?the combine/cook (reduced) Oil / oleum (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) [locative] soak/infuse (Croatian) oil measure/quantify (variant) Stand / place / position [plural] water liquid/water (vessel context) +?oethg
+EXP: ono što kuhaj-ulje stare+ar OSTEO- [Lat.] ko-stare+ey ko-t+al namoci-ulje ko-stare+ain voda tekućina
+ENG: that which/the one combine/cook (reduced) oil Stand / place / position [instrumental] BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) [locative] soak/infuse (Croatian) oil measure/quantify (variant) Stand / place / position [plural] water liquid/water (vessel context) +?oethg
 ```
-<sub>[████████░░] 83% confidence</sub>
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: psheey qoty qokar qokey ky ykar cheal otal kol olchedy
 CRO: pšeey koty kostar kostey sty ystar heal otal stol olhedy
-EXP: pše+ey ko-t+y ko-stare+ar ko-stare+ey stare+y i+ar he-tekućina posuda-tekućina stare+ol ulje+edy
-ENG: [participle] +?pše measure/quantify (variant) [adjective] measure/quantify (variant) Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [participle] Stand / place / position [adjective] and/with [instrumental] State / Result / After liquid/water (vessel context) vessel/container (variant) liquid/water (vessel context) Stand / place / position [instrumental] oil [verbal]
+EXP: sa tim+ey ko-t+y ko-stare+ar ko-stare+ey stare+y i+ar he-tekućina posuda-tekućina stare+ol ulje+edy
+ENG: with the (comitative+article) [participle] measure/quantify (variant) [adjective] measure/quantify (variant) Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [participle] Stand / place / position [adjective] and/with [instrumental] State / Result / After liquid/water (vessel context) vessel/container (variant) liquid/water (vessel context) Stand / place / position [instrumental] oil [verbal]
 ```
-<sub>[████████░░] 86% confidence</sub>
+<sub>[█████████░] 90% confidence</sub>
 
 ```
 EVA: qoais chol ar chey
@@ -320,10 +320,10 @@ ENG: measure/quantify (variant) [~15] combine/cook (reduced) oil water State / R
 ```
 EVA: tolsheo keoar qofcheol dar aiphey opchal shockhy okaly
 CRO: tolšeo steoar kofheol dar aiphey ophal šocsty ostaly
-EXP: ulje stare+ar ko-fhe+ol DA/DARE [Lat.] aiph+ey oph+al namoci-stare+y OSTEO- [Lat.]
-ENG: oil +?tšeo Stand / place / position [instrumental] measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +r [participle] +?aiph [locative] +?oph soak/infuse (Croatian) Stand / place / position [adjective] BONE (MEDICAL REGISTER) +al
+EXP: sa onim stare+ar ko-ov/taj+ol DA/DARE [Lat.] aiph+ey oph+al namoci-stare+y OSTEO- [Lat.]
+ENG: with that which Stand / place / position [instrumental] measure/quantify (variant) the/this (demonstrative) [instrumental] GIVE (RX IMPERATIVE) +r [participle] +?aiph [locative] +?oph soak/infuse (Croatian) Stand / place / position [adjective] BONE (MEDICAL REGISTER)
 ```
-<sub>[▓▓▓▓▓░░░░░] 54% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
 ```
 EVA: daiin otain okain chhy okeey qokeeos olar sheo daly dalychs
@@ -336,16 +336,16 @@ ENG: GIVE (RX IMPERATIVE) +i vessel/container (variant) [plural] BONE (MEDICAL R
 ```
 EVA: tcheody okeor ockhy qokal okal shokey qokeey dalas
 CRO: theody osteor ocsty kostal ostal šostey kosteey dalas
-EXP: theo+dy OSTEO- [Lat.] stare+y ko-stare+al OSTEO- [Lat.] namoci-kost+ey ko-stare+ey DA/DARE [Lat.]
-ENG: [verbal] +?theo BONE (MEDICAL REGISTER) +eor Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [locative] BONE (MEDICAL REGISTER) soak/infuse (Croatian) bone (medical) [participle] measure/quantify (variant) Stand / place / position [participle] GIVE (RX IMPERATIVE) +la
+EXP: ono što+dy OSTEO- [Lat.] stare+y ko-stare+al OSTEO- [Lat.] namoci-kost+ey ko-stare+ey DA/DARE [Lat.]
+ENG: that which/the one [verbal] BONE (MEDICAL REGISTER) +eor Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [locative] BONE (MEDICAL REGISTER) soak/infuse (Croatian) bone [participle] measure/quantify (variant) Stand / place / position [participle] GIVE (RX IMPERATIVE) +la
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: olkeey okar ar choky otair otol chokey cheeky dalar
 CRO: olsteey ostar ar hosty otair otol hostey heesty dalar
 EXP: ulje+ey OSTEO- [Lat.] voda kuhaj-kost+y posuda-a+ir posuda-ulje kuhaj-kost+ey he-stare+y DA/DARE [Lat.]
-ENG: oil [participle] BONE (MEDICAL REGISTER) water combine/cook (reduced) bone (medical) [adjective] vessel/container (variant) [agent] vessel/container (variant) oil combine/cook (reduced) bone (medical) [participle] State / Result / After Stand / place / position [adjective] GIVE (RX IMPERATIVE) +l
+ENG: oil [participle] BONE (MEDICAL REGISTER) water combine/cook (reduced) bone [adjective] vessel/container (variant) [agent] vessel/container (variant) oil combine/cook (reduced) bone [participle] State / Result / After Stand / place / position [adjective] GIVE (RX IMPERATIVE) +l
 ```
 <sub>[████████░░] 89% confidence</sub>
 
@@ -360,11 +360,11 @@ ENG: and/with [verbal] +?steeo measure/quantify (variant) Stand / place / positi
 ```
 EVA: oshor qokain okam shear sher sarols
 CRO: ošor kostain ostam šear šer sarols
-EXP: procijediti ko-stare+ain OSTEO- [Lat.] še-voda še-r s-ulje+s
-ENG: strain/soak measure/quantify (variant) Stand / place / position [plural] BONE (MEDICAL REGISTER) +a Soaked-state / After soaking water Soaked-state / After soaking with/together oil [~15]
+EXP: natopiti ko-stare+ain OSTEO- [Lat.] še-voda še-r s-ulje+s
+ENG: soak/infuse measure/quantify (variant) Stand / place / position [plural] BONE (MEDICAL REGISTER) +a Soaked-state / After soaking water Soaked-state / After soaking with/together oil [~15]
 ```
 <sub>[████████░░] 84% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f58v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f58v*

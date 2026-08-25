@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 77%
-**Words:** 100 total, 93 resolved (93%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 78%
+**Words:** 100 total, 94 resolved (94%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,15 +19,13 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 20 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 13 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 7 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 7 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 13 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 7 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 7 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 4 | CANDIDATE |
 | **ee** | (intensifier) |  | general | 3 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
-| **kost** | Bone (Slavic) | *kost* | animal | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -126,8 +124,8 @@ ENG: [adjective] +?th [verbal] +?pho [verbal] storax oil
 ```
 EVA: tchkaiin tchedy qokaiin oraiin
 CRO: thstaiin thedy kostaiin oraiin
-EXP: stare+aiin th+edy ko-stare+aiin oleum+aiin
-ENG: Stand / place / position [liquid+continuing] [verbal] measure/quantify (variant) Stand / place / position [liquid+continuing] Oil / oleum (variant) [liquid+continuing]
+EXP: stare+aiin th+edy ko-stare+aiin ulje+aiin
+ENG: Stand / place / position [liquid+continuing] [verbal] measure/quantify (variant) Stand / place / position [liquid+continuing] oil [liquid+continuing]
 ```
 <sub>[████████░░] 84% confidence</sub>
 
@@ -159,31 +157,31 @@ ENG: (intensifier) [~15] State / Result / After [adjective] Stand / place / posi
 EVA: saiin o lchey kchedy okar qokchdy dyqokees am chdy
 CRO: saiin o lhey sthedy ostar kosthdy dykostees am hdy
 EXP: s-i+in o lh-e+y stare+edy OSTEO- [Lat.] ko-stare+dy kost+s a+m kuhaj-d+y
-ENG: with/together [plural] ?o? The (before h-) [adjective] Stand / place / position [verbal] BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [verbal] Bone (Slavic) [~15] [case] combine/cook (reduced) [adjective]
+ENG: with/together [plural] ?o? The (before h-) [adjective] Stand / place / position [verbal] BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [verbal] bone [~15] [case] combine/cook (reduced) [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: qokchey qody or aiiin okaiin o ckhysheod faimy
 CRO: kosthey kody or aiiin ostaiin o cstyšeod faimy
-EXP: ko-stare+ey ko-d+y oleum ai+iin OSTEO- [Lat.] o in faim+y
-ENG: measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) [adjective] Oil / oleum (variant) [continuation] BONE (MEDICAL REGISTER) ?o? Preposition: in/with +?csšeod [adjective] +?faim
+EXP: ko-stare+ey ko-d+y ulje ai+iin OSTEO- [Lat.] o sa onim faim+y
+ENG: measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) [adjective] oil [continuation] BONE (MEDICAL REGISTER) ?o? with that which +?cstyd [adjective] +?faim
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: shol kedy lor ar okar qoky kedy ryteey qokaim
 CRO: šol stedy lor ar ostar kosty stedy ryteey kostaim
-EXP: namoci-ulje stare+edy l-oleum voda OSTEO- [Lat.] ko-stare+y stare+edy i+ey ko-stare+m
-ENG: soak/infuse (Croatian) oil Stand / place / position [verbal] The / that (determiner) Oil / oleum (variant) water BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [adjective] Stand / place / position [verbal] and/with [participle] measure/quantify (variant) Stand / place / position [case]
+EXP: namoci-ulje stare+edy l-ulje voda OSTEO- [Lat.] ko-stare+y stare+edy i+ey ko-stare+m
+ENG: soak/infuse (Croatian) oil Stand / place / position [verbal] The / that (determiner) oil water BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [adjective] Stand / place / position [verbal] and/with [participle] measure/quantify (variant) Stand / place / position [case]
 ```
 <sub>[█████████░] 91% confidence</sub>
 
 ```
 EVA: tochey qokeedy qokaiin okeor qokarokees ar oky
 CRO: tohey kosteedy kostaiin osteor kostarostees ar osty
-EXP: toh+ey ko-stare+edy ko-stare+aiin OSTEO- [Lat.] ko-vrelina+s voda OSTEO- [Lat.]
-ENG: [participle] +?toh measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) +eor measure/quantify (variant) heat (strong) [~15] water BONE (MEDICAL REGISTER)
+EXP: toh+ey ko-stare+edy ko-stare+aiin OSTEO- [Lat.] ko-star+s voda OSTEO- [Lat.]
+ENG: [participle] +?toh measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) +eor measure/quantify (variant) old/aged [~15] water BONE (MEDICAL REGISTER)
 ```
 <sub>[███████░░░] 77% confidence</sub>
 
@@ -205,4 +203,4 @@ ENG: [verbal] State / Result / After [instrumental] [agent] +?ofa water [verbal]
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f40v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f40v*

@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 69%
+**Confidence:** 71%
 **Words:** 74 total, 68 resolved (92%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -21,12 +21,9 @@
 | **st** | Stand / place / position | *stare* | general | 11 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 9 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 7 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 6 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 4 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 4 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -51,26 +48,26 @@
 ```
 EVA: tshor shey qodckhy cpho oltshey daiin qopchy
 CRO: tšor šey kodcsty cpllo oltšey daiin kophy
-EXP: procijediti še-i ko-stare+y cpllo ulje+ey DA/DARE [Lat.] ko-ph+y
-ENG: strain/soak Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [adjective] ?cpllo? oil [participle] GIVE (RX IMPERATIVE) +i measure/quantify (variant) [adjective]
+EXP: natopiti še-i ko-stare+y cpllo ulje+ey DA/DARE [Lat.] ko-ph+y
+ENG: soak/infuse Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [adjective] ?cpllo? oil [participle] GIVE (RX IMPERATIVE) +i measure/quantify (variant) [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ```
 EVA: okeey daiin sheekol shom shol cthy dcham do
 CRO: osteey daiin šeestol šom šol ctrry dham do
-EXP: OSTEO- [Lat.] DA/DARE [Lat.] še-stare+ol namoci-o+m namoci-ulje centrum+y dha+m do
-ENG: BONE (MEDICAL REGISTER) +e GIVE (RX IMPERATIVE) +i Soaked-state / After soaking Stand / place / position [instrumental] soak/infuse (Croatian) [case] soak/infuse (Croatian) oil Center / control [adjective] [case] +?dha ?do?
+EXP: OSTEO- [Lat.] DA/DARE [Lat.] še-stare+ol namoci-o+m namoci-ulje smjesa+y dha+m do
+ENG: BONE (MEDICAL REGISTER) +e GIVE (RX IMPERATIVE) +i Soaked-state / After soaking Stand / place / position [instrumental] soak/infuse (Croatian) [case] soak/infuse (Croatian) oil compound mixture [adjective] [case] +?dha ?do?
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: ydaiin cphom chol dockhy cthol dam oty
 CRO: ydaiin cpllom hol docsty ctrrol dam oty
-EXP: i+aiin cpll+om kuhaj-ulje stare+y centrum+ol DA/DARE [Lat.] posuda-i
-ENG: and/with [liquid+continuing] [case] +?cpll combine/cook (reduced) oil Stand / place / position [adjective] Center / control [instrumental] GIVE (RX IMPERATIVE) +m vessel/container (variant) and/with
+EXP: i+aiin cpll+om kuhaj-ulje stare+y smjesa+ol DA/DARE [Lat.] posuda-i
+ENG: and/with [liquid+continuing] [case] +?cpll combine/cook (reduced) oil Stand / place / position [adjective] compound mixture [instrumental] GIVE (RX IMPERATIVE) +m vessel/container (variant) and/with
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: qokol daiin qockhor okchor daiin daiin d
@@ -83,10 +80,10 @@ ENG: measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX
 ```
 EVA: ysheey ckhol chckhey daiin ctheody ydy
 CRO: yšeey cstol hcstey daiin ctrreody ydy
-EXP: i+ey stare+ol kuhaj-stare+ey DA/DARE [Lat.] centrum+dy i+dy
-ENG: and/with [participle] Stand / place / position [instrumental] combine/cook (reduced) Stand / place / position [participle] GIVE (RX IMPERATIVE) +i Center / control [verbal] and/with [verbal]
+EXP: i+ey stare+ol kuhaj-stare+ey DA/DARE [Lat.] smjesa+dy i+dy
+ENG: and/with [participle] Stand / place / position [instrumental] combine/cook (reduced) Stand / place / position [participle] GIVE (RX IMPERATIVE) +i compound mixture [verbal] and/with [verbal]
 ```
-<sub>[███████░░░] 78% confidence</sub>
+<sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: ochoiky dshey chol ykcheody chol dam
@@ -107,18 +104,18 @@ ENG: stalk/stem [liquid+continuing] soak/infuse (Croatian) stalk/stem [liquid+co
 ```
 EVA: sheey kshody tsheody sheody sheetchy opod
 CRO: šeey stšody tšeody šeody šeethy opod
-EXP: še-e+y stare+dy tšeo+dy šeo-d+y še-eth+y stabljika
-ENG: Soaked-state / After soaking [adjective] Stand / place / position [verbal] [verbal] +?tšeo Soaked-state (extended) [adjective] Soaked-state / After soaking [adjective] stalk/stem
+EXP: še-e+y stare+dy sa onim+dy šeo-d+y še-eth+y stabljika
+ENG: Soaked-state / After soaking [adjective] Stand / place / position [verbal] with that which [verbal] Soaked-state (extended) [adjective] Soaked-state / After soaking [adjective] stalk/stem
 ```
-<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: oc theody shody qodal cthody sheor shodaiin
 CRO: oc theody šody kodal ctrrody šeor šodaiin
-EXP: oc theo+dy namoci-o+dy ko-d+al centrum+dy šeo-r namoci-stabljika+aiin
-ENG: ?oc? [verbal] +?theo soak/infuse (Croatian) [verbal] measure/quantify (variant) [locative] Center / control [verbal] Soaked-state (extended) soak/infuse (Croatian) stalk/stem [liquid+continuing]
+EXP: oc ono što+dy namoci-o+dy ko-d+al smjesa+dy šeo-r namoci-stabljika+aiin
+ENG: ?oc? that which/the one [verbal] soak/infuse (Croatian) [verbal] measure/quantify (variant) [locative] compound mixture [verbal] Soaked-state (extended) soak/infuse (Croatian) stalk/stem [liquid+continuing]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: ychocthy qodal shodaiin
@@ -131,8 +128,8 @@ ENG: and/with [adjective] +?hoctrr measure/quantify (variant) [locative] soak/in
 ```
 EVA: otsho or chear sheos chkodal
 CRO: otšo or hear šeos hstodal
-EXP: posuda-šo oleum he-voda šeo-s kuhaj-stare+al
-ENG: vessel/container (variant) Oil / oleum (variant) State / Result / After water Soaked-state (extended) combine/cook (reduced) Stand / place / position [locative]
+EXP: posuda-šo ulje he-voda šeo-s kuhaj-stare+al
+ENG: vessel/container (variant) oil State / Result / After water Soaked-state (extended) combine/cook (reduced) Stand / place / position [locative]
 ```
 <sub>[███████░░░] 79% confidence</sub>
 
@@ -154,4 +151,4 @@ ENG: and/with [liquid+continuing] +?ctrrod vessel/container (variant) oil [verba
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f53v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f53v*

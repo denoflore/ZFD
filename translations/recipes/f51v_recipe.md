@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 68%
+**Confidence:** 69%
 **Words:** 72 total, 68 resolved (94%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,12 +18,11 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **st** | Stand / place / position | *stare* | general | 13 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 13 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 5 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 3 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 2 | CONFIRMED |
+| **ctrr** | compound mixture | *confectio* | preparation | 3 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 3 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -59,42 +58,42 @@ ENG: [verbal] +?pošo measure/quantify (variant) Stand / place / position [instr
 ```
 EVA: dshody ckhody qokol dykaiin chyqokey daiin cthy
 CRO: dšody cstody kostol dystaiin hykostey daiin ctrry
-EXP: dšo+dy stare+dy ko-stare+ol stare+aiin kuhaj-i+ey DA/DARE [Lat.] centrum+y
-ENG: [verbal] +?dšo Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [instrumental] Stand / place / position [liquid+continuing] combine/cook (reduced) and/with [participle] GIVE (RX IMPERATIVE) +i Center / control [adjective]
+EXP: dšo+dy stare+dy ko-stare+ol stare+aiin kuhaj-i+ey DA/DARE [Lat.] smjesa+y
+ENG: [verbal] +?dšo Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [instrumental] Stand / place / position [liquid+continuing] combine/cook (reduced) and/with [participle] GIVE (RX IMPERATIVE) +i compound mixture [adjective]
 ```
-<sub>[███████░░░] 70% confidence</sub>
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: tchody cthy chckhey qod ytchodydchol saiin ytam
 CRO: thody ctrry hcstey kod ythodydhol saiin ytam
-EXP: tho+dy centrum+y kuhaj-stare+ey ko-d i+ol s-i+in i+m
-ENG: [verbal] +?tho Center / control [adjective] combine/cook (reduced) Stand / place / position [participle] measure/quantify (variant) and/with [instrumental] +?thodydh with/together [plural] and/with [case]
+EXP: tho+dy smjesa+y kuhaj-stare+ey ko-d i+ol s-i+in i+m
+ENG: [verbal] +?tho compound mixture [adjective] combine/cook (reduced) Stand / place / position [participle] measure/quantify (variant) and/with [instrumental] +?thodydh with/together [plural] and/with [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
 ```
 EVA: otaiin qodal ytal cheodar sodyoteo daiin shokog
 CRO: otaiin kodal ytal heodar sodyoteo daiin šostog
 EXP: posuda-a+iin ko-d+al i+al heo-d+ar s-i DA/DARE [Lat.] namoci-kost
-ENG: vessel/container (variant) [continuation] measure/quantify (variant) [locative] and/with [locative] State / Result (extended) [instrumental] with/together (variant) and/with +?doteo GIVE (RX IMPERATIVE) +i soak/infuse (Croatian) bone (medical)
+ENG: vessel/container (variant) [continuation] measure/quantify (variant) [locative] and/with [locative] State / Result (extended) [instrumental] with/together (variant) and/with +?doteo GIVE (RX IMPERATIVE) +i soak/infuse (Croatian) bone
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: todaiin ytody qokol shodol qockhyykol otaiin dar y
 CRO: todaiin ytody kostol šodol kocstyystol otaiin dar y
-EXP: stabljika+aiin i+dy ko-stare+ol namoci-stabljika+ol ko-in+ol posuda-a+iin DA/DARE [Lat.] i
-ENG: stalk/stem [liquid+continuing] and/with [verbal] measure/quantify (variant) Stand / place / position [instrumental] soak/infuse (Croatian) stalk/stem [instrumental] measure/quantify (variant) Preposition: in/with [instrumental] vessel/container (variant) [continuation] GIVE (RX IMPERATIVE) +r and/with
+EXP: stabljika+aiin i+dy ko-stare+ol namoci-stabljika+ol ko-stare+ol posuda-a+iin DA/DARE [Lat.] i
+ENG: stalk/stem [liquid+continuing] and/with [verbal] measure/quantify (variant) Stand / place / position [instrumental] soak/infuse (Croatian) stalk/stem [instrumental] measure/quantify (variant) Stand / place / position [instrumental] vessel/container (variant) [continuation] GIVE (RX IMPERATIVE) +r and/with
 ```
 <sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: okor ctheody qocphy qokol qotaiinotykol chol daiin
 CRO: ostor ctrreody kocplly kostol kotaiinotystol hol daiin
-EXP: OSTEO- [Lat.] centrum+dy ko-cpll+y ko-stare+ol ko-iterum+ol kuhaj-ulje DA/DARE [Lat.]
-ENG: BONE (MEDICAL REGISTER) +or Center / control [verbal] measure/quantify (variant) [adjective] +?cpll measure/quantify (variant) Stand / place / position [instrumental] measure/quantify (variant) Repetition / plural [instrumental] combine/cook (reduced) oil GIVE (RX IMPERATIVE) +i
+EXP: OSTEO- [Lat.] smjesa+dy ko-cpll+y ko-stare+ol ko-iterum+ol kuhaj-ulje DA/DARE [Lat.]
+ENG: BONE (MEDICAL REGISTER) +or compound mixture [verbal] measure/quantify (variant) [adjective] +?cpll measure/quantify (variant) Stand / place / position [instrumental] measure/quantify (variant) Repetition / plural [instrumental] combine/cook (reduced) oil GIVE (RX IMPERATIVE) +i
 ```
-<sub>[███████░░░] 72% confidence</sub>
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: qotol chodaiin qokcheody cho r chodycthol s olcheety
@@ -115,18 +114,18 @@ ENG: oil [verbal] +?steeo measure/quantify (variant) Stand / place / position [l
 ```
 EVA: daiin ckhol shain tcholol
 CRO: daiin cstol šain tholol
-EXP: DA/DARE [Lat.] stare+ol namoci-a+in miješati+ol
-ENG: GIVE (RX IMPERATIVE) +i Stand / place / position [instrumental] soak/infuse (Croatian) [plural] combine/mix [instrumental]
+EXP: DA/DARE [Lat.] stare+ol namoci-a+in brasno+ol
+ENG: GIVE (RX IMPERATIVE) +i Stand / place / position [instrumental] soak/infuse (Croatian) [plural] flour/grain [instrumental]
 ```
 <sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: ykeol sheo qokody fold
 CRO: ysteol šeo kostody fold
-EXP: i+ol še-o ko-stare+dy ulje
-ENG: and/with [instrumental] Soaked-state / After soaking measure/quantify (variant) Stand / place / position [verbal] oil
+EXP: i+ol še-o ko-stare+dy list
+ENG: and/with [instrumental] Soaked-state / After soaking measure/quantify (variant) Stand / place / position [verbal] leaf
 ```
-<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
+<sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: ycheoky sheey ykeey chey
@@ -154,4 +153,4 @@ ENG: GIVE (RX IMPERATIVE) +i State / Result (extended) State / Result (extended)
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f51v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f51v*

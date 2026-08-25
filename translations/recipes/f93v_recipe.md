@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Pharmaceutical
-**Confidence:** 63%
-**Words:** 70 total, 60 resolved (86%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 65%
+**Words:** 70 total, 62 resolved (89%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,13 +19,11 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 10 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 8 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 8 | CONFIRMED |
+| **ctrr** | compound mixture | *confectio* | preparation | 8 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 8 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 5 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
-| **kost** | Bone (Slavic) | *kost* | animal | 1 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -53,18 +51,18 @@
 ```
 EVA: possheody qoteeo qoshocphy opchody oporopchyotchdal or shodaiin
 CRO: posšeody koteeo košocplly ophody oporophyothdal or šodaiin
-EXP: posšeo+dy ko-ee ko-šocpll+y opho+dy oleum+al oleum namoci-stabljika+aiin
-ENG: [verbal] +?posšeo measure/quantify (variant) (intensifier) measure/quantify (variant) [adjective] +?šocpll [verbal] +?opho Oil / oleum (variant) [locative] +?opophyothd Oil / oleum (variant) soak/infuse (Croatian) stalk/stem [liquid+continuing]
+EXP: sa onim+dy ko-ee ko-šocpll+y opho+dy ulje+al ulje namoci-stabljika+aiin
+ENG: with that which [verbal] measure/quantify (variant) (intensifier) measure/quantify (variant) [adjective] +?šocpll [verbal] +?opho oil [locative] +?opophyothd oil soak/infuse (Croatian) stalk/stem [liquid+continuing]
 ```
-<sub>[▓▓▓▓▓░░░░░] 55% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
 
 ```
 EVA: yteeody qotody qotchol qocthody yteyokydaiindar cthog
 CRO: yteeody kotody kothol koctrrody yteyostydaiindar ctrrog
-EXP: i+dy ko-to+dy ko-th+ol ko-centrum+dy i+ar centrum
-ENG: and/with [verbal] +?teeo measure/quantify (variant) [verbal] measure/quantify (variant) [instrumental] measure/quantify (variant) Center / control [verbal] and/with [instrumental] +?teyostydaiind Center / control
+EXP: i+dy ko-to+dy ko-th+ol ko-smjesa+dy i+ar smjesa
+ENG: and/with [verbal] +?teeo measure/quantify (variant) [verbal] measure/quantify (variant) [instrumental] measure/quantify (variant) compound mixture [verbal] and/with [instrumental] +?teyostydaiind compound mixture
 ```
-<sub>[▓▓▓▓▓░░░░░] 54% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
 ```
 EVA: dchos chody qockhol oky cheodaiin otydaiinotaldair okol
@@ -85,42 +83,42 @@ ENG: with/together (variant) soak/infuse (Croatian) oil soak/infuse (Croatian) [
 ```
 EVA: tshoky cthody qotchol ckhol dchog solooteocchodaiindy
 CRO: tšosty ctrrody kothol cstol dhog solooteochodaiindy
-EXP: kost+y centrum+dy ko-th+ol stare+ol dhog s-dare+dy
-ENG: bone (medical) [adjective] Center / control [verbal] measure/quantify (variant) [instrumental] Stand / place / position [instrumental] ?dhog? with/together (variant) Add (extended) [verbal]
+EXP: kost+y smjesa+dy ko-th+ol stare+ol dhog s-dare+dy
+ENG: bone [adjective] compound mixture [verbal] measure/quantify (variant) [instrumental] Stand / place / position [instrumental] ?dhog? with/together (variant) Add (extended) [verbal]
 ```
-<sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
 
 ```
 EVA: ytchl ckhol qochoithy ctha chkeey cthody sdar sheqokam
 CRO: ythl cstol kohoithy ctrra hsteey ctrrody sdar šekostam
-EXP: i stare+ol ko-hoith+y centrum kuhaj-stare+ey centrum+dy sd+ar še-kost+m
-ENG: and/with +?thl Stand / place / position [instrumental] measure/quantify (variant) [adjective] +?hoith Center / control combine/cook (reduced) Stand / place / position [participle] Center / control [verbal] [instrumental] Soaked-state / After soaking Bone (Slavic) [case]
+EXP: i stare+ol ko-hoith+y smjesa kuhaj-stare+ey smjesa+dy sd+ar še-kost+m
+ENG: and/with +?thl Stand / place / position [instrumental] measure/quantify (variant) [adjective] +?hoith compound mixture combine/cook (reduced) Stand / place / position [participle] compound mixture [verbal] [instrumental] Soaked-state / After soaking bone [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: oees ckheody okcheey koldy tchodaiin ctheosshodain qokeeam
 CRO: oees csteody ostheey stoldy thodaiin ctrreosšodain kosteeam
-EXP: ee+s stare+dy OSTEO- [Lat.] stare+dy stabljika+aiin centrum+ain ko-stare+m
-ENG: (intensifier) [~15] Stand / place / position [verbal] BONE (MEDICAL REGISTER) +he Stand / place / position [verbal] stalk/stem [liquid+continuing] Center / control [plural] +?reosšod measure/quantify (variant) Stand / place / position [case]
+EXP: ee+s stare+dy OSTEO- [Lat.] stare+dy stabljika+aiin smjesa+ain ko-stare+m
+ENG: (intensifier) [~15] Stand / place / position [verbal] BONE (MEDICAL REGISTER) +he Stand / place / position [verbal] stalk/stem [liquid+continuing] compound mixture [plural] measure/quantify (variant) Stand / place / position [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: dcho chody teol sheol cheeoldair okchey ctheydsheog okeey damo
 CRO: dho hody teol šeol heeoldair osthey ctrreydšeog osteey damo
-EXP: dho kuhaj-o+dy te+ol šeo-l he-ulje+ir OSTEO- [Lat.] centrum OSTEO- [Lat.] DA/DARE [Lat.]
-ENG: ?dho? combine/cook (reduced) [verbal] [instrumental] Soaked-state (extended) State / Result / After oil [agent] BONE (MEDICAL REGISTER) +h Center / control +?reydšeog BONE (MEDICAL REGISTER) +e GIVE (RX IMPERATIVE) +mo
+EXP: dho kuhaj-o+dy te+ol šeo-l he-dati+ir OSTEO- [Lat.] smjesa OSTEO- [Lat.] DA/DARE [Lat.]
+ENG: ?dho? combine/cook (reduced) [verbal] [instrumental] Soaked-state (extended) State / Result / After give/add [agent] BONE (MEDICAL REGISTER) +h compound mixture +?eydšeog BONE (MEDICAL REGISTER) +e GIVE (RX IMPERATIVE) +mo
 ```
-<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
 
 ```
 EVA: odeeeeodl cheodar oksho chody okchey cthol olyytchol sar dar
 CRO: odeeeeodl heodar ostšo hody osthey ctrrol olyythol sar dar
-EXP: stabljika heo-d+ar OSTEO- [Lat.] kuhaj-o+dy OSTEO- [Lat.] centrum+ol ulje+ol s-r DA/DARE [Lat.]
-ENG: stalk/stem +?eeeeodl State / Result (extended) [instrumental] BONE (MEDICAL REGISTER) +šo combine/cook (reduced) [verbal] BONE (MEDICAL REGISTER) +h Center / control [instrumental] oil [instrumental] with/together GIVE (RX IMPERATIVE) +r
+EXP: stabljika heo-d+ar OSTEO- [Lat.] kuhaj-o+dy OSTEO- [Lat.] smjesa+ol ulje+ol s-r DA/DARE [Lat.]
+ENG: stalk/stem +?eeeeodl State / Result (extended) [instrumental] BONE (MEDICAL REGISTER) +šo combine/cook (reduced) [verbal] BONE (MEDICAL REGISTER) +h compound mixture [instrumental] oil [instrumental] with/together GIVE (RX IMPERATIVE) +r
 ```
-<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: ychol chs ckhy scheeol
@@ -132,4 +130,4 @@ ENG: and/with [instrumental] combine/cook (reduced) Stand / place / position [ad
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f93v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f93v*

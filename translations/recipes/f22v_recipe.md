@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 72%
+**Confidence:** 73%
 **Words:** 69 total, 66 resolved (96%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,12 +19,11 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 11 | CANDIDATE |
-| **st** | Stand / place / position | *stare* | general | 10 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 5 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 5 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 11 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 5 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 5 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 4 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 3 | CANDIDATE |
 | **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -49,8 +48,8 @@
 ```
 EVA: pysaiinor ofchar oky tchy otdysor shy qod
 CRO: pysaiinor ofhar osty thy otdysor šy kod
-EXP: iterum ofh+ar OSTEO- [Lat.] th+y posuda-oleum namoci-i ko-d
-ENG: Repetition / plural +?pysor [instrumental] +?ofh BONE (MEDICAL REGISTER) [adjective] +?th vessel/container (variant) Oil / oleum (variant) soak/infuse (Croatian) and/with measure/quantify (variant)
+EXP: iterum ofh+ar OSTEO- [Lat.] th+y posuda-ulje namoci-i ko-d
+ENG: Repetition / plural +?pysor [instrumental] +?ofh BONE (MEDICAL REGISTER) [adjective] +?th vessel/container (variant) oil soak/infuse (Croatian) and/with measure/quantify (variant)
 ```
 <sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
@@ -65,10 +64,10 @@ ENG: GIVE (RX IMPERATIVE) +i and/with [liquid+continuing] measure/quantify (vari
 ```
 EVA: qoky kchorl otchy cthy otchykyytchol otam
 CRO: kosty sthorl othy ctrry othystyythol otam
-EXP: ko-stare+y stare posuda-h+y centrum+y posuda-in+ol posuda-a+m
-ENG: measure/quantify (variant) Stand / place / position [adjective] Stand / place / position +?horl vessel/container (variant) [adjective] Center / control [adjective] vessel/container (variant) Preposition: in/with [instrumental] vessel/container (variant) [case]
+EXP: ko-stare+y stare posuda-h+y smjesa+y posuda-stare+ol posuda-a+m
+ENG: measure/quantify (variant) Stand / place / position [adjective] Stand / place / position +?horl vessel/container (variant) [adjective] compound mixture [adjective] vessel/container (variant) Stand / place / position [instrumental] vessel/container (variant) [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: otchaiin shoty qokysaiinodaiin ytaiin
@@ -81,34 +80,34 @@ ENG: vessel/container (variant) [liquid+continuing] soak/infuse (Croatian) [adje
 ```
 EVA: dor ykcheor daiin
 CRO: dor ystheor daiin
-EXP: oleum i DA/DARE [Lat.]
-ENG: Oil / oleum (variant) and/with +?stheor GIVE (RX IMPERATIVE) +i
+EXP: ulje i DA/DARE [Lat.]
+ENG: oil and/with +?stheor GIVE (RX IMPERATIVE) +i
 ```
 <sub>[▓▓▓▓▓░░░░░] 54% confidence</sub>
 
 ```
 EVA: fshor shy tchor otaiin
 CRO: fšor šy thor otaiin
-EXP: procijediti namoci-i torreo posuda-a+iin
-ENG: strain/soak soak/infuse (Croatian) and/with Boil / roast / scorch vessel/container (variant) [continuation]
+EXP: natopiti namoci-i vreti posuda-a+iin
+ENG: soak/infuse soak/infuse (Croatian) and/with boil/roast vessel/container (variant) [continuation]
 ```
 <sub>[█████████░] 90% confidence</sub>
 
 ```
 EVA: ychor chor qokchol chory
 CRO: yhor hor kosthol hory
-EXP: i kuhaj-oleum ko-stare+ol kuhaj-oleum+y
-ENG: and/with +?hor combine/cook (reduced) Oil / oleum (variant) measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) Oil / oleum (variant) [adjective]
+EXP: i kuhaj-ulje ko-stare+ol kuhaj-ulje+y
+ENG: and/with +?hor combine/cook (reduced) oil measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) oil [adjective]
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: qotchy cthy qokol daiin dam
 CRO: kothy ctrry kostol daiin dam
-EXP: ko-th+y centrum+y ko-stare+ol DA/DARE [Lat.] DA/DARE [Lat.]
-ENG: measure/quantify (variant) [adjective] Center / control [adjective] measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +m
+EXP: ko-th+y smjesa+y ko-stare+ol DA/DARE [Lat.] DA/DARE [Lat.]
+ENG: measure/quantify (variant) [adjective] compound mixture [adjective] measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +m
 ```
-<sub>[███████░░░] 77% confidence</sub>
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: okshor shody chol teeol otaiin daiin
@@ -137,10 +136,10 @@ ENG: with/together (variant) Stand / place / position [liquid+continuing] vessel
 ```
 EVA: ychky daiin cthy
 CRO: yhsty daiin ctrry
-EXP: i+y DA/DARE [Lat.] centrum+y
-ENG: and/with [adjective] +?hst GIVE (RX IMPERATIVE) +i Center / control [adjective]
+EXP: i+y DA/DARE [Lat.] smjesa+y
+ENG: and/with [adjective] +?hst GIVE (RX IMPERATIVE) +i compound mixture [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
+<sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: okchain chkoldy shotoly
@@ -161,10 +160,10 @@ ENG: measure/quantify (variant) [adjective] oil [adjective] soak/infuse (Croatia
 ```
 EVA: sho cthy chocthy qokchy dory
 CRO: šo ctrry hoctrry kosthy dory
-EXP: namoci-o centrum+y kuhaj-centrum+y ko-stare+y oleum+y
-ENG: soak/infuse (Croatian) Center / control [adjective] combine/cook (reduced) Center / control [adjective] measure/quantify (variant) Stand / place / position [adjective] Oil / oleum (variant) [adjective]
+EXP: namoci-o smjesa+y kuhaj-smjesa+y ko-stare+y ulje+y
+ENG: soak/infuse (Croatian) compound mixture [adjective] combine/cook (reduced) compound mixture [adjective] measure/quantify (variant) Stand / place / position [adjective] oil [adjective]
 ```
-<sub>[███████░░░] 72% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: saiinchy daldalol
@@ -176,4 +175,4 @@ ENG: with/together [adjective] +?iinh GIVE (RX IMPERATIVE) +l
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f22v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f22v*

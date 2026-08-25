@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 68%
+**Confidence:** 70%
 **Words:** 62 total, 60 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,10 +19,10 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 12 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 9 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 8 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 8 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 8 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 5 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 3 | CONFIRMED |
+| **or** | oil | *oleum* | ingredient | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 | **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
 
@@ -59,18 +59,18 @@ ENG: Stand / place / position [locative] +?eerod
 ```
 EVA: pcheody qofcheepy ofchdy cfhekchdyypchedy chepchefy shdchdy qotal dar
 CRO: pheody kofheepy ofhdy cpllesthdyyphedy hephefy šdhdy kotal dar
-EXP: pheo+dy ko-ee+y ofh+dy stare+edy he-phef+y namoci-dh+dy ko-t+al DA/DARE [Lat.]
-ENG: [verbal] +?pheo measure/quantify (variant) (intensifier) [adjective] [verbal] +?ofh Stand / place / position [verbal] +?cpllehdyyph State / Result / After [adjective] +?phef soak/infuse (Croatian) [verbal] measure/quantify (variant) [locative] GIVE (RX IMPERATIVE) +r
+EXP: ono što+dy ko-ee+y ofh+dy stare+edy he-ov/taj+y namoci-dh+dy ko-t+al DA/DARE [Lat.]
+ENG: that which/the one [verbal] measure/quantify (variant) (intensifier) [adjective] [verbal] +?ofh Stand / place / position [verbal] +?cpllehdyyph State / Result / After the/this (demonstrative) [adjective] soak/infuse (Croatian) [verbal] measure/quantify (variant) [locative] GIVE (RX IMPERATIVE) +r
 ```
-<sub>[▓▓▓▓▓░░░░░] 52% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: dshedy tchey s aiin shekey okedy okalydaiin okedy ykeeody choy keoy dam
 CRO: dšedy they s aiin šestey ostedy ostalydaiin ostedy ysteeody hoy steoy dam
 EXP: dš+edy th+ey s a+iin še-stare+ey OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] i+dy kuhaj-o+y stare+y DA/DARE [Lat.]
-ENG: [verbal] [participle] ?s? [continuation] Soaked-state / After soaking Stand / place / position [participle] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +alyd BONE (MEDICAL REGISTER) and/with [verbal] +?steeo combine/cook (reduced) [adjective] Stand / place / position [adjective] GIVE (RX IMPERATIVE) +m
+ENG: [verbal] [participle] ?s? [continuation] Soaked-state / After soaking Stand / place / position [participle] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +yd BONE (MEDICAL REGISTER) and/with [verbal] +?steeo combine/cook (reduced) [adjective] Stand / place / position [adjective] GIVE (RX IMPERATIVE) +m
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: qokeody okey qokeody oleeol lkedylkeeody qokeedy okeey qokol sheols
@@ -83,16 +83,16 @@ ENG: measure/quantify (variant) Stand / place / position [verbal] BONE (MEDICAL 
 ```
 EVA: ycheos olchey daiin or chol ol aiinoteedy qoteol oteodar orain
 CRO: yheos olhey daiin or hol ol aiinoteedy koteol oteodar orain
-EXP: i+s ulje+ey DA/DARE [Lat.] oleum kuhaj-ulje ulje iterum+edy ko-te+ol posuda-stabljika+ar oleum+ain
-ENG: and/with [~15] +?heo oil [participle] GIVE (RX IMPERATIVE) +i Oil / oleum (variant) combine/cook (reduced) oil oil Repetition / plural [verbal] measure/quantify (variant) [instrumental] vessel/container (variant) stalk/stem [instrumental] Oil / oleum (variant) [plural]
+EXP: i+s ulje+ey DA/DARE [Lat.] ulje kuhaj-ulje ulje iterum+edy ko-te+ol posuda-stabljika+ar ulje+ain
+ENG: and/with [~15] +?heo oil [participle] GIVE (RX IMPERATIVE) +i oil combine/cook (reduced) oil oil Repetition / plural [verbal] measure/quantify (variant) [instrumental] vessel/container (variant) stalk/stem [instrumental] oil [plural]
 ```
 <sub>[████████░░] 82% confidence</sub>
 
 ```
 EVA: todaiin ol cheos yteedy okal oldoteol qokal or oteody
 CRO: todaiin ol heos yteedy ostal oldoteol kostal or oteody
-EXP: stabljika+aiin ulje heo-s i+edy OSTEO- [Lat.] ulje+ol ko-stare+al oleum posuda-eo+dy
-ENG: stalk/stem [liquid+continuing] oil State / Result (extended) and/with [verbal] BONE (MEDICAL REGISTER) oil [instrumental] measure/quantify (variant) Stand / place / position [locative] Oil / oleum (variant) vessel/container (variant) [verbal]
+EXP: stabljika+aiin ulje heo-s i+edy OSTEO- [Lat.] ulje+ol ko-stare+al ulje posuda-eo+dy
+ENG: stalk/stem [liquid+continuing] oil State / Result (extended) and/with [verbal] BONE (MEDICAL REGISTER) oil [instrumental] measure/quantify (variant) Stand / place / position [locative] oil vessel/container (variant) [verbal]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -114,4 +114,4 @@ ENG: GIVE (RX IMPERATIVE) +i oil +?steeo The / that (determiner) Stand / place /
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f41v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f41v*

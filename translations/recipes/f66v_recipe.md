@@ -10,7 +10,7 @@
 **Section:** Herbal B
 **Confidence:** 71%
 **Words:** 112 total, 108 resolved (96%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,12 +18,10 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **st** | Stand / place / position | *stare* | general | 31 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 11 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 29 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 11 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 9 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 2 | CONFIRMED |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
 
 ## Preparation Methods
@@ -50,16 +48,16 @@
 ```
 EVA: okeodof sheod ychoopy opch dal dorshefy ytody daldeam
 CRO: osteodof šeod yhoopy oph dal doršefy ytody daldeam
-EXP: OSTEO- [Lat.] šeo-d i+y oph DA/DARE [Lat.] oleum+y i+dy DA/DARE [Lat.]
-ENG: BONE (MEDICAL REGISTER) +eodof Soaked-state (extended) and/with [adjective] +?hoop ?oph? GIVE (RX IMPERATIVE) +l Oil / oleum (variant) [adjective] +?dšef and/with [verbal] GIVE (RX IMPERATIVE) +ldea
+EXP: OSTEO- [Lat.] šeo-d i+y oph DA/DARE [Lat.] ulje+y i+dy DA/DARE [Lat.]
+ENG: BONE (MEDICAL REGISTER) +eodof Soaked-state (extended) and/with [adjective] +?hoop ?oph? GIVE (RX IMPERATIVE) +l oil [adjective] +?dšef and/with [verbal] GIVE (RX IMPERATIVE) +ldea
 ```
 <sub>[▓▓▓▓░░░░░░] 45% confidence</sub>
 
 ```
 EVA: teodal tchedy dshey okshedy okeedy dcheeky daldy qotal sy
 CRO: teodal thedy dšey ostšedy osteedy dheesty daldy kotal sy
-EXP: stabljika+al th+edy dš+ey OSTEO- [Lat.] OSTEO- [Lat.] stare+y DA/DARE [Lat.] ko-t+al s+y
-ENG: stalk/stem [locative] [verbal] [participle] BONE (MEDICAL REGISTER) +š BONE (MEDICAL REGISTER) +e Stand / place / position [adjective] +?dhee GIVE (RX IMPERATIVE) +l measure/quantify (variant) [locative] [adjective]
+EXP: stabljika+al th+edy dš+ey OSTEO- [Lat.] OSTEO- [Lat.] ee+y DA/DARE [Lat.] ko-t+al s+y
+ENG: stalk/stem [locative] [verbal] [participle] BONE (MEDICAL REGISTER) +š BONE (MEDICAL REGISTER) +e (intensifier) [adjective] +?dhst GIVE (RX IMPERATIVE) +l measure/quantify (variant) [locative] [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
@@ -75,7 +73,7 @@ ENG: and/with [~15] ?s? water Soaked-state / After soaking Stand / place / posit
 EVA: shokeshy daiin cheos shky dol shckhy dal kodal chekal dal
 CRO: šostešy daiin heos šsty dol šcsty dal stodal hestal dal
 EXP: namoci-kost+y DA/DARE [Lat.] heo-s namoci-stare+y d+ol namoci-stare+y DA/DARE [Lat.] stare+al he-stare+al DA/DARE [Lat.]
-ENG: soak/infuse (Croatian) bone (medical) [adjective] GIVE (RX IMPERATIVE) +i State / Result (extended) soak/infuse (Croatian) Stand / place / position [adjective] [instrumental] soak/infuse (Croatian) Stand / place / position [adjective] GIVE (RX IMPERATIVE) +l Stand / place / position [locative] State / Result / After Stand / place / position [locative] GIVE (RX IMPERATIVE) +l
+ENG: soak/infuse (Croatian) bone [adjective] GIVE (RX IMPERATIVE) +i State / Result (extended) soak/infuse (Croatian) Stand / place / position [adjective] [instrumental] soak/infuse (Croatian) Stand / place / position [adjective] GIVE (RX IMPERATIVE) +l Stand / place / position [locative] State / Result / After Stand / place / position [locative] GIVE (RX IMPERATIVE) +l
 ```
 <sub>[███████░░░] 77% confidence</sub>
 
@@ -83,15 +81,15 @@ ENG: soak/infuse (Croatian) bone (medical) [adjective] GIVE (RX IMPERATIVE) +i S
 EVA: shdy shedefam qokedy chokal dal
 CRO: šdy šedefam kostedy hostal dal
 EXP: namoci-d+y še-defa+m ko-stare+edy kuhaj-kost+al DA/DARE [Lat.]
-ENG: soak/infuse (Croatian) [adjective] Soaked-state / After soaking [case] +?defa measure/quantify (variant) Stand / place / position [verbal] combine/cook (reduced) bone (medical) [locative] GIVE (RX IMPERATIVE) +l
+ENG: soak/infuse (Croatian) [adjective] Soaked-state / After soaking [case] +?defa measure/quantify (variant) Stand / place / position [verbal] combine/cook (reduced) bone [locative] GIVE (RX IMPERATIVE) +l
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: tchod sheody shckhhd chos chor sheo keody chepar shsopam
 CRO: thod šeody šcsthd hos hor šeo steody hepar šsopam
-EXP: stabljika šeo-d+y namoci-— kuhaj-o+s kuhaj-oleum še-o stare+dy he-p+ar namoci-sopa+m
-ENG: stalk/stem Soaked-state (extended) [adjective] soak/infuse (Croatian) Complex cluster combine/cook (reduced) [~15] combine/cook (reduced) Oil / oleum (variant) Soaked-state / After soaking Stand / place / position [verbal] State / Result / After [instrumental] soak/infuse (Croatian) [case] +?sopa
+EXP: stabljika šeo-d+y namoci-— kuhaj-o+s kuhaj-ulje še-o stare+dy he-p+ar namoci-sopa+m
+ENG: stalk/stem Soaked-state (extended) [adjective] soak/infuse (Croatian) Complex cluster combine/cook (reduced) [~15] combine/cook (reduced) oil Soaked-state / After soaking Stand / place / position [verbal] State / Result / After [instrumental] soak/infuse (Croatian) [case] +?sopa
 ```
 <sub>[███████░░░] 70% confidence</sub>
 
@@ -106,8 +104,8 @@ ENG: measure/quantify (variant) Stand / place / position [~15] Soaked-state (ext
 ```
 EVA: dchekcsdy cheody qokchdy qokol keedy cheky chety kody
 CRO: dhestcsdy heody kosthdy kostol steedy hesty hety stody
-EXP: stare+dy heo-d+y ko-stare+dy ko-stare+ol stare+edy he-stare+y he-t+y stare+dy
-ENG: Stand / place / position [verbal] +?dhecs State / Result (extended) [adjective] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [instrumental] Stand / place / position [verbal] State / Result / After Stand / place / position [adjective] State / Result / After [adjective] Stand / place / position [verbal]
+EXP: ov/taj+dy heo-d+y ko-stare+dy ko-stare+ol stare+edy he-stare+y he-t+y stare+dy
+ENG: the/this (demonstrative) [verbal] +?dstcs State / Result (extended) [adjective] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [instrumental] Stand / place / position [verbal] State / Result / After Stand / place / position [adjective] State / Result / After [adjective] Stand / place / position [verbal]
 ```
 <sub>[████████░░] 81% confidence</sub>
 
@@ -130,8 +128,8 @@ ENG: [instrumental] Stand / place / position [verbal] measure/quantify (variant)
 ```
 EVA: yteeod aiin shekeod s aiin ykofar otaiin otar chedy kara
 CRO: yteeod aiin šesteod s aiin ystofar otaiin otar hedy stara
-EXP: i a+iin še-stare s a+iin i+ar posuda-a+iin posuda-voda he-d+y vrelina
-ENG: and/with +?teeod [continuation] Soaked-state / After soaking Stand / place / position ?s? [continuation] and/with [instrumental] +?stof vessel/container (variant) [continuation] vessel/container (variant) water State / Result / After [adjective] heat (strong)
+EXP: i a+iin še-stare s a+iin i+ar posuda-a+iin posuda-voda he-d+y star
+ENG: and/with +?teeod [continuation] Soaked-state / After soaking Stand / place / position ?s? [continuation] and/with [instrumental] +?stof vessel/container (variant) [continuation] vessel/container (variant) water State / Result / After [adjective] old/aged
 ```
 <sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
@@ -153,4 +151,4 @@ ENG: and/with [~15] +?dee Soaked-state / After soaking and/with GIVE (RX IMPERAT
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f66v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f66v*

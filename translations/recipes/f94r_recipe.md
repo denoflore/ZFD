@@ -10,7 +10,7 @@
 **Section:** Pharmaceutical
 **Confidence:** 76%
 **Words:** 80 total, 78 resolved (98%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,13 +19,12 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 13 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 8 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 7 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 8 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 7 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 7 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 5 | CONFIRMED |
+| **or** | oil | *oleum* | ingredient | 5 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 3 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 2 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -50,16 +49,16 @@
 ```
 EVA: tchedy opaiis chedaiin dsheedy qopchedal keo daiin otalaiin oar
 CRO: thedy opaiis hedaiin dšeedy kophedal steo daiin otalaiin oar
-EXP: th+edy opaii+s he-d+aiin dše+edy ko-radix + facere+al stare DA/DARE [Lat.] posuda-tekućina+aiin o+ar
-ENG: [verbal] [~15] +?opaii State / Result / After [liquid+continuing] [verbal] measure/quantify (variant) "Process kernel / do / treat" [locative] Stand / place / position GIVE (RX IMPERATIVE) +i vessel/container (variant) liquid/water (vessel context) [liquid+continuing] [instrumental]
+EXP: th+edy opaii+s he-d+aiin sa tim+edy ko-radix + facere+al stare DA/DARE [Lat.] posuda-tekućina+aiin o+ar
+ENG: [verbal] [~15] +?opaii State / Result / After [liquid+continuing] with the (comitative+article) [verbal] measure/quantify (variant) "Process kernel / do / treat" [locative] Stand / place / position GIVE (RX IMPERATIVE) +i vessel/container (variant) liquid/water (vessel context) [liquid+continuing] [instrumental]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: dor cheody okaiin odor okal okair oky daiis qotar okar olaiin
 CRO: dor heody ostaiin odor ostal ostair osty daiis kotar ostar olaiin
-EXP: oleum heo-d+y OSTEO- [Lat.] stabljika OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] DA/DARE [Lat.] ko-t+ar OSTEO- [Lat.] ulje+aiin
-ENG: Oil / oleum (variant) State / Result (extended) [adjective] BONE (MEDICAL REGISTER) stalk/stem BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +a BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +ii measure/quantify (variant) [instrumental] BONE (MEDICAL REGISTER) oil [liquid+continuing]
+EXP: ulje heo-d+y OSTEO- [Lat.] stabljika OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] DA/DARE [Lat.] ko-t+ar OSTEO- [Lat.] ulje+aiin
+ENG: oil State / Result (extended) [adjective] BONE (MEDICAL REGISTER) stalk/stem BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +a BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +ii measure/quantify (variant) [instrumental] BONE (MEDICAL REGISTER) oil [liquid+continuing]
 ```
 <sub>[████████░░] 84% confidence</sub>
 
@@ -74,8 +73,8 @@ ENG: stalk/stem [locative] combine/cook (reduced) oil [adjective] measure/quanti
 ```
 EVA: shor olkeedy olkchdy cheedy kalchdy ched aiin or chol kar am
 CRO: šor olsteedy olsthdy heedy stalhdy hed aiin or hol star am
-EXP: namoci-oleum ulje+edy ulje+dy he-e+dy kotao+dy he-d a+iin oleum kuhaj-ulje stare+ar a+m
-ENG: soak/infuse (Croatian) Oil / oleum (variant) oil [verbal] oil [verbal] State / Result / After [verbal] cauldron [verbal] State / Result / After [continuation] Oil / oleum (variant) combine/cook (reduced) oil Stand / place / position [instrumental] [case]
+EXP: namoci-ulje ulje+edy ulje+dy he-e+dy kotao+dy he-d a+iin ulje kuhaj-ulje stare+ar a+m
+ENG: soak/infuse (Croatian) oil oil [verbal] oil [verbal] State / Result / After [verbal] cauldron [verbal] State / Result / After [continuation] oil combine/cook (reduced) oil Stand / place / position [instrumental] [case]
 ```
 <sub>[████████░░] 80% confidence</sub>
 
@@ -91,15 +90,15 @@ ENG: GIVE (RX IMPERATIVE) +i State / Result / After Stand / place / position [in
 EVA: saiin choky qotchdy otaly chedy dal dy chckhaiin chk qof
 CRO: saiin hosty kothdy otaly hedy dal dy hcstaiin hst kof
 EXP: s-i+in kuhaj-kost+y ko-th+dy posuda-tekućina+y he-d+y DA/DARE [Lat.] d+y kuhaj-stare+aiin kuhaj-stare ko-f
-ENG: with/together [plural] combine/cook (reduced) bone (medical) [adjective] measure/quantify (variant) [verbal] vessel/container (variant) liquid/water (vessel context) [adjective] State / Result / After [adjective] GIVE (RX IMPERATIVE) +l [adjective] combine/cook (reduced) Stand / place / position [liquid+continuing] combine/cook (reduced) Stand / place / position measure/quantify (variant)
+ENG: with/together [plural] combine/cook (reduced) bone [adjective] measure/quantify (variant) [verbal] vessel/container (variant) liquid/water (vessel context) [adjective] State / Result / After [adjective] GIVE (RX IMPERATIVE) +l [adjective] combine/cook (reduced) Stand / place / position [liquid+continuing] combine/cook (reduced) Stand / place / position measure/quantify (variant)
 ```
 <sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: pchedar or aiin cheor kas or alsoxockhey olkain am
 CRO: phedar or aiin heor stas or alsoxocstey olstain am
-EXP: radix + facere+ar oleum a+iin heo-r stare+s oleum tekućina+ey ulje+ain a+m
-ENG: "Process kernel / do / treat" [instrumental] Oil / oleum (variant) [continuation] State / Result (extended) Stand / place / position [~15] Oil / oleum (variant) liquid/water (vessel context) [participle] +?soxocst oil [plural] [case]
+EXP: radix + facere+ar ulje a+iin heo-r stare+s ulje tekućina+ey ulje+ain a+m
+ENG: "Process kernel / do / treat" [instrumental] oil [continuation] State / Result (extended) Stand / place / position [~15] oil liquid/water (vessel context) [participle] +?soxocst oil [plural] [case]
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
@@ -121,4 +120,4 @@ ENG: vessel/container (variant) water combine/cook (reduced) [adjective] and/wit
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f94r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f94r*

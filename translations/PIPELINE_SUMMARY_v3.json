@@ -1,0 +1,1231 @@
+{
+  "pipeline_version": "3.0",
+  "lexicon_version": "3.0.0 (362 morphemes)",
+  "loci": {
+    "f100r": {
+      "words": 110,
+      "resolved": 105,
+      "resolved_pct": 95.5
+    },
+    "f100v": {
+      "words": 91,
+      "resolved": 89,
+      "resolved_pct": 97.8
+    },
+    "f101r": {
+      "words": 205,
+      "resolved": 192,
+      "resolved_pct": 93.7
+    },
+    "f101v": {
+      "words": 199,
+      "resolved": 189,
+      "resolved_pct": 95.0
+    },
+    "f102r": {
+      "words": 238,
+      "resolved": 227,
+      "resolved_pct": 95.4
+    },
+    "f102r1": {
+      "words": 104,
+      "resolved": 103,
+      "resolved_pct": 99.0
+    },
+    "f102r2": {
+      "words": 134,
+      "resolved": 124,
+      "resolved_pct": 92.5
+    },
+    "f102v": {
+      "words": 310,
+      "resolved": 300,
+      "resolved_pct": 96.8
+    },
+    "f102v1": {
+      "words": 126,
+      "resolved": 123,
+      "resolved_pct": 97.6
+    },
+    "f102v2": {
+      "words": 184,
+      "resolved": 177,
+      "resolved_pct": 96.2
+    },
+    "f103r": {
+      "words": 525,
+      "resolved": 517,
+      "resolved_pct": 98.5
+    },
+    "f103v": {
+      "words": 449,
+      "resolved": 442,
+      "resolved_pct": 98.4
+    },
+    "f104r": {
+      "words": 438,
+      "resolved": 427,
+      "resolved_pct": 97.5
+    },
+    "f104v": {
+      "words": 458,
+      "resolved": 439,
+      "resolved_pct": 95.9
+    },
+    "f105r": {
+      "words": 368,
+      "resolved": 355,
+      "resolved_pct": 96.5
+    },
+    "f105v": {
+      "words": 773,
+      "resolved": 723,
+      "resolved_pct": 93.5
+    },
+    "f106r": {
+      "words": 824,
+      "resolved": 802,
+      "resolved_pct": 97.3
+    },
+    "f106v": {
+      "words": 878,
+      "resolved": 863,
+      "resolved_pct": 98.3
+    },
+    "f107r": {
+      "words": 959,
+      "resolved": 932,
+      "resolved_pct": 97.2
+    },
+    "f107v": {
+      "words": 898,
+      "resolved": 885,
+      "resolved_pct": 98.6
+    },
+    "f108r": {
+      "words": 961,
+      "resolved": 946,
+      "resolved_pct": 98.4
+    },
+    "f108v": {
+      "words": 1102,
+      "resolved": 1094,
+      "resolved_pct": 99.3
+    },
+    "f10r": {
+      "words": 86,
+      "resolved": 83,
+      "resolved_pct": 96.5
+    },
+    "f10v": {
+      "words": 53,
+      "resolved": 51,
+      "resolved_pct": 96.2
+    },
+    "f111r": {
+      "words": 1199,
+      "resolved": 1167,
+      "resolved_pct": 97.3
+    },
+    "f111v": {
+      "words": 1085,
+      "resolved": 1067,
+      "resolved_pct": 98.3
+    },
+    "f112r": {
+      "words": 767,
+      "resolved": 751,
+      "resolved_pct": 97.9
+    },
+    "f112v": {
+      "words": 808,
+      "resolved": 796,
+      "resolved_pct": 98.5
+    },
+    "f113r": {
+      "words": 875,
+      "resolved": 841,
+      "resolved_pct": 96.1
+    },
+    "f113v": {
+      "words": 482,
+      "resolved": 472,
+      "resolved_pct": 97.9
+    },
+    "f114r": {
+      "words": 447,
+      "resolved": 427,
+      "resolved_pct": 95.5
+    },
+    "f114v": {
+      "words": 362,
+      "resolved": 353,
+      "resolved_pct": 97.5
+    },
+    "f115r": {
+      "words": 444,
+      "resolved": 435,
+      "resolved_pct": 98.0
+    },
+    "f115v": {
+      "words": 399,
+      "resolved": 390,
+      "resolved_pct": 97.7
+    },
+    "f116r": {
+      "words": 538,
+      "resolved": 525,
+      "resolved_pct": 97.6
+    },
+    "f116v": {
+      "words": 2,
+      "resolved": 2,
+      "resolved_pct": 100.0
+    },
+    "f11r": {
+      "words": 57,
+      "resolved": 52,
+      "resolved_pct": 91.2
+    },
+    "f11v": {
+      "words": 43,
+      "resolved": 42,
+      "resolved_pct": 97.7
+    },
+    "f13r": {
+      "words": 75,
+      "resolved": 66,
+      "resolved_pct": 88.0
+    },
+    "f13v": {
+      "words": 59,
+      "resolved": 57,
+      "resolved_pct": 96.6
+    },
+    "f14r": {
+      "words": 73,
+      "resolved": 70,
+      "resolved_pct": 95.9
+    },
+    "f14v": {
+      "words": 65,
+      "resolved": 62,
+      "resolved_pct": 95.4
+    },
+    "f15r": {
+      "words": 75,
+      "resolved": 72,
+      "resolved_pct": 96.0
+    },
+    "f15v": {
+      "words": 71,
+      "resolved": 64,
+      "resolved_pct": 90.1
+    },
+    "f16r": {
+      "words": 75,
+      "resolved": 66,
+      "resolved_pct": 88.0
+    },
+    "f16v": {
+      "words": 73,
+      "resolved": 69,
+      "resolved_pct": 94.5
+    },
+    "f17r": {
+      "words": 71,
+      "resolved": 65,
+      "resolved_pct": 91.5
+    },
+    "f17v": {
+      "words": 134,
+      "resolved": 126,
+      "resolved_pct": 94.0
+    },
+    "f18r": {
+      "words": 79,
+      "resolved": 72,
+      "resolved_pct": 91.1
+    },
+    "f18v": {
+      "words": 71,
+      "resolved": 61,
+      "resolved_pct": 85.9
+    },
+    "f19r": {
+      "words": 76,
+      "resolved": 71,
+      "resolved_pct": 93.4
+    },
+    "f19v": {
+      "words": 77,
+      "resolved": 71,
+      "resolved_pct": 92.2
+    },
+    "f1r": {
+      "words": 210,
+      "resolved": 193,
+      "resolved_pct": 91.9
+    },
+    "f1v": {
+      "words": 80,
+      "resolved": 76,
+      "resolved_pct": 95.0
+    },
+    "f20r": {
+      "words": 85,
+      "resolved": 83,
+      "resolved_pct": 97.6
+    },
+    "f20v": {
+      "words": 88,
+      "resolved": 80,
+      "resolved_pct": 90.9
+    },
+    "f21r": {
+      "words": 95,
+      "resolved": 90,
+      "resolved_pct": 94.7
+    },
+    "f21v": {
+      "words": 56,
+      "resolved": 49,
+      "resolved_pct": 87.5
+    },
+    "f22r": {
+      "words": 99,
+      "resolved": 91,
+      "resolved_pct": 91.9
+    },
+    "f22v": {
+      "words": 69,
+      "resolved": 66,
+      "resolved_pct": 95.7
+    },
+    "f23r": {
+      "words": 101,
+      "resolved": 89,
+      "resolved_pct": 88.1
+    },
+    "f23v": {
+      "words": 80,
+      "resolved": 74,
+      "resolved_pct": 92.5
+    },
+    "f24r": {
+      "words": 107,
+      "resolved": 99,
+      "resolved_pct": 92.5
+    },
+    "f24v": {
+      "words": 80,
+      "resolved": 74,
+      "resolved_pct": 92.5
+    },
+    "f25r": {
+      "words": 48,
+      "resolved": 46,
+      "resolved_pct": 95.8
+    },
+    "f25v": {
+      "words": 55,
+      "resolved": 51,
+      "resolved_pct": 92.7
+    },
+    "f26r": {
+      "words": 68,
+      "resolved": 62,
+      "resolved_pct": 91.2
+    },
+    "f26v": {
+      "words": 90,
+      "resolved": 88,
+      "resolved_pct": 97.8
+    },
+    "f27r": {
+      "words": 82,
+      "resolved": 80,
+      "resolved_pct": 97.6
+    },
+    "f27v": {
+      "words": 51,
+      "resolved": 43,
+      "resolved_pct": 84.3
+    },
+    "f28r": {
+      "words": 59,
+      "resolved": 54,
+      "resolved_pct": 91.5
+    },
+    "f28v": {
+      "words": 63,
+      "resolved": 57,
+      "resolved_pct": 90.5
+    },
+    "f29r": {
+      "words": 60,
+      "resolved": 58,
+      "resolved_pct": 96.7
+    },
+    "f29v": {
+      "words": 74,
+      "resolved": 68,
+      "resolved_pct": 91.9
+    },
+    "f2r": {
+      "words": 78,
+      "resolved": 72,
+      "resolved_pct": 92.3
+    },
+    "f2v": {
+      "words": 55,
+      "resolved": 54,
+      "resolved_pct": 98.2
+    },
+    "f30r": {
+      "words": 88,
+      "resolved": 84,
+      "resolved_pct": 95.5
+    },
+    "f30v": {
+      "words": 63,
+      "resolved": 60,
+      "resolved_pct": 95.2
+    },
+    "f31r": {
+      "words": 101,
+      "resolved": 98,
+      "resolved_pct": 97.0
+    },
+    "f31v": {
+      "words": 108,
+      "resolved": 103,
+      "resolved_pct": 95.4
+    },
+    "f32r": {
+      "words": 73,
+      "resolved": 68,
+      "resolved_pct": 93.2
+    },
+    "f32v": {
+      "words": 75,
+      "resolved": 69,
+      "resolved_pct": 92.0
+    },
+    "f33r": {
+      "words": 72,
+      "resolved": 70,
+      "resolved_pct": 97.2
+    },
+    "f33v": {
+      "words": 88,
+      "resolved": 87,
+      "resolved_pct": 98.9
+    },
+    "f34r": {
+      "words": 118,
+      "resolved": 112,
+      "resolved_pct": 94.9
+    },
+    "f34v": {
+      "words": 115,
+      "resolved": 113,
+      "resolved_pct": 98.3
+    },
+    "f35r": {
+      "words": 88,
+      "resolved": 81,
+      "resolved_pct": 92.0
+    },
+    "f35v": {
+      "words": 87,
+      "resolved": 81,
+      "resolved_pct": 93.1
+    },
+    "f36r": {
+      "words": 52,
+      "resolved": 47,
+      "resolved_pct": 90.4
+    },
+    "f36v": {
+      "words": 69,
+      "resolved": 63,
+      "resolved_pct": 91.3
+    },
+    "f37r": {
+      "words": 72,
+      "resolved": 69,
+      "resolved_pct": 95.8
+    },
+    "f37v": {
+      "words": 88,
+      "resolved": 81,
+      "resolved_pct": 92.0
+    },
+    "f38r": {
+      "words": 35,
+      "resolved": 33,
+      "resolved_pct": 94.3
+    },
+    "f38v": {
+      "words": 58,
+      "resolved": 52,
+      "resolved_pct": 89.7
+    },
+    "f39r": {
+      "words": 153,
+      "resolved": 148,
+      "resolved_pct": 96.7
+    },
+    "f39v": {
+      "words": 135,
+      "resolved": 131,
+      "resolved_pct": 97.0
+    },
+    "f3r": {
+      "words": 111,
+      "resolved": 105,
+      "resolved_pct": 94.6
+    },
+    "f3v": {
+      "words": 83,
+      "resolved": 76,
+      "resolved_pct": 91.6
+    },
+    "f40r": {
+      "words": 87,
+      "resolved": 85,
+      "resolved_pct": 97.7
+    },
+    "f40v": {
+      "words": 100,
+      "resolved": 94,
+      "resolved_pct": 94.0
+    },
+    "f41r": {
+      "words": 87,
+      "resolved": 79,
+      "resolved_pct": 90.8
+    },
+    "f41v": {
+      "words": 62,
+      "resolved": 60,
+      "resolved_pct": 96.8
+    },
+    "f42r": {
+      "words": 136,
+      "resolved": 132,
+      "resolved_pct": 97.1
+    },
+    "f42v": {
+      "words": 97,
+      "resolved": 89,
+      "resolved_pct": 91.8
+    },
+    "f43r": {
+      "words": 152,
+      "resolved": 146,
+      "resolved_pct": 96.1
+    },
+    "f43v": {
+      "words": 154,
+      "resolved": 150,
+      "resolved_pct": 97.4
+    },
+    "f44r": {
+      "words": 75,
+      "resolved": 70,
+      "resolved_pct": 93.3
+    },
+    "f44v": {
+      "words": 95,
+      "resolved": 91,
+      "resolved_pct": 95.8
+    },
+    "f45r": {
+      "words": 86,
+      "resolved": 84,
+      "resolved_pct": 97.7
+    },
+    "f45v": {
+      "words": 77,
+      "resolved": 69,
+      "resolved_pct": 89.6
+    },
+    "f46r": {
+      "words": 157,
+      "resolved": 150,
+      "resolved_pct": 95.5
+    },
+    "f46v": {
+      "words": 109,
+      "resolved": 103,
+      "resolved_pct": 94.5
+    },
+    "f47r": {
+      "words": 79,
+      "resolved": 76,
+      "resolved_pct": 96.2
+    },
+    "f47v": {
+      "words": 74,
+      "resolved": 70,
+      "resolved_pct": 94.6
+    },
+    "f48r": {
+      "words": 89,
+      "resolved": 83,
+      "resolved_pct": 93.3
+    },
+    "f48v": {
+      "words": 112,
+      "resolved": 109,
+      "resolved_pct": 97.3
+    },
+    "f49r": {
+      "words": 113,
+      "resolved": 110,
+      "resolved_pct": 97.3
+    },
+    "f49v": {
+      "words": 131,
+      "resolved": 115,
+      "resolved_pct": 87.8
+    },
+    "f4r": {
+      "words": 60,
+      "resolved": 60,
+      "resolved_pct": 100.0
+    },
+    "f4v": {
+      "words": 78,
+      "resolved": 73,
+      "resolved_pct": 93.6
+    },
+    "f50r": {
+      "words": 87,
+      "resolved": 87,
+      "resolved_pct": 100.0
+    },
+    "f50v": {
+      "words": 96,
+      "resolved": 92,
+      "resolved_pct": 95.8
+    },
+    "f51r": {
+      "words": 83,
+      "resolved": 78,
+      "resolved_pct": 94.0
+    },
+    "f51v": {
+      "words": 72,
+      "resolved": 68,
+      "resolved_pct": 94.4
+    },
+    "f52r": {
+      "words": 62,
+      "resolved": 55,
+      "resolved_pct": 88.7
+    },
+    "f52v": {
+      "words": 74,
+      "resolved": 70,
+      "resolved_pct": 94.6
+    },
+    "f53r": {
+      "words": 52,
+      "resolved": 49,
+      "resolved_pct": 94.2
+    },
+    "f53v": {
+      "words": 74,
+      "resolved": 68,
+      "resolved_pct": 91.9
+    },
+    "f54r": {
+      "words": 100,
+      "resolved": 91,
+      "resolved_pct": 91.0
+    },
+    "f54v": {
+      "words": 90,
+      "resolved": 85,
+      "resolved_pct": 94.4
+    },
+    "f55r": {
+      "words": 124,
+      "resolved": 119,
+      "resolved_pct": 96.0
+    },
+    "f55v": {
+      "words": 94,
+      "resolved": 91,
+      "resolved_pct": 96.8
+    },
+    "f56r": {
+      "words": 97,
+      "resolved": 90,
+      "resolved_pct": 92.8
+    },
+    "f56v": {
+      "words": 86,
+      "resolved": 82,
+      "resolved_pct": 95.3
+    },
+    "f57r": {
+      "words": 83,
+      "resolved": 78,
+      "resolved_pct": 94.0
+    },
+    "f57v": {
+      "words": 122,
+      "resolved": 73,
+      "resolved_pct": 59.8
+    },
+    "f58r": {
+      "words": 367,
+      "resolved": 353,
+      "resolved_pct": 96.2
+    },
+    "f58v": {
+      "words": 365,
+      "resolved": 357,
+      "resolved_pct": 97.8
+    },
+    "f5r": {
+      "words": 56,
+      "resolved": 54,
+      "resolved_pct": 96.4
+    },
+    "f5v": {
+      "words": 45,
+      "resolved": 41,
+      "resolved_pct": 91.1
+    },
+    "f65r": {
+      "words": 3,
+      "resolved": 3,
+      "resolved_pct": 100.0
+    },
+    "f65v": {
+      "words": 39,
+      "resolved": 36,
+      "resolved_pct": 92.3
+    },
+    "f66r": {
+      "words": 318,
+      "resolved": 305,
+      "resolved_pct": 95.9
+    },
+    "f66v": {
+      "words": 112,
+      "resolved": 108,
+      "resolved_pct": 96.4
+    },
+    "f67r": {
+      "words": 331,
+      "resolved": 305,
+      "resolved_pct": 92.1
+    },
+    "f67r1": {
+      "words": 155,
+      "resolved": 143,
+      "resolved_pct": 92.3
+    },
+    "f67r2": {
+      "words": 176,
+      "resolved": 162,
+      "resolved_pct": 92.0
+    },
+    "f67v": {
+      "words": 130,
+      "resolved": 122,
+      "resolved_pct": 93.8
+    },
+    "f67v1": {
+      "words": 71,
+      "resolved": 68,
+      "resolved_pct": 95.8
+    },
+    "f67v2": {
+      "words": 59,
+      "resolved": 54,
+      "resolved_pct": 91.5
+    },
+    "f68r": {
+      "words": 246,
+      "resolved": 229,
+      "resolved_pct": 93.1
+    },
+    "f68r1": {
+      "words": 64,
+      "resolved": 59,
+      "resolved_pct": 92.2
+    },
+    "f68r2": {
+      "words": 80,
+      "resolved": 74,
+      "resolved_pct": 92.5
+    },
+    "f68r3": {
+      "words": 102,
+      "resolved": 96,
+      "resolved_pct": 94.1
+    },
+    "f68v": {
+      "words": 349,
+      "resolved": 332,
+      "resolved_pct": 95.1
+    },
+    "f68v1": {
+      "words": 96,
+      "resolved": 87,
+      "resolved_pct": 90.6
+    },
+    "f68v2": {
+      "words": 95,
+      "resolved": 93,
+      "resolved_pct": 97.9
+    },
+    "f68v3": {
+      "words": 158,
+      "resolved": 152,
+      "resolved_pct": 96.2
+    },
+    "f69r": {
+      "words": 159,
+      "resolved": 152,
+      "resolved_pct": 95.6
+    },
+    "f69v": {
+      "words": 132,
+      "resolved": 123,
+      "resolved_pct": 93.2
+    },
+    "f6r": {
+      "words": 79,
+      "resolved": 76,
+      "resolved_pct": 96.2
+    },
+    "f6v": {
+      "words": 113,
+      "resolved": 105,
+      "resolved_pct": 92.9
+    },
+    "f70r": {
+      "words": 378,
+      "resolved": 337,
+      "resolved_pct": 89.2
+    },
+    "f70r1": {
+      "words": 110,
+      "resolved": 107,
+      "resolved_pct": 97.3
+    },
+    "f70r2": {
+      "words": 247,
+      "resolved": 230,
+      "resolved_pct": 93.1
+    },
+    "f70v": {
+      "words": 226,
+      "resolved": 219,
+      "resolved_pct": 96.9
+    },
+    "f70v1": {
+      "words": 86,
+      "resolved": 84,
+      "resolved_pct": 97.7
+    },
+    "f70v2": {
+      "words": 140,
+      "resolved": 135,
+      "resolved_pct": 96.4
+    },
+    "f71r": {
+      "words": 90,
+      "resolved": 89,
+      "resolved_pct": 98.9
+    },
+    "f71v": {
+      "words": 100,
+      "resolved": 98,
+      "resolved_pct": 98.0
+    },
+    "f72r": {
+      "words": 381,
+      "resolved": 367,
+      "resolved_pct": 96.3
+    },
+    "f72r1": {
+      "words": 104,
+      "resolved": 102,
+      "resolved_pct": 98.1
+    },
+    "f72r2": {
+      "words": 110,
+      "resolved": 107,
+      "resolved_pct": 97.3
+    },
+    "f72r3": {
+      "words": 167,
+      "resolved": 158,
+      "resolved_pct": 94.6
+    },
+    "f72v": {
+      "words": 332,
+      "resolved": 315,
+      "resolved_pct": 94.9
+    },
+    "f72v1": {
+      "words": 101,
+      "resolved": 95,
+      "resolved_pct": 94.1
+    },
+    "f72v2": {
+      "words": 110,
+      "resolved": 105,
+      "resolved_pct": 95.5
+    },
+    "f72v3": {
+      "words": 121,
+      "resolved": 115,
+      "resolved_pct": 95.0
+    },
+    "f73r": {
+      "words": 96,
+      "resolved": 95,
+      "resolved_pct": 99.0
+    },
+    "f73v": {
+      "words": 97,
+      "resolved": 93,
+      "resolved_pct": 95.9
+    },
+    "f75r": {
+      "words": 392,
+      "resolved": 387,
+      "resolved_pct": 98.7
+    },
+    "f75v": {
+      "words": 351,
+      "resolved": 346,
+      "resolved_pct": 98.6
+    },
+    "f76r": {
+      "words": 556,
+      "resolved": 542,
+      "resolved_pct": 97.5
+    },
+    "f76v": {
+      "words": 400,
+      "resolved": 386,
+      "resolved_pct": 96.5
+    },
+    "f77r": {
+      "words": 325,
+      "resolved": 323,
+      "resolved_pct": 99.4
+    },
+    "f77v": {
+      "words": 335,
+      "resolved": 331,
+      "resolved_pct": 98.8
+    },
+    "f78r": {
+      "words": 293,
+      "resolved": 289,
+      "resolved_pct": 98.6
+    },
+    "f78v": {
+      "words": 292,
+      "resolved": 286,
+      "resolved_pct": 97.9
+    },
+    "f79r": {
+      "words": 389,
+      "resolved": 388,
+      "resolved_pct": 99.7
+    },
+    "f79v": {
+      "words": 355,
+      "resolved": 349,
+      "resolved_pct": 98.3
+    },
+    "f7r": {
+      "words": 52,
+      "resolved": 48,
+      "resolved_pct": 92.3
+    },
+    "f7v": {
+      "words": 70,
+      "resolved": 68,
+      "resolved_pct": 97.1
+    },
+    "f80r": {
+      "words": 440,
+      "resolved": 433,
+      "resolved_pct": 98.4
+    },
+    "f80v": {
+      "words": 378,
+      "resolved": 375,
+      "resolved_pct": 99.2
+    },
+    "f81r": {
+      "words": 207,
+      "resolved": 203,
+      "resolved_pct": 98.1
+    },
+    "f81v": {
+      "words": 258,
+      "resolved": 251,
+      "resolved_pct": 97.3
+    },
+    "f82r": {
+      "words": 285,
+      "resolved": 285,
+      "resolved_pct": 100.0
+    },
+    "f82v": {
+      "words": 313,
+      "resolved": 309,
+      "resolved_pct": 98.7
+    },
+    "f83r": {
+      "words": 341,
+      "resolved": 340,
+      "resolved_pct": 99.7
+    },
+    "f83v": {
+      "words": 262,
+      "resolved": 260,
+      "resolved_pct": 99.2
+    },
+    "f84r": {
+      "words": 362,
+      "resolved": 356,
+      "resolved_pct": 98.3
+    },
+    "f84v": {
+      "words": 337,
+      "resolved": 335,
+      "resolved_pct": 99.4
+    },
+    "f85r": {
+      "words": 490,
+      "resolved": 481,
+      "resolved_pct": 98.2
+    },
+    "f85r1": {
+      "words": 333,
+      "resolved": 326,
+      "resolved_pct": 97.9
+    },
+    "f85r2": {
+      "words": 157,
+      "resolved": 155,
+      "resolved_pct": 98.7
+    },
+    "f86v": {
+      "words": 1320,
+      "resolved": 1283,
+      "resolved_pct": 97.2
+    },
+    "f86v3": {
+      "words": 276,
+      "resolved": 268,
+      "resolved_pct": 97.1
+    },
+    "f86v4": {
+      "words": 184,
+      "resolved": 175,
+      "resolved_pct": 95.1
+    },
+    "f86v5": {
+      "words": 381,
+      "resolved": 371,
+      "resolved_pct": 97.4
+    },
+    "f86v6": {
+      "words": 479,
+      "resolved": 469,
+      "resolved_pct": 97.9
+    },
+    "f87r": {
+      "words": 98,
+      "resolved": 94,
+      "resolved_pct": 95.9
+    },
+    "f87v": {
+      "words": 74,
+      "resolved": 63,
+      "resolved_pct": 85.1
+    },
+    "f88r": {
+      "words": 149,
+      "resolved": 145,
+      "resolved_pct": 97.3
+    },
+    "f88v": {
+      "words": 145,
+      "resolved": 138,
+      "resolved_pct": 95.2
+    },
+    "f89r": {
+      "words": 375,
+      "resolved": 355,
+      "resolved_pct": 94.7
+    },
+    "f89r1": {
+      "words": 138,
+      "resolved": 131,
+      "resolved_pct": 94.9
+    },
+    "f89r2": {
+      "words": 237,
+      "resolved": 224,
+      "resolved_pct": 94.5
+    },
+    "f89v": {
+      "words": 323,
+      "resolved": 305,
+      "resolved_pct": 94.4
+    },
+    "f89v1": {
+      "words": 159,
+      "resolved": 154,
+      "resolved_pct": 96.9
+    },
+    "f89v2": {
+      "words": 164,
+      "resolved": 151,
+      "resolved_pct": 92.1
+    },
+    "f8r": {
+      "words": 129,
+      "resolved": 118,
+      "resolved_pct": 91.5
+    },
+    "f8v": {
+      "words": 102,
+      "resolved": 102,
+      "resolved_pct": 100.0
+    },
+    "f90r": {
+      "words": 113,
+      "resolved": 100,
+      "resolved_pct": 88.5
+    },
+    "f90r1": {
+      "words": 69,
+      "resolved": 63,
+      "resolved_pct": 91.3
+    },
+    "f90r2": {
+      "words": 44,
+      "resolved": 37,
+      "resolved_pct": 84.1
+    },
+    "f90v": {
+      "words": 141,
+      "resolved": 134,
+      "resolved_pct": 95.0
+    },
+    "f90v1": {
+      "words": 78,
+      "resolved": 76,
+      "resolved_pct": 97.4
+    },
+    "f90v2": {
+      "words": 63,
+      "resolved": 58,
+      "resolved_pct": 92.1
+    },
+    "f93r": {
+      "words": 148,
+      "resolved": 130,
+      "resolved_pct": 87.8
+    },
+    "f93v": {
+      "words": 70,
+      "resolved": 62,
+      "resolved_pct": 88.6
+    },
+    "f94r": {
+      "words": 80,
+      "resolved": 78,
+      "resolved_pct": 97.5
+    },
+    "f94v": {
+      "words": 91,
+      "resolved": 87,
+      "resolved_pct": 95.6
+    },
+    "f95r": {
+      "words": 182,
+      "resolved": 182,
+      "resolved_pct": 100.0
+    },
+    "f95r1": {
+      "words": 103,
+      "resolved": 103,
+      "resolved_pct": 100.0
+    },
+    "f95r2": {
+      "words": 79,
+      "resolved": 79,
+      "resolved_pct": 100.0
+    },
+    "f95v": {
+      "words": 176,
+      "resolved": 173,
+      "resolved_pct": 98.3
+    },
+    "f95v1": {
+      "words": 117,
+      "resolved": 116,
+      "resolved_pct": 99.1
+    },
+    "f95v2": {
+      "words": 59,
+      "resolved": 57,
+      "resolved_pct": 96.6
+    },
+    "f96r": {
+      "words": 77,
+      "resolved": 70,
+      "resolved_pct": 90.9
+    },
+    "f96v": {
+      "words": 56,
+      "resolved": 49,
+      "resolved_pct": 87.5
+    },
+    "f99r": {
+      "words": 197,
+      "resolved": 186,
+      "resolved_pct": 94.4
+    },
+    "f99v": {
+      "words": 163,
+      "resolved": 161,
+      "resolved_pct": 98.8
+    },
+    "f9r": {
+      "words": 73,
+      "resolved": 67,
+      "resolved_pct": 91.8
+    },
+    "f9v": {
+      "words": 72,
+      "resolved": 70,
+      "resolved_pct": 97.2
+    }
+  },
+  "totals": {
+    "loci": 244,
+    "words": 48379,
+    "resolved": 46578
+  }
+}

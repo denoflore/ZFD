@@ -15,8 +15,8 @@ import sys
 from pathlib import Path
 from collections import defaultdict
 
-PIPELINE_DIR = Path("/home/claude/zfd/pipeline")
-LEXICON_PATH = PIPELINE_DIR / "unified_lexicon.json"
+REPO_ROOT = Path(__file__).resolve().parent.parent
+LEXICON_PATH = REPO_ROOT / "08_Final_Proofs" / "Master_Key" / "unified_lexicon_v3.json"
 
 # ================================================================
 # EVA TO CROATIAN CHARACTER MAP
@@ -516,6 +516,10 @@ class ZFDDecoder:
 
     def decode_folio(self, eva_text, folio_id=None):
         """Decode an entire folio's EVA text (IVTFF format)"""
+        # A folio decode owns its own stats window. Without this reset a
+        # second call reported doubled counts (caught by
+        # test_folio_decode_is_deterministic, 2026-08-25).
+        self.reset_stats()
         lines = eva_text.strip().split("\n")
         
         decoded_lines = []

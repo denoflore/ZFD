@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 75%
 **Words:** 94 total, 91 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,13 +18,13 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **st** | Stand / place / position | *stare* | general | 15 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 16 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 15 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 9 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 7 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 6 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 9 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 7 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 6 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 5 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 4 | CONFIRMED |
+| **ar** | water | *aqua* | ingredient | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 
 ## Preparation Methods
@@ -49,8 +49,8 @@
 ```
 EVA: kcheedchdy oedaiin chckhyotol daiin dodyd
 CRO: stheedhdy oedaiin hcstyotol daiin dodyd
-EXP: stare+dy radix + facere+aiin kuhaj-in+ol DA/DARE [Lat.] stabljika
-ENG: Stand / place / position [verbal] +?heedh "Process kernel / do / treat" [liquid+continuing] combine/cook (reduced) Preposition: in/with [instrumental] GIVE (RX IMPERATIVE) +i stalk/stem +?dyd
+EXP: stare+dy radix + facere+aiin kuhaj-stare+ol DA/DARE [Lat.] stabljika
+ENG: Stand / place / position [verbal] +?heedh "Process kernel / do / treat" [liquid+continuing] combine/cook (reduced) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i stalk/stem +?dyd
 ```
 <sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
 
@@ -97,24 +97,24 @@ ENG: and/with [liquid+continuing] GIVE (RX IMPERATIVE) +i and/with [agent] State
 ```
 EVA: okchd daiin sheokey or aircs kchdy pchal ar aldy dary
 CRO: osthd daiin šeostey or aircs sthdy phal ar aldy dary
-EXP: OSTEO- [Lat.] DA/DARE [Lat.] šeo-stare+ey oleum airc+s stare+dy ph+al voda tekućina+dy DA/DARE [Lat.]
-ENG: BONE (MEDICAL REGISTER) +hd GIVE (RX IMPERATIVE) +i Soaked-state (extended) Stand / place / position [participle] Oil / oleum (variant) [~15] +?airc Stand / place / position [verbal] [locative] water liquid/water (vessel context) [verbal] GIVE (RX IMPERATIVE) +r
+EXP: OSTEO- [Lat.] DA/DARE [Lat.] šeo-stare+ey ulje airc+s stare+dy ph+al voda tekućina+dy DA/DARE [Lat.]
+ENG: BONE (MEDICAL REGISTER) +hd GIVE (RX IMPERATIVE) +i Soaked-state (extended) Stand / place / position [participle] oil [~15] +?airc Stand / place / position [verbal] [locative] water liquid/water (vessel context) [verbal] GIVE (RX IMPERATIVE) +r
 ```
 <sub>[███████░░░] 77% confidence</sub>
 
 ```
 EVA: tor chdy qokaiin okar qolotarcho cthar talody okary
 CRO: tor hdy kostaiin ostar kolotarho ctrrar talody ostary
-EXP: oleum kuhaj-d+y ko-stare+aiin OSTEO- [Lat.] ko-voda centrum+ar tekućina+dy OSTEO- [Lat.]
-ENG: Oil / oleum (variant) combine/cook (reduced) [adjective] measure/quantify (variant) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) measure/quantify (variant) water +?lotho Center / control [instrumental] liquid/water (vessel context) [verbal] BONE (MEDICAL REGISTER)
+EXP: ulje kuhaj-d+y ko-stare+aiin OSTEO- [Lat.] ko-voda smjesa+ar tekućina+dy OSTEO- [Lat.]
+ENG: oil combine/cook (reduced) [adjective] measure/quantify (variant) Stand / place / position [liquid+continuing] BONE (MEDICAL REGISTER) measure/quantify (variant) water +?lotho compound mixture [instrumental] liquid/water (vessel context) [verbal] BONE (MEDICAL REGISTER)
 ```
-<sub>[███████░░░] 79% confidence</sub>
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: ykaky qokchy okal chey oror aiin okaiin ykain otaky
 CRO: ystasty kosthy ostal hey oror aiin ostaiin ystain otasty
-EXP: i+y ko-stare+y OSTEO- [Lat.] he-i oleum a+iin OSTEO- [Lat.] i+ain posuda-stare+y
-ENG: and/with [adjective] +?stast measure/quantify (variant) Stand / place / position [adjective] BONE (MEDICAL REGISTER) State / Result / After and/with Oil / oleum (variant) [continuation] BONE (MEDICAL REGISTER) and/with [plural] vessel/container (variant) Stand / place / position [adjective]
+EXP: i+y ko-stare+y OSTEO- [Lat.] he-i ulje a+iin OSTEO- [Lat.] i+ain posuda-stare+y
+ENG: and/with [adjective] +?stast measure/quantify (variant) Stand / place / position [adjective] BONE (MEDICAL REGISTER) State / Result / After and/with oil [continuation] BONE (MEDICAL REGISTER) and/with [plural] vessel/container (variant) Stand / place / position [adjective]
 ```
 <sub>[███████░░░] 76% confidence</sub>
 
@@ -129,19 +129,19 @@ ENG: [liquid+continuing] oil ?s? [continuation] BONE (MEDICAL REGISTER) BONE (ME
 ```
 EVA: ykaiin cheoar cheeky oldyaiin okal oltchy or y orain
 CRO: ystaiin heoar heesty oldyaiin ostal olthy or y orain
-EXP: i+aiin heo-voda he-stare+y ulje+aiin OSTEO- [Lat.] ulje+y oleum i oleum+ain
-ENG: and/with [liquid+continuing] State / Result (extended) water State / Result / After Stand / place / position [adjective] oil [liquid+continuing] BONE (MEDICAL REGISTER) oil [adjective] Oil / oleum (variant) and/with Oil / oleum (variant) [plural]
+EXP: i+aiin heo-voda he-stare+y ulje+aiin OSTEO- [Lat.] ulje+y ulje i ulje+ain
+ENG: and/with [liquid+continuing] State / Result (extended) water State / Result / After Stand / place / position [adjective] oil [liquid+continuing] BONE (MEDICAL REGISTER) oil [adjective] oil and/with oil [plural]
 ```
 <sub>[████████░░] 88% confidence</sub>
 
 ```
 EVA: daiin or cheky olkeechy slar aiin daiin otam
 CRO: daiin or hesty olsteehy slar aiin daiin otam
-EXP: DA/DARE [Lat.] oleum he-stare+y ulje+y sl+ar a+iin DA/DARE [Lat.] posuda-a+m
-ENG: GIVE (RX IMPERATIVE) +i Oil / oleum (variant) State / Result / After Stand / place / position [adjective] oil [adjective] +?steeh [instrumental] [continuation] GIVE (RX IMPERATIVE) +i vessel/container (variant) [case]
+EXP: DA/DARE [Lat.] ulje he-stare+y ulje+y sl+ar a+iin DA/DARE [Lat.] posuda-a+m
+ENG: GIVE (RX IMPERATIVE) +i oil State / Result / After Stand / place / position [adjective] oil [adjective] +?steeh [instrumental] [continuation] GIVE (RX IMPERATIVE) +i vessel/container (variant) [case]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f55v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f55v*

@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Pharmaceutical
-**Confidence:** 65%
+**Confidence:** 66%
 **Words:** 77 total, 70 resolved (91%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,14 +19,13 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 11 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 7 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 7 | CANDIDATE |
-| **od** | stalk/stem | *caulis* | plant_part | 5 | CONFIRMED |
+| **or** | oil | *oleum* | ingredient | 10 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 7 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 6 | CONFIRMED |
 | **y** | and/with | *et* | grammar | 3 | CANDIDATE |
 | **ee** | (intensifier) |  | general | 3 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -54,58 +53,58 @@
 ```
 EVA: tor cheeor ckheos olsheeosol cpheol cpheor chodar
 CRO: tor heeor csteos olšeeosol cplleol cplleor hodar
-EXP: oleum he-oleum stare+s ulje+ol cplle+ol oleum kuhaj-stabljika+ar
-ENG: Oil / oleum (variant) State / Result / After Oil / oleum (variant) Stand / place / position [~15] oil [instrumental] +?šeeos [instrumental] +?cplle Oil / oleum (variant) +?cplle combine/cook (reduced) stalk/stem [instrumental]
+EXP: ulje he-ulje stare+s ulje+ol cplle+ol ulje kuhaj-stabljika+ar
+ENG: oil State / Result / After oil Stand / place / position [~15] oil [instrumental] +?šeeos [instrumental] +?cplle oil +?cplle combine/cook (reduced) stalk/stem [instrumental]
 ```
 <sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
 
 ```
 EVA: ytol oteeor sheol oteey qokeody qokeeody cthey
 CRO: ytol oteeor šeol oteey kosteody kosteeody ctrrey
-EXP: i+ol posuda-ee šeo-l posuda-e+ey ko-stare+dy ko-stare+dy centrum+ey
-ENG: and/with [instrumental] vessel/container (variant) (intensifier) Soaked-state (extended) vessel/container (variant) [participle] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [verbal] Center / control [participle]
+EXP: i+ol posuda-ee šeo-l posuda-e+ey ko-stare+dy ko-stare+dy smjesa+ey
+ENG: and/with [instrumental] vessel/container (variant) (intensifier) Soaked-state (extended) vessel/container (variant) [participle] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [verbal] compound mixture [participle]
 ```
-<sub>[███████░░░] 75% confidence</sub>
+<sub>[███████░░░] 77% confidence</sub>
 
 ```
 EVA: toaiin ctheodal chos ckheody keody chodol oty
 CRO: toaiin ctrreodal hos csteody steody hodol oty
-EXP: to+aiin centrum+al kuhaj-o+s stare+dy stare+dy kuhaj-stabljika+ol posuda-i
-ENG: [liquid+continuing] Center / control [locative] combine/cook (reduced) [~15] Stand / place / position [verbal] Stand / place / position [verbal] combine/cook (reduced) stalk/stem [instrumental] vessel/container (variant) and/with
+EXP: to+aiin smjesa+al kuhaj-o+s stare+dy stare+dy kuhaj-stabljika+ol posuda-i
+ENG: [liquid+continuing] compound mixture [locative] combine/cook (reduced) [~15] Stand / place / position [verbal] Stand / place / position [verbal] combine/cook (reduced) stalk/stem [instrumental] vessel/container (variant) and/with
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: or chor chkchol chokchor s or sheockhy choly
 CRO: or hor hsthol hosthor s or šeocsty holy
-EXP: oleum kuhaj-oleum kuhaj-stare+ol kuhaj-kost s oleum šeo-stare+y kuhaj-ulje+y
-ENG: Oil / oleum (variant) combine/cook (reduced) Oil / oleum (variant) combine/cook (reduced) Stand / place / position [instrumental] combine/cook (reduced) bone (medical) ?s? Oil / oleum (variant) Soaked-state (extended) Stand / place / position [adjective] combine/cook (reduced) oil [adjective]
+EXP: ulje kuhaj-ulje kuhaj-stare+ol kuhaj-kost s ulje šeo-stare+y kuhaj-ulje+y
+ENG: oil combine/cook (reduced) oil combine/cook (reduced) Stand / place / position [instrumental] combine/cook (reduced) bone ?s? oil Soaked-state (extended) Stand / place / position [adjective] combine/cook (reduced) oil [adjective]
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: daiin chodaiin cthey tol sheor qokeol okol
 CRO: daiin hodaiin ctrrey tol šeor kosteol ostol
-EXP: DA/DARE [Lat.] kuhaj-stabljika+aiin centrum+ey t+ol šeo-r ko-stare+ol OSTEO- [Lat.]
-ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) stalk/stem [liquid+continuing] Center / control [participle] [instrumental] Soaked-state (extended) measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER)
+EXP: DA/DARE [Lat.] kuhaj-stabljika+aiin smjesa+ey t+ol šeo-r ko-stare+ol OSTEO- [Lat.]
+ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) stalk/stem [liquid+continuing] compound mixture [participle] [instrumental] Soaked-state (extended) measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER)
 ```
-<sub>[████████░░] 84% confidence</sub>
+<sub>[████████░░] 87% confidence</sub>
 
 ```
 EVA: lor ckheey chol cholody cheol ctheor sor
 CRO: lor csteey hol holody heol ctrreor sor
-EXP: l-oleum stare+ey kuhaj-ulje kuhaj-ulje+dy heo-l centrum s-r
-ENG: The / that (determiner) Oil / oleum (variant) Stand / place / position [participle] combine/cook (reduced) oil combine/cook (reduced) oil [verbal] State / Result (extended) Center / control +?reor with/together (variant)
+EXP: l-ulje stare+ey kuhaj-ulje kuhaj-ulje+dy heo-l smjesa s-r
+ENG: The / that (determiner) oil Stand / place / position [participle] combine/cook (reduced) oil combine/cook (reduced) oil [verbal] State / Result (extended) compound mixture with/together (variant)
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: oiir or ckhor chkey ckhocthy or chockhy
 CRO: oiir or cstor hstey cstoctrry or hocsty
-EXP: oi+ir oleum storaks kuhaj-stare+ey centrum+y oleum kuhaj-stare+y
-ENG: [agent] Oil / oleum (variant) storax combine/cook (reduced) Stand / place / position [participle] Center / control [adjective] +?cstor Oil / oleum (variant) combine/cook (reduced) Stand / place / position [adjective]
+EXP: oi+ir ulje storaks kuhaj-stare+ey smjesa+y ulje kuhaj-stare+y
+ENG: [agent] oil storax combine/cook (reduced) Stand / place / position [participle] compound mixture [adjective] oil combine/cook (reduced) Stand / place / position [adjective]
 ```
-<sub>[███████░░░] 77% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: ykeor secheeol sheol qokeeey chol daiin
@@ -118,18 +117,18 @@ ENG: and/with +?steor (intensifier) [instrumental] Soaked-state (extended) measu
 ```
 EVA: todar sheo cthody shokocfhy chopcho dory
 CRO: todar šeo ctrrody šostocplly hopho dory
-EXP: stabljika+ar še-o centrum+dy namoci-kost+y kuhaj-opho oleum+y
-ENG: stalk/stem [instrumental] Soaked-state / After soaking Center / control [verbal] soak/infuse (Croatian) bone (medical) [adjective] combine/cook (reduced) +?opho Oil / oleum (variant) [adjective]
+EXP: stabljika+ar še-o smjesa+dy namoci-kost+y kuhaj-opho ulje+y
+ENG: stalk/stem [instrumental] Soaked-state / After soaking compound mixture [verbal] soak/infuse (Croatian) bone [adjective] combine/cook (reduced) +?opho oil [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: otcho dol shocthody shockhy otchodor chocty
 CRO: otho dol šoctrrody šocsty othodor hocty
-EXP: posuda-ho d+ol namoci-centrum+dy namoci-stare+y posuda-oleum kuhaj-oct+y
-ENG: vessel/container (variant) [instrumental] soak/infuse (Croatian) Center / control [verbal] soak/infuse (Croatian) Stand / place / position [adjective] vessel/container (variant) Oil / oleum (variant) combine/cook (reduced) [adjective] +?oct
+EXP: posuda-ho d+ol namoci-smjesa+dy namoci-stare+y posuda-stabljika kuhaj-oct+y
+ENG: vessel/container (variant) [instrumental] soak/infuse (Croatian) compound mixture [verbal] soak/infuse (Croatian) Stand / place / position [adjective] vessel/container (variant) stalk/stem combine/cook (reduced) [adjective] +?oct
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: teol cheody shodol qokchodsaiinchokey
@@ -142,10 +141,10 @@ ENG: [instrumental] State / Result (extended) [adjective] soak/infuse (Croatian)
 ```
 EVA: dcheorcheolcheodain oldydchsarcheody
 CRO: dheorheolheodain oldydhsarheody
-EXP: ulje+ain ulje+dy
-ENG: oil [plural] +?dheorheheod oil [verbal] +?dydhsarheo
+EXP: ono što+ain ulje+dy
+ENG: that which/the one [plural] +?drheolheod oil [verbal] +?dydhsarheo
 ```
-<sub>[░░░░░░░░░░] 30% confidence</sub>
+<sub>[░░░░░░░░░░] 33% confidence</sub>
 
 ```
 EVA: oteeo dsho qotchos
@@ -157,4 +156,4 @@ ENG: vessel/container (variant) (intensifier) ?dšo? measure/quantify (variant) 
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f96r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f96r*

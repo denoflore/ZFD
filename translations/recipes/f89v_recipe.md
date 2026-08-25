@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Pharmaceutical
-**Confidence:** 68%
-**Words:** 323 total, 302 resolved (93%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 70%
+**Words:** 323 total, 305 resolved (94%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,17 +19,18 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 39 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 32 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 29 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 26 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 14 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 14 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 12 | CANDIDATE |
-| **od** | stalk/stem | *caulis* | plant_part | 9 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
+| **or** | oil | *oleum* | ingredient | 14 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 14 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 12 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 10 | CONFIRMED |
+| **heo** | that which/the one | *illud quod* | grammar | 5 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 5 | CANDIDATE |
 | **ee** | (intensifier) |  | general | 4 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 4 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 3 | CONFIRMED |
-| **da** | da |  | general | 3 | CANDIDATE |
+| **stor** | storax | *storax* | ingredient | 3 | CANDIDATE |
+| **da** | give/add | *dare* | grammar | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -76,15 +77,15 @@ ENG: BONE (MEDICAL REGISTER) +a
 EVA: darcheos
 CRO: darheos
 EXP: DA/DARE [Lat.]
-ENG: GIVE (RX IMPERATIVE) +rheo
+ENG: GIVE (RX IMPERATIVE) +r
 ```
-<sub>[▓▓▓▓░░░░░░] 43% confidence</sub>
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: chokaro
 CRO: hostaro
-EXP: kuhaj-posuda
-ENG: combine/cook (reduced) large vessel
+EXP: kuhaj-lonac
+ENG: combine/cook (reduced) pot/jar
 ```
 <sub>[████████░░] 86% confidence</sub>
 
@@ -100,7 +101,7 @@ ENG: Soaked-state (extended)
 EVA: chokam
 CRO: hostam
 EXP: kuhaj-kost+m
-ENG: combine/cook (reduced) bone (medical) [case]
+ENG: combine/cook (reduced) bone [case]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -123,8 +124,8 @@ ENG: vessel/container (variant) [agent] combine/cook (reduced) [verbal]
 ```
 EVA: dydariin
 CRO: dydariin
-EXP: dare / granum+iin
-ENG: Add / Portion / Seed [continuation]
+EXP: dar+iin
+ENG: gift [continuation]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
@@ -219,8 +220,8 @@ ENG: Stand / place / position [plural]
 ```
 EVA: otor chos
 CRO: otor hos
-EXP: posuda-oleum kuhaj-o+s
-ENG: vessel/container (variant) Oil / oleum (variant) combine/cook (reduced) [~15]
+EXP: posuda-ulje kuhaj-o+s
+ENG: vessel/container (variant) oil combine/cook (reduced) [~15]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -251,74 +252,74 @@ ENG: Stand / place / position [instrumental] Soaked-state (extended) ?s? [contin
 ```
 EVA: daiin ykodair okor chearoteee eeckhy s aiin ckhey otaiin okar dain okol al chor dar
 CRO: daiin ystodair ostor hearoteee eecsty s aiin cstey otaiin ostar dain ostol al hor dar
-EXP: DA/DARE [Lat.] i+ir OSTEO- [Lat.] he-voda ee+y s a+iin stare+ey posuda-a+iin OSTEO- [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] tekućina kuhaj-oleum DA/DARE [Lat.]
-ENG: GIVE (RX IMPERATIVE) +i and/with [agent] +?stoda BONE (MEDICAL REGISTER) +or State / Result / After water +?oteee (intensifier) [adjective] ?s? [continuation] Stand / place / position [participle] vessel/container (variant) [continuation] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +in BONE (MEDICAL REGISTER) liquid/water (vessel context) combine/cook (reduced) Oil / oleum (variant) GIVE (RX IMPERATIVE) +r
+EXP: DA/DARE [Lat.] i+ir OSTEO- [Lat.] he-voda ee+y s a+iin stare+ey posuda-a+iin OSTEO- [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] tekućina kuhaj-ulje DA/DARE [Lat.]
+ENG: GIVE (RX IMPERATIVE) +i and/with [agent] +?stoda BONE (MEDICAL REGISTER) +or State / Result / After water +?oteee (intensifier) [adjective] ?s? [continuation] Stand / place / position [participle] vessel/container (variant) [continuation] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +in BONE (MEDICAL REGISTER) liquid/water (vessel context) combine/cook (reduced) oil GIVE (RX IMPERATIVE) +r
 ```
 <sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: yched okeey qoeol daiinchor chor cheos qol eeeey dal chody cheor chey qoaiin chody
 CRO: yhed osteey koeol daiinhor hor heos kol eeeey dal hody heor hey koaiin hody
-EXP: i OSTEO- [Lat.] ko-e+ol DA/DARE [Lat.] kuhaj-oleum heo-s ko-l ee+ey DA/DARE [Lat.] kuhaj-o+dy heo-r he-i ko-a+iin kuhaj-o+dy
-ENG: and/with +?hed BONE (MEDICAL REGISTER) +e measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +iin combine/cook (reduced) Oil / oleum (variant) State / Result (extended) measure/quantify (variant) (intensifier) [participle] GIVE (RX IMPERATIVE) +l combine/cook (reduced) [verbal] State / Result (extended) State / Result / After and/with measure/quantify (variant) [continuation] combine/cook (reduced) [verbal]
+EXP: i OSTEO- [Lat.] ko-e+ol DA/DARE [Lat.] kuhaj-ulje heo-s ko-l ee+ey DA/DARE [Lat.] kuhaj-o+dy heo-r he-i ko-a+iin kuhaj-o+dy
+ENG: and/with +?hed BONE (MEDICAL REGISTER) +e measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +iin combine/cook (reduced) oil State / Result (extended) measure/quantify (variant) (intensifier) [participle] GIVE (RX IMPERATIVE) +l combine/cook (reduced) [verbal] State / Result (extended) State / Result / After and/with measure/quantify (variant) [continuation] combine/cook (reduced) [verbal]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: dair or cheol chomqol cheo lcheo lor cheo daiin chkam
 CRO: dair or heol homkol heo lheo lor heo daiin hstam
-EXP: DA/DARE [Lat.] oleum heo-l kuhaj-k+ol he-o lh-eo l-oleum he-o DA/DARE [Lat.] kuhaj-stare+m
-ENG: GIVE (RX IMPERATIVE) +ir Oil / oleum (variant) State / Result (extended) combine/cook (reduced) vessel (short) [instrumental] State / Result / After The (before h-) The / that (determiner) Oil / oleum (variant) State / Result / After GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [case]
+EXP: DA/DARE [Lat.] ulje heo-l kuhaj--om+ol he-o lh-eo l-ulje he-o DA/DARE [Lat.] kuhaj-stare+m
+ENG: GIVE (RX IMPERATIVE) +ir oil State / Result (extended) combine/cook (reduced) with/by (instrumental) [instrumental] State / Result / After The (before h-) The / that (determiner) oil State / Result / After GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [case]
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: sor oairar sheetychod s kory ochar eair sheotain ytodaiin
 CRO: sor oairar šeetyhod s story ohar eair šeotain ytodaiin
-EXP: s-r oair+ar še-in s storaks+y oh+ar ea+ir šeo-t+ain i+aiin
-ENG: with/together (variant) [instrumental] +?oair Soaked-state / After soaking Preposition: in/with ?s? storax [adjective] [instrumental] [agent] Soaked-state (extended) [plural] and/with [liquid+continuing]
+EXP: s-r oair+ar še-stabljika s storaks+y oh+ar ea+ir šeo-t+ain i+aiin
+ENG: with/together (variant) [instrumental] +?oair Soaked-state / After soaking stalk/stem ?s? storax [adjective] [instrumental] [agent] Soaked-state (extended) [plural] and/with [liquid+continuing]
 ```
 <sub>[▓▓▓▓▓░░░░░] 55% confidence</sub>
 
 ```
 EVA: octhos okaiir okeosdar s ain ykeody dar okal dal doral dar am
 CRO: octrros ostaiir osteosdar s ain ysteody dar ostal dal doral dar am
-EXP: centrum+s OSTEO- [Lat.] OSTEO- [Lat.] s a+in i+dy DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.] oleum+al DA/DARE [Lat.] a+m
-ENG: Center / control [~15] BONE (MEDICAL REGISTER) +ai BONE (MEDICAL REGISTER) +eosd ?s? [plural] and/with [verbal] +?steo GIVE (RX IMPERATIVE) +r BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +l Oil / oleum (variant) [locative] GIVE (RX IMPERATIVE) +r [case]
+EXP: smjesa+s OSTEO- [Lat.] OSTEO- [Lat.] s a+in i+dy DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.] ulje+al DA/DARE [Lat.] a+m
+ENG: compound mixture [~15] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +eosd ?s? [plural] and/with [verbal] +?steo GIVE (RX IMPERATIVE) +r BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +l oil [locative] GIVE (RX IMPERATIVE) +r [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
 ```
 EVA: yeo qokeeol chey sairdam yfor opodaiin dam sary qodam yteos aiin
 CRO: yeo kosteeol hey sairdam yfor opodaiin dam sary kodam yteos aiin
-EXP: i ko-stare+ol he-i s-da+m i stabljika+aiin DA/DARE [Lat.] s-r+y ko-da+m i+s a+iin
-ENG: and/with +?eo measure/quantify (variant) Stand / place / position [instrumental] State / Result / After and/with with/together da [case] and/with +?for stalk/stem [liquid+continuing] GIVE (RX IMPERATIVE) +m with/together [adjective] measure/quantify (variant) da [case] and/with [~15] +?teo [continuation]
+EXP: i ko-stare+ol he-i s-dati+m i stabljika+aiin DA/DARE [Lat.] s-r+y ko-dati+m i+s a+iin
+ENG: and/with +?eo measure/quantify (variant) Stand / place / position [instrumental] State / Result / After and/with with/together give/add [case] and/with +?for stalk/stem [liquid+continuing] GIVE (RX IMPERATIVE) +m with/together [adjective] measure/quantify (variant) give/add [case] and/with [~15] +?teo [continuation]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: qokor chor cthy daiinchos eey dar aiin choeees okar chcthy darams
 CRO: kostor hor ctrry daiinhos eey dar aiin hoeees ostar hctrry darams
-EXP: ko-storaks kuhaj-oleum centrum+y DA/DARE [Lat.] e+ey DA/DARE [Lat.] a+iin kuhaj-ee+s OSTEO- [Lat.] kuhaj-centrum+y DA/DARE [Lat.]
-ENG: measure/quantify (variant) storax combine/cook (reduced) Oil / oleum (variant) Center / control [adjective] GIVE (RX IMPERATIVE) +iinho [participle] GIVE (RX IMPERATIVE) +r [continuation] combine/cook (reduced) (intensifier) [~15] BONE (MEDICAL REGISTER) combine/cook (reduced) Center / control [adjective] GIVE (RX IMPERATIVE) +ram
+EXP: ko-storaks kuhaj-ulje smjesa+y DA/DARE [Lat.] e+ey DA/DARE [Lat.] a+iin kuhaj-ee+s OSTEO- [Lat.] kuhaj-smjesa+y DA/DARE [Lat.]
+ENG: measure/quantify (variant) storax combine/cook (reduced) oil compound mixture [adjective] GIVE (RX IMPERATIVE) +iinho [participle] GIVE (RX IMPERATIVE) +r [continuation] combine/cook (reduced) (intensifier) [~15] BONE (MEDICAL REGISTER) combine/cook (reduced) compound mixture [adjective] GIVE (RX IMPERATIVE) +ram
 ```
-<sub>[███████░░░] 75% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: toar qokeeody doefsheydairy sheos psheoepoain dain qekor ykeor otol sheey daldaiin
 CRO: toar kosteeody doefšeydairy šeos pšeoepoain dain kestor ysteor otol šeey daldaiin
-EXP: to+ar ko-stare+dy da+y šeo-s pšeoepo+ain DA/DARE [Lat.] k i posuda-ulje še-e+y DA/DARE [Lat.]
-ENG: [instrumental] measure/quantify (variant) Stand / place / position [verbal] da [adjective] +?doefšeyir Soaked-state (extended) [plural] +?pšeoepo GIVE (RX IMPERATIVE) +in vessel (short) +?estor and/with +?steor vessel/container (variant) oil Soaked-state / After soaking [adjective] GIVE (RX IMPERATIVE) +ld
+EXP: to+ar ko-stare+dy dati+y šeo-s sa onim+ain DA/DARE [Lat.] k i posuda-ulje še-e+y DA/DARE [Lat.]
+ENG: [instrumental] measure/quantify (variant) Stand / place / position [verbal] give/add [adjective] +?doefšeyir Soaked-state (extended) with that which [plural] GIVE (RX IMPERATIVE) +in vessel (short) +?estor and/with +?steor vessel/container (variant) oil Soaked-state / After soaking [adjective] GIVE (RX IMPERATIVE) +ld
 ```
-<sub>[▓▓▓▓▓░░░░░] 53% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
 ```
 EVA: dol dair chey okaiin shydaiir odor sheos aiin daikeody qokorar sheody qoko ltcheody otal
 CRO: dol dair hey ostaiin šydaiir odor šeos aiin daisteody kostorar šeody kosto ltheody otal
-EXP: d+ol DA/DARE [Lat.] he-i OSTEO- [Lat.] namoci-i+ir stabljika šeo-s a+iin DA/DARE [Lat.] ko-storaks+ar šeo-d+y ko-stare l-theo+dy posuda-tekućina
-ENG: [instrumental] GIVE (RX IMPERATIVE) +ir State / Result / After and/with BONE (MEDICAL REGISTER) soak/infuse (Croatian) and/with [agent] stalk/stem Soaked-state (extended) [continuation] GIVE (RX IMPERATIVE) +ieo measure/quantify (variant) storax [instrumental] Soaked-state (extended) [adjective] measure/quantify (variant) Stand / place / position The / that (determiner) [verbal] +?theo vessel/container (variant) liquid/water (vessel context)
+EXP: d+ol DA/DARE [Lat.] he-i OSTEO- [Lat.] namoci-i+ir stabljika šeo-s a+iin DA/DARE [Lat.] ko-storaks+ar šeo-d+y ko-stare l-ono što+dy posuda-tekućina
+ENG: [instrumental] GIVE (RX IMPERATIVE) +ir State / Result / After and/with BONE (MEDICAL REGISTER) soak/infuse (Croatian) and/with [agent] stalk/stem Soaked-state (extended) [continuation] GIVE (RX IMPERATIVE) +ieo measure/quantify (variant) storax [instrumental] Soaked-state (extended) [adjective] measure/quantify (variant) Stand / place / position The / that (determiner) that which/the one [verbal] vessel/container (variant) liquid/water (vessel context)
 ```
-<sub>[███████░░░] 75% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: dar qockhy qokal okeoycho daiin odaiin ykeoda okols sheey keeody daiin qokos okeom
@@ -331,10 +332,10 @@ ENG: GIVE (RX IMPERATIVE) +r measure/quantify (variant) Stand / place / position
 ```
 EVA: ockhody daiin ykam schty chy cthey dairair chool loy dair cheodaiin
 CRO: ocstody daiin ystam šhty hy ctrrey dairair hool loy dair heodaiin
-EXP: stare+dy DA/DARE [Lat.] i+m namoci-ht+y kuhaj-i centrum+ey DA/DARE [Lat.] kuhaj-o+ol l-o+y DA/DARE [Lat.] heo-d+aiin
-ENG: Stand / place / position [verbal] GIVE (RX IMPERATIVE) +i and/with [case] +?sta soak/infuse (Croatian) [adjective] combine/cook (reduced) and/with Center / control [participle] GIVE (RX IMPERATIVE) +ira combine/cook (reduced) [instrumental] The / that (determiner) [adjective] GIVE (RX IMPERATIVE) +ir State / Result (extended) [liquid+continuing]
+EXP: stare+dy DA/DARE [Lat.] i+m namoci-ht+y kuhaj-i smjesa+ey DA/DARE [Lat.] kuhaj-o+ol l-o+y DA/DARE [Lat.] heo-d+aiin
+ENG: Stand / place / position [verbal] GIVE (RX IMPERATIVE) +i and/with [case] +?sta soak/infuse (Croatian) [adjective] combine/cook (reduced) and/with compound mixture [participle] GIVE (RX IMPERATIVE) +ira combine/cook (reduced) [instrumental] The / that (determiner) [adjective] GIVE (RX IMPERATIVE) +ir State / Result (extended) [liquid+continuing]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: rady
@@ -347,56 +348,56 @@ ENG: [verbal]
 ```
 EVA: koldal sfal cfhoy ofcheol opolsy daiin qopol oldaiin octhody
 CRO: stoldal sfal cplloy ofheol opolsy daiin kopol oldaiin octrrody
-EXP: stare+al sf+al cpllo+y ofhe+ol ulje+y DA/DARE [Lat.] ko-p+ol ulje+aiin centrum+dy
-ENG: Stand / place / position [locative] [locative] [adjective] +?cpllo [instrumental] +?ofhe oil [adjective] GIVE (RX IMPERATIVE) +i measure/quantify (variant) [instrumental] oil [liquid+continuing] Center / control [verbal]
+EXP: stare+al sf+al cpllo+y ov/taj+ol ulje+y DA/DARE [Lat.] ko-p+ol ulje+aiin smjesa+dy
+ENG: Stand / place / position [locative] [locative] [adjective] +?cpllo the/this (demonstrative) [instrumental] oil [adjective] GIVE (RX IMPERATIVE) +i measure/quantify (variant) [instrumental] oil [liquid+continuing] compound mixture [verbal]
 ```
-<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: dor sheey qokol cheol cthody qockhy dain yteey otar cthol
 CRO: dor šeey kostol heol ctrrody kocsty dain yteey otar ctrrol
-EXP: oleum še-e+y ko-stare+ol heo-l centrum+dy ko-stare+y DA/DARE [Lat.] i+ey posuda-voda centrum+ol
-ENG: Oil / oleum (variant) Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) Center / control [verbal] measure/quantify (variant) Stand / place / position [adjective] GIVE (RX IMPERATIVE) +in and/with [participle] vessel/container (variant) water Center / control [instrumental]
+EXP: ulje še-e+y ko-stare+ol heo-l smjesa+dy ko-stare+y DA/DARE [Lat.] i+ey posuda-voda smjesa+ol
+ENG: oil Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) compound mixture [verbal] measure/quantify (variant) Stand / place / position [adjective] GIVE (RX IMPERATIVE) +in and/with [participle] vessel/container (variant) water compound mixture [instrumental]
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: qokey daiin cheey cthody qoor sheor sol chor cheor ory
 CRO: kostey daiin heey ctrrody koor šeor sol hor heor ory
-EXP: ko-stare+ey DA/DARE [Lat.] he-e+y centrum+dy ko-oleum šeo-r s-l kuhaj-oleum heo-r oleum+y
-ENG: measure/quantify (variant) Stand / place / position [participle] GIVE (RX IMPERATIVE) +i State / Result / After [adjective] Center / control [verbal] measure/quantify (variant) Oil / oleum (variant) Soaked-state (extended) with/together (variant) combine/cook (reduced) Oil / oleum (variant) State / Result (extended) Oil / oleum (variant) [adjective]
+EXP: ko-stare+ey DA/DARE [Lat.] he-e+y smjesa+dy ko-ulje šeo-r s-l kuhaj-ulje heo-r ulje+y
+ENG: measure/quantify (variant) Stand / place / position [participle] GIVE (RX IMPERATIVE) +i State / Result / After [adjective] compound mixture [verbal] measure/quantify (variant) oil Soaked-state (extended) with/together (variant) combine/cook (reduced) oil State / Result (extended) oil [adjective]
 ```
-<sub>[████████░░] 84% confidence</sub>
+<sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: shockhey orarol cheoky qoy chodair choky daiin otar okar
 CRO: šocstey orarol heosty koy hodair hosty daiin otar ostar
-EXP: namoci-stare+ey oleum+ol heo-stare+y ko-i kuhaj-stabljika+ir kuhaj-kost+y DA/DARE [Lat.] posuda-voda OSTEO- [Lat.]
-ENG: soak/infuse (Croatian) Stand / place / position [participle] Oil / oleum (variant) [instrumental] State / Result (extended) Stand / place / position [adjective] measure/quantify (variant) and/with combine/cook (reduced) stalk/stem [agent] combine/cook (reduced) bone (medical) [adjective] GIVE (RX IMPERATIVE) +i vessel/container (variant) water BONE (MEDICAL REGISTER)
+EXP: namoci-stare+ey ulje+ol heo-stare+y ko-i kuhaj-stabljika+ir kuhaj-kost+y DA/DARE [Lat.] posuda-voda OSTEO- [Lat.]
+ENG: soak/infuse (Croatian) Stand / place / position [participle] oil [instrumental] State / Result (extended) Stand / place / position [adjective] measure/quantify (variant) and/with combine/cook (reduced) stalk/stem [agent] combine/cook (reduced) bone [adjective] GIVE (RX IMPERATIVE) +i vessel/container (variant) water BONE (MEDICAL REGISTER)
 ```
 <sub>[████████░░] 89% confidence</sub>
 
 ```
 EVA: tocheo cthor okol chekaiin os aiin ol cheokchey qokoiiin dan
 CRO: toheo ctrror ostol hestaiin os aiin ol heosthey kostoiiin dan
-EXP: toheo centrum OSTEO- [Lat.] he-stare+aiin o+s a+iin ulje heo-stare+ey ko-stare+iin DA/DARE [Lat.]
-ENG: ?toheo? Center / control BONE (MEDICAL REGISTER) State / Result / After Stand / place / position [liquid+continuing] [~15] [continuation] oil State / Result (extended) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [continuation] GIVE (RX IMPERATIVE) +n
+EXP: ono što smjesa OSTEO- [Lat.] he-stare+aiin o+s a+iin ulje heo-stare+ey ko-stare+iin DA/DARE [Lat.]
+ENG: that which/the one compound mixture BONE (MEDICAL REGISTER) State / Result / After Stand / place / position [liquid+continuing] [~15] [continuation] oil State / Result (extended) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [continuation] GIVE (RX IMPERATIVE) +n
 ```
-<sub>[███████░░░] 71% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: tor sheor cheor cthey qokol daiin chekal dal s chear qotam
 CRO: tor šeor heor ctrrey kostol daiin hestal dal s hear kotam
-EXP: oleum šeo-r heo-r centrum+ey ko-stare+ol DA/DARE [Lat.] he-stare+al DA/DARE [Lat.] s he-voda ko-ta+m
-ENG: Oil / oleum (variant) Soaked-state (extended) State / Result (extended) Center / control [participle] measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i State / Result / After Stand / place / position [locative] GIVE (RX IMPERATIVE) +l ?s? State / Result / After water measure/quantify (variant) [case]
+EXP: ulje šeo-r heo-r smjesa+ey ko-stare+ol DA/DARE [Lat.] he-stare+al DA/DARE [Lat.] s he-voda ko-ta+m
+ENG: oil Soaked-state (extended) State / Result (extended) compound mixture [participle] measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i State / Result / After Stand / place / position [locative] GIVE (RX IMPERATIVE) +l ?s? State / Result / After water measure/quantify (variant) [case]
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: osheokaiin sain ol shodain qokar ain chekal daiin dar
 CRO: ošeostaiin sain ol šodain kostar ain hestal daiin dar
-EXP: kost+aiin s-in ulje namoci-stabljika+ain ko-stare+ar a+in he-stare+al DA/DARE [Lat.] DA/DARE [Lat.]
-ENG: bone (medical) [liquid+continuing] with/together oil soak/infuse (Croatian) stalk/stem [plural] measure/quantify (variant) Stand / place / position [instrumental] [plural] State / Result / After Stand / place / position [locative] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +r
+EXP: ih+aiin s-in ulje namoci-stabljika+ain ko-stare+ar a+in he-stare+al DA/DARE [Lat.] DA/DARE [Lat.]
+ENG: them/those [liquid+continuing] with/together oil soak/infuse (Croatian) stalk/stem [plural] measure/quantify (variant) Stand / place / position [instrumental] [plural] State / Result / After Stand / place / position [locative] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +r
 ```
 <sub>[████████░░] 82% confidence</sub>
 
@@ -411,34 +412,34 @@ ENG: measure/quantify (variant) Stand / place / position [instrumental] stalk/st
 ```
 EVA: tosheo fcheody shekey orshos oiir cphey qokeody cheody dal dy
 CRO: tošeo fheody šestey oršos oiir cplley kosteody heody dal dy
-EXP: tošeo fheo+dy še-stare+ey oleum+s oi+ir cpll+ey ko-stare+dy heo-d+y DA/DARE [Lat.] d+y
-ENG: ?tošeo? [verbal] +?fheo Soaked-state / After soaking Stand / place / position [participle] Oil / oleum (variant) [~15] [agent] [participle] +?cpll measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) [adjective] GIVE (RX IMPERATIVE) +l [adjective]
+EXP: sa onim ono što+dy še-stare+ey ulje+s oi+ir cpll+ey ko-stare+dy heo-d+y DA/DARE [Lat.] d+y
+ENG: with that which that which/the one [verbal] Soaked-state / After soaking Stand / place / position [participle] oil [~15] [agent] [participle] +?cpll measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) [adjective] GIVE (RX IMPERATIVE) +l [adjective]
 ```
-<sub>[▓▓▓▓▓░░░░░] 55% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: ykeey ykeey odal shoky okol chody okoaiin dal chdy dal daldy
 CRO: ysteey ysteey odal šosty ostol hody ostoaiin dal hdy dal daldy
 EXP: i+ey i+ey stabljika+al namoci-kost+y OSTEO- [Lat.] kuhaj-o+dy OSTEO- [Lat.] DA/DARE [Lat.] kuhaj-d+y DA/DARE [Lat.] DA/DARE [Lat.]
-ENG: and/with [participle] and/with [participle] stalk/stem [locative] soak/infuse (Croatian) bone (medical) [adjective] BONE (MEDICAL REGISTER) combine/cook (reduced) [verbal] BONE (MEDICAL REGISTER) +o GIVE (RX IMPERATIVE) +l combine/cook (reduced) [adjective] GIVE (RX IMPERATIVE) +l GIVE (RX IMPERATIVE) +l
+ENG: and/with [participle] and/with [participle] stalk/stem [locative] soak/infuse (Croatian) bone [adjective] BONE (MEDICAL REGISTER) combine/cook (reduced) [verbal] BONE (MEDICAL REGISTER) +o GIVE (RX IMPERATIVE) +l combine/cook (reduced) [adjective] GIVE (RX IMPERATIVE) +l GIVE (RX IMPERATIVE) +l
 ```
 <sub>[███████░░░] 77% confidence</sub>
 
 ```
 EVA: dcheocy daiin cthol daiin daldy okeor ytey keor cheyty ochy
 CRO: dheocy daiin ctrrol daiin daldy osteor ytey steor heyty ohy
-EXP: dheoc+y DA/DARE [Lat.] centrum+ol DA/DARE [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] i+ey stare he-i+y oh+y
-ENG: [adjective] +?dheoc GIVE (RX IMPERATIVE) +i Center / control [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +l BONE (MEDICAL REGISTER) +eor and/with [participle] Stand / place / position +?eor State / Result / After and/with [adjective] [adjective] +?oh
+EXP: ono što+y DA/DARE [Lat.] smjesa+ol DA/DARE [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] i+ey stare he-i+y oh+y
+ENG: that which/the one [adjective] GIVE (RX IMPERATIVE) +i compound mixture [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +l BONE (MEDICAL REGISTER) +eor and/with [participle] Stand / place / position +?eor State / Result / After and/with [adjective] [adjective] +?oh
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: qokaiin ykchol qockhy okalda otal dal chodar okaiin dalg
 CRO: kostaiin ysthol kocsty ostalda otal dal hodar ostaiin dalg
 EXP: ko-stare+aiin i+ol ko-stare+y OSTEO- [Lat.] posuda-tekućina DA/DARE [Lat.] kuhaj-stabljika+ar OSTEO- [Lat.] DA/DARE [Lat.]
-ENG: measure/quantify (variant) Stand / place / position [liquid+continuing] and/with [instrumental] measure/quantify (variant) Stand / place / position [adjective] BONE (MEDICAL REGISTER) +alda vessel/container (variant) liquid/water (vessel context) GIVE (RX IMPERATIVE) +l combine/cook (reduced) stalk/stem [instrumental] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +lg
+ENG: measure/quantify (variant) Stand / place / position [liquid+continuing] and/with [instrumental] measure/quantify (variant) Stand / place / position [adjective] BONE (MEDICAL REGISTER) +da vessel/container (variant) liquid/water (vessel context) GIVE (RX IMPERATIVE) +l combine/cook (reduced) stalk/stem [instrumental] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +lg
 ```
-<sub>[███████░░░] 77% confidence</sub>
+<sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: sal shol ykol dar am shol ckhy dolchoy dalshdy okeol dydchy
@@ -452,17 +453,17 @@ ENG: with/together soak/infuse (Croatian) oil and/with [instrumental] GIVE (RX I
 EVA: qokol cheol qokol dal chol dam qoeey saiin ols chokaiin
 CRO: kostol heol kostol dal hol dam koeey saiin ols hostaiin
 EXP: ko-stare+ol heo-l ko-stare+ol DA/DARE [Lat.] kuhaj-ulje DA/DARE [Lat.] ko-e+ey s-i+in ulje+s kuhaj-kost+aiin
-ENG: measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +l combine/cook (reduced) oil GIVE (RX IMPERATIVE) +m measure/quantify (variant) [participle] with/together [plural] oil [~15] combine/cook (reduced) bone (medical) [liquid+continuing]
+ENG: measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +l combine/cook (reduced) oil GIVE (RX IMPERATIVE) +m measure/quantify (variant) [participle] with/together [plural] oil [~15] combine/cook (reduced) bone [liquid+continuing]
 ```
 <sub>[████████░░] 87% confidence</sub>
 
 ```
 EVA: sar a daiin ckhey qotchy okol ycheo cthody okol olkeeycthy
 CRO: sar a daiin cstey kothy ostol yheo ctrrody ostol olsteeyctrry
-EXP: s-r a DA/DARE [Lat.] stare+ey ko-th+y OSTEO- [Lat.] i centrum+dy OSTEO- [Lat.] ulje+y
-ENG: with/together ?a? GIVE (RX IMPERATIVE) +i Stand / place / position [participle] measure/quantify (variant) [adjective] BONE (MEDICAL REGISTER) and/with +?heo Center / control [verbal] BONE (MEDICAL REGISTER) oil [adjective] +?steeyctrr
+EXP: s-r a DA/DARE [Lat.] stare+ey ko-th+y OSTEO- [Lat.] i smjesa+dy OSTEO- [Lat.] ulje+y
+ENG: with/together ?a? GIVE (RX IMPERATIVE) +i Stand / place / position [participle] measure/quantify (variant) [adjective] BONE (MEDICAL REGISTER) and/with +?heo compound mixture [verbal] BONE (MEDICAL REGISTER) oil [adjective] +?steeyctrr
 ```
-<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: sol chey okchol sair daiin okal choldy
@@ -474,4 +475,4 @@ ENG: with/together (variant) State / Result / After and/with BONE (MEDICAL REGIS
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f89v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f89v*

@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Pharmaceutical
-**Confidence:** 61%
-**Words:** 56 total, 46 resolved (82%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 65%
+**Words:** 56 total, 49 resolved (88%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,13 +19,12 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 8 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 6 | CANDIDATE |
-| **st** | Stand / place / position | *stare* | general | 6 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 5 | CONFIRMED |
+| **ctrr** | compound mixture | *confectio* | preparation | 6 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 5 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 5 | CANDIDATE |
+| **šeo** | with that which | *cum illo quod* | grammar | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 1 | CONFIRMED |
-| **sar** | Salt | *sal* | mineral | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
+| **oko** | eye | *oculus* | body | 1 | CONFIRMED |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -52,42 +51,42 @@
 ```
 EVA: psheoas sheeor qoepsheody odar ocpheoopar ysarasod
 CRO: pšeoas šeeor koepšeody odar ocplleoopar ysarasod
-EXP: pšeoa+s še-oleum ko-epšeo+dy stabljika+ar ocplleoop+ar i
-ENG: [~15] +?pšeoa Soaked-state / After soaking Oil / oleum (variant) measure/quantify (variant) [verbal] +?epšeo stalk/stem [instrumental] [instrumental] +?ocplleoop and/with +?sarasod
+EXP: sa onim+s še-ulje ko-sa onim+dy stabljika+ar ocplleoop+ar i
+ENG: with that which [~15] Soaked-state / After soaking oil measure/quantify (variant) with that which [verbal] stalk/stem [instrumental] [instrumental] +?ocplleoop and/with +?sarasod
 ```
-<sub>[▓▓▓▓░░░░░░] 45% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
 ```
 EVA: ytear yteor olcheey dteodoiinsaroqoches ycheom
 CRO: ytear yteor olheey dteodoiinsarokohes yheom
-EXP: i+ar i ulje+ey sal+s i+om
-ENG: and/with [instrumental] and/with +?teor oil [participle] Salt [~15] +?dteodoiinokohe and/with [case]
+EXP: i+ar i ulje+ey oko+s i+om
+ENG: and/with [instrumental] and/with +?teor oil [participle] eye [~15] +?dteodoiinsarhe and/with [case]
 ```
 <sub>[▓▓▓▓░░░░░░] 46% confidence</sub>
 
 ```
 EVA: dcheoteos cpheos sor chcthosycthytchey daiin
 CRO: dheoteos cplleos sor hctrrosyctrrythey daiin
-EXP: dheoteo+s cplleo+s s-r kuhaj-centrum+ey DA/DARE [Lat.]
-ENG: [~15] +?dheoteo [~15] +?cplleo with/together (variant) combine/cook (reduced) Center / control [participle] +?rosyctrryth GIVE (RX IMPERATIVE) +i
+EXP: ono što+s cplleo+s s-r kuhaj-smjesa+ey DA/DARE [Lat.]
+ENG: that which/the one [~15] [~15] +?cplleo with/together (variant) combine/cook (reduced) compound mixture [participle] +?osyctrryth GIVE (RX IMPERATIVE) +i
 ```
-<sub>[▓▓▓▓░░░░░░] 42% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
 ```
 EVA: dsheos sheey teo cthy ctheodody
 CRO: dšeos šeey teo ctrry ctrreodody
-EXP: dšeo+s še-e+y teo centrum+y centrum+dy
-ENG: [~15] +?dšeo Soaked-state / After soaking [adjective] ?teo? Center / control [adjective] Center / control [verbal]
+EXP: sa onim+s še-e+y teo smjesa+y smjesa+dy
+ENG: with that which [~15] Soaked-state / After soaking [adjective] ?teo? compound mixture [adjective] compound mixture [verbal]
 ```
-<sub>[▓▓▓▓░░░░░░] 45% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: tockhy cthey ckheeody ar cheykey
 CRO: tocsty ctrrey csteeody ar heystey
-EXP: stare+y centrum+ey stare+dy voda he-i+ey
-ENG: Stand / place / position [adjective] Center / control [participle] Stand / place / position [verbal] water State / Result / After and/with [participle]
+EXP: stare+y smjesa+ey ee+dy voda he-i+ey
+ENG: Stand / place / position [adjective] compound mixture [participle] (intensifier) [verbal] water State / Result / After and/with [participle]
 ```
-<sub>[███████░░░] 71% confidence</sub>
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: yteeody teodar alchey sy
@@ -100,8 +99,8 @@ ENG: and/with [verbal] +?teeo stalk/stem [instrumental] liquid/water (vessel con
 ```
 EVA: sheodal chor ory ctol
 CRO: šeodal hor ory ctol
-EXP: šeo-d+al kuhaj-oleum oleum+y ct+ol
-ENG: Soaked-state (extended) [locative] combine/cook (reduced) Oil / oleum (variant) Oil / oleum (variant) [adjective] [instrumental]
+EXP: šeo-d+al kuhaj-ulje ulje+y ct+ol
+ENG: Soaked-state (extended) [locative] combine/cook (reduced) oil oil [adjective] [instrumental]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -116,26 +115,26 @@ ENG: and/with [participle] Stand / place / position [instrumental] GIVE (RX IMPE
 ```
 EVA: eol ckheor cheor aiin
 CRO: eol csteor heor aiin
-EXP: e+ol oleum heo-r a+iin
-ENG: [instrumental] Oil / oleum (variant) +?cste State / Result (extended) [continuation]
+EXP: e+ol ulje heo-r a+iin
+ENG: [instrumental] oil +?cste State / Result (extended) [continuation]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: ctheor oral chor ckhey
 CRO: ctrreor oral hor cstey
-EXP: centrum ORALIS [Lat.] kuhaj-oleum stare+ey
-ENG: Center / control +?reor BY MOUTH/ORALLY combine/cook (reduced) Oil / oleum (variant) Stand / place / position [participle]
+EXP: smjesa ORALIS [Lat.] kuhaj-ulje stare+ey
+ENG: compound mixture BY MOUTH/ORALLY combine/cook (reduced) oil Stand / place / position [participle]
 ```
-<sub>[████████░░] 80% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: sar os checkhey socthh
 CRO: sar os hecstey soctrrh
-EXP: s-r o+s he-stare+ey s-centrum
-ENG: with/together [~15] State / Result / After Stand / place / position [participle] with/together (variant) Center / control
+EXP: s-r o+s he-stare+ey s-smjesa
+ENG: with/together [~15] State / Result / After Stand / place / position [participle] with/together (variant) compound mixture
 ```
-<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: sosar cheekeo dain
@@ -155,4 +154,4 @@ ENG: with/together (variant) and/with with/together State / Result (extended)
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f96v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f96v*

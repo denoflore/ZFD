@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 68%
-**Words:** 68 total, 60 resolved (88%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 69%
+**Words:** 68 total, 62 resolved (91%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,14 +18,11 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **st** | Stand / place / position | *stare* | general | 13 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 12 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 8 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 5 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
+| **ctrr** | compound mixture | *confectio* | preparation | 5 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 3 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **edy** | Root / prepared root | *radix* | plant_part | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -54,26 +51,26 @@
 ```
 EVA: psheoky odaiir qoyofseod chypchey ypchedy ainchofochcphdy
 CRO: pšeosty odaiir koyofseod hyphey yphedy ainhofohcplldy
-EXP: kost+y stabljika+ir ko-i kuhaj-i+ey i+edy ainhofohcpll+dy
-ENG: bone (medical) [adjective] stalk/stem [agent] measure/quantify (variant) and/with +?ofseod combine/cook (reduced) and/with [participle] and/with [verbal] [verbal] +?ainhofohcpll
+EXP: ih+y stabljika+ir ko-i kuhaj-i+ey i+edy stvar+dy
+ENG: them/those [adjective] stalk/stem [agent] measure/quantify (variant) and/with +?ofseod combine/cook (reduced) and/with [participle] and/with [verbal] substance/thing [verbal] +?hofohcpll
 ```
-<sub>[▓▓▓▓▓░░░░░] 51% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 55% confidence</sub>
 
 ```
 EVA: dchey aiin adeeodyykecthhy chedy ytedy dychecthedy lr
 CRO: dhey aiin adeeodyystectrrhy hedy ytedy dyhectrredy lr
-EXP: dh+ey a+iin centrum+y he-d+y i+edy centrum+edy l-r
-ENG: [participle] [continuation] Center / control [adjective] +?adeeodyysterh State / Result / After [adjective] and/with [verbal] Center / control [verbal] The / that (determiner)
+EXP: dh+ey a+iin smjesa+y he-d+y i+edy smjesa+edy l-r
+ENG: [participle] [continuation] compound mixture [adjective] +?adeeodyysteh State / Result / After [adjective] and/with [verbal] compound mixture [verbal] The / that (determiner)
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
 
 ```
 EVA: oaiin shcthy eteeda oloyykeedy olchedy galy sheey saiin s
 CRO: oaiin šctrry eteeda oloyysteedy olhedy galy šeey saiin s
-EXP: o+aiin namoci-centrum+y radix + facere ulje+edy ulje+edy tekućina+y še-e+y s-i+in s
-ENG: [liquid+continuing] soak/infuse (Croatian) Center / control [adjective] "Process kernel / do / treat" +?etea oil [verbal] +?oyyste oil [verbal] liquid/water (vessel context) [adjective] Soaked-state / After soaking [adjective] with/together [plural] ?s?
+EXP: o+aiin namoci-smjesa+y dati ulje+edy ulje+edy tekućina+y še-e+y s-i+in s
+ENG: [liquid+continuing] soak/infuse (Croatian) compound mixture [adjective] give/add +?etee oil [verbal] +?oyyste oil [verbal] liquid/water (vessel context) [adjective] Soaked-state / After soaking [adjective] with/together [plural] ?s?
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: qokedy cheos ytedy qokedyytedy chekedydaiin odam s aldy
@@ -86,10 +83,10 @@ ENG: measure/quantify (variant) Stand / place / position [verbal] State / Result
 ```
 EVA: haiin shedy eedy eedy schydaiin cthedyqokeedy qokedy cthhy
 CRO: haiin šedy eedy eedy šhydaiin ctrredykosteedy kostedy ctrrhy
-EXP: kuhaj-a+iin še-d+y e+edy e+edy namoci-i+aiin centrum+edy ko-stare+edy centrum+y
-ENG: combine/cook (reduced) [continuation] Soaked-state / After soaking [adjective] [verbal] [verbal] soak/infuse (Croatian) and/with [liquid+continuing] Center / control [verbal] +?redykoste measure/quantify (variant) Stand / place / position [verbal] Center / control [adjective]
+EXP: kuhaj-a+iin še-d+y e+edy e+edy namoci-i+aiin smjesa+edy ko-stare+edy smjesa+y
+ENG: combine/cook (reduced) [continuation] Soaked-state / After soaking [adjective] [verbal] [verbal] soak/infuse (Croatian) and/with [liquid+continuing] compound mixture [verbal] +?edykoste measure/quantify (variant) Stand / place / position [verbal] compound mixture [adjective]
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: rchedy qokedy
@@ -102,8 +99,8 @@ ENG: [verbal] measure/quantify (variant) Stand / place / position [verbal]
 ```
 EVA: pcho qokedy dar sheo ypchseds saiinshapchedyfeey dalchedy sas
 CRO: pho kostedy dar šeo yphseds saiinšaphedyfeey dalhedy sas
-EXP: pho ko-stare+edy DA/DARE [Lat.] še-o i+s s-radix+ey DA/DARE [Lat.] s-s
-ENG: ?pho? measure/quantify (variant) Stand / place / position [verbal] GIVE (RX IMPERATIVE) +r Soaked-state / After soaking and/with [~15] +?phsed with/together Root / prepared root [participle] +?iinšaphfe GIVE (RX IMPERATIVE) +lh with/together
+EXP: pho ko-stare+edy DA/DARE [Lat.] še-o i+s s-korijen+ey DA/DARE [Lat.] s-s
+ENG: ?pho? measure/quantify (variant) Stand / place / position [verbal] GIVE (RX IMPERATIVE) +r Soaked-state / After soaking and/with [~15] +?phsed with/together root/prepared [participle] +?iinšaphfe GIVE (RX IMPERATIVE) +lh with/together
 ```
 <sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
@@ -118,10 +115,10 @@ ENG: GIVE (RX IMPERATIVE) +i Soaked-state / After soaking [adjective] measure/qu
 ```
 EVA: tcheo shy geedy okedy chckhy sdydyykeechy okeedy cheky
 CRO: theo šy geedy ostedy hcsty sdydyysteehy osteedy hesty
-EXP: theo namoci-i ge+edy OSTEO- [Lat.] kuhaj-stare+y stare+y OSTEO- [Lat.] he-stare+y
-ENG: ?theo? soak/infuse (Croatian) and/with [verbal] BONE (MEDICAL REGISTER) combine/cook (reduced) Stand / place / position [adjective] Stand / place / position [adjective] +?sdydyyeeh BONE (MEDICAL REGISTER) +e State / Result / After Stand / place / position [adjective]
+EXP: ono što namoci-i ge+edy OSTEO- [Lat.] kuhaj-stare+y ee+y OSTEO- [Lat.] he-stare+y
+ENG: that which/the one soak/infuse (Croatian) and/with [verbal] BONE (MEDICAL REGISTER) combine/cook (reduced) Stand / place / position [adjective] (intensifier) [adjective] +?sdydyysth BONE (MEDICAL REGISTER) +e State / Result / After Stand / place / position [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: shese aiin sheos cheody otal
@@ -133,4 +130,4 @@ ENG: Soaked-state / After soaking [continuation] Soaked-state (extended) State /
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f26r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f26r*

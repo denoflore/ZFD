@@ -10,7 +10,7 @@
 **Section:** Biological/Balneological
 **Confidence:** 79%
 **Words:** 351 total, 346 resolved (99%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,19 +19,16 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 86 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 55 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 55 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 24 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 18 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 7 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 4 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 18 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 7 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 4 | CANDIDATE |
 | **ed** | "Process kernel / do / treat" | *radix + facere* | general | 3 | CANDIDATE |
 | **stal** | cauldron | *caldarium* | equipment | 3 | CANDIDATE |
 | **k** | vessel (short) |  | general | 3 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **kost** | Bone (Slavic) | *kost* | animal | 2 | CONFIRMED |
-| **sal** | Salt (Latin) | *sal* | mineral | 1 | CONFIRMED |
-| **edy** | Root / prepared root | *radix* | plant_part | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -71,7 +68,7 @@ ENG: BONE (MEDICAL REGISTER) +š
 EVA: dokal
 CRO: dostal
 EXP: kost+al
-ENG: bone (medical) [locative]
+ENG: bone [locative]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -166,10 +163,10 @@ ENG: with/together (variant) Soaked-state / After soaking Stand / place / positi
 ```
 EVA: dl shckhy kain olchey qokain daly rddl shedy qoteedy cthedy loly
 CRO: dl šcsty stain olhey kostain daly rddl šedy koteedy ctrredy loly
-EXP: dl namoci-stare+y stare+ain ulje+ey ko-stare+ain DA/DARE [Lat.] rddl še-d+y ko-te+edy centrum+edy l-ulje+y
-ENG: ?dl? soak/infuse (Croatian) Stand / place / position [adjective] Stand / place / position [plural] oil [participle] measure/quantify (variant) Stand / place / position [plural] GIVE (RX IMPERATIVE) +l ?rddl? Soaked-state / After soaking [adjective] measure/quantify (variant) [verbal] Center / control [verbal] The / that (determiner) oil [adjective]
+EXP: dl namoci-stare+y stare+ain ulje+ey ko-stare+ain DA/DARE [Lat.] rddl še-d+y ko-te+edy smjesa+edy l-ulje+y
+ENG: ?dl? soak/infuse (Croatian) Stand / place / position [adjective] Stand / place / position [plural] oil [participle] measure/quantify (variant) Stand / place / position [plural] GIVE (RX IMPERATIVE) +l ?rddl? Soaked-state / After soaking [adjective] measure/quantify (variant) [verbal] compound mixture [verbal] The / that (determiner) oil [adjective]
 ```
-<sub>[███████░░░] 70% confidence</sub>
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: qokchdy qokal dal ol chety lchdycsedy ched otedy qotedy otar
@@ -198,10 +195,10 @@ ENG: measure/quantify (variant) Stand / place / position [verbal] [participle] m
 ```
 EVA: ocheain cheedy qokal dain sheeky qokysshedy tedy otedy tedy taral
 CRO: oheain heedy kostal dain šeesty kostysšedy tedy otedy tedy taral
-EXP: ohe+ain he-e+dy ko-stare+al DA/DARE [Lat.] še-stare+y ko-stare+edy t+edy posuda-e+dy t+edy voda+al
-ENG: [plural] State / Result / After [verbal] measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +in Soaked-state / After soaking Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [verbal] [verbal] vessel/container (variant) [verbal] [verbal] water [locative]
+EXP: ov/taj+ain he-e+dy ko-stare+al DA/DARE [Lat.] še-stare+y ko-stare+edy t+edy posuda-e+dy t+edy voda+al
+ENG: the/this (demonstrative) [plural] State / Result / After [verbal] measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +in Soaked-state / After soaking Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [verbal] [verbal] vessel/container (variant) [verbal] [verbal] water [locative]
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: qol sheckhy qokedy qokedy qokalysor chedy qoky olshty qokydy
@@ -223,7 +220,7 @@ ENG: [locative] oil oil [plural] oil [participle] oil +?šed measure/quantify (v
 EVA: odchedy qolshdy shokshdy qokainor shedy qolol keedy qokalom
 CRO: odhedy kolšdy šostšdy kostainor šedy kolol steedy kostalom
 EXP: stabljika+edy ko-lš+dy namoci-kost+dy ko-stare še-d+y ko-l+ol stare+edy ko-kotao+om
-ENG: stalk/stem [verbal] measure/quantify (variant) [verbal] soak/infuse (Croatian) bone (medical) [verbal] measure/quantify (variant) Stand / place / position +?ainor Soaked-state / After soaking [adjective] measure/quantify (variant) [instrumental] Stand / place / position [verbal] measure/quantify (variant) cauldron [case]
+ENG: stalk/stem [verbal] measure/quantify (variant) [verbal] soak/infuse (Croatian) bone [verbal] measure/quantify (variant) Stand / place / position +?ainor Soaked-state / After soaking [adjective] measure/quantify (variant) [instrumental] Stand / place / position [verbal] measure/quantify (variant) cauldron [case]
 ```
 <sub>[███████░░░] 77% confidence</sub>
 
@@ -270,8 +267,8 @@ ENG: measure/quantify (variant) Stand / place / position [locative]
 ```
 EVA: ory
 CRO: ory
-EXP: oleum+y
-ENG: Oil / oleum (variant) [adjective]
+EXP: ulje+y
+ENG: oil [adjective]
 ```
 <sub>[██████████] 100% confidence</sub>
 
@@ -318,16 +315,16 @@ ENG: vessel/container (variant) oil [adjective]
 ```
 EVA: tol sheor qokal dar olked orol kchey otain olchey okar sheky dedy kedy
 CRO: tol šeor kostal dar olsted orol sthey otain olhey ostar šesty dedy stedy
-EXP: t+ol šeo-r ko-stare+al DA/DARE [Lat.] ulje oleum+ol stare+ey posuda-a+in ulje+ey OSTEO- [Lat.] še-stare+y d+edy stare+edy
-ENG: [instrumental] Soaked-state (extended) measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +r oil +?sted Oil / oleum (variant) [instrumental] Stand / place / position [participle] vessel/container (variant) [plural] oil [participle] BONE (MEDICAL REGISTER) Soaked-state / After soaking Stand / place / position [adjective] [verbal] Stand / place / position [verbal]
+EXP: t+ol šeo-r ko-stare+al DA/DARE [Lat.] ulje ulje+ol stare+ey posuda-a+in ulje+ey OSTEO- [Lat.] še-stare+y d+edy stare+edy
+ENG: [instrumental] Soaked-state (extended) measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +r oil +?sted oil [instrumental] Stand / place / position [participle] vessel/container (variant) [plural] oil [participle] BONE (MEDICAL REGISTER) Soaked-state / After soaking Stand / place / position [adjective] [verbal] Stand / place / position [verbal]
 ```
 <sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: qoqokeey olkain qol sheedy qokeor sheedy qokal or chey qokar ol aiin
 CRO: kokosteey olstain kol šeedy kosteor šeedy kostal or hey kostar ol aiin
-EXP: ko-kost+ey ulje+ain ko-l še-e+dy ko-stare še-e+dy ko-stare+al oleum he-i ko-stare+ar ulje a+iin
-ENG: measure/quantify (variant) Bone (Slavic) [participle] oil [plural] measure/quantify (variant) Soaked-state / After soaking [verbal] measure/quantify (variant) Stand / place / position Soaked-state / After soaking [verbal] measure/quantify (variant) Stand / place / position [locative] Oil / oleum (variant) State / Result / After and/with measure/quantify (variant) Stand / place / position [instrumental] oil [continuation]
+EXP: ko-kost+ey ulje+ain ko-l še-e+dy ko-stare še-e+dy ko-stare+al ulje he-i ko-stare+ar ulje a+iin
+ENG: measure/quantify (variant) bone [participle] oil [plural] measure/quantify (variant) Soaked-state / After soaking [verbal] measure/quantify (variant) Stand / place / position Soaked-state / After soaking [verbal] measure/quantify (variant) Stand / place / position [locative] oil State / Result / After and/with measure/quantify (variant) Stand / place / position [instrumental] oil [continuation]
 ```
 <sub>[████████░░] 85% confidence</sub>
 
@@ -342,8 +339,8 @@ ENG: [verbal] measure/quantify (variant) Stand / place / position [plural] GIVE 
 ```
 EVA: sal shedy qokain shey qoin ol shey ol shey qoky qol cheey chl or sheolo
 CRO: sal šedy kostain šey koin ol šey ol šey kosty kol heey hl or šeolo
-EXP: s-l še-d+y ko-stare+ain še-i ko-in ulje še-i ulje še-i ko-stare+y ko-l he-e+y kuhaj-l oleum šeo-lo
-ENG: with/together Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [plural] Soaked-state / After soaking and/with measure/quantify (variant) oil Soaked-state / After soaking and/with oil Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) State / Result / After [adjective] combine/cook (reduced) Oil / oleum (variant) Soaked-state (extended)
+EXP: s-l še-d+y ko-stare+ain še-i ko-in ulje še-i ulje še-i ko-stare+y ko-l he-e+y kuhaj-l ulje šeo-lo
+ENG: with/together Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [plural] Soaked-state / After soaking and/with measure/quantify (variant) oil Soaked-state / After soaking and/with oil Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) State / Result / After [adjective] combine/cook (reduced) oil Soaked-state (extended)
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -358,8 +355,8 @@ ENG: oil Soaked-state / After soaking [adjective] measure/quantify (variant) [pa
 ```
 EVA: pokain okeedy or chesy sol shey qokeey qotedy olkedy chey tal dy qol
 CRO: postain osteedy or hesy sol šey kosteey kotedy olstedy hey tal dy kol
-EXP: kost+ain OSTEO- [Lat.] oleum he-s+y s-l še-i ko-stare+ey ko-t+edy ulje+edy he-i t+al d+y ko-l
-ENG: bone (medical) [plural] BONE (MEDICAL REGISTER) +e Oil / oleum (variant) State / Result / After [adjective] with/together (variant) Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) [verbal] oil [verbal] State / Result / After and/with [locative] [adjective] measure/quantify (variant)
+EXP: kost+ain OSTEO- [Lat.] ulje he-s+y s-l še-i ko-stare+ey ko-t+edy ulje+edy he-i t+al d+y ko-l
+ENG: bone [plural] BONE (MEDICAL REGISTER) +e oil State / Result / After [adjective] with/together (variant) Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) [verbal] oil [verbal] State / Result / After and/with [locative] [adjective] measure/quantify (variant)
 ```
 <sub>[████████░░] 80% confidence</sub>
 
@@ -406,8 +403,8 @@ ENG: measure/quantify (variant) Stand / place / position State / Result / After 
 ```
 EVA: por shey okain chedy qol sheol olchedy
 CRO: por šey ostain hedy kol šeol olhedy
-EXP: oleum še-i OSTEO- [Lat.] he-d+y ko-l šeo-l ulje+edy
-ENG: Oil / oleum (variant) Soaked-state / After soaking and/with BONE (MEDICAL REGISTER) State / Result / After [adjective] measure/quantify (variant) Soaked-state (extended) oil [verbal]
+EXP: ulje še-i OSTEO- [Lat.] he-d+y ko-l šeo-l ulje+edy
+ENG: oil Soaked-state / After soaking and/with BONE (MEDICAL REGISTER) State / Result / After [adjective] measure/quantify (variant) Soaked-state (extended) oil [verbal]
 ```
 <sub>[████████░░] 81% confidence</sub>
 
@@ -479,7 +476,7 @@ ENG: [participle] measure/quantify (variant) [adjective] measure/quantify (varia
 EVA: qokal dain dain oqoky daiin
 CRO: kostal dain dain okosty daiin
 EXP: ko-stare+al DA/DARE [Lat.] DA/DARE [Lat.] posuda-kost+y DA/DARE [Lat.]
-ENG: measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +in GIVE (RX IMPERATIVE) +in vessel/container bone (medical) [adjective] GIVE (RX IMPERATIVE) +i
+ENG: measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +in GIVE (RX IMPERATIVE) +in vessel/container bone [adjective] GIVE (RX IMPERATIVE) +i
 ```
 <sub>[███████░░░] 76% confidence</sub>
 
@@ -487,15 +484,15 @@ ENG: measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMP
 EVA: <okedy qekytedar oly->okal sheedy qoteedy qokeey ly
 CRO: <ostedy kestytedar oly->ostal šeedy koteedy kosteey ly
 EXP: kost+edy k+ar ulje+al še-e+dy ko-te+edy ko-stare+ey l-i
-ENG: bone (medical) [verbal] vessel (short) [instrumental] +?estyted oil [locative] +?y->ost Soaked-state / After soaking [verbal] measure/quantify (variant) [verbal] measure/quantify (variant) Stand / place / position [participle] The / that (determiner) and/with
+ENG: bone [verbal] vessel (short) [instrumental] +?estyted oil [locative] +?y->ost Soaked-state / After soaking [verbal] measure/quantify (variant) [verbal] measure/quantify (variant) Stand / place / position [participle] The / that (determiner) and/with
 ```
 <sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: <salchedy solkedy->ykeedy qokain otain shety
 CRO: <salhedy solstedy->ysteedy kostain otain šety
-EXP: sal+edy s-radix+edy ko-stare+ain posuda-a+in še-t+y
-ENG: Salt (Latin) [verbal] with/together (variant) Root / prepared root [verbal] +?lst->yste measure/quantify (variant) Stand / place / position [plural] vessel/container (variant) [plural] Soaked-state / After soaking [adjective]
+EXP: sol+edy s-korijen+edy ko-stare+ain posuda-a+in še-t+y
+ENG: salt [verbal] with/together (variant) root/prepared [verbal] +?lst->yste measure/quantify (variant) Stand / place / position [plural] vessel/container (variant) [plural] Soaked-state / After soaking [adjective]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
@@ -503,7 +500,7 @@ ENG: Salt (Latin) [verbal] with/together (variant) Root / prepared root [verbal]
 EVA: <qokeedy qokol olkol->octhey shedy otol chckhey ldy
 CRO: <kosteedy kostol olstol->octrrey šedy otol hcstey ldy
 EXP: kost+edy ko-stare+ol ulje+ey še-d+y posuda-ulje kuhaj-stare+ey l-d+y
-ENG: Bone (Slavic) [verbal] measure/quantify (variant) Stand / place / position [instrumental] oil [participle] +?stol->octrr Soaked-state / After soaking [adjective] vessel/container (variant) oil combine/cook (reduced) Stand / place / position [participle] The / that (determiner) [adjective]
+ENG: bone [verbal] measure/quantify (variant) Stand / place / position [instrumental] oil [participle] +?stol->octrr Soaked-state / After soaking [adjective] vessel/container (variant) oil combine/cook (reduced) Stand / place / position [participle] The / that (determiner) [adjective]
 ```
 <sub>[███████░░░] 76% confidence</sub>
 
@@ -518,8 +515,8 @@ ENG: BONE (MEDICAL REGISTER) +eš oil [verbal] oil [verbal] measure/quantify (va
 ```
 EVA: qokey olchedy otey orol
 CRO: kostey olhedy otey orol
-EXP: ko-stare+ey ulje+edy posuda-e+y oleum+ol
-ENG: measure/quantify (variant) Stand / place / position [participle] oil [verbal] vessel/container (variant) [adjective] Oil / oleum (variant) [instrumental]
+EXP: ko-stare+ey ulje+edy posuda-e+y ulje+ol
+ENG: measure/quantify (variant) Stand / place / position [participle] oil [verbal] vessel/container (variant) [adjective] oil [instrumental]
 ```
 <sub>[█████████░] 90% confidence</sub>
 
@@ -573,4 +570,4 @@ ENG: measure/quantify (variant) Stand / place / position [verbal] measure/quanti
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f75v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f75v*

@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 67%
+**Confidence:** 69%
 **Words:** 77 total, 71 resolved (92%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,12 +19,10 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 15 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 7 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 7 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 6 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 5 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 5 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 4 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -46,10 +44,10 @@
 ```
 EVA: pochaiin cthor chpcheos opchey py kchy
 CRO: pohaiin ctrror hpheos ophey py sthy
-EXP: poh+aiin centrum kuhaj-pheo+s oph+ey p+y stare+y
-ENG: [liquid+continuing] Center / control combine/cook (reduced) [~15] +?pheo [participle] +?oph [adjective] Stand / place / position [adjective]
+EXP: poh+aiin smjesa kuhaj-ono što+s oph+ey p+y stare+y
+ENG: [liquid+continuing] compound mixture combine/cook (reduced) that which/the one [~15] [participle] +?oph [adjective] Stand / place / position [adjective]
 ```
-<sub>[▓▓▓▓▓░░░░░] 51% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: qokchy kchol sor qokchos ykchy darom
@@ -70,10 +68,10 @@ ENG: vessel/container (variant) [adjective] combine/cook (reduced) oil GIVE (RX 
 ```
 EVA: ytch chcthy qotol daiin daiin
 CRO: yth hctrry kotol daiin daiin
-EXP: i kuhaj-centrum+y ko-t+ol DA/DARE [Lat.] DA/DARE [Lat.]
-ENG: and/with +?th combine/cook (reduced) Center / control [adjective] measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +i
+EXP: i kuhaj-smjesa+y ko-t+ol DA/DARE [Lat.] DA/DARE [Lat.]
+ENG: and/with +?th combine/cook (reduced) compound mixture [adjective] measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +i
 ```
-<sub>[███████░░░] 71% confidence</sub>
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: qotchy qoteey daiin doty qot
@@ -86,18 +84,18 @@ ENG: measure/quantify (variant) [adjective] measure/quantify (variant) [particip
 ```
 EVA: ychoy kchor cthol chocthy s
 CRO: yhoy sthor ctrrol hoctrry s
-EXP: i+y stare centrum+ol kuhaj-centrum+y s
-ENG: and/with [adjective] Stand / place / position +?hor Center / control [instrumental] combine/cook (reduced) Center / control [adjective] ?s?
+EXP: i+y stare smjesa+ol kuhaj-smjesa+y s
+ENG: and/with [adjective] Stand / place / position +?hor compound mixture [instrumental] combine/cook (reduced) compound mixture [adjective] ?s?
 ```
-<sub>[▓▓▓▓░░░░░░] 49% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 55% confidence</sub>
 
 ```
 EVA: ycho r chaiin cthor
 CRO: yho r haiin ctrror
-EXP: i r kuhaj-a+iin centrum
-ENG: and/with +?ho ?r? combine/cook (reduced) [continuation] Center / control
+EXP: i r kuhaj-a+iin smjesa
+ENG: and/with +?ho ?r? combine/cook (reduced) [continuation] compound mixture
 ```
-<sub>[▓▓▓▓░░░░░░] 41% confidence</sub>
+<sub>[▓▓▓▓░░░░░░] 45% confidence</sub>
 
 ```
 EVA: toy tchey qo dchol qokchs dom
@@ -110,32 +108,32 @@ ENG: [adjective] +?to [participle] vessel (short) [instrumental] measure/quantif
 ```
 EVA: ychor oky chor ytal chol oky ddor
 CRO: yhor osty hor ytal hol osty ddor
-EXP: i OSTEO- [Lat.] kuhaj-oleum i+al kuhaj-ulje OSTEO- [Lat.] oleum
-ENG: and/with +?hor BONE (MEDICAL REGISTER) combine/cook (reduced) Oil / oleum (variant) and/with [locative] combine/cook (reduced) oil BONE (MEDICAL REGISTER) Oil / oleum (variant)
+EXP: i OSTEO- [Lat.] kuhaj-ulje i+al kuhaj-ulje OSTEO- [Lat.] ulje
+ENG: and/with +?hor BONE (MEDICAL REGISTER) combine/cook (reduced) oil and/with [locative] combine/cook (reduced) oil BONE (MEDICAL REGISTER) oil
 ```
 <sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: daiin chor daiin qokor y okchan
 CRO: daiin hor daiin kostor y osthan
-EXP: DA/DARE [Lat.] kuhaj-oleum DA/DARE [Lat.] ko-storaks i OSTEO- [Lat.]
-ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) Oil / oleum (variant) GIVE (RX IMPERATIVE) +i measure/quantify (variant) storax and/with BONE (MEDICAL REGISTER) +h
+EXP: DA/DARE [Lat.] kuhaj-ulje DA/DARE [Lat.] ko-storaks i OSTEO- [Lat.]
+ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) oil GIVE (RX IMPERATIVE) +i measure/quantify (variant) storax and/with BONE (MEDICAL REGISTER) +h
 ```
 <sub>[█████████░] 90% confidence</sub>
 
 ```
 EVA: qotol dar okchor daiin cthor otam
 CRO: kotol dar osthor daiin ctrror otam
-EXP: ko-t+ol DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.] centrum posuda-a+m
-ENG: measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +r BONE (MEDICAL REGISTER) +hor GIVE (RX IMPERATIVE) +i Center / control vessel/container (variant) [case]
+EXP: ko-t+ol DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.] smjesa posuda-a+m
+ENG: measure/quantify (variant) [instrumental] GIVE (RX IMPERATIVE) +r BONE (MEDICAL REGISTER) +hor GIVE (RX IMPERATIVE) +i compound mixture vessel/container (variant) [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
+<sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: otch okchodshy daiin or otaiin dais
 CRO: oth osthodšy daiin or otaiin dais
-EXP: posuda-h OSTEO- [Lat.] DA/DARE [Lat.] oleum posuda-a+iin DA/DARE [Lat.]
-ENG: vessel/container (variant) BONE (MEDICAL REGISTER) +hodš GIVE (RX IMPERATIVE) +i Oil / oleum (variant) vessel/container (variant) [continuation] GIVE (RX IMPERATIVE) +i
+EXP: posuda-h OSTEO- [Lat.] DA/DARE [Lat.] ulje posuda-a+iin DA/DARE [Lat.]
+ENG: vessel/container (variant) BONE (MEDICAL REGISTER) +hodš GIVE (RX IMPERATIVE) +i oil vessel/container (variant) [continuation] GIVE (RX IMPERATIVE) +i
 ```
 <sub>[███████░░░] 76% confidence</sub>
 
@@ -150,11 +148,11 @@ ENG: and/with [~15] and/with [instrumental] vessel/container (variant) and/with 
 ```
 EVA: otcholcheaiin cthol
 CRO: otholheaiin ctrrol
-EXP: posuda-miješati+aiin centrum+ol
-ENG: vessel/container (variant) combine/mix [liquid+continuing] Center / control [instrumental]
+EXP: posuda-brasno+aiin smjesa+ol
+ENG: vessel/container (variant) flour/grain [liquid+continuing] compound mixture [instrumental]
 ```
-<sub>[████████░░] 82% confidence</sub>
+<sub>[█████████░] 91% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f19v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f19v*

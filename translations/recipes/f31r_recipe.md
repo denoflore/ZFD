@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 73%
+**Confidence:** 74%
 **Words:** 101 total, 98 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,12 +19,9 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 24 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 10 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 10 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 9 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 3 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
+| **ctrr** | compound mixture | *confectio* | preparation | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -60,10 +57,10 @@ ENG: Stand / place / position [participle] measure/quantify (variant) [verbal] S
 ```
 EVA: dcheey daiin okeedy qokees s aiin shckhey qef
 CRO: dheey daiin osteedy kostees s aiin šcstey kef
-EXP: dhe+ey DA/DARE [Lat.] OSTEO- [Lat.] ko-stare+s s a+iin namoci-stare+ey k
-ENG: [participle] +?dhe GIVE (RX IMPERATIVE) +i BONE (MEDICAL REGISTER) +e measure/quantify (variant) Stand / place / position [~15] ?s? [continuation] soak/infuse (Croatian) Stand / place / position [participle] vessel (short) +?ef
+EXP: ov/taj+ey DA/DARE [Lat.] OSTEO- [Lat.] ko-stare+s s a+iin namoci-stare+ey k
+ENG: the/this (demonstrative) [participle] GIVE (RX IMPERATIVE) +i BONE (MEDICAL REGISTER) +e measure/quantify (variant) Stand / place / position [~15] ?s? [continuation] soak/infuse (Croatian) Stand / place / position [participle] vessel (short) +?ef
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
 ```
 EVA: qokeey chey daiin qokeey rair chekey saiin da
@@ -93,7 +90,7 @@ ENG: GIVE (RX IMPERATIVE) +i Soaked-state (extended) [verbal] measure/quantify (
 EVA: tshokeody qokedy qotedy chepar chedy r aiin dal
 CRO: tšosteody kostedy kotedy hepar hedy r aiin dal
 EXP: kost+dy ko-stare+edy ko-t+edy he-p+ar he-d+y r a+iin DA/DARE [Lat.]
-ENG: bone (medical) [verbal] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) [verbal] State / Result / After [instrumental] State / Result / After [adjective] ?r? [continuation] GIVE (RX IMPERATIVE) +l
+ENG: bone [verbal] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) [verbal] State / Result / After [instrumental] State / Result / After [adjective] ?r? [continuation] GIVE (RX IMPERATIVE) +l
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
@@ -108,18 +105,18 @@ ENG: and/with [instrumental] +?steed with/together [plural] State / Result / Aft
 ```
 EVA: shedy qokedy cheol cheod qokeody cheol checthy
 CRO: šedy kostedy heol heod kosteody heol hectrry
-EXP: še-d+y ko-stare+edy heo-l heo-d ko-stare+dy heo-l he-centrum+y
-ENG: Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) State / Result (extended) measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) State / Result / After Center / control [adjective]
+EXP: še-d+y ko-stare+edy heo-l heo-d ko-stare+dy heo-l he-smjesa+y
+ENG: Soaked-state / After soaking [adjective] measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) State / Result (extended) measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) State / Result / After compound mixture [adjective]
 ```
-<sub>[████████░░] 80% confidence</sub>
+<sub>[████████░░] 82% confidence</sub>
 
 ```
 EVA: daiir sheeo shcthey okeol
 CRO: daiir šeeo šctrrey osteol
-EXP: DA/DARE [Lat.] še-eo namoci-centrum+ey OSTEO- [Lat.]
-ENG: GIVE (RX IMPERATIVE) +i Soaked-state / After soaking soak/infuse (Croatian) Center / control [participle] BONE (MEDICAL REGISTER) +e
+EXP: DA/DARE [Lat.] še-eo namoci-smjesa+ey OSTEO- [Lat.]
+ENG: GIVE (RX IMPERATIVE) +i Soaked-state / After soaking soak/infuse (Croatian) compound mixture [participle] BONE (MEDICAL REGISTER) +e
 ```
-<sub>[███████░░░] 75% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: tol shso okedy okedy qokedy qokeedy dar shedshey
@@ -156,8 +153,8 @@ ENG: oil +?šeor measure/quantify (variant) Stand / place / position [verbal] BO
 ```
 EVA: saiir or chedy daiin okeedy
 CRO: saiir or hedy daiin osteedy
-EXP: s-i+ir oleum he-d+y DA/DARE [Lat.] OSTEO- [Lat.]
-ENG: with/together [agent] Oil / oleum (variant) State / Result / After [adjective] GIVE (RX IMPERATIVE) +i BONE (MEDICAL REGISTER) +e
+EXP: s-i+ir ulje he-d+y DA/DARE [Lat.] OSTEO- [Lat.]
+ENG: with/together [agent] oil State / Result / After [adjective] GIVE (RX IMPERATIVE) +i BONE (MEDICAL REGISTER) +e
 ```
 <sub>[████████░░] 84% confidence</sub>
 
@@ -172,11 +169,11 @@ ENG: and/with [agent] +?šeda Soaked-state (extended) State / Result / After Sta
 ```
 EVA: oteor aiicthy
 CRO: oteor aiictrry
-EXP: posuda-oleum centrum+y
-ENG: vessel/container (variant) Oil / oleum (variant) Center / control [adjective]
+EXP: posuda-ulje smjesa+y
+ENG: vessel/container (variant) oil compound mixture [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[███████░░░] 71% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f31r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f31r*

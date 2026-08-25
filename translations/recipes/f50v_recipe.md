@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 76%
 **Words:** 96 total, 92 resolved (96%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,11 +19,11 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 20 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 17 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 17 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 9 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 7 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 7 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 5 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 
 ## Preparation Methods
@@ -50,8 +50,8 @@
 ```
 EVA: tchy do ldar shotchdy qokchdy opchedy qokol shor ofar fardam
 CRO: thy do ldar šothdy kosthdy ophedy kostol šor ofar fardam
-EXP: th+y do l-d+ar namoci-oth+dy ko-stare+dy oph+edy ko-stare+ol namoci-oleum of+ar voda+m
-ENG: [adjective] +?th ?do? The / that (determiner) [instrumental] soak/infuse (Croatian) [verbal] measure/quantify (variant) Stand / place / position [verbal] [verbal] measure/quantify (variant) Stand / place / position [instrumental] soak/infuse (Croatian) Oil / oleum (variant) [instrumental] water [case]
+EXP: th+y do l-d+ar namoci-oth+dy ko-stare+dy oph+edy ko-stare+ol namoci-ulje of+ar voda+m
+ENG: [adjective] +?th ?do? The / that (determiner) [instrumental] soak/infuse (Croatian) [verbal] measure/quantify (variant) Stand / place / position [verbal] [verbal] measure/quantify (variant) Stand / place / position [instrumental] soak/infuse (Croatian) oil [instrumental] water [case]
 ```
 <sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
@@ -74,8 +74,8 @@ ENG: [verbal] measure/quantify (variant) Stand / place / position [verbal] State
 ```
 EVA: dar qoain olaiin olraiin ol okeedy okchdy otar chckhey or
 CRO: dar koain olaiin olraiin ol osteedy osthdy otar hcstey or
-EXP: DA/DARE [Lat.] ko-a+in ulje+aiin ulje+aiin ulje OSTEO- [Lat.] OSTEO- [Lat.] posuda-voda kuhaj-stare+ey oleum
-ENG: GIVE (RX IMPERATIVE) +r measure/quantify (variant) [plural] oil [liquid+continuing] oil [liquid+continuing] oil BONE (MEDICAL REGISTER) +e BONE (MEDICAL REGISTER) +h vessel/container (variant) water combine/cook (reduced) Stand / place / position [participle] Oil / oleum (variant)
+EXP: DA/DARE [Lat.] ko-a+in ulje+aiin ulje+aiin ulje OSTEO- [Lat.] OSTEO- [Lat.] posuda-voda kuhaj-stare+ey ulje
+ENG: GIVE (RX IMPERATIVE) +r measure/quantify (variant) [plural] oil [liquid+continuing] oil [liquid+continuing] oil BONE (MEDICAL REGISTER) +e BONE (MEDICAL REGISTER) +h vessel/container (variant) water combine/cook (reduced) Stand / place / position [participle] oil
 ```
 <sub>[████████░░] 89% confidence</sub>
 
@@ -98,16 +98,16 @@ ENG: GIVE (RX IMPERATIVE) +i Stand / place / position [agent] BONE (MEDICAL REGI
 ```
 EVA: tedaiin odaiin or okaiin ykor daiin choky qotchdy key daisam
 CRO: tedaiin odaiin or ostaiin ystor daiin hosty kothdy stey daisam
-EXP: radix + facere+aiin stabljika+aiin oleum OSTEO- [Lat.] i DA/DARE [Lat.] kuhaj-kost+y ko-th+dy stare+ey DA/DARE [Lat.]
-ENG: "Process kernel / do / treat" [liquid+continuing] stalk/stem [liquid+continuing] Oil / oleum (variant) BONE (MEDICAL REGISTER) and/with +?stor GIVE (RX IMPERATIVE) +i combine/cook (reduced) bone (medical) [adjective] measure/quantify (variant) [verbal] Stand / place / position [participle] GIVE (RX IMPERATIVE) +isa
+EXP: radix + facere+aiin stabljika+aiin ulje OSTEO- [Lat.] i DA/DARE [Lat.] kuhaj-kost+y ko-th+dy stare+ey DA/DARE [Lat.]
+ENG: "Process kernel / do / treat" [liquid+continuing] stalk/stem [liquid+continuing] oil BONE (MEDICAL REGISTER) and/with +?stor GIVE (RX IMPERATIVE) +i combine/cook (reduced) bone [adjective] measure/quantify (variant) [verbal] Stand / place / position [participle] GIVE (RX IMPERATIVE) +isa
 ```
 <sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: ykar okair otor qokedy ykchol kar chckhy olkaiin okain qod
 CRO: ystar ostair otor kostedy ysthol star hcsty olstaiin ostain kod
-EXP: i+ar OSTEO- [Lat.] posuda-oleum ko-stare+edy i+ol stare+ar kuhaj-stare+y ulje+aiin OSTEO- [Lat.] ko-d
-ENG: and/with [instrumental] BONE (MEDICAL REGISTER) +a vessel/container (variant) Oil / oleum (variant) measure/quantify (variant) Stand / place / position [verbal] and/with [instrumental] Stand / place / position [instrumental] combine/cook (reduced) Stand / place / position [adjective] oil [liquid+continuing] BONE (MEDICAL REGISTER) measure/quantify (variant)
+EXP: i+ar OSTEO- [Lat.] posuda-ulje ko-stare+edy i+ol stare+ar kuhaj-stare+y ulje+aiin OSTEO- [Lat.] ko-d
+ENG: and/with [instrumental] BONE (MEDICAL REGISTER) +a vessel/container (variant) oil measure/quantify (variant) Stand / place / position [verbal] and/with [instrumental] Stand / place / position [instrumental] combine/cook (reduced) Stand / place / position [adjective] oil [liquid+continuing] BONE (MEDICAL REGISTER) measure/quantify (variant)
 ```
 <sub>[████████░░] 82% confidence</sub>
 
@@ -137,4 +137,4 @@ ENG: The (before h-) [adjective] Stand / place / position [instrumental] and/wit
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f50v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f50v*

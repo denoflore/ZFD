@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 70%
+**Confidence:** 71%
 **Words:** 88 total, 84 resolved (95%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,13 +20,12 @@
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 15 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 10 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 9 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 4 | CONFIRMED |
-| **hor** | process/work |  | action | 3 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 4 | CANDIDATE |
+| **ee** | (intensifier) |  | general | 3 | CANDIDATE |
+| **hor** | cook/combine | *coquere* | action | 3 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -52,10 +51,10 @@
 ```
 EVA: okchesy chey shorchey fcheody shey tchy cher d o shey
 CRO: osthesy hey šorhey fheody šey thy her d o šey
-EXP: OSTEO- [Lat.] he-i namoci-oleum+ey fheo+dy še-i th+y he-r d o še-i
-ENG: BONE (MEDICAL REGISTER) +hes State / Result / After and/with soak/infuse (Croatian) Oil / oleum (variant) [participle] [verbal] +?fheo Soaked-state / After soaking and/with [adjective] +?th State / Result / After ?d? ?o? Soaked-state / After soaking and/with
+EXP: OSTEO- [Lat.] he-i namoci-ulje+ey ono što+dy še-i th+y he-r d o še-i
+ENG: BONE (MEDICAL REGISTER) +hes State / Result / After and/with soak/infuse (Croatian) oil [participle] that which/the one [verbal] Soaked-state / After soaking and/with [adjective] +?th State / Result / After ?d? ?o? Soaked-state / After soaking and/with
 ```
-<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: ychody chey chkeey ksho keeor cheor shey she keeodol sy
@@ -68,8 +67,8 @@ ENG: and/with [verbal] State / Result / After and/with combine/cook (reduced) St
 ```
 EVA: chodaiin chory chey doiin saiin chorain cheey keem
 CRO: hodaiin hory hey doiin saiin horain heey steem
-EXP: kuhaj-stabljika+aiin kuhaj-oleum+y he-i do+iin s-i+in kuhaj-oleum+ain he-e+y stare+m
-ENG: combine/cook (reduced) stalk/stem [liquid+continuing] combine/cook (reduced) Oil / oleum (variant) [adjective] State / Result / After and/with [continuation] with/together [plural] combine/cook (reduced) Oil / oleum (variant) [plural] State / Result / After [adjective] Stand / place / position [case]
+EXP: kuhaj-stabljika+aiin kuhaj-ulje+y he-i do+iin s-i+in kuhaj-ulje+ain he-e+y stare+m
+ENG: combine/cook (reduced) stalk/stem [liquid+continuing] combine/cook (reduced) oil [adjective] State / Result / After and/with [continuation] with/together [plural] combine/cook (reduced) oil [plural] State / Result / After [adjective] Stand / place / position [case]
 ```
 <sub>[████████░░] 84% confidence</sub>
 
@@ -84,26 +83,26 @@ ENG: measure/quantify (variant) Stand / place / position [adjective] measure/qua
 ```
 EVA: choko qokochy deeey dkeeor cheoldain chory
 CRO: hosto kostohy deeey dsteeor heoldain hory
-EXP: kuhaj-kost ko-stare+y ee+ey oleum heo-ld+ain kuhaj-oleum+y
-ENG: combine/cook (reduced) bone (medical) measure/quantify (variant) Stand / place / position [adjective] (intensifier) [participle] Oil / oleum (variant) +?dstee State / Result (extended) [plural] combine/cook (reduced) Oil / oleum (variant) [adjective]
+EXP: kuhaj-kost ko-stare+y ee+ey ee heo-ld+ain kuhaj-ulje+y
+ENG: combine/cook (reduced) bone measure/quantify (variant) Stand / place / position [adjective] (intensifier) [participle] (intensifier) +?dstor State / Result (extended) [plural] combine/cook (reduced) oil [adjective]
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: dchorol sho chor cho ro raiin dor chseeor dy
 CRO: dhorol šo hor ho ro raiin dor hseeor dy
-EXP: obraditi+ol namoci-o kuhaj-oleum kuhaj-o ro r+aiin oleum kuhaj-oleum d+y
-ENG: process/work [instrumental] soak/infuse (Croatian) combine/cook (reduced) Oil / oleum (variant) combine/cook (reduced) ?ro? [liquid+continuing] Oil / oleum (variant) combine/cook (reduced) Oil / oleum (variant) [adjective]
+EXP: kuhati+ol namoci-o kuhaj-ulje kuhaj-o ro r+aiin ulje kuhaj-ee d+y
+ENG: cook/combine [instrumental] soak/infuse (Croatian) combine/cook (reduced) oil combine/cook (reduced) ?ro? [liquid+continuing] oil combine/cook (reduced) (intensifier) [adjective]
 ```
 <sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
 ```
 EVA: qor chain cthorchy
 CRO: kor hain ctrrorhy
-EXP: ko-r kuhaj-a+in centrum+y
-ENG: measure/quantify (variant) combine/cook (reduced) [plural] Center / control [adjective]
+EXP: ko-r kuhaj-a+in smjesa+y
+ENG: measure/quantify (variant) combine/cook (reduced) [plural] compound mixture [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: opchol ol chesey scheo rchey okealdcheo rchey
@@ -116,34 +115,34 @@ ENG: [instrumental] +?oph oil State / Result / After [participle] soak/infuse (C
 ```
 EVA: dchey qochar chol keeaiin chctheychor cheky
 CRO: dhey kohar hol steeaiin hctrreyhor hesty
-EXP: dh+ey ko-h+ar kuhaj-ulje stare+aiin kuhaj-centrum he-stare+y
-ENG: [participle] measure/quantify (variant) [instrumental] combine/cook (reduced) oil Stand / place / position [liquid+continuing] combine/cook (reduced) Center / control +?reyhor State / Result / After Stand / place / position [adjective]
+EXP: dh+ey ko-h+ar kuhaj-ulje stare+aiin kuhaj-smjesa he-stare+y
+ENG: [participle] measure/quantify (variant) [instrumental] combine/cook (reduced) oil Stand / place / position [liquid+continuing] combine/cook (reduced) compound mixture State / Result / After Stand / place / position [adjective]
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: chokchaiin dchor chkchean qotchychctho rchody
 CRO: hosthaiin dhor hsthean kothyhctrro rhody
-EXP: kuhaj-kost+aiin obraditi kuhaj-stare+an ko-— rho+dy
-ENG: combine/cook (reduced) bone (medical) [liquid+continuing] process/work combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Heated-center compound [verbal] +?rho
+EXP: kuhaj-kost+aiin kuhati kuhaj-stare+an ko-smjesa rho+dy
+ENG: combine/cook (reduced) bone [liquid+continuing] cook/combine combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) compound mixture [verbal] +?rho
 ```
 <sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: qotchor cheor chey cheor chey soiinydeysor daiin
 CRO: kothor heor hey heor hey soiinydeysor daiin
-EXP: ko-torreo heo-r he-i heo-r he-i s-oleum DA/DARE [Lat.]
-ENG: measure/quantify (variant) Boil / roast / scorch State / Result (extended) State / Result / After and/with State / Result (extended) State / Result / After and/with with/together (variant) Oil / oleum (variant) +?iinydeys GIVE (RX IMPERATIVE) +i
+EXP: ko-vreti heo-r he-i heo-r he-i s-ey DA/DARE [Lat.]
+ENG: measure/quantify (variant) boil/roast State / Result (extended) State / Result / After and/with State / Result (extended) State / Result / After and/with with/together (variant) liquid/fluid +?iinydsor GIVE (RX IMPERATIVE) +i
 ```
 <sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: dcheey ckhey ckhey daiin chkeaiin darchorychdain
 CRO: dheey cstey cstey daiin hsteaiin darhoryhdain
-EXP: dhe+ey stare+ey stare+ey DA/DARE [Lat.] kuhaj-stare+aiin DA/DARE [Lat.]
-ENG: [participle] +?dhe Stand / place / position [participle] Stand / place / position [participle] GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [liquid+continuing] GIVE (RX IMPERATIVE) +ryhd
+EXP: ov/taj+ey stare+ey stare+ey DA/DARE [Lat.] kuhaj-stare+aiin DA/DARE [Lat.]
+ENG: the/this (demonstrative) [participle] Stand / place / position [participle] Stand / place / position [participle] GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [liquid+continuing] GIVE (RX IMPERATIVE) +ryhd
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: chodaiin chtchey chear shy keey
@@ -155,4 +154,4 @@ ENG: combine/cook (reduced) stalk/stem [liquid+continuing] combine/cook (reduced
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f30r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f30r*

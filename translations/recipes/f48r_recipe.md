@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 69%
-**Words:** 89 total, 82 resolved (92%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 70%
+**Words:** 89 total, 83 resolved (93%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,13 +20,11 @@
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 12 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 12 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 8 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 6 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 8 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 6 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 5 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 4 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -68,26 +66,26 @@ ENG: GIVE (RX IMPERATIVE) +i and/with [instrumental] combine/cook (reduced) [ver
 ```
 EVA: sheody she teoteey oteodaiin ody qoteo l kedy dol odal qotar opchety ldy
 CRO: šeody še teoteey oteodaiin ody koteo l stedy dol odal kotar ophety ldy
-EXP: šeo-d+y namoci-e teote+ey posuda-stabljika+aiin o+dy ko-teo l stare+edy d+ol stabljika+al ko-t+ar ophet+y l-d+y
-ENG: Soaked-state (extended) [adjective] soak/infuse (Croatian) [participle] +?teote vessel/container (variant) stalk/stem [liquid+continuing] [verbal] measure/quantify (variant) +?teo ?l? Stand / place / position [verbal] [instrumental] stalk/stem [locative] measure/quantify (variant) [instrumental] [adjective] +?ophet The / that (determiner) [adjective]
+EXP: šeo-d+y namoci-e teote+ey posuda-stabljika+aiin o+dy ko-teo l stare+edy d+ol stabljika+al ko-t+ar ov/taj+y l-d+y
+ENG: Soaked-state (extended) [adjective] soak/infuse (Croatian) [participle] +?teote vessel/container (variant) stalk/stem [liquid+continuing] [verbal] measure/quantify (variant) +?teo ?l? Stand / place / position [verbal] [instrumental] stalk/stem [locative] measure/quantify (variant) [instrumental] the/this (demonstrative) [adjective] The / that (determiner) [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: tolkeol dain otaiin ykeedy chet ytedy tedy qokdy tshdy chetedy ctheety r
 CRO: tolsteol dain otaiin ysteedy het ytedy tedy kostdy tšdy hetedy ctrreety r
-EXP: ulje+ol DA/DARE [Lat.] posuda-a+iin i+edy he-t i+edy t+edy ko-stare+dy tš+dy he-t+edy centrum+y r
-ENG: oil [instrumental] GIVE (RX IMPERATIVE) +in vessel/container (variant) [continuation] and/with [verbal] State / Result / After and/with [verbal] [verbal] measure/quantify (variant) Stand / place / position [verbal] [verbal] State / Result / After [verbal] Center / control [adjective] ?r?
+EXP: ulje+ol DA/DARE [Lat.] posuda-a+iin i+edy he-t i+edy t+edy ko-stare+dy tš+dy he-t+edy smjesa+y r
+ENG: oil [instrumental] GIVE (RX IMPERATIVE) +in vessel/container (variant) [continuation] and/with [verbal] State / Result / After and/with [verbal] [verbal] measure/quantify (variant) Stand / place / position [verbal] [verbal] State / Result / After [verbal] compound mixture [adjective] ?r?
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: ytchy teol okeody cheockhy olsheey qoekaiin octhey chol kar aiin cthar od
 CRO: ythy teol osteody heocsty olšeey koestaiin octrrey hol star aiin ctrrar od
-EXP: i+y te+ol OSTEO- [Lat.] heo-stare+y ulje+ey ko-stare+aiin centrum+ey kuhaj-ulje stare+ar a+iin centrum+ar stabljika
-ENG: and/with [adjective] [instrumental] BONE (MEDICAL REGISTER) +eo State / Result (extended) Stand / place / position [adjective] oil [participle] measure/quantify (variant) Stand / place / position [liquid+continuing] Center / control [participle] combine/cook (reduced) oil Stand / place / position [instrumental] [continuation] Center / control [instrumental] stalk/stem
+EXP: i+y te+ol OSTEO- [Lat.] heo-stare+y ulje+ey ko-stare+aiin smjesa+ey kuhaj-ulje stare+ar a+iin smjesa+ar stabljika
+ENG: and/with [adjective] [instrumental] BONE (MEDICAL REGISTER) +eo State / Result (extended) Stand / place / position [adjective] oil [participle] measure/quantify (variant) Stand / place / position [liquid+continuing] compound mixture [participle] combine/cook (reduced) oil Stand / place / position [instrumental] [continuation] compound mixture [instrumental] stalk/stem
 ```
-<sub>[███████░░░] 79% confidence</sub>
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: alshey lkeedy ytchedy qokedy lotal qotol otal ched okey ykeey dalmy
@@ -100,10 +98,10 @@ ENG: liquid/water (vessel context) [participle] The / that (determiner) Stand / 
 ```
 EVA: tocthy qokeol yteedy lolkeol otolches al or ykeeodam okedy okam
 CRO: toctrry kosteol yteedy lolsteol otolhes al or ysteeodam ostedy ostam
-EXP: centrum+y ko-stare+ol i+edy l-ulje+ol posuda-ulje+s tekućina oleum i+m OSTEO- [Lat.] OSTEO- [Lat.]
-ENG: Center / control [adjective] measure/quantify (variant) Stand / place / position [instrumental] and/with [verbal] The / that (determiner) oil [instrumental] vessel/container (variant) oil [~15] liquid/water (vessel context) Oil / oleum (variant) and/with [case] +?steeoda BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +a
+EXP: smjesa+y ko-stare+ol i+edy l-ulje+ol posuda-ulje+s tekućina ulje i+m OSTEO- [Lat.] OSTEO- [Lat.]
+ENG: compound mixture [adjective] measure/quantify (variant) Stand / place / position [instrumental] and/with [verbal] The / that (determiner) oil [instrumental] vessel/container (variant) oil [~15] liquid/water (vessel context) oil and/with [case] +?steeoda BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +a
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: otchdain shol oteol oteoly ykeey dam dr
@@ -123,4 +121,4 @@ ENG: and/with +?tehed water liquid/water (vessel context) [participle] BONE (MED
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f48r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f48r*

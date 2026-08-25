@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 63%
 **Words:** 71 total, 61 resolved (86%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,10 +20,8 @@
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 16 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 6 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 2 | CONFIRMED |
+| **or** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -54,16 +52,16 @@ ENG: oil soak/infuse (Croatian) water and/with [adjective] vessel/container (var
 ```
 EVA: qoeees or oaiin shy okshy qokchy qokchy s g
 CRO: koeees or oaiin šy ostšy kosthy kosthy s g
-EXP: ko-ee+s oleum o+aiin namoci-i OSTEO- [Lat.] ko-stare+y ko-stare+y s g
-ENG: measure/quantify (variant) (intensifier) [~15] Oil / oleum (variant) [liquid+continuing] soak/infuse (Croatian) and/with BONE (MEDICAL REGISTER) +š measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [adjective] ?s? ?g?
+EXP: ko-ee+s ulje o+aiin namoci-i OSTEO- [Lat.] ko-stare+y ko-stare+y s g
+ENG: measure/quantify (variant) (intensifier) [~15] oil [liquid+continuing] soak/infuse (Croatian) and/with BONE (MEDICAL REGISTER) +š measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [adjective] ?s? ?g?
 ```
 <sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: or shy qoky qoky chkchy qokshy qokam
 CRO: or šy kosty kosty hsthy kostšy kostam
-EXP: oleum namoci-i ko-stare+y ko-stare+y kuhaj-stare+y ko-stare+y ko-stare+m
-ENG: Oil / oleum (variant) soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [case]
+EXP: ulje namoci-i ko-stare+y ko-stare+y kuhaj-stare+y ko-stare+y ko-stare+m
+ENG: oil soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [case]
 ```
 <sub>[█████████░] 92% confidence</sub>
 
@@ -86,16 +84,16 @@ ENG: ?r? and/with [~15] +?hoee and/with [adjective] +?sth measure/quantify (vari
 ```
 EVA: qotor chor otchy qokeees chy s ar ykar
 CRO: kotor hor othy kosteees hy s ar ystar
-EXP: ko-oleum kuhaj-oleum posuda-h+y ko-stare+s kuhaj-i s voda i+ar
-ENG: measure/quantify (variant) Oil / oleum (variant) combine/cook (reduced) Oil / oleum (variant) vessel/container (variant) [adjective] measure/quantify (variant) Stand / place / position [~15] combine/cook (reduced) and/with ?s? water and/with [instrumental]
+EXP: ko-ulje kuhaj-ulje posuda-h+y ko-stare+s kuhaj-i s voda i+ar
+ENG: measure/quantify (variant) oil combine/cook (reduced) oil vessel/container (variant) [adjective] measure/quantify (variant) Stand / place / position [~15] combine/cook (reduced) and/with ?s? water and/with [instrumental]
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: ychol dor chod qokol daiin qokol dar dy
 CRO: yhol dor hod kostol daiin kostol dar dy
-EXP: i+ol oleum kuhaj-stabljika ko-stare+ol DA/DARE [Lat.] ko-stare+ol DA/DARE [Lat.] d+y
-ENG: and/with [instrumental] Oil / oleum (variant) combine/cook (reduced) stalk/stem measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +r [adjective]
+EXP: i+ol ulje kuhaj-stabljika ko-stare+ol DA/DARE [Lat.] ko-stare+ol DA/DARE [Lat.] d+y
+ENG: and/with [instrumental] oil combine/cook (reduced) stalk/stem measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +r [adjective]
 ```
 <sub>[████████░░] 80% confidence</sub>
 
@@ -111,7 +109,7 @@ ENG: oil [instrumental] ?š? [adjective] +?cpllo GIVE (RX IMPERATIVE) +r [verbal
 EVA: okchor qotchy qokchy ytol doky dy
 CRO: osthor kothy kosthy ytol dosty dy
 EXP: OSTEO- [Lat.] ko-th+y ko-stare+y i+ol kost+y d+y
-ENG: BONE (MEDICAL REGISTER) +hor measure/quantify (variant) [adjective] measure/quantify (variant) Stand / place / position [adjective] and/with [instrumental] bone (medical) [adjective] [adjective]
+ENG: BONE (MEDICAL REGISTER) +hor measure/quantify (variant) [adjective] measure/quantify (variant) Stand / place / position [adjective] and/with [instrumental] bone [adjective] [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
@@ -125,4 +123,4 @@ ENG: and/with +?sta [adjective] +?dš GIVE (RX IMPERATIVE) +ir and/with [instrum
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f18v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f18v*

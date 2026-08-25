@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Pharmaceutical
-**Confidence:** 56%
-**Words:** 74 total, 59 resolved (80%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 63%
+**Words:** 74 total, 63 resolved (85%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,15 +18,13 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ctr** | Center / control | *centrum* | general | 11 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 11 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 9 | CANDIDATE |
-| **st** | Stand / place / position | *stare* | general | 8 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 6 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
-| **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
-| **sar** | Salt | *sal* | mineral | 1 | CONFIRMED |
+| **st** | Stand / place / position | *stare* | general | 9 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 5 | CANDIDATE |
+| **he** | the/this (demonstrative) | *hic/haec* | grammar | 4 | CANDIDATE |
+| **heo** | that which/the one | *illud quod* | grammar | 4 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -55,82 +53,82 @@
 ```
 EVA: pcheey daiin cphodar shody dcheody todor ochepchodyoldar
 CRO: pheey daiin cpllodar šody dheody todor ohephodyoldar
-EXP: phe+ey DA/DARE [Lat.] stabljika+ar namoci-o+dy dheo+dy oleum ulje+ar
-ENG: [participle] +?phe GIVE (RX IMPERATIVE) +i stalk/stem [instrumental] soak/infuse (Croatian) [verbal] [verbal] +?dheo Oil / oleum (variant) +?tod oil [instrumental] +?ohephodyd
+EXP: ov/taj+ey DA/DARE [Lat.] stabljika+ar namoci-o+dy ono što+dy stabljika ov/taj+ar
+ENG: the/this (demonstrative) [participle] GIVE (RX IMPERATIVE) +i stalk/stem [instrumental] soak/infuse (Croatian) [verbal] that which/the one [verbal] stalk/stem +?tor the/this (demonstrative) [instrumental] +?ophodyold
 ```
-<sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: schey ctheey qocthsy sdcheoky scth
 CRO: šhey ctrreey koctrrsy sdheosty sctrr
-EXP: namoci-i centrum+ey ko-centrum+y kost+y centrum
-ENG: soak/infuse (Croatian) (state/result/after) and/with Center / control [participle] measure/quantify (variant) Center / control [adjective] bone (medical) [adjective] Center / control
+EXP: namoci-i smjesa+ey ko-smjesa+y od toga+y smjesa
+ENG: soak/infuse (Croatian) (state/result/after) and/with compound mixture [participle] measure/quantify (variant) compound mixture [adjective] of the [aforementioned] [adjective] compound mixture
 ```
-<sub>[███████░░░] 71% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: ycheockhy okey cthyyteeor ctos
 CRO: yheocsty ostey ctrryyteeor ctos
-EXP: i+y OSTEO- [Lat.] centrum cto+s
-ENG: and/with [adjective] +?heocst BONE (MEDICAL REGISTER) Center / control +?ryyteeor [~15] +?cto
+EXP: i+y OSTEO- [Lat.] smjesa cto+s
+ENG: and/with [adjective] +?heocst BONE (MEDICAL REGISTER) compound mixture +?yyteeor [~15] +?cto
 ```
-<sub>[▓▓▓▓░░░░░░] 44% confidence</sub>
+<sub>[▓▓▓▓░░░░░░] 46% confidence</sub>
 
 ```
 EVA: dcheecthey cthosyykeeor oky
 CRO: dheectrrey ctrrosyysteeor osty
-EXP: centrum+ey centrum OSTEO- [Lat.]
-ENG: Center / control [participle] Center / control +?rosyysteeor BONE (MEDICAL REGISTER)
+EXP: smjesa+ey smjesa OSTEO- [Lat.]
+ENG: compound mixture [participle] compound mixture +?osyysteeor BONE (MEDICAL REGISTER)
 ```
-<sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: ycheey keeo sal ckhysoiin scheom
 CRO: yheey steeo sal cstysoiin šheom
-EXP: i+ey stare s-l in+iin namoci-m
-ENG: and/with [participle] Stand / place / position +?eeo with/together Preposition: in/with [continuation] soak/infuse (Croatian) (state/result (extended))
+EXP: i+ey stare s-l stare+iin namoci-m
+ENG: and/with [participle] Stand / place / position +?eeo with/together Stand / place / position [continuation] soak/infuse (Croatian) (state/result (extended))
 ```
 <sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
 
 ```
 EVA: dcheos shey solchydoteos cthey
 CRO: dheos šey solhydoteos ctrrey
-EXP: dheo+s še-i s-i+s centrum+ey
-ENG: [~15] +?dheo Soaked-state / After soaking and/with with/together (variant) and/with [~15] +?lhdoteo Center / control [participle]
+EXP: ono što+s še-i s-i+s smjesa+ey
+ENG: that which/the one [~15] Soaked-state / After soaking and/with with/together (variant) and/with [~15] +?lhdoteo compound mixture [participle]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: qotechoep cheos ctheyqokeod qokeog
 CRO: kotehoep heos ctrreykosteod kosteog
-EXP: ko-tehoep heo-s centrum ko-stare
-ENG: measure/quantify (variant) +?tehoep State / Result (extended) Center / control +?reykosteod measure/quantify (variant) Stand / place / position
+EXP: ko-tehoep heo-s smjesa ko-stare
+ENG: measure/quantify (variant) +?tehoep State / Result (extended) compound mixture +?eykosteod measure/quantify (variant) Stand / place / position
 ```
-<sub>[▓▓▓▓░░░░░░] 45% confidence</sub>
+<sub>[▓▓▓▓░░░░░░] 47% confidence</sub>
 
 ```
 EVA: shoeey cthey qo cthodolyteodain sheol
 CRO: šoeey ctrrey ko ctrrodolyteodain šeol
-EXP: namoci-oe+ey centrum+ey k centrum+ain šeo-l
-ENG: soak/infuse (Croatian) [participle] Center / control [participle] vessel (short) Center / control [plural] +?rodolyteod Soaked-state (extended)
+EXP: namoci-oe+ey smjesa+ey k smjesa+ain šeo-l
+ENG: soak/infuse (Croatian) [participle] compound mixture [participle] vessel (short) compound mixture [plural] +?odolyteod Soaked-state (extended)
 ```
-<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
 ```
 EVA: techol qoscheody otol
 CRO: tehol košheody otol
-EXP: teh+ol ko-šheo+dy posuda-ulje
-ENG: [instrumental] +?teh measure/quantify (variant) [verbal] vessel/container (variant) oil
+EXP: teh+ol ko-ono što+dy posuda-ulje
+ENG: [instrumental] +?teh measure/quantify (variant) that which/the one [verbal] vessel/container (variant) oil
 ```
-<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: opcheey cthhy cpheckhycheor chepcheol
 CRO: opheey ctrrhy cpllecstyheor hepheol
-EXP: ophe+ey centrum+y oleum he-phe+ol
-ENG: [participle] +?ophe Center / control [adjective] Oil / oleum (variant) +?cpllecstyhe State / Result / After [instrumental]
+EXP: ov/taj+ey smjesa+y ono što he-ov/taj+ol
+ENG: the/this (demonstrative) [participle] compound mixture [adjective] that which/the one +?cpllecstyr State / Result / After the/this (demonstrative) [instrumental]
 ```
-<sub>[▓▓▓▓░░░░░░] 43% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ```
 EVA: kchor ol cheeol qokodallseeey keodam
@@ -159,16 +157,16 @@ ENG: Stand / place / position [instrumental] measure/quantify (variant) water [~
 ```
 EVA: san ainy keol dair oldaiin atolg
 CRO: san ainy steol dair oldaiin atolg
-EXP: s-n ain+y stare+ol DA/DARE [Lat.] ulje+aiin ulje
-ENG: with/together [adjective] +?ain Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +ir oil [liquid+continuing] oil +?atg
+EXP: s-n stvar+y stare+ol DA/DARE [Lat.] ulje+aiin ulje
+ENG: with/together substance/thing [adjective] Stand / place / position [instrumental] GIVE (RX IMPERATIVE) +ir oil [liquid+continuing] oil +?atg
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: yksho qosarolor oral daraiinm
 CRO: ystšo kosarolor oral daraiinm
-EXP: i ko-sal ORALIS [Lat.] DA/DARE [Lat.]
-ENG: and/with +?stšo measure/quantify (variant) Salt BY MOUTH/ORALLY GIVE (RX IMPERATIVE) +r
+EXP: i ko-sol ORALIS [Lat.] DA/DARE [Lat.]
+ENG: and/with +?stšo measure/quantify (variant) salt BY MOUTH/ORALLY GIVE (RX IMPERATIVE) +r
 ```
 <sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
@@ -182,4 +180,4 @@ ENG: with/together [plural] oil +?ctrrr
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f87v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f87v*

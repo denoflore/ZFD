@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 66%
+**Confidence:** 68%
 **Words:** 70 total, 68 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,12 +20,11 @@
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 9 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 5 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 4 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
+| **ctrr** | compound mixture | *confectio* | preparation | 4 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 4 | CANDIDATE |
 | **ee** | (intensifier) |  | general | 4 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 3 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 3 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -59,16 +58,16 @@ ENG: oil [adjective] Soaked-state / After soaking and/with [verbal] +?tho measur
 ```
 EVA: chochy cthy daiin qoky chcphhy daiin cthol cthy cthd
 CRO: hohy ctrry daiin kosty hcpllhy daiin ctrrol ctrry ctrrd
-EXP: kuhaj-oh+y centrum+y DA/DARE [Lat.] ko-stare+y kuhaj-cpllh+y DA/DARE [Lat.] centrum+ol centrum+y centrum
-ENG: combine/cook (reduced) [adjective] Center / control [adjective] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) [adjective] +?cpllh GIVE (RX IMPERATIVE) +i Center / control [instrumental] Center / control [adjective] Center / control
+EXP: kuhaj-oh+y smjesa+y DA/DARE [Lat.] ko-stare+y kuhaj-cpllh+y DA/DARE [Lat.] smjesa+ol smjesa+y smjesa
+ENG: combine/cook (reduced) [adjective] compound mixture [adjective] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [adjective] combine/cook (reduced) [adjective] +?cpllh GIVE (RX IMPERATIVE) +i compound mixture [instrumental] compound mixture [adjective] compound mixture
 ```
-<sub>[███████░░░] 71% confidence</sub>
+<sub>[████████░░] 80% confidence</sub>
 
 ```
 EVA: qokchy dykchy chkeey kshy ky ty dor cheey ol cheol dy
 CRO: kosthy dysthy hsteey stšy sty ty dor heey ol heol dy
-EXP: ko-stare+y stare+y kuhaj-stare+ey stare+y stare+y t+y oleum he-e+y ulje heo-l d+y
-ENG: measure/quantify (variant) Stand / place / position [adjective] Stand / place / position [adjective] combine/cook (reduced) Stand / place / position [participle] Stand / place / position [adjective] Stand / place / position [adjective] [adjective] Oil / oleum (variant) State / Result / After [adjective] oil State / Result (extended) [adjective]
+EXP: ko-stare+y stare+y kuhaj-stare+ey stare+y stare+y t+y ulje he-e+y ulje heo-l d+y
+ENG: measure/quantify (variant) Stand / place / position [adjective] Stand / place / position [adjective] combine/cook (reduced) Stand / place / position [participle] Stand / place / position [adjective] Stand / place / position [adjective] [adjective] oil State / Result / After [adjective] oil State / Result (extended) [adjective]
 ```
 <sub>[███████░░░] 73% confidence</sub>
 
@@ -83,10 +82,10 @@ ENG: combine/cook (reduced) (intensifier) +?oten (intensifier) [instrumental] co
 ```
 EVA: dchodaiin qotchy cheey tcheey
 CRO: dhodaiin kothy heey theey
-EXP: stabljika+aiin ko-th+y he-e+y the+ey
-ENG: stalk/stem [liquid+continuing] measure/quantify (variant) [adjective] State / Result / After [adjective] [participle] +?the
+EXP: stabljika+aiin ko-th+y he-e+y ov/taj+ey
+ENG: stalk/stem [liquid+continuing] measure/quantify (variant) [adjective] State / Result / After [adjective] the/this (demonstrative) [participle]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: kchor sheod sheodaiin shodaiin oksholshol dais qos
@@ -99,27 +98,27 @@ ENG: Stand / place / position +?hor Soaked-state (extended) Soaked-state (extend
 ```
 EVA: okshodeeen chor cheor odaiin shotchodol dol dor aiin
 CRO: ostšodeeen hor heor odaiin šothodol dol dor aiin
-EXP: OSTEO- [Lat.] kuhaj-oleum heo-r stabljika+aiin namoci-stabljika+ol d+ol oleum a+iin
-ENG: BONE (MEDICAL REGISTER) +šodeeen combine/cook (reduced) Oil / oleum (variant) State / Result (extended) stalk/stem [liquid+continuing] soak/infuse (Croatian) stalk/stem [instrumental] [instrumental] Oil / oleum (variant) [continuation]
+EXP: OSTEO- [Lat.] kuhaj-ulje heo-r stabljika+aiin namoci-stabljika+ol d+ol ulje a+iin
+ENG: BONE (MEDICAL REGISTER) +šodeeen combine/cook (reduced) oil State / Result (extended) stalk/stem [liquid+continuing] soak/infuse (Croatian) stalk/stem [instrumental] [instrumental] oil [continuation]
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: qoteeeo rcho cheeody qotchey teyokchor daiin
 CRO: koteeeo rho heeody kothey teyosthor daiin
-EXP: ko-ee rho he-eo+dy ko-th+ey torreo DA/DARE [Lat.]
-ENG: measure/quantify (variant) (intensifier) ?rho? State / Result / After [verbal] measure/quantify (variant) [participle] Boil / roast / scorch +?teyos GIVE (RX IMPERATIVE) +i
+EXP: ko-ee rho he-eo+dy ko-th+ey vreti DA/DARE [Lat.]
+ENG: measure/quantify (variant) (intensifier) ?rho? State / Result / After [verbal] measure/quantify (variant) [participle] boil/roast +?teyos GIVE (RX IMPERATIVE) +i
 ```
 <sub>[▓▓▓▓▓░░░░░] 53% confidence</sub>
 
 ```
 EVA: sho keeo daiir chokchy dor deol dydol daiin
 CRO: šo steeo daiir hosthy dor deol dydol daiin
-EXP: namoci-o stare DA/DARE [Lat.] kuhaj-kost+y oleum de+ol i+ol DA/DARE [Lat.]
-ENG: soak/infuse (Croatian) Stand / place / position +?eeo GIVE (RX IMPERATIVE) +i combine/cook (reduced) bone (medical) [adjective] Oil / oleum (variant) [instrumental] and/with [instrumental] GIVE (RX IMPERATIVE) +i
+EXP: namoci-o stare DA/DARE [Lat.] kuhaj-kost+y ulje de+ol i+ol DA/DARE [Lat.]
+ENG: soak/infuse (Croatian) Stand / place / position +?eeo GIVE (RX IMPERATIVE) +i combine/cook (reduced) bone [adjective] oil [instrumental] and/with [instrumental] GIVE (RX IMPERATIVE) +i
 ```
 <sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f7v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f7v*

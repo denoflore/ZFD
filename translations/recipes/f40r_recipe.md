@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 79%
-**Words:** 87 total, 83 resolved (95%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 80%
+**Words:** 87 total, 85 resolved (98%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,14 +18,13 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ost** | bone (medical) | *osteo-* | animal | 20 | CONFIRMED |
-| **st** | Stand / place / position | *stare* | general | 15 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 10 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 7 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 20 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 10 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 5 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 5 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 1 | CONFIRMED |
-| **kost** | Bone (Slavic) | *kost* | animal | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -49,10 +48,10 @@
 ```
 EVA: pchey keodar aldydyqoky okal shdy olkedy opches ar ordaiin
 CRO: phey steodar aldydykosty ostal šdy olstedy ophes ar ordaiin
-EXP: ph+ey stare+ar tekućina+y OSTEO- [Lat.] namoci-d+y ulje+edy ophe+s voda oleum+aiin
-ENG: [participle] Stand / place / position [instrumental] liquid/water (vessel context) [adjective] +?dydykost BONE (MEDICAL REGISTER) soak/infuse (Croatian) [adjective] oil [verbal] [~15] +?ophe water Oil / oleum (variant) [liquid+continuing]
+EXP: ph+ey stare+ar tekućina+y OSTEO- [Lat.] namoci-d+y ulje+edy ov/taj+s voda ulje+aiin
+ENG: [participle] Stand / place / position [instrumental] liquid/water (vessel context) [adjective] +?dydykost BONE (MEDICAL REGISTER) soak/infuse (Croatian) [adjective] oil [verbal] the/this (demonstrative) [~15] water oil [liquid+continuing]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: qokar okar okedy darykchey kaiin okos chedy okar aralos
@@ -65,32 +64,32 @@ ENG: measure/quantify (variant) Stand / place / position [instrumental] BONE (ME
 ```
 EVA: shy qokal chdy chckhdotor aiis oky okolchy qokar okam
 CRO: šy kostal hdy hcstdotor aiis osty ostolhy kostar ostam
-EXP: namoci-i ko-stare+al kuhaj-d+y kuhaj-oleum aii+s OSTEO- [Lat.] OSTEO- [Lat.] ko-stare+ar OSTEO- [Lat.]
-ENG: soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [locative] combine/cook (reduced) [adjective] combine/cook (reduced) Oil / oleum (variant) +?cstdot [~15] +?aii BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +olh measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) +a
+EXP: namoci-i ko-stare+al kuhaj-d+y kuhaj-ulje aii+s OSTEO- [Lat.] OSTEO- [Lat.] ko-stare+ar OSTEO- [Lat.]
+ENG: soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [locative] combine/cook (reduced) [adjective] combine/cook (reduced) oil +?cstdot [~15] +?aii BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +olh measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) +a
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: or aiin chekody dasqokol okaiin okar oky okoldy ol
 CRO: or aiin hestody daskostol ostaiin ostar osty ostoldy ol
-EXP: oleum a+iin he-stare+dy DA/DARE [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] ulje
-ENG: Oil / oleum (variant) [continuation] State / Result / After Stand / place / position [verbal] GIVE (RX IMPERATIVE) +s BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +ol oil
+EXP: ulje a+iin he-stare+dy DA/DARE [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] ulje
+ENG: oil [continuation] State / Result / After Stand / place / position [verbal] GIVE (RX IMPERATIVE) +s BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +ol oil
 ```
 <sub>[█████████░] 91% confidence</sub>
 
 ```
 EVA: lokar qokar okarokol ol chedy qokchd ar ar or dam
 CRO: lostar kostar ostarostol ol hedy kosthd ar ar or dam
-EXP: l-kost+ar ko-stare+ar OSTEO- [Lat.] ulje he-d+y ko-stare voda voda oleum DA/DARE [Lat.]
-ENG: The / that (determiner) bone (medical) [instrumental] measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) +ost oil State / Result / After [adjective] measure/quantify (variant) Stand / place / position water water Oil / oleum (variant) GIVE (RX IMPERATIVE) +m
+EXP: l-kost+ar ko-stare+ar OSTEO- [Lat.] ulje he-d+y ko-stare voda voda ulje DA/DARE [Lat.]
+ENG: The / that (determiner) bone [instrumental] measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) +ost oil State / Result / After [adjective] measure/quantify (variant) Stand / place / position water water oil GIVE (RX IMPERATIVE) +m
 ```
 <sub>[████████░░] 88% confidence</sub>
 
 ```
 EVA: tor or ar shokor omolshedy qokam chdy kar oraiin
 CRO: tor or ar šostor omolšedy kostam hdy star oraiin
-EXP: oleum oleum voda namoci-kost ulje+edy ko-stare+m kuhaj-d+y stare+ar oleum+aiin
-ENG: Oil / oleum (variant) Oil / oleum (variant) water soak/infuse (Croatian) bone (medical) oil [verbal] measure/quantify (variant) Stand / place / position [case] combine/cook (reduced) [adjective] Stand / place / position [instrumental] Oil / oleum (variant) [liquid+continuing]
+EXP: ulje ulje voda namoci-kost -om+edy ko-stare+m kuhaj-d+y stare+ar ulje+aiin
+ENG: oil oil water soak/infuse (Croatian) bone with/by (instrumental) [verbal] measure/quantify (variant) Stand / place / position [case] combine/cook (reduced) [adjective] Stand / place / position [instrumental] oil [liquid+continuing]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -105,35 +104,35 @@ ENG: and/with [liquid+continuing] State / Result / After Stand / place / positio
 ```
 EVA: ksheo keeey dar aimkcheo cfhdy orain chefal daiin dm
 CRO: stšeo steeey dar aimstheo cplldy orain hefal daiin dm
-EXP: stare stare+ey DA/DARE [Lat.] stare cpll+dy oleum+ain he-f+al DA/DARE [Lat.] d+m
-ENG: Stand / place / position +?šeo Stand / place / position [participle] GIVE (RX IMPERATIVE) +r Stand / place / position +?aimheo [verbal] +?cpll Oil / oleum (variant) [plural] State / Result / After [locative] GIVE (RX IMPERATIVE) +i [case]
+EXP: stare stare+ey DA/DARE [Lat.] ono što cpll+dy ulje+ain he-f+al DA/DARE [Lat.] d+m
+ENG: Stand / place / position +?šeo Stand / place / position [participle] GIVE (RX IMPERATIVE) +r that which/the one +?aimst [verbal] +?cpll oil [plural] State / Result / After [locative] GIVE (RX IMPERATIVE) +i [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: taiin ol olaiin ordain okaiin okaiin okaiin daram
 CRO: taiin ol olaiin ordain ostaiin ostaiin ostaiin daram
-EXP: t+aiin ulje ulje+aiin oleum+ain OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] DA/DARE [Lat.]
-ENG: [liquid+continuing] oil oil [liquid+continuing] Oil / oleum (variant) [plural] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +ra
+EXP: t+aiin ulje ulje+aiin ulje+ain OSTEO- [Lat.] OSTEO- [Lat.] OSTEO- [Lat.] DA/DARE [Lat.]
+ENG: [liquid+continuing] oil oil [liquid+continuing] oil [plural] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +ra
 ```
 <sub>[█████████░] 90% confidence</sub>
 
 ```
 EVA: saiin olcheey chdyychey karar oky ykedy okair ody
 CRO: saiin olheey hdyyhey starar osty ystedy ostair ody
-EXP: s-i+in ulje+ey kuhaj-i+ey vrelina+ar OSTEO- [Lat.] i+edy OSTEO- [Lat.] o+dy
-ENG: with/together [plural] oil [participle] combine/cook (reduced) and/with [participle] heat (strong) [instrumental] BONE (MEDICAL REGISTER) and/with [verbal] BONE (MEDICAL REGISTER) +a [verbal]
+EXP: s-i+in ulje+ey kuhaj-i+ey star+ar OSTEO- [Lat.] i+edy OSTEO- [Lat.] o+dy
+ENG: with/together [plural] oil [participle] combine/cook (reduced) and/with [participle] old/aged [instrumental] BONE (MEDICAL REGISTER) and/with [verbal] BONE (MEDICAL REGISTER) +a [verbal]
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: toar ykaiin ory dal
 CRO: toar ystaiin ory dal
-EXP: to+ar i+aiin oleum+y DA/DARE [Lat.]
-ENG: [instrumental] and/with [liquid+continuing] Oil / oleum (variant) [adjective] GIVE (RX IMPERATIVE) +l
+EXP: to+ar i+aiin ulje+y DA/DARE [Lat.]
+ENG: [instrumental] and/with [liquid+continuing] oil [adjective] GIVE (RX IMPERATIVE) +l
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f40r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f40r*

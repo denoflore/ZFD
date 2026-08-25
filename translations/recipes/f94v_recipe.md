@@ -10,7 +10,7 @@
 **Section:** Pharmaceutical
 **Confidence:** 76%
 **Words:** 91 total, 87 resolved (96%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,14 +19,12 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 8 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 8 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 8 | CANDIDATE |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 5 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 3 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
+| **ar** | water | *aqua* | ingredient | 5 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 5 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 3 | CANDIDATE |
 | **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -85,16 +83,16 @@ ENG: [verbal] vessel/container (variant) water vessel/container (variant) [adjec
 ```
 EVA: tedain chedy qokshd okchdy qokealchorchor tchor am
 CRO: tedain hedy kostšd osthdy kostealhorhor thor am
-EXP: radix + facere+ain he-d+y ko-stare OSTEO- [Lat.] ko-stare torreo a+m
-ENG: "Process kernel / do / treat" [plural] State / Result / After [adjective] measure/quantify (variant) Stand / place / position BONE (MEDICAL REGISTER) +h measure/quantify (variant) Stand / place / position +?ealhorhor Boil / roast / scorch [case]
+EXP: radix + facere+ain he-d+y ko-stare OSTEO- [Lat.] ko-stare vreti a+m
+ENG: "Process kernel / do / treat" [plural] State / Result / After [adjective] measure/quantify (variant) Stand / place / position BONE (MEDICAL REGISTER) +h measure/quantify (variant) Stand / place / position +?ealhorhor boil/roast [case]
 ```
 <sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: ycheeo lkeol otor opchdy qotar aralotor otchy tody oty
 CRO: yheeo lsteol otor ophdy kotar aralotor othy tody oty
-EXP: i l-stare+ol posuda-oleum oph+dy ko-t+ar voda posuda-h+y to+dy posuda-i
-ENG: and/with +?heeo The / that (determiner) Stand / place / position [instrumental] vessel/container (variant) Oil / oleum (variant) [verbal] +?oph measure/quantify (variant) [instrumental] water +?alotor vessel/container (variant) [adjective] [verbal] vessel/container (variant) and/with
+EXP: i l-stare+ol posuda-ulje oph+dy ko-t+ar voda posuda-h+y to+dy posuda-i
+ENG: and/with +?heeo The / that (determiner) Stand / place / position [instrumental] vessel/container (variant) oil [verbal] +?oph measure/quantify (variant) [instrumental] water +?alotor vessel/container (variant) [adjective] [verbal] vessel/container (variant) and/with
 ```
 <sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
@@ -102,17 +100,17 @@ ENG: and/with +?heeo The / that (determiner) Stand / place / position [instrumen
 EVA: toky shey qokaiin
 CRO: tosty šey kostaiin
 EXP: kost+y še-i ko-stare+aiin
-ENG: bone (medical) [adjective] Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [liquid+continuing]
+ENG: bone [adjective] Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [liquid+continuing]
 ```
 <sub>[█████████░] 93% confidence</sub>
 
 ```
 EVA: pchedaiin sheocthy daiin cphedy pchdoteey qotchy par ar
 CRO: phedaiin šeoctrry daiin cplledy phdoteey kothy par ar
-EXP: radix + facere+aiin šeo-centrum+y DA/DARE [Lat.] cpll+edy phdote+ey ko-th+y p+ar voda
-ENG: "Process kernel / do / treat" [liquid+continuing] Soaked-state (extended) Center / control [adjective] GIVE (RX IMPERATIVE) +i [verbal] +?cpll [participle] +?phdote measure/quantify (variant) [adjective] [instrumental] water
+EXP: radix + facere+aiin šeo-smjesa+y DA/DARE [Lat.] cpll+edy phdote+ey ko-th+y p+ar voda
+ENG: "Process kernel / do / treat" [liquid+continuing] Soaked-state (extended) compound mixture [adjective] GIVE (RX IMPERATIVE) +i [verbal] +?cpll [participle] +?phdote measure/quantify (variant) [adjective] [instrumental] water
 ```
-<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: ytar okedy okeedy qokshey otaiin yypchdair ol s aiin oly
@@ -133,19 +131,19 @@ ENG: oil [agent] State / Result / After [adjective] BONE (MEDICAL REGISTER) +h s
 ```
 EVA: todaiin shcthhy qokar chetaiin chdyykol qoky or eedy oky
 CRO: todaiin šctrrhy kostar hetaiin hdyystol kosty or eedy osty
-EXP: stabljika+aiin namoci-centrum+y ko-stare+ar he-t+aiin kuhaj-stare+ol ko-stare+y oleum e+edy OSTEO- [Lat.]
-ENG: stalk/stem [liquid+continuing] soak/infuse (Croatian) Center / control [adjective] measure/quantify (variant) Stand / place / position [instrumental] State / Result / After [liquid+continuing] combine/cook (reduced) Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [adjective] Oil / oleum (variant) [verbal] BONE (MEDICAL REGISTER)
+EXP: stabljika+aiin namoci-smjesa+y ko-stare+ar he-t+aiin kuhaj-stare+ol ko-stare+y ulje e+edy OSTEO- [Lat.]
+ENG: stalk/stem [liquid+continuing] soak/infuse (Croatian) compound mixture [adjective] measure/quantify (variant) Stand / place / position [instrumental] State / Result / After [liquid+continuing] combine/cook (reduced) Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [adjective] oil [verbal] BONE (MEDICAL REGISTER)
 ```
-<sub>[████████░░] 87% confidence</sub>
+<sub>[████████░░] 88% confidence</sub>
 
 ```
 EVA: daiin chcthy chdy chckhy okaiin
 CRO: daiin hctrry hdy hcsty ostaiin
-EXP: DA/DARE [Lat.] kuhaj-centrum+y kuhaj-d+y kuhaj-stare+y OSTEO- [Lat.]
-ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) Center / control [adjective] combine/cook (reduced) [adjective] combine/cook (reduced) Stand / place / position [adjective] BONE (MEDICAL REGISTER)
+EXP: DA/DARE [Lat.] kuhaj-smjesa+y kuhaj-d+y kuhaj-stare+y OSTEO- [Lat.]
+ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) compound mixture [adjective] combine/cook (reduced) [adjective] combine/cook (reduced) Stand / place / position [adjective] BONE (MEDICAL REGISTER)
 ```
-<sub>[████████░░] 82% confidence</sub>
+<sub>[████████░░] 85% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f94v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f94v*

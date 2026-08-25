@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 50%
 **Words:** 122 total, 73 resolved (60%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,15 +18,12 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ost** | bone (medical) | *osteo-* | animal | 9 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 7 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 9 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 7 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 7 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 6 | CANDIDATE |
-| **ed** | "Process kernel / do / treat" | *radix + facere* | general | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 2 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
+| **da** | give/add | *dare* | grammar | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -93,8 +90,8 @@ ENG: vessel/container (variant) stalk/stem
 ```
 EVA: v sa l y soeos vs ar okees o d socfchees lg sos okey defo fo rkedam sh ofol sar ddal yty s y daiis oteo dsh dy dkals ety fchcho a r ofaiin dal karody ar okchy daram qokar okal okal d o l shkeal dydas o k sher saiin
 CRO: v sa l y soeos vs ar ostees o d soplhees lg sos ostey defo fo rstedam š ofol sar ddal yty s y daiis oteo dš dy dstals ety fhho a r ofaiin dal starody ar osthy daram kostar ostal ostal d o l šsteal dydas o st šer saiin
-EXP: v sa l i s-eo+s v+s voda OSTEO- [Lat.] o d s-ee+s l-g s-s OSTEO- [Lat.] defo fo radix + facere+m š of+ol s-r dd+al i+y s i DA/DARE [Lat.] posuda-eo dš d+y kotao+s et+y fhho a r of+aiin DA/DARE [Lat.] vrelina+dy voda OSTEO- [Lat.] DA/DARE [Lat.] ko-stare+ar OSTEO- [Lat.] OSTEO- [Lat.] d o l namoci-stare+al da+s o stare še-r s-i+in
-ENG: ?v? ?sa? ?l? and/with with/together (variant) [~15] [~15] water BONE (MEDICAL REGISTER) +ee ?o? ?d? with/together (variant) (intensifier) [~15] The / that (determiner) with/together (variant) BONE (MEDICAL REGISTER) ?defo? ?fo? "Process kernel / do / treat" [case] +?rsta ?š? [instrumental] with/together [locative] and/with [adjective] ?s? and/with GIVE (RX IMPERATIVE) +ii vessel/container (variant) ?dš? [adjective] cauldron [~15] [adjective] +?et ?fhho? ?a? ?r? [liquid+continuing] GIVE (RX IMPERATIVE) +l heat (strong) [verbal] water BONE (MEDICAL REGISTER) +h GIVE (RX IMPERATIVE) +ra measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) ?d? ?o? ?l? soak/infuse (Croatian) Stand / place / position [locative] da [~15] ?o? Stand / place / position Soaked-state / After soaking with/together [plural]
+EXP: v sa l i s-eo+s v+s voda OSTEO- [Lat.] o d s-ee+s l-g s-s OSTEO- [Lat.] defo fo dati+m š of+ol s-r dd+al i+y s i DA/DARE [Lat.] posuda-eo dš d+y kotao+s et+y fhho a r of+aiin DA/DARE [Lat.] star+dy voda OSTEO- [Lat.] DA/DARE [Lat.] ko-stare+ar OSTEO- [Lat.] OSTEO- [Lat.] d o l namoci-stare+al dati+s o stare še-r s-i+in
+ENG: ?v? ?sa? ?l? and/with with/together (variant) [~15] [~15] water BONE (MEDICAL REGISTER) +ee ?o? ?d? with/together (variant) (intensifier) [~15] The / that (determiner) with/together (variant) BONE (MEDICAL REGISTER) ?defo? ?fo? give/add [case] +?rste ?š? [instrumental] with/together [locative] and/with [adjective] ?s? and/with GIVE (RX IMPERATIVE) +ii vessel/container (variant) ?dš? [adjective] cauldron [~15] [adjective] +?et ?fhho? ?a? ?r? [liquid+continuing] GIVE (RX IMPERATIVE) +l old/aged [verbal] water BONE (MEDICAL REGISTER) +h GIVE (RX IMPERATIVE) +ra measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) ?d? ?o? ?l? soak/infuse (Croatian) Stand / place / position [locative] give/add [~15] ?o? Stand / place / position Soaked-state / After soaking with/together [plural]
 ```
 <sub>[▓▓▓▓░░░░░░] 48% confidence</sub>
 
@@ -109,8 +106,8 @@ ENG: oil +?drvxststftrycoldrvxstmftrycoldrvxststptrycoldrvxststptrycrn
 ```
 EVA: daiin otey ofchey shes o d okchod o l okeeol dkedar of aros s y chedaiin k echty x doedal vo tchor cs tedas dal daiin aiin otyl daro v
 CRO: daiin otey ofhey šes o d osthod o l osteeol dstedar of aros s y hedaiin st ehty x doedal vo thor cs tedas dal daiin aiin otyl daro v
-EXP: DA/DARE [Lat.] posuda-e+y ofh+ey še-s o d OSTEO- [Lat.] o l OSTEO- [Lat.] radix + facere+ar of voda+s s i he-d+aiin stare eht+y x radix + facere+al vo torreo c+s radix + facere+s DA/DARE [Lat.] DA/DARE [Lat.] a+iin posuda-i DA/DARE [Lat.] v
-ENG: GIVE (RX IMPERATIVE) +i vessel/container (variant) [adjective] [participle] +?ofh Soaked-state / After soaking ?o? ?d? BONE (MEDICAL REGISTER) +hod ?o? ?l? BONE (MEDICAL REGISTER) +ee "Process kernel / do / treat" [instrumental] ?of? water [~15] ?s? and/with State / Result / After [liquid+continuing] Stand / place / position [adjective] +?eht ?x? "Process kernel / do / treat" [locative] ?vo? Boil / roast / scorch [~15] "Process kernel / do / treat" [~15] GIVE (RX IMPERATIVE) +l GIVE (RX IMPERATIVE) +i [continuation] vessel/container (variant) and/with GIVE (RX IMPERATIVE) +ro ?v?
+EXP: DA/DARE [Lat.] posuda-e+y ofh+ey še-s o d OSTEO- [Lat.] o l OSTEO- [Lat.] radix + facere+ar of voda+s s i he-d+aiin stare eht+y x radix + facere+al vo vreti c+s dati+s DA/DARE [Lat.] DA/DARE [Lat.] a+iin posuda-i DA/DARE [Lat.] v
+ENG: GIVE (RX IMPERATIVE) +i vessel/container (variant) [adjective] [participle] +?ofh Soaked-state / After soaking ?o? ?d? BONE (MEDICAL REGISTER) +hod ?o? ?l? BONE (MEDICAL REGISTER) +ee "Process kernel / do / treat" [instrumental] ?of? water [~15] ?s? and/with State / Result / After [liquid+continuing] Stand / place / position [adjective] +?eht ?x? "Process kernel / do / treat" [locative] ?vo? boil/roast [~15] give/add [~15] GIVE (RX IMPERATIVE) +l GIVE (RX IMPERATIVE) +i [continuation] vessel/container (variant) and/with GIVE (RX IMPERATIVE) +ro ?v?
 ```
 <sub>[▓▓▓▓░░░░░░] 48% confidence</sub>
 
@@ -141,8 +138,8 @@ ENG: BONE (MEDICAL REGISTER) +ho
 ```
 EVA: ocfhor okear
 CRO: ocpllor ostear
-EXP: oleum OSTEO- [Lat.]
-ENG: Oil / oleum (variant) +?ocpll BONE (MEDICAL REGISTER) +e
+EXP: ulje OSTEO- [Lat.]
+ENG: oil +?ocpll BONE (MEDICAL REGISTER) +e
 ```
 <sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
@@ -156,4 +153,4 @@ ENG: cauldron [verbal]
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f57v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f57v*

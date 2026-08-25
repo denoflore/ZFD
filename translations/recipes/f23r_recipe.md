@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 66%
-**Words:** 101 total, 88 resolved (87%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 67%
+**Words:** 101 total, 89 resolved (88%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,11 +20,10 @@
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 24 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 13 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 11 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 7 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 3 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 11 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 6 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 3 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
 | **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
 
@@ -49,34 +48,34 @@
 ```
 EVA: pydchdom chy fcholdy oty otchol shy opyaiin y yfchy daiin ololdy dal
 CRO: pydhdom hy fholdy oty othol šy opyaiin y yfhy daiin ololdy dal
-EXP: i+om kuhaj-i miješati+dy posuda-i posuda-h+ol namoci-i i+aiin i i+y DA/DARE [Lat.] ulje+dy DA/DARE [Lat.]
-ENG: and/with [case] +?pdhd combine/cook (reduced) and/with combine/mix [verbal] vessel/container (variant) and/with vessel/container (variant) [instrumental] soak/infuse (Croatian) and/with and/with [liquid+continuing] and/with and/with [adjective] GIVE (RX IMPERATIVE) +i oil [verbal] GIVE (RX IMPERATIVE) +l
+EXP: i+om kuhaj-i brasno+dy posuda-i posuda-h+ol namoci-i i+aiin i i+y DA/DARE [Lat.] ulje+dy DA/DARE [Lat.]
+ENG: and/with [case] +?pdhd combine/cook (reduced) and/with flour/grain [verbal] vessel/container (variant) and/with vessel/container (variant) [instrumental] soak/infuse (Croatian) and/with and/with [liquid+continuing] and/with and/with [adjective] GIVE (RX IMPERATIVE) +i oil [verbal] GIVE (RX IMPERATIVE) +l
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: to ar chor daiin chkdain otchy lolchor daiin dam okchol daing
 CRO: to ar hor daiin hstdain othy lolhor daiin dam osthol daing
-EXP: to voda kuhaj-oleum DA/DARE [Lat.] kuhaj-stare+ain posuda-h+y l-ulje DA/DARE [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.]
-ENG: ?to? water combine/cook (reduced) Oil / oleum (variant) GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [plural] vessel/container (variant) [adjective] The / that (determiner) oil GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +m BONE (MEDICAL REGISTER) +h GIVE (RX IMPERATIVE) +ing
+EXP: to voda kuhaj-ulje DA/DARE [Lat.] kuhaj-stare+ain posuda-h+y l-ulje DA/DARE [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] DA/DARE [Lat.]
+ENG: ?to? water combine/cook (reduced) oil GIVE (RX IMPERATIVE) +i combine/cook (reduced) Stand / place / position [plural] vessel/container (variant) [adjective] The / that (determiner) oil GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +m BONE (MEDICAL REGISTER) +h GIVE (RX IMPERATIVE) +ing
 ```
 <sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: dchar ykor ykaiin daiin ctho g
 CRO: dhar ystor ystaiin daiin ctrro g
-EXP: dh+ar i i+aiin DA/DARE [Lat.] centrum g
-ENG: [instrumental] and/with +?stor and/with [liquid+continuing] GIVE (RX IMPERATIVE) +i Center / control ?g?
+EXP: dh+ar i i+aiin DA/DARE [Lat.] smjesa g
+ENG: [instrumental] and/with +?stor and/with [liquid+continuing] GIVE (RX IMPERATIVE) +i compound mixture ?g?
 ```
-<sub>[▓▓▓▓░░░░░░] 47% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
 ```
 EVA: qokoldy okaiir ykaiil g qokeey ofchol dain yfchor olfchor otchald
 CRO: kostoldy ostaiir ystaiil g kosteey ofhol dain yfhor olfhor othald
 EXP: ko-stare+dy OSTEO- [Lat.] i g ko-stare+ey ofh+ol DA/DARE [Lat.] i ulje posuda-tekućina
-ENG: measure/quantify (variant) Stand / place / position [verbal] BONE (MEDICAL REGISTER) +ai and/with +?staiil ?g? measure/quantify (variant) Stand / place / position [participle] [instrumental] +?ofh GIVE (RX IMPERATIVE) +in and/with +?fhor oil +?fhor vessel/container (variant) liquid/water (vessel context)
+ENG: measure/quantify (variant) Stand / place / position [verbal] BONE (MEDICAL REGISTER) and/with +?staiil ?g? measure/quantify (variant) Stand / place / position [participle] [instrumental] +?ofh GIVE (RX IMPERATIVE) +in and/with +?fhor oil +?fhor vessel/container (variant) liquid/water (vessel context)
 ```
-<sub>[▓▓▓▓░░░░░░] 46% confidence</sub>
+<sub>[▓▓▓▓░░░░░░] 48% confidence</sub>
 
 ```
 EVA: ychor qokchol ytom chol dair chol ar ol ol dol dain
@@ -113,10 +112,10 @@ ENG: measure/quantify (variant) Stand / place / position [adjective] combine/coo
 ```
 EVA: okol ok shy qokol dydal dshe qokeees y olydaiin dal
 CRO: ostol ost šy kostol dydal dše kosteees y olydaiin dal
-EXP: OSTEO- [Lat.] OSTEO- [Lat.] namoci-i ko-stare+ol i+al dše ko-stare+s i ulje+aiin DA/DARE [Lat.]
-ENG: BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [instrumental] and/with [locative] ?dše? measure/quantify (variant) Stand / place / position [~15] and/with oil [liquid+continuing] GIVE (RX IMPERATIVE) +l
+EXP: OSTEO- [Lat.] OSTEO- [Lat.] namoci-i ko-stare+ol i+al sa tim ko-stare+s i ulje+aiin DA/DARE [Lat.]
+ENG: BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) soak/infuse (Croatian) and/with measure/quantify (variant) Stand / place / position [instrumental] and/with [locative] with the (comitative+article) measure/quantify (variant) Stand / place / position [~15] and/with oil [liquid+continuing] GIVE (RX IMPERATIVE) +l
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: qok okaiin chkchy syteair odal chal dydar ykain
@@ -136,4 +135,4 @@ ENG: and/with +?stysta GIVE (RX IMPERATIVE) +l
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f23r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f23r*

@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 69%
 **Words:** 73 total, 70 resolved (96%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,11 +20,10 @@
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 12 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 11 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 5 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 3 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 5 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 4 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -59,7 +58,7 @@ ENG: stalk/stem [liquid+continuing] combine/cook (reduced) [instrumental] soak/i
 EVA: o ykeey soiiin chok qokchy da okol
 CRO: o ysteey soiiin host kosthy da ostol
 EXP: o i+ey s-i+iin kuhaj-kost ko-stare+y DA/DARE [Lat.] OSTEO- [Lat.]
-ENG: ?o? and/with [participle] with/together (variant) [continuation] combine/cook (reduced) bone (medical) measure/quantify (variant) Stand / place / position [adjective] GIVE (RX IMPERATIVE) BONE (MEDICAL REGISTER)
+ENG: ?o? and/with [participle] with/together (variant) [continuation] combine/cook (reduced) bone measure/quantify (variant) Stand / place / position [adjective] GIVE (RX IMPERATIVE) BONE (MEDICAL REGISTER)
 ```
 <sub>[███████░░░] 73% confidence</sub>
 
@@ -74,8 +73,8 @@ ENG: and/with [liquid+continuing] oil [adjective] Stand / place / position +?hor
 ```
 EVA: ochkchar kol shy daiin dorody
 CRO: ohsthar stol šy daiin dorody
-EXP: stare+ar stare+ol namoci-i DA/DARE [Lat.] oleum+dy
-ENG: Stand / place / position [instrumental] Stand / place / position [instrumental] soak/infuse (Croatian) and/with GIVE (RX IMPERATIVE) +i Oil / oleum (variant) [verbal]
+EXP: stare+ar stare+ol namoci-i DA/DARE [Lat.] ulje+dy
+ENG: Stand / place / position [instrumental] Stand / place / position [instrumental] soak/infuse (Croatian) and/with GIVE (RX IMPERATIVE) +i oil [verbal]
 ```
 <sub>[████████░░] 81% confidence</sub>
 
@@ -90,8 +89,8 @@ ENG: measure/quantify (variant) Stand / place / position [instrumental] GIVE (RX
 ```
 EVA: ychol oir okor choor ockhy
 CRO: yhol oir ostor hoor ocsty
-EXP: i+ol o+ir OSTEO- [Lat.] kuhaj-oleum stare+y
-ENG: and/with [instrumental] [agent] BONE (MEDICAL REGISTER) +or combine/cook (reduced) Oil / oleum (variant) Stand / place / position [adjective]
+EXP: i+ol o+ir OSTEO- [Lat.] kuhaj-ulje stare+y
+ENG: and/with [instrumental] [agent] BONE (MEDICAL REGISTER) +or combine/cook (reduced) oil Stand / place / position [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
@@ -106,8 +105,8 @@ ENG: vessel/container (variant) GIVE (RX IMPERATIVE) +in combine/cook (reduced) 
 ```
 EVA: soshy fchol shor cheor ykaiin s
 CRO: sošy fhol šor heor ystaiin s
-EXP: s-š+y fh+ol namoci-oleum heo-r i+aiin s
-ENG: with/together (variant) [adjective] [instrumental] soak/infuse (Croatian) Oil / oleum (variant) State / Result (extended) and/with [liquid+continuing] ?s?
+EXP: s-š+y fh+ol namoci-ulje heo-r i+aiin s
+ENG: with/together (variant) [adjective] [instrumental] soak/infuse (Croatian) oil State / Result (extended) and/with [liquid+continuing] ?s?
 ```
 <sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
@@ -122,8 +121,8 @@ ENG: with/together (variant) [adjective] combine/cook (reduced) [verbal] vessel/
 ```
 EVA: qotchor chod shoty chody dol dy dyokchy dy
 CRO: kothor hod šoty hody dol dy dyosthy dy
-EXP: ko-torreo kuhaj-stabljika namoci-ot+y kuhaj-o+dy d+ol d+y kost+y d+y
-ENG: measure/quantify (variant) Boil / roast / scorch combine/cook (reduced) stalk/stem soak/infuse (Croatian) [adjective] combine/cook (reduced) [verbal] [instrumental] [adjective] bone (medical) [adjective] [adjective]
+EXP: ko-vreti kuhaj-stabljika namoci-ot+y kuhaj-o+dy d+ol d+y kost+y d+y
+ENG: measure/quantify (variant) boil/roast combine/cook (reduced) stalk/stem soak/infuse (Croatian) [adjective] combine/cook (reduced) [verbal] [instrumental] [adjective] bone [adjective] [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
@@ -131,15 +130,15 @@ ENG: measure/quantify (variant) Boil / roast / scorch combine/cook (reduced) sta
 EVA: dchokchy schol dy shey dar qotyykeey ky
 CRO: dhosthy šhol dy šey dar kotyysteey sty
 EXP: kost+y namoci-h+ol d+y še-i DA/DARE [Lat.] ko-in+ey stare+y
-ENG: bone (medical) [adjective] soak/infuse (Croatian) [instrumental] [adjective] Soaked-state / After soaking and/with GIVE (RX IMPERATIVE) +r measure/quantify (variant) Preposition: in/with [participle] Stand / place / position [adjective]
+ENG: bone [adjective] soak/infuse (Croatian) [instrumental] [adjective] Soaked-state / After soaking and/with GIVE (RX IMPERATIVE) +r measure/quantify (variant) Preposition: in/with [participle] Stand / place / position [adjective]
 ```
 <sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: oeeen chey teor chey tchy kychodalg
 CRO: oeeen hey teor hey thy styhodalg
-EXP: ee he-i oleum he-i th+y stare
-ENG: (intensifier) +?oen State / Result / After and/with Oil / oleum (variant) State / Result / After and/with [adjective] +?th Stand / place / position +?yhodalg
+EXP: ee he-i ulje he-i th+y stare
+ENG: (intensifier) +?oen State / Result / After and/with oil State / Result / After and/with [adjective] +?th Stand / place / position +?yhodalg
 ```
 <sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
 
@@ -153,4 +152,4 @@ ENG: with/together (variant) [liquid+continuing] combine/cook (reduced) and/with
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f14r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f14r*

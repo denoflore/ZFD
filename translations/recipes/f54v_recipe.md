@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 73%
+**Confidence:** 75%
 **Words:** 90 total, 85 resolved (94%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,13 +20,11 @@
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 13 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 12 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 6 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 6 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 5 | CONFIRMED |
-| **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 6 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 5 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -51,18 +49,18 @@
 ```
 EVA: pcheodar chpal oloiin ckhey dar qokeey cpheeaiin sal
 CRO: pheodar hpal oloiin cstey dar kosteey cplleeaiin sal
-EXP: stabljika+ar kuhaj-p+al ulje+iin stare+ey DA/DARE [Lat.] ko-stare+ey ee+aiin s-l
-ENG: stalk/stem [instrumental] combine/cook (reduced) [locative] oil [continuation] Stand / place / position [participle] GIVE (RX IMPERATIVE) +r measure/quantify (variant) Stand / place / position [participle] (intensifier) [liquid+continuing] with/together
+EXP: ono što+ar kuhaj-p+al ulje+iin stare+ey DA/DARE [Lat.] ko-stare+ey ee+aiin s-l
+ENG: that which/the one [instrumental] combine/cook (reduced) [locative] oil [continuation] Stand / place / position [participle] GIVE (RX IMPERATIVE) +r measure/quantify (variant) Stand / place / position [participle] (intensifier) [liquid+continuing] with/together
 ```
-<sub>[███████░░░] 72% confidence</sub>
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: dcheaiin cphain s ar cheor qodaiin cthaildy ypchal
 CRO: dheaiin cpllain s ar heor kodaiin ctrraildy yphal
-EXP: dhe+aiin cpll+ain s voda heo-r ko-d+aiin centrum+dy i+al
-ENG: [liquid+continuing] [plural] +?cpll ?s? water State / Result (extended) measure/quantify (variant) [liquid+continuing] Center / control [verbal] and/with [locative]
+EXP: ov/taj+aiin cpll+ain s voda heo-r ko-d+aiin smjesa+dy i+al
+ENG: the/this (demonstrative) [liquid+continuing] [plural] +?cpll ?s? water State / Result (extended) measure/quantify (variant) [liquid+continuing] compound mixture [verbal] and/with [locative]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ```
 EVA: yair ykar oky cham chody ykoldam cheol aim
@@ -75,34 +73,34 @@ ENG: and/with [agent] and/with [instrumental] BONE (MEDICAL REGISTER) combine/co
 ```
 EVA: dar chor cheky chol okaiin chody chol dy
 CRO: dar hor hesty hol ostaiin hody hol dy
-EXP: DA/DARE [Lat.] kuhaj-oleum he-stare+y kuhaj-ulje OSTEO- [Lat.] kuhaj-o+dy kuhaj-ulje d+y
-ENG: GIVE (RX IMPERATIVE) +r combine/cook (reduced) Oil / oleum (variant) State / Result / After Stand / place / position [adjective] combine/cook (reduced) oil BONE (MEDICAL REGISTER) combine/cook (reduced) [verbal] combine/cook (reduced) oil [adjective]
+EXP: DA/DARE [Lat.] kuhaj-ulje he-stare+y kuhaj-ulje OSTEO- [Lat.] kuhaj-o+dy kuhaj-ulje d+y
+ENG: GIVE (RX IMPERATIVE) +r combine/cook (reduced) oil State / Result / After Stand / place / position [adjective] combine/cook (reduced) oil BONE (MEDICAL REGISTER) combine/cook (reduced) [verbal] combine/cook (reduced) oil [adjective]
 ```
 <sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: odaiin ytaiin qodaim qokar chy s am
 CRO: odaiin ytaiin kodaim kostar hy s am
-EXP: stabljika+aiin i+aiin ko-da+m ko-stare+ar kuhaj-i s a+m
-ENG: stalk/stem [liquid+continuing] and/with [liquid+continuing] measure/quantify (variant) da [case] measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) and/with ?s? [case]
+EXP: stabljika+aiin i+aiin ko-dati+m ko-stare+ar kuhaj-i s a+m
+ENG: stalk/stem [liquid+continuing] and/with [liquid+continuing] measure/quantify (variant) give/add [case] measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) and/with ?s? [case]
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: tol cheol shocthy qodaiin kchody
 CRO: tol heol šoctrry kodaiin sthody
-EXP: t+ol heo-l namoci-centrum+y ko-d+aiin stare+dy
-ENG: [instrumental] State / Result (extended) soak/infuse (Croatian) Center / control [adjective] measure/quantify (variant) [liquid+continuing] Stand / place / position [verbal]
+EXP: t+ol heo-l namoci-smjesa+y ko-d+aiin stare+dy
+ENG: [instrumental] State / Result (extended) soak/infuse (Croatian) compound mixture [adjective] measure/quantify (variant) [liquid+continuing] Stand / place / position [verbal]
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: daiin sheody qoctheol s aiin qotchy
 CRO: daiin šeody koctrreol s aiin kothy
-EXP: DA/DARE [Lat.] šeo-d+y ko-centrum+ol s a+iin ko-th+y
-ENG: GIVE (RX IMPERATIVE) +i Soaked-state (extended) [adjective] measure/quantify (variant) Center / control [instrumental] ?s? [continuation] measure/quantify (variant) [adjective]
+EXP: DA/DARE [Lat.] šeo-d+y ko-smjesa+ol s a+iin ko-th+y
+ENG: GIVE (RX IMPERATIVE) +i Soaked-state (extended) [adjective] measure/quantify (variant) compound mixture [instrumental] ?s? [continuation] measure/quantify (variant) [adjective]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
 ```
 EVA: daiino daim qokaiin yteal okal om
@@ -123,10 +121,10 @@ ENG: and/with [liquid+continuing] measure/quantify (variant) Stand / place / pos
 ```
 EVA: kol ckaiin chckhy qokal dal qocthy
 CRO: stol staiin hcsty kostal dal koctrry
-EXP: stare+ol stare+aiin kuhaj-stare+y ko-stare+al DA/DARE [Lat.] ko-centrum+y
-ENG: Stand / place / position [instrumental] Stand / place / position [liquid+continuing] combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +l measure/quantify (variant) Center / control [adjective]
+EXP: stare+ol stare+aiin kuhaj-stare+y ko-stare+al DA/DARE [Lat.] ko-smjesa+y
+ENG: Stand / place / position [instrumental] Stand / place / position [liquid+continuing] combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [locative] GIVE (RX IMPERATIVE) +l measure/quantify (variant) compound mixture [adjective]
 ```
-<sub>[████████░░] 89% confidence</sub>
+<sub>[█████████░] 91% confidence</sub>
 
 ```
 EVA: oaiin qockhy qokam
@@ -139,10 +137,10 @@ ENG: [liquid+continuing] measure/quantify (variant) Stand / place / position [ad
 ```
 EVA: tol chol cthol s
 CRO: tol hol ctrrol s
-EXP: t+ol kuhaj-ulje centrum+ol s
-ENG: [instrumental] combine/cook (reduced) oil Center / control [instrumental] ?s?
+EXP: t+ol kuhaj-ulje smjesa+ol s
+ENG: [instrumental] combine/cook (reduced) oil compound mixture [instrumental] ?s?
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: ychol okal yckhey
@@ -155,16 +153,16 @@ ENG: and/with [instrumental] BONE (MEDICAL REGISTER) and/with [participle]
 ```
 EVA: tar cthey tam aldam
 CRO: tar ctrrey tam aldam
-EXP: t+ar centrum+ey ta+m tekućina+m
-ENG: [instrumental] Center / control [participle] [case] +?ta liquid/water (vessel context) [case]
+EXP: t+ar smjesa+ey ta+m tekućina+m
+ENG: [instrumental] compound mixture [participle] [case] +?ta liquid/water (vessel context) [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 61% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ```
 EVA: or alchy ytal dal chodoldy
 CRO: or alhy ytal dal hodoldy
-EXP: oleum tekućina+y i+al DA/DARE [Lat.] kuhaj-stabljika+dy
-ENG: Oil / oleum (variant) liquid/water (vessel context) [adjective] and/with [locative] GIVE (RX IMPERATIVE) +l combine/cook (reduced) stalk/stem [verbal]
+EXP: ulje tekućina+y i+al DA/DARE [Lat.] kuhaj-stabljika+dy
+ENG: oil liquid/water (vessel context) [adjective] and/with [locative] GIVE (RX IMPERATIVE) +l combine/cook (reduced) stalk/stem [verbal]
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
@@ -178,4 +176,4 @@ ENG: GIVE (RX IMPERATIVE) +i combine/cook (reduced) oil oil [liquid+continuing]
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f54v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f54v*

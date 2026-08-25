@@ -10,7 +10,7 @@
 **Section:** Pharmaceutical
 **Confidence:** 72%
 **Words:** 163 total, 161 resolved (99%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,16 +18,14 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ost** | bone (medical) | *osteo-* | animal | 37 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 37 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 30 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 29 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 8 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 27 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 8 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 5 | CANDIDATE |
-| **ar** | water | *aqua* | liquid | 3 | CONFIRMED |
-| **al** | liquid/water (vessel context) | *aqua* | liquid | 3 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 3 | CANDIDATE |
-| **sar** | Salt | *sal* | mineral | 2 | CONFIRMED |
-| **stor** | storax | *storax* | resin | 1 | CONFIRMED |
+| **al** | liquid/water (vessel context) | *aqua* | liquid | 4 | CONFIRMED |
+| **ar** | water | *aqua* | ingredient | 3 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
 | **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
 
@@ -75,8 +73,8 @@ ENG: vessel/container (variant) oil [verbal]
 ```
 EVA: otorchy
 CRO: otorhy
-EXP: posuda-oleum+y
-ENG: vessel/container (variant) Oil / oleum (variant) [adjective]
+EXP: posuda-ulje+y
+ENG: vessel/container (variant) oil [adjective]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -124,7 +122,7 @@ ENG: water [instrumental]
 EVA: otoky
 CRO: otosty
 EXP: posuda-kost+y
-ENG: vessel/container (variant) bone (medical) [adjective]
+ENG: vessel/container (variant) bone [adjective]
 ```
 <sub>[██████████] 100% confidence</sub>
 
@@ -139,8 +137,8 @@ ENG: BONE (MEDICAL REGISTER) +oldo
 ```
 EVA: oeeesary
 CRO: oeeesary
-EXP: sal+y
-ENG: Salt [adjective]
+EXP: sol+y
+ENG: salt [adjective]
 ```
 <sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
@@ -179,8 +177,8 @@ ENG: vessel/container (variant) oil [instrumental]
 ```
 EVA: osary
 CRO: osary
-EXP: sal+y
-ENG: Salt [adjective]
+EXP: sol+y
+ENG: salt [adjective]
 ```
 <sub>[████████░░] 80% confidence</sub>
 
@@ -188,7 +186,7 @@ ENG: Salt [adjective]
 EVA: darolaly
 CRO: darolaly
 EXP: DA/DARE [Lat.]
-ENG: GIVE (RX IMPERATIVE) +ral
+ENG: GIVE (RX IMPERATIVE) +rol
 ```
 <sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
@@ -211,8 +209,8 @@ ENG: vessel/container (variant) liquid/water (vessel context)
 ```
 EVA: chor olekor
 CRO: hor olestor
-EXP: kuhaj-oleum ulje
-ENG: combine/cook (reduced) Oil / oleum (variant) oil +?estor
+EXP: kuhaj-ulje ulje
+ENG: combine/cook (reduced) oil oil +?estor
 ```
 <sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
@@ -235,8 +233,8 @@ ENG: oil [adjective]
 ```
 EVA: doldam
 CRO: doldam
-EXP: ulje+m
-ENG: oil [case]
+EXP: dati+m
+ENG: give/add [case]
 ```
 <sub>[▓▓▓▓▓░░░░░] 50% confidence</sub>
 
@@ -283,26 +281,26 @@ ENG: measure/quantify (variant) Stand / place / position measure/quantify (varia
 ```
 EVA: okoraiin okol shocthy qokor oloiram
 CRO: ostoraiin ostol šoctrry kostor oloiram
-EXP: OSTEO- [Lat.] OSTEO- [Lat.] namoci-centrum+y ko-storaks ulje+m
-ENG: BONE (MEDICAL REGISTER) +or BONE (MEDICAL REGISTER) soak/infuse (Croatian) Center / control [adjective] measure/quantify (variant) storax oil [case] +?oira
+EXP: OSTEO- [Lat.] OSTEO- [Lat.] namoci-smjesa+y ko-storaks ulje+m
+ENG: BONE (MEDICAL REGISTER) +or BONE (MEDICAL REGISTER) soak/infuse (Croatian) compound mixture [adjective] measure/quantify (variant) storax oil [case] +?oira
 ```
-<sub>[███████░░░] 78% confidence</sub>
+<sub>[████████░░] 81% confidence</sub>
 
 ```
 EVA: doror okeeody opar okor eosaiin otoraiin shey ols aiiin qoetal
 CRO: doror osteeody opar ostor eosaiin otoraiin šey ols aiiin koetal
-EXP: oleum OSTEO- [Lat.] op+ar OSTEO- [Lat.] eos+aiin posuda-oleum+aiin še-i ulje+s ai+iin ko-et+al
-ENG: Oil / oleum (variant) +?dor BONE (MEDICAL REGISTER) +eeo [instrumental] BONE (MEDICAL REGISTER) +or [liquid+continuing] vessel/container (variant) Oil / oleum (variant) [liquid+continuing] Soaked-state / After soaking and/with oil [~15] [continuation] measure/quantify (variant) [locative]
+EXP: ulje OSTEO- [Lat.] op+ar OSTEO- [Lat.] ih+aiin posuda-ulje+aiin še-i ulje+s ai+iin ko-et+al
+ENG: oil +?dor BONE (MEDICAL REGISTER) +eeo [instrumental] BONE (MEDICAL REGISTER) +or them/those [liquid+continuing] vessel/container (variant) oil [liquid+continuing] Soaked-state / After soaking and/with oil [~15] [continuation] measure/quantify (variant) [locative]
 ```
-<sub>[███████░░░] 70% confidence</sub>
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: doiin otey okeeol saiin okeol qokeol ctheol qokeol dy qokaiin
 CRO: doiin otey osteeol saiin osteol kosteol ctrreol kosteol dy kostaiin
-EXP: do+iin posuda-e+y OSTEO- [Lat.] s-i+in OSTEO- [Lat.] ko-stare+ol centrum+ol ko-stare+ol d+y ko-stare+aiin
-ENG: [continuation] vessel/container (variant) [adjective] BONE (MEDICAL REGISTER) +ee with/together [plural] BONE (MEDICAL REGISTER) +e measure/quantify (variant) Stand / place / position [instrumental] Center / control [instrumental] measure/quantify (variant) Stand / place / position [instrumental] [adjective] measure/quantify (variant) Stand / place / position [liquid+continuing]
+EXP: do+iin posuda-e+y OSTEO- [Lat.] s-i+in OSTEO- [Lat.] ko-stare+ol smjesa+ol ko-stare+ol d+y ko-stare+aiin
+ENG: [continuation] vessel/container (variant) [adjective] BONE (MEDICAL REGISTER) +ee with/together [plural] BONE (MEDICAL REGISTER) +e measure/quantify (variant) Stand / place / position [instrumental] compound mixture [instrumental] measure/quantify (variant) Stand / place / position [instrumental] [adjective] measure/quantify (variant) Stand / place / position [liquid+continuing]
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: qokeey chol okeoldy qokol qokeolo lchol okeol sheodol qokeechom
@@ -316,7 +314,7 @@ ENG: measure/quantify (variant) Stand / place / position [participle] combine/co
 EVA: shokeeey chol shey okol qokey okeodal oldy
 CRO: šosteeey hol šey ostol kostey osteodal oldy
 EXP: namoci-kost+ey kuhaj-ulje še-i OSTEO- [Lat.] ko-stare+ey OSTEO- [Lat.] ulje+dy
-ENG: soak/infuse (Croatian) bone (medical) [participle] combine/cook (reduced) oil Soaked-state / After soaking and/with BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [participle] BONE (MEDICAL REGISTER) +eod oil [verbal]
+ENG: soak/infuse (Croatian) bone [participle] combine/cook (reduced) oil Soaked-state / After soaking and/with BONE (MEDICAL REGISTER) measure/quantify (variant) Stand / place / position [participle] BONE (MEDICAL REGISTER) +eod oil [verbal]
 ```
 <sub>[█████████░] 91% confidence</sub>
 
@@ -324,7 +322,7 @@ ENG: soak/infuse (Croatian) bone (medical) [participle] combine/cook (reduced) o
 EVA: qoteeoy chokol qokeeo dy qokeeol olpchey doiir okeedyokolol
 CRO: koteeoy hostol kosteeo dy kosteeol olphey doiir osteedyostolol
 EXP: ko-ee+y kuhaj-kost+ol ko-stare d+y ko-stare+ol ulje+ey doi+ir OSTEO- [Lat.]
-ENG: measure/quantify (variant) (intensifier) [adjective] combine/cook (reduced) bone (medical) [instrumental] measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [instrumental] oil [participle] [agent] +?doi BONE (MEDICAL REGISTER) +eedyostol
+ENG: measure/quantify (variant) (intensifier) [adjective] combine/cook (reduced) bone [instrumental] measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [instrumental] oil [participle] [agent] +?doi BONE (MEDICAL REGISTER) +eedyostol
 ```
 <sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
@@ -339,8 +337,8 @@ ENG: [instrumental] BONE (MEDICAL REGISTER) +ee BONE (MEDICAL REGISTER) +eor BON
 ```
 EVA: yoiin ol ol olaiin qockhey qokol olshy qokeeor or aiin dol dam
 CRO: yoiin ol ol olaiin kocstey kostol olšy kosteeor or aiin dol dam
-EXP: i+iin ulje ulje ulje+aiin ko-stare+ey ko-stare+ol ulje+y ko-stare oleum a+iin d+ol DA/DARE [Lat.]
-ENG: and/with [continuation] oil oil oil [liquid+continuing] measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] oil [adjective] measure/quantify (variant) Stand / place / position Oil / oleum (variant) [continuation] [instrumental] GIVE (RX IMPERATIVE) +m
+EXP: i+iin ulje ulje ulje+aiin ko-stare+ey ko-stare+ol ulje+y ko-stare ulje a+iin d+ol DA/DARE [Lat.]
+ENG: and/with [continuation] oil oil oil [liquid+continuing] measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] oil [adjective] measure/quantify (variant) Stand / place / position oil [continuation] [instrumental] GIVE (RX IMPERATIVE) +m
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -355,32 +353,32 @@ ENG: oil BONE (MEDICAL REGISTER) +ee vessel/container (intensifier) [instrumenta
 ```
 EVA: oteol socthey qokol olkeol daiinokoly
 CRO: oteol soctrrey kostol olsteol daiinostoly
-EXP: posuda-e+ol s-centrum+ey ko-stare+ol ulje+ol DA/DARE [Lat.]
-ENG: vessel/container (variant) [instrumental] with/together (variant) Center / control [participle] measure/quantify (variant) Stand / place / position [instrumental] oil [instrumental] GIVE (RX IMPERATIVE) +iinol
+EXP: posuda-e+ol s-smjesa+ey ko-stare+ol ulje+ol DA/DARE [Lat.]
+ENG: vessel/container (variant) [instrumental] with/together (variant) compound mixture [participle] measure/quantify (variant) Stand / place / position [instrumental] oil [instrumental] GIVE (RX IMPERATIVE) +iinol
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: olcheey qokeol okeol okeol shokolykey
 CRO: olheey kosteol osteol osteol šostolystey
 EXP: ulje+ey ko-stare+ol OSTEO- [Lat.] OSTEO- [Lat.] namoci-kost+ey
-ENG: oil [participle] measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) +e BONE (MEDICAL REGISTER) +e soak/infuse (Croatian) bone (medical) [participle]
+ENG: oil [participle] measure/quantify (variant) Stand / place / position [instrumental] BONE (MEDICAL REGISTER) +e BONE (MEDICAL REGISTER) +e soak/infuse (Croatian) bone [participle]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: dor shol okchey ckhey qokololalokeol
 CRO: dor šol osthey cstey kostololalosteol
-EXP: oleum namoci-ulje OSTEO- [Lat.] stare+ey ko-stare+ol
-ENG: Oil / oleum (variant) soak/infuse (Croatian) oil BONE (MEDICAL REGISTER) +h Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] +?ololaloste
+EXP: ulje namoci-ulje OSTEO- [Lat.] stare+ey ko-stare+ol
+ENG: oil soak/infuse (Croatian) oil BONE (MEDICAL REGISTER) +h Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] +?ololaloste
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: or aiin okeody okol odaiin qokyolaldy
 CRO: or aiin osteody ostol odaiin kostyolaldy
-EXP: oleum a+iin OSTEO- [Lat.] OSTEO- [Lat.] stabljika+aiin ko-stare+dy
-ENG: Oil / oleum (variant) [continuation] BONE (MEDICAL REGISTER) +eo BONE (MEDICAL REGISTER) stalk/stem [liquid+continuing] measure/quantify (variant) Stand / place / position [verbal]
+EXP: ulje a+iin OSTEO- [Lat.] OSTEO- [Lat.] stabljika+aiin ko-stare+dy
+ENG: oil [continuation] BONE (MEDICAL REGISTER) +eo BONE (MEDICAL REGISTER) stalk/stem [liquid+continuing] measure/quantify (variant) Stand / place / position [verbal]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -395,8 +393,8 @@ ENG: measure/quantify (variant) Stand / place / position [instrumental] [continu
 ```
 EVA: olsheol olkeol okol or oralolyykeol okal okoldaly
 CRO: olšeol olsteol ostol or oralolyysteol ostal ostoldaly
-EXP: ulje+ol ulje+ol OSTEO- [Lat.] oleum ORALIS [Lat.] OSTEO- [Lat.] OSTEO- [Lat.]
-ENG: oil [instrumental] oil [instrumental] BONE (MEDICAL REGISTER) Oil / oleum (variant) BY MOUTH/ORALLY +olyyste BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +oldal
+EXP: ulje+ol ulje+ol OSTEO- [Lat.] ulje ORALIS [Lat.] OSTEO- [Lat.] OSTEO- [Lat.]
+ENG: oil [instrumental] oil [instrumental] BONE (MEDICAL REGISTER) oil BY MOUTH/ORALLY +olyyste BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) +oldal
 ```
 <sub>[███████░░░] 73% confidence</sub>
 
@@ -410,4 +408,4 @@ ENG: and/with [instrumental] oil [verbal] +?steeol
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f99v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f99v*

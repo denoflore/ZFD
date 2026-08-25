@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 67%
+**Confidence:** 68%
 **Words:** 87 total, 79 resolved (91%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,12 +20,8 @@
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 32 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 14 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 4 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 4 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
-| **kost** | Bone (Slavic) | *kost* | animal | 1 | CONFIRMED |
 | **dal** | da-l-al |  | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -52,16 +48,16 @@
 ```
 EVA: pchey kedaleey oked shekcheyopshes ypchd qotcheedy shkakeedy
 CRO: phey stedaleey osted šestheyopšes yphd kotheedy šstasteedy
-EXP: ph+ey stare+ey OSTEO- [Lat.] še-stare+s i ko-the+edy namoci-stare+edy
-ENG: [participle] Stand / place / position [participle] +?edale BONE (MEDICAL REGISTER) +ed Soaked-state / After soaking Stand / place / position [~15] +?heyopše and/with +?phd measure/quantify (variant) [verbal] soak/infuse (Croatian) Stand / place / position [verbal]
+EXP: ph+ey stare+ey OSTEO- [Lat.] še-stare+s i ko-ov/taj+edy namoci-stare+edy
+ENG: [participle] Stand / place / position [participle] +?edale BONE (MEDICAL REGISTER) +ed Soaked-state / After soaking Stand / place / position [~15] +?heyopše and/with +?phd measure/quantify (variant) the/this (demonstrative) [verbal] soak/infuse (Croatian) Stand / place / position [verbal]
 ```
-<sub>[▓▓▓▓░░░░░░] 49% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 53% confidence</sub>
 
 ```
 EVA: ykeeo alshey ykedy keshdy dydor ycheoky qokeed chpy qokedy dy
 CRO: ysteeo alšey ystedy stešdy dydor yheosty kosteed hpy kostedy dy
-EXP: i tekućina+ey i+edy stare+dy oleum i+y ko-stare kuhaj-p+y ko-stare+edy d+y
-ENG: and/with +?steeo liquid/water (vessel context) [participle] and/with [verbal] Stand / place / position [verbal] Oil / oleum (variant) +?dyd and/with [adjective] +?heost measure/quantify (variant) Stand / place / position combine/cook (reduced) [adjective] measure/quantify (variant) Stand / place / position [verbal] [adjective]
+EXP: i tekućina+ey i+edy stare+dy ulje i+y ko-stare kuhaj-p+y ko-stare+edy d+y
+ENG: and/with +?steeo liquid/water (vessel context) [participle] and/with [verbal] Stand / place / position [verbal] oil +?dyd and/with [adjective] +?heost measure/quantify (variant) Stand / place / position combine/cook (reduced) [adjective] measure/quantify (variant) Stand / place / position [verbal] [adjective]
 ```
 <sub>[▓▓▓▓▓░░░░░] 57% confidence</sub>
 
@@ -76,10 +72,10 @@ ENG: measure/quantify (variant) Stand / place / position ?ra? and/with [verbal] 
 ```
 EVA: chdchy ytcheeky ypchedy schdyytedy cthey chees oteey otal dam
 CRO: hdhy ytheesty yphedy šhdyytedy ctrrey hees oteey otal dam
-EXP: kuhaj-dh+y i+y i+edy namoci-i+edy centrum+ey he-e+s posuda-e+ey posuda-tekućina DA/DARE [Lat.]
-ENG: combine/cook (reduced) [adjective] and/with [adjective] +?theest and/with [verbal] soak/infuse (Croatian) and/with [verbal] Center / control [participle] State / Result / After [~15] vessel/container (variant) [participle] vessel/container (variant) liquid/water (vessel context) GIVE (RX IMPERATIVE) +m
+EXP: kuhaj-dh+y i+y i+edy namoci-i+edy smjesa+ey he-e+s posuda-e+ey posuda-tekućina DA/DARE [Lat.]
+ENG: combine/cook (reduced) [adjective] and/with [adjective] +?theest and/with [verbal] soak/infuse (Croatian) and/with [verbal] compound mixture [participle] State / Result / After [~15] vessel/container (variant) [participle] vessel/container (variant) liquid/water (vessel context) GIVE (RX IMPERATIVE) +m
 ```
-<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: qotchy sal yteedy kchdydchedy tchdy dchedy dalain
@@ -108,8 +104,8 @@ ENG: water [verbal] Stand / place / position [participle] and/with [verbal] meas
 ```
 EVA: dair chedy chckhy qokey lchdyqokedy qokyl cheked qodor am
 CRO: dair hedy hcsty kostey lhdykostedy kostyl hested kodor am
-EXP: DA/DARE [Lat.] he-d+y kuhaj-stare+y ko-stare+ey lh-kost+edy ko-stare he-stare ko-oleum a+m
-ENG: GIVE (RX IMPERATIVE) +ir State / Result / After [adjective] combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [participle] The (before h-) Bone (Slavic) [verbal] measure/quantify (variant) Stand / place / position State / Result / After Stand / place / position measure/quantify (variant) Oil / oleum (variant) [case]
+EXP: DA/DARE [Lat.] he-d+y kuhaj-stare+y ko-stare+ey lh-kost+edy ko-stare he-stare ko-ulje a+m
+ENG: GIVE (RX IMPERATIVE) +ir State / Result / After [adjective] combine/cook (reduced) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position [participle] The (before h-) bone [verbal] measure/quantify (variant) Stand / place / position State / Result / After Stand / place / position measure/quantify (variant) oil [case]
 ```
 <sub>[███████░░░] 72% confidence</sub>
 
@@ -125,7 +121,7 @@ ENG: measure/quantify (variant) Stand / place / position [verbal] BONE (MEDICAL 
 EVA: s shok shedy qekchdy dchdaldyykedy qokeedy qokedy qokeg
 CRO: s šost šedy kesthdy dhdaldyystedy kosteedy kostedy kosteg
 EXP: s namoci-kost še-d+y k+dy dal+edy ko-stare+edy ko-stare+edy ko-stare
-ENG: ?s? soak/infuse (Croatian) bone (medical) Soaked-state / After soaking [adjective] vessel (short) [verbal] +?esth da-l-al [verbal] +?dhdyyst measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position
+ENG: ?s? soak/infuse (Croatian) bone Soaked-state / After soaking [adjective] vessel (short) [verbal] +?esth da-l-al [verbal] +?dhdyyst measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position
 ```
 <sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
@@ -139,4 +135,4 @@ ENG: and/with +?steod and/with [verbal] State / Result / After Stand / place / p
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f41r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f41r*

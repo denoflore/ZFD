@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 75%
 **Words:** 87 total, 87 resolved (100%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,10 +19,10 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 26 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 8 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 6 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 6 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 5 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 8 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 6 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 5 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 5 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 4 | CONFIRMED |
 | **y** | and/with | *et* | grammar | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
@@ -51,16 +51,16 @@
 ```
 EVA: psheor olkais olfchedy qopeeedar opchey dair olaiin chefchdy
 CRO: pšeor olstais olfhedy kopeeedar ophey dair olaiin hefhdy
-EXP: oleum ulje+s ulje+edy ko-radix + facere+ar oph+ey DA/DARE [Lat.] ulje+aiin he-fh+dy
-ENG: Oil / oleum (variant) +?pše oil [~15] +?stai oil [verbal] measure/quantify (variant) "Process kernel / do / treat" [instrumental] [participle] +?oph GIVE (RX IMPERATIVE) +ir oil [liquid+continuing] State / Result / After [verbal]
+EXP: sa onim ulje+s ulje+edy ko-radix + facere+ar oph+ey DA/DARE [Lat.] ulje+aiin he-fh+dy
+ENG: with that which oil [~15] +?stai oil [verbal] measure/quantify (variant) "Process kernel / do / treat" [instrumental] [participle] +?oph GIVE (RX IMPERATIVE) +ir oil [liquid+continuing] State / Result / After [verbal]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: sor orsheckhy ockhody shos alol dy kar oky daiiin okar ar okam
 CRO: sor oršecsty ocstody šos alol dy star osty daiiin ostar ar ostam
-EXP: s-r oleum+y stare+dy namoci-o+s tekućina+ol d+y stare+ar OSTEO- [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] voda OSTEO- [Lat.]
-ENG: with/together (variant) Oil / oleum (variant) [adjective] +?šecst Stand / place / position [verbal] soak/infuse (Croatian) [~15] liquid/water (vessel context) [instrumental] [adjective] Stand / place / position [instrumental] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +i BONE (MEDICAL REGISTER) water BONE (MEDICAL REGISTER) +a
+EXP: s-r ulje+y stare+dy namoci-o+s tekućina+ol d+y stare+ar OSTEO- [Lat.] DA/DARE [Lat.] OSTEO- [Lat.] voda OSTEO- [Lat.]
+ENG: with/together (variant) oil [adjective] +?šecst Stand / place / position [verbal] soak/infuse (Croatian) [~15] liquid/water (vessel context) [instrumental] [adjective] Stand / place / position [instrumental] BONE (MEDICAL REGISTER) GIVE (RX IMPERATIVE) +i BONE (MEDICAL REGISTER) water BONE (MEDICAL REGISTER) +a
 ```
 <sub>[███████░░░] 79% confidence</sub>
 
@@ -75,8 +75,8 @@ ENG: [instrumental] Stand / place / position [instrumental] Soaked-state / After
 ```
 EVA: tchdy qokar chedy qokchdy qokaiin or ar alol keodaiin olr
 CRO: thdy kostar hedy kosthdy kostaiin or ar alol steodaiin olr
-EXP: th+dy ko-stare+ar he-d+y ko-stare+dy ko-stare+aiin oleum voda tekućina+ol stare+aiin ulje
-ENG: [verbal] measure/quantify (variant) Stand / place / position [instrumental] State / Result / After [adjective] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [liquid+continuing] Oil / oleum (variant) water liquid/water (vessel context) [instrumental] Stand / place / position [liquid+continuing] oil
+EXP: th+dy ko-stare+ar he-d+y ko-stare+dy ko-stare+aiin ulje voda tekućina+ol stare+aiin ulje
+ENG: [verbal] measure/quantify (variant) Stand / place / position [instrumental] State / Result / After [adjective] measure/quantify (variant) Stand / place / position [verbal] measure/quantify (variant) Stand / place / position [liquid+continuing] oil water liquid/water (vessel context) [instrumental] Stand / place / position [liquid+continuing] oil
 ```
 <sub>[████████░░] 84% confidence</sub>
 
@@ -91,8 +91,8 @@ ENG: with/together (variant) Stand / place / position [adjective] combine/cook (
 ```
 EVA: ykain ssear olkchedy okal qotor cheeor olkady daiin qoky
 CRO: ystain ssear olsthedy ostal kotor heeor olstady daiin kosty
-EXP: i+ain sse+ar ulje+edy OSTEO- [Lat.] ko-oleum he-oleum ulje+dy DA/DARE [Lat.] ko-stare+y
-ENG: and/with [plural] [instrumental] +?sse oil [verbal] BONE (MEDICAL REGISTER) measure/quantify (variant) Oil / oleum (variant) State / Result / After Oil / oleum (variant) oil [verbal] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [adjective]
+EXP: i+ain sse+ar ulje+edy OSTEO- [Lat.] ko-ulje he-ulje ulje+dy DA/DARE [Lat.] ko-stare+y
+ENG: and/with [plural] [instrumental] +?sse oil [verbal] BONE (MEDICAL REGISTER) measure/quantify (variant) oil State / Result / After oil oil [verbal] GIVE (RX IMPERATIVE) +i measure/quantify (variant) Stand / place / position [adjective]
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
@@ -107,8 +107,8 @@ ENG: da-l-al [plural] measure/quantify (variant) [locative] Stand / place / posi
 ```
 EVA: ykykaiin sheekar otchdy dar kar shelain taipar orolkain
 CRO: ystystaiin šeestar othdy dar star šelain taipar orolstain
-EXP: i+aiin še-stare+ar posuda-h+dy DA/DARE [Lat.] stare+ar še-l+ain taip+ar oleum+ain
-ENG: and/with [liquid+continuing] Soaked-state / After soaking Stand / place / position [instrumental] vessel/container (variant) [verbal] GIVE (RX IMPERATIVE) +r Stand / place / position [instrumental] Soaked-state / After soaking [plural] [instrumental] +?taip Oil / oleum (variant) [plural]
+EXP: i+aiin še-stare+ar posuda-h+dy DA/DARE [Lat.] stare+ar še-l+ain taip+ar ulje+ain
+ENG: and/with [liquid+continuing] Soaked-state / After soaking Stand / place / position [instrumental] vessel/container (variant) [verbal] GIVE (RX IMPERATIVE) +r Stand / place / position [instrumental] Soaked-state / After soaking [plural] [instrumental] +?taip oil [plural]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
@@ -130,4 +130,4 @@ ENG: with/together (variant) Repetition / plural +?lstopalste combine/cook (redu
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f50r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f50r*

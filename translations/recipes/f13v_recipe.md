@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 73%
+**Confidence:** 75%
 **Words:** 59 total, 57 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -20,12 +20,11 @@
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 11 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 10 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 6 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 5 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 4 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 5 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 4 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -48,10 +47,10 @@
 ```
 EVA: koair chtoiin otchy kchod otol otchy octhos
 CRO: stoair htoiin othy sthod otol othy octrros
-EXP: stare+ir kuhaj-to+iin posuda-h+y stare posuda-ulje posuda-h+y centrum+s
-ENG: Stand / place / position [agent] combine/cook (reduced) [continuation] vessel/container (variant) [adjective] Stand / place / position +?hod vessel/container (variant) oil vessel/container (variant) [adjective] Center / control [~15]
+EXP: stare+ir kuhaj-to+iin posuda-h+y stare posuda-ulje posuda-h+y smjesa+s
+ENG: Stand / place / position [agent] combine/cook (reduced) [continuation] vessel/container (variant) [adjective] Stand / place / position +?hod vessel/container (variant) oil vessel/container (variant) [adjective] compound mixture [~15]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: oko qokol chodal otchol cphol choty
@@ -64,10 +63,10 @@ ENG: BONE (MEDICAL REGISTER) +o measure/quantify (variant) Stand / place / posit
 ```
 EVA: qokchy qokod chy otchy cthody
 CRO: kosthy kostod hy othy ctrrody
-EXP: ko-stare+y ko-stare kuhaj-i posuda-h+y centrum+dy
-ENG: measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position combine/cook (reduced) and/with vessel/container (variant) [adjective] Center / control [verbal]
+EXP: ko-stare+y ko-stare kuhaj-i posuda-h+y smjesa+dy
+ENG: measure/quantify (variant) Stand / place / position [adjective] measure/quantify (variant) Stand / place / position combine/cook (reduced) and/with vessel/container (variant) [adjective] compound mixture [verbal]
 ```
-<sub>[███████░░░] 79% confidence</sub>
+<sub>[████████░░] 82% confidence</sub>
 
 ```
 EVA: ols chey okos oaiin okshy qocky
@@ -88,10 +87,10 @@ ENG: measure/quantify (variant) Stand / place / position [adjective] GIVE (RX IM
 ```
 EVA: foldaiin olcphy sholdy oty shor qotyddairo d
 CRO: foldaiin olcplly šoldy oty šor kotyddairo d
-EXP: ulje+aiin ulje+y namoci-ulje+dy posuda-i namoci-oleum ko-in d
-ENG: oil [liquid+continuing] oil [adjective] +?cpll soak/infuse (Croatian) oil [verbal] vessel/container (variant) and/with soak/infuse (Croatian) Oil / oleum (variant) measure/quantify (variant) Preposition: in/with +?ddairo ?d?
+EXP: list+aiin ulje+y namoci-ulje+dy posuda-i namoci-ulje ko-in d
+ENG: leaf [liquid+continuing] oil [adjective] +?cpll soak/infuse (Croatian) oil [verbal] vessel/container (variant) and/with soak/infuse (Croatian) oil measure/quantify (variant) Preposition: in/with +?ddairo ?d?
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: dain okal chy qokchorydchy koky daiinshoin
@@ -105,17 +104,17 @@ ENG: GIVE (RX IMPERATIVE) +in BONE (MEDICAL REGISTER) combine/cook (reduced) and
 EVA: otchy daiin y dain ykolokchy okald dytaiin
 CRO: othy daiin y dain ystolosthy ostald dytaiin
 EXP: posuda-h+y DA/DARE [Lat.] i DA/DARE [Lat.] i+y OSTEO- [Lat.] i+aiin
-ENG: vessel/container (variant) [adjective] GIVE (RX IMPERATIVE) +i and/with GIVE (RX IMPERATIVE) +in and/with [adjective] +?stolosth BONE (MEDICAL REGISTER) +ald and/with [liquid+continuing]
+ENG: vessel/container (variant) [adjective] GIVE (RX IMPERATIVE) +i and/with GIVE (RX IMPERATIVE) +in and/with [adjective] +?stolosth BONE (MEDICAL REGISTER) +d and/with [liquid+continuing]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
 
 ```
 EVA: tchtod otal cthor ytaly cho talsho qocthy
 CRO: thtod otal ctrror ytaly ho talšo koctrry
-EXP: stabljika posuda-tekućina centrum i+y kuhaj-o tekućina ko-centrum+y
-ENG: stalk/stem +?tht vessel/container (variant) liquid/water (vessel context) Center / control and/with [adjective] +?tal combine/cook (reduced) liquid/water (vessel context) +?tšo measure/quantify (variant) Center / control [adjective]
+EXP: stabljika posuda-tekućina smjesa i+y kuhaj-o tekućina ko-smjesa+y
+ENG: stalk/stem +?tht vessel/container (variant) liquid/water (vessel context) compound mixture and/with [adjective] +?tal combine/cook (reduced) liquid/water (vessel context) +?tšo measure/quantify (variant) compound mixture [adjective]
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: y ol chy kchey kchor dal
@@ -127,4 +126,4 @@ ENG: and/with oil combine/cook (reduced) and/with Stand / place / position [part
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f13v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f13v*

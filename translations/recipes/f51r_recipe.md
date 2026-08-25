@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 68%
+**Confidence:** 70%
 **Words:** 83 total, 78 resolved (94%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,13 +18,11 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **st** | Stand / place / position | *stare* | general | 25 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 24 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 14 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 6 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 4 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 2 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 4 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -49,48 +47,48 @@
 ```
 EVA: tcholdchy qotchy opchear ypchedy
 CRO: tholdhy kothy ophear yphedy
-EXP: miješati+y ko-th+y ophe+ar i+edy
-ENG: combine/mix [adjective] measure/quantify (variant) [adjective] [instrumental] +?ophe and/with [verbal]
+EXP: brasno+y ko-th+y ov/taj+ar i+edy
+ENG: flour/grain [adjective] measure/quantify (variant) [adjective] the/this (demonstrative) [instrumental] and/with [verbal]
 ```
-<sub>[▓▓▓▓▓░░░░░] 54% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: dcheodaiin ckheody ckhody chody
 CRO: dheodaiin csteody cstody hody
-EXP: stabljika+aiin stare+dy stare+dy kuhaj-o+dy
-ENG: stalk/stem [liquid+continuing] Stand / place / position [verbal] Stand / place / position [verbal] combine/cook (reduced) [verbal]
+EXP: ono što+aiin stare+dy stare+dy kuhaj-o+dy
+ENG: that which/the one [liquid+continuing] Stand / place / position [verbal] Stand / place / position [verbal] combine/cook (reduced) [verbal]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
 
 ```
 EVA: y dchody ckhey oty ckheodar qoky
 CRO: y dhody cstey oty csteodar kosty
-EXP: i dho+dy stare+ey posuda-i stare+ar ko-stare+y
-ENG: and/with [verbal] +?dho Stand / place / position [participle] vessel/container (variant) and/with Stand / place / position [instrumental] measure/quantify (variant) Stand / place / position [adjective]
+EXP: i dho+dy stare+ey posuda-i stabljika+ar ko-stare+y
+ENG: and/with [verbal] +?dho Stand / place / position [participle] vessel/container (variant) and/with stalk/stem [instrumental] measure/quantify (variant) Stand / place / position [adjective]
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: daiin cthes okol cheody ckhy cheeey
 CRO: daiin ctrres ostol heody csty heeey
-EXP: DA/DARE [Lat.] centrum+s OSTEO- [Lat.] heo-d+y stare+y he-e+ey
-ENG: GIVE (RX IMPERATIVE) +i Center / control [~15] BONE (MEDICAL REGISTER) State / Result (extended) [adjective] Stand / place / position [adjective] State / Result / After [participle]
+EXP: DA/DARE [Lat.] smjesa+s OSTEO- [Lat.] heo-d+y stare+y he-e+ey
+ENG: GIVE (RX IMPERATIVE) +i compound mixture [~15] BONE (MEDICAL REGISTER) State / Result (extended) [adjective] Stand / place / position [adjective] State / Result / After [participle]
 ```
-<sub>[████████░░] 80% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: tcheody qodaiin ckhey qockhey taiin
 CRO: theody kodaiin cstey kocstey taiin
-EXP: theo+dy ko-d+aiin stare+ey ko-stare+ey t+aiin
-ENG: [verbal] +?theo measure/quantify (variant) [liquid+continuing] Stand / place / position [participle] measure/quantify (variant) Stand / place / position [participle] [liquid+continuing]
+EXP: ono što+dy ko-d+aiin stare+ey ko-stare+ey t+aiin
+ENG: that which/the one [verbal] measure/quantify (variant) [liquid+continuing] Stand / place / position [participle] measure/quantify (variant) Stand / place / position [participle] [liquid+continuing]
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: ychodaiin chokaiin ykcho daiin ykald
 CRO: yhodaiin hostaiin ystho daiin ystald
 EXP: i+aiin kuhaj-kost+aiin i DA/DARE [Lat.] i
-ENG: and/with [liquid+continuing] combine/cook (reduced) bone (medical) [liquid+continuing] and/with +?stho GIVE (RX IMPERATIVE) +i and/with +?stald
+ENG: and/with [liquid+continuing] combine/cook (reduced) bone [liquid+continuing] and/with +?stho GIVE (RX IMPERATIVE) +i and/with +?stald
 ```
 <sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
 
@@ -121,8 +119,8 @@ ENG: [instrumental] GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +i vessel (shor
 ```
 EVA: ykchol dor shey qokeol kchey shol okam
 CRO: ysthol dor šey kosteol sthey šol ostam
-EXP: i+ol oleum še-i ko-stare+ol stare+ey namoci-ulje OSTEO- [Lat.]
-ENG: and/with [instrumental] Oil / oleum (variant) Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [instrumental] Stand / place / position [participle] soak/infuse (Croatian) oil BONE (MEDICAL REGISTER) +a
+EXP: i+ol ulje še-i ko-stare+ol stare+ey namoci-ulje OSTEO- [Lat.]
+ENG: and/with [instrumental] oil Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [instrumental] Stand / place / position [participle] soak/infuse (Croatian) oil BONE (MEDICAL REGISTER) +a
 ```
 <sub>[████████░░] 80% confidence</sub>
 
@@ -161,11 +159,11 @@ ENG: GIVE (RX IMPERATIVE) +iiith measure/quantify (variant) [liquid+continuing] 
 ```
 EVA: qokol cheor ckhal s or aldyotal
 CRO: kostol heor cstal s or aldyotal
-EXP: ko-stare+ol heo-r stare+al s oleum tekućina+al
-ENG: measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) Stand / place / position [locative] ?s? Oil / oleum (variant) liquid/water (vessel context) [locative]
+EXP: ko-stare+ol heo-r stare+al s ulje tekućina+al
+ENG: measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) Stand / place / position [locative] ?s? oil liquid/water (vessel context) [locative]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f51r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f51r*

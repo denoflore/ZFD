@@ -9,8 +9,8 @@
 
 **Section:** Astronomical
 **Confidence:** 78%
-**Words:** 100 total, 97 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Words:** 100 total, 98 resolved (98%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,13 +18,13 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **al** | liquid/water (vessel context) | *aqua* | liquid | 14 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 13 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 9 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 7 | CONFIRMED |
+| **al** | liquid/water (vessel context) | *aqua* | liquid | 15 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 10 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 9 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 7 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 6 | CANDIDATE |
 | **ee** | (intensifier) |  | general | 3 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 3 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
 
 ## Preparation Methods
@@ -50,8 +50,8 @@
 ```
 EVA: char orom
 CRO: har orom
-EXP: kuhaj-voda oleum+om
-ENG: combine/cook (reduced) water Oil / oleum (variant) [case]
+EXP: kuhaj-voda ulje+om
+ENG: combine/cook (reduced) water oil [case]
 ```
 <sub>[██████████] 100% confidence</sub>
 
@@ -66,10 +66,10 @@ ENG: [case] +?ofapl
 ```
 EVA: osheo parar oteeodaiin she ateey daiin oteokeey dal al oteey teey dy otchy keey shseor ochey eodal sheeolody alody cheol otar otam oteodar chpchy cpar al aiin oteochor okeodaly oteey teeey okeey keor or arol cheols okaikaly
 CRO: ošeo parar oteeodaiin še ateey daiin oteosteey dal al oteey teey dy othy steey šseor ohey eodal šeeolody alody heol otar otam oteodar hphy plar al aiin oteohor osteodaly oteey teeey osteey steor or arol heols ostaistaly
-EXP: ošeo voda+ar posuda-ee+aiin namoci-e ate+ey DA/DARE [Lat.] posuda-kost+ey DA/DARE [Lat.] tekućina posuda-e+ey te+ey d+y posuda-h+y stare+ey namoci-oleum oh+ey stabljika+al še-ulje+dy tekućina+dy heo-l posuda-voda posuda-a+m posuda-stabljika+ar kuhaj-ph+y pl+ar tekućina a+iin posuda-obraditi OSTEO- [Lat.] posuda-e+ey ee+ey OSTEO- [Lat.] stare oleum voda+ol heo-l+s OSTEO- [Lat.]
-ENG: ?ošeo? water [instrumental] vessel/container (variant) (intensifier) [liquid+continuing] soak/infuse (Croatian) [participle] +?ate GIVE (RX IMPERATIVE) +i vessel/container (variant) bone (medical) [participle] GIVE (RX IMPERATIVE) +l liquid/water (vessel context) vessel/container (variant) [participle] [participle] [adjective] vessel/container (variant) [adjective] Stand / place / position [participle] soak/infuse (Croatian) Oil / oleum (variant) [participle] stalk/stem [locative] Soaked-state / After soaking oil [verbal] liquid/water (vessel context) [verbal] State / Result (extended) vessel/container (variant) water vessel/container (variant) [case] vessel/container (variant) stalk/stem [instrumental] combine/cook (reduced) [adjective] [instrumental] liquid/water (vessel context) [continuation] vessel/container (variant) process/work BONE (MEDICAL REGISTER) +eodal vessel/container (variant) [participle] (intensifier) [participle] BONE (MEDICAL REGISTER) +e Stand / place / position +?eor Oil / oleum (variant) water [instrumental] State / Result (extended) [~15] BONE (MEDICAL REGISTER) +aistal
+EXP: sa onim voda+ar posuda-ee+aiin namoci-e ate+ey DA/DARE [Lat.] posuda-ih+ey DA/DARE [Lat.] tekućina posuda-e+ey te+ey d+y posuda-h+y stare+ey namoci-ulje oh+ey stabljika+al še-ulje+dy tekućina+dy heo-l posuda-voda posuda-a+m posuda-stabljika+ar kuhaj-ph+y pl+ar tekućina a+iin posuda-kuhati OSTEO- [Lat.] posuda-e+ey ee+ey OSTEO- [Lat.] stare ulje voda+ol heo-l+s OSTEO- [Lat.]
+ENG: with that which water [instrumental] vessel/container (variant) (intensifier) [liquid+continuing] soak/infuse (Croatian) [participle] +?ate GIVE (RX IMPERATIVE) +i vessel/container (variant) them/those [participle] GIVE (RX IMPERATIVE) +l liquid/water (vessel context) vessel/container (variant) [participle] [participle] [adjective] vessel/container (variant) [adjective] Stand / place / position [participle] soak/infuse (Croatian) oil [participle] stalk/stem [locative] Soaked-state / After soaking oil [verbal] liquid/water (vessel context) [verbal] State / Result (extended) vessel/container (variant) water vessel/container (variant) [case] vessel/container (variant) stalk/stem [instrumental] combine/cook (reduced) [adjective] [instrumental] liquid/water (vessel context) [continuation] vessel/container (variant) cook/combine BONE (MEDICAL REGISTER) +eodal vessel/container (variant) [participle] (intensifier) [participle] BONE (MEDICAL REGISTER) +e Stand / place / position +?eor oil water [instrumental] State / Result (extended) [~15] BONE (MEDICAL REGISTER) +stal
 ```
-<sub>[███████░░░] 70% confidence</sub>
+<sub>[███████░░░] 72% confidence</sub>
 
 ```
 EVA: chfaly
@@ -138,18 +138,18 @@ ENG: liquid/water (vessel context) [instrumental] [case] GIVE (RX IMPERATIVE) +n
 ```
 EVA: opalor ar
 CRO: opalor ar
-EXP: oleum voda
-ENG: Oil / oleum (variant) +?opal water
+EXP: tekućina voda
+ENG: liquid/water (vessel context) +?opor water
 ```
 <sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
 
 ```
 EVA: okol sheeor chal oteeos al shsky okalar ar okeo dar oty oto kaiin chey tol otchr chtos cheor shepchol otor sheo shopcho ar aly okeo cheey otal al shldy otaly
 CRO: ostol šeeor hal oteeos al šssty ostalar ar osteo dar oty oto staiin hey tol othr htos heor šephol otor šeo šopho ar aly osteo heey otal al šldy otaly
-EXP: OSTEO- [Lat.] še-oleum kuhaj-tekućina posuda-ee+s tekućina namoci-stare+y OSTEO- [Lat.] voda OSTEUM [Lat.] DA/DARE [Lat.] posuda-i posuda-o stare+aiin he-i t+ol posuda-hr kuhaj-to+s heo-r še-ph+ol posuda-oleum še-o namoci-opho voda tekućina+y OSTEUM [Lat.] he-e+y posuda-tekućina tekućina namoci-l+dy posuda-tekućina+y
-ENG: BONE (MEDICAL REGISTER) Soaked-state / After soaking Oil / oleum (variant) combine/cook (reduced) liquid/water (vessel context) vessel/container (variant) (intensifier) [~15] liquid/water (vessel context) soak/infuse (Croatian) Stand / place / position [adjective] BONE (MEDICAL REGISTER) +al water BONE (FULL LATIN) GIVE (RX IMPERATIVE) +r vessel/container (variant) and/with vessel/container (variant) Stand / place / position [liquid+continuing] State / Result / After and/with [instrumental] vessel/container (variant) combine/cook (reduced) [~15] State / Result (extended) Soaked-state / After soaking [instrumental] vessel/container (variant) Oil / oleum (variant) Soaked-state / After soaking soak/infuse (Croatian) +?opho water liquid/water (vessel context) [adjective] BONE (FULL LATIN) State / Result / After [adjective] vessel/container (variant) liquid/water (vessel context) liquid/water (vessel context) soak/infuse (Croatian) [verbal] vessel/container (variant) liquid/water (vessel context) [adjective]
+EXP: OSTEO- [Lat.] še-ulje kuhaj-tekućina posuda-ee+s tekućina namoci-stare+y OSTEO- [Lat.] voda OSTEUM [Lat.] DA/DARE [Lat.] posuda-i posuda-o stare+aiin he-i t+ol posuda-hr kuhaj-to+s heo-r še-ph+ol posuda-ulje še-o namoci-opho voda tekućina+y OSTEUM [Lat.] he-e+y posuda-tekućina tekućina namoci-l+dy posuda-tekućina+y
+ENG: BONE (MEDICAL REGISTER) Soaked-state / After soaking oil combine/cook (reduced) liquid/water (vessel context) vessel/container (variant) (intensifier) [~15] liquid/water (vessel context) soak/infuse (Croatian) Stand / place / position [adjective] BONE (MEDICAL REGISTER) water BONE (FULL LATIN) GIVE (RX IMPERATIVE) +r vessel/container (variant) and/with vessel/container (variant) Stand / place / position [liquid+continuing] State / Result / After and/with [instrumental] vessel/container (variant) combine/cook (reduced) [~15] State / Result (extended) Soaked-state / After soaking [instrumental] vessel/container (variant) oil Soaked-state / After soaking soak/infuse (Croatian) +?opho water liquid/water (vessel context) [adjective] BONE (FULL LATIN) State / Result / After [adjective] vessel/container (variant) liquid/water (vessel context) liquid/water (vessel context) soak/infuse (Croatian) [verbal] vessel/container (variant) liquid/water (vessel context) [adjective]
 ```
-<sub>[████████░░] 83% confidence</sub>
+<sub>[████████░░] 84% confidence</sub>
 
 ```
 EVA: otalody
@@ -170,8 +170,8 @@ ENG: vessel/container (variant) liquid/water (vessel context) [liquid+continuing
 ```
 EVA: otar shor
 CRO: otar šor
-EXP: posuda-voda namoci-oleum
-ENG: vessel/container (variant) water soak/infuse (Croatian) Oil / oleum (variant)
+EXP: posuda-voda namoci-ulje
+ENG: vessel/container (variant) water soak/infuse (Croatian) oil
 ```
 <sub>[██████████] 100% confidence</sub>
 
@@ -193,4 +193,4 @@ ENG: Stand / place / position [locative] BONE (MEDICAL REGISTER) +e BONE (MEDICA
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f71v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f71v*

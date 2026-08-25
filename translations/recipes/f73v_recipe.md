@@ -10,7 +10,7 @@
 **Section:** Astronomical
 **Confidence:** 62%
 **Words:** 97 total, 93 resolved (96%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,14 +19,12 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 24 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 14 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 14 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 4 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 4 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 4 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 4 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 2 | CONFIRMED |
-| **sal** | Salt (Latin) | *sal* | mineral | 1 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -101,8 +99,8 @@ ENG: State / Result (extended) [adjective]
 ```
 EVA: otoar ykeody okodeey qopchey opaiin qoteedy dpy otedy csedy qokeody cheoral okedal oteody shedy otesalod air chy ykchs aly ykeol ydys opchey dy toly chfaikch ytedar echy qokeey oty yteedy choldy qokalaiin ykaipy orary
 CRO: otoar ysteody ostodeey kophey opaiin koteedy dpy otedy csedy kosteody heoral ostedal oteody šedy otesalod air hy ysths aly ysteol ydys ophey dy toly hfaisth ytedar ehy kosteey oty yteedy holdy kostalaiin ystaipy orary
-EXP: posuda-o+ar i+dy OSTEO- [Lat.] ko-ph+ey op+aiin ko-te+edy dp+y posuda-e+dy cs+edy ko-stare+dy heo-r+al OSTEO- [Lat.] posuda-eo+dy še-d+y posuda-sal a+ir kuhaj-i i+s tekućina+y i+ol i+s oph+ey d+y ulje+y kuhaj-stare i+ar eh+y ko-stare+ey posuda-i i+edy kuhaj-ulje+dy ko-kotao+aiin i+y oleum+y
-ENG: vessel/container (variant) [instrumental] and/with [verbal] +?steo BONE (MEDICAL REGISTER) +ode measure/quantify (variant) [participle] [liquid+continuing] measure/quantify (variant) [verbal] [adjective] +?dp vessel/container (variant) [verbal] [verbal] measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) [locative] BONE (MEDICAL REGISTER) +ed vessel/container (variant) [verbal] Soaked-state / After soaking [adjective] vessel/container (variant) Salt (Latin) [agent] combine/cook (reduced) and/with and/with [~15] +?sth liquid/water (vessel context) [adjective] and/with [instrumental] and/with [~15] [participle] +?oph [adjective] oil [adjective] combine/cook (reduced) Stand / place / position +?faih and/with [instrumental] [adjective] +?eh measure/quantify (variant) Stand / place / position [participle] vessel/container (variant) and/with and/with [verbal] combine/cook (reduced) oil [verbal] measure/quantify (variant) cauldron [liquid+continuing] and/with [adjective] +?staip Oil / oleum (variant) [adjective]
+EXP: posuda-o+ar i+dy OSTEO- [Lat.] ko-ph+ey op+aiin ko-te+edy dp+y posuda-e+dy cs+edy ko-stare+dy heo-r+al OSTEO- [Lat.] posuda-eo+dy še-d+y posuda-sol a+ir kuhaj-i i+s tekućina+y i+ol i+s oph+ey d+y ulje+y kuhaj-stare i+ar eh+y ko-stare+ey posuda-i i+edy kuhaj-ulje+dy ko-kotao+aiin i+y ulje+y
+ENG: vessel/container (variant) [instrumental] and/with [verbal] +?steo BONE (MEDICAL REGISTER) +ode measure/quantify (variant) [participle] [liquid+continuing] measure/quantify (variant) [verbal] [adjective] +?dp vessel/container (variant) [verbal] [verbal] measure/quantify (variant) Stand / place / position [verbal] State / Result (extended) [locative] BONE (MEDICAL REGISTER) +ed vessel/container (variant) [verbal] Soaked-state / After soaking [adjective] vessel/container (variant) salt [agent] combine/cook (reduced) and/with and/with [~15] +?sth liquid/water (vessel context) [adjective] and/with [instrumental] and/with [~15] [participle] +?oph [adjective] oil [adjective] combine/cook (reduced) Stand / place / position +?faih and/with [instrumental] [adjective] +?eh measure/quantify (variant) Stand / place / position [participle] vessel/container (variant) and/with and/with [verbal] combine/cook (reduced) oil [verbal] measure/quantify (variant) cauldron [liquid+continuing] and/with [adjective] +?staip oil [adjective]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
 
@@ -189,8 +187,8 @@ ENG: (intensifier) [adjective] +?ofhs
 ```
 EVA: oraiiny
 CRO: oraiiny
-EXP: oleum+y
-ENG: Oil / oleum (variant) [adjective] +?aiin
+EXP: ulje+y
+ENG: oil [adjective] +?aiin
 ```
 <sub>[▓▓▓▓░░░░░░] 43% confidence</sub>
 
@@ -229,8 +227,8 @@ ENG: measure/quantify (variant) Stand / place / position [adjective]
 ```
 EVA: oteotor alshy oteolain chokeedam otody qoty shedy chdy tchol oteody cheytey choty okey dy okecholy otey chodaiin chey okchdy saly ar daly
 CRO: oteotor alšy oteolain hosteedam otody koty šedy hdy thol oteody heytey hoty ostey dy osteholy otey hodaiin hey osthdy saly ar daly
-EXP: posuda-oleum tekućina+y posuda-ulje+ain kuhaj-kost+m posuda-o+dy ko-t+y še-d+y kuhaj-d+y th+ol posuda-eo+dy he-i+ey kuhaj-ot+y OSTEO- [Lat.] d+y OSTEO- [Lat.] posuda-e+y kuhaj-stabljika+aiin he-i OSTEO- [Lat.] s-l+y voda DA/DARE [Lat.]
-ENG: vessel/container (variant) Oil / oleum (variant) liquid/water (vessel context) [adjective] vessel/container (variant) oil [plural] combine/cook (reduced) bone (medical) [case] vessel/container (variant) [verbal] measure/quantify (variant) [adjective] Soaked-state / After soaking [adjective] combine/cook (reduced) [adjective] [instrumental] vessel/container (variant) [verbal] State / Result / After and/with [participle] combine/cook (reduced) [adjective] BONE (MEDICAL REGISTER) [adjective] BONE (MEDICAL REGISTER) +ehol vessel/container (variant) [adjective] combine/cook (reduced) stalk/stem [liquid+continuing] State / Result / After and/with BONE (MEDICAL REGISTER) +h with/together [adjective] water GIVE (RX IMPERATIVE) +l
+EXP: posuda-ulje tekućina+y posuda-ulje+ain kuhaj-kost+m posuda-o+dy ko-t+y še-d+y kuhaj-d+y th+ol posuda-eo+dy he-i+ey kuhaj-ot+y OSTEO- [Lat.] d+y OSTEO- [Lat.] posuda-e+y kuhaj-stabljika+aiin he-i OSTEO- [Lat.] s-l+y voda DA/DARE [Lat.]
+ENG: vessel/container (variant) oil liquid/water (vessel context) [adjective] vessel/container (variant) oil [plural] combine/cook (reduced) bone [case] vessel/container (variant) [verbal] measure/quantify (variant) [adjective] Soaked-state / After soaking [adjective] combine/cook (reduced) [adjective] [instrumental] vessel/container (variant) [verbal] State / Result / After and/with [participle] combine/cook (reduced) [adjective] BONE (MEDICAL REGISTER) [adjective] BONE (MEDICAL REGISTER) +ehol vessel/container (variant) [adjective] combine/cook (reduced) stalk/stem [liquid+continuing] State / Result / After and/with BONE (MEDICAL REGISTER) +h with/together [adjective] water GIVE (RX IMPERATIVE) +l
 ```
 <sub>[███████░░░] 74% confidence</sub>
 
@@ -309,11 +307,11 @@ ENG: and/with [locative]
 ```
 EVA: otedchor alar olkcho oto lam okees chory ytaly ylaly otasam
 CRO: otedhor alar olstho oto lam ostees hory ytaly ylaly otasam
-EXP: posuda-radix + facere tekućina+ar ulje posuda-o l-a+m OSTEO- [Lat.] kuhaj-oleum+y i+y i+y posuda-asa+m
-ENG: vessel/container (variant) "Process kernel / do / treat" liquid/water (vessel context) [instrumental] oil +?stho vessel/container (variant) The / that (determiner) [case] BONE (MEDICAL REGISTER) +ee combine/cook (reduced) Oil / oleum (variant) [adjective] and/with [adjective] +?tal and/with [adjective] +?lal vessel/container (variant) [case]
+EXP: posuda-radix + facere tekućina+ar ulje posuda-o l-a+m OSTEO- [Lat.] kuhaj-ulje+y i+y i+y posuda-asa+m
+ENG: vessel/container (variant) "Process kernel / do / treat" liquid/water (vessel context) [instrumental] oil +?stho vessel/container (variant) The / that (determiner) [case] BONE (MEDICAL REGISTER) +ee combine/cook (reduced) oil [adjective] and/with [adjective] +?tal and/with [adjective] +?lal vessel/container (variant) [case]
 ```
 <sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f73v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f73v*

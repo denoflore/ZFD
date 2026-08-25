@@ -10,7 +10,7 @@
 **Section:** Herbal A
 **Confidence:** 65%
 **Words:** 83 total, 78 resolved (94%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,12 +18,11 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **st** | Stand / place / position | *stare* | general | 15 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 6 | CONFIRMED |
-| **od** | stalk/stem | *caulis* | plant_part | 5 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 4 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 14 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 6 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 4 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
 | **y** | and/with | *et* | grammar | 3 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -69,39 +68,39 @@ ENG: GIVE (RX IMPERATIVE) +i [agent] State / Result / After [adjective] State / 
 EVA: qykeeody cheooky qokeody sheey okeody cheody cheeody cheekeody
 CRO: kysteeody heoosty kosteody šeey osteody heody heeody heesteody
 EXP: k+dy heo-kost+y ko-stare+dy še-e+y OSTEO- [Lat.] heo-d+y he-eo+dy he-stare+dy
-ENG: vessel (short) [verbal] +?ysteeo State / Result (extended) bone (medical) [adjective] measure/quantify (variant) Stand / place / position [verbal] Soaked-state / After soaking [adjective] BONE (MEDICAL REGISTER) +eo State / Result (extended) [adjective] State / Result / After [verbal] State / Result / After Stand / place / position [verbal]
+ENG: vessel (short) [verbal] +?ysteeo State / Result (extended) bone [adjective] measure/quantify (variant) Stand / place / position [verbal] Soaked-state / After soaking [adjective] BONE (MEDICAL REGISTER) +eo State / Result (extended) [adjective] State / Result / After [verbal] State / Result / After Stand / place / position [verbal]
 ```
 <sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: dchos cheocthy cheody qotchody octhody okeeody chteody cheody s
 CRO: dhos heoctrry heody kothody octrrody osteeody hteody heody s
-EXP: dho+s heo-centrum+y heo-d+y ko-tho+dy centrum+dy OSTEO- [Lat.] kuhaj-teo+dy heo-d+y s
-ENG: [~15] +?dho State / Result (extended) Center / control [adjective] State / Result (extended) [adjective] measure/quantify (variant) [verbal] Center / control [verbal] BONE (MEDICAL REGISTER) +eeo combine/cook (reduced) [verbal] State / Result (extended) [adjective] ?s?
+EXP: dho+s heo-smjesa+y heo-d+y ko-tho+dy smjesa+dy OSTEO- [Lat.] kuhaj-teo+dy heo-d+y s
+ENG: [~15] +?dho State / Result (extended) compound mixture [adjective] State / Result (extended) [adjective] measure/quantify (variant) [verbal] compound mixture [verbal] BONE (MEDICAL REGISTER) +eeo combine/cook (reduced) [verbal] State / Result (extended) [adjective] ?s?
 ```
-<sub>[▓▓▓▓▓░░░░░] 56% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
 ```
 EVA: qokcho daiin cheeodam
 CRO: kostho daiin heeodam
-EXP: ko-stare DA/DARE [Lat.] he-da+m
-ENG: measure/quantify (variant) Stand / place / position GIVE (RX IMPERATIVE) +i State / Result / After da [case]
+EXP: ko-stare DA/DARE [Lat.] he-dati+m
+ENG: measure/quantify (variant) Stand / place / position GIVE (RX IMPERATIVE) +i State / Result / After give/add [case]
 ```
 <sub>[███████░░░] 73% confidence</sub>
 
 ```
 EVA: tsheodal okam chckhey okchdy doctho opchey dy kodain oforam
 CRO: tšeodal ostam hcstey osthdy doctrro ophey dy stodain oforam
-EXP: stabljika+al OSTEO- [Lat.] kuhaj-stare+ey OSTEO- [Lat.] centrum oph+ey d+y stare+ain oleum+m
-ENG: stalk/stem [locative] BONE (MEDICAL REGISTER) +a combine/cook (reduced) Stand / place / position [participle] BONE (MEDICAL REGISTER) +h Center / control +?doro [participle] +?oph [adjective] Stand / place / position [plural] Oil / oleum (variant) [case]
+EXP: sa onim+al OSTEO- [Lat.] kuhaj-stare+ey OSTEO- [Lat.] smjesa oph+ey d+y stare+ain ulje+m
+ENG: with that which [locative] BONE (MEDICAL REGISTER) +a combine/cook (reduced) Stand / place / position [participle] BONE (MEDICAL REGISTER) +h compound mixture [participle] +?oph [adjective] Stand / place / position [plural] oil [case]
 ```
-<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ```
 EVA: daiis sheedy qokeedy chcteyotchod shekey tedy okoldm
 CRO: daiis šeedy kosteedy hcteyothod šestey tedy ostoldm
-EXP: DA/DARE [Lat.] še-e+dy ko-stare+edy kuhaj-stabljika še-stare+ey t+edy OSTEO- [Lat.]
-ENG: GIVE (RX IMPERATIVE) +ii Soaked-state / After soaking [verbal] measure/quantify (variant) Stand / place / position [verbal] combine/cook (reduced) stalk/stem +?cteyoth Soaked-state / After soaking Stand / place / position [participle] [verbal] BONE (MEDICAL REGISTER) +old
+EXP: DA/DARE [Lat.] še-e+dy ko-stare+edy kuhaj-ey še-stare+ey t+edy OSTEO- [Lat.]
+ENG: GIVE (RX IMPERATIVE) +ii Soaked-state / After soaking [verbal] measure/quantify (variant) Stand / place / position [verbal] combine/cook (reduced) liquid/fluid +?ctothod Soaked-state / After soaking Stand / place / position [participle] [verbal] BONE (MEDICAL REGISTER) +old
 ```
 <sub>[███████░░░] 70% confidence</sub>
 
@@ -116,10 +115,10 @@ ENG: [agent] Soaked-state / After soaking [verbal] The (before h-) [verbal] Comp
 ```
 EVA: odair sheeo ckhy sar al daiidydcheckhey daiin chedy cthedy
 CRO: odair šeeo csty sar al daiidydhecstey daiin hedy ctrredy
-EXP: stabljika+ir še-eo stare+y s-r tekućina DA/DARE [Lat.] DA/DARE [Lat.] he-d+y centrum+edy
-ENG: stalk/stem [agent] Soaked-state / After soaking Stand / place / position [adjective] with/together liquid/water (vessel context) GIVE (RX IMPERATIVE) +iidydhec GIVE (RX IMPERATIVE) +i State / Result / After [adjective] Center / control [verbal]
+EXP: stabljika+ir še-eo stare+y s-r tekućina DA/DARE [Lat.] DA/DARE [Lat.] he-d+y smjesa+edy
+ENG: stalk/stem [agent] Soaked-state / After soaking Stand / place / position [adjective] with/together liquid/water (vessel context) GIVE (RX IMPERATIVE) +iidydcst GIVE (RX IMPERATIVE) +i State / Result / After [adjective] compound mixture [verbal]
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: qoctchey kedy shedaiins cheos ykeos qcthhy tcfhy
@@ -139,4 +138,4 @@ ENG: [verbal] [adjective] +?cteh "Process kernel / do / treat" [case]
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f57r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f57r*

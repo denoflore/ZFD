@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Pharmaceutical
-**Confidence:** 75%
-**Words:** 176 total, 172 resolved (98%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 76%
+**Words:** 176 total, 173 resolved (98%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,14 +19,14 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **st** | Stand / place / position | *stare* | general | 30 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 13 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 13 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 13 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 13 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 13 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 8 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 7 | CONFIRMED |
-| **ctr** | Center / control | *centrum* | general | 4 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 7 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 4 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 3 | CONFIRMED |
+| **or** | oil | *oleum* | ingredient | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -55,8 +55,8 @@
 ```
 EVA: tchody podar shody qofaiin ofchdy otedy qotedaiin shor olsain
 CRO: thody podar šody kofaiin ofhdy otedy kotedaiin šor olsain
-EXP: tho+dy stabljika+ar namoci-o+dy ko-f+aiin ofh+dy posuda-e+dy ko-radix + facere+aiin namoci-oleum ulje+ain
-ENG: [verbal] +?tho stalk/stem [instrumental] soak/infuse (Croatian) [verbal] measure/quantify (variant) [liquid+continuing] [verbal] +?ofh vessel/container (variant) [verbal] measure/quantify (variant) "Process kernel / do / treat" [liquid+continuing] soak/infuse (Croatian) Oil / oleum (variant) oil [plural]
+EXP: tho+dy stabljika+ar namoci-o+dy ko-f+aiin ofh+dy posuda-e+dy ko-radix + facere+aiin namoci-ulje ulje+ain
+ENG: [verbal] +?tho stalk/stem [instrumental] soak/infuse (Croatian) [verbal] measure/quantify (variant) [liquid+continuing] [verbal] +?ofh vessel/container (variant) [verbal] measure/quantify (variant) "Process kernel / do / treat" [liquid+continuing] soak/infuse (Croatian) oil oil [plural]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
@@ -71,8 +71,8 @@ ENG: with/together (variant) Soaked-state / After soaking [adjective] measure/qu
 ```
 EVA: arcsy taiin shekain okar or aiin chckhy okal otain okal ody
 CRO: arcsy taiin šestain ostar or aiin hcsty ostal otain ostal ody
-EXP: voda+y t+aiin še-stare+ain OSTEO- [Lat.] oleum a+iin kuhaj-stare+y OSTEO- [Lat.] posuda-a+in OSTEO- [Lat.] o+dy
-ENG: water [adjective] [liquid+continuing] Soaked-state / After soaking Stand / place / position [plural] BONE (MEDICAL REGISTER) Oil / oleum (variant) [continuation] combine/cook (reduced) Stand / place / position [adjective] BONE (MEDICAL REGISTER) vessel/container (variant) [plural] BONE (MEDICAL REGISTER) [verbal]
+EXP: voda+y t+aiin še-stare+ain OSTEO- [Lat.] ulje a+iin kuhaj-stare+y OSTEO- [Lat.] posuda-a+in OSTEO- [Lat.] o+dy
+ENG: water [adjective] [liquid+continuing] Soaked-state / After soaking Stand / place / position [plural] BONE (MEDICAL REGISTER) oil [continuation] combine/cook (reduced) Stand / place / position [adjective] BONE (MEDICAL REGISTER) vessel/container (variant) [plural] BONE (MEDICAL REGISTER) [verbal]
 ```
 <sub>[████████░░] 86% confidence</sub>
 
@@ -87,10 +87,10 @@ ENG: GIVE (RX IMPERATIVE) +i oil [plural] measure/quantify (variant) Stand / pla
 ```
 EVA: tar fcheey shos aiin okar olkaiin otalainokaiin ar
 CRO: tar fheey šos aiin ostar olstaiin otalainostaiin ar
-EXP: t+ar fhe+ey namoci-o+s a+iin OSTEO- [Lat.] ulje+aiin posuda-tekućina+aiin voda
-ENG: [instrumental] [participle] +?fhe soak/infuse (Croatian) [~15] [continuation] BONE (MEDICAL REGISTER) oil [liquid+continuing] vessel/container (variant) liquid/water (vessel context) [liquid+continuing] water
+EXP: t+ar ov/taj+ey namoci-o+s a+iin OSTEO- [Lat.] ulje+aiin posuda-tekućina+aiin voda
+ENG: [instrumental] the/this (demonstrative) [participle] soak/infuse (Croatian) [~15] [continuation] BONE (MEDICAL REGISTER) oil [liquid+continuing] vessel/container (variant) liquid/water (vessel context) [liquid+continuing] water
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: dain ykaly chalsshedain olaiin yokain ldy
@@ -111,32 +111,32 @@ ENG: measure/quantify (variant) Stand / place / position [participle] GIVE (RX I
 ```
 EVA: tolteedy cthoepain oekshy qofchdaiin shoyfar okshy okain ar alfshed
 CRO: tolteedy ctrroepain oestšy kofhdaiin šoyfar ostšy ostain ar alfšed
-EXP: ulje+edy centrum+ain stare+y ko-fhd+aiin namoci-i+ar OSTEO- [Lat.] OSTEO- [Lat.] voda tekućina
-ENG: oil [verbal] Center / control [plural] Stand / place / position [adjective] measure/quantify (variant) [liquid+continuing] soak/infuse (Croatian) and/with [instrumental] BONE (MEDICAL REGISTER) +š BONE (MEDICAL REGISTER) water liquid/water (vessel context) +?fšed
+EXP: ulje+edy smjesa+ain stare+y ko-fhd+aiin namoci-i+ar OSTEO- [Lat.] OSTEO- [Lat.] voda tekućina
+ENG: oil [verbal] compound mixture [plural] Stand / place / position [adjective] measure/quantify (variant) [liquid+continuing] soak/infuse (Croatian) and/with [instrumental] BONE (MEDICAL REGISTER) +š BONE (MEDICAL REGISTER) water liquid/water (vessel context) +?fšed
 ```
-<sub>[▓▓▓▓▓▓░░░░] 69% confidence</sub>
+<sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: okshy tshor qoksh qokain otar oty qokedy otal ytchdy qokar am
 CRO: ostšy tšor kostš kostain otar oty kostedy otal ythdy kostar am
-EXP: OSTEO- [Lat.] procijediti ko-stare ko-stare+ain posuda-voda posuda-i ko-stare+edy posuda-tekućina i+dy ko-stare+ar a+m
-ENG: BONE (MEDICAL REGISTER) +š strain/soak measure/quantify (variant) Stand / place / position measure/quantify (variant) Stand / place / position [plural] vessel/container (variant) water vessel/container (variant) and/with measure/quantify (variant) Stand / place / position [verbal] vessel/container (variant) liquid/water (vessel context) and/with [verbal] measure/quantify (variant) Stand / place / position [instrumental] [case]
+EXP: OSTEO- [Lat.] natopiti ko-stare ko-stare+ain posuda-voda posuda-i ko-stare+edy posuda-tekućina i+dy ko-stare+ar a+m
+ENG: BONE (MEDICAL REGISTER) +š soak/infuse measure/quantify (variant) Stand / place / position measure/quantify (variant) Stand / place / position [plural] vessel/container (variant) water vessel/container (variant) and/with measure/quantify (variant) Stand / place / position [verbal] vessel/container (variant) liquid/water (vessel context) and/with [verbal] measure/quantify (variant) Stand / place / position [instrumental] [case]
 ```
 <sub>[████████░░] 86% confidence</sub>
 
 ```
 EVA: tchody qokaiin ychar okain sheody chedy chcthy kedy ety dain al
 CRO: thody kostaiin yhar ostain šeody hedy hctrry stedy ety dain al
-EXP: tho+dy ko-stare+aiin i+ar OSTEO- [Lat.] šeo-d+y he-d+y kuhaj-centrum+y stare+edy et+y DA/DARE [Lat.] tekućina
-ENG: [verbal] +?tho measure/quantify (variant) Stand / place / position [liquid+continuing] and/with [instrumental] BONE (MEDICAL REGISTER) Soaked-state (extended) [adjective] State / Result / After [adjective] combine/cook (reduced) Center / control [adjective] Stand / place / position [verbal] [adjective] +?et GIVE (RX IMPERATIVE) +in liquid/water (vessel context)
+EXP: tho+dy ko-stare+aiin i+ar OSTEO- [Lat.] šeo-d+y he-d+y kuhaj-smjesa+y stare+edy et+y DA/DARE [Lat.] tekućina
+ENG: [verbal] +?tho measure/quantify (variant) Stand / place / position [liquid+continuing] and/with [instrumental] BONE (MEDICAL REGISTER) Soaked-state (extended) [adjective] State / Result / After [adjective] combine/cook (reduced) compound mixture [adjective] Stand / place / position [verbal] [adjective] +?et GIVE (RX IMPERATIVE) +in liquid/water (vessel context)
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[███████░░░] 78% confidence</sub>
 
 ```
 EVA: tchedy qokal oty shekshey otaldy okshey ytshedy akarar yty chdy
 CRO: thedy kostal oty šestšey otaldy ostšey ytšedy astarar yty hdy
-EXP: th+edy ko-stare+al posuda-i še-stare+ey posuda-tekućina+dy OSTEO- [Lat.] i+edy vrelina+ar i+y kuhaj-d+y
-ENG: [verbal] measure/quantify (variant) Stand / place / position [locative] vessel/container (variant) and/with Soaked-state / After soaking Stand / place / position [participle] vessel/container (variant) liquid/water (vessel context) [verbal] BONE (MEDICAL REGISTER) +š and/with [verbal] heat (strong) [instrumental] and/with [adjective] combine/cook (reduced) [adjective]
+EXP: th+edy ko-stare+al posuda-i še-stare+ey posuda-tekućina+dy OSTEO- [Lat.] i+edy star+ar i+y kuhaj-d+y
+ENG: [verbal] measure/quantify (variant) Stand / place / position [locative] vessel/container (variant) and/with Soaked-state / After soaking Stand / place / position [participle] vessel/container (variant) liquid/water (vessel context) [verbal] BONE (MEDICAL REGISTER) +š and/with [verbal] old/aged [instrumental] and/with [adjective] combine/cook (reduced) [adjective]
 ```
 <sub>[████████░░] 82% confidence</sub>
 
@@ -151,8 +151,8 @@ ENG: vessel/container (variant) liquid/water (vessel context) Soaked-state / Aft
 ```
 EVA: tshdol qokshy dchdy shedy dkshey chefar otchdy ol shedar chdam
 CRO: tšdol kostšy dhdy šedy dstšey hefar othdy ol šedar hdam
-EXP: tšd+ol ko-stare+y dh+dy še-d+y stare+ey he-f+ar posuda-h+dy ulje še-d+ar kuhaj-da+m
-ENG: [instrumental] +?tšd measure/quantify (variant) Stand / place / position [adjective] [verbal] Soaked-state / After soaking [adjective] Stand / place / position [participle] State / Result / After [instrumental] vessel/container (variant) [verbal] oil Soaked-state / After soaking [instrumental] combine/cook (reduced) da [case]
+EXP: tšd+ol ko-stare+y dh+dy še-d+y stare+ey he-f+ar posuda-h+dy ulje še-d+ar kuhaj-dati+m
+ENG: [instrumental] +?tšd measure/quantify (variant) Stand / place / position [adjective] [verbal] Soaked-state / After soaking [adjective] Stand / place / position [participle] State / Result / After [instrumental] vessel/container (variant) [verbal] oil Soaked-state / After soaking [instrumental] combine/cook (reduced) give/add [case]
 ```
 <sub>[███████░░░] 76% confidence</sub>
 
@@ -191,27 +191,27 @@ ENG: with/together Soaked-state / After soaking and/with combine/cook (reduced) 
 ```
 EVA: pshedar shedy kshedy qotches or aiin shekain otain tshes qokain
 CRO: pšedar šedy stšedy kothes or aiin šestain otain tšes kostain
-EXP: radix + facere+ar še-d+y stare+edy ko-the+s oleum a+iin še-stare+ain posuda-a+in tše+s ko-stare+ain
-ENG: "Process kernel / do / treat" [instrumental] Soaked-state / After soaking [adjective] Stand / place / position [verbal] measure/quantify (variant) [~15] Oil / oleum (variant) [continuation] Soaked-state / After soaking Stand / place / position [plural] vessel/container (variant) [plural] [~15] +?tše measure/quantify (variant) Stand / place / position [plural]
+EXP: radix + facere+ar še-d+y stare+edy ko-ov/taj+s ulje a+iin še-stare+ain posuda-a+in sa tim+s ko-stare+ain
+ENG: "Process kernel / do / treat" [instrumental] Soaked-state / After soaking [adjective] Stand / place / position [verbal] measure/quantify (variant) the/this (demonstrative) [~15] oil [continuation] Soaked-state / After soaking Stand / place / position [plural] vessel/container (variant) [plural] with the (comitative+article) [~15] measure/quantify (variant) Stand / place / position [plural]
 ```
-<sub>[███████░░░] 76% confidence</sub>
+<sub>[████████░░] 84% confidence</sub>
 
 ```
 EVA: sho tshey s aiin ody olkchdy qotaiin shcthy dolkchy tchdaiin dal
 CRO: šo tšey s aiin ody olsthdy kotaiin šctrry dolsthy thdaiin dal
-EXP: namoci-o tš+ey s a+iin o+dy ulje+dy ko-t+aiin namoci-centrum+y ulje+y thd+aiin DA/DARE [Lat.]
-ENG: soak/infuse (Croatian) [participle] ?s? [continuation] [verbal] oil [verbal] measure/quantify (variant) [liquid+continuing] soak/infuse (Croatian) Center / control [adjective] oil [adjective] +?dsth [liquid+continuing] GIVE (RX IMPERATIVE) +l
+EXP: namoci-o tš+ey s a+iin o+dy ulje+dy ko-t+aiin namoci-smjesa+y ulje+y thd+aiin DA/DARE [Lat.]
+ENG: soak/infuse (Croatian) [participle] ?s? [continuation] [verbal] oil [verbal] measure/quantify (variant) [liquid+continuing] soak/infuse (Croatian) compound mixture [adjective] oil [adjective] +?dsth [liquid+continuing] GIVE (RX IMPERATIVE) +l
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
 
 ```
 EVA: lshee qodain okaiin otody chcthy
 CRO: lšee kodain ostaiin otody hctrry
-EXP: lš-ee ko-d+ain OSTEO- [Lat.] posuda-o+dy kuhaj-centrum+y
-ENG: The (before š-) (intensifier) measure/quantify (variant) [plural] BONE (MEDICAL REGISTER) vessel/container (variant) [verbal] combine/cook (reduced) Center / control [adjective]
+EXP: lš-ee ko-d+ain OSTEO- [Lat.] posuda-o+dy kuhaj-smjesa+y
+ENG: The (before š-) (intensifier) measure/quantify (variant) [plural] BONE (MEDICAL REGISTER) vessel/container (variant) [verbal] combine/cook (reduced) compound mixture [adjective]
 ```
-<sub>[████████░░] 89% confidence</sub>
+<sub>[█████████░] 93% confidence</sub>
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f95v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f95v*

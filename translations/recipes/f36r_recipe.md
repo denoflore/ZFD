@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 63%
-**Words:** 52 total, 46 resolved (88%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 65%
+**Words:** 52 total, 47 resolved (90%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,12 +18,11 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **y** | and/with | *et* | grammar | 7 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 5 | CANDIDATE |
-| **ol** | oil | *oleum* | liquid | 4 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 3 | CONFIRMED |
-| **ost** | bone (medical) | *osteo-* | animal | 3 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 2 | CONFIRMED |
+| **y** | and/with | *et* | grammar | 6 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 5 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 4 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 3 | CANDIDATE |
+| **ost** | bone | *os* | ingredient | 3 | CANDIDATE |
 
 ## Preparation Methods
 
@@ -47,16 +46,16 @@
 ```
 EVA: pchafdan qorain chcfhal soiin cphor shaiin cthy dair
 CRO: phafdan korain hcpllal soiin cpllor šaiin ctrry dair
-EXP: phafd+an ko-r+ain kuhaj-cpll+al s-i+in oleum namoci-a+iin centrum+y DA/DARE [Lat.]
-ENG: [adjective] +?phafd measure/quantify (variant) [plural] combine/cook (reduced) [locative] +?cpll with/together (variant) [plural] Oil / oleum (variant) +?cpll soak/infuse (Croatian) [continuation] Center / control [adjective] GIVE (RX IMPERATIVE) +ir
+EXP: phafd+an ko-r+ain kuhaj-cpll+al s-i+in ulje namoci-a+iin smjesa+y DA/DARE [Lat.]
+ENG: [adjective] +?phafd measure/quantify (variant) [plural] combine/cook (reduced) [locative] +?cpll with/together (variant) [plural] oil +?cpll soak/infuse (Croatian) [continuation] compound mixture [adjective] GIVE (RX IMPERATIVE) +ir
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: oral shor ytaiin qotaiin qooldy chty chol dy tor
 CRO: oral šor ytaiin kotaiin kooldy hty hol dy tor
-EXP: ORALIS [Lat.] namoci-oleum i+aiin ko-t+aiin ko-ulje+dy kuhaj-t+y kuhaj-ulje d+y oleum
-ENG: BY MOUTH/ORALLY soak/infuse (Croatian) Oil / oleum (variant) and/with [liquid+continuing] measure/quantify (variant) [liquid+continuing] measure/quantify (variant) oil [verbal] combine/cook (reduced) [adjective] combine/cook (reduced) oil [adjective] Oil / oleum (variant)
+EXP: ORALIS [Lat.] namoci-ulje i+aiin ko-t+aiin ko-ulje+dy kuhaj-t+y kuhaj-ulje d+y ulje
+ENG: BY MOUTH/ORALLY soak/infuse (Croatian) oil and/with [liquid+continuing] measure/quantify (variant) [liquid+continuing] measure/quantify (variant) oil [verbal] combine/cook (reduced) [adjective] combine/cook (reduced) oil [adjective] oil
 ```
 <sub>[████████░░] 83% confidence</sub>
 
@@ -71,42 +70,42 @@ ENG: measure/quantify (variant) [adjective] [adjective] +?th GIVE (RX IMPERATIVE
 ```
 EVA: podaiir cphy qoypchol romcychy dchy fchom dar
 CRO: podaiir cplly koyphol romcyhy dhy fhom dar
-EXP: da+ir cpll+y ko-i+ol i+y dh+y fh+om DA/DARE [Lat.]
-ENG: da [agent] [adjective] +?cpll measure/quantify (variant) and/with [instrumental] and/with [adjective] +?romch [adjective] +?dh [case] GIVE (RX IMPERATIVE) +r
+EXP: dati+ir cpll+y ko-i+ol -om+y dh+y fh+om DA/DARE [Lat.]
+ENG: give/add [agent] [adjective] +?cpll measure/quantify (variant) and/with [instrumental] with/by (instrumental) [adjective] +?rcyh [adjective] +?dh [case] GIVE (RX IMPERATIVE) +r
 ```
-<sub>[▓▓▓▓░░░░░░] 47% confidence</sub>
+<sub>[▓▓▓▓░░░░░░] 49% confidence</sub>
 
 ```
 EVA: daiin qor chol ctholy sorchy sychytaroiin
 CRO: daiin kor hol ctrroly sorhy syhytaroiin
-EXP: DA/DARE [Lat.] ko-r kuhaj-ulje centrum+y s-rh+y voda+iin
-ENG: GIVE (RX IMPERATIVE) +i measure/quantify (variant) combine/cook (reduced) oil Center / control [adjective] with/together (variant) [adjective] water [continuation] +?syhyto
+EXP: DA/DARE [Lat.] ko-r kuhaj-ulje smjesa+y s-rh+y voda+iin
+ENG: GIVE (RX IMPERATIVE) +i measure/quantify (variant) combine/cook (reduced) oil compound mixture [adjective] with/together (variant) [adjective] water [continuation] +?syhyto
 ```
-<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
+<sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: okaiin cthor ykaiiin sdain andan
 CRO: ostaiin ctrror ystaiiin sdain andan
-EXP: OSTEO- [Lat.] centrum i+iin sd+ain and+an
-ENG: BONE (MEDICAL REGISTER) Center / control and/with [continuation] [plural] [adjective] +?and
+EXP: OSTEO- [Lat.] smjesa i+iin sd+ain and+an
+ENG: BONE (MEDICAL REGISTER) compound mixture and/with [continuation] [plural] [adjective] +?and
 ```
-<sub>[▓▓▓▓▓▓░░░░] 60% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 63% confidence</sub>
 
 ```
 EVA: qotol cthol okol dy okchyytororysold
 CRO: kotol ctrrol ostol dy osthyytororysold
-EXP: ko-t+ol centrum+ol OSTEO- [Lat.] d+y OSTEO- [Lat.]
-ENG: measure/quantify (variant) [instrumental] Center / control [instrumental] BONE (MEDICAL REGISTER) [adjective] BONE (MEDICAL REGISTER) +hyytororysold
+EXP: ko-t+ol smjesa+ol OSTEO- [Lat.] d+y OSTEO- [Lat.]
+ENG: measure/quantify (variant) [instrumental] compound mixture [instrumental] BONE (MEDICAL REGISTER) [adjective] BONE (MEDICAL REGISTER) +hyytororysold
 ```
-<sub>[▓▓▓▓▓▓░░░░] 66% confidence</sub>
+<sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: ytchor cthol chaiin yd
 CRO: ythor ctrrol haiin yd
-EXP: i centrum+ol kuhaj-a+iin i
-ENG: and/with +?thor Center / control [instrumental] combine/cook (reduced) [continuation] and/with
+EXP: i smjesa+ol kuhaj-a+iin i
+ENG: and/with +?thor compound mixture [instrumental] combine/cook (reduced) [continuation] and/with
 ```
-<sub>[▓▓▓▓▓░░░░░] 58% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 62% confidence</sub>
 
 ```
 EVA: ytodaly daiin otaro
@@ -118,4 +117,4 @@ ENG: and/with [adjective] +?todal GIVE (RX IMPERATIVE) +i vessel/container (vari
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f36r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f36r*

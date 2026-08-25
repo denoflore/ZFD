@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Herbal A
-**Confidence:** 74%
+**Confidence:** 75%
 **Words:** 136 total, 132 resolved (97%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -18,15 +18,14 @@
 
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
-| **ol** | oil | *oleum* | liquid | 21 | CONFIRMED |
-| **st** | Stand / place / position | *stare* | general | 15 | CANDIDATE |
-| **ctr** | Center / control | *centrum* | general | 8 | CANDIDATE |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 8 | CONFIRMED |
+| **ol** | oil | *oleum* | ingredient | 21 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 16 | CANDIDATE |
+| **ctrr** | compound mixture | *confectio* | preparation | 8 | CANDIDATE |
+| **or** | oil | *oleum* | ingredient | 8 | CANDIDATE |
 | **y** | and/with | *et* | grammar | 5 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 5 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 3 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 5 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 3 | CANDIDATE |
 | **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
-| **thor** | Boil / roast / scorch | *torreo* | liquid | 1 | CONFIRMED |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
@@ -52,10 +51,10 @@
 ```
 EVA: sho ofaiin cthachcthy otcheey pchear
 CRO: šo ofaiin ctrrahctrry otheey phear
-EXP: namoci-o of+aiin centrum+y posuda-e+y phe+ar
-ENG: soak/infuse (Croatian) [liquid+continuing] Center / control [adjective] +?rahctrr vessel/container (variant) (state/result/after) [adjective] [instrumental] +?phe
+EXP: namoci-o of+aiin smjesa+y posuda-e+y ov/taj+ar
+ENG: soak/infuse (Croatian) [liquid+continuing] compound mixture [adjective] +?ahctrr vessel/container (variant) (state/result/after) [adjective] the/this (demonstrative) [instrumental]
 ```
-<sub>[▓▓▓▓▓░░░░░] 55% confidence</sub>
+<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
 
 ```
 EVA: sol kaiin char cheky otshaiin daiiry
@@ -76,24 +75,24 @@ ENG: [adjective] +?toš combine/cook (reduced) [instrumental] combine/cook (redu
 ```
 EVA: shor chetar chotais dar cthaiin
 CRO: šor hetar hotais dar ctrraiin
-EXP: namoci-oleum he-t+ar kuhaj-otai+s DA/DARE [Lat.] centrum+aiin
-ENG: soak/infuse (Croatian) Oil / oleum (variant) State / Result / After [instrumental] combine/cook (reduced) [~15] +?otai GIVE (RX IMPERATIVE) +r Center / control [liquid+continuing]
+EXP: namoci-ulje he-t+ar kuhaj-otai+s DA/DARE [Lat.] smjesa+aiin
+ENG: soak/infuse (Croatian) oil State / Result / After [instrumental] combine/cook (reduced) [~15] +?otai GIVE (RX IMPERATIVE) +r compound mixture [liquid+continuing]
 ```
-<sub>[███████░░░] 74% confidence</sub>
+<sub>[███████░░░] 76% confidence</sub>
 
 ```
 EVA: qokar chockhy chotor cha kary
 CRO: kostar hocsty hotor ha stary
-EXP: ko-stare+ar kuhaj-stare+y kuhaj-oleum kuhaj-a vrelina+y
-ENG: measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) Stand / place / position [adjective] combine/cook (reduced) Oil / oleum (variant) combine/cook (reduced) heat (strong) [adjective]
+EXP: ko-stare+ar kuhaj-stare+y kuhaj-ulje kuhaj-a star+y
+ENG: measure/quantify (variant) Stand / place / position [instrumental] combine/cook (reduced) Stand / place / position [adjective] combine/cook (reduced) oil combine/cook (reduced) old/aged [adjective]
 ```
 <sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: dorain char
 CRO: dorain har
-EXP: oleum+ain kuhaj-voda
-ENG: Oil / oleum (variant) [plural] combine/cook (reduced) water
+EXP: ulje+ain kuhaj-voda
+ENG: oil [plural] combine/cook (reduced) water
 ```
 <sub>[█████████░] 92% confidence</sub>
 
@@ -108,48 +107,48 @@ ENG: ?pho? combine/cook (reduced) and/with Stand / place / position [liquid+cont
 ```
 EVA: yshol chees cthol shor shol ety chary
 CRO: yšol hees ctrrol šor šol ety hary
-EXP: i+ol he-e+s centrum+ol namoci-oleum namoci-ulje et+y kuhaj-voda+y
-ENG: and/with [instrumental] State / Result / After [~15] Center / control [instrumental] soak/infuse (Croatian) Oil / oleum (variant) soak/infuse (Croatian) oil [adjective] +?et combine/cook (reduced) water [adjective]
+EXP: i+ol he-e+s smjesa+ol namoci-ulje namoci-ulje et+y kuhaj-voda+y
+ENG: and/with [instrumental] State / Result / After [~15] compound mixture [instrumental] soak/infuse (Croatian) oil soak/infuse (Croatian) oil [adjective] +?et combine/cook (reduced) water [adjective]
 ```
-<sub>[████████░░] 81% confidence</sub>
+<sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: qotchor otchol ctho kchodan chkchory
 CRO: kothor othol ctrro sthodan hsthory
-EXP: ko-torreo posuda-h+ol centrum stare+an kuhaj-stare+y
-ENG: measure/quantify (variant) Boil / roast / scorch vessel/container (variant) [instrumental] Center / control Stand / place / position [adjective] combine/cook (reduced) Stand / place / position [adjective]
+EXP: ko-vreti posuda-h+ol smjesa stare+an kuhaj-stare+y
+ENG: measure/quantify (variant) boil/roast vessel/container (variant) [instrumental] compound mixture Stand / place / position [adjective] combine/cook (reduced) Stand / place / position [adjective]
 ```
-<sub>[███████░░░] 71% confidence</sub>
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: choty dol ksheo cthor otol cthol cholshol dain
 CRO: hoty dol stšeo ctrror otol ctrrol holšol dain
-EXP: kuhaj-ot+y d+ol stare centrum posuda-ulje centrum+ol kuhaj-ulje+ol DA/DARE [Lat.]
-ENG: combine/cook (reduced) [adjective] [instrumental] Stand / place / position +?šeo Center / control vessel/container (variant) oil Center / control [instrumental] combine/cook (reduced) oil [instrumental] GIVE (RX IMPERATIVE) +in
+EXP: kuhaj-ot+y d+ol stare smjesa posuda-ulje smjesa+ol kuhaj-ulje+ol DA/DARE [Lat.]
+ENG: combine/cook (reduced) [adjective] [instrumental] Stand / place / position +?šeo compound mixture vessel/container (variant) oil compound mixture [instrumental] combine/cook (reduced) oil [instrumental] GIVE (RX IMPERATIVE) +in
 ```
-<sub>[▓▓▓▓▓▓░░░░] 65% confidence</sub>
+<sub>[███████░░░] 70% confidence</sub>
 
 ```
 EVA: qotor cho chody daiin chol ctheey darchy daiidy
 CRO: kotor ho hody daiin hol ctrreey darhy daiidy
-EXP: ko-oleum kuhaj-o kuhaj-o+dy DA/DARE [Lat.] kuhaj-ulje centrum+ey DA/DARE [Lat.] DA/DARE [Lat.]
-ENG: measure/quantify (variant) Oil / oleum (variant) combine/cook (reduced) combine/cook (reduced) [verbal] GIVE (RX IMPERATIVE) +i combine/cook (reduced) oil Center / control [participle] GIVE (RX IMPERATIVE) +rh GIVE (RX IMPERATIVE) +ii
+EXP: ko-ulje kuhaj-o kuhaj-o+dy DA/DARE [Lat.] kuhaj-ulje smjesa+ey DA/DARE [Lat.] DA/DARE [Lat.]
+ENG: measure/quantify (variant) oil combine/cook (reduced) combine/cook (reduced) [verbal] GIVE (RX IMPERATIVE) +i combine/cook (reduced) oil compound mixture [participle] GIVE (RX IMPERATIVE) +rh GIVE (RX IMPERATIVE) +ii
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 75% confidence</sub>
 
 ```
 EVA: dcheey chol shol chokaiin choeky dckydain dal
 CRO: dheey hol šol hostaiin hoesty dstydain dal
-EXP: dhe+ey kuhaj-ulje namoci-ulje kuhaj-kost+aiin kuhaj-stare+y in+ain DA/DARE [Lat.]
-ENG: [participle] +?dhe combine/cook (reduced) oil soak/infuse (Croatian) oil combine/cook (reduced) bone (medical) [liquid+continuing] combine/cook (reduced) Stand / place / position [adjective] Preposition: in/with [plural] GIVE (RX IMPERATIVE) +l
+EXP: ov/taj+ey kuhaj-ulje namoci-ulje kuhaj-kost+aiin kuhaj-stare+y stare+ain DA/DARE [Lat.]
+ENG: the/this (demonstrative) [participle] combine/cook (reduced) oil soak/infuse (Croatian) oil combine/cook (reduced) bone [liquid+continuing] combine/cook (reduced) Stand / place / position [adjective] Stand / place / position [plural] GIVE (RX IMPERATIVE) +l
 ```
-<sub>[███████░░░] 77% confidence</sub>
+<sub>[████████░░] 82% confidence</sub>
 
 ```
 EVA: qopor shol shot shol shol daiin dain scheam
 CRO: kopor šol šot šol šol daiin dain šheam
-EXP: ko-oleum namoci-ulje namoci-ot namoci-ulje namoci-ulje DA/DARE [Lat.] DA/DARE [Lat.] namoci-a+m
-ENG: measure/quantify (variant) Oil / oleum (variant) soak/infuse (Croatian) oil soak/infuse (Croatian) +?ot soak/infuse (Croatian) oil soak/infuse (Croatian) oil GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +in soak/infuse (Croatian) (state/result/after) [case]
+EXP: ko-ulje namoci-ulje namoci-ot namoci-ulje namoci-ulje DA/DARE [Lat.] DA/DARE [Lat.] namoci-a+m
+ENG: measure/quantify (variant) oil soak/infuse (Croatian) oil soak/infuse (Croatian) +?ot soak/infuse (Croatian) oil soak/infuse (Croatian) oil GIVE (RX IMPERATIVE) +i GIVE (RX IMPERATIVE) +in soak/infuse (Croatian) (state/result/after) [case]
 ```
 <sub>[███████░░░] 78% confidence</sub>
 
@@ -181,17 +180,17 @@ ENG: and/with [liquid+continuing] Soaked-state (extended) soak/infuse (Croatian)
 EVA: shotol shol chety daiin chokchy chkaiin
 CRO: šotol šol hety daiin hosthy hstaiin
 EXP: namoci-ot+ol namoci-ulje he-t+y DA/DARE [Lat.] kuhaj-kost+y kuhaj-stare+aiin
-ENG: soak/infuse (Croatian) [instrumental] soak/infuse (Croatian) oil State / Result / After [adjective] GIVE (RX IMPERATIVE) +i combine/cook (reduced) bone (medical) [adjective] combine/cook (reduced) Stand / place / position [liquid+continuing]
+ENG: soak/infuse (Croatian) [instrumental] soak/infuse (Croatian) oil State / Result / After [adjective] GIVE (RX IMPERATIVE) +i combine/cook (reduced) bone [adjective] combine/cook (reduced) Stand / place / position [liquid+continuing]
 ```
 <sub>[████████░░] 83% confidence</sub>
 
 ```
 EVA: qody cthochy otaiin shy kshes chor ain
 CRO: kody ctrrohy otaiin šy stšes hor ain
-EXP: ko-d+y centrum+y posuda-a+iin namoci-i stare+s kuhaj-oleum a+in
-ENG: measure/quantify (variant) [adjective] Center / control [adjective] vessel/container (variant) [continuation] soak/infuse (Croatian) and/with Stand / place / position [~15] combine/cook (reduced) Oil / oleum (variant) [plural]
+EXP: ko-d+y smjesa+y posuda-a+iin namoci-i stare+s kuhaj-ulje a+in
+ENG: measure/quantify (variant) [adjective] compound mixture [adjective] vessel/container (variant) [continuation] soak/infuse (Croatian) and/with Stand / place / position [~15] combine/cook (reduced) oil [plural]
 ```
-<sub>[███████░░░] 77% confidence</sub>
+<sub>[███████░░░] 79% confidence</sub>
 
 ```
 EVA: otchoty daiin chot sho ckhhy cty s os
@@ -205,7 +204,7 @@ ENG: vessel/container (variant) [adjective] GIVE (RX IMPERATIVE) +i combine/cook
 EVA: shol chol shoky okol sho chol chol chal
 CRO: šol hol šosty ostol šo hol hol hal
 EXP: namoci-ulje kuhaj-ulje namoci-kost+y OSTEO- [Lat.] namoci-o kuhaj-ulje kuhaj-ulje kuhaj-tekućina
-ENG: soak/infuse (Croatian) oil combine/cook (reduced) oil soak/infuse (Croatian) bone (medical) [adjective] BONE (MEDICAL REGISTER) soak/infuse (Croatian) combine/cook (reduced) oil combine/cook (reduced) oil combine/cook (reduced) liquid/water (vessel context)
+ENG: soak/infuse (Croatian) oil combine/cook (reduced) oil soak/infuse (Croatian) bone [adjective] BONE (MEDICAL REGISTER) soak/infuse (Croatian) combine/cook (reduced) oil combine/cook (reduced) oil combine/cook (reduced) liquid/water (vessel context)
 ```
 <sub>[█████████░] 94% confidence</sub>
 
@@ -220,8 +219,8 @@ ENG: soak/infuse (Croatian) oil combine/cook (reduced) oil combine/cook (reduced
 ```
 EVA: kchaiin chos ckhaiin choro chaiin
 CRO: sthaiin hos cstaiin horo haiin
-EXP: stare+aiin kuhaj-o+s stare+aiin kuhaj-oleum kuhaj-a+iin
-ENG: Stand / place / position [liquid+continuing] combine/cook (reduced) [~15] Stand / place / position [liquid+continuing] combine/cook (reduced) Oil / oleum (variant) combine/cook (reduced) [continuation]
+EXP: stare+aiin kuhaj-o+s stare+aiin kuhaj-ulje kuhaj-a+iin
+ENG: Stand / place / position [liquid+continuing] combine/cook (reduced) [~15] Stand / place / position [liquid+continuing] combine/cook (reduced) oil combine/cook (reduced) [continuation]
 ```
 <sub>[███████░░░] 79% confidence</sub>
 
@@ -235,4 +234,4 @@ ENG: BONE (MEDICAL REGISTER) +h soak/infuse (Croatian) oil Stand / place / posit
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f42r*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f42r*

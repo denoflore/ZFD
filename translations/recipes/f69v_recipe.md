@@ -8,9 +8,9 @@
 </p>
 
 **Section:** Astronomical
-**Confidence:** 63%
-**Words:** 132 total, 122 resolved (92%)
-**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+**Confidence:** 64%
+**Words:** 132 total, 123 resolved (93%)
+**Decoder:** ZFD v2.0 (unified lexicon v3.0.0, 362 morphemes)
 
 ---
 
@@ -19,15 +19,12 @@
 | Stem | English | Latin | Category | Occurrences | Status |
 |------|---------|-------|----------|-------------|--------|
 | **y** | and/with | *et* | grammar | 31 | CANDIDATE |
-| **ost** | bone (medical) | *osteo-* | animal | 23 | CONFIRMED |
-| **ar** | water | *aqua* | liquid | 7 | CONFIRMED |
-| **ol** | oil | *oleum* | liquid | 6 | CONFIRMED |
+| **ost** | bone | *os* | ingredient | 23 | CANDIDATE |
+| **ar** | water | *aqua* | ingredient | 7 | CANDIDATE |
+| **ol** | oil | *oleum* | ingredient | 6 | CANDIDATE |
 | **st** | Stand / place / position | *stare* | general | 3 | CANDIDATE |
-| **ee** | (intensifier) |  | general | 3 | CANDIDATE |
 | **al** | liquid/water (vessel context) | *aqua* | liquid | 2 | CONFIRMED |
-| **sar** | Salt | *sal* | mineral | 1 | CONFIRMED |
 | **od** | stalk/stem | *caulis* | plant_part | 1 | CONFIRMED |
-| **or** | Oil / oleum (variant) | *oleum* | liquid | 1 | CONFIRMED |
 
 ## Preparation Methods
 
@@ -53,8 +50,8 @@
 ```
 EVA: dair cheyky otamysarar chykarokair sh ar chetody okeeos otey otokchey okeeody okeey doiir yteeo y echa ota okedy chsdy okeody dy cho aiin okar okar chol chese yto odair oty otcho dar o ey keody dchor char
 CRO: dair heysty otamysarar hystarostair š ar hetody osteeos otey otosthey osteeody osteey doiir yteeo y eha ota ostedy hsdy osteody dy ho aiin ostar ostar hol hese yto odair oty otho dar o ey steody dhor har
-EXP: DA/DARE [Lat.] he-i+y posuda-sal+ar kuhaj-i+ir š voda he-to+dy OSTEO- [Lat.] posuda-e+y posuda-kost+ey OSTEO- [Lat.] OSTEO- [Lat.] doi+ir i i eha posuda-a OSTEO- [Lat.] kuhaj-s+dy OSTEO- [Lat.] d+y kuhaj-o a+iin OSTEO- [Lat.] OSTEO- [Lat.] kuhaj-ulje he-se i stabljika+ir posuda-i posuda-ho DA/DARE [Lat.] o e+y stare+dy obraditi kuhaj-voda
-ENG: GIVE (RX IMPERATIVE) +ir State / Result / After and/with [adjective] vessel/container (variant) Salt [instrumental] combine/cook (reduced) and/with [agent] +?starosta ?š? water State / Result / After [verbal] BONE (MEDICAL REGISTER) +eeo vessel/container (variant) [adjective] vessel/container (variant) bone (medical) [participle] BONE (MEDICAL REGISTER) +eeo BONE (MEDICAL REGISTER) +e [agent] +?doi and/with +?teeo and/with ?eha? vessel/container (variant) BONE (MEDICAL REGISTER) combine/cook (reduced) [verbal] BONE (MEDICAL REGISTER) +eo [adjective] combine/cook (reduced) [continuation] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) combine/cook (reduced) oil State / Result / After and/with +?to stalk/stem [agent] vessel/container (variant) and/with vessel/container (variant) GIVE (RX IMPERATIVE) +r ?o? [adjective] Stand / place / position [verbal] process/work combine/cook (reduced) water
+EXP: DA/DARE [Lat.] he-i+y posuda-sol+ar kuhaj-i+ir š voda he-to+dy OSTEO- [Lat.] posuda-e+y posuda-kost+ey OSTEO- [Lat.] OSTEO- [Lat.] doi+ir i i eha posuda-a OSTEO- [Lat.] kuhaj-s+dy OSTEO- [Lat.] d+y kuhaj-o a+iin OSTEO- [Lat.] OSTEO- [Lat.] kuhaj-ulje he-se i stabljika+ir posuda-i posuda-ho DA/DARE [Lat.] o e+y stare+dy kuhati kuhaj-voda
+ENG: GIVE (RX IMPERATIVE) +ir State / Result / After and/with [adjective] vessel/container (variant) salt [instrumental] combine/cook (reduced) and/with [agent] +?starosta ?š? water State / Result / After [verbal] BONE (MEDICAL REGISTER) +eeo vessel/container (variant) [adjective] vessel/container (variant) bone [participle] BONE (MEDICAL REGISTER) +eeo BONE (MEDICAL REGISTER) +e [agent] +?doi and/with +?teeo and/with ?eha? vessel/container (variant) BONE (MEDICAL REGISTER) combine/cook (reduced) [verbal] BONE (MEDICAL REGISTER) +eo [adjective] combine/cook (reduced) [continuation] BONE (MEDICAL REGISTER) BONE (MEDICAL REGISTER) combine/cook (reduced) oil State / Result / After and/with +?to stalk/stem [agent] vessel/container (variant) and/with vessel/container (variant) GIVE (RX IMPERATIVE) +r ?o? [adjective] Stand / place / position [verbal] cook/combine combine/cook (reduced) water
 ```
 <sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
 
@@ -62,17 +59,17 @@ ENG: GIVE (RX IMPERATIVE) +ir State / Result / After and/with [adjective] vessel
 EVA: ykay chol ykardal ykadyeokeeor cheoy choly ykchal cheos oaram ockhy shchy aiiny daiial cheody cheol yekey chsar ydy ykey chy dy chol ykar oly ykeeody chey dal ody airchy choky ychey chey
 CRO: ystay hol ystardal ystadyeosteeor heoy holy ysthal heos oaram ocsty šhy aiiny daiial heody heol yestey hsar ydy ystey hy dy hol ystar oly ysteeody hey dal ody airhy hosty yhey hey
 EXP: i+y kuhaj-ulje i+al i heo-i kuhaj-ulje+y i+al heo-s voda+m stare+y namoci-h+y iterum+y DA/DARE [Lat.] heo-d+y heo-l i+ey kuhaj-s+ar i+dy i+ey kuhaj-i d+y kuhaj-ulje i+ar ulje+y i+dy he-i DA/DARE [Lat.] o+dy airh+y kuhaj-kost+y i+ey he-i
-ENG: and/with [adjective] +?sta combine/cook (reduced) oil and/with [locative] +?stard and/with +?stadyeosteeor State / Result (extended) and/with combine/cook (reduced) oil [adjective] and/with [locative] State / Result (extended) water [case] Stand / place / position [adjective] soak/infuse (Croatian) [adjective] Repetition / plural [adjective] GIVE (RX IMPERATIVE) +ii State / Result (extended) [adjective] State / Result (extended) and/with [participle] combine/cook (reduced) [instrumental] and/with [verbal] and/with [participle] combine/cook (reduced) and/with [adjective] combine/cook (reduced) oil and/with [instrumental] oil [adjective] and/with [verbal] +?steeo State / Result / After and/with GIVE (RX IMPERATIVE) +l [verbal] [adjective] +?airh combine/cook (reduced) bone (medical) [adjective] and/with [participle] State / Result / After and/with
+ENG: and/with [adjective] +?sta combine/cook (reduced) oil and/with [locative] +?stard and/with +?stadyeosteeor State / Result (extended) and/with combine/cook (reduced) oil [adjective] and/with [locative] State / Result (extended) water [case] Stand / place / position [adjective] soak/infuse (Croatian) [adjective] Repetition / plural [adjective] GIVE (RX IMPERATIVE) +ii State / Result (extended) [adjective] State / Result (extended) and/with [participle] combine/cook (reduced) [instrumental] and/with [verbal] and/with [participle] combine/cook (reduced) and/with [adjective] combine/cook (reduced) oil and/with [instrumental] oil [adjective] and/with [verbal] +?steeo State / Result / After and/with GIVE (RX IMPERATIVE) +l [verbal] [adjective] +?airh combine/cook (reduced) bone [adjective] and/with [participle] State / Result / After and/with
 ```
 <sub>[███████░░░] 71% confidence</sub>
 
 ```
 EVA: doair otaldaldair y chdy otoar ar y chy qoteor cho qotair chda oteeal chear ar air oteody ytyda dchy otoly okeodal oteoarar chetesescher dair chey okody dal oteey oteey
 CRO: doair otaldaldair y hdy otoar ar y hy koteor ho kotair hda oteeal hear ar air oteody ytyda dhy otoly osteodal oteoarar hetesešher dair hey ostody dal oteey oteey
-EXP: doa+ir posuda-tekućina+ir i kuhaj-d+y posuda-o+ar voda i kuhaj-i ko-oleum kuhaj-o ko-ta+ir kuhaj-da posuda-ee+al he-voda voda a+ir posuda-eo+dy i dh+y posuda-ulje+y OSTEO- [Lat.] posuda-voda+ar he-tesešher DA/DARE [Lat.] he-i OSTEO- [Lat.] DA/DARE [Lat.] posuda-e+ey posuda-e+ey
-ENG: [agent] +?doa vessel/container (variant) liquid/water (vessel context) [agent] and/with combine/cook (reduced) [adjective] vessel/container (variant) [instrumental] water and/with combine/cook (reduced) and/with measure/quantify (variant) Oil / oleum (variant) combine/cook (reduced) measure/quantify (variant) [agent] combine/cook (reduced) da vessel/container (variant) (intensifier) [locative] State / Result / After water water [agent] vessel/container (variant) [verbal] and/with +?tyda [adjective] +?dh vessel/container (variant) oil [adjective] BONE (MEDICAL REGISTER) +eod vessel/container (variant) water [instrumental] State / Result / After +?tesešher GIVE (RX IMPERATIVE) +ir State / Result / After and/with BONE (MEDICAL REGISTER) +o GIVE (RX IMPERATIVE) +l vessel/container (variant) [participle] vessel/container (variant) [participle]
+EXP: doa+ir posuda-tekućina+ir i kuhaj-d+y posuda-o+ar voda i kuhaj-i ko-ulje kuhaj-o ko-ta+ir kuhaj-dati posuda-ee+al he-voda voda a+ir posuda-eo+dy i dh+y posuda-ulje+y OSTEO- [Lat.] posuda-voda+ar he-ov/taj DA/DARE [Lat.] he-i OSTEO- [Lat.] DA/DARE [Lat.] posuda-e+ey posuda-e+ey
+ENG: [agent] +?doa vessel/container (variant) liquid/water (vessel context) [agent] and/with combine/cook (reduced) [adjective] vessel/container (variant) [instrumental] water and/with combine/cook (reduced) and/with measure/quantify (variant) oil combine/cook (reduced) measure/quantify (variant) [agent] combine/cook (reduced) give/add vessel/container (variant) (intensifier) [locative] State / Result / After water water [agent] vessel/container (variant) [verbal] and/with +?tyda [adjective] +?dh vessel/container (variant) oil [adjective] BONE (MEDICAL REGISTER) +eod vessel/container (variant) water [instrumental] State / Result / After the/this (demonstrative) +?tesešr GIVE (RX IMPERATIVE) +ir State / Result / After and/with BONE (MEDICAL REGISTER) +o GIVE (RX IMPERATIVE) +l vessel/container (variant) [participle] vessel/container (variant) [participle]
 ```
-<sub>[███████░░░] 73% confidence</sub>
+<sub>[███████░░░] 74% confidence</sub>
 
 ```
 EVA: ykeey
@@ -141,10 +138,10 @@ ENG: BONE (MEDICAL REGISTER) +eod
 ```
 EVA: oteeys
 CRO: oteeys
-EXP: posuda-ee+s
-ENG: vessel/container (variant) (intensifier) [~15]
+EXP: posuda-eey+s
+ENG: vessel/container (variant) distilled fluid [~15]
 ```
-<sub>[████████░░] 83% confidence</sub>
+<sub>[██████████] 100% confidence</sub>
 
 ```
 EVA: oteol
@@ -300,4 +297,4 @@ ENG: Stand / place / position +?ohoy
 
 ---
 
-*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f69v*
+*Generated by ZFD Decoder v2.0 | Unified Lexicon v3.0.0 (362 morphemes) | f69v*
