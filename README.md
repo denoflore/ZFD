@@ -29,7 +29,20 @@ gate and a 45-test suite guard the whole pipeline. | [Recipes](translations/reci
 
 **Methodology:** Operator-stem-suffix shorthand system with preregistered constraints and frozen mappings | [Pipeline](zfd_decoder/)
 
-**Date:** February 2026 (structural decipherment) | August 2026 (full-manuscript coverage, canonical lexicon regeneration, verification suite)
+**Publication timeline (priority record):**
+
+| Date | Event |
+|------|-------|
+| August 2025 | Initial pre-release of the decipherment hypothesis |
+| September 2025 | Changelog and versioned record begin (v1.0 shape-based mapping, superseded) |
+| January 31, 2026 | Public GitHub repository opens: Master Key v1.1, README, frozen lexicon |
+| February 4, 2026 | 15th-century Ragusan Croatian Proof Kit v1.0 |
+| February 6, 2026 | Honesty audit (92.1% corrected coverage), unified lexicon, V27 Triple Provenance Lock |
+| February 7, 2026 | Complete paper v2.0; Nature submission (tracking #2026-02-03422) |
+| June 9, 2026 | Validation audit v4.3: config pinning, dual-config blind decode, robustness, decoy tests |
+| August 25, 2026 | Full-manuscript translation coverage (244/244 loci), canonical lexicon v3 regeneration, verification suite |
+
+Exact version-by-version history with preserved corrections and negative results: [CHANGELOG.md](CHANGELOG.md)
 
 ---
 
