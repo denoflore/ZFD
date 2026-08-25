@@ -2,7 +2,7 @@
   "generated": "2026-02-03",
   "version": "1.0.0",
   "source": "ZFD Repository",
-  "folio_count": 201,
+  "folio_count": 244,
   "sections": [
     "Herbal A",
     "Herbal B",
@@ -12,10 +12,10 @@
     "Pharmaceutical",
     "Recipes/Stars"
   ],
-  "total_ingredients": 13,
-  "total_ingredient_mentions": 36794,
-  "total_preparation_methods": 12,
-  "sop_graph_edges": 20097,
+  "total_ingredients": 0,
+  "total_ingredient_mentions": 0,
+  "total_preparation_methods": 0,
+  "sop_graph_edges": 29327,
   "files_generated": [
     "folio_metadata.json",
     "section_data.json",

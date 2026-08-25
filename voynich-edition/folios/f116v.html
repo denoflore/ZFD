@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F116V - Voynich Digital Edition</title>
+  <link rel="stylesheet" href="../css/edition.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="container">
+      <nav class="breadcrumb">
+        <a href="../index.html">Voynich Edition</a>
+        <span>/</span>
+        <a href="../index.html#pharmaceutical">Pharmaceutical</a>
+        <span>/</span>
+        <span>F116V</span>
+      </nav>
+      <h1>F116V</h1>
+      <p class="subtitle">Pharmaceutical Section
+        <span class="confidence-badge confidence-low">62% confidence</span>
+      </p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="folio-layout">
+      <!-- Scan viewer -->
+      <div class="scan-viewer">
+        <img src="https://via.placeholder.com/600x800?text=F116V" alt="Folio F116V scan" id="folio-image">
+        <div class="viewer-controls">
+          <button onclick="zoomIn()">Zoom +</button>
+          <button onclick="zoomOut()">Zoom -</button>
+          <button onclick="resetZoom()">Reset</button>
+        </div>
+      </div>
+
+      <!-- Text content -->
+      <div class="text-content">
+        <section class="interlinear-section">
+          <h2>Interlinear Decode</h2>
+          <p class="text-muted">4-layer format: Voynichese (EVA) > Croatian > Expanded > English</p>
+          <div class="interlinear-block">
+  <div class="line"><span class="label eva">EVA:</span> oror sheey</div>
+  <div class="line"><span class="label cro">CRO:</span> oror šeey</div>
+  <div class="line"><span class="label exp">EXP:</span> ulje še-e+y</div>
+  <div class="line"><span class="label eng">ENG:</span> oil Soaked-state / After soaking [adjective]</div>
+</div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Ingredients -->
+    <section class="info-panel">
+      <h3>Ingredients Identified</h3>
+      <p class="text-muted">No ingredients identified.</p>
+    </section>
+
+    <!-- Preparation Methods -->
+    <section class="info-panel">
+      <h3>Preparation Methods</h3>
+      <p class="text-muted">No preparation methods identified.</p>
+    </section>
+
+    
+
+    <!-- SOP Chain -->
+    <section class="info-panel">
+      <h3>SOP Chain (Related Folios)</h3>
+      <p class="text-muted mb-md">Folios sharing ingredients with F116V:</p>
+      <div class="sop-chain">
+        <span class="text-muted">No related folios found.</span>
+      </div>
+    </section>
+
+    <!-- Codicological Notes (placeholder) -->
+    <section class="info-panel">
+      <h3>Codicological Notes</h3>
+      <dl>
+        <dt>Section</dt>
+        <dd>Pharmaceutical</dd>
+        <dt>Word Count</dt>
+        <dd>None total, None recipe-relevant</dd>
+        <dt>Confidence</dt>
+        <dd>62%</dd>
+      </dl>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="folio-nav">
+      <a href="f116r.html">&larr; F116R</a>
+      <a href="../index.html">All Folios</a>
+      <a href="f11r.html">F11R &rarr;</a>
+    </nav>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <p>Voynich Digital Edition - <a href="https://github.com/denoflore/ZFD">ZFD Project</a></p>
+      <p class="text-muted">Based on the Zuger Functional Decipherment</p>
+    </div>
+  </footer>
+
+  <script>
+    let scale = 1;
+    const img = document.getElementById('folio-image');
+    const viewer = document.querySelector('.scan-viewer');
+
+    // Image loading handling
+    img.classList.add('loading');
+    viewer.classList.add('loading');
+
+    img.onload = function() {
+      img.classList.remove('loading');
+      viewer.classList.remove('loading');
+    };
+
+    img.onerror = function() {
+      img.classList.remove('loading');
+      img.classList.add('error');
+      viewer.classList.remove('loading');
+      // Try placeholder as fallback
+      if (!img.src.includes('placeholder')) {
+        img.src = 'https://via.placeholder.com/600x800?text=F116V';
+      }
+    };
+
+    function zoomIn() {
+      scale = Math.min(scale * 1.2, 4);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function zoomOut() {
+      scale = Math.max(scale / 1.2, 0.5);
+      img.style.transform = `scale(${scale})`;
+    }
+
+    function resetZoom() {
+      scale = 1;
+      img.style.transform = 'scale(1)';
+    }
+  </script>
+</body>
+</html>

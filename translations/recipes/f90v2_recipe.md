@@ -1,0 +1,107 @@
+# F90V2: Recipe Extraction
+
+**Section:** Pharmaceutical
+**Confidence:** 66%
+**Words:** 63 total, 58 resolved (92%)
+**Decoder:** ZFD v2.0 (unified lexicon, 309 morphemes)
+
+---
+
+## Ingredients Identified
+
+| Stem | English | Latin | Category | Occurrences | Status |
+|------|---------|-------|----------|-------------|--------|
+| **y** | and/with | *et* | grammar | 5 | CANDIDATE |
+| **ee** | (intensifier) |  | general | 4 | CANDIDATE |
+| **st** | Stand / place / position | *stare* | general | 4 | CANDIDATE |
+| **od** | stalk/stem | *caulis* | plant_part | 3 | CONFIRMED |
+
+## Preparation Methods
+
+| Operator | English | Occurrences |
+|----------|---------|-------------|
+| **šeo-** | Soaked-state (extended) | 7 |
+| **ko-** | measure/quantify (variant) | 6 |
+| **h-** | combine/cook (reduced) | 5 |
+| **sa-** | with/together | 4 |
+| **še-** | Soaked-state / After soaking | 4 |
+| **he-** | State / Result / After | 2 |
+| **ot-** | vessel/container (variant) | 2 |
+| **heo-** | State / Result (extended) | 2 |
+| **da-** | dose/add/give | 2 |
+| **š-** | soak/infuse (Croatian) | 1 |
+
+## Latin Pharmaceutical Terms
+
+- **ost** -> *osteo-* (Bone (medical register)) -- 2x
+- **da** -> *da/dare* (give (Rx imperative)) -- 2x
+
+## Interlinear Translation
+
+```
+EVA: cphdaithy qocfhey opol raiin ofchedol rsshese shodaiin sheos
+CRO: cplldaithy kocplley opol raiin ofhedol rsšese šodaiin šeos
+EXP: dati+y ko-cpll+ey op+ol r+aiin radix + facere+ol sa tim namoci-stabljika+aiin šeo-s
+ENG: give/add [adjective] +?cpllith measure/quantify (variant) [participle] [instrumental] [liquid+continuing] "Process kernel / do / treat" [instrumental] with the (comitative+article) +?rsse soak/infuse (Croatian) stalk/stem [liquid+continuing] Soaked-state (extended)
+```
+<sub>[▓▓▓▓▓░░░░░] 59% confidence</sub>
+
+```
+EVA: podchey ctheod ikheeos cheey ykeey s oesqokoor s oin sam
+CRO: podhey ctrreod istheeos heey ysteey s oeskostoor s oin sam
+EXP: stabljika+ey smjesa ee+s he-e+y i+ey s kost s o+in s-m
+ENG: stalk/stem [participle] compound mixture (intensifier) [~15] +?istho State / Result / After [adjective] and/with [participle] ?s? bone +?oesoor ?s? [plural] with/together
+```
+<sub>[▓▓▓▓░░░░░░] 46% confidence</sub>
+
+```
+EVA: saiin sheom sheey keeos ol cheeor chyshy tchody okeeom
+CRO: saiin šeom šeey steeos ol heeor hyšy thody osteeom
+EXP: s-i+in šeo-m še-e+y stare+s ulje he-ulje kuhaj-i+y tho+dy OSTEO- [Lat.]
+ENG: with/together [plural] Soaked-state (extended) Soaked-state / After soaking [adjective] Stand / place / position [~15] oil State / Result / After oil combine/cook (reduced) and/with [adjective] [verbal] +?tho BONE (MEDICAL REGISTER) +ee
+```
+<sub>[███████░░░] 72% confidence</sub>
+
+```
+EVA: tchos oteey saiin okeeey
+CRO: thos oteey saiin osteeey
+EXP: tho+s posuda-e+ey s-i+in OSTEO- [Lat.]
+ENG: [~15] +?tho vessel/container (variant) [participle] with/together [plural] BONE (MEDICAL REGISTER) +ee
+```
+<sub>[▓▓▓▓▓▓░░░░] 64% confidence</sub>
+
+```
+EVA: tcheody cpheol qoar cheol chos ololsdshcheal sheol qodar
+CRO: theody cplleol koar heol hos ololsdšheal šeol kodar
+EXP: ono što+dy cplle+ol ko-voda heo-l kuhaj-o+s ulje+al šeo-l ko-d+ar
+ENG: that which/the one [verbal] [instrumental] +?cplle measure/quantify (variant) water State / Result (extended) combine/cook (reduced) [~15] oil [locative] +?olsdšhe Soaked-state (extended) measure/quantify (variant) [instrumental]
+```
+<sub>[▓▓▓▓▓▓░░░░] 68% confidence</sub>
+
+```
+EVA: sal sheol shey qokeey qokeol cheody sykeeol dar chody y
+CRO: sal šeol šey kosteey kosteol heody systeeol dar hody y
+EXP: s-l šeo-l še-i ko-stare+ey ko-stare+ol heo-d+y ee+ol DA/DARE [Lat.] kuhaj-o+dy i
+ENG: with/together Soaked-state (extended) Soaked-state / After soaking and/with measure/quantify (variant) Stand / place / position [participle] measure/quantify (variant) Stand / place / position [instrumental] State / Result (extended) [adjective] (intensifier) [instrumental] GIVE (RX IMPERATIVE) +r combine/cook (reduced) [verbal] and/with
+```
+<sub>[███████░░░] 79% confidence</sub>
+
+```
+EVA: shey s sheeyl sheol sheody tol sheoctyoteey chodar choy
+CRO: šey s šeeyl šeol šeody tol šeoctyoteey hodar hoy
+EXP: še-i s še-ey šeo-l šeo-d+y t+ol šeo-in+ey kuhaj-stabljika+ar kuhaj-o+y
+ENG: Soaked-state / After soaking and/with ?s? Soaked-state / After soaking liquid/fluid Soaked-state (extended) Soaked-state (extended) [adjective] [instrumental] Soaked-state (extended) Preposition: in/with [participle] combine/cook (reduced) stalk/stem [instrumental] combine/cook (reduced) [adjective]
+```
+<sub>[███████░░░] 70% confidence</sub>
+
+```
+EVA: teeos qkeody qokchy oteeol dain
+CRO: teeos ksteody kosthy oteeol dain
+EXP: ee+s k+dy ko-stare+y posuda-ee+ol DA/DARE [Lat.]
+ENG: (intensifier) [~15] vessel (short) [verbal] +?steo measure/quantify (variant) Stand / place / position [adjective] vessel/container (variant) (intensifier) [instrumental] GIVE (RX IMPERATIVE) +in
+```
+<sub>[▓▓▓▓▓▓░░░░] 67% confidence</sub>
+
+---
+
+*Generated by ZFD Decoder v2.0 | Unified Lexicon (309 morphemes) | f90v2*

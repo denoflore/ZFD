@@ -3,6 +3,13 @@
 
 This index provides section classifications, key morphemes, and translation status for each folio.
 
+**Coverage note (2026-08-25):** the 43 multi-panel loci the folio pipeline
+originally skipped (astronomical foldouts f67-f72, rosettes f85-f86,
+pharmaceutical foldouts f89/f90/f95/f102, and f116v) are now decoded through
+the same frozen ZFD v2 decoder from the local LSI transliteration. Full
+manuscript coverage is 244 loci. See `translations/MISSING_LOCI_COMPLETION.json`
+and `06_Pipelines/complete_missing_folios.py`.
+
 ---
 
 ## Section Overview
