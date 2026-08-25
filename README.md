@@ -4,10 +4,17 @@
 
 **Status:** Structural Decipherment Complete ✓
 **Initial pre-release:** August 2025
+**Full-manuscript translation coverage:** August 2026
 
 **Scope:** Writing system mechanics, morphology, and constrained functional semantics
 
 **Coverage:** 92.1% morphological token coverage (3.6x above random baseline) under frozen lexicon
+
+**Completeness:** All 244 text-bearing loci translated, including every foldout
+panel (astronomical f67-f72, rosettes f85-f86, pharmaceutical f89/f90/f95/f102)
+and f116v. Every page regenerates deterministically from repo-local sources
+through the canonical unified lexicon v3 (362 morphemes); a reproduce-or-fail
+gate and a 45-test suite guard the whole pipeline. | [Recipes](translations/recipes/) | [Gate](06_Pipelines/regenerate_corpus.py)
 
 **Validation:**
 - Blind decode falsification tests passed (real Voynich >> shuffled, synthetic, and Latin baselines) | [Results](validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md)
@@ -22,7 +29,7 @@
 
 **Methodology:** Operator-stem-suffix shorthand system with preregistered constraints and frozen mappings | [Pipeline](zfd_decoder/)
 
-**Date:** February 2026
+**Date:** February 2026 (structural decipherment) | August 2026 (full-manuscript coverage, canonical lexicon regeneration, verification suite)
 
 ---
 
@@ -61,7 +68,8 @@
 | [**GETTING_STARTED.md**](GETTING_STARTED.md) | Learn to decode Voynichese in 10 minutes |
 | [**WHY_GLAGOLITIC.md**](WHY_GLAGOLITIC.md) | The paleographic evidence |
 | [**FAQ.md**](FAQ.md) | Common questions and objections answered |
-| [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | Complete recipe extraction: every preparation, ingredient, and instruction from all 201 folios |
+| [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | Complete recipe extraction: every preparation, ingredient, and instruction |
+| [**translations/recipes/**](translations/recipes/) | All 244 translated loci, one page per locus, regenerated deterministically from the canonical lexicon |
 
 </details>
 
@@ -144,7 +152,10 @@ This repository contains:
 - Statistical validation against medieval pharmaceutical corpora
 - Native speaker linguistic validation
 - The entire manuscript rendered in readable Croatian (179 pages)
-- Reproducible analysis pipeline
+- Translations of all 244 text-bearing loci, foldout panels and f116v included
+- Reproducible analysis pipeline: every translation page regenerates
+  byte-identically from repo-local sources, verified by a standing
+  reproduce-or-fail gate and a 45-test suite (`pytest` at repo root)
 
 **The mystery is over.**
 
@@ -823,7 +834,9 @@ The ZFD has been validated against 14 independent manuscripts and corpora spanni
 | 13 | **Croatian Botanical Glossary** (from Glagolitic ljekaruse) | Medieval | Plant morphology terms and action verbs. Cross-referenced against ZFD herbal section vocabulary. |
 | 14 | **Consolidated Scribal Lexicon** (from MS 650) | 15th c. | Full abbreviation conventions: suspension, contraction, special symbols, Tironian notes. Confirms ZFD shorthand is standard, not novel. |
 
-No alternative Voynich decipherment has been validated against mor
+No alternative Voynich decipherment has been validated against more than one
+or two external sources. The ZFD has been tested against 14.
+
 ### Paleographic Hand Analysis (NEW: February 2026)
 
 Systematic physical examination of 40+ gallows instances, 15 'aiin' tokens, and 70+ baseline character samples across 5 manuscript sections (herbal, biological, pharmaceutical, recipe/star, and late folios).
@@ -840,8 +853,6 @@ Systematic physical examination of 40+ gallows instances, 15 'aiin' tokens, and 
 
 **What this means together:** The scribe was a fluent, practiced writer working in a system they knew natively. Stroke fusion only occurs when someone is writing at speed in a familiar script. Combined with zero abbreviation marks and compositional internal structure, the physical evidence is consistent with a professional shorthand system used daily, not a constructed cipher or hoax.
 
-e than one or two external sources. The ZFD has been tested against 14.
-
 ---
 
 
@@ -849,13 +860,20 @@ e than one or two external sources. The ZFD has been tested against 14.
 
 ```bash
 git clone https://github.com/denoflore/ZFD
+python -m pytest                                            # 45 tests: lexicon audit, decoder, byte-level reproduction
+python 06_Pipelines/lexicon_audit.py                        # canonical lexicon structural gate
+python 06_Pipelines/regenerate_corpus.py --check            # all 244 loci decode twice, byte-identical, no writes
 python 06_Pipelines/coverage_v36b.py
 python validation/run_all.py
 python validation/blind_decode_test/run_test_v3.py          # dual-config, SHA-asserted
 python validation/transcription_robustness/run_robustness.py
 ```
 
-All data and code provided for independent verification.
+All data and code provided for independent verification. The translation
+corpus itself is reproducible: every committed page under
+`translations/recipes/` regenerates byte-identically from the EVA sources
+and lexicon in this repository, and the test suite fails if it stops
+being true.
 
 ---
 
