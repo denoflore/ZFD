@@ -7,8 +7,8 @@
 | qo→ko | 65 |
 | ch→h | 57 |
 | ot→otr | 53 |
-| sh→s | 45 |
-| da→da | 31 |
+| sh→š | 45 |
+| da→da | 23 |
 | ok→ost | 20 |
 | q→k | 2 |
 
@@ -23,6 +23,7 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **hor** (cook-agent)
 - **dar** (give-agent)
 - **hol** (cook-oil)
@@ -30,24 +31,24 @@
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 57 (97%)
-- C: 2 (3%)
+- B: 58 (98%)
+- C: 1 (2%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- ain: 14x
+- ain: 15x
 - ol: 12x
 - or: 10x
 - otredi: 9x
-- daiin: 8x
+- dain: 9x
 - dar: 7x
+- ar: 7x
 - hei: 6x
 - orain: 6x
-- otrchedi: 6x
-- hedi: 6x
+- otrhedi: 6x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -9,7 +9,7 @@
 | da→da | 4 |
 | ok→ost | 4 |
 | ot→otr | 3 |
-| sh→s | 3 |
+| sh→š | 3 |
 
 ## Gallows Distribution
 
@@ -24,18 +24,20 @@
 
 - **hol** (cook-oil)
 - **hor** (cook-agent)
+- **šol** (with-oil)
 - **dar** (give-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 9 (75%)
-- C: 3 (25%)
+- B: 12 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- otrchol: 2x
+- otrhol: 2x
 - hol: 2x
 - hor: 2x
 - dar: 2x
@@ -43,4 +45,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

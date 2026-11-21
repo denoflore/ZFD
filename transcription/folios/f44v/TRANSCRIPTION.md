@@ -1,4 +1,4 @@
-# Folio f44v -- Paleographic Transcription
+# Folio f44v -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006161/full/full/0/default.jpg
@@ -10,19 +10,19 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | trsho. kotrshi. htrrol. dchor. otrol. sol. trol. kotrshol. otroldi | B | tsho.qotshy.cthol.dchor.otol.shol.tol.qotshol.otoldy |
-| L2 | yolstol. heol. kostchain. dali. otrchol. daiin. sol. kotro?r. a??r | B | yolkol.cheol.qokchain.daly.otchol.daiin.shol.qoto!r.a!!r |
-| L3 | trol. ostchor. s?htrri. otrol. daiin. htrri. htrri | B | tol.okchor.sh!cthy.otol.daiin.cthy.cthy |
-| L4 | yostalod. sain. sor. sorodi. ssti. so. y?trchi. oplchod. opli | B | yokalod.shaiin.shor.shorody.shky.sho.y!tchy.opchod.opy |
-| L5 | oai?n. sol. htrri. hpllain. ystchor. otrchi. kotri. otrcheor. htrrain | B | oai!n.shol.cthy.cphaiin.ykchor.otchy.qoty.otcheor.cthain |
-| L6 | trol. dair. ytrain. dol. i. stchain. otry?stei. otrchol. ytrain. di | B | tol.dair.ytaiin.dol.y.kchain.oty!keey.otchol.ytaiin.dy |
-| L7 | osto. trchain. htrrol. di. heol. ololi | B | oko.tchaiin.cthol.dy.cheol.ololy |
-| L8 | trsheodi. htrrain. odain. sol. sei. ctri. |. ytroda. ol | B | tsheody.cthaiin.odaiin.shol.shey.ctyytoda.ol |
-| L9 | dshor. htrrees. lol. steees. hstri. hhtrri. lo. | | B | dshor.cthees.lol.keees.ckhy.chcthy.lo |
-| L10 | lsho. kostchi. trshi. hpllain. htrral. stal. | | B | lsho.qokchy.tshy.cphaiin.cthal.kal |
-| L11 | ostol. hol. hol. hosti. ostain. htrri. otral. | | B | okol.chol.chol.choky.okaiin.cthy.otal |
-| L12 | ychei. treol. hain. hhtrri. htrro. htrrol | B | ychey.teol.chaiin.chcthy.ctho.cthol |
-| L13 | lchor. sor. dairl | B | lchor.shor.dairl |
+| L1 | tršo. kotrši. htrol. dhor. otrol. šol. trol. kotršol. otroldi | B | tsho.qotshy.cthol.dchor.otol.shol.tol.qotshol.otoldy |
+| L2 | iolstol. heol. kosthain. dali. otrhol. dain. šol. kotror. ar | B | yolkol.cheol.qokchain.daly.otchol.daiin.shol.qoto!r.a!!r |
+| L3 | trol. osthor. šhtri. otrol. dain. htri. htri | B | tol.okchor.sh!cthy.otol.daiin.cthy.cthy |
+| L4 | iostalod. šain. šor. šorodi. šsti. šo. itrhi. oplhod. opli | B | yokalod.shaiin.shor.shorody.shky.sho.y!tchy.opchod.opy |
+| L5 | oain. šol. htri. hplain. isthor. otrhi. kotri. otrheor. htrain | B | oai!n.shol.cthy.cphaiin.ykchor.otchy.qoty.otcheor.cthain |
+| L6 | trol. dair. itrain. dol. i. sthain. otristei. otrhol. itrain. di | B | tol.dair.ytaiin.dol.y.kchain.oty!keey.otchol.ytaiin.dy |
+| L7 | osto. trhain. htrol. di. heol. ololi | B | oko.tchaiin.cthol.dy.cheol.ololy |
+| L8 | tršeodi. htrain. odain. šol. šei. ctri \| itroda. ol | B | tsheody.cthaiin.odaiin.shol.shey.cty \| ytoda.ol |
+| L9 | dšor. htrees. lol. steees. hsti. hhtri. lo \| | B | dshor.cthees.lol.keees.ckhy.chcthy.lo \| |
+| L10 | lšo. kosthi. trši. hplain. htral. stal \| | B | lsho.qokchy.tshy.cphaiin.cthal.kal \| |
+| L11 | ostol. hol. hol. hosti. ostain. htri. otral \| | B | okol.chol.chol.choky.okaiin.cthy.otal \| |
+| L12 | ihei. treol. hain. hhtri. htro. htrol | B | ychey.teol.chaiin.chcthy.ctho.cthol |
+| L13 | lhor. šor. dairl | B | lchor.shor.dairl |
 
 ## Confidence Distribution
 
@@ -31,7 +31,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

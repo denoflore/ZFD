@@ -5,9 +5,9 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 24 |
-| sh→s | 9 |
+| sh→š | 9 |
 | qo→ko | 9 |
-| da→da | 7 |
+| da→da | 2 |
 | ot→otr | 2 |
 | ok→ost | 1 |
 
@@ -20,31 +20,33 @@
 
 ## Validated Terms Present
 
+- **šol** (with-oil)
+- **dain** (substance/given)
 - **hol** (cook-oil)
 - **hor** (cook-agent)
 - **stol** (bone-oil)
 
 ## Confidence Summary
 
-- A: 1 (6%)
-- B: 15 (94%)
+- A: 2 (12%)
+- B: 14 (88%)
 - C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - hol: 9x
-- daiin: 6x
-- sol: 3x
+- dain: 7x
+- šol: 3x
 - hei: 2x
 - kotrei: 2x
-- trchei: 2x
-- so: 2x
-- stchei: 2x
+- trhei: 2x
+- šo: 2x
+- sthei: 2x
 - hotror: 2x
-- stchol: 2x
+- sthol: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

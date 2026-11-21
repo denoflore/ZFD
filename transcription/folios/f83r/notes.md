@@ -6,9 +6,9 @@
 |----------|-------|
 | qo→ko | 78 |
 | ch→h | 51 |
-| sh→s | 46 |
-| da→da | 17 |
+| sh→š | 46 |
 | ot→otr | 13 |
+| da→da | 12 |
 | q→k | 5 |
 | ok→ost | 5 |
 
@@ -23,29 +23,31 @@
 
 ## Validated Terms Present
 
+- **šol** (with-oil)
+- **dain** (substance/given)
 - **dar** (give-agent)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 43 (78%)
-- C: 11 (20%)
-- D: 1 (2%)
+- B: 55 (100%)
+- C: 0 (0%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- sedi: 15x
+- šedi: 15x
 - hedi: 13x
 - kostedi: 13x
-- lchedi: 9x
-- sol: 8x
+- lhedi: 11x
+- dain: 8x
+- sain: 8x
+- sol: 7x
 - hei: 7x
+- kostain: 7x
 - kosteedi: 7x
-- kosti: 7x
-- kostei: 6x
-- kostain: 5x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

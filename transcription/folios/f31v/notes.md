@@ -7,9 +7,9 @@
 | ok→ost | 19 |
 | ch→h | 19 |
 | ot→otr | 6 |
-| sh→s | 4 |
+| sh→š | 4 |
 | qo→ko | 4 |
-| da→da | 4 |
+| da→da | 2 |
 
 ## Gallows Distribution
 
@@ -22,6 +22,7 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **hol** (cook-oil)
 - **dar** (give-agent)
 - **stor** (bone-agent)
@@ -38,7 +39,7 @@
 - ain: 5x
 - ostei: 3x
 - heodi: 2x
-- daiin: 2x
+- dain: 2x
 - o: 2x
 - al: 2x
 - ar: 2x
@@ -47,4 +48,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

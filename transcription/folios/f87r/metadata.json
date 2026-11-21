@@ -1,9 +1,10 @@
 {
   "folio": "f87r",
   "section": "pharmaceutical",
-  "quire": "O-P (Rene) / XV-XVI (Beinecke)",
+  "illustration_type": "herbal",
+  "quire": "O (Rene) / XV (Beinecke)",
   "currier_language": "A",
-  "currier_hand": "1",
+  "currier_hand": "4",
   "iiif_id": "1006232",
   "iiif_url": "https://collections.library.yale.edu/iiif/2/1006232/full/full/0/default.jpg",
   "condition": "Pharmaceutical page with apparatus illustrations and recipe text.",
@@ -11,6 +12,6 @@
     "type": "pharmaceutical",
     "text_lines": 16
   },
-  "transcription_date": "2026-02-07",
-  "transcription_method": "Direct paleographic reading using ZFD 7-layer constraint stack with automated parsing"
+  "transcription_date": "2026-11-21",
+  "transcription_method": "Automated ZFD rule parsing (batch_transcribe.py) of the Takahashi (H) EVA transliteration in LSI_ivtff_0d.txt. Not a direct reading of the manuscript image."
 }

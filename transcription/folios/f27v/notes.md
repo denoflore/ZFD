@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| sh→s | 10 |
-| ch→h | 8 |
+| ch→h | 10 |
+| sh→š | 10 |
 | ok→ost | 5 |
-| ot→otr | 1 |
+| ot→otr | 2 |
 | da→da | 1 |
 | qo→ko | 1 |
 
@@ -21,24 +21,25 @@
 
 ## Validated Terms Present
 
+- **šol** (with-oil)
 - **hol** (cook-oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 3 (38%)
-- C: 5 (62%)
+- B: 8 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- so: 3x
-- dchi: 3x
-- si: 2x
-- stchi: 2x
-- dsho: 2x
+- šo: 3x
+- dhi: 3x
+- ši: 2x
+- sthi: 2x
+- dšo: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

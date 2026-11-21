@@ -8,8 +8,8 @@
 | ch→h | 78 |
 | ot→otr | 33 |
 | ok→ost | 29 |
-| sh→s | 16 |
-| da→da | 13 |
+| sh→š | 16 |
+| da→da | 8 |
 | q→k | 2 |
 
 ## Gallows Distribution
@@ -23,30 +23,31 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **hol** (cook-oil)
 - **dar** (give-agent)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 42 (93%)
-- C: 3 (7%)
+- B: 45 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- kostain: 9x
+- kostain: 12x
+- ain: 8x
 - ar: 8x
-- ain: 7x
+- dain: 7x
 - ostar: 7x
 - hei: 6x
+- kodain: 6x
+- lstain: 6x
 - hol: 6x
-- hedi: 5x
-- ol: 5x
-- daiin: 5x
-- or: 5x
+- otrain: 6x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

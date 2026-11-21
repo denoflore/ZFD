@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| sh→s | 9 |
+| sh→š | 9 |
 | qo→ko | 8 |
+| ok→ost | 6 |
 | ch→h | 5 |
-| da→da | 5 |
-| ok→ost | 4 |
+| da→da | 2 |
 | ot→otr | 2 |
 
 ## Gallows Distribution
@@ -22,7 +22,9 @@
 
 ## Validated Terms Present
 
+- **šol** (with-oil)
 - **hol** (cook-oil)
+- **dain** (substance/given)
 - **hor** (cook-agent)
 - **dar** (give-agent)
 
@@ -37,16 +39,16 @@
 
 - di: 3x
 - hol: 3x
-- daiin: 3x
+- dain: 3x
 - s: 3x
-- sol: 2x
-- koplchi: 2x
-- si: 2x
-- ystchi: 2x
+- šol: 2x
+- koplhi: 2x
+- ši: 2x
+- isthi: 2x
 - i: 2x
-- stchi: 2x
+- sthi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

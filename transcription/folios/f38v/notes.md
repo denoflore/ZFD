@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| da→da | 12 |
-| ch→h | 10 |
-| ok→ost | 5 |
-| sh→s | 4 |
+| ch→h | 12 |
+| ok→ost | 7 |
+| da→da | 6 |
+| sh→š | 4 |
 | qo→ko | 4 |
 | ot→otr | 2 |
 
@@ -27,25 +27,24 @@
 
 ## Confidence Summary
 
-- A: 0 (0%)
-- B: 8 (100%)
+- A: 1 (12%)
+- B: 7 (88%)
 - C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 8x
+- dain: 12x
 - hol: 3x
 - ostei: 3x
 - s: 3x
 - d: 3x
-- dain: 3x
-- ain: 2x
-- so: 2x
+- ain: 3x
+- šo: 2x
 - kostei: 2x
 - stei: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -1,4 +1,4 @@
-# Folio f10v -- Paleographic Transcription
+# Folio f10v -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006095/full/full/0/default.jpg
@@ -10,13 +10,13 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plain. daiin. seo. plchei. kotri. daiin. htrror. otry?di. sain | B | paiin.daiin.sheo.pcheey.qoty.daiin.cthor.oty!dy.sain |
-| L2 | dain. daiin. hstri. hhtrror. hoiin. kotr. hodain. htrri. daiin | B | dain.daiin.ckhy.chcthor.choiin.qot.chodaiin.cthy.daiin |
-| L3 | dsho. ytrei. stchol. ol?tri. hol. di | B | dsho.ytey.kchol.ol!ty.chol.dy |
-| L4 | kotrchy?tror. soiin. daiin. kotrchei. shtrrei. ytror. dain | B | qotchy!tor.shoiin.daiin.qotchey.shcthey.ytor.dain |
-| L5 | so. ystei. daiin. kotrchi. kotror. hol. daiin. kostchy?sti | B | sho.ykeey.daiin.qotchy.qotor.chol.daiin.qokchy!ky |
-| L6 | soiin. hor. shtrri. kotri. kotroiin. kostol. hor?ain | B | shoiin.chor.shcthy.qoty.qotoiin.qokol.chor!aiin |
-| L7 | kostol. hy?sti. hol. hesti. daiin. dain. hhstran | B | qokol.chy!ky.chol.cheky.daiin.dain.chckhan |
+| L1 | plain. dain. šeo. plhei. kotri. dain. htror. otridi. sain | B | paiin.daiin.sheo.pcheey.qoty.daiin.cthor.oty!dy.sain |
+| L2 | dain. dain. hsti. hhtror. hoiin. kotr. hodain. htri. dain | B | dain.daiin.ckhy.chcthor.choiin.qot.chodaiin.cthy.daiin |
+| L3 | dšo. itrei. sthol. oltri. hol. di | B | dsho.ytey.kchol.ol!ty.chol.dy |
+| L4 | kotrhitror. šoiin. dain. kotrhei. šhtrei. itror. dain | B | qotchy!tor.shoiin.daiin.qotchey.shcthey.ytor.dain |
+| L5 | šo. istei. dain. kotrhi. kotror. hol. dain. kosthisti | B | sho.ykeey.daiin.qotchy.qotor.chol.daiin.qokchy!ky |
+| L6 | šoiin. hor. šhtri. kotri. kotroiin. kostol. horain | B | shoiin.chor.shcthy.qoty.qotoiin.qokol.chor!aiin |
+| L7 | kostol. histi. hol. hesti. dain. dain. hhstan | B | qokol.chy!ky.chol.cheky.daiin.dain.chckhan |
 
 ## Confidence Distribution
 
@@ -25,7 +25,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

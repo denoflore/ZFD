@@ -4,9 +4,9 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 20 |
+| ch→h | 21 |
+| sh→š | 8 |
 | da→da | 8 |
-| sh→s | 7 |
 | ok→ost | 4 |
 | ot→otr | 2 |
 | qo→ko | 1 |
@@ -22,15 +22,17 @@
 
 ## Validated Terms Present
 
+- **šol** (with-oil)
 - **dar** (give-agent)
 - **hol** (cook-oil)
 - **ostol** (bone oil)
 - **stol** (bone-oil)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
-- A: 0 (0%)
-- B: 10 (100%)
+- A: 1 (10%)
+- B: 9 (90%)
 - C: 0 (0%)
 - D: 0 (0%)
 
@@ -38,16 +40,16 @@
 
 - hol: 5x
 - dol: 4x
-- sol: 4x
+- šol: 4x
 - hodi: 3x
 - dar: 3x
 - ol: 2x
 - har: 2x
-- hstri: 2x
-- htrri: 2x
-- dal: 2x
+- do: 2x
+- hsti: 2x
+- htri: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

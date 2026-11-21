@@ -7,7 +7,7 @@
 | ch→h | 35 |
 | ot→otr | 13 |
 | ok→ost | 11 |
-| sh→s | 10 |
+| sh→š | 10 |
 | qo→ko | 10 |
 | da→da | 9 |
 
@@ -23,14 +23,15 @@
 ## Validated Terms Present
 
 - **dar** (give-agent)
+- **dain** (substance/given)
 - **hor** (cook-agent)
 - **stol** (bone-oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 15 (94%)
-- C: 1 (6%)
+- B: 16 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
@@ -39,7 +40,7 @@
 - or: 4x
 - hei: 4x
 - ain: 4x
-- sedi: 3x
+- šedi: 3x
 - hdi: 3x
 - otredi: 2x
 - dar: 2x
@@ -49,4 +50,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

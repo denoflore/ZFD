@@ -1,4 +1,4 @@
-# Folio f38r -- Paleographic Transcription
+# Folio f38r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006148/full/full/0/default.jpg
@@ -10,12 +10,12 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | trolor. hohstri. |. osti. hoiin. ostshol. oli. osti | B | tolor.chockhyoky.choiin.okshol.oly.oky |
-| L2 | ostsei. hody?s. |. ytroiin. otrain. otrain. htrrar | B | okseey.chody!sytoiin.otaiin.otaiin.cthar |
-| L3 | kostor. ostain. |. otrain. kostchol. hostostor | B | qokor.okaiinotaiin.qokchol.chokokor |
-| L4 | ychost. hei. hhstr. |. hi. hsta. r. odain. daiin. si | B | ychok.chey.chckhchy.chka.r.odaiin.daiin.sy |
-| L5 | ostor. hei. stain. |. hor. htrro. dain. hstroldi | B | okor.chey.kainchor.ctho.dain.ckholdy |
-| L6 | ysho. so. stos. |. daiin. ostoi. hochor. daiin | B | ysho.sho.kosdaiin.okoy.chochor.daiin |
+| L1 | trolor. hohsti \| osti. hoiin. ostšol. oli. osti | B | tolor.chockhy \| oky.choiin.okshol.oly.oky |
+| L2 | ostsei. hodis \| itroiin. otrain. otrain. htrar | B | okseey.chody!s \| ytoiin.otaiin.otaiin.cthar |
+| L3 | kostor. ostain \| otrain. kosthol. hostostor | B | qokor.okaiin \| otaiin.qokchol.chokokor |
+| L4 | ihost. hei. hhst \| hi. hsta. r. odain. dain. si | B | ychok.chey.chckh \| chy.chka.r.odaiin.daiin.sy |
+| L5 | ostor. hei. stain \| hor. htro. dain. hstoldi | B | okor.chey.kain \| chor.ctho.dain.ckholdy |
+| L6 | išo. šo. stos \| dain. ostoi. hohor. dain | B | ysho.sho.kos \| daiin.okoy.chochor.daiin |
 
 ## Confidence Distribution
 
@@ -24,7 +24,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| sh→s | 36 |
+| sh→š | 36 |
 | ch→h | 30 |
 | qo→ko | 14 |
-| da→da | 12 |
+| da→da | 6 |
 | ok→ost | 3 |
 | ot→otr | 2 |
 
@@ -22,30 +22,32 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **hol** (cook-oil)
+- **šol** (with-oil)
 - **dar** (give-agent)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 13 (87%)
-- C: 2 (13%)
+- B: 15 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 6x
-- hhstri: 5x
-- see: 4x
+- dain: 6x
+- hhsti: 5x
+- šee: 4x
 - ain: 4x
-- sdi: 4x
+- šdi: 4x
 - di: 3x
 - s: 3x
 - hdi: 3x
-- sol: 3x
+- šol: 3x
 - kostar: 3x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

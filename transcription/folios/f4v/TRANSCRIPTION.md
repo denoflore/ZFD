@@ -1,4 +1,4 @@
-# Folio f4v -- Paleographic Transcription
+# Folio f4v -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006083/full/full/0/default.jpg
@@ -10,29 +10,30 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plchooiin. stsheo. stchoi. hoplchi. dolds. |. dlod | B | pchooiin.ksheo.kchoy.chopchy.doldsdlod |
-| L2 | ol. hei. hi. htrri. sstchor. seo. heori. |. holdi | B | ol.chey.chy.cthy.shkchor.sheo.cheorycholdy |
-| L3 | so. so. hain. sain. daiin. kodain. |. o. ar. am | B | sho.sho.chaiin.shaiin.daiin.qodaiino.ar.am |
-| L4 | kostshi. kohtrri. hotreol. daiin. htrrei. |. hoain | B | qokshy.qocthy.choteol.daiin.ctheychoaiin |
-| L5 | sor. sei. ctro. otroiin. sei. kotrchoiin. |. hodain | B | shor.sheey.cto.otoiin.shey.qotchoiinchodain |
-| L6 | ytrchoi. sostchi. hpll?odi | C | ytchoy.shokchy.cph!ody |
-| L7 | trorchi. seeor. hor. sostchi. hplly?di. | | B | torchy.sheeor.chor.shokchy.cphy!dy |
-| L8 | olaen. hor. htrrol. so. otror. htrrori. | | B | olaen.chor.cthol.sho.otor.cthory |
-| L9 | koosto. iiin?cheom. hhtrri. sosti. daiin. | | B | qooko.iiin!cheom.chcthy.shoky.daiin |
-| L10 | otrain. seo. osteodi. hol. hosteodi. | | B | otaiin.sheo.okeody.chol.chokeody |
-| L11 | so. stcheor. sodi. strain. kotrol. daiin. | | B | sho.kcheor.shody.shtaiin.qotol.daiin |
-| L12 | kostoi. so. osteol. s. stei. sar. har. odi. | | B | qokoy.sho.okeol.s.keey.shar.char.ody |
-| L13 | sodi. s. heor. hostodi. sodain. kotri. | | B | shody.s.cheor.chokody.shodaiin.qoty |
-| L14 | ochodi. hy?stei. htrodi | C | ochody.chy!key.chtody |
+| L1 | plhooiin. stšeo. sthoi. hoplhi. dolds \| dlod | B | pchooiin.ksheo.kchoy.chopchy.dolds \| dlod |
+| L2 | ol. hei. hi. htri. šsthor. šeo. heori \| holdi | B | ol.chey.chy.cthy.shkchor.sheo.cheory \| choldy |
+| L3 | šo. šo. hain. šain. dain. kodain \| o. ar. am | B | sho.sho.chaiin.shaiin.daiin.qodaiin \| o.ar.am |
+| L4 | kostši. kohtri. hotreol. dain. htrei \| hoain | B | qokshy.qocthy.choteol.daiin.cthey \| choaiin |
+| L5 | šor. šei. ctro. otroiin. šei. kotrhoiin \| hodain | B | shor.sheey.cto.otoiin.shey.qotchoiin \| chodain |
+| L6 | itrhoi. šosthi. hplodi | B | ytchoy.shokchy.cph!ody |
+| L7 | trorhi. šeeor. hor. šosthi. hplidi \| | B | torchy.sheeor.chor.shokchy.cphy!dy \| |
+| L8 | olaen. hor. htrol. šo. otror. htrori \| | B | olaen.chor.cthol.sho.otor.cthory \| |
+| L9 | koosto. iiinheom. hhtri. šosti. dain \| | B | qooko.iiin!cheom.chcthy.shoky.daiin \| |
+| L10 | otrain. šeo. osteodi. hol. hosteodi \| | B | otaiin.sheo.okeody.chol.chokeody \| |
+| L11 | šo. stheor. šodi. štrain. kotrol. dain \| | B | sho.kcheor.shody.shtaiin.qotol.daiin \| |
+| L12 | kostoi. šo. osteol. s. stei. šar. har. odi \| | B | qokoy.sho.okeol.s.keey.shar.char.ody \| |
+| L13 | šodi. s. heor. hostodi. šodain. kotri \| | B | shody.s.cheor.chokody.shodaiin.qoty \| |
+| L14 | ohodi. histei. htrodi | B | ochody.chy!key.chtody |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 12 lines
-- **C:** 2 lines
+- **B:** 14 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

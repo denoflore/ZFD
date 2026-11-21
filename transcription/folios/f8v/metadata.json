@@ -1,6 +1,7 @@
 {
   "folio": "f8v",
   "section": "herbal",
+  "illustration_type": "herbal",
   "quire": "A (Rene) / I (Beinecke)",
   "currier_language": "A",
   "currier_hand": "1",
@@ -8,9 +9,9 @@
   "iiif_url": "https://collections.library.yale.edu/iiif/2/1006091/full/full/0/default.jpg",
   "condition": "Standard herbal folio with plant illustration and text.",
   "layout": {
-    "type": "herbal_single_plant",
+    "type": "herbal",
     "text_lines": 17
   },
-  "transcription_date": "2026-02-07",
-  "transcription_method": "Direct paleographic reading using ZFD 7-layer constraint stack with automated parsing"
+  "transcription_date": "2026-11-21",
+  "transcription_method": "Automated ZFD rule parsing (batch_transcribe.py) of the Takahashi (H) EVA transliteration in LSI_ivtff_0d.txt. Not a direct reading of the manuscript image."
 }

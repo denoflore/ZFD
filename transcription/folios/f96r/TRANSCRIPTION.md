@@ -1,8 +1,8 @@
-# Folio f96r -- Paleographic Transcription
+# Folio f96r -- Automated ZFD Transcription
 
 **Section:** Pharmaceutical
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006244/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language A, Hand 4
 
 ---
 
@@ -10,28 +10,29 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | tror. heeor. hstreos. olsheeo?sol. hplleol. hplleor. hodar. | | B | tor.cheeor.ckheos.olsheeo!sol.cpheol.cpheor.chodar |
-| L2 | ytrol. otreeor. seol. otrei. kosteodi. kosteeodi. htrrei. | | B | ytol.oteeor.sheol.oteey.qokeody.qokeeody.cthey |
-| L3 | troain. htrreodal. hos. hstreodi. steodi. hodol. otri. | | B | toaiin.ctheodal.chos.ckheody.keody.chodol.oty |
-| L4 | or. hor. hstchol. hostchor. s. or. seohstri. holi. | | B | or.chor.chkchol.chokchor.s.or.sheockhy.choly |
-| L5 | daiin. hodain. htrrei. trol. seor. kosteol. ostol. | | B | daiin.chodaiin.cthey.tol.sheor.qokeol.okol |
-| L6 | lor. hstrei. hol. holodi. heol. htrreor. s?or. | | B | lor.ckheey.chol.cholody.cheol.ctheor.s!or |
-| L7 | o?iir. or. hstror. hstei. hstro?htrri. or. hohstri. | | C | o!iir.or.ckhor.chkey.ckho!cthy.or.chockhy |
-| L8 | ysteor. secheeol. seol. kosteei. hol. daiin | B | ykeor.secheeol.sheol.qokeeey.chol.daiin |
-| L9 | trodar. seo. htrrodi. sostohplri. hoplcho. dori. | | B | todar.sheo.cthody.shokocfhy.chopcho.dory |
-| L10 | otrcho. dol. so?htrrodi. sohstri. otrchodor. hoctri. | | B | otcho.dol.sho!cthody.shockhy.otchodor.chocty |
-| L11 | treol. heodi. sodol. kostchod. |. s. |. ?ain. |. hostei. | | B | teol.cheody.shodol.qokchods!aiinchokey |
-| L12 | dcheor. |. heol. |. heodai?n. ol. |. di. |. d. |. hs. |. ar?cheodi. | | B | dcheorcheolcheodai!n.oldydchsar!cheody |
-| L13 | otreeo. dsho. kotrchos | B | oteeo.dsho.qotchos |
+| L1 | tror. heeor. hsteos. olšeeosol. hpleol. hpleor. hodar \| | B | tor.cheeor.ckheos.olsheeo!sol.cpheol.cpheor.chodar \| |
+| L2 | itrol. otreeor. šeol. otrei. kosteodi. kosteeodi. htrei \| | B | ytol.oteeor.sheol.oteey.qokeody.qokeeody.cthey \| |
+| L3 | troain. htreodal. hos. hsteodi. steodi. hodol. otri \| | B | toaiin.ctheodal.chos.ckheody.keody.chodol.oty \| |
+| L4 | or. hor. hsthol. hosthor. s. or. šeohsti. holi \| | B | or.chor.chkchol.chokchor.s.or.sheockhy.choly \| |
+| L5 | dain. hodain. htrei. trol. šeor. kosteol. ostol \| | B | daiin.chodaiin.cthey.tol.sheor.qokeol.okol \| |
+| L6 | lor. hstei. hol. holodi. heol. htreor. sor \| | B | lor.ckheey.chol.cholody.cheol.ctheor.s!or \| |
+| L7 | oiir. or. hstor. hstei. hstohtri. or. hohsti \| | B | o!iir.or.ckhor.chkey.ckho!cthy.or.chockhy \| |
+| L8 | isteor. seheeol. šeol. kosteei. hol. dain | B | ykeor.secheeol.sheol.qokeeey.chol.daiin |
+| L9 | trodar. šeo. htrodi. šostohpri. hoplho. dori \| | B | todar.sheo.cthody.shokocfhy.chopcho.dory \| |
+| L10 | otrho. dol. šohtrodi. šohsti. otrhodor. hoctri \| | B | otcho.dol.sho!cthody.shockhy.otchodor.chocty \| |
+| L11 | treol. heodi. šodol. kosthod \| s \| ain \| hostei \| | B | teol.cheody.shodol.qokchod \| s \| !aiin \| chokey \| |
+| L12 | dheor \| heol \| heodain. ol \| di \| d \| hs \| arheodi \| | B | dcheor \| cheol \| cheodai!n.ol \| dy \| d \| chs \| ar!cheody \| |
+| L13 | otreeo. dšo. kotrhos | B | oteeo.dsho.qotchos |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 12 lines
-- **C:** 1 lines
+- **B:** 13 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

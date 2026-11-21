@@ -5,9 +5,9 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 32 |
-| sh→s | 18 |
-| da→da | 14 |
-| qo→ko | 13 |
+| sh→š | 18 |
+| qo→ko | 14 |
+| da→da | 10 |
 | ok→ost | 4 |
 | ot→otr | 3 |
 
@@ -24,13 +24,15 @@
 
 - **dar** (give-agent)
 - **hol** (cook-oil)
+- **šol** (with-oil)
 - **hor** (cook-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 15 (94%)
-- C: 1 (6%)
+- B: 16 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
@@ -38,9 +40,9 @@
 - dar: 6x
 - hdi: 5x
 - ain: 5x
-- sedi: 4x
-- daiin: 4x
-- sei: 3x
+- šedi: 4x
+- dain: 4x
+- šei: 3x
 - di: 3x
 - hedi: 3x
 - ar: 3x
@@ -49,4 +51,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

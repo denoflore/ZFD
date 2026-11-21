@@ -7,8 +7,8 @@
 | ch→h | 32 |
 | ok→ost | 7 |
 | qo→ko | 7 |
-| da→da | 5 |
-| sh→s | 4 |
+| sh→š | 4 |
+| da→da | 3 |
 | ot→otr | 1 |
 
 ## Gallows Distribution
@@ -22,6 +22,7 @@
 ## Validated Terms Present
 
 - **hor** (cook-agent)
+- **dain** (substance/given)
 - **hol** (cook-oil)
 - **ostol** (bone oil)
 - **sal** (salt)
@@ -40,10 +41,10 @@
 - hol: 3x
 - kosteol: 3x
 - sol: 2x
-- daiin: 2x
+- dain: 2x
 - osteol: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

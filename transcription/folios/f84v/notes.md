@@ -6,10 +6,10 @@
 |----------|-------|
 | qo→ko | 62 |
 | ok→ost | 41 |
-| sh→s | 36 |
+| sh→š | 36 |
 | ch→h | 26 |
-| da→da | 21 |
 | ot→otr | 16 |
+| da→da | 11 |
 
 ## Gallows Distribution
 
@@ -24,30 +24,31 @@
 
 - **dar** (give-agent)
 - **stor** (bone-agent)
+- **dain** (substance/given)
 - **stol** (bone-oil)
 - **ostol** (bone oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 45 (88%)
-- C: 4 (8%)
-- D: 2 (4%)
+- B: 51 (100%)
+- C: 0 (0%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- sedi: 20x
+- šedi: 20x
 - kostei: 15x
 - ol: 15x
 - ostedi: 14x
+- dain: 13x
 - kostedi: 12x
 - hedi: 12x
-- daiin: 10x
-- dol: 8x
+- dol: 9x
 - osteedi: 7x
 - ostei: 6x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

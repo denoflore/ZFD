@@ -12,26 +12,29 @@ result must therefore survive its own error band.
 
 What this test measures
 -----------------------
-Two metrics with deliberately different failure modes:
+1. STRUCTURAL robustness: coverage (known_ratio) under noise.
+2. SEMANTIC sensitivity: fraction of tokens that decode to the SAME stem
+   as the clean decode.
 
-1. STRUCTURAL robustness (coverage / coherence under noise):
-   should stay roughly flat if the morphological system is layered.
+CORRECTION (2026-11 audit). The original docstring said an accept-anything
+decoder is flat on both metrics, so "flat coverage + graded stem decay"
+fingerprints a layered real system. That is false. Any decoder that
+accepts a fixed share of strings and derives its stem from the input
+shows exactly that pattern: coverage stays at its acceptance rate, and
+stem identity falls with the noise rate because the input changed. A
+coin-flip null decoder (stem = the raw word) earned the old
+LAYERED-REAL-SYSTEM verdict. The verdict now requires the real decoder to
+pass AND the null to fail; otherwise it reports NON-DISCRIMINATING. The
+null's numbers and a glyph-shuffled gibberish coverage control are written
+next to the real ones so the gap (if any) is visible.
 
-2. SEMANTIC sensitivity (stem-identity stability):
-   the fraction of tokens that decode to the SAME stem as the clean
-   decode. This metric CAN fail, so it can actually prove something.
-   - An accept-anything decoder is flat on BOTH metrics.
-   - A brittle cipher collapses on BOTH.
-   - A layered real system is flat on (1) and degrades roughly
-     linearly on (2). That is the fingerprint this test looks for.
+Other 2026-11 fixes: seeds no longer use the per-process randomized
+hash(); header lines and <...> markup are stripped before decoding and
+before noise injection (they used to become tokens: "folio", "text",
+"dyplantchy").
 
-Interpretation of the June 2026 run
------------------------------------
-Coverage stays ~0.985 from 0% to 20% noise (structural robustness).
-Stem identity degrades linearly: ~0.95 at 5%, ~0.90 at 10%, ~0.81 at 20%
-(semantic sensitivity). High-frequency ingredient identifications
-(kost, ol) are aggregate counts over thousands of tokens and remain
-statistically stable at the worst-case error floor.
+The June 2026 numbers that used to be quoted here came from the old
+harness. Current numbers live in robustness_results.json.
 
 Usage:
     python validation/transcription_robustness/run_robustness.py
@@ -47,11 +50,14 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 ROOT = HERE.parent.parent
+sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT / "validation" / "blind_decode_test"))
 sys.path.insert(0, str(ROOT / "zfd_decoder" / "src"))
 
+from _common import stable_seed, clean_folio_text, shuffle_glyphs  # noqa: E402
 from pipeline import ZFDPipeline  # noqa: E402
 from decoder import decode_eva_text  # noqa: E402
+from tokenizer import tokenize_folio  # noqa: E402
 
 FOLIOS = ["f10r", "f23v", "f47r", "f89r", "f101v"]
 EVA_DIR = ROOT / "voynich_data" / "raw_eva"
@@ -62,6 +68,7 @@ ITERS = 20
 
 
 def perturb(text: str, rate: float, rng: random.Random) -> str:
+    """Swap i/n/r/l glyphs. Expects markup-free text from clean_folio_text."""
     out = []
     for ch in text:
         if ch in CONFUSION_SET and rng.random() < rate:
@@ -71,8 +78,63 @@ def perturb(text: str, rate: float, rng: random.Random) -> str:
     return "".join(out)
 
 
+def make_null_decoder(accept_rate: float):
+    """Zero-content control: 'known' is a coin flip keyed on the string,
+    at the real decoder's clean acceptance rate; stem = the raw word."""
+    cut = int(round(accept_rate * 1000))
+
+    def null_decode(eva_text, folio, pipeline=None):
+        toks = [t.eva for line in tokenize_folio(eva_text, folio) for t in line]
+        known = [int(hashlib.sha1(w.encode()).hexdigest(), 16) % 1000 < cut for w in toks]
+        kr = sum(known) / len(toks) if toks else 0.0
+        return {"known_ratio": kr, "coherence": kr,
+                "tokens": [{"stem": w, "stem_gloss": w if k else ""} for w, k in zip(toks, known)]}
+    return null_decode
+
+
+def run_decoder(decode, eva, folio, pipeline):
+    clean = decode(eva, folio, pipeline=pipeline)
+    clean_stems = [t.get("stem", "") for t in clean["tokens"]]
+    clean_gloss = [t.get("stem_gloss", "") for t in clean["tokens"]]
+    entry = {"clean_coverage": round(clean["known_ratio"], 4),
+             "clean_coherence": round(clean["coherence"], 4), "rates": {}}
+    for rate in RATES:
+        cov, coh, stem_s, gloss_s = [], [], [], []
+        for i in range(ITERS):
+            rng = random.Random(stable_seed(folio, rate, i))
+            r = decode(perturb(eva, rate, rng), folio, pipeline=pipeline)
+            cov.append(r["known_ratio"])
+            coh.append(r["coherence"])
+            ps = [t.get("stem", "") for t in r["tokens"]]
+            pg = [t.get("stem_gloss", "") for t in r["tokens"]]
+            # perturb() never touches "." so token counts match
+            assert len(ps) == len(clean_stems), (folio, len(ps), len(clean_stems))
+            n = len(ps) or 1
+            stem_s.append(sum(a == b for a, b in zip(ps, clean_stems)) / n)
+            gloss_s.append(sum(a == b for a, b in zip(pg, clean_gloss)) / n)
+        entry["rates"][str(rate)] = {
+            "coverage_mean": round(statistics.mean(cov), 4),
+            "coherence_mean": round(statistics.mean(coh), 4),
+            "stem_identity_mean": round(statistics.mean(stem_s), 4),
+            "stem_identity_std": round(statistics.pstdev(stem_s), 4),
+            "gloss_identity_mean": round(statistics.mean(gloss_s), 4),
+        }
+    return entry
+
+
+def fingerprint(folios: dict):
+    agg = {str(r): {
+        "coverage": round(statistics.mean(folios[f]["rates"][str(r)]["coverage_mean"] for f in folios), 4),
+        "stem_identity": round(statistics.mean(folios[f]["rates"][str(r)]["stem_identity_mean"] for f in folios), 4),
+    } for r in RATES}
+    clean_cov = statistics.mean(folios[f]["clean_coverage"] for f in folios)
+    keys = [str(r) for r in RATES]
+    flat = all(abs(agg[k]["coverage"] - clean_cov) < 0.02 for k in keys)
+    graded = all(agg[a]["stem_identity"] > agg[b]["stem_identity"] for a, b in zip(keys, keys[1:]))
+    return agg, flat, graded
+
+
 def main():
-    # Pin the current shipping configuration explicitly.
     lex = DATA_DIR / "lexicon_v2.csv"
     pipeline = ZFDPipeline(data_dir=str(DATA_DIR), lexicon_file=str(lex))
 
@@ -82,84 +144,58 @@ def main():
             "lexicon_file": lex.name,
             "lexicon_sha256": hashlib.sha256(lex.read_bytes()).hexdigest(),
             "compound_decomposer": pipeline.compound is not None,
+            "seeding": "sha256(folio|rate|iter)",
+            "input": "raw_eva text lines, markup and '!' fillers stripped",
         },
         "confusion_set": CONFUSION_SET,
         "rates": RATES,
         "iterations": ITERS,
         "folios": {},
+        "null_folios": {},
+        "gibberish_coverage": {},
     }
 
-    print(f"{'folio':8}{'rate':>6}{'coverage':>10}{'coherence':>11}"
-          f"{'stem_stable':>13}{'gloss_stable':>14}")
+    texts = {f: clean_folio_text((EVA_DIR / f"{f}.txt").read_text(encoding="utf-8")) for f in FOLIOS}
+
+    print(f"{'folio':8}{'rate':>6}{'coverage':>10}{'stem_stable':>13}{'null_stem':>11}")
     for folio in FOLIOS:
-        eva = (EVA_DIR / f"{folio}.txt").read_text()
-        clean = decode_eva_text(eva, folio, pipeline=pipeline)
-        clean_stems = [t.get("stem", "") for t in clean["tokens"]]
-        clean_gloss = [t.get("stem_gloss", "") for t in clean["tokens"]]
-        fentry = {
-            "clean_coverage": round(clean["known_ratio"], 4),
-            "clean_coherence": round(clean["coherence"], 4),
-            "rates": {},
-        }
+        real = run_decoder(decode_eva_text, texts[folio], folio, pipeline)
+        null = run_decoder(make_null_decoder(real["clean_coverage"]), texts[folio], folio, None)
+        gib = decode_eva_text(shuffle_glyphs(texts[folio], random.Random(stable_seed(folio, "shuffle"))),
+                              folio, pipeline=pipeline)["known_ratio"]
+        results["folios"][folio] = real
+        results["null_folios"][folio] = null
+        results["gibberish_coverage"][folio] = {"real_text": real["clean_coverage"],
+                                                "glyph_shuffled": round(gib, 4)}
         for rate in RATES:
-            cov, coh, stem_s, gloss_s = [], [], [], []
-            for i in range(ITERS):
-                rng = random.Random(7919 * i + hash(folio) % 104729)
-                r = decode_eva_text(perturb(eva, rate, rng), folio,
-                                    pipeline=pipeline)
-                cov.append(r["known_ratio"])
-                coh.append(r["coherence"])
-                ps = [t.get("stem", "") for t in r["tokens"]]
-                pg = [t.get("stem_gloss", "") for t in r["tokens"]]
-                n = min(len(ps), len(clean_stems))
-                stem_s.append(sum(a == b for a, b in
-                                  zip(ps[:n], clean_stems[:n])) / n)
-                gloss_s.append(sum(a == b for a, b in
-                                   zip(pg[:n], clean_gloss[:n])) / n)
-            row = {
-                "coverage_mean": round(statistics.mean(cov), 4),
-                "coherence_mean": round(statistics.mean(coh), 4),
-                "stem_identity_mean": round(statistics.mean(stem_s), 4),
-                "stem_identity_std": round(statistics.pstdev(stem_s), 4),
-                "gloss_identity_mean": round(statistics.mean(gloss_s), 4),
-            }
-            fentry["rates"][str(rate)] = row
-            print(f"{folio:8}{rate:>6.2f}{row['coverage_mean']:>10.3f}"
-                  f"{row['coherence_mean']:>11.3f}"
-                  f"{row['stem_identity_mean']:>13.3f}"
-                  f"{row['gloss_identity_mean']:>14.3f}")
-        results["folios"][folio] = fentry
+            r, n = real["rates"][str(rate)], null["rates"][str(rate)]
+            print(f"{folio:8}{rate:>6.2f}{r['coverage_mean']:>10.3f}"
+                  f"{r['stem_identity_mean']:>13.3f}{n['stem_identity_mean']:>11.3f}")
 
-    # Aggregate fingerprint check
-    agg = {}
-    for rate in RATES:
-        agg[str(rate)] = {
-            "coverage": round(statistics.mean(
-                results["folios"][f]["rates"][str(rate)]["coverage_mean"]
-                for f in FOLIOS), 4),
-            "stem_identity": round(statistics.mean(
-                results["folios"][f]["rates"][str(rate)]["stem_identity_mean"]
-                for f in FOLIOS), 4),
-        }
+    agg, flat, graded = fingerprint(results["folios"])
+    nagg, nflat, ngraded = fingerprint(results["null_folios"])
+    real_pass = flat and graded
+    null_pass = nflat and ngraded
     results["aggregate"] = agg
-    clean_cov = statistics.mean(
-        results["folios"][f]["clean_coverage"] for f in FOLIOS)
-    structural_flat = all(
-        abs(agg[str(r)]["coverage"] - clean_cov) < 0.02 for r in RATES)
-    semantic_graded = (agg["0.05"]["stem_identity"]
-                       > agg["0.1"]["stem_identity"]
-                       > agg["0.2"]["stem_identity"])
+    results["null_aggregate"] = nagg
     results["fingerprint"] = {
-        "structural_flat": structural_flat,
-        "semantic_graded_degradation": semantic_graded,
-        "verdict": ("LAYERED-REAL-SYSTEM" if structural_flat
-                    and semantic_graded else "CHECK-FAILED"),
+        "structural_flat": flat,
+        "semantic_graded_degradation": graded,
+        "null_structural_flat": nflat,
+        "null_semantic_graded_degradation": ngraded,
+        "stem_identity_real_minus_null": {k: round(agg[k]["stem_identity"] - nagg[k]["stem_identity"], 4)
+                                          for k in agg},
+        "verdict": ("LAYERED-REAL-SYSTEM" if real_pass and not null_pass
+                    else "NON-DISCRIMINATING" if real_pass and null_pass
+                    else "CHECK-FAILED"),
     }
-    print("\nAggregate:", json.dumps(agg, indent=1))
+    print("\nAggregate:", json.dumps(agg))
+    print("Null aggregate:", json.dumps(nagg))
+    print("Gibberish coverage:", json.dumps(results["gibberish_coverage"]))
     print("Fingerprint verdict:", results["fingerprint"]["verdict"])
 
     out = HERE / "robustness_results.json"
-    out.write_text(json.dumps(results, indent=2))
+    out.write_text(json.dumps(results, indent=2), encoding="utf-8")
     print(f"Results written to {out}")
 
 

@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| qo→ko | 14 |
-| ok→ost | 14 |
+| qo→ko | 16 |
+| ok→ost | 15 |
 | ch→h | 12 |
-| da→da | 3 |
-| sh→s | 2 |
+| sh→š | 3 |
+| da→da | 1 |
 | ot→otr | 1 |
 
 ## Gallows Distribution
@@ -22,7 +22,9 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **stor** (bone-agent)
+- **šol** (with-oil)
 
 ## Confidence Summary
 
@@ -36,15 +38,15 @@
 - ostain: 4x
 - kostain: 3x
 - ol: 3x
-- hhstri: 3x
+- ain: 3x
+- hhsti: 3x
 - ostar: 3x
-- daiin: 3x
+- dain: 3x
 - hedi: 3x
 - ar: 3x
 - stedi: 3x
-- heprain: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -5,11 +5,11 @@
 | Operator | Count |
 |----------|-------|
 | qo→ko | 11 |
-| ch→h | 9 |
-| ok→ost | 7 |
-| sh→s | 5 |
-| da→da | 3 |
-| ot→otr | 1 |
+| ch→h | 11 |
+| ok→ost | 8 |
+| sh→š | 6 |
+| da→da | 6 |
+| ot→otr | 4 |
 
 ## Gallows Distribution
 
@@ -21,8 +21,10 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **dar** (give-agent)
 - **ostol** (bone oil)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 
 ## Confidence Summary
@@ -36,16 +38,16 @@
 
 - dar: 4x
 - hodi: 3x
-- ostchei: 3x
-- kotrchol: 2x
+- osthei: 3x
+- šodain: 2x
+- kotrhol: 2x
 - osti: 2x
-- daiin: 2x
-- sol: 2x
+- dain: 2x
 - hol: 2x
-- htrrodi: 2x
-- hstrol: 2x
+- htrodi: 2x
+- hstol: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| qo→ko | 17 |
-| ch→h | 16 |
-| sh→s | 8 |
-| da→da | 5 |
+| qo→ko | 19 |
+| ch→h | 18 |
+| sh→š | 8 |
+| da→da | 4 |
 | ok→ost | 3 |
 | ot→otr | 2 |
 | q→k | 1 |
@@ -23,6 +23,7 @@
 ## Validated Terms Present
 
 - **sal** (salt)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
@@ -34,17 +35,17 @@
 ## Most Frequent ZFD Words
 
 - kostedi: 7x
-- ystedi: 3x
+- istedi: 3x
 - hedi: 3x
 - di: 2x
-- stchdi: 2x
-- ytreedi: 2x
-- dchedi: 2x
+- sthdi: 2x
+- itreedi: 2x
+- dhedi: 2x
 - kostei: 2x
 - hestedi: 2x
-- sedi: 2x
+- šedi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

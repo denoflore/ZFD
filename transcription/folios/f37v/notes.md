@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| da→da | 19 |
 | ch→h | 14 |
 | qo→ko | 11 |
-| sh→s | 5 |
+| sh→š | 5 |
+| da→da | 2 |
 | ot→otr | 2 |
 
 ## Gallows Distribution
@@ -26,23 +26,22 @@
 
 ## Confidence Summary
 
-- A: 0 (0%)
-- B: 22 (96%)
-- C: 1 (4%)
+- A: 6 (26%)
+- B: 17 (74%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 16x
+- dain: 19x
 - hor: 3x
 - dor: 2x
 - hol: 2x
-- dshor: 2x
+- dšor: 2x
 - kotrol: 2x
-- dain: 2x
 - kotror: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

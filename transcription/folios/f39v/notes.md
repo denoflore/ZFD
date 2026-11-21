@@ -5,10 +5,10 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 17 |
-| ok→ost | 12 |
-| sh→s | 11 |
-| da→da | 9 |
-| qo→ko | 6 |
+| ok→ost | 14 |
+| sh→š | 13 |
+| da→da | 8 |
+| qo→ko | 7 |
 | ot→otr | 4 |
 
 ## Gallows Distribution
@@ -24,9 +24,9 @@
 
 - **stor** (bone-agent)
 - **hol** (cook-oil)
+- **dain** (substance/given)
 - **hor** (cook-agent)
 - **dar** (give-agent)
-- **dain** (substance/given)
 
 ## Confidence Summary
 
@@ -38,7 +38,7 @@
 ## Most Frequent ZFD Words
 
 - ain: 10x
-- or: 8x
+- or: 9x
 - ostain: 4x
 - ar: 4x
 - hdi: 3x
@@ -46,9 +46,9 @@
 - dar: 3x
 - stor: 2x
 - olsti: 2x
-- di: 2x
+- istar: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

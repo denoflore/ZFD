@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 35 |
-| sh→s | 16 |
-| da→da | 12 |
-| ok→ost | 5 |
+| ch→h | 40 |
+| sh→š | 19 |
+| da→da | 8 |
+| ok→ost | 6 |
 | qo→ko | 3 |
 | ot→otr | 2 |
 
@@ -24,6 +24,7 @@
 
 - **hor** (cook-agent)
 - **dain** (substance/given)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 - **dar** (give-agent)
 
@@ -36,18 +37,18 @@
 
 ## Most Frequent ZFD Words
 
-- sol: 6x
+- dain: 7x
 - hor: 5x
-- daiin: 5x
-- si: 3x
-- so: 3x
+- šol: 5x
+- ši: 3x
+- šo: 3x
 - do: 3x
 - di: 3x
 - hei: 3x
-- hpllol: 2x
-- sor: 2x
+- hplol: 2x
+- šor: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

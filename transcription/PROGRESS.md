@@ -1,6 +1,6 @@
 # ZFD Paleographic Transcription -- Progress Log
 
-**Project:** Direct manuscript-to-Croatian transcription of Voynich Manuscript (Beinecke MS 408)
+**Project:** Croatian (ZFD) transcription of Voynich Manuscript (Beinecke MS 408): 5 hand-transcribed anchor folios plus automated rule parsing of the Takahashi (H) EVA transliteration for the rest
 **Method:** 7-layer constraint stack, behavioral paleography
 **Start date:** 2026-02-07
 **Completion date:** 2026-02-07
@@ -24,13 +24,15 @@
 
 ## Coverage Summary
 
-- **Total folios transcribed:** 197 / 197 (100%)
-- **Total text lines:** 4,944
+- **Total folios transcribed:** 201 pages with text (every page with H text in LSI_ivtff_0d.txt) + 2 diagram-only stubs. Before the 2026-11 audit this read 197/197; f70r, f72r, f89r, f95r, f101r and f102r were missing.
+- **Total text lines:** 5,194 (was 4,944)
 - **Hand-transcribed anchor folios:** 5 (f88r, f1r, f2r, f71r, f102v)
-- **Automated batch transcriptions:** 192 (using batch_transcribe.py)
+- **Automated batch transcriptions:** 196 (batch_transcribe.py, regenerated 2026-11-21 under abbreviation_rules v1.1.0; see AUDIT_2026-11.md). Measured agreement with the hand anchors: 83.8% of words.
 - **Diagram-only stubs:** 2 (f85v, f116v)
 
 ## Section Breakdown
+
+Pre-audit counts (197-folio corpus). Current per-section folio and line counts are in STATISTICS.md.
 
 | Section | Folios | Status |
 |---------|--------|--------|

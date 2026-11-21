@@ -1,36 +1,71 @@
 {
-  "test_date": "2026-06-10T03:47:31.637742",
-  "design": "exposure-normalized, one edit per touched word, conditional measurement, class-aware operators",
+  "test_date": "2026-11-21T10:16:23.219724",
+  "design": "v3: one edit per touched word, per-word aligned decode, class-aware operators, glyph-shuffled gibberish control",
   "config": {
     "lexicon_file": "lexicon_v2.csv",
     "lexicon_sha256": "68fb55f2b4c7725b300cab5c438d7abbc25837f5a6b8a499747193241423741b",
-    "compound_decomposer": true
+    "compound_decomposer": true,
+    "seeding": "sha256(tag|folio|layer)",
+    "diagonal_ratio_threshold": 3.0
   },
   "matrix": {
     "gallows": {
-      "n_edits": 350,
-      "stem_change": 0.3143,
-      "op_class_change": 0.0829,
-      "suffix_change": 0.0943
+      "n_edits": 310,
+      "stem_change": 0.8387,
+      "op_class_change": 0.2419,
+      "suffix_change": 0.2516
     },
     "operator": {
-      "n_edits": 478,
-      "stem_change": 0.4707,
-      "op_class_change": 0.3975,
-      "suffix_change": 0.1088
+      "n_edits": 490,
+      "stem_change": 0.898,
+      "op_class_change": 0.7327,
+      "suffix_change": 0.1816
     },
     "suffix": {
-      "n_edits": 504,
-      "stem_change": 0.5298,
-      "op_class_change": 0.0575,
-      "suffix_change": 0.1329
+      "n_edits": 510,
+      "stem_change": 0.8961,
+      "op_class_change": 0.1275,
+      "suffix_change": 0.1804
+    }
+  },
+  "gibberish_matrix": {
+    "gallows": {
+      "n_edits": 269,
+      "stem_change": 0.9554,
+      "op_class_change": 0.0372,
+      "suffix_change": 0.1413
+    },
+    "operator": {
+      "n_edits": 233,
+      "stem_change": 0.9356,
+      "op_class_change": 0.4807,
+      "suffix_change": 0.0343
+    },
+    "suffix": {
+      "n_edits": 431,
+      "stem_change": 0.9536,
+      "op_class_change": 0.0,
+      "suffix_change": 0.0951
     }
   },
   "verdict": {
-    "operator_positionally_encoded": true,
-    "operator_diagonal_ratio": 4.8,
-    "gallows_diagonal_confirmed": false,
-    "suffix_diagonal_confirmed": false,
-    "summary": "Operator information is positionally encoded (40% class change for word-initial edits vs 8% for edits elsewhere). Gallows and suffix diagonals NOT confirmed: stem extraction is whole-word coupled and the parsed suffix field is robust to all edit types. Honest negatives preserved."
+    "gallows": {
+      "real_ratio": 0.93,
+      "gibberish_ratio": 1.0,
+      "diagonal_on_real_text": false,
+      "evidence_about_manuscript": false
+    },
+    "operator": {
+      "real_ratio": 3.03,
+      "gibberish_ratio": 12.92,
+      "diagonal_on_real_text": true,
+      "evidence_about_manuscript": false
+    },
+    "suffix": {
+      "real_ratio": 0.72,
+      "gibberish_ratio": 0.67,
+      "diagonal_on_real_text": false,
+      "evidence_about_manuscript": false
+    }
   }
 }

@@ -1,8 +1,8 @@
-# Folio f57r -- Paleographic Transcription
+# Folio f57r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006186/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language B, Hand 2
 
 ---
 
@@ -10,26 +10,27 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | ploeeo. hstrei. odai?n. heopl. seodi. sohplrei. di. seepl. heodi. yodam | B | poeeo.ckhey.odai!n.cheop.sheody.shocfhey.dy.sheep.cheody.yodam |
-| L2 | daiir. air. hetri. heo. hstri. hohstri. heotrei. sstchei. s. odain. sei | B | daiir.air.chety.cheo.ckhy.chockhy.cheotey.shkchey.s.odaiin.shey |
-| L3 | kysteeodi. heoosti. kosteodi. sei. osteodi. heodi. heeodi. hee?steodi | B | qykeeody.cheooky.qokeody.sheey.okeody.cheody.cheeody.chee!keody |
-| L4 | dchos. heohtrri. heodi. kotrchodi. ohtrrodi. osteeodi. htreodi. heodi. s | B | dchos.cheocthy.cheody.qotchody.octhody.okeeody.chteody.cheody.s |
-| L5 | kostcho. daiin. heeo?dam | C | qokcho.daiin.cheeo!dam |
-| L6 | trsheodal. ostam. hhstrei. ostchdi. dohtrro. oplchei. di. stodai?n. oproram | B | tsheodal.okam.chckhey.okchdy.doctho.opchey.dy.kodai!n.oforam |
-| L7 | daiis. seedi. kosteedi. hctrei. |. otrchod. sestei. tredi. ostoldm | B | daiis.sheedy.qokeedy.chcteyotchod.shekey.tedy.okoldm |
-| L8 | trai?r. seedi. lchedi. hstrchdi. |. ostchi. hedi. dal. kostedam | B | tai!r.sheedy.lchedy.ckhchdyokchy.chedy.dal.qokedam |
-| L9 | odair. seeo. hstri. sar. al. daii?di. |. dchehstrei. daiin. hedi. htrredi | B | odair.sheeo.ckhy.sar.al.daii!dydcheckhey.daiin.chedy.cthedy |
-| L10 | koctrchei. stedi. sedain. |. s. heos. ysteos. khtrr?hi. trhplri | B | qoctchey.kedy.shedaiins.cheos.ykeos.qcth!hy.tcfhy |
-| L11 | dshedi. ctrechi. hplledom | B | dshedy.ctechy.cphedom |
+| L1 | ploeeo. hstei. odain. heopl. šeodi. šohprei. di. šeepl. heodi. iodam | B | poeeo.ckhey.odai!n.cheop.sheody.shocfhey.dy.sheep.cheody.yodam |
+| L2 | daiir. air. hetri. heo. hsti. hohsti. heotrei. šsthei. s. odain. šei | B | daiir.air.chety.cheo.ckhy.chockhy.cheotey.shkchey.s.odaiin.shey |
+| L3 | kisteeodi. heoosti. kosteodi. šei. osteodi. heodi. heeodi. heesteodi | B | qykeeody.cheooky.qokeody.sheey.okeody.cheody.cheeody.chee!keody |
+| L4 | dhos. heohtri. heodi. kotrhodi. ohtrodi. osteeodi. htreodi. heodi. s | B | dchos.cheocthy.cheody.qotchody.octhody.okeeody.chteody.cheody.s |
+| L5 | kostho. dain. heeodam | B | qokcho.daiin.cheeo!dam |
+| L6 | tršeodal. ostam. hhstei. osthdi. dohtro. oplhei. di. stodain. oproram | B | tsheodal.okam.chckhey.okchdy.doctho.opchey.dy.kodai!n.oforam |
+| L7 | daiis. šeedi. kosteedi. hctrei \| otrhod. šestei. tredi. ostoldm | B | daiis.sheedy.qokeedy.chctey \| otchod.shekey.tedy.okoldm |
+| L8 | trair. šeedi. lhedi. hsthdi \| osthi. hedi. dal. kostedam | B | tai!r.sheedy.lchedy.ckhchdy \| okchy.chedy.dal.qokedam |
+| L9 | odair. šeeo. hsti. sar. al. daiidi \| dhehstei. dain. hedi. htredi | B | odair.sheeo.ckhy.sar.al.daii!dy \| dcheckhey.daiin.chedy.cthedy |
+| L10 | koctrhei. stedi. šedain \| s. heos. isteos. khtrhi. trhpri | B | qoctchey.kedy.shedaiin \| s.cheos.ykeos.qcth!hy.tcfhy |
+| L11 | dšedi. ctrehi. hpledom | B | dshedy.ctechy.cphedom |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 10 lines
-- **C:** 1 lines
+- **B:** 11 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

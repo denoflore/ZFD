@@ -1,4 +1,4 @@
-# Folio f36r -- Paleographic Transcription
+# Folio f36r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006144/full/full/0/default.jpg
@@ -10,15 +10,15 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plchaprdan. korain. hhplral. soiin. hpllor. sain. htrri. dair | B | pchafdan.qorain.chcfhal.soiin.cphor.shaiin.cthy.dair |
-| L2 | oral. sor. ytrain. kotrain. kooldi. htri. hol. di. tror | B | oral.shor.ytaiin.qotaiin.qooldy.chty.chol.dy.tor |
-| L3 | kotrchi. trchi. daiin. gain. dol?sain | B | qotchy.tchy.daiin.gaiin.dol!sain |
-| L4 | plodaiir. hplli. koyplchol. rom. |. c?i. |. hi. dchi. prchom. dar | B | podaiir.cphy.qoypchol.romc!ychy.dchy.fchom.dar |
-| L5 | daiin. kor. hol. htrroli. s. |. ??o. |. r. |. hi. si. |. hytraroiin | B | daiin.qor.chol.ctholy.s!!orchy.sychytaroiin |
-| L6 | ostain. htrror. ystaiiin. s. |. dain. an. |. dan | B | okaiin.cthor.ykaiiin.sdain.andan |
-| L7 | kotrol. htrrol. ostol. di. ostchi. |. ytrorori. |. sold | B | qotol.cthol.okol.dy.okchyytororysold |
-| L8 | ytrchor. htrrol. hain. yd. | | B | ytchor.cthol.chaiin.yd |
-| L9 | ytrodali. daiin. otraro | B | ytodaly.daiin.otaro |
+| L1 | plhaprdan. korain. hhpral. soiin. hplor. šain. htri. dair | B | pchafdan.qorain.chcfhal.soiin.cphor.shaiin.cthy.dair |
+| L2 | oral. šor. itrain. kotrain. kooldi. htri. hol. di. tror | B | oral.shor.ytaiin.qotaiin.qooldy.chty.chol.dy.tor |
+| L3 | kotrhi. trhi. dain. gain. dolsain | B | qotchy.tchy.daiin.gaiin.dol!sain |
+| L4 | plodaiir. hpli. koiplhol. rom \| ci \| hi. dhi. prhom. dar | B | podaiir.cphy.qoypchol.rom \| c!y \| chy.dchy.fchom.dar |
+| L5 | dain. kor. hol. htroli. s \| o \| r \| hi. si \| hitraroiin | B | daiin.qor.chol.ctholy.s \| !!o \| r \| chy.sy \| chytaroiin |
+| L6 | ostain. htror. istain. s \| dain. an \| dan | B | okaiin.cthor.ykaiiin.s \| dain.an \| dan |
+| L7 | kotrol. htrol. ostol. di. osthi \| itrorori \| sold | B | qotol.cthol.okol.dy.okchy \| ytorory \| sold |
+| L8 | itrhor. htrol. hain. id \| | B | ytchor.cthol.chaiin.yd \| |
+| L9 | itrodali. dain. otraro | B | ytodaly.daiin.otaro |
 
 ## Confidence Distribution
 
@@ -27,7 +27,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

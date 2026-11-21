@@ -1,8 +1,8 @@
-# Folio f65r -- Paleographic Transcription
+# Folio f65r -- Automated ZFD Transcription
 
 **Section:** Herbal Large
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006190/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language ?, Hand ?
 
 ---
 
@@ -19,7 +19,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

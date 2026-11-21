@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| sh→s | 53 |
+| sh→š | 53 |
 | qo→ko | 48 |
-| ch→h | 45 |
-| da→da | 32 |
+| ch→h | 46 |
+| da→da | 25 |
 | ok→ost | 16 |
 | ot→otr | 11 |
 
@@ -24,19 +24,21 @@
 
 - **dar** (give-agent)
 - **stol** (bone-oil)
+- **dain** (substance/given)
+- **šol** (with-oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 74 (90%)
+- B: 78 (95%)
 - C: 2 (2%)
-- D: 6 (7%)
+- D: 2 (2%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 7x
+- dain: 7x
 - ol: 7x
-- sedi: 6x
+- šedi: 6x
 - o: 5x
 - r: 5x
 - hedi: 5x
@@ -48,4 +50,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

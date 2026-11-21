@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| qo→ko | 8 |
-| ch→h | 5 |
-| da→da | 4 |
-| sh→s | 4 |
+| qo→ko | 9 |
+| ch→h | 6 |
+| sh→š | 4 |
+| da→da | 3 |
 | ok→ost | 2 |
-| ot→otr | 1 |
+| ot→otr | 2 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -23,20 +23,23 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **sal** (salt)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 13 (81%)
-- C: 3 (19%)
+- B: 16 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- htrrei: 4x
+- htrei: 4x
+- dain: 2x
+- sal: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

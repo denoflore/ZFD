@@ -1,8 +1,8 @@
-# Folio f65v -- Paleographic Transcription
+# Folio f65v -- Automated ZFD Transcription
 
 **Section:** Herbal Large
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006191/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language ?, Hand ?
 
 ---
 
@@ -10,12 +10,12 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | hplli. prchehplri. di. |. dcheplain. setri. kopli. prol. hpldi | B | cphy.fchecfhy.dydchepain.shety.qopy.fol.chpdy |
-| L2 | daiin. seest. l. odi. |. ytreo. kopl??. air. heotrei. dalam | B | daiin.sheek.l.odyyteo.qop?!.air.cheoteey.dalam |
-| L3 | ytral. heotr. ssti. i. |. ?eas. heodi | B | ytal.cheot.shky.y!eas.cheody |
-| L4 | troeedi. otror. sedi. |. ytrei. seodi. kostesd. yprchei | B | toeedy.otor.shedyyteey.sheody.qokesd.yfchey |
-| L5 | dshedi. osteodi. kostd. |. shstri. hosti. hosteodi. oste?i. di | B | dshedy.okeody.qokdshckhy.choky.chokeody.oke!y.dy |
-| L6 | ko. ytrchei. shstrh. hplli. |. ystchhdi. hedi. shstrdi | B | qo.ytchey.shckhh.cphyykchhdy.chedy.shckhdy |
+| L1 | hpli. prhehpri. di \| dheplain. šetri. kopli. prol. hpldi | B | cphy.fchecfhy.dy \| dchepain.shety.qopy.fol.chpdy |
+| L2 | dain. šeest. l. odi \| itreo. kopl?. air. heotrei. dalam | B | daiin.sheek.l.ody \| yteo.qop?!.air.cheoteey.dalam |
+| L3 | itral. heotr. šsti. i \| eas. heodi | B | ytal.cheot.shky.y \| !eas.cheody |
+| L4 | troeedi. otror. šedi \| itrei. šeodi. kostesd. iprhei | B | toeedy.otor.shedy \| yteey.sheody.qokesd.yfchey |
+| L5 | dšedi. osteodi. kostd \| šhsti. hosti. hosteodi. ostei. di | B | dshedy.okeody.qokd \| shckhy.choky.chokeody.oke!y.dy |
+| L6 | ko. itrhei. šhsth. hpli \| isthhdi. hedi. šhstdi | B | qo.ytchey.shckhh.cphy \| ykchhdy.chedy.shckhdy |
 
 ## Confidence Distribution
 
@@ -24,7 +24,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

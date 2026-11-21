@@ -7,8 +7,8 @@
 | ot→otr | 67 |
 | ch→h | 24 |
 | ok→ost | 22 |
-| da→da | 19 |
-| sh→s | 17 |
+| sh→š | 16 |
+| da→da | 16 |
 | qo→ko | 2 |
 
 ## Gallows Distribution
@@ -21,31 +21,33 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **dar** (give-agent)
 - **sal** (salt)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 
 ## Confidence Summary
 
 - A: 2 (4%)
-- B: 37 (74%)
-- C: 3 (6%)
-- D: 8 (16%)
+- B: 46 (92%)
+- C: 2 (4%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- ar: 7x
+- ar: 8x
 - al: 6x
 - dal: 5x
 - otral: 5x
 - am: 4x
 - otreodi: 3x
-- daiin: 3x
+- dain: 3x
 - dar: 3x
 - di: 3x
-- sal: 3x
+- otrei: 3x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

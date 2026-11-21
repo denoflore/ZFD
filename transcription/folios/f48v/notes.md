@@ -5,11 +5,11 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 20 |
-| ot→otr | 16 |
-| sh→s | 5 |
-| ok→ost | 5 |
+| ot→otr | 20 |
+| ok→ost | 8 |
+| sh→š | 6 |
+| da→da | 3 |
 | qo→ko | 3 |
-| da→da | 2 |
 
 ## Gallows Distribution
 
@@ -42,10 +42,10 @@
 - hei: 3x
 - hedi: 3x
 - or: 3x
-- yplchedi: 2x
+- iplhedi: 2x
 - tredi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

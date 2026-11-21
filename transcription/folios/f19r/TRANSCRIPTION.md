@@ -1,4 +1,4 @@
-# Folio f19r -- Paleographic Transcription
+# Folio f19r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006110/full/full/0/default.jpg
@@ -10,28 +10,29 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plchor. kodchi. kotrshi. di. trchi. kotrchi. kosti. daiin. dchydi | B | pchor.qodchy.qotshy.dy.tchy.qotchy.qoky.daiin.dchydy |
-| L2 | dshi. hor. i. trchi. hol. dytrchi. hordi. daiin. dy?tri. s. hoi | B | dshy.chor.y.tchy.chol.dytchy.chordy.daiin.dy!ty.s.choy |
-| L3 | oscheor. si. trdain. hol. dor. ysti | B | oscheor.shy.tdaiin.chol.dor.yky |
-| L4 | kostorar. daiin. hhstri. si. stchor | B | qokorar.daiin.chckhy.shy.kchor |
-| L5 | otrchi. trchi. kosti. daiin. r. | | B | otchy.tchy.qoky.daiin.r |
-| L6 | i. sor. si. daiin. otrytrchi. daiin. | | B | y.shor.shy.daiin.otytchy.daiin |
-| L7 | kost?cho. sti. htrrar. dor. han. dar. | | B | qok!cho.ky.cthar.dor.chan.dar |
-| L8 | or. hor. dasti. dal. hor. dor?l. si. | | B | or.chor.daky.dal.chor.dor!l.shy |
-| L9 | kotrchor. di. dor. i. trchy?stchi. sdain. | | B | qotchor.dy.dor.y.tchy!kchy.shdaiin |
-| L10 | daiin. htrror. hol. ystchor. hordi | B | daiin.cthor.chol.ykchor.chordy |
-| L11 | kotrchi. kolodi. holdi. htrryd. | | B | qotchy.qolody.choldy.cthyd |
-| L12 | ystchor. hor. daiin. daiinol | B | ykchor.chor.daiin.daiinol |
-| L13 | os?ohtrror. y?trchor | D | os!octhor.y!tchor |
+| L1 | plhor. kodhi. kotrši. di. trhi. kotrhi. kosti. dain. dhidi | B | pchor.qodchy.qotshy.dy.tchy.qotchy.qoky.daiin.dchydy |
+| L2 | dši. hor. i. trhi. hol. ditrhi. hordi. dain. ditri. s. hoi | B | dshy.chor.y.tchy.chol.dytchy.chordy.daiin.dy!ty.s.choy |
+| L3 | osheor. ši. trdain. hol. dor. isti | B | oscheor.shy.tdaiin.chol.dor.yky |
+| L4 | kostorar. dain. hhsti. ši. sthor | B | qokorar.daiin.chckhy.shy.kchor |
+| L5 | otrhi. trhi. kosti. dain. r \| | B | otchy.tchy.qoky.daiin.r \| |
+| L6 | i. šor. ši. dain. otritrhi. dain \| | B | y.shor.shy.daiin.otytchy.daiin \| |
+| L7 | kostho. sti. htrar. dor. han. dar \| | B | qok!cho.ky.cthar.dor.chan.dar \| |
+| L8 | or. hor. dasti. dal. hor. dorl. ši \| | B | or.chor.daky.dal.chor.dor!l.shy \| |
+| L9 | kotrhor. di. dor. i. trhisthi. šdain \| | B | qotchor.dy.dor.y.tchy!kchy.shdaiin \| |
+| L10 | dain. htror. hol. isthor. hordi | B | daiin.cthor.chol.ykchor.chordy |
+| L11 | kotrhi. kolodi. holdi. htrid \| | B | qotchy.qolody.choldy.cthyd \| |
+| L12 | isthor. hor. dain. daiinol | A | ykchor.chor.daiin.daiinol |
+| L13 | osohtror. itrhor | B | os!octhor.y!tchor |
 
 ## Confidence Distribution
 
-- **A:** 0 lines
+- **A:** 1 lines
 - **B:** 12 lines
 - **C:** 0 lines
-- **D:** 1 lines
+- **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

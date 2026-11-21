@@ -1,4 +1,4 @@
-# Folio f29r -- Paleographic Transcription
+# Folio f29r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006130/full/full/0/default.jpg
@@ -10,15 +10,15 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plor?ain. se. ain. hepl. otri. hi. kotrchi. kotri. heehtrri | B | por!aiin.she.aiin.chep.oty.chy.qotchy.qoty.cheecthy |
-| L2 | dshe. ystchi. hotri. osti. hol. hchotri. hosti. hi. tri. di | B | dshe.ykchy.choty.oky.chol.chchoty.choky.chy.ty.dy |
-| L3 | kostchi. kotri. stchain. sear. htrror. |. dchor. holi | B | qokchy.qoty.kchaiin.shear.cthordchor.choly |
-| L4 | hohtrri. koos. hos | B | chocthy.qoos.chos |
-| L5 | stcheol. heor. seos. sei. trei. d?o?. |. sos. octr?i | B | kcheol.cheor.sheos.sheey.teey.d!o!shos.oct!y |
-| L6 | hostshi. sohtrri. sor. sor. daiin. |. kostaiiin | B | chokshy.shocthy.shor.shor.daiinqokaiiin |
-| L7 | kostchi. hol. sostchi. kostain. hoetri. |. hotri. stain | B | qokchy.chol.shokchy.qokaiin.choetychoty.kaiin |
-| L8 | sor. hor. so. sesti. si. kotri. stodi. |. daiin. htrri | B | shor.chor.sho.sheky.shy.qoty.kodydaiin.cthy |
-| L9 | kostshe. kor. hei. stor. heod. ychom | B | qokshe.qor.chey.kor.cheod.ychom |
+| L1 | plorain. še. ain. hepl. otri. hi. kotrhi. kotri. heehtri | B | por!aiin.she.aiin.chep.oty.chy.qotchy.qoty.cheecthy |
+| L2 | dše. isthi. hotri. osti. hol. hhotri. hosti. hi. tri. di | B | dshe.ykchy.choty.oky.chol.chchoty.choky.chy.ty.dy |
+| L3 | kosthi. kotri. sthain. šear. htror \| dhor. holi | B | qokchy.qoty.kchaiin.shear.cthor \| dchor.choly |
+| L4 | hohtri. koos. hos | B | chocthy.qoos.chos |
+| L5 | stheol. heor. šeos. šei. trei. do \| šos. octri | B | kcheol.cheor.sheos.sheey.teey.d!o! \| shos.oct!y |
+| L6 | hostši. šohtri. šor. šor. dain \| kostain | B | chokshy.shocthy.shor.shor.daiin \| qokaiiin |
+| L7 | kosthi. hol. šosthi. kostain. hoetri \| hotri. stain | B | qokchy.chol.shokchy.qokaiin.choety \| choty.kaiin |
+| L8 | šor. hor. šo. šesti. ši. kotri. stodi \| dain. htri | B | shor.chor.sho.sheky.shy.qoty.kody \| daiin.cthy |
+| L9 | kostše. kor. hei. stor. heod. ihom | B | qokshe.qor.chey.kor.cheod.ychom |
 
 ## Confidence Distribution
 
@@ -27,7 +27,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

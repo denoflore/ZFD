@@ -1,101 +1,100 @@
-# EVA vs ZFD Paleographic Comparison Report
+# EVA vs ZFD Comparison Report
 
-**Generated:** 2026-02-07
-**Scope:** Full Voynich Manuscript corpus (197 folios)
+**Generated:** 2026-11-21
+**Scope:** 203 folios, 5194 lines
 
 ## Overview
 
-This report documents where the ZFD paleographic transcription diverges from the
+This report documents where the ZFD transcription diverges from the
 EVA (European Voynich Alphabet) transliteration system. EVA treats each glyph as a
-standalone letter in an unknown alphabet. ZFD recognizes a positional shorthand system
+standalone letter in an unknown alphabet. ZFD models a positional shorthand system
 with operators (word-initial), gallows abbreviation marks (medial), and suffixes (word-final).
 
 ## Key Divergences
 
-### 1. Gallows Characters (Fundamental Disagreement)
+### 1. Gallows Characters
 
 EVA treats gallows (k, t, f, p) as individual letters. ZFD expands them as cluster abbreviations:
 
-| EVA | ZFD | Meaning | Impact |
-|-----|-----|---------|--------|
-| k | st | bone/firm cluster | Every 'k' in EVA becomes 'st' in ZFD |
-| t | tr | treatment cluster | Every 't' in EVA becomes 'tr' in ZFD |
-| f | pr | pour/heat cluster | Every 'f' in EVA becomes 'pr' in ZFD |
-| p | pl | pour/liquid cluster | Every 'p' in EVA becomes 'pl' in ZFD |
-
-This is the single largest source of divergence. Thousands of words are affected.
+| EVA | ZFD |
+|-----|-----|
+| k | st |
+| t | tr |
+| f | pr |
+| p | pl |
 
 ### 2. Operator Detection (Word-Initial Parsing)
 
-EVA treats word-initial sequences as simple letter combinations. ZFD detects operators:
-
-| EVA initial | ZFD operator | Meaning |
-|-------------|-------------|---------|
-| qo- | ko- | which/determiner |
-| ch- | h- | cook/heat |
-| sh- | s- | with/soak |
-| da- | da- | give/administer |
-| ok- | ost- | bone/vessel |
-| ot- | otr- | treat/process |
+| EVA initial | ZFD operator |
+|-------------|-------------|
+| qo- | ko- |
+| ch- | h- |
+| sh- | š- |
+| da- | da- |
+| ok- | ost- |
+| ot- | otr- |
+| q- | k- |
 
 ### 3. Suffix Detection (Word-Final Parsing)
 
-EVA treats word-final sequences as individual characters. ZFD detects suffixes:
+| EVA final | ZFD suffix |
+|-----------|-----------|
+| -aiiin | -ain |
+| -aiin | -ain |
+| -edy | -edi |
+| -eey | -ei |
+| -y | -i |
+| -ol | -ol |
+| -ar | -ar |
+| -or | -or |
+| -al | -al |
+| -od | -od |
+| -am | -am |
+| -om | -om |
+| -m | -m |
+| -n | -n |
+| -l | -l |
+| -r | -r |
 
-| EVA final | ZFD suffix | Function |
-|-----------|-----------|----------|
-| -aiin | -ain | Substance noun marker |
-| -eey | -ei | Instance/adjective |
-| -y | -i | Adjective marker |
-| -ol | -ol | Oil/liquid suffix |
-| -ar | -ar | Water/agent suffix |
-| -am | -am | Substance/mass suffix |
+### 4. Bench Gallows and Ligatures
 
-### 4. Bench Gallows (Compound Expansions)
+| EVA | ZFD |
+|-----|-----|
+| cth | htr |
+| ckh | hst |
+| cph | hpl |
+| cfh | hpr |
+| ch (any position) | h |
+| sh (any position) | š |
+| y (outside the suffix slot) | i |
+| -aiiin (ligature, claimed before operators) | -ain |
+| -aiin (ligature, claimed before operators) | -ain |
 
-EVA treats bench gallows as two-character sequences. ZFD expands them differently:
+## Divergence Statistics (computed)
 
-| EVA | ZFD | Meaning |
-|-----|-----|---------|
-| cth | htr | cook-treat |
-| ckh | hst | cook-bone |
-| cph | hpl | cook-pour |
-| cfh | hpr | cook-heat |
+- **Lines with a recorded gallows divergence:** 4759 / 5194 (91.6%)
+- **EVA words with a detected operator:** 21771 / 37785 (57.6%)
+- **EVA words with a detected suffix:** 34212 / 37785 (90.5%)
 
-### 5. 'aiin' as Ligature Unit
+## Hand Readings vs Compiler Output
 
-EVA: four separate characters (a, i, i, n)
-ZFD: single ligature unit 'ain' representing a substance/noun suffix
-Evidence: zero-pen-lift execution confirmed in ductus analysis
-
-## Divergence Statistics
-
-- **Lines with documented divergences:** 4019 / 4944
-- **Divergence rate:** 81.3%
-- **Primary divergence type:** Gallows expansion (present in virtually every line)
-- **Secondary divergence:** Operator detection (most word-initial sequences)
-- **Tertiary divergence:** Suffix detection (most word-final sequences)
-
-## Validated Readings Where ZFD and EVA Disagree
-
-| EVA Reading | ZFD Reading | Meaning | Validation |
-|-------------|-------------|---------|------------|
-| okol | ostol | bone oil | Curio adversarial validation (f88r) |
-| otorchety | otrorhetri | treated heated fluid | Curio adversarial validation (f88r) |
-| okeo.r!oly | orolaly | orally (Latin) | Confirmed Latin pharmaceutical term (f102v) |
-| sal | sal | salt | Identity (no divergence) |
-| daiin | dain | substance/given | Operator + suffix vs individual characters |
+| EVA | Hand reading | Compiler output | Match | Source of hand reading |
+|-----|--------------|-----------------|-------|------------------------|
+| okol | ostol | ostol | yes | Curio adversarial validation (f88r) |
+| otorchety | otrorhetri | otrorhetri | yes | Curio adversarial validation (f88r) |
+| okeo.r!oly | orolaly | osteo. roli | NO | Latin term reading (f102v) |
+| sal | sal | sal | yes | identity |
+| shol | šol | šol | yes | FINAL_CHARACTER_MAP_v1 §3.2 |
+| daiin | dain | dain | yes | operator + ligature suffix |
 
 ## Conclusion
 
-The ZFD transcription and EVA transliteration disagree on virtually every word
-in the manuscript, because they are based on fundamentally different models of
-the writing system. EVA assumes a 1:1 character-to-letter cipher. ZFD recognizes
-a positional shorthand system with three layers (operators, gallows abbreviations,
-suffixes). Where validation evidence exists (Curio adversarial testing, Latin
-pharmaceutical terms, spatial correlation), the ZFD readings are consistently
-supported.
+ZFD and EVA differ on most words because they model the writing system
+differently (1:1 glyph-to-letter vs positional shorthand).
+Measured against the hand-transcribed anchor folios, the batch compiler
+reproduces 517/617 words (83.8%). That number, not the structural
+grades, is the current accuracy evidence for the automated folios.
 
 ---
 
-*Comparison report generated 2026-02-07.*
+*Comparison report generated 2026-11-21.*

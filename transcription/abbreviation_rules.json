@@ -1,10 +1,11 @@
 {
   "metadata": {
-    "version": "1.0.0",
-    "date": "2026-02-07",
+    "version": "1.1.0",
+    "date": "2026-11-21",
     "description": "Machine-readable abbreviation rules for automated Voynich-to-Croatian transcription pipeline",
     "methodology": "ZFD three-layer positional shorthand system",
-    "source": "Derived from Phases 1-4 analysis"
+    "source": "Derived from Phases 1-4 analysis",
+    "changes_1_1_0": "sh -> š in every position (was s / sh; same sound, canon spelling from lexicon_v2.csv, unified_lexicon_v3, operators.json, character_reference.py). y -> i outside the suffix slot (character_reference.py, glyph_inventory, ductus analysis, gold anchors). ch -> h in every position. State markers se/seo -> še/šeo. See AUDIT_2026-11.md section D."
   },
   "parsing_pipeline": {
     "step_order": ["operator_detection", "suffix_detection", "gallows_expansion", "direct_mapping", "validation"],
@@ -15,7 +16,7 @@
       "rules": [
         {"eva": "qo", "croatian": "ko", "gloss": "which/that/quantity", "certainty": "HIGH"},
         {"eva": "ch", "croatian": "h", "gloss": "combine/cook/action", "certainty": "HIGH"},
-        {"eva": "sh", "croatian": "s", "gloss": "with/soak", "certainty": "HIGH"},
+        {"eva": "sh", "croatian": "š", "gloss": "with/soak", "certainty": "HIGH"},
         {"eva": "da", "croatian": "da", "gloss": "dose/give/add", "certainty": "HIGH"},
         {"eva": "ok", "croatian": "ost", "gloss": "vessel/container", "certainty": "MEDIUM"},
         {"eva": "ot", "croatian": "otr", "gloss": "vessel/treated", "certainty": "MEDIUM"},
@@ -91,12 +92,13 @@
     },
     "direct_mapping": {
       "vowels": {
-        "o": "o", "a": "a", "e": "e", "i": "i"
+        "o": "o", "a": "a", "e": "e", "i": "i", "y": "i"
       },
       "consonants": {
         "r": "r", "l": "l", "d": "d", "n": "n", "s": "s", "m": "m"
       },
-      "notes": "i and n are visually identical; position determines reading (medial=i, final=n)"
+      "ligatures_any_position": {"ch": "h", "sh": "š"},
+      "notes": "i and n are visually identical; position determines reading (medial=i, final=n). y is one glyph in every position (DUCTUS_ANALYSIS 6.2 #3) with value i; Croatian spelling has no y."
     },
     "validation": {
       "lexicon_file": "zfd_decoder/data/unified_lexicon_v2.json",
@@ -113,7 +115,7 @@
     "units": [
       {"eva": "qo", "value": "ko", "type": "operator"},
       {"eva": "ch", "value": "h", "type": "operator"},
-      {"eva": "sh", "value": "sh", "type": "operator"},
+      {"eva": "sh", "value": "š", "type": "operator"},
       {"eva": "aiin", "value": "ain", "type": "suffix"},
       {"eva": "aiiin", "value": "ain", "type": "suffix"}
     ]
@@ -121,8 +123,8 @@
   "state_markers": [
     {"eva": "he", "value": "he", "function": "state/result"},
     {"eva": "heo", "value": "heo", "function": "state/result extended"},
-    {"eva": "se", "value": "se", "function": "soaked state"},
-    {"eva": "seo", "value": "seo", "function": "soaked state extended"}
+    {"eva": "se", "value": "še", "function": "soaked state"},
+    {"eva": "seo", "value": "šeo", "function": "soaked state extended"}
   ],
   "latin_terms": [
     {"eva_pattern": "ost", "latin": "os (bone)", "certainty": "HIGH"},

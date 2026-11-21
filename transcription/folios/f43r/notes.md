@@ -5,10 +5,10 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 22 |
-| sh→s | 19 |
+| sh→š | 19 |
 | qo→ko | 16 |
-| da→da | 14 |
 | ot→otr | 13 |
+| da→da | 11 |
 | ok→ost | 4 |
 | q→k | 1 |
 
@@ -23,7 +23,9 @@
 
 ## Validated Terms Present
 
+- **šol** (with-oil)
 - **dar** (give-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
@@ -35,17 +37,17 @@
 ## Most Frequent ZFD Words
 
 - dar: 4x
+- dain: 4x
 - hedi: 4x
 - kotredi: 4x
-- sol: 3x
+- šol: 3x
 - ain: 3x
-- daiin: 3x
-- ytri: 3x
+- itri: 3x
 - otri: 3x
+- ši: 3x
 - di: 3x
-- ytredi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

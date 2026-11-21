@@ -1,8 +1,8 @@
-# Folio f40v -- Paleographic Transcription
+# Folio f40v -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006153/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language B, Hand 2
 
 ---
 
@@ -10,25 +10,25 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plchedain. heprain. oldi. | | B | pchedain.chefaiin.oldy |
-| L2 | trodar. kostain. ol. aram. | | B | todar.qokaiin.ol.aram |
-| L3 | s. air. ain. ostain. ostam. | | B | s.air.ain.okaiin.okam |
-| L4 | trarain. ostain. hhstri. | | B | taraiin.okaiin.chckhy |
-| L5 | solain. ostar. oli. hhstri. | | B | solaiin.okar.oly.chckhy |
-| L6 | koeed. ain. ol. eeedi. daiin. | | B | qoeed.aiin.ol.eeedy.daiin |
-| L7 | sodi. kostol. hedi. s. ar. | | B | shody.qokol.chedy.s.ar |
-| L8 | hodain. hstal. ystedi. ostal. | | B | chodaiin.chkal.ykedy.okal |
-| L9 | trchi. plchodi. plchdi. stor. ol. | | B | tchy.pchody.pchdy.kor.ol |
-| L10 | trchstain. trchedi. kostain. orain. | | B | tchkaiin.tchedy.qokaiin.oraiin |
-| L11 | schedi. kostol. hedi. dalor. aitrhi. | | B | schedy.qokol.chedy.dalor.aithy |
-| L12 | ycheestei. daiin. ostain | B | ycheekeey.daiin.okaiin |
-| L13 | troees. hedi. stedi. olprchedi. kostedi. |. daiin. heprain | B | toees.chedy.kedy.olfchedy.qokedydaiin.chefain |
-| L14 | sain. o. lchei. stchedi. ostar. kostchdi. di. |. kostees. am. hdi | B | saiin.o.lchey.kchedy.okar.qokchdy.dyqokees.am.chdy |
-| L15 | kostchei. kodi. or. aiiin. ostain. o. hstri. |. seod. praim?i | B | qokchey.qody.or.aiiin.okaiin.o.ckhysheod.faim!y |
-| L16 | sol. stedi. lor. ar. ostar. kosti. stedi. r. |. ytrei. kostaim | B | shol.kedy.lor.ar.okar.qoky.kedy.ryteey.qokaim |
-| L17 | trochei. kosteedi. kostain. osteor. kostar. |. ostees. ar. osti | B | tochey.qokeedy.qokaiin.okeor.qokarokees.ar.oky |
-| L18 | sain. otrain. hhstri. ostal. ostair. arol. |. kostei. ostari | B | saiin.otain.chckhy.okal.okair.arolqokey.okary |
-| L19 | plchedi. hetrar. oprair. arodi | B | pchedy.chetar.ofair.arody |
+| L1 | plhedain. heprain. oldi \| | B | pchedain.chefaiin.oldy \| |
+| L2 | trodar. kostain. ol. aram \| | B | todar.qokaiin.ol.aram \| |
+| L3 | s. air. ain. ostain. ostam \| | B | s.air.ain.okaiin.okam \| |
+| L4 | trarain. ostain. hhsti \| | B | taraiin.okaiin.chckhy \| |
+| L5 | solain. ostar. oli. hhsti \| | B | solaiin.okar.oly.chckhy \| |
+| L6 | koeed. ain. ol. eeedi. dain \| | B | qoeed.aiin.ol.eeedy.daiin \| |
+| L7 | šodi. kostol. hedi. s. ar \| | B | shody.qokol.chedy.s.ar \| |
+| L8 | hodain. hstal. istedi. ostal \| | B | chodaiin.chkal.ykedy.okal \| |
+| L9 | trhi. plhodi. plhdi. stor. ol \| | B | tchy.pchody.pchdy.kor.ol \| |
+| L10 | trhstain. trhedi. kostain. orain \| | B | tchkaiin.tchedy.qokaiin.oraiin \| |
+| L11 | shedi. kostol. hedi. dalor. aitrhi \| | B | schedy.qokol.chedy.dalor.aithy \| |
+| L12 | iheestei. dain. ostain | B | ycheekeey.daiin.okaiin |
+| L13 | troees. hedi. stedi. olprhedi. kostedi \| dain. heprain | B | toees.chedy.kedy.olfchedy.qokedy \| daiin.chefain |
+| L14 | sain. o. lhei. sthedi. ostar. kosthdi. di \| kostees. am. hdi | B | saiin.o.lchey.kchedy.okar.qokchdy.dy \| qokees.am.chdy |
+| L15 | kosthei. kodi. or. ain. ostain. o. hsti \| šeod. praimi | B | qokchey.qody.or.aiiin.okaiin.o.ckhy \| sheod.faim!y |
+| L16 | šol. stedi. lor. ar. ostar. kosti. stedi. r \| itrei. kostaim | B | shol.kedy.lor.ar.okar.qoky.kedy.r \| yteey.qokaim |
+| L17 | trohei. kosteedi. kostain. osteor. kostar \| ostees. ar. osti | B | tochey.qokeedy.qokaiin.okeor.qokar \| okees.ar.oky |
+| L18 | sain. otrain. hhsti. ostal. ostair. arol \| kostei. ostari | B | saiin.otain.chckhy.okal.okair.arol \| qokey.okary |
+| L19 | plhedi. hetrar. oprair. arodi | B | pchedy.chetar.ofair.arody |
 
 ## Confidence Distribution
 
@@ -37,7 +37,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

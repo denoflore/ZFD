@@ -1,8 +1,8 @@
-# Folio f50r -- Paleographic Transcription
+# Folio f50r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006172/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language B, Hand 2
 
 ---
 
@@ -10,25 +10,26 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plsheor. olstais. olprchedi. kopleeedar. oplchei. dair. olain. heprchdi | B | psheor.olkais.olfchedy.qopeeedar.opchey.dair.olaiin.chefchdy |
-| L2 | sor. or?shehstri. ohstrodi. sos. alol. di. star. osti. daiiin. ostar. ar. ostam | B | sor.or!sheckhy.ockhody.shos.alol.dy.kar.oky.daiiin.okar.ar.okam |
-| L3 | trshol. star. seedi. osteodi. kostedi. hodi. stchdi. plchdi. hstain. odam | B | tshol.kar.sheedy.okeody.qokedy.chody.kchdy.pchdy.chkaiin.odam |
-| L4 | trchdi. kostar. hedi. kostchdi. kostain. or. ar. al?ol. steodain. olr | B | tchdy.qokar.chedy.qokchdy.qokaiin.or.ar.al!ol.keodaiin.olr |
-| L5 | s?olstchi. hhstri. kostchdi. kostchdi. ostar. ar. i. kostchdi. star. ar. ostai?n | B | s!olkchy.chckhy.qokchdy.qokchdy.okar.ar.y.qokchdy.kar.ar.okai!n |
-| L6 | ystai?n. ssear. ol?stchedi. ostal. kotror. heeor. olsta?di. daiin. kosti | C | ykai!n.ssear.ol!kchedy.okal.qotor.cheeor.olka!dy.daiin.qoky |
-| L7 | trodalain. kotral. stain. otrain. otral. se. star. a?riin. ostchedi. dariin | B | todalain.qotal.kaiin.otaiin.otal.she.kar.a!riin.okchedy.dariin |
-| L8 | yst?ystain. seestar. otrchdi. da?r. star. selain. traiplar. orolstai?n | C | yk!ykaiin.sheekar.otchdy.da!r.kar.shelain.taipar.orolkai!n |
-| L9 | ytrchdi. stchedi. |. ystei. stain. kostain. ald?al?o?s?am | B | ytchdy.kchedyykeey.kaiin.qokain.ald!al!o!s!am |
-| L10 | solstain. |. oplal?ste. hhstri. dario. hsti | B | solkaiinopal!ke.chckhy.dario.chky |
+| L1 | plšeor. olstais. olprhedi. kopleeedar. oplhei. dair. olain. heprhdi | B | psheor.olkais.olfchedy.qopeeedar.opchey.dair.olaiin.chefchdy |
+| L2 | sor. oršehsti. ohstodi. šos. alol. di. star. osti. dain. ostar. ar. ostam | B | sor.or!sheckhy.ockhody.shos.alol.dy.kar.oky.daiiin.okar.ar.okam |
+| L3 | tršol. star. šeedi. osteodi. kostedi. hodi. sthdi. plhdi. hstain. odam | B | tshol.kar.sheedy.okeody.qokedy.chody.kchdy.pchdy.chkaiin.odam |
+| L4 | trhdi. kostar. hedi. kosthdi. kostain. or. ar. alol. steodain. olr | B | tchdy.qokar.chedy.qokchdy.qokaiin.or.ar.al!ol.keodaiin.olr |
+| L5 | solsthi. hhsti. kosthdi. kosthdi. ostar. ar. i. kosthdi. star. ar. ostain | B | s!olkchy.chckhy.qokchdy.qokchdy.okar.ar.y.qokchdy.kar.ar.okai!n |
+| L6 | istain. ssear. olsthedi. ostal. kotror. heeor. olstadi. dain. kosti | B | ykai!n.ssear.ol!kchedy.okal.qotor.cheeor.olka!dy.daiin.qoky |
+| L7 | trodalain. kotral. stain. otrain. otral. še. star. ariin. osthedi. dariin | B | todalain.qotal.kaiin.otaiin.otal.she.kar.a!riin.okchedy.dariin |
+| L8 | ististain. šeestar. otrhdi. dar. star. šelain. traiplar. orolstain | B | yk!ykaiin.sheekar.otchdy.da!r.kar.shelain.taipar.orolkai!n |
+| L9 | itrhdi. sthedi \| istei. stain. kostain. aldalosam | B | ytchdy.kchedy \| ykeey.kaiin.qokain.ald!al!o!s!am |
+| L10 | solstain \| oplalste. hhsti. dario. hsti | B | solkaiin \| opal!ke.chckhy.dario.chky |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 8 lines
-- **C:** 2 lines
+- **B:** 10 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

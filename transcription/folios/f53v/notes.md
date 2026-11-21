@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| sh→s | 13 |
+| sh→š | 13 |
 | qo→ko | 8 |
-| da→da | 8 |
 | ch→h | 6 |
 | ok→ost | 3 |
 | ot→otr | 3 |
+| da→da | 2 |
 
 ## Gallows Distribution
 
@@ -21,6 +21,8 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 
 ## Confidence Summary
@@ -32,14 +34,14 @@
 
 ## Most Frequent ZFD Words
 
-- daiin: 6x
+- dain: 6x
 - hol: 3x
-- sodain: 3x
-- sei: 2x
+- šodain: 3x
+- šei: 2x
 - dam: 2x
 - kodal: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

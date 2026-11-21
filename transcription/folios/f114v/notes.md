@@ -7,9 +7,9 @@
 | qo→ko | 84 |
 | ch→h | 78 |
 | ot→otr | 34 |
-| sh→s | 20 |
-| da→da | 17 |
-| ok→ost | 14 |
+| sh→š | 20 |
+| ok→ost | 15 |
+| da→da | 11 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -24,25 +24,26 @@
 ## Validated Terms Present
 
 - **dar** (give-agent)
+- **dain** (substance/given)
 - **hol** (cook-oil)
 - **ostol** (bone oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 38 (93%)
-- C: 3 (7%)
+- B: 41 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - kotrain: 10x
+- dain: 9x
+- otrain: 9x
 - ain: 8x
-- otrain: 7x
-- daiin: 6x
+- hedain: 7x
 - kostain: 5x
-- hedai?n: 4x
-- sedi: 4x
+- šedi: 4x
 - ol: 4x
 - hedi: 4x
 - heo: 4x
@@ -50,4 +51,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

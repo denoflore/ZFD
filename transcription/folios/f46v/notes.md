@@ -5,11 +5,11 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 25 |
-| da→da | 11 |
-| sh→s | 8 |
+| sh→š | 8 |
 | ok→ost | 8 |
+| qo→ko | 8 |
 | ot→otr | 7 |
-| qo→ko | 7 |
+| da→da | 7 |
 
 ## Gallows Distribution
 
@@ -20,18 +20,22 @@
 | p→pl | 5 |
 | f→pr | 2 |
 
+## Validated Terms Present
+
+- **dain** (substance/given)
+
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 12 (92%)
-- C: 1 (8%)
+- B: 13 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - hedi: 6x
-- sedi: 4x
-- daiin: 4x
+- dain: 5x
+- šedi: 4x
 - kostedi: 3x
 - otri: 3x
 - dam: 3x
@@ -43,4 +47,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| qo→ko | 85 |
+| qo→ko | 86 |
 | ch→h | 40 |
-| sh→s | 24 |
-| da→da | 16 |
-| ok→ost | 13 |
-| ot→otr | 3 |
+| sh→š | 24 |
+| ok→ost | 14 |
+| da→da | 9 |
+| ot→otr | 4 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -29,24 +29,24 @@
 ## Confidence Summary
 
 - A: 1 (2%)
-- B: 40 (89%)
-- C: 3 (7%)
-- D: 1 (2%)
+- B: 44 (98%)
+- C: 0 (0%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
+- kosteedi: 14x
 - hei: 13x
+- kostain: 13x
 - kostei: 12x
-- kosteedi: 12x
-- kostain: 11x
-- sedi: 8x
-- daiin: 7x
-- lchedi: 7x
+- dain: 8x
+- šedi: 8x
+- lhedi: 7x
 - hedi: 6x
 - kostedi: 5x
-- sei: 4x
+- šei: 4x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 35 |
+| ch→h | 36 |
 | qo→ko | 20 |
-| da→da | 16 |
-| ok→ost | 10 |
-| sh→s | 9 |
+| ok→ost | 12 |
+| sh→š | 9 |
+| da→da | 8 |
 | ot→otr | 7 |
 | q→k | 3 |
 
@@ -26,30 +26,32 @@
 - **ostol** (bone oil)
 - **hor** (cook-agent)
 - **dar** (give-agent)
+- **dain** (substance/given)
 - **hol** (cook-oil)
 - **stol** (bone-oil)
+- **šol** (with-oil)
 
 ## Confidence Summary
 
 - A: 1 (4%)
-- B: 23 (82%)
-- C: 2 (7%)
-- D: 2 (7%)
+- B: 26 (93%)
+- C: 0 (0%)
+- D: 1 (4%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 7x
+- dain: 11x
 - or: 6x
 - heol: 5x
 - hor: 4x
 - hei: 4x
-- htrrei: 4x
+- htrei: 4x
+- ostei: 4x
 - hol: 4x
 - ain: 3x
-- dai?n: 3x
-- ol: 3x
+- orain: 3x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

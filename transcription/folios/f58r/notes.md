@@ -5,10 +5,10 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 72 |
-| sh→s | 32 |
+| sh→š | 32 |
 | ot→otr | 32 |
-| da→da | 28 |
 | qo→ko | 28 |
+| da→da | 25 |
 | ok→ost | 15 |
 
 ## Gallows Distribution
@@ -23,6 +23,8 @@
 ## Validated Terms Present
 
 - **stor** (bone-agent)
+- **dain** (substance/given)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 - **hor** (cook-agent)
 - **dar** (give-agent)
@@ -44,10 +46,10 @@
 - otrar: 4x
 - otral: 4x
 - di: 4x
-- sar: 4x
 - tral: 3x
+- itrar: 3x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*
