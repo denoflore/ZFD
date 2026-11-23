@@ -1,7 +1,8 @@
 # Folio f85v -- Paleographic Transcription
 
 **Section:** Rosettes (nine-rosette foldout, verso)
-**IIIF:** https://collections.library.yale.edu/iiif/2/1006219/full/full/0/default.jpg
+**IIIF:** https://collections.library.yale.edu/iiif/2/1006231/full/full/0/default.jpg
+**Image label:** 85v and 86r (foldout), a composite scan reference.
 **Condition:** Part of the large nine-rosette foldout. No standard text lines in the EVA transcription archive.
 
 ---
@@ -15,3 +16,6 @@ Labels and diagram text would need to be transcribed directly from the manuscrip
 ---
 
 *Stub entry created 2026-02-07. Requires manual image-based transcription.*
+
+*Image reference corrected 2026-11-23: the previous identifier, 1006219,
+belongs to f80v. No transcription text was changed.*

@@ -1,0 +1,27 @@
+{
+  "html_sha256": "5acc1d9d17377bbb5a3bc3cd1a04c0bf77045c88840a7a93869bfeb217446602",
+  "page_errors": [],
+  "desktop_viewport": {
+    "width": 1440,
+    "height": 1050
+  },
+  "mobile_viewport": {
+    "width": 390,
+    "height": 844
+  },
+  "browser_version": "148.0.7778.96",
+  "title": "f88r · ZFD folio reader",
+  "image": [
+    {
+      "src": "https://collections.library.yale.edu/iiif/2/1037112/full/1000,/0/default.jpg",
+      "loaded": true,
+      "width": 1000
+    }
+  ],
+  "search_by_token_id": true,
+  "partial_filter_count": 81,
+  "empty_filter_state": true,
+  "expand_evidence": true,
+  "mobile_overflow": false,
+  "image_failure_fallback": true
+}

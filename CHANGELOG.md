@@ -1,5 +1,16 @@
 # Changelog
 
+## 23 November 2026: Folio Images and Croatian Reader Completion
+
+- Completed the retained folio-images/Croatian branch against the current audited CSV pipeline. Added a portable HTML reader with labelled Yale scans, four aligned reading layers, search, match filters and token evidence, plus JSON, CSV and Markdown exports.
+- Added exact raw/LSI source selection for all **244 text-source IDs**. Retained drawing boundaries and LSI line/transcriber identities. All IDs resolve to labelled scan references, including partial and composite scans.
+- Preserved unmatched text in ZFD output and bracketed it in Croatian/English glosses. Added explicit whole-word, exact-stem, suffix, partial, compound and unresolved provenance without changing parser scores or lexicon selection decisions.
+- Retained the shipping lexicon at **212 rows / 208 forms**. Archived the older branch's byte-identical **185-row / 182-form** CSV, including **89 branch-only forms**, behind the explicit `branch-candidates` profile. Recorded all 33 shared forms with differing rows.
+- Corrected the f85v stub's scan reference from f80v's image to the labelled f85v/f86r foldout. Its transcription text and corpus JSONL remain unchanged.
+- Verified **97 tests**, all-source reader accounting and desktop/mobile browser behaviour. Refreshed validation receipts: frozen **5/5**, shipping **4/5**, robustness **NON-DISCRIMINATING**; numerical control results are unchanged.
+
+[Reader guide](zfd_decoder/README.md) | [Completion receipt](validation/folio_reader/COMPLETION_2026-11-23.md).
+
 ## 23 November 2026: Compiler Integration and Measurement Corrections
 
 - Incorporated the 21 November transcription compiler fixes and regenerated corpus from PR #8.

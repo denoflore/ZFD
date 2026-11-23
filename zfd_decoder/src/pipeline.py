@@ -23,6 +23,8 @@ except ImportError:
 
 
 class ZFDPipeline:
+    MIN_PARTIAL_STEM_LENGTH = 2
+
     def __init__(self, data_dir: str = "data", lexicon_file: str = None):
         data_path = Path(data_dir)
         self.operators = OperatorDetector(str(data_path / "operators.json"))
@@ -69,6 +71,8 @@ class ZFDPipeline:
             token.stem_gloss = precheck_data['gloss']
             token.confidence += self.lexicon.confidence_for_status(precheck_data['status'])
             token.notes.append(f"Stem: {precheck_data['name']} ({precheck_data['status']}) [whole-word]")
+            self._record_match(token, "whole_word", precheck_word,
+                               precheck_data, precheck_word)
 
             # Build output layers
             token.zfd = self._build_zfd(token)
@@ -95,39 +99,54 @@ class ZFDPipeline:
         # Stage 4: Stem lookup (try full word first)
         stem_candidate = working
         stem_data = self.lexicon.lookup(stem_candidate)
+        stem_surface = working
+        matched_form = stem_candidate if stem_data else ""
+        match_type = "exact_stem" if stem_data else "unresolved"
         suffix = None
 
         # Stage 5: If full word not found, try suffix parsing
         if not stem_data:
             stripped_stem, suffix = self.suffixes.parse(working)
-            if suffix:
+            if suffix and len(stripped_stem) >= self.MIN_PARTIAL_STEM_LENGTH:
                 # Check if stripped stem is in lexicon
                 stripped_data = self.lexicon.lookup(stripped_stem)
                 if stripped_data:
                     stem_candidate = stripped_stem
+                    stem_surface = stripped_stem
                     stem_data = stripped_data
+                    matched_form = stripped_stem
+                    match_type = "suffix"
                     token.suffix = suffix['croatian']
                     token.suffix_semantic = suffix['semantic']
                     token.rewrites.append(f"suffix: {suffix['eva']}→{suffix['croatian']} ({suffix['gloss']})")
                     token.confidence += 0.15
                 else:
                     # Try partial match on stripped stem
-                    found = self.lexicon.find_in_text(stripped_stem)
+                    found = self.lexicon.find_in_text(
+                        stripped_stem, min_length=self.MIN_PARTIAL_STEM_LENGTH)
                     if found:
                         stem_candidate = found[0][0]
+                        stem_surface = stripped_stem
                         stem_data = found[0][1]
+                        matched_form = found[0][0]
+                        match_type = "partial"
                         token.suffix = suffix['croatian']
                         token.suffix_semantic = suffix['semantic']
                         token.rewrites.append(f"suffix: {suffix['eva']}→{suffix['croatian']} ({suffix['gloss']})")
                         token.confidence += 0.15
                     else:
                         suffix = None  # No valid suffix, keep full word
+            else:
+                suffix = None  # A suffix-derived stem must have two characters
 
         # Stage 6: If still not found, try partial match for gloss only (keep full stem)
         if not stem_data:
-            found = self.lexicon.find_in_text(stem_candidate)
+            found = self.lexicon.find_in_text(
+                stem_candidate, min_length=self.MIN_PARTIAL_STEM_LENGTH)
             if found:
                 stem_data = found[0][1]
+                matched_form = found[0][0]
+                match_type = "partial"
                 # Keep the full stem_candidate, just use the match for the gloss
 
         # Stage 6b: Compound decomposition fallback
@@ -142,15 +161,24 @@ class ZFDPipeline:
                 token.confidence += 0.10  # lower confidence for compound decomp
                 token.notes.append(
                     f"Compound: {self.compound.format_decomposition(parts)}")
+                token.compound_parts = [dict(part) for part in parts]
+                match_type = "compound"
                 stem_data = {'name': 'compound', 'status': 'CANDIDATE',
-                             'gloss': gloss, 'category': 'compound'}
+                             'gloss': gloss, 'category': 'compound',
+                             'source': 'unified_lexicon_v2.json'}
 
         token.stem = stem_candidate
+        token.stem_surface = stem_surface
+        token.match_type = match_type
         if stem_data:
             token.stem_known = True
             token.stem_gloss = stem_data['gloss']
             token.confidence += self.lexicon.confidence_for_status(stem_data['status'])
             token.notes.append(f"Stem: {stem_data['name']} ({stem_data['status']})")
+            self._record_match(token, match_type, matched_form,
+                               stem_data, stem_surface)
+        else:
+            token.unmatched_suffix = stem_surface
 
         # Stage 6: Build ZFD orthography (Layer 1)
         token.zfd = self._build_zfd(token)
@@ -169,12 +197,39 @@ class ZFDPipeline:
 
         return token
 
+    @staticmethod
+    def _record_match(token: Token, match_type: str, form: str,
+                      entry: Dict, surface: str) -> None:
+        """Carry the selected row instead of looking it up through a surface.
+
+        Partial matches use the first occurrence of the already selected,
+        longest key. This records the match without changing its selection.
+        Compound matches have no single CSV row and keep matched_form empty.
+        """
+        token.match_type = match_type
+        token.matched_form = form
+        token.matched_croatian = entry.get("croatian", "")
+        token.matched_category = entry.get("category", "unknown")
+        token.matched_status = entry.get("status", "")
+        token.matched_source = entry.get("source", "")
+        token.stem_surface = surface
+        token.unmatched_prefix = ""
+        token.unmatched_suffix = ""
+        if form:
+            start = surface.index(form)
+            token.unmatched_prefix = surface[:start]
+            token.unmatched_suffix = surface[start + len(form):]
+
+    @staticmethod
+    def _residual(text: str) -> str:
+        return f"[{text}]" if text else ""
+
     def _build_zfd(self, token: Token) -> str:
         """Build Layer 1: ZFD Orthography."""
         parts = []
         if token.operator:
             parts.append(token.operator)
-        parts.append(token.stem)
+        parts.append(token.stem_surface)
         if token.suffix:
             parts.append(token.suffix)
         return "".join(parts)
@@ -184,11 +239,17 @@ class ZFDPipeline:
         parts = []
         if token.operator:
             parts.append(f"[OP:{token.operator}]")
-        if token.stem:
-            if token.stem_known:
-                parts.append(f"[STEM:{token.stem}={token.stem_gloss}]")
+        if token.stem_surface:
+            if token.matched_form:
+                if token.unmatched_prefix:
+                    parts.append(f"[RESIDUE:{token.unmatched_prefix}]")
+                parts.append(f"[STEM:{token.matched_form}={token.stem_gloss}]")
+                if token.unmatched_suffix:
+                    parts.append(f"[RESIDUE:{token.unmatched_suffix}]")
+            elif token.match_type == "compound":
+                parts.append(f"[COMPOUND:{token.stem_surface}={token.stem_gloss}]")
             else:
-                parts.append(f"[STEM:{token.stem}=?]")
+                parts.append(f"[STEM:{token.stem_surface}=?]")
         if token.suffix:
             parts.append(f"[SUF:{token.suffix}={token.suffix_semantic}]")
         return "".join(parts)
@@ -198,13 +259,14 @@ class ZFDPipeline:
         parts = []
         if token.operator:
             parts.append(token.operator)
-        # Use Croatian form if available, otherwise stem
-        if token.stem_known:
-            stem_data = self.lexicon.lookup(token.stem)
-            croatian = stem_data.get('croatian', '') if stem_data else ''
-            parts.append(croatian if croatian else token.stem)
+        # Use the actual matched row. A partial surface is not a lookup key.
+        if token.matched_form:
+            parts.append(self._residual(token.unmatched_prefix))
+            parts.append(token.matched_croatian or self._residual(token.matched_form))
+            parts.append(self._residual(token.unmatched_suffix))
         else:
-            parts.append(token.stem)
+            # Compound-only glosses do not supply Croatian translations.
+            parts.append(self._residual(token.stem_surface))
         if token.suffix:
             parts.append(token.suffix)
         return "".join(parts)
@@ -226,10 +288,16 @@ class ZFDPipeline:
             parts.append("vessel")
 
         # Stem gloss
-        if token.stem_gloss:
+        if token.matched_form:
+            if token.unmatched_prefix:
+                parts.append(self._residual(token.unmatched_prefix))
             parts.append(token.stem_gloss)
-        elif token.stem:
-            parts.append(f"[{token.stem}]")
+            if token.unmatched_suffix:
+                parts.append(self._residual(token.unmatched_suffix))
+        elif token.stem_surface:
+            # Keep the opaque surface visible. Proposed compound glosses and
+            # morpheme records remain in stem_gloss and compound_parts.
+            parts.append(self._residual(token.stem_surface))
 
         # Suffix gloss
         if token.suffix_semantic == "processed":
@@ -273,6 +341,7 @@ class ZFDPipeline:
                 "unknown_stem_list": [],
                 "category_distribution": {},
                 "miscellany_stems": 0,
+                "match_type_counts": {},
                 "validation": {}
             }
 
@@ -295,12 +364,13 @@ class ZFDPipeline:
         # Category distribution
         category_counts = {}
         miscellany_count = 0
+        match_type_counts = {}
         for t in all_tokens:
+            match_type_counts[t.match_type] = match_type_counts.get(t.match_type, 0) + 1
             if t.stem_known:
-                cat = self.lexicon.get_category(t.stem)
+                cat = t.matched_category or "unknown"
                 category_counts[cat] = category_counts.get(cat, 0) + 1
-                stem_data = self.lexicon.lookup(t.stem)
-                if stem_data and stem_data.get('source', '') == 'miscellany_new':
+                if t.matched_source == 'miscellany_new':
                     miscellany_count += 1
 
         return {
@@ -313,6 +383,7 @@ class ZFDPipeline:
             "unknown_stem_list": sorted(unknown_list),
             "category_distribution": category_counts,
             "miscellany_stems": miscellany_count,
+            "match_type_counts": match_type_counts,
             "validation": {
                 "kost_present": any("kost" in t.stem or "ost" in t.stem for t in all_tokens),
                 "ol_present": any(t.stem in ["ol", "or"] for t in all_tokens),

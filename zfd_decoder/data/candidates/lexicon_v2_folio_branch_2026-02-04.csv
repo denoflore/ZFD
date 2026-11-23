@@ -1,0 +1,186 @@
+name,variant,context,gloss,latin,croatian,category,status,source
+bone,kost,pharmaceutical,bone,os,kost,ingredient,CONFIRMED,lexicon_v1
+bone,ost,after vessel markers,bone,os,kost,ingredient,CONFIRMED,lexicon_v1
+oil,ol,free or vessels,oil,oleum,ulje,ingredient,CONFIRMED,lexicon_v1
+oil,or,free or vessels,oil,oleum,ulje,ingredient,CONFIRMED,lexicon_v1
+water,ar,free or vessels,water,aqua,voda,ingredient,CONFIRMED,lexicon_v1
+salt,sar,vessels/roots,salt,sal,sol,ingredient,CONFIRMED,lexicon_v1
+salt,sal,free,salt,sal,sol,ingredient,CONFIRMED,lexicon_v1
+honey,mel,cooking/syrup,honey,mel,med,ingredient,CONFIRMED,lexicon_v1
+flour,chol,after combine,flour/grain,farina,brasno,ingredient,CONFIRMED,lexicon_v1
+flour,chal,after combine,flour/grain,farina,brasno,ingredient,CONFIRMED,lexicon_v1
+flour,hol,after combine,flour/grain,farina,brasno,ingredient,CONFIRMED,lexicon_v1
+root,edy,after operators,root/prepared,radix,korijen,ingredient,CONFIRMED,lexicon_v1
+root,edi,after operators,root/prepared,radix,korijen,ingredient,CONFIRMED,lexicon_v1
+root,rady,after operators,root/prepared,radix,korijen,ingredient,CONFIRMED,lexicon_v1
+wine,vin,quantity/medium,wine,vinum,vino,ingredient,CONFIRMED,lexicon_v1
+milk,lac,quantity/medium,milk,lac,mlijeko,ingredient,CONFIRMED,lexicon_v1
+flower,flor,combine/quantity,flower,flos,cvijet,ingredient,CONFIRMED,lexicon_v1
+rose,ros,liquid media,rose/rosewater,rosa,ruza,ingredient,CONFIRMED,lexicon_v1
+rose,rosar,liquid media,rose/rosewater,rosa,ruza,ingredient,CONFIRMED,lexicon_v1
+myrrh,myr,honey/wine,myrrh resin,myrrha,smirna,ingredient,CONFIRMED,lexicon_v1
+myrrh,myron,honey/wine,myrrh resin,myrrha,smirna,ingredient,CONFIRMED,lexicon_v1
+aloe,aloe,doses/liquids,aloe,aloe,aloja,ingredient,CONFIRMED,lexicon_v1
+galbanum,galb,oils/resins,galbanum,galbanum,galbanum,ingredient,CONFIRMED,lexicon_v1
+storax,stor,infusions/oils,storax,storax,storaks,ingredient,CONFIRMED,lexicon_v1
+opopanax,opop,dose/fire,opopanax gum,opopanax,opopanaks,ingredient,CONFIRMED,lexicon_v1
+camphor,camph,oils/resins,camphor,camphora,kamfor,ingredient,CONFIRMED,lexicon_v1
+anise,anis,spice clusters,anise,anisum,anis,ingredient,CONFIRMED,lexicon_v1
+coriander,cori,spice clusters,coriander,coriandrum,korijander,ingredient,CONFIRMED,lexicon_v1
+mint,ment,wine/syrup,mint,mentha,metvica,ingredient,CONFIRMED,lexicon_v1
+sage,salv,roots/infusions,sage,salvia,kadulja,ingredient,CONFIRMED,lexicon_v1
+fennel,fenn,anise/coriander,fennel,feniculum,komorac,ingredient,CONFIRMED,lexicon_v1
+rue,ruta,bitters/wine,rue,ruta,rutvica,ingredient,CONFIRMED,lexicon_v1
+hyssop,hyss,flowers/resins,hyssop,hyssopus,izop,ingredient,CONFIRMED,lexicon_v1
+mallow,malv,root/flower,mallow,malva,sljez,ingredient,CONFIRMED,lexicon_v1
+broom,genist,flowers/roots,genista broom,genista,zuka,ingredient,CONFIRMED,lexicon_v1
+vervain,verb,infusions,vervain,verbena,verbena,ingredient,CONFIRMED,lexicon_v1
+plantain,plant,soak/cook,plantain,plantago,trputac,ingredient,CONFIRMED,lexicon_v1
+cinnamon,canel,honey/wine,cinnamon,cannella,cimet,ingredient,CONFIRMED,lexicon_v1
+cinnamon,canol,honey/wine,cinnamon,cannella,cimet,ingredient,CONFIRMED,lexicon_v1
+ginger,zing,spice clusters,ginger,zingiber,dumbir,ingredient,CONFIRMED,lexicon_v1
+ginger,zinor,spice clusters,ginger,zingiber,dumbir,ingredient,CONFIRMED,lexicon_v1
+pepper,piper,doses/combines,pepper,piper,papar,ingredient,CONFIRMED,lexicon_v1
+sulfur,sul,heat/vessel,sulfur,sulphur,sumpor,ingredient,CONFIRMED,lexicon_v1
+silver,arg,dose/vessel,silver,argentum,srebro,ingredient,CONFIRMED,lexicon_v1
+copper,cupr,vessel/heat,copper/verdigris,cuprum,bakar,ingredient,CONFIRMED,lexicon_v1
+copper,copr,vessel/heat,copper/verdigris,cuprum,bakar,ingredient,CONFIRMED,lexicon_v1
+iron,fer,heat/roots,iron/filings,ferrum,zeljezo,ingredient,CONFIRMED,lexicon_v1
+saltpeter,salp,fire/liquids,saltpeter,sal petrae,salitra,ingredient,CONFIRMED,lexicon_v1
+alum,alum,infusions,alum,alumen,stipsa,ingredient,CONFIRMED,lexicon_v1
+pot,okal,after V-operators,pot/jar,olla,lonac,equipment,CONFIRMED,lexicon_v1
+pot,okar,after V-operators,pot/jar,olla,lonac,equipment,CONFIRMED,lexicon_v1
+pot,otal,after V-operators,pot/jar,olla,lonac,equipment,CONFIRMED,lexicon_v1
+pot,ostal,after V-operators,pot/jar,olla,lonac,equipment,CONFIRMED,lexicon_v1
+pot,ostar,after V-operators,pot/jar,olla,lonac,equipment,CONFIRMED,lexicon_v1
+cauldron,kal,heat/fire,cauldron,caldarium,kotao,equipment,CANDIDATE,lexicon_v1
+cauldron,stal,heat/fire,cauldron,caldarium,kotao,equipment,CANDIDATE,lexicon_v1
+flask,phar,liquids/resins,flask/phial,phiala,boca,equipment,CANDIDATE,lexicon_v1
+soak,shor,after sh-,soak/infuse,sorbere,natopiti,action,CONFIRMED,lexicon_v1
+soak,šor,after š-,soak/infuse,sorbere,natopiti,action,CONFIRMED,lexicon_v1
+cook,chor,after ch-,cook/combine,coquere,kuhati,action,CONFIRMED,lexicon_v1
+cook,hor,after h-,cook/combine,coquere,kuhati,action,CONFIRMED,lexicon_v1
+dose,dar,near quantities,dose/add,dare,dati,action,CANDIDATE,lexicon_v1
+dose,dain,near quantities,dose/portion,dare,dati,action,CANDIDATE,lexicon_v1
+boil,thor,heat contexts,boil/roast,torreo,prokuhati,action,CANDIDATE,lexicon_v1
+boil,tror,heat contexts,boil/roast,torreo,prokuhati,action,CANDIDATE,lexicon_v1
+fire,kair,vessels/cooking,fire/heat,carbo,vatra,ingredient,CANDIDATE,lexicon_v1
+fire,kar,vessels/cooking,fire/heat,carbo,vatra,ingredient,CANDIDATE,lexicon_v1
+fire,star,vessels/cooking,fire/heat,carbo,vatra,ingredient,CANDIDATE,lexicon_v1
+fire,char,vessels/cooking,fire/heat,carbo,vatra,ingredient,CANDIDATE,lexicon_v1
+syrup,syr,sweetened,syrup/potion,syrupus,sirup,preparation,CANDIDATE,lexicon_v1
+broth,ykal,vessels/soaking,broth/decoction,,juha,preparation,CANDIDATE,lexicon_v1
+bitter,amar,wines/bitters,bitter herb,amarus,gorak,modifier,CANDIDATE,lexicon_v1
+lime,calc,minerals/fire,lime/ite,calx,vapno,ingredient,CANDIDATE,lexicon_v1
+give,da,operators,give/add,dare,dati,grammar,CONFIRMED,lexicon_v1
+give,dain,operators,given/added,dare,dati,grammar,CONFIRMED,lexicon_v1
+self,sam,free,self/alone,,sam,grammar,CONFIRMED,lexicon_v1
+gift,dar,free,gift,donum,dar,grammar,CONFIRMED,lexicon_v1
+day,dan,free,day,dies,dan,timing,CONFIRMED,lexicon_v1
+strain,šei,after š-,strain/filter,,procijediti,action,CONFIRMED,lexicon_v1
+combine,hei,after h-,combine/mix,,pomijesati,action,CONFIRMED,lexicon_v1
+walk,hodi,after h-,walk/go,,hodati,action,CONFIRMED,lexicon_v1
+vessel,otrai,vessel markers,vessel/container,olla,posuda,equipment,CONFIRMED,lexicon_v1
+vessel,ostai,vessel markers,vessel/container,olla,posuda,equipment,CONFIRMED,lexicon_v1
+old,star,free,old/aged,,star,modifier,CONFIRMED,lexicon_v1
+new,nov,free,new/fresh,,nov,modifier,CANDIDATE,lexicon_v1
+dry,suh,free,dry/dried,,suh,condition,CANDIDATE,lexicon_v1
+wet,mok,free,wet/moist,,mokar,condition,CANDIDATE,lexicon_v1
+cold,hlad,free,cold/cool,,hladan,condition,CANDIDATE,lexicon_v1
+warm,topl,free,warm/hot,,topao,condition,CANDIDATE,lexicon_v1
+pain,bol,free,pain/ache,,bol,condition,CANDIDATE,lexicon_v1
+burn,gor,free,burn/fire,,gorjeti,action,CANDIDATE,lexicon_v1
+peace,mir,free,peace/calm,,mir,condition,CANDIDATE,lexicon_v1
+head,glav,body target,head,caput,glava,body_part,MISCELLANY,miscellany_new
+eye,ok,body target,eye,oculus,oko,body_part,MISCELLANY,miscellany_new
+ear,uh,body target,ear,auris,uho,body_part,MISCELLANY,miscellany_new
+nose,nos,body target,nose,nasus,nos,body_part,MISCELLANY,miscellany_new
+mouth,ust,body target,mouth,os,usta,body_part,MISCELLANY,miscellany_new
+tooth,zub,body target,tooth,dens,zub,body_part,MISCELLANY,miscellany_new
+tongue,jez,body target,tongue,lingua,jezik,body_part,MISCELLANY,miscellany_new
+throat,grl,body target,throat,guttur,grlo,body_part,MISCELLANY,miscellany_new
+chest,prs,body target,chest,pectus,prsa,body_part,MISCELLANY,miscellany_new
+heart,src,body target,heart,cor,srce,body_part,MISCELLANY,miscellany_new
+stomach,trbuh,body target,stomach/belly,venter,trbuh,body_part,MISCELLANY,miscellany_new
+liver,jetr,body target,liver,iecur,jetra,body_part,MISCELLANY,miscellany_new
+spleen,slez,body target,spleen,splen,slezena,body_part,MISCELLANY,miscellany_new
+kidney,bubr,body target,kidney,ren,bubreg,body_part,MISCELLANY,miscellany_new
+hand,ruk,body target,hand,manus,ruka,body_part,MISCELLANY,miscellany_new
+foot,nog,body target,foot,pes,noga,body_part,MISCELLANY,miscellany_new
+skin,koz,body target,skin,cutis,koza,body_part,MISCELLANY,miscellany_new
+blood,krv,body target,blood,sanguis,krv,body_part,MISCELLANY,miscellany_new
+bone_body,kost_t,body target,bone/skeletal,os,kost,body_part,MISCELLANY,miscellany_new
+joint,zglob,body target,joint,artus,zglob,body_part,MISCELLANY,miscellany_new
+nerve,ziv,body target,nerve/sinew,nervus,zivac,body_part,MISCELLANY,miscellany_new
+womb,matr,body target,womb/uterus,matrix,maternica,body_part,MISCELLANY,miscellany_new
+grind,sat,preparation,grind/crush,terere,satrti,action,MISCELLANY,miscellany_new
+pound,tuc,preparation,pound/beat,tundere,tuci,action,MISCELLANY,miscellany_new
+mix,mij,preparation,mix/blend,miscere,mijesati,action,MISCELLANY,miscellany_new
+dissolve,ras,preparation,dissolve,dissolvere,rastopiti,action,MISCELLANY,miscellany_new
+filter,cid,preparation,filter/strain,colare,cijediti,action,MISCELLANY,miscellany_new
+heat,grij,preparation,heat/warm,calefacere,grijati,action,MISCELLANY,miscellany_new
+cool,hlad_v,preparation,cool/chill,refrigerare,hladiti,action,MISCELLANY,miscellany_new
+dry_action,sus,preparation,dry/desiccate,siccare,susiti,action,MISCELLANY,miscellany_new
+wash,per,preparation,wash/cleanse,lavare,prati,action,MISCELLANY,miscellany_new
+apply,nam,application,apply/smear,applicare,namazati,action,MISCELLANY,miscellany_new
+drink,pi,administration,drink/imbibe,bibere,piti,action,MISCELLANY,miscellany_new
+eat,jed,administration,eat/consume,comedere,jesti,action,MISCELLANY,miscellany_new
+swallow,gut,administration,swallow,deglutire,gutati,action,MISCELLANY,miscellany_new
+anoint,maz,application,anoint/rub,ungere,mazati,action,MISCELLANY,miscellany_new
+bandage,pov,application,bandage/bind,ligare,povezati,action,MISCELLANY,miscellany_new
+poultice,obl,application,poultice/compress,cataplasma,oblog,preparation,MISCELLANY,miscellany_new
+plaster,melem,application,plaster/ointment,emplastrum,melem,preparation,MISCELLANY,miscellany_new
+powder,prah,form,powder,pulvis,prah,preparation,MISCELLANY,miscellany_new
+pill,pil,form,pill/tablet,pilula,pilula,preparation,MISCELLANY,miscellany_new
+electuary,liz,form,electuary/lickable,electuarium,lizati,preparation,MISCELLANY,miscellany_new
+ointment,ung,form,ointment/salve,unguentum,mast,preparation,MISCELLANY,miscellany_new
+fever,vruc,condition,fever/heat,febris,vrucica,condition,MISCELLANY,miscellany_new
+cough,kas,condition,cough,tussis,kasalj,condition,MISCELLANY,miscellany_new
+wound,ran,condition,wound/injury,vulnus,rana,condition,MISCELLANY,miscellany_new
+swelling,otek,condition,swelling/tumor,tumor,otok,condition,MISCELLANY,miscellany_new
+itch,svr,condition,itch/scabies,pruritus,svrbez,condition,MISCELLANY,miscellany_new
+mortar,moz,equipment,mortar,mortarium,mozdanik,equipment,MISCELLANY,miscellany_new
+pestle,tuc_e,equipment,pestle,pistillum,tucak,equipment,MISCELLANY,miscellany_new
+cloth,krp,equipment,cloth/rag,pannus,krpa,equipment,MISCELLANY,miscellany_new
+which,ko,operators,which/who,qui,koji,grammar,CONFIRMED,lexicon_v1
+and,i,operators,and,et,i,grammar,CONFIRMED,lexicon_v1
+or,ili,operators,or,vel,ili,grammar,CONFIRMED,lexicon_v1
+in,u,operators,in/into,in,u,grammar,CONFIRMED,lexicon_v1
+with,s,operators,with,cum,s,grammar,CONFIRMED,lexicon_v1
+of,od,operators,of/from,de,od,grammar,CONFIRMED,lexicon_v1
+to,k,operators,to/toward,ad,k,grammar,CONFIRMED,lexicon_v1
+not,ne,operators,not,non,ne,grammar,CONFIRMED,lexicon_v1
+all,sav,operators,all/every,omnis,sav,grammar,CONFIRMED,lexicon_v1
+one,jed_n,operators,one,unus,jedan,grammar,CONFIRMED,lexicon_v1
+two,dva,operators,two,duo,dva,grammar,CONFIRMED,lexicon_v1
+three,tri,operators,three,tres,tri,grammar,CONFIRMED,lexicon_v1
+dram,dram,measurement,dram/drachm,drachma,dram,measurement,MISCELLANY,miscellany_new
+ounce,unc,measurement,ounce,uncia,unca,measurement,MISCELLANY,miscellany_new
+pound_wt,libr,measurement,pound,libra,libra,measurement,MISCELLANY,miscellany_new
+morning,jutr,timing,morning,mane,jutro,timing,MISCELLANY,miscellany_new
+evening,vec,timing,evening,vespere,vecer,timing,MISCELLANY,miscellany_new
+ana,ana,latin_pharma,of each equal parts,ana,ana,latin_pharma,MISCELLANY,miscellany+voynich
+recipe,rec,latin_pharma,take/recipe,recipe,uzmi,latin_pharma,MISCELLANY,miscellany+voynich
+quantum,kvan,latin_pharma,as much as,quantum,koliko,latin_pharma,MISCELLANY,miscellany+voynich
+fiat,fi,latin_pharma,let it be made,fiat,neka bude,latin_pharma,MISCELLANY,miscellany+voynich
+signa,sig,latin_pharma,label/mark,signa,oznaci,latin_pharma,MISCELLANY,miscellany+voynich
+black,crn,color,black,niger,crn,modifier,MISCELLANY,miscellany_new
+white,bil,color,white,albus,bijel,modifier,MISCELLANY,miscellany_new
+red,crv,color,red,ruber,crven,modifier,MISCELLANY,miscellany_new
+green,zel,color,green,viridis,zelen,modifier,MISCELLANY,miscellany_new
+yellow,zut,color,yellow,flavus,zut,modifier,MISCELLANY,miscellany_new
+clean,cist,quality,clean/pure,mundus,cist,action,MISCELLANY,miscellany_new
+fresh,svjez,quality,fresh,recens,svjez,modifier,MISCELLANY,miscellany_new
+small,mal,size,small,parvus,mali,modifier,MISCELLANY,miscellany_new
+large,vel,size,large,magnus,veliki,modifier,MISCELLANY,miscellany_new
+enough,dov,quantity,enough/sufficient,satis,dovoljno,grammar,MISCELLANY,miscellany_new
+little,malo,quantity,a little,parum,malo,grammar,MISCELLANY,miscellany_new
+much,mnog,quantity,much/many,multum,mnogo,grammar,MISCELLANY,miscellany_new
+half,pol,quantity,half,dimidium,pola,grammar,MISCELLANY,miscellany_new
+then,tad,sequence,then/next,tunc,tada,grammar,MISCELLANY,miscellany_new
+after,posl,sequence,after/afterwards,post,poslije,grammar,MISCELLANY,miscellany_new
+before,prij,sequence,before,ante,prije,grammar,MISCELLANY,miscellany_new
+until,dok,sequence,until,donec,dok,grammar,MISCELLANY,miscellany_new
+when,kad,sequence,when,quando,kad,grammar,MISCELLANY,miscellany_new
+if,ako,conditional,if,si,ako,grammar,MISCELLANY,miscellany_new
+well,dobr,quality,well/good,bene,dobro,grammar,MISCELLANY,miscellany_new

@@ -68,6 +68,7 @@ Exact version-by-version history with preserved corrections and negative results
 ## Table of Contents
 
 - [Documentation](#-documentation)
+- [Folio reader](#folio-reader)
 - [What Is This?](#what-is-this)
 - [Historical comparison method](#historical-comparison-method)
 - [Historical Provenance: From Ragusa to Yale](#-historical-provenance-from-ragusa-to-yale)
@@ -102,6 +103,7 @@ Exact version-by-version history with preserved corrections and negative results
 | [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | Complete recipe extraction: every preparation, ingredient, and instruction |
 | [**translations/recipes/**](translations/recipes/) | 244 reproducible recipe files; includes overlapping whole-page/panel versions |
 | [**Current compiler audit**](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md) | Exact denominators, match-score definitions, source overlap and folio concordance |
+| [**Folio reader**](zfd_decoder/README.md) | Labelled manuscript scans beside EVA, ZFD, Croatian and English, with inspectable token records and four export formats |
 
 </details>
 
@@ -166,6 +168,40 @@ Exact version-by-version history with preserved corrections and negative results
 | [CHANGELOG.md](CHANGELOG.md) | Version history |
 
 </details>
+
+---
+
+## Folio reader
+
+Generate a browser reader for any of the **244 exact text-source identifiers**:
+
+```bash
+python zfd_decoder/main.py f88r --out /tmp/zfd-reader
+```
+
+Open the generated `f88r_reader.html`. It places the labelled Yale scan beside
+four aligned reading layers: EVA, ZFD, proposed Croatian forms and English
+glosses. Search by text or token ID, filter by match type, and select a word
+to inspect its dictionary row, parser operations and remaining unmatched text.
+JSON, CSV and Markdown exports accompany the reader.
+
+The source adapter covers 201 exact raw files and 43 additional LSI identifiers.
+These include 18 whole-page aliases alongside their component panels. All 244
+identifiers resolve to labelled scan references; panel IDs retain the parent
+scan's actual label and do not imply a panel crop. Drawing interruptions remain
+word boundaries. The reader's auto selection yields **49,359 CSV-pipeline
+tokens**, a separate input/processing measurement from the recipe counts above.
+
+The shipping CSV remains **212 rows / 208 distinct forms**. The older folio
+branch's **185-row / 182-form** lexicon is preserved as an explicit
+`--profile branch-candidates` option, including its 89 forms absent from the
+shipping CSV. The current parser labels exact matches, partial matches,
+compound proposals and unresolved tokens separately, preserving unmatched
+pieces in brackets in the reading layers.
+
+[Reader guide and examples](zfd_decoder/README.md)
+| [Completion and verification](validation/folio_reader/COMPLETION_2026-11-23.md)
+| [Candidate reconciliation](zfd_decoder/data/candidates/README.md)
 
 ---
 
@@ -962,8 +998,8 @@ python 06_Pipelines/regenerate_corpus.py --check
 python validation/compiler_audit/audit_current_corpus.py --output /tmp/zfd-audit.json
 ```
 
-The current suite passes **78 tests**, including compiler, tokenizer and
-committed-output regressions. Check mode decodes all 244 identifiers
+The current suite passes **97 tests**, including compiler, tokenizer, reader,
+match-provenance and committed-output regressions. Check mode decodes all 244 identifiers
 twice, compares every rendered page with its committed file, checks for
 unexpected recipe files and compares the complete summary. It performs no
 writes. The separate audit records input hashes, both source-selection
@@ -980,6 +1016,12 @@ python validation/transcription_robustness/run_robustness.py
 
 [Integrated audit](validation/compiler_audit/INTEGRATION_2026-11-23.md)
 | [Recipe decoder definitions](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md).
+
+Reader source, image-reference and match-type accounting is reproduced with:
+
+```bash
+python validation/folio_reader/audit_reader.py --output /tmp/zfd-reader-audit.json
+```
 
 ---
 
