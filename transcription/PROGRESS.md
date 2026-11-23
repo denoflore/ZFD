@@ -3,7 +3,8 @@
 **Project:** Croatian (ZFD) transcription of Voynich Manuscript (Beinecke MS 408): 5 hand-transcribed anchor folios plus automated rule parsing of the Takahashi (H) EVA transliteration for the rest
 **Method:** 7-layer constraint stack, behavioral paleography
 **Start date:** 2026-02-07
-**Completion date:** 2026-02-07
+**Initial assembly:** 2026-02-07
+**Latest audit:** 2026-11-23
 
 ---
 
@@ -17,18 +18,20 @@
 | 4 | Abbreviation Inventory | COMPLETE | ABBREVIATION_INVENTORY.md, abbreviation_rules.json, METHODOLOGY.md |
 | 5 | Herbal Section (f1r-f57v) | COMPLETE | 112 folios (110 automated + 2 anchor) |
 | 6 | Pharmaceutical Section (f87r-f116r) | COMPLETE | ~60 folios |
-| 7 | Zodiac, Biological, Stars | COMPLETE | ~25 folios + stubs for diagram-only pages |
+| 7 | Zodiac, Biological, Stars | COMPLETE | ~25 folios + retained diagram/text stubs |
 | 8 | Assembly & Validation | COMPLETE | FULL_CORPUS.jsonl, STATISTICS.md, COMPARISON_REPORT.md, SECTION_COMPARISON.md |
 
 ---
 
 ## Coverage Summary
 
-- **Total folios transcribed:** 201 pages with text (every page with H text in LSI_ivtff_0d.txt) + 2 diagram-only stubs. Before the 2026-11 audit this read 197/197; f70r, f72r, f89r, f95r, f101r and f102r were missing.
-- **Total text lines:** 5,194 (was 4,944)
-- **Hand-transcribed anchor folios:** 5 (f88r, f1r, f2r, f71r, f102v)
-- **Automated batch transcriptions:** 196 (batch_transcribe.py, regenerated 2026-11-21 under abbreviation_rules v1.1.0; see AUDIT_2026-11.md). Measured agreement with the hand anchors: 83.8% of words.
-- **Diagram-only stubs:** 2 (f85v, f116v)
+- **Packages:** 203 = 196 automated packages + 5 hand anchors + 2 retained stubs.
+- **Source page representation:** all 201 page IDs returned by the H-transcription selector are represented. This is not complete source-text coverage: f102v's retained anchor has 38 rows / 180 EVA tokens, versus 62 selected source lines / 311 tokens.
+- **JSONL rows:** 5,194, including an empty f85v diagram placeholder and the fragmentary f116v text stub. The source selector itself returns 5,215 lines; the preserved anchors differ from that selection.
+- **EVA and ZFD word tokens:** 37,785 each.
+- **Hand anchors:** f88r, f1r, f2r, f71r and f102v. The compiler agrees on 621 / 735 words (84.4898%) across all 129 anchor rows, with zero rows skipped and `sh` normalized to `š`.
+- **Automated packages:** 196, regenerated 21 November under abbreviation_rules v1.1.0. The 23 November report correction fixes comma tokenization and parser-order statistics; see [AUDIT_2026-11.md](AUDIT_2026-11.md).
+- **Retained stubs:** f85v is an empty diagram placeholder; f116v contains fragmentary legacy text. Neither is a completed transcription.
 
 ## Section Breakdown
 
@@ -57,7 +60,7 @@ Pre-audit counts (197-folio corpus). Current per-section folio and line counts a
 - `hand_sheet/exemplar_notes/` -- 12 per-folio analyses
 
 ### Phase 3: Anchor Folios (Hand-Transcribed)
-- `folios/f88r/` -- Gold standard (Curio-validated)
+- `folios/f88r/` -- Project hand anchor
 - `folios/f1r/` -- Opening page
 - `folios/f2r/` -- Herbal with validated "ostol" and "sal"
 - `folios/f71r/` -- Zodiac (cross-section test)
@@ -69,14 +72,14 @@ Pre-audit counts (197-folio corpus). Current per-section folio and line counts a
 - `METHODOLOGY.md` -- Publication-ready methodology
 
 ### Phase 5-7: Full Corpus
-- `folios/f{NNN}{r|v}/` -- 197 directories, each with:
+- `folios/f{NNN}{r|v}/` -- 203 package directories, with:
   - `metadata.json` -- Folio metadata and IIIF links
   - `TRANSCRIPTION.md` -- Line-by-line transcription
   - `line_data.jsonl` -- Machine-readable per-line data
   - `notes.md` -- Observations and statistics
 
 ### Phase 8: Assembly
-- `FULL_CORPUS.jsonl` -- Concatenated corpus (4,944 lines)
+- `FULL_CORPUS.jsonl` -- Concatenated corpus (5,194 JSONL rows)
 - `STATISTICS.md` -- Coverage, confidence, vocabulary stats
 - `COMPARISON_REPORT.md` -- EVA vs ZFD divergence analysis
 - `SECTION_COMPARISON.md` -- Cross-section vocabulary analysis
@@ -89,12 +92,12 @@ Pre-audit counts (197-folio corpus). Current per-section folio and line counts a
 
 | Term | Folio | EVA | ZFD | Meaning | Validation Method |
 |------|-------|-----|-----|---------|-------------------|
-| ostol | f88r, f1r, f2r | okol | ostol | bone oil | Curio adversarial |
-| otrorhetri | f88r | otorchety | otrorhetri | treated heated fluid | Curio adversarial |
+| ostol | f88r, f1r, f2r | okol | ostol | bone oil | Project hand reading |
+| otrorhetri | f88r | otorchety | otrorhetri | treated heated fluid | Project hand reading |
 | orolaly | f102v | okeo.r!oly | orolaly | orally (Latin) | Latin pharmaceutical |
 | sal | f2r, f102v | sal | sal | salt | Standard pharmaceutical |
 | dain | throughout | daiin | dain | substance/given | Frequency + consistency |
 
 ---
 
-*This transcription replaces EVA as the reference reading of the Voynich Manuscript.*
+*This project transcription is an interpretation compiled from EVA and retained hand anchors. The source EVA, coverage differences and compiler agreement remain available for comparison.*

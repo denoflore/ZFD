@@ -14,11 +14,12 @@ Sources:
 - 02_Transcriptions/LSI_ivtff_0d.txt for the 43 multi-panel loci
 
 The determinism gate decodes every locus twice and fails on any byte
-difference between the two renderings.
+difference between the two renderings. Check mode also compares every
+rendering and the computed summary with the committed files.
 
 Usage:
     python regenerate_corpus.py           # regenerate + determinism gate
-    python regenerate_corpus.py --check   # determinism gate only, no writes
+    python regenerate_corpus.py --check   # determinism + committed files, no writes
 """
 
 import json
@@ -69,6 +70,7 @@ def main():
         "loci": {},
     }
     nondeterministic = []
+    stale_recipes = []
     changed = 0
     for locus in sorted(sources):
         first, stats = render(decoder, iiif_map, locus, sources[locus])
@@ -78,6 +80,8 @@ def main():
             continue
         out_path = RECIPES_DIR / f"{locus}_recipe.md"
         previous = out_path.read_text(encoding="utf-8") if out_path.exists() else None
+        if check_only and previous != first:
+            stale_recipes.append(locus)
         if not check_only and previous != first:
             out_path.write_text(first, encoding="utf-8")
             changed += 1
@@ -108,6 +112,25 @@ def main():
         print(f"DETERMINISM GATE FAILED: {nondeterministic}")
         return 1
     print("DETERMINISM GATE PASSED: every locus renders byte-identical twice")
+    if check_only:
+        expected = {f"{locus}_recipe.md" for locus in sources}
+        unexpected = sorted(p.name for p in RECIPES_DIR.glob("f*_recipe.md")
+                            if p.name not in expected)
+        try:
+            committed_summary = json.loads(SUMMARY_PATH.read_text(encoding="utf-8"))
+        except (FileNotFoundError, json.JSONDecodeError):
+            committed_summary = None
+        summary_matches = committed_summary == summary
+        if stale_recipes or unexpected or not summary_matches:
+            print("COMMITTED CORPUS CHECK FAILED")
+            if stale_recipes:
+                print(f"  missing or changed recipes: {stale_recipes}")
+            if unexpected:
+                print(f"  unexpected recipes: {unexpected}")
+            if not summary_matches:
+                print(f"  missing or changed summary: {SUMMARY_PATH.name}")
+            return 1
+        print("COMMITTED CORPUS CHECK PASSED: all recipes and summary match")
     return 0
 
 

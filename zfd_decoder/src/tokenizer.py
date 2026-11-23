@@ -29,6 +29,24 @@ class Token:
     notes: List[str] = field(default_factory=list)
 
 
+def words_from_eva_line(line: str) -> List[str]:
+    """Read glyph words, excluding file metadata and IVTFF annotations.
+
+    Drawing interruptions and commas are word boundaries. IVTFF ``!`` is
+    filler (no glyph), and other angle-bracket annotations are not text.
+    Keep this normalization shared with the null-baseline generators so
+    that the real and synthetic inputs have the same effective word counts.
+    """
+    line = line.strip()
+    if not line or line.startswith(("===", "[", "#")):
+        return []
+    line = line.replace("<->", ".")
+    line = re.sub(r"<[^>]*>", "", line).replace("!", "")
+    words = (re.sub(r"[^a-zšžčćđ]", "", word.lower())
+             for word in re.split(r"[.,\s]+", line))
+    return [word for word in words if word]
+
+
 def tokenize_line(line: str, folio: str, line_num: int) -> List[Token]:
     """
     Tokenize a single EVA line.
@@ -41,25 +59,8 @@ def tokenize_line(line: str, folio: str, line_num: int) -> List[Token]:
     Returns:
         List of Token objects
     """
-    tokens = []
-    # EVA transcriptions use dots as word separators, some use spaces
-    # Handle both: replace dots with spaces, then split on whitespace
-    normalized = line.strip().replace('.', ' ')
-    words = normalized.split()
-
-    for i, word in enumerate(words):
-        # Clean the word (remove any annotation markers)
-        clean_word = re.sub(r'[^a-zšžčćđ]', '', word.lower())
-        if not clean_word:
-            continue
-
-        token = Token(
-            id=f"{folio}.{line_num}.{i+1}",
-            eva=clean_word
-        )
-        tokens.append(token)
-
-    return tokens
+    return [Token(id=f"{folio}.{line_num}.{i}", eva=word)
+            for i, word in enumerate(words_from_eva_line(line), 1)]
 
 
 def tokenize_folio(eva_text: str, folio: str) -> List[List[Token]]:
@@ -74,7 +75,7 @@ def tokenize_folio(eva_text: str, folio: str) -> List[List[Token]]:
         List of lines, each containing list of tokens
     """
     lines = []
-    for i, line in enumerate(eva_text.strip().split('\n')):
+    for i, line in enumerate(eva_text.splitlines()):
         if line.strip():
             tokens = tokenize_line(line, folio, i + 1)
             if tokens:

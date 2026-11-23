@@ -1,6 +1,6 @@
 # Section Comparison -- Vocabulary Across Manuscript Sections
 
-**Generated:** 2026-11-21
+**Generated:** 2026-11-23
 
 ## Section Word Counts
 
@@ -181,4 +181,4 @@ Percentage of the row section's vocabulary that also appears in the column secti
 
 ---
 
-*Section comparison generated 2026-11-21.*
+*Section comparison generated 2026-11-23.*

@@ -1,7 +1,7 @@
 # EVA vs ZFD Comparison Report
 
-**Generated:** 2026-11-21
-**Scope:** 203 folios, 5194 lines
+**Generated:** 2026-11-23
+**Scope:** 203 folio packages, 5194 JSONL rows
 
 ## Overview
 
@@ -72,16 +72,18 @@ EVA treats gallows (k, t, f, p) as individual letters. ZFD expands them as clust
 
 ## Divergence Statistics (computed)
 
-- **Lines with a recorded gallows divergence:** 4759 / 5194 (91.6%)
-- **EVA words with a detected operator:** 21771 / 37785 (57.6%)
-- **EVA words with a detected suffix:** 34212 / 37785 (90.5%)
+Operator and suffix counts follow the compiler's parsing order: ligature suffix, operator, then any ordinary suffix.
+
+- **Rows with a recorded gallows divergence:** 4759 / 5194 (91.6%)
+- **EVA words with a detected operator:** 20894 / 37785 (55.3%)
+- **EVA words with a detected suffix:** 34204 / 37785 (90.5%)
 
 ## Hand Readings vs Compiler Output
 
 | EVA | Hand reading | Compiler output | Match | Source of hand reading |
 |-----|--------------|-----------------|-------|------------------------|
-| okol | ostol | ostol | yes | Curio adversarial validation (f88r) |
-| otorchety | otrorhetri | otrorhetri | yes | Curio adversarial validation (f88r) |
+| okol | ostol | ostol | yes | Project hand reading (f88r) |
+| otorchety | otrorhetri | otrorhetri | yes | Project hand reading (f88r) |
 | okeo.r!oly | orolaly | osteo. roli | NO | Latin term reading (f102v) |
 | sal | sal | sal | yes | identity |
 | shol | šol | šol | yes | FINAL_CHARACTER_MAP_v1 §3.2 |
@@ -92,9 +94,12 @@ EVA treats gallows (k, t, f, p) as individual letters. ZFD expands them as clust
 ZFD and EVA differ on most words because they model the writing system
 differently (1:1 glyph-to-letter vs positional shorthand).
 Measured against the hand-transcribed anchor folios, the batch compiler
-reproduces 517/617 words (83.8%). That number, not the structural
-grades, is the current accuracy evidence for the automated folios.
+reproduces 621/735 words (84.5%), after the declared sh-to-š
+normalization. This is agreement with the project's hand anchors,
+which also informed rule choices; it does not independently measure
+transcription or translation accuracy. The retained anchors do not all
+cover their full source page; see [anchor source coverage](STATISTICS.md#anchor-source-coverage).
 
 ---
 
-*Comparison report generated 2026-11-21.*
+*Comparison report generated 2026-11-23.*

@@ -116,6 +116,27 @@ def test_outputs_are_utf8(tmp_path):
     assert p.read_bytes() == "k→st\n".encode("utf-8")
 
 
+# ------------------------------------------------------------- report counts
+
+def test_anchor_agreement_keeps_comma_separated_words():
+    import generate_reports as gr
+    # The former report split only on periods/whitespace and discarded this
+    # whole row, although the compiler already treats the comma as a boundary.
+    rows = [{"_dir": "f2r", "eva_transliteration": "qokaiin,shol.daiin",
+             "zfd_croatian": "kostain. shol. dain"}]
+    assert gr.anchor_agreement(rows) == (3, 3, 0)
+
+
+def test_report_counts_use_the_compilers_parsing_order():
+    import generate_reports as gr
+    # daiin claims aiin before operator detection, so it has no da operator.
+    # qod claims qo first, so its remaining d is not the raw-word suffix od.
+    rows = [{"_dir": "f3r", "eva_transliteration": "daiin.qod"}]
+    report = gr.generate_comparison_report(rows)
+    assert "**EVA words with a detected operator:** 1 / 2 (50.0%)" in report
+    assert "**EVA words with a detected suffix:** 1 / 2 (50.0%)" in report
+
+
 # ----------------------------------------------------- robustness harness
 
 def test_seeds_do_not_depend_on_pythonhashseed():

@@ -52,6 +52,28 @@ def eva_words(text):
             for w in (bt.clean_eva_word(x) for x in seg) if w]
 
 
+def parsed_structure(eva_word):
+    """Operator/suffix flags in the same order as the transcription compiler.
+
+    Claim a ligature suffix, detect the operator, then seek an ordinary suffix
+    in the remainder. Raw-word searches overcount daiin as a da operator and
+    qod as an od suffix, although neither survives that parsing order.
+    """
+    word = bt.clean_eva_word(eva_word)
+    if not word or all(c == "?" for c in word):
+        return False, False
+    suffix = None
+    for eva, _ in bt.LIGATURE_SUFFIXES:
+        if word.endswith(eva):
+            suffix = eva
+            word = word[:-len(eva)]
+            break
+    operator, _, remainder = bt.detect_operator(word)
+    if suffix is None:
+        suffix, _, _ = bt.detect_suffix(remainder)
+    return operator is not None, suffix is not None
+
+
 def load_all_data(folios_dir=None):
     """Load all line_data.jsonl files, in manuscript order."""
     folios_dir = folios_dir or FOLIOS_DIR
@@ -112,7 +134,9 @@ def anchor_agreement(all_lines):
     for entry in all_lines:
         if entry.get("_dir") not in bt.ANCHORS:
             continue
-        ew = [w for w in re.split(r'[.\s]+', re.sub(r'<[^>]*>', '', entry.get("eva_transliteration", ""))) if w]
+        # Commas are word breaks in the compiler. Omitting them previously
+        # excluded 13 otherwise aligned anchor rows from the comparison.
+        ew = eva_words(entry.get("eva_transliteration", ""))
         gw = zfd_words(entry.get("zfd_croatian", ""))
         if len(ew) != len(gw):
             skipped += 1
@@ -123,13 +147,36 @@ def anchor_agreement(all_lines):
     return total, agree, skipped
 
 
+def anchor_source_coverage(all_lines):
+    """Compare retained anchor rows with the current IVTFF source selector."""
+    coverage = []
+    for folio in sorted(bt.ANCHORS, key=bt.folio_sort_key):
+        stored = [row for row in all_lines if row.get("_dir") == folio]
+        if not stored:
+            continue
+        selected = bt.extract_eva_lines(bt.DEFAULT_EVA, folio)
+        coverage.append((
+            folio, len(stored),
+            sum(len(eva_words(row.get("eva_transliteration", ""))) for row in stored),
+            len(selected), sum(len(eva_words(text)) for text in selected.values()),
+        ))
+    return coverage
+
+
 def generate_statistics(all_lines, metadata):
     """Generate STATISTICS.md."""
     lines = []
     lines.append("# ZFD Transcription -- Statistics\n")
     lines.append(f"**Generated:** {TODAY}")
-    lines.append(f"**Total folios:** {len(metadata)}")
-    lines.append(f"**Total text lines:** {len(all_lines)}\n")
+    lines.append(f"**Total folio packages:** {len(metadata)}")
+    lines.append(f"**Total JSONL rows:** {len(all_lines)}\n")
+    placeholders = sum(row.get("_dir") == "f85v" and
+                       not eva_words(row.get("eva_transliteration", "")) and
+                       not zfd_words(row.get("zfd_croatian", "")) for row in all_lines)
+    fragments = sum(row.get("_dir") == "f116v" for row in all_lines)
+    lines.append(f"The row total includes {placeholders} empty f85v diagram placeholder "
+                 f"and {fragments} fragmentary f116v text-stub row. These retained "
+                 "records are not two additional complete text transcriptions.\n")
 
     section_counts = Counter()
     section_lines = Counter(l.get("_dir") for l in all_lines)
@@ -140,7 +187,7 @@ def generate_statistics(all_lines, metadata):
         per_section_lines[section] += section_lines.get(folio_id, 0)
 
     lines.append("## Section Distribution\n")
-    lines.append("| Section | Folios | Lines |")
+    lines.append("| Section | Packages | JSONL rows |")
     lines.append("|---------|--------|-------|")
     for section, count in section_counts.most_common():
         lines.append(f"| {section} | {count} | {per_section_lines[section]} |")
@@ -149,8 +196,10 @@ def generate_statistics(all_lines, metadata):
 
     conf_counts = Counter(entry.get("confidence", "?") for entry in all_lines)
     lines.append("## Grade Distribution\n")
-    lines.append("Grades are parse-structure grades, not measured accuracy.\n")
-    lines.append("| Grade | Meaning | Lines | Percentage |")
+    lines.append("Automated line grades average the word-level structure grades below; "
+                 "they are not measured accuracy. Hand-anchor and stub grades are "
+                 "retained from their source packages.\n")
+    lines.append("| Grade | Underlying word-grade rule | Rows | Percentage |")
     lines.append("|-------|---------|-------|------------|")
     total = len(all_lines)
     for grade in ["A", "B", "C", "D"]:
@@ -167,9 +216,28 @@ def generate_statistics(all_lines, metadata):
     if t:
         lines.append(f"Batch compiler output vs hand-transcribed anchor folios "
                      f"({', '.join(sorted(bt.ANCHORS))}): **{a}/{t} words = {a / t:.1%}** identical "
-                     f"({s} anchor lines skipped where word counts differ; gold \"sh\" read as š).\n")
+                     f"({s} anchor rows skipped where word counts differ; gold \"sh\" read as š).\n")
+        lines.append("This measures agreement with the project's retained hand readings, "
+                     "which also informed the rule choices. It does not independently "
+                     "measure transcription or translation accuracy.\n")
     else:
         lines.append("No anchor folios found.\n")
+
+    coverage = anchor_source_coverage(all_lines)
+    if coverage:
+        lines.append("## Anchor Source Coverage\n")
+        lines.append("| Anchor | Retained rows | Retained EVA tokens | Selected source lines | Selected source EVA tokens |")
+        lines.append("|--------|--------------:|--------------------:|----------------------:|---------------------------:|")
+        for row in coverage:
+            lines.append("| " + " | ".join(map(str, row)) + " |")
+        lines.append("")
+        partial = [folio for folio, _, kept_tokens, _, source_tokens in coverage
+                   if kept_tokens < source_tokens]
+        if partial:
+            lines.append("The retained anchor contains fewer EVA tokens than the "
+                         "source selection for: " + ", ".join(partial) + ".\n")
+        lines.append("The hand anchors remain unchanged. Representation of every "
+                     "page identifier does not establish complete source-text coverage.\n")
 
     all_zfd, all_eva = [], []
     for entry in all_lines:
@@ -215,7 +283,7 @@ def generate_statistics(all_lines, metadata):
     lines.append("")
 
     lines.append("---\n")
-    lines.append(f"*Statistics generated {TODAY} from {len(metadata)}-folio corpus.*\n")
+    lines.append(f"*Statistics generated {TODAY} from {len(metadata)} folio packages.*\n")
     return "\n".join(lines)
 
 
@@ -225,7 +293,7 @@ def generate_comparison_report(all_lines):
     lines = []
     lines.append("# EVA vs ZFD Comparison Report\n")
     lines.append(f"**Generated:** {TODAY}")
-    lines.append(f"**Scope:** {n_folios} folios, {len(all_lines)} lines\n")
+    lines.append(f"**Scope:** {n_folios} folio packages, {len(all_lines)} JSONL rows\n")
 
     lines.append("## Overview\n")
     lines.append("This report documents where the ZFD transcription diverges from the")
@@ -275,10 +343,13 @@ def generate_comparison_report(all_lines):
     for e in all_lines:
         for w in eva_words(e.get("eva_transliteration", "")):
             n_words += 1
-            op_words += bt.detect_operator(w)[0] is not None
-            suf_words += bt.detect_suffix(w)[0] is not None
+            operator, suffix = parsed_structure(w)
+            op_words += operator
+            suf_words += suffix
     lines.append("## Divergence Statistics (computed)\n")
-    lines.append(f"- **Lines with a recorded gallows divergence:** {div_lines} / {len(all_lines)} "
+    lines.append("Operator and suffix counts follow the compiler's parsing order: "
+                 "ligature suffix, operator, then any ordinary suffix.\n")
+    lines.append(f"- **Rows with a recorded gallows divergence:** {div_lines} / {len(all_lines)} "
                  f"({div_lines / total * 100:.1f}%)")
     if n_words:
         lines.append(f"- **EVA words with a detected operator:** {op_words} / {n_words} ({op_words / n_words:.1%})")
@@ -289,8 +360,8 @@ def generate_comparison_report(all_lines):
     lines.append("| EVA | Hand reading | Compiler output | Match | Source of hand reading |")
     lines.append("|-----|--------------|-----------------|-------|------------------------|")
     hand = [
-        ("okol", "ostol", "Curio adversarial validation (f88r)"),
-        ("otorchety", "otrorhetri", "Curio adversarial validation (f88r)"),
+        ("okol", "ostol", "Project hand reading (f88r)"),
+        ("otorchety", "otrorhetri", "Project hand reading (f88r)"),
         ("okeo.r!oly", "orolaly", "Latin term reading (f102v)"),
         ("sal", "sal", "identity"),
         ("shol", "šol", "FINAL_CHARACTER_MAP_v1 §3.2"),
@@ -307,8 +378,11 @@ def generate_comparison_report(all_lines):
     lines.append("differently (1:1 glyph-to-letter vs positional shorthand).")
     if t:
         lines.append("Measured against the hand-transcribed anchor folios, the batch compiler")
-        lines.append(f"reproduces {a}/{t} words ({a / t:.1%}). That number, not the structural")
-        lines.append("grades, is the current accuracy evidence for the automated folios.\n")
+        lines.append(f"reproduces {a}/{t} words ({a / t:.1%}), after the declared sh-to-š")
+        lines.append("normalization. This is agreement with the project's hand anchors,")
+        lines.append("which also informed rule choices; it does not independently measure")
+        lines.append("transcription or translation accuracy. The retained anchors do not all")
+        lines.append("cover their full source page; see [anchor source coverage](STATISTICS.md#anchor-source-coverage).\n")
     lines.append("---\n")
     lines.append(f"*Comparison report generated {TODAY}.*\n")
     return "\n".join(lines)
@@ -420,7 +494,7 @@ def main(argv=None):
     print("Loading data...")
     all_lines = load_all_data(args.folios)
     metadata = load_metadata(args.folios)
-    print(f"Loaded {len(all_lines)} lines from {len(metadata)} folios")
+    print(f"Loaded {len(all_lines)} JSONL rows from {len(metadata)} folio packages")
 
     for name, text in [
         ("STATISTICS.md", generate_statistics(all_lines, metadata)),

@@ -1,13 +1,37 @@
 {
-  "test_date": "2026-06-10T03:24:36.770130",
-  "test_version": "v3-dual-config",
+  "test_date": "2026-11-23T11:17:38.694319",
+  "test_version": "v3-dual-config-clean-input-2026-11",
   "iterations_per_baseline": 30,
+  "seed_schedule": "31337 + iteration (0-based), shared across configurations",
+  "input_normalization": "Shared tokenizer excludes metadata/tags/filler; dots, commas and drawing interruptions separate words.",
+  "input_sha256": {
+    "validation/blind_decode_test/decoder.py": "d780e53bdb71b6dcb6c8620d1c599f2bb90c0761c5f56e1a56ac2afa7fbc9611",
+    "validation/blind_decode_test/run_test_v3.py": "a50a2267b06f5670ac51e16607ebe3f948ea2e297e9ade8aea08217970345268",
+    "validation/blind_decode_test/v2_config.py": "6bff6c70ef9d87b5d3f836f1952d1bf9fb1940c79f829b39b1f498167fbf1d38",
+    "validation/blind_decode_test/v2_generators.py": "124c03766886306b9086bb4c6f8ccb6316664ecf473b61e2cc3fbd67e31fc99a",
+    "zfd_decoder/data/gallows.json": "4b92a22ca5b34981e8382132a38cdf3bf757c03c7b4b2e5cc75461992fdc2c14",
+    "zfd_decoder/data/lexicon.csv": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
+    "zfd_decoder/data/lexicon_v2.csv": "68fb55f2b4c7725b300cab5c438d7abbc25837f5a6b8a499747193241423741b",
+    "zfd_decoder/data/mid_word.json": "befae478f26852dfa1dc5bca16992ee3cbced8a7890eb5a15e18a95ed5962a76",
+    "zfd_decoder/data/operators.json": "9094d28efbf4f49f04e3b351484683cacc231afddcdedf712ea4e21ad0566e12",
+    "zfd_decoder/data/suffixes.json": "31a0128c3dfb28f87cf78f8ecc14ec962b28c7e31ae720b5beb59f9e1241fde8",
+    "zfd_decoder/data/unified_lexicon_v2.json": "ca4283c4fcf2c42f82e1b4658875fab67561166702115cdaa14446d11b664c29",
+    "zfd_decoder/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "zfd_decoder/src/compound.py": "2ccf48883dcd06f2fa5540d87dcdfc2e62e324db37a45bef6c59e07f9ea2bc6c",
+    "zfd_decoder/src/gallows.py": "d2abc22ee95d33b8a3bfb3e0d4cdd081f58823a9bbabe4170e49b4154785be42",
+    "zfd_decoder/src/operators.py": "7d262c7bf3a11bb367262288445084284d6f294ae62bf43a14fbb6b1771dd17a",
+    "zfd_decoder/src/output.py": "894d8042e0394dc6d80eeef156b99da9682718162245c10921186222690af9c3",
+    "zfd_decoder/src/pipeline.py": "c44b7601988aaa434891b769119a9d1414c7d6b8895e0933db4acdebbd14e79a",
+    "zfd_decoder/src/stems.py": "d78991ac8884c7b1b5c70c5df8802fe008429d8dd9977ed617b5c60e8a531fec",
+    "zfd_decoder/src/suffixes.py": "c386c8e9ba48f26b92be85f08ab06493cdb46f4fe500060fcb857370f89e173b",
+    "zfd_decoder/src/tokenizer.py": "873ab94bff635c62066358f62e88dc745e130dca1297fa09403489acbed59c49"
+  },
   "interpretation_contract": "Absolute coverage is not evidence. Evidence = real-vs-null deltas, significance, and preserved ordering hierarchy.",
   "configs": {
     "frozen_feb2026": {
       "config_name": "frozen_feb2026",
       "config": {
-        "description": "Configuration of the published v2 test (Feb 2026): frozen v1 lexicon, no compound decomposition.",
+        "description": "Frozen February 2026 v1 lexicon, no compound decomposition, using the current audited tokenizer and code.",
         "lexicon_file": "lexicon.csv",
         "lexicon_sha256": "9c5e62619b00e3a3a357478404506ad729651146faf892282a891bedc4be79b0",
         "compound_decomposer": false
@@ -15,31 +39,32 @@
       "iterations_per_baseline": 30,
       "folios": {
         "f10r": {
-          "real_coherence": 0.7011,
-          "real_known_ratio": 0.427,
+          "real_tokens": 92,
+          "real_coherence": 0.6891,
+          "real_known_ratio": 0.413,
           "eva_sha256": "97cb43ab2ce81070c6a8f34a3937f29c9f9fa5507cee0c1d43424a38a5829995",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.5115,
-              "coherence_std": 0.0644,
-              "known_ratio_mean": 0.1918,
-              "z_score": 2.94,
+              "coherence_mean": 0.4858,
+              "coherence_std": 0.074,
+              "known_ratio_mean": 0.1728,
+              "z_score": 2.75,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.3884,
-              "coherence_std": 0.0826,
-              "known_ratio_mean": 0.1206,
-              "z_score": 3.79,
+              "coherence_mean": 0.3898,
+              "coherence_std": 0.0806,
+              "known_ratio_mean": 0.1127,
+              "z_score": 3.71,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.3455,
-              "coherence_std": 0.0559,
-              "known_ratio_mean": 0.2442,
-              "z_score": 6.36,
+              "coherence_mean": 0.3473,
+              "coherence_std": 0.0581,
+              "known_ratio_mean": 0.2417,
+              "z_score": 5.88,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -47,31 +72,32 @@
           "verdict": "DISCRIMINATING"
         },
         "f23v": {
-          "real_coherence": 0.7778,
-          "real_known_ratio": 0.6265,
+          "real_tokens": 89,
+          "real_coherence": 0.7608,
+          "real_known_ratio": 0.6067,
           "eva_sha256": "767a8240ddd5dcdb7433e9a108c91f0885597dc746aaac29e19765d9ef5e6455",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.5424,
-              "coherence_std": 0.0868,
-              "known_ratio_mean": 0.3068,
-              "z_score": 2.71,
+              "coherence_mean": 0.5668,
+              "coherence_std": 0.0759,
+              "known_ratio_mean": 0.2824,
+              "z_score": 2.55,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.3754,
-              "coherence_std": 0.0836,
-              "known_ratio_mean": 0.1216,
-              "z_score": 4.81,
+              "coherence_mean": 0.3865,
+              "coherence_std": 0.0837,
+              "known_ratio_mean": 0.1127,
+              "z_score": 4.47,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.3426,
-              "coherence_std": 0.0549,
-              "known_ratio_mean": 0.2454,
-              "z_score": 7.92,
+              "coherence_mean": 0.3439,
+              "coherence_std": 0.0564,
+              "known_ratio_mean": 0.2416,
+              "z_score": 7.39,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -79,31 +105,32 @@
           "verdict": "DISCRIMINATING"
         },
         "f47r": {
-          "real_coherence": 0.7073,
-          "real_known_ratio": 0.439,
+          "real_tokens": 79,
+          "real_coherence": 0.7041,
+          "real_known_ratio": 0.443,
           "eva_sha256": "daab9655d30d8a0ce9abf955274142b98f123e63484d1243e8980aec5f5dc7cd",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.4112,
-              "coherence_std": 0.0883,
-              "known_ratio_mean": 0.1663,
-              "z_score": 3.35,
+              "coherence_mean": 0.4082,
+              "coherence_std": 0.0885,
+              "known_ratio_mean": 0.1599,
+              "z_score": 3.34,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.3751,
-              "coherence_std": 0.0835,
-              "known_ratio_mean": 0.1207,
+              "coherence_mean": 0.3715,
+              "coherence_std": 0.0837,
+              "known_ratio_mean": 0.1126,
               "z_score": 3.98,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.3422,
-              "coherence_std": 0.0552,
-              "known_ratio_mean": 0.2443,
-              "z_score": 6.62,
+              "coherence_mean": 0.3401,
+              "coherence_std": 0.0553,
+              "known_ratio_mean": 0.2409,
+              "z_score": 6.58,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -111,31 +138,32 @@
           "verdict": "DISCRIMINATING"
         },
         "f89r": {
-          "real_coherence": 0.6955,
-          "real_known_ratio": 0.3938,
+          "real_tokens": 387,
+          "real_coherence": 0.6906,
+          "real_known_ratio": 0.386,
           "eva_sha256": "8fda1021320bbcf41e601baf02737c12f1792121effe5aad9ad465d02e6e51b3",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.5872,
-              "coherence_std": 0.0064,
-              "known_ratio_mean": 0.1877,
-              "z_score": 16.92,
+              "coherence_mean": 0.5838,
+              "coherence_std": 0.0054,
+              "known_ratio_mean": 0.1802,
+              "z_score": 19.93,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.5405,
-              "coherence_std": 0.0249,
-              "known_ratio_mean": 0.1139,
-              "z_score": 6.22,
+              "coherence_mean": 0.5398,
+              "coherence_std": 0.0251,
+              "known_ratio_mean": 0.1124,
+              "z_score": 6.0,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
               "coherence_mean": 0.4013,
-              "coherence_std": 0.0079,
-              "known_ratio_mean": 0.2433,
-              "z_score": 37.3,
+              "coherence_std": 0.0076,
+              "known_ratio_mean": 0.2434,
+              "z_score": 37.97,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -143,31 +171,32 @@
           "verdict": "DISCRIMINATING"
         },
         "f101v": {
-          "real_coherence": 0.7585,
-          "real_known_ratio": 0.5769,
+          "real_tokens": 213,
+          "real_coherence": 0.737,
+          "real_known_ratio": 0.5305,
           "eva_sha256": "4c8890e11e79446cf6a91e2339cd4111d0d58260d550951c81b784951de6fd98",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.6007,
-              "coherence_std": 0.0253,
-              "known_ratio_mean": 0.2488,
-              "z_score": 6.24,
+              "coherence_mean": 0.5989,
+              "coherence_std": 0.0229,
+              "known_ratio_mean": 0.2402,
+              "z_score": 6.03,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.5008,
-              "coherence_std": 0.0511,
-              "known_ratio_mean": 0.1147,
-              "z_score": 5.04,
+              "coherence_mean": 0.506,
+              "coherence_std": 0.0473,
+              "known_ratio_mean": 0.1114,
+              "z_score": 4.89,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.3897,
-              "coherence_std": 0.0352,
-              "known_ratio_mean": 0.248,
-              "z_score": 10.48,
+              "coherence_mean": 0.3928,
+              "coherence_std": 0.0318,
+              "known_ratio_mean": 0.2479,
+              "z_score": 10.83,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -189,31 +218,32 @@
       "iterations_per_baseline": 30,
       "folios": {
         "f10r": {
-          "real_coherence": 0.9058,
-          "real_known_ratio": 0.9888,
+          "real_tokens": 92,
+          "real_coherence": 0.902,
+          "real_known_ratio": 1.0,
           "eva_sha256": "97cb43ab2ce81070c6a8f34a3937f29c9f9fa5507cee0c1d43424a38a5829995",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.7838,
-              "coherence_std": 0.0534,
-              "known_ratio_mean": 0.9135,
-              "z_score": 2.28,
+              "coherence_mean": 0.7732,
+              "coherence_std": 0.0645,
+              "known_ratio_mean": 0.9388,
+              "z_score": 2.0,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.7295,
-              "coherence_std": 0.0548,
-              "known_ratio_mean": 0.9189,
-              "z_score": 3.21,
+              "coherence_mean": 0.7356,
+              "coherence_std": 0.0525,
+              "known_ratio_mean": 0.9295,
+              "z_score": 3.17,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.562,
-              "coherence_std": 0.0368,
-              "known_ratio_mean": 0.7659,
-              "z_score": 9.35,
+              "coherence_mean": 0.5688,
+              "coherence_std": 0.0307,
+              "known_ratio_mean": 0.7685,
+              "z_score": 10.86,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -221,63 +251,65 @@
           "verdict": "DISCRIMINATING"
         },
         "f23v": {
-          "real_coherence": 0.906,
-          "real_known_ratio": 0.988,
+          "real_tokens": 89,
+          "real_coherence": 0.9006,
+          "real_known_ratio": 1.0,
           "eva_sha256": "767a8240ddd5dcdb7433e9a108c91f0885597dc746aaac29e19765d9ef5e6455",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.7869,
-              "coherence_std": 0.0633,
-              "known_ratio_mean": 0.9386,
-              "z_score": 1.88,
+              "coherence_mean": 0.8262,
+              "coherence_std": 0.0486,
+              "known_ratio_mean": 0.9648,
+              "z_score": 1.53,
               "empirical_p": 0.0323,
-              "significant": true
+              "significant": false
             },
             "synthetic_eva": {
-              "coherence_mean": 0.724,
-              "coherence_std": 0.0562,
-              "known_ratio_mean": 0.9187,
-              "z_score": 3.24,
+              "coherence_mean": 0.7338,
+              "coherence_std": 0.0554,
+              "known_ratio_mean": 0.9287,
+              "z_score": 3.01,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.5622,
-              "coherence_std": 0.0381,
-              "known_ratio_mean": 0.7671,
-              "z_score": 9.03,
+              "coherence_mean": 0.5623,
+              "coherence_std": 0.0372,
+              "known_ratio_mean": 0.7693,
+              "z_score": 9.09,
               "empirical_p": 0.0323,
               "significant": true
             }
           },
-          "verdict": "DISCRIMINATING"
+          "verdict": "WEAK"
         },
         "f47r": {
-          "real_coherence": 0.9037,
-          "real_known_ratio": 0.9878,
+          "real_tokens": 79,
+          "real_coherence": 0.9026,
+          "real_known_ratio": 1.0,
           "eva_sha256": "daab9655d30d8a0ce9abf955274142b98f123e63484d1243e8980aec5f5dc7cd",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.7653,
-              "coherence_std": 0.0628,
-              "known_ratio_mean": 0.9789,
-              "z_score": 2.2,
+              "coherence_mean": 0.7687,
+              "coherence_std": 0.0629,
+              "known_ratio_mean": 0.9907,
+              "z_score": 2.13,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.7242,
-              "coherence_std": 0.0561,
-              "known_ratio_mean": 0.9181,
-              "z_score": 3.2,
+              "coherence_mean": 0.7267,
+              "coherence_std": 0.0563,
+              "known_ratio_mean": 0.9277,
+              "z_score": 3.12,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.5619,
-              "coherence_std": 0.0385,
-              "known_ratio_mean": 0.7654,
-              "z_score": 8.88,
+              "coherence_mean": 0.5621,
+              "coherence_std": 0.0387,
+              "known_ratio_mean": 0.7692,
+              "z_score": 8.8,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -285,31 +317,32 @@
           "verdict": "DISCRIMINATING"
         },
         "f89r": {
-          "real_coherence": 0.9059,
-          "real_known_ratio": 0.9871,
+          "real_tokens": 387,
+          "real_coherence": 0.908,
+          "real_known_ratio": 1.0,
           "eva_sha256": "8fda1021320bbcf41e601baf02737c12f1792121effe5aad9ad465d02e6e51b3",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.8496,
-              "coherence_std": 0.0036,
-              "known_ratio_mean": 0.9323,
-              "z_score": 15.49,
+              "coherence_mean": 0.8532,
+              "coherence_std": 0.0027,
+              "known_ratio_mean": 0.9447,
+              "z_score": 20.2,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.8381,
-              "coherence_std": 0.0089,
-              "known_ratio_mean": 0.9163,
-              "z_score": 7.64,
+              "coherence_mean": 0.8395,
+              "coherence_std": 0.0088,
+              "known_ratio_mean": 0.921,
+              "z_score": 7.79,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.5869,
-              "coherence_std": 0.0096,
-              "known_ratio_mean": 0.7775,
-              "z_score": 33.28,
+              "coherence_mean": 0.5876,
+              "coherence_std": 0.01,
+              "known_ratio_mean": 0.7799,
+              "z_score": 32.06,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -317,31 +350,32 @@
           "verdict": "DISCRIMINATING"
         },
         "f101v": {
-          "real_coherence": 0.9012,
-          "real_known_ratio": 0.9808,
+          "real_tokens": 213,
+          "real_coherence": 0.9044,
+          "real_known_ratio": 1.0,
           "eva_sha256": "4c8890e11e79446cf6a91e2339cd4111d0d58260d550951c81b784951de6fd98",
           "baselines": {
             "char_shuffled": {
-              "coherence_mean": 0.8505,
-              "coherence_std": 0.0168,
-              "known_ratio_mean": 0.9429,
-              "z_score": 3.01,
+              "coherence_mean": 0.8531,
+              "coherence_std": 0.02,
+              "known_ratio_mean": 0.9567,
+              "z_score": 2.56,
               "empirical_p": 0.0323,
               "significant": true
             },
             "synthetic_eva": {
-              "coherence_mean": 0.8045,
-              "coherence_std": 0.0406,
-              "known_ratio_mean": 0.9157,
-              "z_score": 2.38,
+              "coherence_mean": 0.812,
+              "coherence_std": 0.0418,
+              "known_ratio_mean": 0.9238,
+              "z_score": 2.21,
               "empirical_p": 0.0323,
               "significant": true
             },
             "random_latin": {
-              "coherence_mean": 0.5829,
-              "coherence_std": 0.0184,
-              "known_ratio_mean": 0.775,
-              "z_score": 17.33,
+              "coherence_mean": 0.5867,
+              "coherence_std": 0.0152,
+              "known_ratio_mean": 0.7814,
+              "z_score": 20.89,
               "empirical_p": 0.0323,
               "significant": true
             }
@@ -349,7 +383,7 @@
           "verdict": "DISCRIMINATING"
         }
       },
-      "discriminating_folios": 5,
+      "discriminating_folios": 4,
       "hierarchy_holds": true
     }
   }

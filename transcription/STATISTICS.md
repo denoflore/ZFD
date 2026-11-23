@@ -1,12 +1,14 @@
 # ZFD Transcription -- Statistics
 
-**Generated:** 2026-11-21
-**Total folios:** 203
-**Total text lines:** 5194
+**Generated:** 2026-11-23
+**Total folio packages:** 203
+**Total JSONL rows:** 5194
+
+The row total includes 1 empty f85v diagram placeholder and 1 fragmentary f116v text-stub row. These retained records are not two additional complete text transcriptions.
 
 ## Section Distribution
 
-| Section | Folios | Lines |
+| Section | Packages | JSONL rows |
 |---------|--------|-------|
 | herbal | 111 | 1435 |
 | pharmaceutical | 24 | 627 |
@@ -21,9 +23,9 @@
 
 ## Grade Distribution
 
-Grades are parse-structure grades, not measured accuracy.
+Automated line grades average the word-level structure grades below; they are not measured accuracy. Hand-anchor and stub grades are retained from their source packages.
 
-| Grade | Meaning | Lines | Percentage |
+| Grade | Underlying word-grade rule | Rows | Percentage |
 |-------|---------|-------|------------|
 | A | validated term | 71 | 1.4% |
 | B | operator/suffix parsed or short word | 4974 | 95.8% |
@@ -32,7 +34,23 @@ Grades are parse-structure grades, not measured accuracy.
 
 ## Measured Agreement With Hand Anchors
 
-Batch compiler output vs hand-transcribed anchor folios (f102v, f1r, f2r, f71r, f88r): **517/617 words = 83.8%** identical (13 anchor lines skipped where word counts differ; gold "sh" read as š).
+Batch compiler output vs hand-transcribed anchor folios (f102v, f1r, f2r, f71r, f88r): **621/735 words = 84.5%** identical (0 anchor rows skipped where word counts differ; gold "sh" read as š).
+
+This measures agreement with the project's retained hand readings, which also informed the rule choices. It does not independently measure transcription or translation accuracy.
+
+## Anchor Source Coverage
+
+| Anchor | Retained rows | Retained EVA tokens | Selected source lines | Selected source EVA tokens |
+|--------|--------------:|--------------------:|----------------------:|---------------------------:|
+| f1r | 28 | 212 | 28 | 212 |
+| f2r | 14 | 100 | 13 | 99 |
+| f71r | 18 | 91 | 18 | 91 |
+| f88r | 31 | 152 | 31 | 150 |
+| f102v | 38 | 180 | 62 | 311 |
+
+The retained anchor contains fewer EVA tokens than the source selection for: f102v.
+
+The hand anchors remain unchanged. Representation of every page identifier does not establish complete source-text coverage.
 
 ## Vocabulary Statistics
 
@@ -89,4 +107,4 @@ Raw glyph counts. Includes gallows inside operators (ok, ot) and bench gallows (
 
 ---
 
-*Statistics generated 2026-11-21 from 203-folio corpus.*
+*Statistics generated 2026-11-23 from 203 folio packages.*

@@ -1,5 +1,10 @@
 # ZFD Blind Decode Falsification Test v2: Vocabulary Specificity
 
+**Historical February 2026 result.** The current tokenizer and baseline generators
+have changed. Use the [23 November dual-configuration rerun](../results_v3/V3_DUAL_CONFIG_REPORT.md)
+for current measurements; the shipping configuration now passes 4/5 folios.
+
+
 **Test Date:** 2026-02-04
 **Test Version:** v2 (Vocabulary Specificity)
 **Lexicon Checksum:** 9c5e62619b00e3a3...
