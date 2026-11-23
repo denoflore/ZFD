@@ -5,11 +5,11 @@
 | Operator | Count |
 |----------|-------|
 | qo→ko | 79 |
-| sh→s | 58 |
+| sh→š | 58 |
 | ch→h | 52 |
-| ot→otr | 27 |
+| ot→otr | 28 |
 | ok→ost | 16 |
-| da→da | 11 |
+| da→da | 8 |
 
 ## Gallows Distribution
 
@@ -23,24 +23,26 @@
 ## Validated Terms Present
 
 - **dar** (give-agent)
-- **sal** (salt)
 - **hol** (cook-oil)
+- **šol** (with-oil)
 - **ostol** (bone oil)
+- **sal** (salt)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 35 (80%)
-- C: 9 (20%)
+- B: 44 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - ol: 22x
-- sei: 16x
-- hei: 14x
-- sedi: 10x
-- kostai?n: 8x
+- šei: 16x
+- hei: 15x
+- kostain: 12x
+- šedi: 10x
 - or: 7x
 - kol: 6x
 - kostal: 6x
@@ -50,4 +52,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

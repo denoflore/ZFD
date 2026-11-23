@@ -7,8 +7,8 @@
 | ot→otr | 23 |
 | ok→ost | 15 |
 | ch→h | 12 |
-| sh→s | 11 |
-| da→da | 5 |
+| sh→š | 11 |
+| da→da | 4 |
 
 ## Gallows Distribution
 
@@ -21,14 +21,15 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **ostol** (bone oil)
 - **dar** (give-agent)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 17 (94%)
-- C: 1 (6%)
+- B: 18 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
@@ -47,4 +48,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

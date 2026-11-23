@@ -7,9 +7,9 @@
 | ok→ost | 30 |
 | ch→h | 23 |
 | qo→ko | 17 |
-| da→da | 12 |
-| sh→s | 11 |
+| sh→š | 11 |
 | ot→otr | 6 |
+| da→da | 4 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -23,26 +23,28 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **stol** (bone-oil)
+- **šol** (with-oil)
 - **hor** (cook-agent)
 - **hol** (cook-oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 45 (87%)
-- C: 4 (8%)
-- D: 3 (6%)
+- B: 49 (94%)
+- C: 3 (6%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 8x
+- dain: 8x
 - osteol: 6x
-- seol: 5x
+- šeol: 5x
+- hstei: 5x
 - ostei: 5x
-- hstrei: 4x
 - ain: 3x
-- hstrol: 3x
+- hstol: 3x
 - hei: 3x
 - dor: 3x
 - kostei: 3x
@@ -50,4 +52,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

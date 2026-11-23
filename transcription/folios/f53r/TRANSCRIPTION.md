@@ -1,4 +1,4 @@
-# Folio f53r -- Paleographic Transcription
+# Folio f53r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006178/full/full/0/default.jpg
@@ -10,24 +10,25 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | stodam. hohtrrodi. otri. | | B | kodam.chocthody.oty |
-| L2 | dol. dai?n. s?cho?she. otri. | | C | dol.dai!n.s!cho!she.oty |
-| L3 | so?ar. hostan. odi. | | C | sho!ar.chokan.ody |
-| L4 | ytrchodain. ysti. otrchei. ostod. | | B | ytchodaiin.yky.otchey.okod |
-| L5 | ostes. otrol. hplri. hpllodol. ystodi. kostchod. |. otrcho. kotr. otri | B | okes.otol.cfhy.cphodol.ykody.qokchodotcho.qot.oty |
-| L6 | ysteodar. oqoor. ohstr. odor. hai?n. kostod. |. ystchdi. hees. dal | B | ykeodar.oqoor.ockh.odor.chai!n.qokodykchdy.chees.dal |
-| L7 | sodar. otros. koi. trchi. otrei. hos. ostod. |. y?stchodi. kostchi | B | sodar.otos.qoy.tchy.otey.chos.okody!kchody.qokchy |
-| L8 | kotrchol. dar. kotri. htror. oltrsho. ctro. |. ysteeod. oytroyd | B | qotchol.dar.qoty.chtor.oltsho.ctoykeeod.oytoyd |
-| L9 | otrol. hol. htrreees. os. orol. hod. kotri | B | otol.chol.ctheees.os.orol.chod.qoty |
+| L1 | stodam. hohtrodi. otri \| | B | kodam.chocthody.oty \| |
+| L2 | dol. dain. shoše. otri \| | B | dol.dai!n.s!cho!she.oty \| |
+| L3 | šoar. hostan. odi \| | B | sho!ar.chokan.ody \| |
+| L4 | itrhodain. isti. otrhei. ostod \| | B | ytchodaiin.yky.otchey.okod \| |
+| L5 | ostes. otrol. hpri. hplodol. istodi. kosthod \| otrho. kotr. otri | B | okes.otol.cfhy.cphodol.ykody.qokchod \| otcho.qot.oty |
+| L6 | isteodar. oqoor. ohst. odor. hain. kostod \| isthdi. hees. dal | B | ykeodar.oqoor.ockh.odor.chai!n.qokod \| ykchdy.chees.dal |
+| L7 | sodar. otros. koi. trhi. otrei. hos. ostod \| isthodi. kosthi | B | sodar.otos.qoy.tchy.otey.chos.okod \| y!kchody.qokchy |
+| L8 | kotrhol. dar. kotri. htror. oltršo. ctro \| isteeod. oitroid | B | qotchol.dar.qoty.chtor.oltsho.cto \| ykeeod.oytoyd |
+| L9 | otrol. hol. htreees. os. orol. hod. kotri | B | otol.chol.ctheees.os.orol.chod.qoty |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 7 lines
-- **C:** 2 lines
+- **B:** 9 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

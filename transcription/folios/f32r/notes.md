@@ -4,9 +4,9 @@
 
 | Operator | Count |
 |----------|-------|
-| da→da | 15 |
+| da→da | 9 |
 | qo→ko | 9 |
-| sh→s | 7 |
+| sh→š | 8 |
 | ch→h | 7 |
 | ot→otr | 4 |
 | ok→ost | 2 |
@@ -29,20 +29,19 @@
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 16 (84%)
-- C: 3 (16%)
+- B: 19 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 7x
-- dain: 3x
+- dain: 10x
 - dol: 3x
 - ol: 3x
-- so: 2x
-- kostchi: 2x
+- šo: 2x
+- kosthi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

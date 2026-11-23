@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| qo→ko | 10 |
-| sh→s | 8 |
-| ch→h | 7 |
-| da→da | 3 |
-| ok→ost | 2 |
-| ot→otr | 1 |
+| qo→ko | 11 |
+| ch→h | 9 |
+| sh→š | 9 |
+| ok→ost | 3 |
+| da→da | 2 |
+| ot→otr | 2 |
 
 ## Gallows Distribution
 
@@ -22,6 +22,7 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **dar** (give-agent)
 
 ## Confidence Summary
@@ -36,14 +37,14 @@
 - kostedi: 6x
 - s: 5x
 - ain: 3x
-- ytredi: 3x
+- itredi: 3x
 - di: 3x
-- daiin: 3x
-- sedi: 2x
+- dain: 3x
+- šedi: 2x
 - eedi: 2x
 - kosteedi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

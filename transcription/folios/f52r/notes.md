@@ -5,10 +5,10 @@
 | Operator | Count |
 |----------|-------|
 | qo→ko | 9 |
-| da→da | 8 |
-| sh→s | 7 |
-| ot→otr | 6 |
-| ok→ost | 5 |
+| sh→š | 7 |
+| ot→otr | 7 |
+| da→da | 6 |
+| ok→ost | 6 |
 | ch→h | 3 |
 
 ## Gallows Distribution
@@ -24,6 +24,7 @@
 
 - **dar** (give-agent)
 - **hor** (cook-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
@@ -35,14 +36,15 @@
 ## Most Frequent ZFD Words
 
 - otri: 3x
-- sor: 2x
+- šor: 2x
+- itroldi: 2x
 - kosti: 2x
 - s: 2x
-- ostchol: 2x
+- osthol: 2x
 - osti: 2x
-- daiin: 2x
+- dain: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

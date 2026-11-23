@@ -1,4 +1,4 @@
-# Folio f11r -- Paleographic Transcription
+# Folio f11r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006096/full/full/0/default.jpg
@@ -10,13 +10,13 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | trshol. schoal. hplri. s?pr?ydain. hplli. sei. tr?chodi. soytri | B | tshol.schoal.cfhy.sh!f!ydaiin.cphy.shey.t!chody.shoyty |
-| L2 | sohtrrodi. kodor. i. stshi. daiin. ytrchi. ytrchosti. stchol. daiin | B | socthody.qodor.y.kshy.daiin.ytchy.ytchoky.kchol.daiin |
-| L3 | kotri. hol. htrri. dor. ystychi. hotri. dain. hain. daiin. ded | B | qoty.chol.cthy.dor.ykychy.choty.dain.chaiin.daiin.ded |
-| L4 | dchol. hi. stchi. di. daiin | B | dchol.chy.kchy.dy.daiin |
-| L5 | trchol. sor. sor. dsti. shplli. daiin. htrri. di. hodl. daiin | B | tchol.shor.shor.dky.shcphy.daiin.cthy.dy.chodl.daiin |
-| L6 | odl. d?s. i. otrol. hain. ystchor. dair. hodi. htrri. s. daiin | B | odl.d!s.y.otol.chaiin.ykchor.dair.chody.cthy.s.daiin |
-| L7 | kotrchi. ostchol. htrri. di | B | qotchy.okchol.cthy.dy |
+| L1 | tršol. shoal. hpri. špridain. hpli. šei. trhodi. šoitri | B | tshol.schoal.cfhy.sh!f!ydaiin.cphy.shey.t!chody.shoyty |
+| L2 | sohtrodi. kodor. i. stši. dain. itrhi. itrhosti. sthol. dain | B | socthody.qodor.y.kshy.daiin.ytchy.ytchoky.kchol.daiin |
+| L3 | kotri. hol. htri. dor. istihi. hotri. dain. hain. dain. ded | B | qoty.chol.cthy.dor.ykychy.choty.dain.chaiin.daiin.ded |
+| L4 | dhol. hi. sthi. di. dain | B | dchol.chy.kchy.dy.daiin |
+| L5 | trhol. šor. šor. dsti. šhpli. dain. htri. di. hodl. dain | B | tchol.shor.shor.dky.shcphy.daiin.cthy.dy.chodl.daiin |
+| L6 | odl. ds. i. otrol. hain. isthor. dair. hodi. htri. s. dain | B | odl.d!s.y.otol.chaiin.ykchor.dair.chody.cthy.s.daiin |
+| L7 | kotrhi. osthol. htri. di | B | qotchy.okchol.cthy.dy |
 
 ## Confidence Distribution
 
@@ -25,7 +25,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

@@ -8,8 +8,8 @@
 | qo→ko | 58 |
 | ch→h | 52 |
 | ok→ost | 43 |
-| sh→s | 14 |
-| da→da | 10 |
+| sh→š | 14 |
+| da→da | 5 |
 | q→k | 2 |
 
 ## Gallows Distribution
@@ -26,28 +26,29 @@
 - **ostol** (bone oil)
 - **dar** (give-agent)
 - **hor** (cook-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 48 (98%)
-- C: 1 (2%)
+- B: 49 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - ar: 19x
-- ostain: 13x
-- otrain: 12x
+- otrain: 15x
+- ostain: 15x
+- ain: 14x
+- kostain: 13x
 - al: 11x
-- ain: 11x
-- kostain: 11x
 - otrar: 8x
 - ostar: 7x
 - hei: 5x
-- lstain: 5x
+- dain: 5x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

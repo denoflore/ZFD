@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 32 |
+| ch→h | 35 |
 | qo→ko | 9 |
-| sh→s | 7 |
-| da→da | 3 |
+| sh→š | 7 |
 | ok→ost | 2 |
+| da→da | 1 |
 
 ## Gallows Distribution
 
@@ -23,29 +23,30 @@
 
 - **hor** (cook-agent)
 - **hol** (cook-oil)
+- **dain** (substance/given)
 - **dar** (give-agent)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 12 (92%)
-- C: 1 (8%)
+- B: 13 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - hei: 6x
-- sei: 3x
+- šei: 3x
+- hstei: 3x
 - heor: 3x
 - hor: 3x
-- si: 2x
 - hodain: 2x
 - hori: 2x
-- r?chei: 2x
-- dchei: 2x
-- daiin: 2x
+- rhei: 2x
+- dhei: 2x
+- dain: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -1,20 +1,22 @@
 # Section Comparison -- Vocabulary Across Manuscript Sections
 
-**Generated:** 2026-02-07
+**Generated:** 2026-11-23
 
 ## Section Word Counts
 
+Words of length 1 are excluded here (they are included in STATISTICS.md).
+
 | Section | Total Words | Unique Words |
 |---------|-------------|-------------|
-| biological | 6797 | 1732 |
-| cosmological | 1324 | 880 |
-| herbal | 9604 | 3069 |
-| herbal_large | 1198 | 719 |
-| pharmaceutical | 2733 | 1398 |
-| recipe | 10592 | 3165 |
-| rosettes | 1805 | 821 |
+| biological | 6845 | 1467 |
+| cosmological | 1335 | 846 |
+| herbal | 9625 | 2852 |
+| herbal_large | 1198 | 710 |
+| pharmaceutical | 3754 | 1599 |
+| recipe | 10592 | 2938 |
+| rosettes | 1813 | 793 |
 | text_only | 206 | 161 |
-| zodiac | 936 | 634 |
+| zodiac | 1664 | 932 |
 
 ## Top 10 Words by Section
 
@@ -22,46 +24,46 @@
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | sedi | 247 |
-| 2 | ol | 231 |
-| 3 | hedi | 208 |
-| 4 | kostedi | 159 |
-| 5 | kosteedi | 148 |
-| 6 | kostain | 140 |
-| 7 | kostei | 132 |
-| 8 | hei | 130 |
-| 9 | sei | 129 |
-| 10 | kol | 114 |
+| 1 | šedi | 247 |
+| 2 | kostain | 247 |
+| 3 | ol | 233 |
+| 4 | hedi | 210 |
+| 5 | kostedi | 164 |
+| 6 | kosteedi | 153 |
+| 7 | šei | 135 |
+| 8 | hei | 134 |
+| 9 | dain | 133 |
+| 10 | kostei | 132 |
 
 ### Cosmological
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | dar | 19 |
-| 2 | ar | 18 |
-| 3 | daiin | 18 |
+| 1 | dain | 22 |
+| 2 | ar | 19 |
+| 3 | dar | 19 |
 | 4 | di | 17 |
-| 5 | ain | 14 |
-| 6 | sei | 13 |
-| 7 | dal | 13 |
-| 8 | otrei | 12 |
-| 9 | hei | 12 |
-| 10 | ostei | 12 |
+| 5 | ostei | 15 |
+| 6 | otrei | 14 |
+| 7 | ain | 14 |
+| 8 | dal | 14 |
+| 9 | šei | 13 |
+| 10 | hei | 12 |
 
 ### Herbal
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | daiin | 437 |
+| 1 | dain | 529 |
 | 2 | hol | 219 |
 | 3 | hor | 149 |
-| 4 | di | 135 |
-| 5 | sol | 109 |
-| 6 | or | 106 |
-| 7 | ain | 100 |
-| 8 | hi | 100 |
-| 9 | dar | 100 |
-| 10 | so | 93 |
+| 4 | di | 136 |
+| 5 | or | 107 |
+| 6 | ain | 105 |
+| 7 | šol | 102 |
+| 8 | dar | 101 |
+| 9 | hi | 101 |
+| 10 | htri | 100 |
 
 ### Herbal Large
 
@@ -69,9 +71,9 @@
 |------|------|-------|
 | 1 | ar | 23 |
 | 2 | dal | 22 |
-| 3 | daiin | 20 |
+| 3 | dain | 20 |
 | 4 | ain | 13 |
-| 5 | kostal | 12 |
+| 5 | kostal | 13 |
 | 6 | otral | 11 |
 | 7 | ol | 11 |
 | 8 | ostal | 11 |
@@ -82,46 +84,46 @@
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | daiin | 70 |
-| 2 | hol | 40 |
-| 3 | ol | 38 |
-| 4 | or | 37 |
-| 5 | ain | 35 |
-| 6 | heol | 29 |
-| 7 | hei | 28 |
-| 8 | sol | 26 |
-| 9 | hor | 25 |
-| 10 | dar | 25 |
+| 1 | dain | 146 |
+| 2 | hol | 60 |
+| 3 | ol | 58 |
+| 4 | ain | 55 |
+| 5 | or | 53 |
+| 6 | heol | 42 |
+| 7 | hei | 40 |
+| 8 | ostei | 36 |
+| 9 | šei | 35 |
+| 10 | hor | 33 |
 
 ### Recipe
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | ain | 201 |
-| 2 | hei | 200 |
-| 3 | kostei | 197 |
-| 4 | hedi | 189 |
-| 5 | ar | 141 |
-| 6 | al | 138 |
-| 7 | kosteedi | 137 |
-| 8 | sei | 131 |
-| 9 | kostain | 126 |
-| 10 | daiin | 122 |
+| 1 | ain | 261 |
+| 2 | kostain | 220 |
+| 3 | hei | 200 |
+| 4 | kostei | 198 |
+| 5 | hedi | 190 |
+| 6 | dain | 179 |
+| 7 | ostain | 171 |
+| 8 | ar | 141 |
+| 9 | al | 138 |
+| 10 | kosteedi | 137 |
 
 ### Rosettes
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | ain | 53 |
-| 2 | or | 45 |
+| 1 | ain | 66 |
+| 2 | or | 46 |
 | 3 | ol | 35 |
-| 4 | ar | 31 |
-| 5 | dar | 27 |
-| 6 | daiin | 25 |
-| 7 | hedi | 21 |
-| 8 | sei | 20 |
-| 9 | kostar | 20 |
-| 10 | kostain | 20 |
+| 4 | ar | 32 |
+| 5 | dain | 28 |
+| 6 | dar | 27 |
+| 7 | kostain | 24 |
+| 8 | hedi | 21 |
+| 9 | šei | 20 |
+| 10 | kostar | 20 |
 
 ### Text Only
 
@@ -142,41 +144,41 @@
 
 | Rank | Word | Count |
 |------|------|-------|
-| 1 | al | 20 |
-| 2 | ar | 20 |
-| 3 | otrei | 17 |
-| 4 | ain | 13 |
-| 5 | otreodi | 12 |
-| 6 | otreos | 10 |
-| 7 | hei | 9 |
-| 8 | ostei | 9 |
-| 9 | otral | 9 |
-| 10 | daiin | 7 |
+| 1 | al | 39 |
+| 2 | ar | 38 |
+| 3 | ain | 30 |
+| 4 | otrei | 29 |
+| 5 | otreos | 19 |
+| 6 | dal | 19 |
+| 7 | otreodi | 18 |
+| 8 | ostei | 16 |
+| 9 | di | 16 |
+| 10 | dar | 16 |
 
 ## Cross-Section Vocabulary Overlap
 
-Percentage of Section A's vocabulary that also appears in Section B:
+Percentage of the row section's vocabulary that also appears in the column section:
 
 | Section | biological | cosmological | herbal | herbal_large | pharmaceutical | recipe | rosettes | text_only | zodiac |
 |---|---|---|---|---|---|---|---|---|---|
-| biological | -- | 11% | 31% | 14% | 18% | 38% | 17% | 2% | 8% |
-| cosmological | 22% | -- | 36% | 19% | 26% | 33% | 18% | 4% | 16% |
-| herbal | 17% | 10% | -- | 10% | 17% | 27% | 12% | 2% | 7% |
-| herbal_large | 33% | 23% | 44% | -- | 30% | 47% | 25% | 4% | 16% |
-| pharmaceutical | 22% | 16% | 38% | 16% | -- | 35% | 18% | 4% | 11% |
-| recipe | 21% | 9% | 26% | 11% | 16% | -- | 14% | 2% | 7% |
-| rosettes | 35% | 19% | 46% | 22% | 30% | 54% | -- | 4% | 17% |
-| text_only | 24% | 21% | 40% | 17% | 33% | 32% | 19% | -- | 19% |
-| zodiac | 22% | 23% | 35% | 19% | 25% | 33% | 22% | 5% | -- |
+| biological | -- | 14% | 38% | 18% | 26% | 47% | 20% | 4% | 14% |
+| cosmological | 24% | -- | 39% | 20% | 30% | 36% | 19% | 5% | 24% |
+| herbal | 19% | 12% | -- | 12% | 22% | 30% | 14% | 3% | 12% |
+| herbal_large | 36% | 24% | 46% | -- | 36% | 49% | 27% | 5% | 26% |
+| pharmaceutical | 23% | 16% | 40% | 16% | -- | 37% | 18% | 4% | 16% |
+| recipe | 23% | 10% | 29% | 12% | 20% | -- | 15% | 2% | 11% |
+| rosettes | 37% | 21% | 50% | 24% | 36% | 55% | -- | 5% | 23% |
+| text_only | 34% | 27% | 54% | 24% | 40% | 40% | 25% | -- | 25% |
+| zodiac | 22% | 22% | 36% | 20% | 28% | 36% | 19% | 4% | -- |
 
-## Key Observations
+## Key Observations (computed)
 
-1. **Core pharmaceutical vocabulary** (dain, hol, hor, dar, sal) appears across ALL sections
-2. **Herbal section** has the largest vocabulary (most unique words)
-3. **Biological section** shows high overlap with pharmaceutical vocabulary
-4. **Zodiac section** has the most distinctive vocabulary (lowest overlap)
-5. **Recipe section** shows near-complete overlap with pharmaceutical vocabulary
+1. **recipe** has the largest vocabulary (2938 unique words).
+2. **recipe** has the most distinctive vocabulary (mean overlap 15% with other sections); **text_only** the least (34%).
+3. Highest directional overlap: rosettes → recipe (55%).
+4. recipe → pharmaceutical overlap: 20%.
+5. Core terms present in every section: dain, hol, dar; missing: hor (not in zodiac), sal (not in herbal_large, text_only).
 
 ---
 
-*Section comparison generated 2026-02-07.*
+*Section comparison generated 2026-11-23.*

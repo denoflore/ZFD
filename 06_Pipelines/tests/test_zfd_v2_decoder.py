@@ -64,10 +64,9 @@ def test_eva_to_croatian_follows_the_mapping_table(decoder):
     assert decoder.eva_to_croatian(longest) == EVA_TO_CRO[longest]
 
 
-def test_whole_word_precheck_preserves_grammar_words(decoder):
-    # 'daiin' is the most frequent word in the manuscript. The whole-word
-    # precheck must keep it as one known unit instead of letting operator
-    # stripping shred it into da + in.
+def test_frequent_token_has_a_decomposition(decoder):
+    # This checks that the recipe decoder can parse the token. It does not
+    # assert the whole-word preservation implemented by the other stack.
     croatian = decoder.eva_to_croatian("daiin")
     decomposition = decoder.decompose_word(croatian)
     assert decomposition is not None
@@ -125,3 +124,28 @@ def test_lsi_and_recipes_cover_the_same_manuscript():
     # Every LSI locus is translated. Recipes may add loci from the raw_eva
     # segmentation (whole pages where LSI splits panels).
     assert lsi_loci - recipe_loci == set()
+
+
+@pytest.mark.parametrize("damage", ["changed_recipe", "missing_recipe", "changed_summary"])
+def test_check_gate_rejects_stale_committed_output(tmp_path, monkeypatch, damage):
+    """The former --check passed these cases because it only decoded twice."""
+    import regenerate_corpus as rc
+    eva_text = (REPO_ROOT / "voynich_data" / "raw_eva" / "f88r.txt").read_text(
+        encoding="utf-8")
+    monkeypatch.setattr(rc, "RECIPES_DIR", tmp_path)
+    monkeypatch.setattr(rc, "SUMMARY_PATH", tmp_path / "summary.json")
+    monkeypatch.setattr(rc, "corpus_sources", lambda: {"f88r": eva_text})
+    monkeypatch.setattr(sys, "argv", ["regenerate_corpus.py"])
+    assert rc.main() == 0
+    monkeypatch.setattr(sys, "argv", ["regenerate_corpus.py", "--check"])
+    assert rc.main() == 0
+    recipe = tmp_path / "f88r_recipe.md"
+    if damage == "changed_recipe":
+        recipe.write_text("stale output\n", encoding="utf-8")
+    elif damage == "missing_recipe":
+        recipe.unlink()
+    else:
+        summary = json.loads(rc.SUMMARY_PATH.read_text())
+        summary["totals"]["words"] += 1
+        rc.SUMMARY_PATH.write_text(json.dumps(summary), encoding="utf-8")
+    assert rc.main() == 1

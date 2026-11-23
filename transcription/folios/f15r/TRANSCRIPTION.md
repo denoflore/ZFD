@@ -1,4 +1,4 @@
-# Folio f15r -- Paleographic Transcription
+# Folio f15r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006102/full/full/0/default.jpg
@@ -10,21 +10,21 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | trshor. sei. trchali. |. si. htrols. sei. |. daiin | B | tshor.shey.tchalyshy.chtols.sheydaiin |
-| L2 | otrchor. kostchor. oli. |. ostor. si. stoli. | | B | otchor.qokchor.olyokor.shy.koly |
-| L3 | kostain. kotrchi. trydi. |. daiin. hol. htrri. | | B | qokaiin.qotchy.tydydaiin.chol.cthy |
-| L4 | scheain. hodain. hl. |. sol. hstrain. sal. | | B | scheaiin.chodaiin.chlsol.ckhaiin.sal |
-| L5 | kotrchi. r. sor. htrri. |. daiin. htrri. di. | | B | qotchy.r.shor.cthydaiin.cthy.dy |
-| L6 | dchi. sto?stain. hdi. |. sain. ostear. | | B | dchy.ko!kaiin.chdysaiin.okear |
-| L7 | daiin. sstain. htrri. |. so. steohtrri. | | B | daiin.shkaiin.cthysho.keocthy |
-| L8 | sohtrri. trol. stain. s. |. dain. htrroli. | | B | shocthy.tol.kaiin.sdain.ctholy |
-| L9 | ohtrrain. kostain. hos. |. odain. htrrl. s. i. | | B | octhain.qokaiin.chosodaiin.cthl.s.y |
-| L10 | ychain. hhstrhi. ostshi. |. saiiin. dol?chds. | | B | ychain.chckhhy.okshysaiiin.dol!chds |
-| L11 | ostain. otrain. hl. s?i. |. hor. hoross. | | B | okaiin.otaiin.chl.s!ychor.choross |
-| L12 | kotror. sor. trcheor. hi. |. htrrain. |. san | B | qotor.shor.tcheor.chycthaiinshan |
-| L13 | ystshol. dor. sei. htrri. dain. |. ssti. |. sor. sotri | B | ykshol.dor.sheey.cthy.dainskyshor.shoty |
-| L14 | otrcho. stchi. hol. daiin. htrrar. |. ytrol. dor. dom | B | otcho.kchy.chol.daiin.ctharytol.dor.dom |
-| L15 | kotrchor. hain. hi. stol?dasti | B | qotchor.chaiin.chy.kol!daky |
+| L1 | tršor. šei. trhali \| ši. htrols. šei \| dain | B | tshor.shey.tchaly \| shy.chtols.shey \| daiin |
+| L2 | otrhor. kosthor. oli \| ostor. ši. stoli \| | B | otchor.qokchor.oly \| okor.shy.koly \| |
+| L3 | kostain. kotrhi. tridi \| dain. hol. htri \| | B | qokaiin.qotchy.tydy \| daiin.chol.cthy \| |
+| L4 | sheain. hodain. hl \| sol. hstain. sal \| | B | scheaiin.chodaiin.chl \| sol.ckhaiin.sal \| |
+| L5 | kotrhi. r. šor. htri \| dain. htri. di \| | B | qotchy.r.shor.cthy \| daiin.cthy.dy \| |
+| L6 | dhi. stostain. hdi \| sain. ostear \| | B | dchy.ko!kaiin.chdy \| saiin.okear \| |
+| L7 | dain. šstain. htri \| šo. steohtri \| | B | daiin.shkaiin.cthy \| sho.keocthy \| |
+| L8 | šohtri. trol. stain. s \| dain. htroli \| | B | shocthy.tol.kaiin.s \| dain.ctholy \| |
+| L9 | ohtrain. kostain. hos \| odain. htrl. s. i \| | B | octhain.qokaiin.chos \| odaiin.cthl.s.y \| |
+| L10 | ihain. hhsthi. ostši \| sain. dolhds \| | B | ychain.chckhhy.okshy \| saiiin.dol!chds \| |
+| L11 | ostain. otrain. hl. si \| hor. hoross \| | B | okaiin.otaiin.chl.s!y \| chor.choross \| |
+| L12 | kotror. šor. trheor. hi \| htrain \| šan | B | qotor.shor.tcheor.chy \| cthaiin \| shan |
+| L13 | istšol. dor. šei. htri. dain \| ssti \| šor. šotri | B | ykshol.dor.sheey.cthy.dain \| sky \| shor.shoty |
+| L14 | otrho. sthi. hol. dain. htrar \| itrol. dor. dom | B | otcho.kchy.chol.daiin.cthar \| ytol.dor.dom |
+| L15 | kotrhor. hain. hi. stoldasti | B | qotchor.chaiin.chy.kol!daky |
 
 ## Confidence Distribution
 
@@ -33,7 +33,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

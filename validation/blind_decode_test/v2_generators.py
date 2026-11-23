@@ -8,8 +8,11 @@ Three generators that produce text the decoder should NOT be able to decode well
 """
 
 import random
-import re
-from typing import List
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "zfd_decoder" / "src"))
+from tokenizer import words_from_eva_line
 from v2_config import EVA_CHAR_FREQUENCIES, EVA_LENGTH_DISTRIBUTION, LATIN_VOCABULARY
 
 
@@ -21,7 +24,7 @@ def generate_synthetic_eva(real_eva_text: str, seed: int) -> str:
     - Use EVA characters at manuscript-matching frequencies
     - Match the manuscript's word length distribution
     - Preserve the original folio's line structure (words per line)
-    - Never appeared in the real manuscript
+    - Are sampled without using the real word's spelling
 
     This tests whether the decoder's mappings are specific to real Voynich
     morphology or will match any EVA-alphabet string.
@@ -48,9 +51,7 @@ def generate_synthetic_eva(real_eva_text: str, seed: int) -> str:
             continue
 
         # Count real words on this line
-        cleaned = re.sub(r'<[^>]*>', '', line)
-        cleaned = re.sub(r'!', '', cleaned)
-        real_words = [w.strip() for w in cleaned.split('.') if w.strip()]
+        real_words = words_from_eva_line(line)
         word_count = len(real_words)
 
         # Generate that many synthetic words
@@ -91,10 +92,8 @@ def generate_char_shuffled(real_eva_text: str, seed: int) -> str:
             output_lines.append(line)
             continue
 
-        # Extract words, preserving markup structure
-        cleaned = re.sub(r'<[^>]*>', '', line)
-        cleaned = re.sub(r'!', '', cleaned)
-        real_words = [w.strip() for w in cleaned.split('.') if w.strip()]
+        # Use exactly the glyph words consumed by the real decoder.
+        real_words = words_from_eva_line(line)
 
         shuffled_words = []
         for word in real_words:
@@ -130,9 +129,7 @@ def generate_random_latin(real_eva_text: str, seed: int) -> str:
             output_lines.append(line)
             continue
 
-        cleaned = re.sub(r'<[^>]*>', '', line)
-        cleaned = re.sub(r'!', '', cleaned)
-        real_words = [w.strip() for w in cleaned.split('.') if w.strip()]
+        real_words = words_from_eva_line(line)
         word_count = len(real_words)
 
         # Pick random Latin words

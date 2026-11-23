@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 11 |
-| da→da | 9 |
+| ch→h | 12 |
+| sh→š | 6 |
+| da→da | 6 |
 | qo→ko | 6 |
-| sh→s | 5 |
-| ok→ost | 2 |
+| ok→ost | 3 |
 | ot→otr | 2 |
 
 ## Gallows Distribution
@@ -36,18 +36,17 @@
 
 ## Most Frequent ZFD Words
 
-- di: 4x
-- daiin: 3x
-- dain: 2x
-- ystei: 2x
-- si: 2x
+- dain: 5x
+- di: 5x
+- istei: 2x
 - dar: 2x
 - hodi: 2x
+- šotri: 2x
 - sti: 2x
 - hei: 2x
-- stchi: 2x
+- sthi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

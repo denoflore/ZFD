@@ -1,0 +1,17 @@
+{
+  "folio": "f72r",
+  "section": "zodiac",
+  "illustration_type": "zodiac",
+  "quire": "K (Rene) / XI (Beinecke)",
+  "currier_language": null,
+  "currier_hand": null,
+  "iiif_id": null,
+  "iiif_url": null,
+  "condition": "Zodiac diagram with nymph figures and labels.",
+  "layout": {
+    "type": "zodiac",
+    "text_lines": 84
+  },
+  "transcription_date": "2026-11-21",
+  "transcription_method": "Automated ZFD rule parsing (batch_transcribe.py) of the Takahashi (H) EVA transliteration in LSI_ivtff_0d.txt. Not a direct reading of the manuscript image."
+}

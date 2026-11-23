@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| da→da | 9 |
-| ch→h | 8 |
+| ch→h | 9 |
+| ot→otr | 8 |
+| qo→ko | 8 |
 | ok→ost | 8 |
-| sh→s | 7 |
-| qo→ko | 7 |
-| ot→otr | 4 |
+| sh→š | 7 |
+| da→da | 6 |
 
 ## Gallows Distribution
 
@@ -22,8 +22,9 @@
 
 ## Validated Terms Present
 
-- **ostol** (bone oil)
 - **dain** (substance/given)
+- **ostol** (bone oil)
+- **šol** (with-oil)
 - **hor** (cook-agent)
 - **dar** (give-agent)
 - **hol** (cook-oil)
@@ -31,24 +32,24 @@
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 10 (83%)
-- C: 2 (17%)
+- B: 12 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- daiin: 4x
+- dain: 5x
 - otrol: 2x
 - ol: 2x
 - hi: 2x
 - dol: 2x
 - ostain: 2x
 - dor: 2x
-- sor: 2x
+- šor: 2x
 - oiin: 2x
-- sol: 2x
+- g: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -1,19 +1,17 @@
 {
   "folio": "f3v",
   "section": "herbal",
-  "quire": "A/I",
-  "bifolio": "bA3=f3+f6",
+  "illustration_type": "herbal",
+  "quire": "A (Rene) / I (Beinecke)",
   "currier_language": "A",
-  "currier_hand": 1,
-  "iiif_id": 1006081,
+  "currier_hand": "1",
+  "iiif_id": "1006081",
   "iiif_url": "https://collections.library.yale.edu/iiif/2/1006081/full/full/0/default.jpg",
-  "transcriber": "H",
-  "num_lines": 14,
-  "page_type": "herbal",
-  "total_words": 83,
-  "main_words": 83,
-  "marginal_words": 0,
-  "unique_zfd_forms": 73,
-  "lines_with_continuation": [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 12, 13],
-  "lines_with_marginal_text": []
+  "condition": "Standard herbal folio with plant illustration and text.",
+  "layout": {
+    "type": "herbal",
+    "text_lines": 14
+  },
+  "transcription_date": "2026-11-21",
+  "transcription_method": "Automated ZFD rule parsing (batch_transcribe.py) of the Takahashi (H) EVA transliteration in LSI_ivtff_0d.txt. Not a direct reading of the manuscript image."
 }

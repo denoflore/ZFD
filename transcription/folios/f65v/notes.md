@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| sh→s | 7 |
+| sh→š | 8 |
 | ch→h | 7 |
 | qo→ko | 5 |
-| da→da | 2 |
 | ok→ost | 2 |
+| da→da | 1 |
 | ot→otr | 1 |
 
 ## Gallows Distribution
@@ -20,6 +20,10 @@
 | p→pl | 6 |
 | f→pr | 4 |
 
+## Validated Terms Present
+
+- **dain** (substance/given)
+
 ## Confidence Summary
 
 - A: 0 (0%)
@@ -29,10 +33,10 @@
 
 ## Most Frequent ZFD Words
 
-- hplli: 2x
+- hpli: 2x
 - di: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

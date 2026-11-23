@@ -1,33 +1,50 @@
 # Zuger Functional Decipherment of The Voynich Manuscript
 
-## Structural Decipherment Achieved
+## Current Research Status
 
-**Status:** Structural Decipherment Complete ✓
+**Status:** Implemented decipherment model with reproducible outputs and ongoing validation.
 **Initial pre-release:** August 2025
-**Full-manuscript translation coverage:** August 2026
+**Recipe corpus expansion:** August 2026
+**Latest integrated audit:** 23 November 2026
 
-**Scope:** Writing system mechanics, morphology, and constrained functional semantics
+**Scope:** Proposed writing-system mechanics, morphology and constrained functional semantics.
 
-**Coverage:** 92.1% morphological token coverage (3.6x above random baseline) under frozen lexicon
+The repository contains three separate processing paths. Their measurements
+answer different questions and must retain their own denominators:
 
-**Completeness:** All 244 text-bearing loci translated, including every foldout
-panel (astronomical f67-f72, rosettes f85-f86, pharmaceutical f89/f90/f95/f102)
-and f116v. Every page regenerates deterministically from repo-local sources
-through the canonical unified lexicon v3 (362 morphemes); a reproduce-or-fail
-gate and a 45-test suite guard the whole pipeline. | [Recipes](translations/recipes/) | [Gate](06_Pipelines/regenerate_corpus.py)
+| Processing path | Current measured result | Meaning |
+|---|---|---|
+| EVA → ZFD transcription compiler | **621 / 735 = 84.4898%** agreement across all 129 rows of five hand anchors; zero skipped rows | Agreement with project hand readings, after normalizing `sh` to `š`; not independently established translation accuracy |
+| Recipe decoder, canonical input union | **46,578 / 48,379 = 96.2773%** combined full-or-partial matches | Rounded parser match score ≥0.30; includes partial matches and overlapping source representations |
+| Recipe decoder, preferred-LSI comparison | **35,568 / 36,959 = 96.2364%** across 226 LSI identifiers | Separately reported extraction choosing one preferred transcriber per line |
+| CSV-lexicon validation pipeline | Frozen configuration **5/5**, current shipping configuration **4/5** test folios discriminate against all three tested baselines | Clean-input blind-decode rerun; the shipping configuration's f23v comparison fails the declared z-score threshold |
 
-**Validation:**
-- Blind decode falsification tests passed (real Voynich >> shuffled, synthetic, and Latin baselines) | [Results](validation/blind_decode_test/results_v2/V2_VOCABULARY_SPECIFICITY_REPORT.md)
-- 961K-word Ragusan corpus comparison confirms pharmaceutical register fingerprint and Dalmatian coastal origin | [Report](validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md)
-- 15th-century Croatian proof kit: suffix families, operator semantics, jat reflexes, Serbian elimination | [Proof Kit](validation/proof_kit/PROOF_KIT_v1.md)
-- **V27 Triple Provenance Lock: 11 ingredients in Ragusan trade records + Franciscan pharmacy + decoded manuscript simultaneously; 91 procedural verbs match Antidotarium style** | [Full Report](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md)
-- Temporal analysis: zero Italian loanwords + V27 pharmaceutical infrastructure confirms pre-1450 dating | [Report](validation/corpus_comparison/REMAINING_ANALYSES_REPORT_v1.md)
-- Negative results and failed runs documented and preserved
-- Croatian linguistic alignment confirmed by independent certified native-speaker review (court-certified Croatian translator-interpreter)
+The transcription corpus has **203 packages: 196 automated, five hand anchors
+and two retained stubs**, containing **5,194 JSONL rows** and **37,785 EVA/ZFD
+word tokens**. The row total includes an empty diagram placeholder. All 201
+selected source page IDs are represented, but the hand anchors do not cover
+all selected source text: f102v has 38 anchor rows versus 62 source lines.
 
-**Reproducibility:** Fully automated, deterministic pipeline with published null baselines and one-command execution | [Run tests](validation/blind_decode_test/)
+All **244 committed recipe files** reproduce byte for byte. They include 18
+whole-page aliases alongside component panels; 244 is a file count, not 244
+non-overlapping manuscript loci. The recipe decoder's unified lexicon v3 has
+**362 family entries and 336 distinct form keys**. The earlier **92.1%** figure
+comes from a different analysis and is not a before/after comparison with the
+current measurements.
 
-**Methodology:** Operator-stem-suffix shorthand system with preregistered constraints and frozen mappings | [Pipeline](zfd_decoder/)
+**Current validation results:**
+
+- Transcription agreement and recipe coverage are reported separately from semantic correctness.
+- The corrected noise-robustness test is **NON-DISCRIMINATING**: its null control also satisfies the old fingerprint.
+- The operator perturbation effect is stronger on shuffled glyphs than on real text, so this test does not independently validate manuscript structure.
+- Ragusan records and pharmacy preparations provide historical comparisons. The [product register](#the-ingredient-match) reports documented preparations and emitted folio candidates without claiming unestablished full-recipe identities.
+- Earlier corpus-comparison, linguistic and dating arguments remain available as research reports; the current audits do not independently establish Ragusan provenance.
+
+[Integrated audit](validation/compiler_audit/INTEGRATION_2026-11-23.md)
+| [Transcription audit](transcription/AUDIT_2026-11.md)
+| [Recipe audit and definitions](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md)
+| [Recipe measurements](validation/compiler_audit/RESULTS_2026-11-23.json)
+| [Blind-decode rerun](validation/blind_decode_test/results_v3/V3_DUAL_CONFIG_REPORT.md)
 
 **Publication timeline (priority record):**
 
@@ -40,7 +57,9 @@ gate and a 45-test suite guard the whole pipeline. | [Recipes](translations/reci
 | February 6, 2026 | Honesty audit (92.1% corrected coverage), unified lexicon, V27 Triple Provenance Lock |
 | February 7, 2026 | Complete paper v2.0; Nature submission (tracking #2026-02-03422) |
 | June 9, 2026 | Validation audit v4.3: config pinning, dual-config blind decode, robustness, decoy tests |
-| August 25, 2026 | Full-manuscript translation coverage (244/244 loci), canonical lexicon v3 regeneration, verification suite |
+| August 25, 2026 | Canonical lexicon v3 regeneration of 244 recipe files, including whole-page and panel representations; verification suite |
+| November 21, 2026 | Transcription compiler audit and corpus regeneration proposed in PR #8 |
+| November 23, 2026 | Integrated the compiler fixes; corrected report denominators; repaired shared EVA tokenization; reran controls; added recipe source accounting and pharmacy product concordance |
 
 Exact version-by-version history with preserved corrections and negative results: [CHANGELOG.md](CHANGELOG.md)
 
@@ -50,7 +69,7 @@ Exact version-by-version history with preserved corrections and negative results
 
 - [Documentation](#-documentation)
 - [What Is This?](#what-is-this)
-- [**Why This Isn't Another Failed Theory**](#why-this-isnt-another-failed-theory)
+- [Historical comparison method](#historical-comparison-method)
 - [Historical Provenance: From Ragusa to Yale](#-historical-provenance-from-ragusa-to-yale)
 - [Why 112 Years of Failure: The Category Error](#why-112-years-of-failure-the-category-error)
 - [But What Does It Actually Say?](#but-what-does-it-actually-say)
@@ -66,7 +85,6 @@ Exact version-by-version history with preserved corrections and negative results
 - [Temporal and Register Analysis](#temporal-and-register-analysis)
 - [Paleographic Hand Analysis](#paleographic-hand-analysis-new-february-2026)
 - [Reproducibility](#reproducibility)
-- [Independent Validation](#independent-validation)
 - [Credits](#credits)
 
 ---
@@ -82,7 +100,8 @@ Exact version-by-version history with preserved corrections and negative results
 | [**WHY_GLAGOLITIC.md**](WHY_GLAGOLITIC.md) | The paleographic evidence |
 | [**FAQ.md**](FAQ.md) | Common questions and objections answered |
 | [**RECIPE_INDEX.md**](translations/RECIPE_INDEX.md) | Complete recipe extraction: every preparation, ingredient, and instruction |
-| [**translations/recipes/**](translations/recipes/) | All 244 translated loci, one page per locus, regenerated deterministically from the canonical lexicon |
+| [**translations/recipes/**](translations/recipes/) | 244 reproducible recipe files; includes overlapping whole-page/panel versions |
+| [**Current compiler audit**](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md) | Exact denominators, match-score definitions, source overlap and folio concordance |
 
 </details>
 
@@ -93,7 +112,7 @@ Exact version-by-version history with preserved corrections and negative results
 |----------|-------------|
 | [**METHODOLOGY.md**](METHODOLOGY.md) | Preregistered criteria, falsification tests |
 | [VALIDATION_RESULTS_JAN2026.md](VALIDATION_RESULTS_JAN2026.md) | Statistical validation results |
-| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | 92.1% coverage analysis |
+| [COVERAGE_REPORT_v3_6.md](08_Final_Proofs/COVERAGE_REPORT_v3_6.md) | Historical 92.1% analysis; a different metric and input configuration |
 
 </details>
 
@@ -110,7 +129,6 @@ Exact version-by-version history with preserved corrections and negative results
 | [VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf](papers/VOYNICH_GLAGOLITIC_PALEOGRAPHIC_ANALYSIS.pdf) | Full paleographic analysis |
 | [voynich_croatian_complete.pdf](papers/voynich_croatian_complete.pdf) | Full 179-page Croatian translation |
 | [voynich_croatian_review.pdf](papers/voynich_croatian_review.pdf) | Croatian linguistic review |
-| [**S8_PREEMPTIVE_PEER_REVIEW.pdf**](papers/S8_PREEMPTIVE_PEER_REVIEW.pdf) | S8: Adversarial AI validation. 8-turn stress test by Gemini Pro 3. |
 
 </details>
 
@@ -158,145 +176,171 @@ Exact version-by-version history with preserved corrections and negative results
 <br><em>Folio 1r. The title page of Beinecke MS 408. Image: Yale Beinecke Library (public domain).</em>
 </p>
 
-The Voynich Manuscript (Beinecke MS 408) is a 15th-century **Croatian apothecary manual** written in **angular Glagolitic cursive** using medieval shorthand conventions.
+This project proposes that the Voynich Manuscript (Beinecke MS 408) is a 15th-century **Croatian apothecary manual** written in **angular Glagolitic cursive** using medieval shorthand conventions. The repository publishes the mappings, readings and tests used to examine that proposal.
 
 This repository contains:
 - The complete character mapping (EVA → Croatian)
 - Statistical validation against medieval pharmaceutical corpora
 - Native speaker linguistic validation
 - The entire manuscript rendered in readable Croatian (179 pages)
-- Translations of all 244 text-bearing loci, foldout panels and f116v included
-- Reproducible analysis pipeline: every translation page regenerates
+- 244 generated recipe files covering all 226 LSI identifiers, with whole-page aliases retained
+- Reproducible analysis pipeline: every committed recipe file regenerates
   byte-identically from repo-local sources, verified by a standing
-  reproduce-or-fail gate and a 45-test suite (`pytest` at repo root)
+  committed-output verification gate and the repository test suite (`pytest` at repo root)
 
-**The mystery is over.**
+Current measurements, corrected results and remaining coverage gaps are documented in the [integrated audit](validation/compiler_audit/INTEGRATION_2026-11-23.md).
 
 ---
 
-## Why This Isn't Another Failed Theory
+## Historical comparison method
 
-Every few years, someone claims to have decoded the Voynich Manuscript. Every time, it falls apart under scrutiny. The claims are linguistic: "these characters map to Arabic" or "this looks like abbreviated Latin." Linguists disagree, the mapping breaks down on the next page, and the theory dies.
+The Ragusan origin proposal can be examined through three kinds of evidence:
+the manuscript readings, Ragusan administrative records, and the pharmacy's
+documented preparations. Each has a different role in the comparison.
 
-This one is different. Not because the linguistics are better (they are), but because **the evidence doesn't depend on linguistics at all.**
+| Evidence | What can be checked |
+|---|---|
+| Monumenta Ragusina V27, covering 1359–1364 | Government decisions, trade activity and pharmaceutical terminology in a historical source |
+| Published Franciscan pharmacy descriptions | Named preparations, disclosed ingredients and reported changes to practice |
+| Current ZFD decoder output | The actual stems emitted on specified folios under a declared lexicon and transcription selection |
 
-### The Forensic Accounting Test
+The February V27 report compared an ingredient inventory with a proposed
+lexicon. A lexicon entry is not itself an occurrence in the manuscript.
+The current compiler audit therefore records emitted stems and their folios
+separately. For example, the preferred-LSI run emits `ros` four times across
+f9v, f105v and f115v, while the active wax entries `cer` and `cera` are never
+emitted. These are the counts to use when discussing this compiler.
 
-Forget the script. Forget the character mapping. Forget whether Glagolitic cursive looks like Voynichese. Ask one question:
+A shared ingredient supplies a comparison candidate. Identifying the same
+recipe also requires the ingredients, preparation, proportions and use to be
+established on both sides. The available pharmacy descriptions do not publish
+complete formulas, so the register below records ingredient-level candidates
+and leaves unestablished recipe identities open.
 
-**Does the decoded text describe the right products, made from the right ingredients, using the right methods, in the right professional context, in the right city, at the right time?**
-
-The answer is yes, and the proof comes from tax records.
-
-### Three Datasets, Zero Overlap in Origin
-
-| Source | What It Is | Date | Who Created It |
-|--------|-----------|------|---------------|
-| **Monumenta Ragusina V27** | Government customs and council records | 1359-1364 | The Republic of Ragusa (published 1895 by JAZU) |
-| **Ljekarna Male Braće** | Franciscan pharmacy ingredient records (best-surviving Ragusan apothecary archive) | Est. 1317, continuous | Franciscan monks in Dubrovnik |
-| **ZFD decoded lexicon** | Morphological inventory from the decoded manuscript | Proposed 1380-1440 | Whoever wrote the Voynich Manuscript |
-
-These three sources were created by different people, for different purposes, at different times. None references the others. V27 is a government administrative record published in 1895. The pharmacy is a continuously operating institution. The manuscript is the object being tested. **There is no mechanism by which a decipherment could be "fitted" to match all three simultaneously unless it is correct.**
-
-### The Result
-
-**11 pharmaceutical ingredients appear in all three sources.** Salt traded through Ragusan customs, stocked in the Franciscan pharmacy, and named in the decoded manuscript. Same for oil, honey, wine, wax, silver, iron, rose, pepper, aloe, and water. These aren't cherry-picked. They're the product of a systematic scan of all 156,914 words in V27 against all 304 decoded stems against all 34 documented Ljekarna historical ingredients.
-
-An additional **26 ingredients** match between the decoded manuscript and the pharmacy but are absent from V27. This is where it gets interesting.
-
-### The Sage Test (Why Absence Is Proof)
-
-Sage, mint, rosemary, and lavender appear in the decoded manuscript and in the pharmacy's recipes. They do NOT appear in V27's customs records.
-
-This is correct. V27 is a customs ledger. You do not import sage to Dalmatia. It grows wild on the rocks. You do not tax a Franciscan monk for picking rosemary in the monastery garden. Customs records track what crosses the border, not what grows in the backyard.
-
-**If the decipherment had found "sage" in the import records, it would be a historical error.** The decoded text correctly distinguishes between imported commodities (pepper, aloe, silver) and locally cultivated herbs (sage, mint, rosemary). It respects the economic geography of 14th-century Dubrovnik.
-
-The odds of a random or fitted decipherment coincidentally reproducing the import-versus-domestic taxonomy of a medieval Adriatic port city are astronomically low.
-
-### The Time Gate
-
-New World ingredients (cocoa butter, vanilla, tobacco) appear in the pharmacy's modern products. They appear in neither V27 nor the decoded manuscript. Correct: they didn't exist in Europe before 1492. The manuscript's radiocarbon date is 1404-1438. A single New World ingredient would kill the theory. There are none.
-
-### The Verb Lock
-
-The decoded text doesn't just contain ingredients (the nouns). It contains **91 procedural terms** (the verbs) that match the standard Antidotarium Nicolai recipe format used across European pharmacies from the 12th century onward: Recipe/uzmi (take), Misce/misc (mix), Tere/satri (grind), Coque/kuhai (cook), Cola/col (strain), Distilla/distil (distill). Both Latin and Croatian forms of the same verbs, exactly what you'd expect from a bilingual Ragusan pharmacist.
-
-The manuscript doesn't just list what's on the shelf. It describes how to make what's on the shelf.
-
-### Why This Matters
-
-Previous Voynich "solutions" can be attacked because they rest on subjective interpretation of an unknown script. This evidence rests on customs records, institutional archives, and commodity economics. **Linguistics is subjective. Trade law is absolute.**
-
-No alternative decipherment has ever produced a vocabulary set that simultaneously locks to:
-1. A specific city's government trade records
-2. A documented institutional pharmacy's ingredient lists
-3. The correct import/domestic distinction for that city's economic geography
-4. The correct temporal window (no post-1492 ingredients)
-5. A complete set of pharmaceutical procedure verbs matching the era's standard recipe format
-
-The decoded Voynich Manuscript is an economically verified product of Ragusa's 15th-century pharmaceutical industry.
-
-Full analysis: [V27 Triple Provenance Lock Report](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md) | V27 source: [Internet Archive](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt)
-
+[Current compiler audit](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md)
+| [Documented pharmacy products](#the-ingredient-match)
+| [Historical V27 report](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md)
 
 ## 🏛️ Historical Provenance: From Ragusa to Yale
 
-The Voynich Manuscript didn't appear from nowhere. Its journey across 600 years tells a story that only makes sense if you know where it started.
+The Ragusan origin and early route below are a proposed historical reconstruction. The November compiler audit does not independently establish the place of production, the originating institution or the early chain of custody.
 
-### The Origin: Republic of Ragusa (Modern Dubrovnik), c. 1404-1438
+### Proposed Origin: Republic of Ragusa (Modern Dubrovnik), c. 1404-1438
 
-The manuscript was written during the golden age of the Republic of Ragusa, a Croatian maritime city-state that rivaled Venice in wealth and sophistication. Ragusa was a major pharmaceutical trade hub on the Adriatic, with merchant routes connecting the Balkans to Italy, the Levant, and the courts of Central Europe.
+The proposed production setting is the Republic of Ragusa, a Croatian maritime city-state with a substantial medieval pharmaceutical trade. Ragusa was a major pharmaceutical trade hub on the Adriatic, with merchant routes connecting the Balkans to Italy, the Levant, and the courts of Central Europe.
 
 Ragusa supported a documented pharmaceutical infrastructure. The Monumenta Ragusina V27 (1359-1364) records *speciarii* (independent apothecaries) operating under city regulation, *medicus* (licensed physicians) in private practice, and an active import trade in pharmaceutical commodities through the port. The city's Liber Statutorum established formal licensing for apothecaries and physicians, confirming multiple competing pharmaceutical operations within the Republic.
 
-The best-documented of these is the **Franciscan Pharmacy (Ljekarna Male Braće)**, founded in **1317** when the Republic relocated the Franciscan monastery inside the city walls during a military threat from Serbian King Uroš II Milutin. The pharmacy began as an internal monastic dispensary under the Franciscan Rule (Chapter VI, *cura infirmorum*) before expanding to serve the public. It is the oldest continuously operating pharmacy in Europe, designated a Croatian intangible cultural heritage site in 2019.
+The best-documented of these is the **Franciscan Pharmacy (Ljekarna Male Braće)**, founded in **1317** when the Republic relocated the Franciscan monastery inside the city walls during a military threat from Serbian King Uroš II Milutin. The pharmacy began as an internal monastic dispensary under the Franciscan Rule (Chapter VI, *cura infirmorum*) before expanding to serve the public. It is one of Europe's oldest operating pharmacies. The product and historical sources used for the current comparison are identified below.
 
-The friars cultivated medicinal herbs in the monastery gardens, prepared compounds from imported ingredients (storax resin from the eastern Mediterranean, rosewater, bone oil, mineral salts), and maintained detailed recipe books in the monastery library. Their recipes were classified as *secreta* (secret remedies), where ingredient lists were recorded but the exact process (temperatures, mixing times, compounding sequences) was proprietary knowledge. This explains the compression and shorthand in the manuscript: it was written for someone who already knew the procedures and just needed the ingredients and ratios.
+The pharmacy's surviving preparations and historical records provide a basis
+for comparison. The complete formulas and the dates of individual ingredient
+changes are not established by the product descriptions available to this
+audit. Under the ZFD hypothesis, the manuscript's compression serves the
+working needs of a pharmaceutical practitioner already familiar with the
+procedures.
 
-**The Voynich Manuscript is a Ragusan pharmaceutical recipe book.** The Franciscan Pharmacy is the prime candidate institution given its documented medieval recipe tradition, its continuous operation spanning the manuscript's production window, and the striking overlap between its historical ingredient inventory and the decoded text. However, independent apothecaries (*speciarii*) and guild practitioners also operated in Ragusa during this period. The manuscript could have originated from any pharmaceutical operation within the Republic's well-documented apothecary ecosystem.
+**The proposed origin is a Ragusan pharmaceutical setting.** The Franciscan
+pharmacy is one candidate institution; independent apothecaries also operated
+in the city. Shared ingredients and a compatible historical setting do not
+identify the manuscript's owner or establish its chain of custody.
 
-It was written in angular Glagolitic cursive, the local Croatian liturgical and administrative script, using standard medieval pharmaceutical shorthand to compress ingredient lists and preparation instructions. The author wasn't hiding anything. He was writing fast. The "code" is just a pharmacist's professional notation, optimized for daily reference by someone who already knew the vocabulary.
+The proposed reading treats the writing as angular Glagolitic cursive with
+pharmaceutical shorthand for ingredients and preparation instructions. The
+mappings, folio readings and controls are published so that interpretation can
+be examined separately from the historical reconstruction.
 
 ### The Ingredient Match
 
-The Franciscan Pharmacy still operates today and still sells products made from what they describe as "ancient Franciscan recipes." As the best-surviving institutional archive from Ragusa's medieval pharmaceutical industry, it provides the most detailed comparison point for the decoded manuscript. The overlap is striking:
+The pharmacy's documented product range provides a concrete comparison with
+the proposed ZFD readings. The table is complete for the preparations named
+in the two product sources below. It is not a verified current stock list or
+a collection of complete recipes: the sources disclose selected ingredients,
+not full proportions and procedures. Some generic product categories may
+overlap. [P1][P2]
 
-| Modern Pharmacy Product | Voynich Extraction | Manuscript Evidence |
-|------------------------|-------------------|-------------------|
-| Rose cream (bestseller) | **ros** (rose) | 101 mentions across 43 folios |
-| Rosewater toner | **ros** + **ar** (water) | Combined in pharmaceutical sections |
-| Cream from wax & almond oil | **kost** (bone/wax base) + **ol** (oil) | Dominant ingredients: 10,325 + 16,200 mentions |
-| Lavender products | Herbal section entries | Plant illustrations with preparation notes |
-| Bergamot anti-wrinkle cream | Herbal A catalog entries | Ingredient + application instructions |
-| Cold-pressed soaps | **ol** (oil) + processing operators | Oil-based preparation sequences |
+**Current folio concordance:** The preferred-LSI run emits `ros`
+(rose/rosewater) on **f9v (1), f105v (1), and f115v (2)**. These folios also
+contain emitted oil and water stems. The published recipe-file extraction
+counts f105v twice, giving five `ros` emissions in total. All figures below
+refer to the preferred-LSI comparison unless stated otherwise. No complete
+modern-product recipe identity has been established by this audit.
 
-The pharmacy's own literature states their products are "prepared under 200 year old recipes," but the pharmacy has been operating since 1317. The **medieval** recipe archive (1317-1667) was largely destroyed in the 1667 earthquake and fire. What survived became the basis for the "200 year old" recipes still in use. The older, original formulations, including bone-oil preparations no longer commercially viable, are preserved in the Voynich Manuscript.
+| Documented preparation | Disclosed ingredient or type | ZFD folio correspondence | Source |
+|---|---|---|---|
+| Aqua Rosae | Rosewater | `ros` candidates: [f9v](translations/recipes/f9v_recipe.md), [f105v](translations/recipes/f105v_recipe.md), [f115v](translations/recipes/f115v_recipe.md); exact formula unestablished | P1, P3 |
+| Rose cream | Rose oil | Same three ingredient-level candidates; no established cream formula | P1, P2, P3 |
+| Aqua Rosmarini | Rosemary water | No active rosemary-stem match; rosemary reference entries are excluded from the decoder | P1 |
+| Aqua Lavandulae | Lavender water | No specific folio match established | P1 |
+| Gold Cream | Beeswax and almond oil | `cer`/`cera` have zero emitted matches; generic oil does not identify almond oil | P1, P2 |
+| Rosemary cream | Rosemary preparation | No active rosemary-stem match | P1, P2 |
+| Moisturizing cream | Almond-based lotion | No almond-specific folio match established | P1 |
+| Anti-wrinkle cream | Cocoa butter and bergamot oil | No ingredient-specific folio match established | P1, P2 |
+| Lip balm | Wax and vanilla | No wax/vanilla formula match established | P1 |
+| Lavender cream | Named cream; full formula undisclosed | No specific folio match established | P2 |
+| Orange cream | Named cream; full formula undisclosed | No specific folio match established | P2 |
+| Hand cream | Product category; full formula undisclosed | No specific folio match established; may overlap scented creams | P2 |
+| Haemorrhoid ointment | Indication given; formula undisclosed | No specific folio match established | P2 |
+| Damaged-skin ointment | Indication given; formula undisclosed | No specific folio match established | P2 |
+| Burn ointment | Indication given; formula undisclosed | No specific folio match established | P2 |
+| Antifungal liquid | Indication given; formula undisclosed | No specific folio match established | P2 |
+| Herpes liquid | Indication given; formula undisclosed | No specific folio match established | P2 |
+| Herpes ointment | Indication given; formula undisclosed | No specific folio match established | P2 |
 
-**The modern pharmacy replaced bone oil with beeswax. The Voynich still has the original.**
-
-Whether the manuscript was written by a Franciscan friar, an independent *speciarius*, or another practitioner within Ragusa's pharmaceutical network, the ingredient vocabulary and preparation methods point to the same professional context: a working Ragusan apothecary in the early 15th century.
+**f13v correction:** The current decoder emits no `ros`, `rosar` or `rosol`
+on f13v. Its `octrros` token is parsed using `ctrr` (compound mixture), with
+suffix `s` and residue `oo`. The former rose-cream caption cannot be reproduced
+from that parse. A raw substring containing `ros` is a different measurement.
 
 <p align="center">
-<img src="images/f13v_rose_recipe.jpg" width="400" alt="Folio 13v of the Voynich Manuscript, containing the rose cream recipe that matches the Franciscan Pharmacy's modern bestseller.">
-<br><em>Folio 13v. The rose cream recipe. You can still buy this product today for 30 euros. Image: Yale Beinecke Library (public domain).</em>
+<img src="images/f13v_rose_recipe.jpg" width="400" alt="Voynich Manuscript folio 13v, shown for comparison with the current decoder output.">
+<br><em>Folio 13v. The current compiler does not identify a rose-cream recipe on this page. Image: Yale Beinecke Library (public domain).</em>
 </p>
 
-The pharmacy also produced Theriac (*Teriaca*), a complex preparation of dozens of ingredients requiring precise aging and compounding. These were serious pharmaceutical chemists, not monks dabbling in herbs.
+**When and why did ingredients change?** In a 31 March 2024 interview,
+pharmacist Maja Putica explicitly described changes to ingredients and recipes
+over the years. She did not identify the individual substitutions, their dates
+or their causes. [P3] A 2015 interview also describes adapting preparation
+methods to contemporary conditions; it says the recipes had been found about
+200 years earlier and their actual dates were unknown. [P4]
 
-One ingredient tells the story: **storax** (styrax resin, imported from the eastern Mediterranean for wound care). It appears 288 times in the Voynich manuscript. The modern pharmacy doesn't use it. It was likely discontinued after the supply chain collapsed in 1667. The manuscript preserves a product line that no longer exists.
+The documented dates answer different questions. **1667** marks the loss of
+much early pharmacy documentation in the monastery fire. [P5] **1901** marks
+opening the newly equipped ground-floor pharmacy and a shift toward dispensing
+mostly industrially prepared medicines. [P6] Neither source dates a specific
+ingredient substitution. The earlier claims that bone oil was replaced by
+beeswax and that storax was removed after a 1667 supply collapse are withdrawn
+pending documentary evidence.
 
-> **February 2026 update:** Systematic extraction of ALL commodity terms from Monumenta Ragusina V27 (1359-1364 Ragusan trade records) reveals 11 pharmaceutical ingredients appearing in the trade records, the Franciscan pharmacy, AND the decoded manuscript simultaneously. An additional 26 ingredients match between ZFD and Ljekarna. See [V27 Triple Provenance Lock](#v27-triple-provenance-lock-new-february-2026) in Validation Results.
+The current `stor` output is **108 matches across 72 LSI identifiers**, or
+132 across 82 identifiers in the published overlapping extraction. Historical
+theriac is documented by the museum; that does not establish current sale or
+identify a ZFD theriac recipe. [P5] Cold-pressed soaps in the tourism source
+belong to its general souvenir paragraph and are not attributed to this pharmacy.
+
+**Sources for the product register and chronology**
+
+- **P1:** Dubrovnik Tourist Board, [Natural Cosmetics](https://tzdubrovnik.hr/lang/en/get/suveniri/1384/mediji.html), undated indexed page; the same nine-product list appears in its [2019 visitor guide, p. 43](https://tzdubrovnik.hr/lang/es/get/multimedia/62652/user_files/admin/TZ%20Grad_riviera%20info_informator_ENG.PDF).
+- **P2:** Fra Stipe Nosić, [Kreme koje šire slavu ljekarne Male braće](https://dulist.hr/uz-700-obljetnicu-kreme-koje-sire-slavu-ljekarne-male-brace/403184/), 30 April 2017.
+- **P3:** Ana Kanazir interviewing pharmacist Maja Putica, [Ljekarna Male braće](https://www.mirovina.hr/price/vijesti/75501/ljekarna-male-brace-bili-smo-u-jednoj-od-najstarijih-ljekarni-u-europi-koja-je-i-zasticeno-kulturno-dobro/vijest), 31 March 2024.
+- **P4:** Renata Debeljak, [Samostanska kozmetika](https://sensa.story.hr/Ljepota-i-vitalnost/Ljepota/a6654/Samostanska-kozmetika-rajska-njega-prirodnim-sastojcima.html), 10 November 2015, updated 16 November 2015.
+- **P5:** Franciscan Monastery Mala braća, [official museum account](https://malabraca.com/muzej/), consulted 23 November 2026.
+- **P6:** Fra Stipe Nosić, [Prva muzejska postava 1938. godine](https://dulist.hr/obljetnica-ljekarne-male-brace-prva-muzejska-postava-1938-godine/390564/), 26 February 2017.
+
+The operator's [price-list page](https://ljekarna-dubrovnik.hr/cjenici/) lists
+a branch file dated 23 November 2026. Its download returned a verification
+page during this review, so its contents and current stock were not verified.
+The dated register above is the available product evidence.
 
 ### The Catastrophe: April 6, 1667
 
 At 8:45 AM on Holy Wednesday, the most devastating earthquake in Croatian recorded history struck Dubrovnik. The quake lasted only seconds but killed approximately 3,000-5,000 people, including the city's Rector. Three-quarters of all public buildings were destroyed. Boulders rolled down Mount Srđ into the city. A tsunami struck the harbor. Fires, fueled by strong winds from collapsed bakeries and hearths, burned for almost 20 days.
 
-The Franciscan Church and Monastery survived the earthquake itself, but **the subsequent fire destroyed much of the monastery complex, including its great library.** Centuries of accumulated manuscripts, pharmaceutical texts, recipe books, and medical records were incinerated. The oldest surviving medical book in the library's current collection is Arnaldus de Villa Nova's *Herbolarium* (1491). Everything older was lost.
+The Franciscan Church and Monastery survived the earthquake itself, but **the subsequent fire destroyed much of the monastery complex, including its great library.** Centuries of accumulated manuscripts, pharmaceutical texts, recipe books, and medical records were incinerated. The monastery describes most of the early pharmacy documentation as lost with its archive and library; it does not establish that every pre-1491 medical text was destroyed. [Official museum account](https://malabraca.com/muzej/).
 
 This was not the last time the monastery was nearly destroyed. During the Siege of Dubrovnik in 1991-1992, the complex sustained 51 direct hits from projectiles. The library was severely damaged again. The World Monuments Fund supported the subsequent restoration.
 
-The pharmacy survived. The building survived. The recipes, passed down orally and through whatever fragments remained, survived in degraded form. But the comprehensive medieval archive was gone.
+The pharmacy continued operating. The surviving recipe collection preserves a long working tradition, while the loss of early documentation limits reconstruction of individual formula histories.
 
 **Except for one book that had already left Ragusa.**
 
@@ -423,13 +467,13 @@ A hoaxer optimizing for mystique writes one perfect, enigmatic page. A pharmacis
 
 The manuscript is organized like a working pharmacy's filing system:
 
-**Herbal A (f1-f57): The Ingredient Catalog.** Each page is one plant. The text next to the illustration is basically a product label: "This one, use the oil, soak it, combine with bone preparation, dose this much." Short entries. The plant picture is the point. It's a field guide crossed with a quick-reference card. "Here's what it looks like, here's what you do with it." Some pages mention exotic imports: storax resin shows up on f13r (a tree sap from the eastern Mediterranean, used in medieval wound care), rosewater on f13v.
+**Herbal A (f1-f57): The Ingredient Catalog.** Each page is one plant. The text next to the illustration is basically a product label: "This one, use the oil, soak it, combine with bone preparation, dose this much." Short entries. The plant picture is the point. It's a field guide crossed with a quick-reference card. "Here's what it looks like, here's what you do with it." The current emitted-stem concordance identifies rose/rosewater candidates on f9v, f105v and f115v. The earlier f13v rosewater attribution is not reproduced by this compiler.
 
 **Herbal B / "Astronomical" (f65-f73): Extraction and Processing Reference.** Heavier on liquid work. Lots of straining, infusing, combining. The circular diagrams probably aren't star charts. They're process diagrams or seasonal calendars for when to harvest and process. "Extract this in water, dose it, then combine" over and over.
 
 **Biological (f75-f84): The Application Guide.** This is where the body diagrams are. Massive amounts of soaking and cooking. This section is about preparing compounds for external use. The "nymphs" are application targets. F84v literally says **dolor** (Latin: pain). So: "For pain: soak bone preparation, cook it, apply here." The drawings show WHERE on the body.
 
-**Pharmaceutical (f87-f102): The Finished Formulary.** Specific recipes with dosing instructions. F88r is the famous one: bone oil, salt, water, storax, rosewater, all with "oral" marked on it. F102r has **orolaly** (literally Latin for "orally") as a label. Someone wrote "take this by mouth" on a recipe page. These are prescriptions.
+**Pharmaceutical (f87-f102): The Finished Formulary.** Specific recipes with dosing instructions. On f88r, the current compiler emits oil, water, salt and storax stems and detects `oral`; it emits no rose/rosewater stem. The exact identity of the preparation remains a separate comparison question. F102r has **orolaly** (literally Latin for "orally") as a label. Someone wrote "take this by mouth" on a recipe page. These are prescriptions.
 
 **Recipes/Stars (f103-f116): The Master Reference.** Massive pages. F108v alone has 3,400 words. This is where **ana** shows up ("equal parts"), standard pharmaceutical Latin for measuring. F114r has both **dolor** (pain) AND **oral** (by mouth). That's a pain remedy taken orally. The "star" decorations are probably recipe markers or category dividers, like the little symbols you'd put in a reference book to find sections fast.
 
@@ -479,7 +523,7 @@ The notorious "gallows" characters are **standard medieval abbreviation marks** 
 | **f** | /-pr-/ | priprava | preparation | 72.7% |
 | **p** | /-pl-/ | spoj | join/compound | 65.5% |
 
-**Why this matters:** Gallows appear MID-WORD because they're abbreviation marks, not letters. Gemini Pro spent 35 minutes trying to disprove this. It couldn't.
+**Proposed interpretation:** Mid-word gallows function as abbreviation or cluster marks. The paleographic evidence and the mapping are the basis for evaluating that interpretation.
 
 ### Layer 3: STEMS & SUFFIXES
 
@@ -558,26 +602,48 @@ From the paper, Section 4.3:
 
 > "If the word 'kost' (bone) does not cluster significantly in pharmaceutical sections, the Croatian hypothesis would be rejected."
 
-**Result:** "Kost" appears 2,000+ times. It clusters in pharmaceutical and biological sections, exactly where bone-derived ingredients (calcium compounds, bone meal) appear in medieval apothecary texts.
-
-**The hypothesis survives falsification.**
+**Current count:** The recipe decoder emits `kost` 20 times and `ost` 3,599
+times in the published input union. The preferred-LSI comparison gives 15 and
+2,618 respectively. These are separate stem forms, and Latin-prefix detections
+are a further separate field. A clustering test must declare which forms,
+source selection and denominator it uses. The historical falsification result
+is not recomputed by this count audit.
 
 ---
 
 ## Validation Results
 
-| Metric | Result |
-|--------|--------|
-| Token coverage | **92.1%** |
-| Known morphemes | 141 |
-| CATMuS stem match | 68.6% |
-| Native speaker confirmed | ✓ |
-| Spatial correlation | ✓ (p<0.001) |
-| Croatian frequency correlation | r=0.613 |
-| Phonotactic validity | 100% |
-| V27 triple provenance lock | **11 ingredients** (3 sources) |
-| Paleographic hand analysis | Fluent writer, zero abbreviation marks on gallows, stroke fusion confirmed |
-| Action/procedure terms | **91** (Antidotarium match) |
+### Current recipe compiler: reproduced 23 November 2026
+
+| Measure | Published recipe inputs | Preferred-LSI comparison |
+|---|---:|---:|
+| Source identifiers | 244, including aliases | 226 |
+| Decoder tokens | 48,379 | 36,959 |
+| Match score at least 0.70 (`fully_resolved`) | 30,954 | 23,686 |
+| Match score 0.30 to below 0.70 (`partially_resolved`) | 15,624 | 11,882 |
+| Combined coverage | **46,578 / 48,379 = 96.2773%** | **35,568 / 36,959 = 96.2364%** |
+| Below 0.30 (`unknown`) | 1,801 | 1,391 |
+| No unmatched residue | 12,707 (26.2655%) | 9,897 (26.7783%) |
+
+The score is a parser match measure, rounded to two decimals, with a separate
+exact-Latin case. The program's `fully_resolved` label permits unmatched
+characters: 18,247 tokens in that category still have residue in the published
+extraction. None of these percentages is a measured probability that the
+translation is correct.
+
+The lexicon has **22 operators, 304 stems, 22 suffixes, 4 state markers and 10
+Latin entries: 362 family entries, 336 distinct keys**. Its additional 36
+botanical reference entries are not used by the recipe decoder.
+
+All 244 committed pages match regenerated output. The baseline 45 tests passed;
+three regression cases added for missing/changed recipe pages and changed
+summary data also pass. The structural lexicon audit reports zero failures
+and 21 warnings. [Full receipts and definitions](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md).
+
+The historical 92.1% analysis uses a different substring-coverage method.
+`coverage_v36b.py` still references `/home/claude/word_freq.csv`, so it is not
+the command used for the current numbers. The earlier blind-decode and other
+validation reports below retain their own configurations and metrics.
 
 ### Latin Pharmaceutical Vocabulary Discovered
 
@@ -604,89 +670,95 @@ See: [Latin Pharmaceutical Vocabulary Analysis](analysis/LATIN_PHARMACEUTICAL_VO
 5. ✓ Script behaviors match Glagolitic, not Latin
 6. ✓ Positional statistics match shorthand conventions
 
-### Blind Decode Falsification Test
+### Blind Decode Falsification Tests
 
-Addresses the "degrees of freedom" criticism: does the pipeline produce Croatian-compatible output from any input, or only from Voynich text?
+The early v1 runs were inconclusive because of tokenization and test-design
+errors. The February v2 and June v3 results are historical snapshots. The
+23 November rerun supersedes their current headline numbers after fixing
+metadata and annotation leakage into the decoder and matching the real/null
+word boundaries. The full history remains in the
+[blind-decode log](validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md).
 
-**Test v1.0 (INCONCLUSIVE):** Tokenizer bug treated entire lines as single tokens. Fixed.
+### Test v3: Clean-Input Dual-Configuration Rerun (23 November 2026)
 
-**Test v1.1 (INCONCLUSIVE):** Shuffled word order, but decoder is position-independent (bag-of-words). Each token decodes in isolation, so shuffling has no effect. Test design error, not a decipherment failure. Correctly identifies the decoder as bag-of-words, which is expected for pharmaceutical shorthand.
+The test pins each CSV lexicon by SHA-256 and explicitly enables or disables
+compound decomposition. Both configurations use the same five folios and 30
+iterations for each of three baselines. The real inputs contain 92, 89, 79,
+387 and 213 tokens respectively, and every null sample has the same token
+count as its corresponding real input. The receipt records code and data
+hashes as well as the seed schedule.
 
-**Test v2: Vocabulary Specificity (PASSED, 5/5 folios discriminating)**
+| Configuration | Real coherence | Char-shuffled | Synthetic EVA | Random Latin | Discriminating folios |
+|---|---:|---:|---:|---:|---:|
+| Frozen February lexicon; no compound decomposition | 0.716 | 0.529 | 0.439 | 0.365 | **5/5** |
+| Current shipping lexicon; compound decomposition | 0.904 | 0.815 | 0.770 | 0.574 | **4/5** |
 
-Same frozen lexicon (SHA-256 verified). Same pipeline. Three non-Voynich baselines, 100 iterations each, 1500 total decodes:
+These are unweighted means across five folios. The ordering real >
+char-shuffled > synthetic EVA > random Latin holds on every folio under both
+configurations. Under the shipping configuration, f23v versus character
+shuffling has **z = 1.53** and empirical **p = 0.0323**. The declared rule
+requires both z ≥ 1.645 and p < 0.05, so that folio is labelled **WEAK**.
+
+These scores describe discrimination against the specified synthetic inputs.
+They are not calibrated translation accuracy. The permissive shipping
+configuration also matches many null tokens, so absolute coverage alone is
+insufficient evidence.
 
 ```bash
-python validation/blind_decode_test/run_test_v2.py      # Full (1500 decodes)
-python validation/blind_decode_test/run_test_v2.py --quick  # Quick (150 decodes)
-```
-
-| Input Type | Mean Coherence | vs Real (~0.70) |
-|------------|----------------|-----------------|
-| Real Voynich | 0.70 | -- |
-| Char-Shuffled | 0.55 | p < 0.01 |
-| Synthetic EVA | 0.45 | p < 0.01 |
-| Random Latin | 0.35 | p < 0.01 |
-
-Hierarchy holds on all five folios: Real > Char-shuffled > Synthetic EVA > Random Latin. The decoder produces significantly higher coherence on real Voynich text than on any non-Voynich input through the same frozen pipeline.
-
-Full test history including both failures: [`validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md`](validation/blind_decode_test/BLIND_DECODE_TEST_LOG.md)
-
-### Test v3: Dual-Configuration Re-Audit (PASSED, June 2026)
-
-A June 2026 fresh-clone audit found that the published v2 numbers could not be reproduced by default. Root cause: **configuration drift**. The v2 test ran against the frozen `lexicon.csv` (the pinned SHA `9c5e62...`) with no compound decomposition, but two later additions (`lexicon_v2.csv`, auto-preferred by the pipeline loader, and the `CompoundDecomposer`, auto-enabled when `unified_lexicon_v2.json` exists) silently changed the default configuration after publication. In keeping with this project's policy of preserving negative results, the full failure is documented, fixed, and re-tested.
-
-**The fix:** `run_test_v3.py` pins every configuration explicitly, **asserts the lexicon SHA-256 at load time** (a mismatch refuses to run), stamps the full configuration into every results record, and runs **both** configurations side by side with z-scores and empirical p-values (30 iterations per baseline).
-
-```
 python validation/blind_decode_test/run_test_v3.py
 ```
 
-| Configuration | Real (mean) | Char-Shuffled | Synthetic EVA | Random Latin | Discriminating |
-| ------------- | ----------- | ------------- | ------------- | ------------ | -------------- |
-| Frozen (Feb 2026) | 0.73 | 0.53 | 0.44 | 0.36 | **5/5 folios** |
-| Current shipping  | 0.90 | 0.81 | 0.76 | 0.57 | **5/5 folios** |
+[Current report and per-folio tables](validation/blind_decode_test/results_v3/V3_DUAL_CONFIG_REPORT.md)
+| [Machine-readable receipt](validation/blind_decode_test/results_v3/v3_dual_config_results.json)
 
-The hierarchy (real > char-shuffled > synthetic EVA > random Latin) holds on every folio under **both** configurations. All real-vs-null deltas are significant (weakest cell: z = 1.9, one-tailed p < 0.05; strongest: z = 37).
+### Transcription Robustness: Non-Discriminating
 
-**The honest caveat this audit forces:** absolute coverage is not evidence. Under the current permissive configuration, character-shuffled gibberish reaches ~94% coverage. The evidential weight of the decipherment lives in the real-vs-null **deltas**, the preserved hierarchy, and the external provenance locks (V27 / Ljekarna) that no lexicon flexibility can fit. Lexicon growth must be accompanied by null-baseline tracking: every future lexicon revision re-runs v3 and reports both configurations.
+The corrected test uses deterministic seeds and cleaned glyph inputs. It
+compares the response to i/n/r/l perturbations with a simple null decoder
+under the same perturbations. The 23 November rerun reproduces the corrected
+November results:
 
-Full report: [`results_v3/V3_DUAL_CONFIG_REPORT.md`](validation/blind_decode_test/results_v3/V3_DUAL_CONFIG_REPORT.md)
+| Noise rate | Real coverage | Real stem identity | Null coverage | Null stem identity |
+|---|---:|---:|---:|---:|
+| 5% | 0.9999 | 0.9512 | 1.0000 | 0.9446 |
+| 10% | 0.9996 | 0.9092 | 1.0000 | 0.8957 |
+| 20% | 0.9997 | 0.8321 | 1.0000 | 0.8101 |
 
-### Transcription Robustness Test (PASSED, June 2026)
+Both decoders satisfy the old flat-coverage/declining-identity fingerprint.
+The verdict is **NON-DISCRIMINATING**. This test measures response to input
+noise; it does not establish that the proposed interpretation is correct.
+The earlier positive fingerprint claim is superseded.
 
-EVA transcriptions impose discrete Latin-alphabet segmentation on connected cursive with hooks, loops, and modifiers. The paleographic hand analysis documented an inherent **5-20% i/n/r/l confusion floor** at manuscript resolution, so the decipherment must survive its own error band. This test injects i/n/r/l confusions at the documented rates and measures two metrics with deliberately different failure modes:
-
-| Noise rate | Coverage (structural) | Stem identity (semantic) |
-| ---------- | --------------------- | ------------------------ |
-| 0% (clean) | 0.986 | 1.000 |
-| 5%  | 0.987 | 0.947 |
-| 10% | 0.986 | 0.904 |
-| 20% | 0.986 | 0.821 |
-
-**The fingerprint:** an accept-anything decoder is flat on both metrics; a brittle cipher collapses on both. A layered real system is flat on structure and degrades **linearly** on semantics, which is exactly what ZFD does. The decoder is provably sensitive to letter identity at the meaning level while the morphological structure absorbs transcription noise. High-frequency ingredient identifications (kost: 2,000+, ol: 10,000+ tokens) are aggregate counts and remain statistically stable at the worst-case error floor, so the headline claims cannot be artifacts of transcription bugginess.
-
-```
+```bash
 python validation/transcription_robustness/run_robustness.py
 ```
 
-### Layer-Stratified Perturbation Test (June 2026: one positive, two honest negatives)
+[Robustness receipt](validation/transcription_robustness/robustness_results.json)
 
-The three-layer positional model makes a falsifiable prediction the flat-noise test can't check: an edit in a layer's home position should maximally disturb that layer's parsed output. This test makes **exactly one character edit per touched word** (identical dose per layer: one gallows swap, the word-initial operator char, or one suffix-zone i/n/r/l char) and measures conditionally, with class-aware operator comparison.
+### Layer-Stratified Perturbation: Parser Effect
 
-| Edited layer | n | Stem change | Op-class change | Suffix change |
-| ------------ | --- | ----------- | --------------- | ------------- |
-| Gallows | 350 | 0.314 | 0.083 | 0.094 |
-| Operator initial | 478 | 0.471 | **0.398** | 0.109 |
-| Suffix zone | 504 | 0.530 | 0.058 | 0.133 |
+The corrected test aligns each original word with its perturbed counterpart
+and compares real text with glyph-shuffled controls. The earlier comparison
+used misaligned word positions. Current real-text measurements are:
 
-**Confirmed:** operator information is positionally encoded. Word-initial edits flip the operator class at ~5-6x the rate of edits anywhere else in the word (40% vs 6-8%), a clean diagonal effect that a non-positional system has no reason to produce.
+| Edited layer | Edits | Stem change | Operator-class change | Suffix change |
+|---|---:|---:|---:|---:|
+| Gallows | 310 | 0.8387 | 0.2419 | 0.2516 |
+| Operator initial | 490 | 0.8980 | 0.7327 | 0.1816 |
+| Suffix zone | 510 | 0.8961 | 0.1275 | 0.1804 |
 
-**Not confirmed (preserved as negative results):** the gallows and suffix diagonals. Stem extraction is whole-word coupled (any edit can shift parse boundaries and reshuffle the residual stem), and the parsed suffix field is robust to all edit types. An earlier version of this test reported a large gallows-vs-suffix stem differential; that result was a word-segmentation artifact and is retracted in the test's own documentation. These negatives constrain how the three-layer claim should be stated: positional **operator** encoding is demonstrated; per-layer stem/suffix isolation is not.
+The operator diagonal ratio is **3.03 on real text versus 12.92 on shuffled
+glyphs**. The stronger control effect shows that this pattern follows the
+parser's positional rules; it does not independently establish those rules
+in the manuscript. None of the three layers passes the script's comparison
+with its shuffled control. The previous claim of confirmed positional
+operator encoding is retracted as manuscript evidence.
 
-```
+```bash
 python validation/transcription_robustness/run_layer_stratified.py
 ```
+
+[Layer-perturbation receipt](validation/transcription_robustness/layer_stratified_results.json)
 
 ### Decoy Language Test, Tier 1 (June 2026: null result, preserved in full)
 
@@ -694,7 +766,10 @@ The strongest standing criticism of any Voynich decipherment: "a flexible enough
 
 **Result: no Croatian advantage at this resolution.** All seven languages lift 3.5-4.9x over their own nulls with overlapping confidence intervals (Croatian 4.07 [3.06-5.56]; Latin nominally highest at 4.93). **What the uniform lift does show:** Voynichese character order is word-shaped; shuffling destroys ~75-80% of dictionary matching in every language, so a glyph-soup hoax lifts at ~1.0 and is strongly disfavored, even though no specific language is favored.
 
-**What this means for the claim structure:** language-specific evidence does not live at the raw wordlist layer. It lives in the external provenance locks (V27: import/domestic taxonomy, temporal gating, recipe continuity) that no mapping flexibility can fit, and in demonstrated structure (positional operator encoding). The paper's wording follows the evidence. Tier 2, the adversarial refit of the full mapping per decoy language followed by the downstream provenance locks, is the decisive version and is specced for autonomous implementation.
+The test does not identify a preferred language at this resolution. Historical
+comparisons require separate evaluation, and the corrected layer-perturbation
+test above cannot supply the missing language-specific evidence. The proposed
+Tier 2 refit across candidate languages remains future work.
 
 Full report: [`validation/decoy_language_test/DECOY_TEST_REPORT.md`](validation/decoy_language_test/DECOY_TEST_REPORT.md)
 
@@ -734,40 +809,44 @@ Full report: [`validation/corpus_comparison/CORPUS_COMPARISON_REPORT_v1.md`](val
 
 ### V27 Triple Provenance Lock (NEW: February 2026)
 
-> For the non-technical summary of this evidence, see [Why This Isn't Another Failed Theory](#why-this-isnt-another-failed-theory) above.
+This heading retains the name of the February report. That report compares
+Ragusan government records, a compiled pharmacy inventory and the proposed
+ZFD lexicon. Its inventory matches and old occurrence totals are historical
+results, not a count of emitted stems from the current recipe decoder.
 
-**The strongest single piece of evidence for Ragusan provenance.** Three independent, immutable historical datasets converge on the same pharmaceutical vocabulary:
+The current audit supplies the following reproducible stem counts. These
+numbers do not independently revalidate the V27 text extraction or the
+historical pharmacy inventory.
 
-1. **V27** (Monumenta Ragusina, Libri Reformationum Tomus III, 1359-1364): 156,914 words of Ragusan government chancery records. Council decisions, trade permits, customs activity. NOT a pharmacy text. Published 1895 by JAZU. Cannot be fitted by the decipherment model.
-2. **Ljekarna Male Brace** (est. 1317): The actual Franciscan pharmacy operating in Dubrovnik from 1317 to the present day. 34 historically documented ingredients.
-3. **ZFD Decoded Lexicon** (unified_lexicon_v3.json): 304 morphological stems extracted from the decoded Voynich Manuscript.
+| Ingredient/form | Published recipe input union | Preferred-LSI comparison |
+|---|---:|---:|
+| Rose/rosewater `ros` | 5, across 3 identifiers | 4, across 3 identifiers |
+| Storax `stor` | 132, across 82 identifiers | 108, across 72 identifiers |
+| Oil `ol` | 3,421 | 2,726 |
+| Oil `or` | 1,863 | 1,469 |
+| Water/liquid `ar` | 1,396 | 997 |
+| Water/liquid `al` | 1,437 | 1,000 |
+| Salt `sal` | 14 | 9 |
+| Salt `sar` | 17 | 13 |
+| Aloe `aloe` | 5 | 3 |
+| Wax `cer` / `cera` | 0 / 0 | 0 / 0 |
+| Honey `mel` | 0 | 0 |
+| Pepper `pip` / `piper` | 0 / 0 | 0 / 0 |
 
-**11 pharmaceutical ingredients appear in ALL THREE sources:**
+Dictionary membership, raw substrings, emitted stems and Latin-prefix matches
+are different counts. They cannot be combined into an eleven-ingredient
+current-corpus claim without an occurrence-level reconciliation. The previous
+91-term procedural total likewise belongs to a historical inventory; the
+current lexicon explicitly contains 36 stems categorized as `action`, alongside
+its 22 operator entries and other categories. This is a lexicon count, not 58
+independently established manuscript procedures.
 
-| Ingredient | V27 (trade record) | ZFD (decoded MS) | Ljekarna (pharmacy) |
-|-----------|-------------------|------------------|-------------------|
-| Salt | sal: 523x | sal: 62x | Wound cleansing, preservation |
-| Oil | oleum: 11x | ol: 10,972x (8.9% of tokens) | Ointment base |
-| Honey | mel: 72x | mel: confirmed | Antiseptic vehicle |
-| Wine | vinum: 63x | vin: confirmed | Tincture solvent |
-| Wax | cera: 20x | cer: confirmed | Rose Cream base |
-| Silver | argentum: 28x | arg: confirmed | Wound care |
-| Iron | ferrum: 22x | fer: confirmed | Filings for preparations |
-| Rose | rosa: 2x | ros: 101x across 43 folios | Flagship Rose Cream |
-| Pepper | piper: 2x | piper: 2x | Warming agent |
-| Aloe | aloe: 1x | aloe: confirmed | Purgative, wound care |
-| Water | aqua: 67x | ar/aq: confirmed | Universal solvent |
-
-An additional **26 ingredients** match between ZFD and Ljekarna (storax 288x, myrrh, camphor, sage, mint, rosemary, lavender, and 19 more). Their absence from V27 is the **correct economic taxonomy**: you do not import sage to Dalmatia (it grows wild), you do not tax a monk for picking rosemary in the garden, and individual exotic spice names appear in the specialized customs tariff ledger (Liber Statutorum Doane), not general council minutes. V27 documents the trade ROUTES (levante 53x, ponente 83x) through which these exotics arrived.
-
-**The absence pattern seals it:** New World ingredients (cocoa butter, vanilla) appear in Ljekarna's modern products but are absent from both V27 and ZFD. Correct for a pre-1450 manuscript. No random decipherment produces a vocabulary set that simultaneously locks to a specific port city's customs records and a specific pharmacy's ingredient lists.
-
-**The verb challenge:** The decoded lexicon also contains **91 action/procedure terms** that match the Antidotarium Nicolai recipe style (c. 1150): Recipe/uzmi (take), Misce/misc (mix), Tere/satri (grind), Coque/kuhai (cook), Cola/col (strain), Distilla/distil (distill), Unge/mazi (anoint), Infunde/infund (infuse), plus 22 operator prefixes encoding procedural instructions and 15 recipe-structure terms (ana, dragm, unc, pulv, unguent, syrup, emplast, etc.). The manuscript contains both the nouns (ingredients) and the verbs (preparations).
-
-**94% of Ljekarna historical ingredients are confirmed in at least one other source.**
-
-V27 source: [Internet Archive (monumentaspecta09unkngoog)](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt) | Full report: [`V27_TRIPLE_PROVENANCE_LOCK_REPORT.md`](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md) | Raw data: [`V27_INGREDIENT_CROSSMATCH.md`](validation/corpus_comparison/V27_INGREDIENT_CROSSMATCH.md)
-
+The modern product-to-folio register and its source dates are given in
+[The Ingredient Match](#the-ingredient-match). The named original reports are
+preserved for examination:
+[V27 report](validation/corpus_comparison/V27_TRIPLE_PROVENANCE_LOCK_REPORT.md)
+| [Original crossmatch](validation/corpus_comparison/V27_INGREDIENT_CROSSMATCH.md)
+| [Historical source text](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt).
 
 ### 15th Century Croatian Proof Kit
 
@@ -783,14 +862,17 @@ Five converging constraint layers independently identifying the decoded ZFD outp
 
 **Layer 5: Serbian Elimination Test.** Four independent kill shots: (1) Latin not Greek pharmaceutical vocabulary, (2) Western not Eastern contact language patterns, (3) absence of Serbian-specific morphological markers, (4) Dalmatian coastal rather than continental vocabulary profile.
 
-**Current confidence levels:**
+**Historical project estimates, not calibrated probabilities:**
+
+These inherited estimates belong to the earlier proof-kit argument. The
+November audit did not validate them as statistical probabilities.
 
 | Claim | Confidence | Evidence |
 |-------|------------|----------|
 | South Slavic | 95% | Grammar, operators, case system |
 | Croatian (not Serbian) | 92% | Latin loans, Western contact, morphology |
 | Dalmatian coastal | 87% | Bilingual mixing, Italian code-switching |
-| Ragusan specifically | 91% | V27 triple provenance lock (11 ingredients in trade records + pharmacy + MS), speciarii/apotheca, documented pharmaceutical infrastructure |
+| Ragusan specifically | 91% | Historical V27 comparison, speciarii/apotheca and pharmaceutical infrastructure; current stem counts are reported separately above |
 | Pharmaceutical register | 97% | 4x suffix concentration, register-controlled JSD |
 | Early 15th century | 82% | Zero Italian loanwords, ch- conventions, pre-standardization |
 
@@ -827,14 +909,14 @@ The ZFD has been validated against 14 independent manuscripts and corpora spanni
 
 | # | Source | Date | Words | What It Proves |
 |---|--------|------|-------|---------------|
-| 1 | **Monumenta Ragusina V27** (Libri Reformationum Tomus III) | 1359-1364 | 156,914 | Triple provenance lock: 11 ingredients in customs records + pharmacy + decoded MS. Economic geography validated. [Internet Archive](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt) |
+| 1 | **Monumenta Ragusina V27** (Libri Reformationum Tomus III) | 1359-1364 | 156,914 | Historical administrative/commodity comparison; see the current emitted-stem audit above. [Internet Archive](https://archive.org/download/monumentaspecta09unkngoog/monumentaspecta09unkngoog_djvu.txt) |
 | 2 | **Beinecke MS 650 Pharmamiscellany** | 15th c. | ~30,000 | 55-page Latin apothecary manual. Recipe structure, abbreviation conventions, and verb inventory match ZFD morphology. Antidotarium-style format confirmed. |
 | 3 | **Vinodolski Zakonik** (Vinodol Code) | 1288 | ~8,000 | Oldest Croatian legal codex. Shared function words (da, od, po, ko, sam, to). Grammar baseline. JSD = 0.28 vs ZFD. |
 | 4 | **Dundo Maroje** (Marin Drzic) | 1551 | ~25,000 | Ragusan comedy. 9 Italian loanwords + 6 stems vs ZFD's zero. Proves ZFD predates Venetian cultural influence (pre-1450). Register-controlled JSD: ZFD -ol suffix at 30x the rate. |
 | 5 | **CATMuS Medieval Dataset** | 8th-16th c. | 160,000+ lines | 200+ manuscripts from Ecole nationale des chartes. 68.6% ZFD stem match against medieval Latin pharmaceutical vocabulary. |
 | 6 | **Corpus of Old Slavic Texts** | 11th c. | 19 MSS | Old Bulgarian/Old Russian comparative baseline. Establishes South Slavic vs East Slavic differentiation. |
 | 7 | **Sulek Imenik Bilja** | 1879 | Full lexicon | Croatian botanical nomenclature. Plant name cross-referencing for herbal section validation. |
-| 8 | **Ljekarna Male Brace ingredient records** | 1317-present | 34 historical ingredients | Franciscan pharmacy inventory. 94% of historical ingredients confirmed by at least one other source. |
+| 8 | **Ljekarna Male Brace ingredient records** | 1317-present | 34 historical ingredients | Historical compiled inventory; current products and folio candidates are separately sourced above. |
 
 ### Secondary/Supporting Texts
 
@@ -843,7 +925,7 @@ The ZFD has been validated against 14 independent manuscripts and corpora spanni
 | 9 | **Vetranovic** (poetry) | 1540s | Zero Italian loanwords (like ZFD), confirming pre-Venetian-influence temporal window. |
 | 10 | **Liber de Coquina** | 14th c. | Medieval cookbook. ZFD entropy profile matches "cookbook/recipe manual" register. |
 | 11 | **Apicius** | 4th-5th c. | Roman cookbook. Entropy profile comparison confirms instructional-manual statistical fingerprint. |
-| 12 | **Antidotarium Nicolai** | c. 1150 | Salerno School recipe format. ZFD's 91 procedural terms match the standard pharmaceutical verb set. |
+| 12 | **Antidotarium Nicolai** | c. 1150 | Salerno School recipe format. Historical comparison of proposed procedural vocabulary; not a current emitted-token count. |
 | 13 | **Croatian Botanical Glossary** (from Glagolitic ljekaruse) | Medieval | Plant morphology terms and action verbs. Cross-referenced against ZFD herbal section vocabulary. |
 | 14 | **Consolidated Scribal Lexicon** (from MS 650) | 15th c. | Full abbreviation conventions: suspension, contraction, special symbols, Tironian notes. Confirms ZFD shorthand is standard, not novel. |
 
@@ -873,50 +955,35 @@ Systematic physical examination of 40+ gallows instances, 15 'aiin' tokens, and 
 
 ```bash
 git clone https://github.com/denoflore/ZFD
-python -m pytest                                            # 45 tests: lexicon audit, decoder, byte-level reproduction
-python 06_Pipelines/lexicon_audit.py                        # canonical lexicon structural gate
-python 06_Pipelines/regenerate_corpus.py --check            # all 244 loci decode twice, byte-identical, no writes
-python 06_Pipelines/coverage_v36b.py
-python validation/run_all.py
-python validation/blind_decode_test/run_test_v3.py          # dual-config, SHA-asserted
+cd ZFD
+python -m pytest
+python 06_Pipelines/lexicon_audit.py
+python 06_Pipelines/regenerate_corpus.py --check
+python validation/compiler_audit/audit_current_corpus.py --output /tmp/zfd-audit.json
+```
+
+The current suite passes **78 tests**, including compiler, tokenizer and
+committed-output regressions. Check mode decodes all 244 identifiers
+twice, compares every rendered page with its committed file, checks for
+unexpected recipe files and compares the complete summary. It performs no
+writes. The separate audit records input hashes, both source-selection
+measurements and a folio-level stem concordance.
+
+The November dual-configuration blind-decode rerun uses the separate `ZFDPipeline`
+implementation and its CSV lexicons. Its results must retain those config
+labels rather than being attributed to the recipe decoder above:
+
+```bash
+python validation/blind_decode_test/run_test_v3.py
 python validation/transcription_robustness/run_robustness.py
 ```
 
-All data and code provided for independent verification. The translation
-corpus itself is reproducible: every committed page under
-`translations/recipes/` regenerates byte-identically from the EVA sources
-and lexicon in this repository, and the test suite fails if it stops
-being true.
+[Integrated audit](validation/compiler_audit/INTEGRATION_2026-11-23.md)
+| [Recipe decoder definitions](validation/compiler_audit/COMPILER_AUDIT_2026-11-23.md).
 
 ---
 
-## Independent Validation
 
-**📄 [Read the full adversarial validation report →](papers/S8_PREEMPTIVE_PEER_REVIEW.md)**
-
-The ZFD has been subjected to an eight-turn adversarial stress test by Gemini Pro 3, which attempted to falsify the hypothesis across five independent domains: paleography, linguistics, information theory, medieval medicine, and spatial correlation.
-
-**The agent could not kill it.**
-
-| Turn | What Gemini Tried | What Happened |
-|------|------------------|---------------|
-| 1-2 | Standard critique framework | Addressed with CATMuS data and falsification criteria |
-| 3 | Internal logic attack ("Socratic Audit") | Two concessions extracted; three genuine requirements met |
-| 4 | Shannon entropy "kill shot" + zodiac labels | All points rebutted with primary sources |
-| 5 | Recycled Turn 4, fabricated Sagittarius data | Fabrication exposed via Stolfi label database |
-| 6 | **Independently ran spatial correlation on f88r** | **POSITIVE.** Labels match apparatus. Full concession. |
-| 7 | Audited complete Interlinear Quadrilingual | **CONFIRMED.** Translation verified across 201 folios. |
-| 8 | Full repository audit (all 5 modules) | **CONFIRMED.** All modules validated. |
-
-Final assessment from Gemini Pro 3:
-
-> *"The Zuger Functional Decipherment has passed every adversarial stress test I have thrown at it. Paleography: Confirmed. Medical Logic: Confirmed. Statistical Architecture: Confirmed. Spatial Correlation: Confirmed."*
-
-> *"The Voynich Manuscript is no longer an 'unsolvable mystery.' It is a 15th-Century Croatian Glagolitic Apothecary Manual."*
-
-**If you are preparing a critique, check [Section 7 of S8](papers/S8_PREEMPTIVE_PEER_REVIEW.md#7-reviewer-quick-reference-objection-routing-table) first.** Your objection has likely already been raised, tested, and answered with primary sources.
-
----
 
 🇭🇷 **Jebote, uspjeli smo!** 🇭🇷
 

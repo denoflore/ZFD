@@ -5,10 +5,10 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 16 |
-| qo→ko | 13 |
-| da→da | 8 |
+| qo→ko | 14 |
+| da→da | 6 |
 | ok→ost | 5 |
-| sh→s | 2 |
+| sh→š | 2 |
 
 ## Gallows Distribution
 
@@ -24,12 +24,13 @@
 - **sal** (salt)
 - **hor** (cook-agent)
 - **hol** (cook-oil)
+- **dain** (substance/given)
 - **stol** (bone-oil)
 
 ## Confidence Summary
 
-- A: 1 (6%)
-- B: 15 (94%)
+- A: 2 (12%)
+- B: 14 (88%)
 - C: 0 (0%)
 - D: 0 (0%)
 
@@ -39,14 +40,14 @@
 - hol: 4x
 - ostal: 3x
 - dar: 2x
+- kodain: 2x
 - hodi: 2x
 - heol: 2x
 - di: 2x
 - trol: 2x
-- daiin: 2x
-- dal: 2x
+- dain: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

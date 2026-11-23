@@ -1,8 +1,8 @@
-# Folio f96v -- Paleographic Transcription
+# Folio f96v -- Automated ZFD Transcription
 
 **Section:** Pharmaceutical
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006245/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language A, Hand 4
 
 ---
 
@@ -10,28 +10,29 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plsheoas. seeor. koeplsheodi. odar. ohplleo. |. oplar. ysar?asod | C | psheoas.sheeor.qoepsheody.odar.ocpheoopar.ysar!asod |
-| L2 | ytrear. ytreor. olchei. dtreodoiin. |. saro. |. koches. ycheom | B | ytear.yteor.olcheey.dteodoiinsaroqoches.ycheom |
-| L3 | dcheotreos. hplleos. sor. hhtrrosi. |. htrr. |. ytrchei. daiin | B | dcheoteos.cpheos.sor.chcthosycthytchey.daiin |
-| L4 | dsheos. sei. treo. htrri. htrreododi | B | dsheos.sheey.teo.cthy.ctheodody |
-| L5 | trohstri. htrrei. hstreeodi. ar. hey?stei. | | B | tockhy.cthey.ckheeody.ar.chey!key |
-| L6 | ytreeodi. treodar. alchei. si. | | B | yteeody.teodar.alchey.sy |
-| L7 | seodal. hor. ori. ctrol. | | B | sheodal.chor.ory.ctol |
-| L8 | ychei. hstreol. daiin. s. | | B | ycheey.ckheol.daiin.s |
-| L9 | ?eol. hstreor. heor. ain. | | B | !eol.ckheor.cheor.aiin |
-| L10 | htrreor. oral. hor. hstrei. | | B | ctheor.oral.chor.ckhey |
-| L11 | sar. os. hehstrei. sohtrrh. | | B | sar.os.checkhey.socthh |
-| L12 | sosar. heesteo. dai?n. | | C | sosar.cheekeo.dai!n |
+| L1 | plšeoas. šeeor. koeplšeodi. odar. ohpleo \| oplar. isarasod | B | psheoas.sheeor.qoepsheody.odar.ocpheo \| opar.ysar!asod |
+| L2 | itrear. itreor. olhei. dtreodoiin \| saro \| kohes. iheom | B | ytear.yteor.olcheey.dteodoiin \| saro \| qoches.ycheom |
+| L3 | dheotreos. hpleos. sor. hhtrosi \| htr \| itrhei. dain | B | dcheoteos.cpheos.sor.chcthosy \| cth \| ytchey.daiin |
+| L4 | dšeos. šei. treo. htri. htreododi | B | dsheos.sheey.teo.cthy.ctheodody |
+| L5 | trohsti. htrei. hsteeodi. ar. heistei \| | B | tockhy.cthey.ckheeody.ar.chey!key \| |
+| L6 | itreeodi. treodar. alhei. si \| | B | yteeody.teodar.alchey.sy \| |
+| L7 | šeodal. hor. ori. ctrol \| | B | sheodal.chor.ory.ctol \| |
+| L8 | ihei. hsteol. dain. s \| | B | ycheey.ckheol.daiin.s \| |
+| L9 | eol. hsteor. heor. ain \| | B | !eol.ckheor.cheor.aiin \| |
+| L10 | htreor. oral. hor. hstei \| | B | ctheor.oral.chor.ckhey \| |
+| L11 | sar. os. hehstei. sohtrh \| | B | sar.os.checkhey.socthh \| |
+| L12 | sosar. heesteo. dain \| | B | sosar.cheekeo.dai!n \| |
 | L13 | soi. sar. heor | B | soy.sar.cheor |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 11 lines
-- **C:** 2 lines
+- **B:** 13 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

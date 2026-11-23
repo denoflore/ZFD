@@ -1,6 +1,24 @@
 # Changelog
 
+## 23 November 2026: Compiler Integration and Measurement Corrections
+
+- Incorporated the 21 November transcription compiler fixes and regenerated corpus from PR #8.
+- Corrected anchor-score comma boundaries: **621/735 (84.4898%)** across all 129 anchor rows, replacing the incomplete **517/617 (83.8%)** denominator.
+- Corrected report parsing order: **20,894 operator detections** and **34,204 suffix detections** in 37,785 tokens.
+- Distinguished **203 packages / 5,194 JSONL rows** from complete source-text coverage. Preserved the manual anchors and documented f102v's **38 versus 62** row/source-line gap and the retained diagram/text stubs.
+- Fixed metadata, annotation and drawing-boundary handling in the shared CSV-pipeline tokenizer. Null generators now use the same effective words; the v3 run records code/data hashes and generates its Markdown report from the JSON results.
+- Reran v3 with 30 iterations per baseline: frozen lexicon **5/5**, shipping configuration **4/5** folios discriminating. The shipping f23v character-shuffle comparison has z = **1.53**, below the declared 1.645 threshold. The mean-score hierarchy holds in both configurations.
+- Reproduced the corrected robustness verdict **NON-DISCRIMINATING** and retracted the earlier operator-diagonal claim as manuscript evidence: the ratio is **3.03** on real text and **12.92** on shuffled glyphs.
+- Audited the separate recipe decoder: **46,578/48,379 = 96.2773%** canonical parser coverage and **35,568/36,959 = 96.2364%** on the preferred-LSI extraction. These are partial-match-inclusive coverage metrics.
+- Strengthened the committed-output gate to detect missing, changed and unexpected recipe files and changed summaries. All 244 recipe files remain reproducible.
+- Updated the Franciscan pharmacy product/folio register, source dates and unresolved formulation history. Removed unsupported substitution claims and AI comparison/independent-validation rhetoric.
+
+Current entry point: [Integrated audit](validation/compiler_audit/INTEGRATION_2026-11-23.md).
+
 ## v4.3.0 - June 9, 2026 (Validation Audit: Config Pinning + Robustness)
+
+**Historical entry:** the robustness fingerprint, positional-operator claim and
+shipping 5/5 blind-decode result below are superseded by the 23 November audit.
 
 ### v4.3.2 addendum (same day)
 - **New decoy language test, Tier 1** (`validation/decoy_language_test/`):
@@ -172,16 +190,16 @@ This document tracks the evolution of the decipherment from initial hypothesis t
 ### v4.0 - February 3, 2026
 **"Complete Inventory"**
 
-- **Coverage**: 94.7% → **92.1%** (+2.1 percentage points)
+- **Historical corrected coverage:** **92.1%**. The former positive-change annotation was inconsistent with the stated 94.7% baseline.
 - **Known morphemes**: 94 → **141** (+47)
 
-**Why coverage increased:**
+**Inventory additions in this version:**
 
 Three validated sources contributed new morphemes:
 
 1. **Latin Pharmaceutical Vocabulary** (+11 morphemes): Discovery of bilingual macaronic layer — `oral`/`orolaly` (oralis/oraliter), `dolor`, `ana`, `fac`, `dent`, `rad`, `foli`, `oleo`. Cross-validated against 15th-century apothecary manual.
 
-2. **Spatial Correlation Terms** (+3 morphemes): Independent testing on f88r by Gemini Pro 3 confirmed `ostol` (bone oil, on distillation vessel), `oldar` (oil dose), `hetr` (heated). See S8 Preemptive Peer Review.
+2. **Spatial Correlation Terms** (+3 morphemes): The project review of f88r added proposed readings `ostol` (bone oil), `oldar` (oil dose) and `hetr` (heated). This records how the entries entered the inventory; it is not independent validation of those meanings.
 
 3. **Lexicon v3.6 Confirmed Fills** (+33 morphemes): CONFIRMED entries in formal lexicon that were omitted from v3.6b pipeline — documented suffixes (`ey`, `an`, `on`, `en`, `om`, `em`, `di`), expanded stem variants, clusters, and particles.
 
@@ -297,7 +315,6 @@ Comparing Hrvoje's Missal (1404) to Voynich f88r revealed consistent stroke logi
 | Feb 2, 2026 | 94.7% coverage (v3.6) | Solution validated |
 | Feb 2, 2026 | Repository public | Open for verification |
 | Feb 2, 2026 | Nature submission | Tracking #2026-02-03422 |
-| Feb 2, 2026 | Adversarial AI validation | 8-turn Gemini Pro 3 stress test passed |
 | Feb 3, 2026 | **92.1% coverage (v4.0)** | +Latin pharma, +spatial correlation, +lexicon fills |
 | Feb 6, 2026 | Honesty audit (v4.1.0) | 96.8% corrected to 92.1%, overclaims fixed across 12 files |
 | Feb 6, 2026 | Data integrity fix (v4.1.1) | Lexicon purged, stems populated, dictionaries unified |

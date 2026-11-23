@@ -7,8 +7,8 @@
 | ch→h | 23 |
 | ot→otr | 18 |
 | ok→ost | 12 |
-| da→da | 5 |
-| sh→s | 3 |
+| da→da | 4 |
+| sh→š | 3 |
 | qo→ko | 1 |
 
 ## Gallows Distribution
@@ -23,13 +23,14 @@
 ## Validated Terms Present
 
 - **dar** (give-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 30 (91%)
+- B: 32 (97%)
 - C: 0 (0%)
-- D: 3 (9%)
+- D: 1 (3%)
 
 ## Most Frequent ZFD Words
 
@@ -46,4 +47,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

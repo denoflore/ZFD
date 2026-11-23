@@ -1,87 +1,77 @@
-# V3 Dual-Configuration Audit Report
+# V3 Clean-Input Dual-Configuration Audit
 
-**Date:** June 9, 2026
-**Status:** PASSED under both configurations (5/5 folios discriminating in each)
+**Run date:** 2026-11-23T11:17:38.694319
+**Iterations per baseline:** 30
 
-## What happened
+## Scope and correction
 
-A fresh-clone audit of the v2 vocabulary specificity test could not reproduce
-the published numbers (README table: real ≈ 0.70 coherence). Direct decodes of
-the same folios returned ≈ 0.90. Root-causing the discrepancy surfaced a
-configuration-drift failure:
+This rerun supersedes the June 2026 headline numbers. The shared EVA
+tokenizer now excludes file headings, comments and IVTFF annotations;
+drawing interruptions and commas remain word breaks. Null generators
+use the same word boundaries and assert equal real/null token counts.
 
-1. **The published v2 test (Feb 4, 2026) ran against the frozen `lexicon.csv`**
-   (SHA-256 `9c5e62…`, which is the hash pinned in the v2 results) **with no
-   compound decomposition.**
-2. **Two post-publication changes silently altered the default config:**
-   `ZFDPipeline` auto-prefers `lexicon_v2.csv` whenever it exists, and the
-   `CompoundDecomposer` auto-enables whenever `unified_lexicon_v2.json` exists.
-   Both files were added after the freeze.
-3. Result: no fresh clone could run the configuration the published numbers
-   came from, and the discrimination property had never been re-verified under
-   the shipping configuration.
+Both configurations use the current audited code. 'Frozen' identifies
+the February lexicon and disabled compound decomposition, not a frozen
+historical executable. Lexicon hashes are asserted; code, other data
+hashes, source hashes and deterministic seeds are recorded in the JSON.
 
-Verification was bidirectional: forcing `lexicon.csv` + disabling the compound
-decomposer reproduces the published f10r numbers within 1%
-(known_ratio 0.427 vs published 0.4157; coherence 0.7011 vs published 0.7043).
+A folio discriminates only if every baseline has z >= 1.645 AND
+empirical one-tailed p < 0.05. The empirical estimator is
+`p = (count(null_score >= real_score) + 1) / (iterations + 1)`.
+These are the existing per-comparison criteria,
+without a multiple-comparison correction. Coherence is the pipeline's
+scoring function, not a measured translation-accuracy percentage.
 
-## The fix
+## frozen_feb2026
 
-`run_test_v3.py` makes this class of failure structurally impossible:
+Frozen February 2026 v1 lexicon, no compound decomposition, using the current audited tokenizer and code.
 
-- Every configuration is **explicit** (lexicon file + compound flag).
-- The lexicon **SHA-256 is asserted at load time**. A mismatch refuses to run.
-- The **full configuration is stamped** into every results record.
-- **Both configurations run side by side** against identical baseline
-  generators with z-scores and empirical p-values (30 iterations/baseline).
+**Discriminating folios:** 5/5
+**Ordering hierarchy holds on every folio:** True
 
-## Results (June 9, 2026)
+| Folio | Tokens | Real coherence | Shuffled mean (z; p) | Synthetic mean (z; p) | Latin mean (z; p) | Verdict |
+|---|---:|---:|---|---|---|---|
+| f10r | 92 | 0.6891 | 0.4858 (2.75; 0.0323) | 0.3898 (3.71; 0.0323) | 0.3473 (5.88; 0.0323) | DISCRIMINATING |
+| f23v | 89 | 0.7608 | 0.5668 (2.55; 0.0323) | 0.3865 (4.47; 0.0323) | 0.3439 (7.39; 0.0323) | DISCRIMINATING |
+| f47r | 79 | 0.7041 | 0.4082 (3.34; 0.0323) | 0.3715 (3.98; 0.0323) | 0.3401 (6.58; 0.0323) | DISCRIMINATING |
+| f89r | 387 | 0.6906 | 0.5838 (19.93; 0.0323) | 0.5398 (6.00; 0.0323) | 0.4013 (37.97; 0.0323) | DISCRIMINATING |
+| f101v | 213 | 0.7370 | 0.5989 (6.03; 0.0323) | 0.5060 (4.89; 0.0323) | 0.3928 (10.83; 0.0323) | DISCRIMINATING |
 
-### Frozen configuration (reproduces Feb 2026)
 
-| Folio | Real coh | Shuffled (z) | Synthetic (z) | Latin (z) | Verdict |
-|-------|----------|--------------|---------------|-----------|---------|
-| f10r  | 0.701 | 0.511 (2.9) | 0.388 (3.8) | 0.345 (6.4) | DISCRIMINATING |
-| f23v  | 0.778 | 0.542 (2.7) | 0.375 (4.8) | 0.343 (7.9) | DISCRIMINATING |
-| f47r  | 0.707 | 0.411 (3.4) | 0.375 (4.0) | 0.342 (6.6) | DISCRIMINATING |
-| f89r  | 0.696 | 0.587 (16.9) | 0.540 (6.2) | 0.401 (37.3) | DISCRIMINATING |
-| f101v | 0.758 | 0.601 (6.2) | 0.501 (5.0) | 0.390 (10.5) | DISCRIMINATING |
+## current_shipping
 
-### Current shipping configuration (lexicon_v2 + compound decomposer)
+Default shipping configuration (auto-selected by ZFDPipeline): lexicon_v2.csv + compound decomposer.
 
-| Folio | Real coh | Shuffled (z) | Synthetic (z) | Latin (z) | Verdict |
-|-------|----------|--------------|---------------|-----------|---------|
-| f10r  | 0.906 | 0.784 (2.3) | 0.730 (3.2) | 0.562 (9.3) | DISCRIMINATING |
-| f23v  | 0.906 | 0.787 (1.9) | 0.724 (3.2) | 0.562 (9.0) | DISCRIMINATING |
-| f47r  | 0.904 | 0.765 (2.2) | 0.724 (3.2) | 0.562 (8.9) | DISCRIMINATING |
-| f89r  | 0.906 | 0.850 (15.5) | 0.838 (7.6) | 0.587 (33.3) | DISCRIMINATING |
-| f101v | 0.901 | 0.851 (3.0) | 0.804 (2.4) | 0.583 (17.3) | DISCRIMINATING |
+**Discriminating folios:** 4/5
+**Ordering hierarchy holds on every folio:** True
 
-Hierarchy (real > char-shuffled > synthetic EVA > random Latin) holds on all
-five folios under both configurations.
+| Folio | Tokens | Real coherence | Shuffled mean (z; p) | Synthetic mean (z; p) | Latin mean (z; p) | Verdict |
+|---|---:|---:|---|---|---|---|
+| f10r | 92 | 0.9020 | 0.7732 (2.00; 0.0323) | 0.7356 (3.17; 0.0323) | 0.5688 (10.86; 0.0323) | DISCRIMINATING |
+| f23v | 89 | 0.9006 | 0.8262 (1.53; 0.0323) | 0.7338 (3.01; 0.0323) | 0.5623 (9.09; 0.0323) | WEAK |
+| f47r | 79 | 0.9026 | 0.7687 (2.13; 0.0323) | 0.7267 (3.12; 0.0323) | 0.5621 (8.80; 0.0323) | DISCRIMINATING |
+| f89r | 387 | 0.9080 | 0.8532 (20.20; 0.0323) | 0.8395 (7.79; 0.0323) | 0.5876 (32.06; 0.0323) | DISCRIMINATING |
+| f101v | 213 | 0.9044 | 0.8531 (2.56; 0.0323) | 0.8120 (2.21; 0.0323) | 0.5867 (20.89; 0.0323) | DISCRIMINATING |
 
-## Honest interpretation
+- **Threshold not met:** f23v / char_shuffled, z = 1.53, p = 0.0323.
 
-- **Absolute coverage is not evidence.** Under the current configuration,
-  character-shuffled gibberish reaches ~94% coverage and synthetic EVA ~91%.
-  The headline 92.1% morphological coverage figure must therefore be read
-  against these nulls: the evidential weight lives in the real-vs-null
-  **deltas**, their significance, and the preserved ordering hierarchy, plus
-  the external provenance locks (V27 / Ljekarna) that no lexicon flexibility
-  can fit.
-- **Discrimination survived the permissive configuration**, with smaller
-  effect sizes than the frozen configuration. The weakest cell is f23v vs
-  char-shuffled (z = 1.9, still significant at one-tailed 0.05).
-- **Recommendation carried forward:** lexicon growth must be accompanied by
-  null-baseline tracking. Any future lexicon revision re-runs v3 and reports
-  both configurations. A specificity budget (maximum allowed null coverage)
-  should gate compound-decomposer scoring changes.
+## Interpretation
+
+The hierarchy compares mean scores: real > character-shuffled >
+synthetic EVA > random Latin. A preserved hierarchy does not by
+itself mean every comparison meets the declared threshold. High
+absolute coverage on null inputs also limits what coverage can show.
+
+These results concern the CSV-lexicon ZFDPipeline. They are separate
+from recipe-decoder coverage and transcription-anchor agreement.
 
 ## Reproduce
 
-```
-python validation/blind_decode_test/run_test_v3.py          # full, 30 iters
-python validation/blind_decode_test/run_test_v3.py --quick  # 10 iters
+```bash
+python validation/blind_decode_test/run_test_v3.py
 ```
 
-Raw output: `results_v3/v3_dual_config_results.json` (config-stamped).
+The command regenerates this report and
+[v3_dual_config_results.json](v3_dual_config_results.json) together.
+The optional `--quick` run uses ten iterations and cannot meet p <
+0.05 with the empirical estimator; it is a smoke run, not the full test.

@@ -8,8 +8,8 @@
 | ok→ost | 8 |
 | ot→otr | 7 |
 | qo→ko | 6 |
-| sh→s | 5 |
-| da→da | 4 |
+| sh→š | 5 |
+| da→da | 2 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -23,6 +23,7 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **dar** (give-agent)
 - **stor** (bone-agent)
 
@@ -38,7 +39,7 @@
 - ain: 5x
 - ostain: 4x
 - or: 3x
-- daiin: 2x
+- dain: 2x
 - hesti: 2x
 - hdal: 2x
 - dar: 2x
@@ -47,4 +48,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

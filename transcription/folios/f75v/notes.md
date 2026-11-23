@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| qo→ko | 91 |
-| sh→s | 33 |
+| qo→ko | 92 |
+| sh→š | 33 |
 | ch→h | 28 |
-| da→da | 25 |
+| da→da | 23 |
 | ot→otr | 17 |
 | ok→ost | 13 |
 | q→k | 1 |
@@ -22,30 +22,31 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **dar** (give-agent)
 - **sal** (salt)
 
 ## Confidence Summary
 
-- A: 0 (0%)
-- B: 62 (89%)
-- C: 6 (9%)
-- D: 2 (3%)
+- A: 1 (1%)
+- B: 69 (99%)
+- C: 0 (0%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- ol: 14x
+- ol: 15x
+- kostain: 14x
 - kol: 13x
 - dal: 9x
 - kostedi: 8x
+- dain: 8x
 - hei: 8x
-- sei: 8x
-- kostain: 7x
+- šei: 8x
 - hedi: 7x
-- kostai?n: 6x
-- kostal: 6x
+- olhedi: 6x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

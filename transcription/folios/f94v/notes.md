@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
+| ot→otr | 14 |
 | qo→ko | 13 |
-| ot→otr | 11 |
-| ch→h | 10 |
-| ok→ost | 7 |
-| da→da | 4 |
-| sh→s | 4 |
+| ch→h | 11 |
+| ok→ost | 8 |
+| sh→š | 4 |
+| da→da | 2 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -23,6 +23,7 @@
 ## Validated Terms Present
 
 - **dar** (give-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
@@ -35,16 +36,16 @@
 
 - ol: 4x
 - otrei: 4x
+- ain: 3x
 - dar: 2x
+- kotrar: 2x
 - tram: 2x
 - eedi: 2x
-- otrchi: 2x
+- otrhi: 2x
 - otror: 2x
-- daiin: 2x
-- ar: 2x
-- ain: 2x
+- dain: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

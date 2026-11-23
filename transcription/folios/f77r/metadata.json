@@ -1,9 +1,10 @@
 {
   "folio": "f77r",
   "section": "biological",
-  "quire": "L-M (Rene) / XII-XIII (Beinecke)",
-  "currier_language": "A",
-  "currier_hand": "1",
+  "illustration_type": "biological",
+  "quire": "M (Rene) / XIII (Beinecke)",
+  "currier_language": "B",
+  "currier_hand": "2",
   "iiif_id": "1006212",
   "iiif_url": "https://collections.library.yale.edu/iiif/2/1006212/full/full/0/default.jpg",
   "condition": "Biological section with bathing/anatomical illustrations.",
@@ -11,6 +12,6 @@
     "type": "biological",
     "text_lines": 50
   },
-  "transcription_date": "2026-02-07",
-  "transcription_method": "Direct paleographic reading using ZFD 7-layer constraint stack with automated parsing"
+  "transcription_date": "2026-11-21",
+  "transcription_method": "Automated ZFD rule parsing (batch_transcribe.py) of the Takahashi (H) EVA transliteration in LSI_ivtff_0d.txt. Not a direct reading of the manuscript image."
 }

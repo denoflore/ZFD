@@ -6,10 +6,10 @@
 |----------|-------|
 | qo→ko | 12 |
 | ch→h | 7 |
-| sh→s | 6 |
+| sh→š | 6 |
 | ot→otr | 5 |
-| da→da | 5 |
 | ok→ost | 4 |
+| da→da | 3 |
 | q→k | 1 |
 
 ## Gallows Distribution
@@ -23,8 +23,10 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **hor** (cook-agent)
 - **dar** (give-agent)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 
 ## Confidence Summary
@@ -36,16 +38,16 @@
 
 ## Most Frequent ZFD Words
 
-- si: 2x
-- daiin: 2x
-- ystchi: 2x
+- ši: 2x
+- dain: 2x
+- isthi: 2x
 - dam: 2x
-- kotrchi: 2x
-- sol: 2x
+- kotrhi: 2x
+- šol: 2x
 - kosti: 2x
 - hosti: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

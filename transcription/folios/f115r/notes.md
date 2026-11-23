@@ -6,8 +6,8 @@
 |----------|-------|
 | qo→ko | 112 |
 | ch→h | 106 |
-| da→da | 21 |
-| sh→s | 19 |
+| sh→š | 19 |
+| da→da | 16 |
 | ot→otr | 12 |
 | ok→ost | 10 |
 | q→k | 2 |
@@ -25,13 +25,14 @@
 
 - **hor** (cook-agent)
 - **dar** (give-agent)
+- **dain** (substance/given)
 - **hol** (cook-oil)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 39 (87%)
-- C: 6 (13%)
+- B: 45 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
@@ -39,15 +40,15 @@
 - hei: 13x
 - hedi: 10x
 - ar: 9x
-- kotrchedi: 8x
-- sei: 6x
-- ain: 6x
+- kotrhedi: 8x
+- ain: 7x
+- dain: 7x
+- šei: 6x
+- kostain: 6x
 - rain: 6x
-- kostchedi: 6x
-- heodi: 5x
-- kostai?n: 5x
+- kosthedi: 6x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

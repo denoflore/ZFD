@@ -5,8 +5,8 @@
 | Operator | Count |
 |----------|-------|
 | ch→h | 21 |
-| sh→s | 17 |
-| da→da | 14 |
+| sh→š | 17 |
+| da→da | 11 |
 | ok→ost | 9 |
 | qo→ko | 8 |
 | ot→otr | 5 |
@@ -24,6 +24,7 @@
 ## Validated Terms Present
 
 - **dar** (give-agent)
+- **dain** (substance/given)
 - **hor** (cook-agent)
 
 ## Confidence Summary
@@ -37,8 +38,8 @@
 
 - dal: 5x
 - hesti: 3x
-- daiin: 3x
-- seodi: 3x
+- dain: 3x
+- šeodi: 3x
 - stal: 3x
 - s: 2x
 - dar: 2x
@@ -49,4 +50,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

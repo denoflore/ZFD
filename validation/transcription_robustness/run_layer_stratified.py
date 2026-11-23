@@ -11,41 +11,40 @@ ZFD claims Voynichese is a positional three-layer shorthand:
 That claim predicts DIFFERENTIAL sensitivity: an edit in a layer's home
 position should maximally disturb that layer's parsed output field.
 
-Design (v2, exposure-normalized)
---------------------------------
+Design (v3, aligned)
+--------------------
 Exactly ONE character edit per touched word, identical dose across layers:
   - gallows edit:   swap one gallows char (k/t/p/f cluster marks)
   - operator edit:  swap the word-initial operator char (q/o/d/s)
   - suffix edit:    swap one i/n/r/l char in the final-3 zone
-Measured conditionally (only touched words), against the clean decode,
-on three output fields: stem identity, operator class (class-aware via
-operators.json, so variant forms of one operator are not "changes"),
-and parsed suffix.
+Each edited word is decoded with pipeline.process_token and compared to
+the clean decode OF THE SAME WORD (process_token is context-free, so this
+equals the folio decode). Fields: stem identity, operator class
+(class-aware via operators.json), parsed suffix.
 
-A NOTE ON A RETRACTED EARLIER RESULT: a first version of this test used
-whitespace word-splitting on period-separated EVA and reported a large
-gallows-vs-suffix stem differential. That result was a segmentation
-artifact (most words were never perturbed) and is retracted. This file
-implements the corrected design. Negative results are preserved per
-project policy.
+Control: the same matrix on glyph-shuffled gibberish (same word lengths
+and glyph inventory). A diagonal only counts as evidence about the
+manuscript if it is stronger on the real text than on gibberish; a
+diagonal that gibberish also shows is a property of the parser.
 
-June 2026 result (matrix: rows = edited layer, cols = changed field)
---------------------------------------------------------------------
-                     stem     op_class   suffix
-    gallows edit     ~0.33    ~0.08      ~0.10
-    operator edit    ~0.48    ~0.40      ~0.11
-    suffix edit      ~0.52    ~0.08      ~0.12
+RETRACTION 1 (kept per project policy): a first version used whitespace
+word-splitting on period-separated EVA and reported a large
+gallows-vs-suffix stem differential. That was a segmentation artifact.
 
-CONFIRMED: operator information is positionally encoded. Word-initial
-edits flip the operator class at ~5-6x the rate of edits elsewhere in
-the word, which essentially never do.
-
-NOT CONFIRMED: the gallows and suffix diagonals. Stem extraction is
-whole-word coupled (any edit can shift parse boundaries and reshuffle
-the residual stem), and the parsed suffix field is robust to all edit
-types. These are documented as honest negatives; they constrain how the
-three-layer claim may be stated (positional operator encoding is
-demonstrated; per-layer stem/suffix isolation is not).
+RETRACTION 2 (2026-11 audit): v2 compared decoder token i with EVA word i.
+The decoder tokenizes the header ("=== Folio f10r ===" -> "folio", "fr";
+"[Text]" -> "text") and some comment-only fields as tokens, so token i was
+EVA word i-3 at the start of every folio, drifting further as comment-only
+fields added tokens (up to 12 positions on f89r). Every v2 measurement
+looked at a word several positions BEFORE the one that was edited. The v2 matrix
+(operator class change ~0.40 vs ~0.08, "5-6x") is an alignment artifact.
+Aligned, the real-text operator ratio is about 3.0-3.3x across seeds, and
+glyph-shuffled gibberish gives 10-13x: word-initial edits flip the
+operator class because the parser reads the operator from the word
+start, whatever the text is. Gallows edits also flip the operator ~25% of
+the time on real text (ok/ot operators contain a gallows), so "edits
+elsewhere essentially never do" does not hold. Current numbers live in
+layer_stratified_results.json.
 
 Usage:
     python validation/transcription_robustness/run_layer_stratified.py
@@ -60,11 +59,12 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 ROOT = HERE.parent.parent
-sys.path.insert(0, str(ROOT / "validation" / "blind_decode_test"))
+sys.path.insert(0, str(HERE))
 sys.path.insert(0, str(ROOT / "zfd_decoder" / "src"))
 
+from _common import stable_seed, clean_folio_text, words_of, shuffle_glyphs  # noqa: E402
 from pipeline import ZFDPipeline  # noqa: E402
-from decoder import decode_eva_text  # noqa: E402
+from tokenizer import Token  # noqa: E402
 
 FOLIOS = ["f10r", "f23v", "f47r", "f89r", "f101v"]
 EVA_DIR = ROOT / "voynich_data" / "raw_eva"
@@ -72,36 +72,9 @@ DATA_DIR = ROOT / "zfd_decoder" / "data"
 GALLOWS = "ktpf"
 OPS = "qods"
 SUFF = "inrl"
-
-
-def is_text_line(line: str) -> bool:
-    s = line.strip()
-    return bool(s) and not s.startswith("===") and not s.startswith("[")
-
-
-def words_of(text: str):
-    out = []
-    for line in text.splitlines():
-        if is_text_line(line):
-            out.extend(w for w in line.split(".") if w)
-    return out
-
-
-def rebuild(text: str, edited: dict) -> str:
-    out_lines, wi = [], 0
-    for line in text.splitlines():
-        if is_text_line(line):
-            ws = []
-            for w in line.split("."):
-                if w:
-                    ws.append(edited.get(wi, w))
-                    wi += 1
-                else:
-                    ws.append(w)
-            out_lines.append(".".join(ws))
-        else:
-            out_lines.append(line)
-    return "\n".join(out_lines)
+LAYERS = ["gallows", "operator", "suffix"]
+HOME_FIELD = {"gallows": "stem_change", "operator": "op_class_change", "suffix": "suffix_change"}
+DIAGONAL_RATIO = 3.0
 
 
 def one_edit(w: str, layer: str, rng: random.Random):
@@ -129,98 +102,106 @@ def one_edit(w: str, layer: str, rng: random.Random):
     raise ValueError(layer)
 
 
+def run_matrix(pipeline, op_class, folio_words, tag):
+    def decode(w):
+        return pipeline.process_token(Token(id="x", eva=w))
+
+    def opc(t):
+        f = t.operator or ""
+        return op_class.get(f, f)
+
+    res = {L: {"stem": 0, "op": 0, "suf": 0, "n": 0} for L in LAYERS}
+    for folio, ws in folio_words.items():
+        for L in LAYERS:
+            rng = random.Random(stable_seed(tag, folio, L))
+            for w in ws:
+                e = one_edit(w, L, rng)
+                if e is None:
+                    continue
+                a, b = decode(w), decode(e)
+                d = res[L]
+                d["n"] += 1
+                d["stem"] += a.stem != b.stem
+                d["op"] += opc(a) != opc(b)
+                d["suf"] += (a.suffix or "") != (b.suffix or "")
+    matrix = {}
+    for L in LAYERS:
+        d = res[L]
+        n = max(d["n"], 1)
+        matrix[L] = {"n_edits": d["n"],
+                     "stem_change": round(d["stem"] / n, 4),
+                     "op_class_change": round(d["op"] / n, 4),
+                     "suffix_change": round(d["suf"] / n, 4)}
+    return matrix
+
+
+def diagonal_ratios(matrix):
+    out = {}
+    for L in LAYERS:
+        field = HOME_FIELD[L]
+        diag = matrix[L][field]
+        off = max(matrix[o][field] for o in LAYERS if o != L)
+        out[L] = round(diag / max(off, 1e-9), 2)
+    return out
+
+
 def main():
     lex = DATA_DIR / "lexicon_v2.csv"
     pipeline = ZFDPipeline(data_dir=str(DATA_DIR), lexicon_file=str(lex))
     op_class = {e["eva"]: e["type"] for e in json.loads(
-        (DATA_DIR / "operators.json").read_text())["operators"]}
+        (DATA_DIR / "operators.json").read_text(encoding="utf-8"))["operators"]}
 
-    def opc(token):
-        f = token.get("operator", "") or ""
-        return op_class.get(f, f)
-
-    layers = ["gallows", "operator", "suffix"]
-    res = {L: {"stem": 0, "op": 0, "suf": 0, "n": 0} for L in layers}
-
+    real_words, gib_words = {}, {}
     for folio in FOLIOS:
-        eva = (EVA_DIR / f"{folio}.txt").read_text()
-        clean = decode_eva_text(eva, folio, pipeline=pipeline)
-        ct = clean["tokens"]
-        ws = words_of(eva)
-        n_align = min(len(ct), len(ws))
-        if len(ct) != len(ws):
-            print(f"  [align note] {folio}: {len(ct)} tokens vs "
-                  f"{len(ws)} EVA words; using first {n_align}")
-        for L in layers:
-            rng = random.Random(hash((folio, L)) % 999983)
-            edited = {}
-            for wi in range(n_align):
-                e = one_edit(ws[wi], L, rng)
-                if e is not None:
-                    edited[wi] = e
-            r = decode_eva_text(rebuild(eva, edited), folio,
-                                pipeline=pipeline)
-            pt = r["tokens"]
-            m = min(len(pt), n_align)
-            for wi in edited:
-                if wi >= m:
-                    continue
-                res[L]["n"] += 1
-                if ct[wi].get("stem", "") != pt[wi].get("stem", ""):
-                    res[L]["stem"] += 1
-                if opc(ct[wi]) != opc(pt[wi]):
-                    res[L]["op"] += 1
-                if ct[wi].get("suffix", "") != pt[wi].get("suffix", ""):
-                    res[L]["suf"] += 1
+        text = clean_folio_text((EVA_DIR / f"{folio}.txt").read_text(encoding="utf-8"))
+        real_words[folio] = words_of(text)
+        gib_words[folio] = words_of(shuffle_glyphs(text, random.Random(stable_seed(folio, "shuffle"))))
+
+    real = run_matrix(pipeline, op_class, real_words, "real")
+    gib = run_matrix(pipeline, op_class, gib_words, "gibberish")
+    r_ratio, g_ratio = diagonal_ratios(real), diagonal_ratios(gib)
+
+    verdict = {}
+    for L in LAYERS:
+        passes = r_ratio[L] > DIAGONAL_RATIO
+        verdict[L] = {
+            "real_ratio": r_ratio[L],
+            "gibberish_ratio": g_ratio[L],
+            "diagonal_on_real_text": passes,
+            "evidence_about_manuscript": passes and r_ratio[L] > g_ratio[L],
+        }
 
     results = {
         "test_date": datetime.datetime.now().isoformat(),
-        "design": "exposure-normalized, one edit per touched word, "
-                  "conditional measurement, class-aware operators",
+        "design": "v3: one edit per touched word, per-word aligned decode, "
+                  "class-aware operators, glyph-shuffled gibberish control",
         "config": {
             "lexicon_file": lex.name,
-            "lexicon_sha256": hashlib.sha256(
-                lex.read_bytes()).hexdigest(),
+            "lexicon_sha256": hashlib.sha256(lex.read_bytes()).hexdigest(),
             "compound_decomposer": pipeline.compound is not None,
+            "seeding": "sha256(tag|folio|layer)",
+            "diagonal_ratio_threshold": DIAGONAL_RATIO,
         },
-        "matrix": {},
+        "matrix": real,
+        "gibberish_matrix": gib,
+        "verdict": verdict,
     }
-    print(f"{'edited layer':14}{'n':>6}{'stem_change':>13}"
-          f"{'op_class_change':>17}{'suffix_change':>15}")
-    for L in layers:
-        d = res[L]
-        n = max(d["n"], 1)
-        row = {
-            "n_edits": d["n"],
-            "stem_change": round(d["stem"] / n, 4),
-            "op_class_change": round(d["op"] / n, 4),
-            "suffix_change": round(d["suf"] / n, 4),
-        }
-        results["matrix"][L] = row
-        print(f"{L:14}{d['n']:>6}{row['stem_change']:>13.3f}"
-              f"{row['op_class_change']:>17.3f}"
-              f"{row['suffix_change']:>15.3f}")
 
-    op_diag = results["matrix"]["operator"]["op_class_change"]
-    op_off = max(results["matrix"]["gallows"]["op_class_change"],
-                 results["matrix"]["suffix"]["op_class_change"])
-    results["verdict"] = {
-        "operator_positionally_encoded": op_diag > 3 * op_off,
-        "operator_diagonal_ratio": round(op_diag / max(op_off, 1e-9), 1),
-        "gallows_diagonal_confirmed": False,
-        "suffix_diagonal_confirmed": False,
-        "summary": (
-            "Operator information is positionally encoded "
-            f"({op_diag:.0%} class change for word-initial edits vs "
-            f"{op_off:.0%} for edits elsewhere). Gallows and suffix "
-            "diagonals NOT confirmed: stem extraction is whole-word "
-            "coupled and the parsed suffix field is robust to all edit "
-            "types. Honest negatives preserved."),
-    }
-    print("\nVerdict:", results["verdict"]["summary"])
+    for name, m in [("REAL", real), ("GIBBERISH", gib)]:
+        print(f"\n{name}\n{'edited layer':14}{'n':>6}{'stem_change':>13}"
+              f"{'op_class_change':>17}{'suffix_change':>15}")
+        for L in LAYERS:
+            row = m[L]
+            print(f"{L:14}{row['n_edits']:>6}{row['stem_change']:>13.3f}"
+                  f"{row['op_class_change']:>17.3f}{row['suffix_change']:>15.3f}")
+    print("\nDiagonal ratios (home-field change / max other-layer change):")
+    for L in LAYERS:
+        v = verdict[L]
+        print(f"  {L:9} real {v['real_ratio']:>6}x  gibberish {v['gibberish_ratio']:>6}x  "
+              f"evidence about manuscript: {v['evidence_about_manuscript']}")
 
     out = HERE / "layer_stratified_results.json"
-    out.write_text(json.dumps(results, indent=2))
+    out.write_text(json.dumps(results, indent=2), encoding="utf-8")
     print(f"Results written to {out}")
 
 

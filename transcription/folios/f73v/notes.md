@@ -8,7 +8,7 @@
 | ok→ost | 13 |
 | ch→h | 13 |
 | qo→ko | 7 |
-| sh→s | 3 |
+| sh→š | 3 |
 | da→da | 1 |
 
 ## Gallows Distribution
@@ -27,21 +27,21 @@
 ## Confidence Summary
 
 - A: 1 (3%)
-- B: 27 (82%)
+- B: 29 (88%)
 - C: 3 (9%)
-- D: 2 (6%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - otreodi: 4x
-- ysteodi: 2x
+- isteodi: 2x
 - otredi: 2x
-- sedi: 2x
+- šedi: 2x
 - di: 2x
 - osteodi: 2x
-- ystei: 2x
+- istei: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

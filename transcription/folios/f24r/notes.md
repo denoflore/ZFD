@@ -6,9 +6,9 @@
 |----------|-------|
 | ch→h | 21 |
 | qo→ko | 14 |
-| da→da | 9 |
 | ok→ost | 6 |
-| sh→s | 4 |
+| da→da | 6 |
+| sh→š | 4 |
 | ot→otr | 3 |
 | q→k | 2 |
 
@@ -24,30 +24,31 @@
 ## Validated Terms Present
 
 - **hor** (cook-agent)
+- **dain** (substance/given)
 - **ostol** (bone oil)
 - **hol** (cook-oil)
 
 ## Confidence Summary
 
-- A: 0 (0%)
+- A: 1 (5%)
 - B: 19 (95%)
 - C: 0 (0%)
-- D: 1 (5%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - s: 6x
 - dal: 4x
-- daiin: 3x
+- dain: 3x
+- htrar: 3x
+- hei: 3x
 - hol: 3x
 - hor: 2x
 - heol: 2x
 - or: 2x
 - har: 2x
-- osti: 2x
-- i: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

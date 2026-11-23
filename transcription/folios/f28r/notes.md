@@ -4,12 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 9 |
-| ot→otr | 8 |
-| sh→s | 6 |
-| da→da | 5 |
+| ch→h | 11 |
+| ot→otr | 10 |
+| sh→š | 8 |
 | qo→ko | 5 |
 | ok→ost | 4 |
+| da→da | 1 |
 
 ## Gallows Distribution
 
@@ -21,8 +21,10 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
 - **dar** (give-agent)
 - **stol** (bone-oil)
+- **šol** (with-oil)
 
 ## Confidence Summary
 
@@ -33,16 +35,16 @@
 
 ## Most Frequent ZFD Words
 
-- daiin: 4x
-- htrrol: 4x
-- otrchor: 2x
-- sor: 2x
-- hotrchi: 2x
+- htrol: 5x
+- dain: 4x
+- otrhor: 2x
+- šor: 2x
+- hotrhi: 2x
 - otrol: 2x
 - otror: 2x
-- so: 2x
+- šo: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -203,7 +203,9 @@ For any Voynich word, apply these steps in order:
 
 ```
 1. OPERATOR DETECTION (word-initial, longest match first):
-   qo → ko | ch → h | sh → s/sh | da → da | ok → ost | ot → otr | q → k
+   qo → ko | ch → h | sh → š | da → da | ok → ost | ot → otr | q → k
+   (2026-11: sh is Croatian š, and ch/sh keep the same value mid-word;
+    y outside the suffix slot is i. See AUDIT_2026-11.md section D.)
 
 2. SUFFIX DETECTION (word-final, longest match first):
    aiin → ain | edy → edi | eey → ei | y → i | ol | ar | or | al |

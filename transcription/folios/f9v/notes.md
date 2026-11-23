@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 14 |
-| da→da | 9 |
+| ch→h | 15 |
 | qo→ko | 7 |
-| ot→otr | 4 |
-| sh→s | 2 |
+| ot→otr | 7 |
+| da→da | 4 |
+| sh→š | 2 |
 | ok→ost | 2 |
 
 ## Gallows Distribution
@@ -22,6 +22,8 @@
 
 ## Validated Terms Present
 
+- **dain** (substance/given)
+- **šol** (with-oil)
 - **hol** (cook-oil)
 - **hor** (cook-agent)
 
@@ -34,18 +36,18 @@
 
 ## Most Frequent ZFD Words
 
-- daiin: 7x
+- dain: 9x
 - hol: 3x
 - hor: 3x
 - otri: 3x
 - hstain: 2x
-- htrror: 2x
+- htror: 2x
 - di: 2x
+- htri: 2x
 - osti: 2x
 - stain: 2x
-- hi: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

@@ -1,8 +1,8 @@
-# Folio f41r -- Paleographic Transcription
+# Folio f41r -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006154/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language B, Hand 2
 
 ---
 
@@ -10,17 +10,17 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plchei. stedalei. osted. sestchei. |. oplshes. yplchd. kotrcheedi. ssta?steedi | B | pchey.kedaleey.oked.shekcheyopshes.ypchd.qotcheedy.shka!keedy |
-| L2 | ysteeo. alshei. ystedi. steshdi. di. |. dor. ycheosti. kosteed. hpli. kostedi. di | B | ykeeo.alshey.ykedy.keshdy.dydor.ycheoky.qokeed.chpy.qokedy.dy |
-| L3 | kost. ra?. y??estedi. ychdi. stchdi. |. kostedi. kostedi. sestchi. hesti. dali | B | qok.ra?.y!!ekedy.ychdy.kchdyqokedy.qokedy.shekchy.cheky.daly |
-| L4 | hdchi. ytrcheesti. yplchedi. schdi. |. ytredi. htrrei. hees. otrei. otral. dam | B | chdchy.ytcheeky.ypchedy.schdyytedy.cthey.chees.oteey.otal.dam |
-| L5 | kotrchi. sal. ytreedi. stchdi. |. dchedi. trchdi. dchedi. dalain | B | qotchy.sal.yteedy.kchdydchedy.tchdy.dchedy.dalain |
-| L6 | sedei. plolchedi. kostei. hestedi. ytrei. |. hstchod. |. yplchedpli. sepl?i. sedi | B | shedey.polchedy.qokeey.chekedy.yteychkchodypchedpy.shep!y.shedy |
-| L7 | plar?chdi. stchei. ytreedi. kosteodi. |. ystedi. hstedi. kostedi. hedi. kostedi | B | par!chdy.kchey.yteedy.qokeodyykedy.chkedy.qokedy.chedy.qokedy |
-| L8 | dair. hedi. hhstri. kostei. lchdi. |. kostedi. kostyl. hested?. kodor. am | B | dair.chedy.chckhy.qokey.lchdyqokedy.qokyl.cheked!.qodor.am |
-| L9 | kosteedi. ostedi. hestedi. hedi. |. hhstreodi. hestal. daiin. heo. al. ostedi | B | qokeedy.okedy.chekedy.chedychckheody.chekal.daiin.cheo.al.okedy |
-| L10 | s. sost. sedi. kestchdi. dchdal?di. |. ystedi. kosteedi. kostedi. kosteg | B | s.shok.shedy.qekchdy.dchdal!dyykedy.qokeedy.qokedy.qokeg |
-| L11 | ysteod. y?steedi. hesteedi. hested | B | ykeod.y!keedy.chekeedy.cheked |
+| L1 | plhei. stedalei. osted. šesthei \| oplšes. iplhd. kotrheedi. šstasteedi | B | pchey.kedaleey.oked.shekchey \| opshes.ypchd.qotcheedy.shka!keedy |
+| L2 | isteeo. alšei. istedi. stešdi. di \| dor. iheosti. kosteed. hpli. kostedi. di | B | ykeeo.alshey.ykedy.keshdy.dy \| dor.ycheoky.qokeed.chpy.qokedy.dy |
+| L3 | kost. ra?. iestedi. ihdi. sthdi \| kostedi. kostedi. šesthi. hesti. dali | B | qok.ra?.y!!ekedy.ychdy.kchdy \| qokedy.qokedy.shekchy.cheky.daly |
+| L4 | hdhi. itrheesti. iplhedi. shdi \| itredi. htrei. hees. otrei. otral. dam | B | chdchy.ytcheeky.ypchedy.schdy \| ytedy.cthey.chees.oteey.otal.dam |
+| L5 | kotrhi. sal. itreedi. sthdi \| dhedi. trhdi. dhedi. dalain | B | qotchy.sal.yteedy.kchdy \| dchedy.tchdy.dchedy.dalain |
+| L6 | šedei. plolhedi. kostei. hestedi. itrei \| hsthod \| iplhedpli. šepli. šedi | B | shedey.polchedy.qokeey.chekedy.ytey \| chkchod \| ypchedpy.shep!y.shedy |
+| L7 | plarhdi. sthei. itreedi. kosteodi \| istedi. hstedi. kostedi. hedi. kostedi | B | par!chdy.kchey.yteedy.qokeody \| ykedy.chkedy.qokedy.chedy.qokedy |
+| L8 | dair. hedi. hhsti. kostei. lhdi \| kostedi. kostil. hested. kodor. am | B | dair.chedy.chckhy.qokey.lchdy \| qokedy.qokyl.cheked!.qodor.am |
+| L9 | kosteedi. ostedi. hestedi. hedi \| hhsteodi. hestal. dain. heo. al. ostedi | B | qokeedy.okedy.chekedy.chedy \| chckheody.chekal.daiin.cheo.al.okedy |
+| L10 | s. šost. šedi. kesthdi. dhdaldi \| istedi. kosteedi. kostedi. kosteg | B | s.shok.shedy.qekchdy.dchdal!dy \| ykedy.qokeedy.qokedy.qokeg |
+| L11 | isteod. isteedi. hesteedi. hested | B | ykeod.y!keedy.chekeedy.cheked |
 
 ## Confidence Distribution
 
@@ -29,7 +29,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

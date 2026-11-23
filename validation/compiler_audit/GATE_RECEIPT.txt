@@ -1,0 +1,5 @@
+loci decoded: 244
+words: 48379  resolved: 46578
+check only
+DETERMINISM GATE PASSED: every locus renders byte-identical twice
+COMMITTED CORPUS CHECK PASSED: all recipes and summary match

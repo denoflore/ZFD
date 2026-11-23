@@ -5,8 +5,8 @@
 | Operator | Count |
 |----------|-------|
 | qo→ko | 18 |
-| da→da | 6 |
-| sh→s | 4 |
+| da→da | 5 |
+| sh→š | 4 |
 | ch→h | 4 |
 | ot→otr | 2 |
 | ok→ost | 2 |
@@ -23,6 +23,7 @@
 
 - **dar** (give-agent)
 - **hor** (cook-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
@@ -33,11 +34,12 @@
 
 ## Most Frequent ZFD Words
 
-- kostchi: 4x
-- s: 3x
+- kosthi: 4x
 - or: 2x
+- ši: 2x
+- s: 2x
 - kosti: 2x
-- kotrchi: 2x
+- kotrhi: 2x
 - dar: 2x
 - kostol: 2x
 - di: 2x
@@ -45,4 +47,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

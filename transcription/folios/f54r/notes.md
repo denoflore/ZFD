@@ -4,10 +4,10 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 15 |
-| sh→s | 10 |
-| da→da | 10 |
-| ok→ost | 4 |
+| ch→h | 16 |
+| sh→š | 11 |
+| da→da | 8 |
+| ok→ost | 5 |
 | qo→ko | 3 |
 | ot→otr | 3 |
 | q→k | 1 |
@@ -28,6 +28,7 @@
 - **sal** (salt)
 - **hor** (cook-agent)
 - **hol** (cook-oil)
+- **dain** (substance/given)
 - **ostol** (bone oil)
 
 ## Confidence Summary
@@ -39,18 +40,18 @@
 
 ## Most Frequent ZFD Words
 
-- s: 7x
+- s: 6x
 - or: 6x
 - ol: 5x
 - dam: 5x
 - hol: 4x
-- so: 3x
+- šo: 3x
 - ain: 3x
-- hstrol: 3x
-- sodal: 2x
-- otrchei: 2x
+- hstol: 3x
+- šodal: 2x
+- otrhei: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

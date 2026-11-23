@@ -4,11 +4,12 @@
 
 | Operator | Count |
 |----------|-------|
-| ok→ost | 19 |
+| ok→ost | 20 |
 | ch→h | 9 |
+| qo→ko | 8 |
 | da→da | 7 |
-| qo→ko | 6 |
-| sh→s | 3 |
+| sh→š | 3 |
+| ot→otr | 1 |
 
 ## Gallows Distribution
 
@@ -48,4 +49,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

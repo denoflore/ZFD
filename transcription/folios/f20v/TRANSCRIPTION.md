@@ -1,4 +1,4 @@
-# Folio f20v -- Paleographic Transcription
+# Folio f20v -- Automated ZFD Transcription
 
 **Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006113/full/full/0/default.jpg
@@ -10,17 +10,17 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | praiis. ar. ostoi. si. plo?prochei. oplchi. kopli. holdi. oplydi. hplli | B | faiis.ar.okoy.shy.po!fochey.opchy.qopy.choldy.opydy.cphy |
-| L2 | sos. ystain. heol. hol. hoiin. hehtrri. otrol. hol. hodain. otri | B | sos.ykaiin.cheol.chol.choiin.checthy.otol.chol.chodaiin.oty |
-| L3 | ostchi. so. stchol. sol. hhtrri. kotri. hi. trol. si. kotrchi | B | okchy.sho.kchol.shol.chcthy.qoty.chy.tol.shy.qotchy |
-| L4 | so. or. ain. sol. daiin | B | sho.or.aiin.shol.daiin |
-| L5 | trshol. prol?chol. otror. sol. sos. prshodchi. otrchi. hhplli. di | B | tshol.fol!chol.otor.shol.shos.fshodchy.otchy.chcphy.dy |
-| L6 | doiiin. hohstri. dar. heohstri. sos. heos. har. htrrain | B | doiiin.chockhy.dar.cheockhy.shos.cheos.char.cthaiin |
-| L7 | sohtrri. so. htrri. daiin. seoi. trei. s. |. soain. | | B | shocthy.sho.cthy.daiin.sheoy.tey.ssoaiin |
-| L8 | sain. horali. so. ar. hi. daiin. d. s. | | B | shain.choraly.sho.ar.chy.daiin.d.s |
-| L9 | ystchi. steodi. ho. htrri. hol. sd. kotri. d. s??????. | | B | ykchy.keody.cho.cthy.chol.shd.qoty.d.s!!!!!! |
-| L10 | sostain. hohtrri. hol. daiin. hi. hor. etri. | | B | shokaiin.chocthy.chol.daiin.chy.chor.ety |
-| L11 | ostoiin. hei. hpllol. hor. i | B | okoiin.chey.cphol.chor.y |
+| L1 | praiis. ar. ostoi. ši. ploprohei. oplhi. kopli. holdi. oplidi. hpli | B | faiis.ar.okoy.shy.po!fochey.opchy.qopy.choldy.opydy.cphy |
+| L2 | sos. istain. heol. hol. hoiin. hehtri. otrol. hol. hodain. otri | B | sos.ykaiin.cheol.chol.choiin.checthy.otol.chol.chodaiin.oty |
+| L3 | osthi. šo. sthol. šol. hhtri. kotri. hi. trol. ši. kotrhi | B | okchy.sho.kchol.shol.chcthy.qoty.chy.tol.shy.qotchy |
+| L4 | šo. or. ain. šol. dain | B | sho.or.aiin.shol.daiin |
+| L5 | tršol. prolhol. otror. šol. šos. pršodhi. otrhi. hhpli. di | B | tshol.fol!chol.otor.shol.shos.fshodchy.otchy.chcphy.dy |
+| L6 | doiiin. hohsti. dar. heohsti. šos. heos. har. htrain | B | doiiin.chockhy.dar.cheockhy.shos.cheos.char.cthaiin |
+| L7 | šohtri. šo. htri. dain. šeoi. trei. s \| soain \| | B | shocthy.sho.cthy.daiin.sheoy.tey.s \| soaiin \| |
+| L8 | šain. horali. šo. ar. hi. dain. d. s \| | B | shain.choraly.sho.ar.chy.daiin.d.s \| |
+| L9 | isthi. steodi. ho. htri. hol. šd. kotri. d. s \| | B | ykchy.keody.cho.cthy.chol.shd.qoty.d.s!!!!!! \| |
+| L10 | šostain. hohtri. hol. dain. hi. hor. etri \| | B | shokaiin.chocthy.chol.daiin.chy.chor.ety \| |
+| L11 | ostoiin. hei. hplol. hor. i | B | okoiin.chey.cphol.chor.y |
 
 ## Confidence Distribution
 
@@ -29,7 +29,8 @@
 - **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

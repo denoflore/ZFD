@@ -1,30 +1,39 @@
-# Folio f3v -- Paleographic Transcription
+# Folio f3v -- Automated ZFD Transcription
 
-**Section:** Herbal | **Quire:** A/I | **Bifolio:** bA3=f3+f6
-**Currier:** Language A, Hand 1 | **Transcriber:** H
+**Section:** Herbal
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006081/full/full/0/default.jpg
+**Currier:** Language A, Hand 1
 
 ---
 
-## Text (14 lines)
+## Text
 
-| Line | ZFD | EVA (H) | Notes |
-|------|-----|---------|-------|
-| L1 | stoain. hplor. kotroi. sa. hstol. ystoain. s. oli | koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly | continuation |
-| L2 | daiidi. kotreeol. osthor. ostor. olytrol. dol. dar | daiidy.qoteeol.okchor.okor.olytol.dol.dar | continuation |
-| L3 | ostom. hol. sol. seees. hom. heeystam. ostai! | okom.chol.shol.seees.chom.cheeykam.okai! | continuation; !=uncertain |
-| L4 | kodar. ees. ei. stheol. ostal. do. r. hear. een | qodar.ees.eey.kcheol.okal.do.r.chear.een | continuation |
-| L5 | yeeear. otrhal. eeor. eear. hsti! | yeeear.otchal.eeor.eear.ckhy! | continuation; !=uncertain |
-| L6 | or. heor. stor. hodali. hom | or.cheor.kor.chodaly.chom | |
-| L7 | trhor. otrham. hor. hpram. s! | tchor.otcham.chor.cfham.s! | continuation; !=uncertain |
-| L8 | ysthi. sthom. hor. hesteol. osta | ykchy.kchom.chor.chekeol.oka | continuation |
-| L9 | ytrheear. osteol. htrodoali. hor. htri | ytcheear.okeol.cthodoaly.chor.cthy | continuation |
-| L10 | ohor. dain. kostsol. daiim. hol. ostari | ochor.daiin.qokshol.daiim.chol.okary | continuation |
-| L11 | so. sohsto. hsti. trhor. hodain. hom | sho.shockho.ckhy.tchor.chodaiin.chom | continuation |
-| L12 | os. hodair. ytrhi. trhor. stham. s | osh.chodair.ytchy.tchor.kcham.s | continuation |
-| L13 | sar. sstain. kosthi. ytri. htral. hsti | shar.shkaiin.qokchy.yty.cthal.chky | continuation |
-| L14 | dain. seam. ytream | dain.sheam.yteam | |
+| Line | Croatian | Conf | EVA |
+|------|----------|------|-----|
+| L1 | stoain. hplor. kotroi. ša. hstol. istoain. s. oli \| | B | koaiin.cphor.qotoy.sha.ckhol.ykoaiin.s.oly \| |
+| L2 | daiidi. kotreeol. osthor. ostor. olitrol. dol. dar \| | B | daiidy.qoteeol.okchor.okor.olytol.dol.dar \| |
+| L3 | ostom. hol. šol. seees. hom. heeistam. ostai \| | B | okom.chol.shol.seees.chom.cheeykam.okai! \| |
+| L4 | kodar. ees. ei. stheol. ostal. do. r. hear. een \| | B | qodar.ees.eey.kcheol.okal.do.r.chear.een \| |
+| L5 | ieeear. otrhal. eeor. eear. hsti \| | B | yeeear.otchal.eeor.eear.ckhy! \| |
+| L6 | or. heor. stor. hodali. hom | B | or.cheor.kor.chodaly.chom |
+| L7 | trhor. otrham. hor. hpram. s \| | B | tchor.otcham.chor.cfham.s! \| |
+| L8 | isthi. sthom. hor. hesteol. osta \| | B | ykchy.kchom.chor.chekeol.oka \| |
+| L9 | itrheear. osteol. htrodoali. hor. htri \| | B | ytcheear.okeol.cthodoaly.chor.cthy \| |
+| L10 | ohor. dain. kostšol. daiim. hol. ostari \| | B | ochor.daiin.qokshol.daiim.chol.okary \| |
+| L11 | šo. šohsto. hsti. trhor. hodain. hom \| | B | sho.shockho.ckhy.tchor.chodaiin.chom \| |
+| L12 | oš. hodair. itrhi. trhor. stham. s \| | B | osh.chodair.ytchy.tchor.kcham.s \| |
+| L13 | šar. šstain. kosthi. itri. htral. hsti \| | B | shar.shkaiin.qokchy.yty.cthal.chky \| |
+| L14 | dain. šeam. itream | B | dain.sheam.yteam |
+
+## Confidence Distribution
+
+- **A:** 0 lines
+- **B:** 14 lines
+- **C:** 0 lines
+- **D:** 0 lines
+
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription parsed using ZFD rules: operators (word-initial), gallows (medial k/t/f/p), bench gallows (cth/ckh/cph/cfh), suffixes (word-final), direct mappings.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

@@ -6,7 +6,7 @@
 |----------|-------|
 | qo→ko | 73 |
 | ch→h | 66 |
-| sh→s | 30 |
+| sh→š | 30 |
 | ot→otr | 18 |
 | ok→ost | 12 |
 | da→da | 8 |
@@ -25,29 +25,30 @@
 
 - **stol** (bone-oil)
 - **hol** (cook-oil)
+- **dain** (substance/given)
 - **hor** (cook-agent)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 38 (84%)
-- C: 7 (16%)
+- B: 45 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - kosteedi: 6x
+- ain: 6x
 - kostar: 5x
-- lstchedi: 4x
+- lsthedi: 4x
 - al: 4x
 - kotrei: 4x
-- kotrai?n: 4x
-- sedi: 4x
-- lchedi: 4x
-- lor: 4x
-- ain: 4x
+- kotrain: 4x
+- šedi: 4x
+- lhedi: 4x
+- kostain: 4x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

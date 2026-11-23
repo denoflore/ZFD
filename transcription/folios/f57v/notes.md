@@ -5,9 +5,9 @@
 | Operator | Count |
 |----------|-------|
 | ok→ost | 9 |
-| da→da | 8 |
 | ot→otr | 7 |
-| sh→s | 5 |
+| da→da | 6 |
+| sh→š | 5 |
 | qo→ko | 1 |
 | ch→h | 1 |
 
@@ -20,27 +20,31 @@
 | f→pr | 12 |
 | p→pl | 3 |
 
+## Validated Terms Present
+
+- **dain** (substance/given)
+
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 12 (92%)
+- B: 13 (100%)
 - C: 0 (0%)
-- D: 1 (8%)
+- D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
-- l: 7x
-- o: 7x
-- i: 5x
+- [???]: 19x
+- r: 12x
+- l: 11x
+- o: 11x
+- st: 10x
+- i: 9x
+- d: 9x
+- v: 7x
+- x: 6x
 - s: 5x
-- d: 4x
-- [???]: 4x
-- v: 3x
-- r: 3x
-- st: 3x
-- ar: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

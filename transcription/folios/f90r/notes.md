@@ -6,9 +6,9 @@
 |----------|-------|
 | qo→ko | 25 |
 | ch→h | 14 |
-| sh→s | 9 |
-| ok→ost | 7 |
-| da→da | 6 |
+| sh→š | 9 |
+| ok→ost | 9 |
+| da→da | 3 |
 | ot→otr | 2 |
 
 ## Gallows Distribution
@@ -25,11 +25,12 @@
 - **hor** (cook-agent)
 - **hol** (cook-oil)
 - **stor** (bone-agent)
+- **dain** (substance/given)
 
 ## Confidence Summary
 
-- A: 0 (0%)
-- B: 15 (100%)
+- A: 1 (7%)
+- B: 14 (93%)
 - C: 0 (0%)
 - D: 0 (0%)
 
@@ -38,7 +39,7 @@
 - s: 7x
 - ol: 3x
 - sain: 3x
-- daiin: 3x
+- dain: 3x
 - trol: 2x
 - hor: 2x
 - hol: 2x
@@ -49,4 +50,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

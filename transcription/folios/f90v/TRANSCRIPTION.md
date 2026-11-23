@@ -1,8 +1,8 @@
-# Folio f90v -- Paleographic Transcription
+# Folio f90v -- Automated ZFD Transcription
 
 **Section:** Pharmaceutical
 **IIIF:** https://collections.library.yale.edu/iiif/2/1006237/full/full/0/default.jpg
-**Currier:** Language A, Hand 1
+**Currier:** Language A, Hand ?
 
 ---
 
@@ -10,34 +10,35 @@
 
 | Line | Croatian | Conf | EVA |
 |------|----------|------|-----|
-| L1 | plcheor. hodar. oleees. hepli. sol. |. shstrey?. |. otrol. sei. |. heor. heostei | B | pcheor.chodar.oleees.chepy.sholshckhey!otol.sheycheor.cheokeey |
-| L2 | trshor. olsheod. kodain. kosteeor. si. |. or. ain. |. ysteeol. |. ohtrreodi. htrrchi | B | tshor.olsheod.qodaiin.qokeeor.syor.aiinykeeoloctheody.cthchy |
-| L3 | doiin. s?odi. hplreos. kohstri. hol. ol. |. s. als. |. sol. |. ytrei. or. heey?trei | B | doiin.sh!ody.cfheos.qockhy.chol.ols.alssolyteey.or.cheey!tey |
-| L4 | stos. seor. hohstror. kesteodi. heodi. |. si. |. s. |. olchei. htrrei. kosti | B | kos.sheor.chockhor.qekeody.cheodysysolcheey.cthey.qoky |
-| L5 | dchei. stei. steei. htrrei. ytri. osteeodi. |. si. |. olchei. se. kosteas | B | dcheey.keey.keeey.cthey.yty.okeeodysyolcheey.she.qokeas |
-| L6 | shtrreo. r?or. seol?ol. stain | C | shctheo.r!or.sheol!ol.kaiin |
-| L7 | stsheodal. seodi. kocheotri. sostol. kosteshs. |. ytreodi. etrodaitrhei | B | ksheodal.sheody.qocheoty.shokol.qokeshsyteody.etodaithey |
-| L8 | daiin. osteei. heo. kotrecheor. htrrodaim. s. |. heol. hol. osteam | B | daiin.okeeey.cheo.qotecheor.cthodaim.scheol.chol.okeam |
-| L9 | seor. ol. kosteeosti. osteeol. osteeodain. ytrol. |. s. or. ariin. ain | B | sheor.ol.qokeeoky.okeeol.okeeodaiin.ytols.or.ariin.aiin |
-| L10 | ysteeor. heos. ksthei. heos. otreol. ostechod. |. oei. steeos. aiiin | B | ykeeor.cheos.qkhey.cheos.oteol.okechodoeey.keeos.aiiin |
-| L11 | deeo?htrrei. steeeol. seol. strsheol. daiin | B | deeo!cthey.keeeol.sheol.stsheol.daiin |
-| L101 | hplldaitrhi. kohplrei. oplol. rain. oprchedol. rs. |. sese. sodain. seos | B | cphdaithy.qocfhey.opol.raiin.ofchedol.rsshese.shodaiin.sheos |
-| L102 | plodchei. htrreod. istheeos. hei. ystei. s. oes. |. kosto?or. s. oi?n. sam | B | podchey.ctheod.ikheeos.cheey.ykeey.s.oesqoko!or.s.oi!n.sam |
-| L103 | sain. seom. sei. steeo?s. ol. heeor. hi. |. si. trchodi. osteeom | B | saiin.sheom.sheey.keeo!s.ol.cheeor.chyshy.tchody.okeeom |
-| L104 | trchos. otrei. sain. osteei | B | tchos.oteey.saiin.okeeey |
-| L105 | trcheodi. hplleol. koar. heol. hos. olols. |. dshcheal. seol. kodar | B | tcheody.cpheol.qoar.cheol.chos.ololsdshcheal.sheol.qodar |
-| L106 | sal. seol. sei. kostei. kosteol. heodi. s. |. ysteeol. dar. hodi. i | B | sal.sheol.shey.qokeey.qokeol.cheody.sykeeol.dar.chody.y |
-| L107 | sei. s. seeyl. seol. seodi. trol. seoctri. |. otrei. hodar. hoi | B | shey.s.sheeyl.sheol.sheody.tol.sheoctyoteey.chodar.choy |
-| L108 | treeos. ksteodi. kostchi. otreeol. dai?n | C | teeos.qkeody.qokchy.oteeol.dai!n |
+| L1 | plheor. hodar. oleees. hepli. šol \| šhstei \| otrol. šei \| heor. heostei | B | pcheor.chodar.oleees.chepy.shol \| shckhey! \| otol.shey \| cheor.cheokeey |
+| L2 | tršor. olšeod. kodain. kosteeor. si \| or. ain \| isteeol \| ohtreodi. htrhi | B | tshor.olsheod.qodaiin.qokeeor.sy \| or.aiin \| ykeeol \| octheody.cthchy |
+| L3 | doiin. šodi. hpreos. kohsti. hol. ol \| s. als \| sol \| itrei. or. heeitrei | B | doiin.sh!ody.cfheos.qockhy.chol.ol \| s.als \| sol \| yteey.or.cheey!tey |
+| L4 | stos. šeor. hohstor. kesteodi. heodi \| si \| s \| olhei. htrei. kosti | B | kos.sheor.chockhor.qekeody.cheody \| sy \| s \| olcheey.cthey.qoky |
+| L5 | dhei. stei. steei. htrei. itri. osteeodi \| si \| olhei. še. kosteas | B | dcheey.keey.keeey.cthey.yty.okeeody \| sy \| olcheey.she.qokeas |
+| L6 | šhtreo. ror. šeolol. stain | B | shctheo.r!or.sheol!ol.kaiin |
+| L7 | stšeodal. šeodi. koheotri. šostol. kostešs \| itreodi. etrodaitrhei | B | ksheodal.sheody.qocheoty.shokol.qokeshs \| yteody.etodaithey |
+| L8 | dain. osteei. heo. kotreheor. htrodaim. s \| heol. hol. osteam | B | daiin.okeeey.cheo.qotecheor.cthodaim.s \| cheol.chol.okeam |
+| L9 | šeor. ol. kosteeosti. osteeol. osteeodain. itrol \| s. or. ariin. ain | B | sheor.ol.qokeeoky.okeeol.okeeodaiin.ytol \| s.or.ariin.aiin |
+| L10 | isteeor. heos. ksthei. heos. otreol. ostehod \| oei. steeos. ain | B | ykeeor.cheos.qkhey.cheos.oteol.okechod \| oeey.keeos.aiiin |
+| L11 | deeohtrei. steeeol. šeol. stršeol. dain | B | deeo!cthey.keeeol.sheol.stsheol.daiin |
+| L101 | hpldaitrhi. kohprei. oplol. rain. oprhedol. rs \| šese. šodain. šeos | B | cphdaithy.qocfhey.opol.raiin.ofchedol.rs \| shese.shodaiin.sheos |
+| L102 | plodhei. htreod. istheeos. hei. istei. s. oes \| kostoor. s. oin. sam | B | podchey.ctheod.ikheeos.cheey.ykeey.s.oes \| qoko!or.s.oi!n.sam |
+| L103 | sain. šeom. šei. steeos. ol. heeor. hi \| ši. trhodi. osteeom | B | saiin.sheom.sheey.keeo!s.ol.cheeor.chy \| shy.tchody.okeeom |
+| L104 | trhos. otrei. sain. osteei | B | tchos.oteey.saiin.okeeey |
+| L105 | trheodi. hpleol. koar. heol. hos. olols \| dšheal. šeol. kodar | B | tcheody.cpheol.qoar.cheol.chos.olols \| dshcheal.sheol.qodar |
+| L106 | sal. šeol. šei. kostei. kosteol. heodi. s \| isteeol. dar. hodi. i | B | sal.sheol.shey.qokeey.qokeol.cheody.s \| ykeeol.dar.chody.y |
+| L107 | šei. s. šeeil. šeol. šeodi. trol. šeoctri \| otrei. hodar. hoi | B | shey.s.sheeyl.sheol.sheody.tol.sheocty \| oteey.chodar.choy |
+| L108 | treeos. ksteodi. kosthi. otreeol. dain | B | teeos.qkeody.qokchy.oteeol.dai!n |
 
 ## Confidence Distribution
 
 - **A:** 0 lines
-- **B:** 17 lines
-- **C:** 2 lines
+- **B:** 19 lines
+- **C:** 0 lines
 - **D:** 0 lines
 
+Grades are parse-structure grades, not measured accuracy.
 
 ---
 
-*Transcription completed 2026-02-07. Method: ZFD 7-layer constraint stack with automated parsing.*
+*Generated 2026-11-21 by batch_transcribe.py: automated ZFD rule parsing of the Takahashi (H) EVA transliteration.*

@@ -4,11 +4,11 @@
 
 | Operator | Count |
 |----------|-------|
-| ch→h | 25 |
+| ch→h | 26 |
 | qo→ko | 22 |
-| da→da | 9 |
-| sh→s | 9 |
-| ot→otr | 6 |
+| sh→š | 9 |
+| da→da | 7 |
+| ot→otr | 7 |
 | ok→ost | 5 |
 
 ## Gallows Distribution
@@ -23,6 +23,8 @@
 
 - **hol** (cook-oil)
 - **hor** (cook-agent)
+- **dain** (substance/given)
+- **šol** (with-oil)
 
 ## Confidence Summary
 
@@ -37,14 +39,14 @@
 - hor: 7x
 - ham: 4x
 - s: 3x
-- htrrol: 2x
-- ycheor: 2x
+- htrol: 2x
+- iheor: 2x
 - dam: 2x
-- daiin: 2x
-- htrri: 2x
+- dain: 2x
+- htri: 2x
 - kostol: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

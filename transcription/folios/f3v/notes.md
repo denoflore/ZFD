@@ -6,9 +6,9 @@
 |----------|-------|
 | ch→h | 16 |
 | ok→ost | 8 |
-| sh→s | 7 |
+| sh→š | 7 |
 | qo→ko | 5 |
-| da→da | 5 |
+| da→da | 4 |
 | ot→otr | 2 |
 
 ## Gallows Distribution
@@ -24,6 +24,7 @@
 
 - **dar** (give-agent)
 - **hol** (cook-oil)
+- **šol** (with-oil)
 - **stor** (bone-agent)
 - **hor** (cook-agent)
 - **dain** (substance/given)
@@ -37,13 +38,15 @@
 
 ## Most Frequent ZFD Words
 
+- s: 3x
 - hom: 3x
-- trchor: 3x
+- hsti: 3x
+- trhor: 3x
 - hor: 3x
-- s: 2x
 - hol: 2x
+- dain: 2x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

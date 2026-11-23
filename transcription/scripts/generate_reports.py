@@ -1,302 +1,448 @@
 #!/usr/bin/env python3
 """
 Generate Phase 8 assembly reports:
-- STATISTICS.md -- Coverage, confidence, vocabulary stats
+- STATISTICS.md -- Coverage, grade, vocabulary stats
 - COMPARISON_REPORT.md -- EVA vs ZFD divergence analysis
 - SECTION_COMPARISON.md -- Vocabulary differences across sections
-- Update PROGRESS.md
+- FULL_CORPUS.jsonl -- all folio line_data in manuscript order
+
+2026-11 audit fixes (see transcription/AUDIT_2026-11.md):
+  - grade labels no longer claim accuracy bands (A "95%+", B "80-94%", ...)
+    that nothing in the pipeline ever measured
+  - "Key Observations", divergence claims and the conclusion were fixed
+    prose written regardless of the data; they are now computed, and two of
+    the old ones were contradicted by the tables printed above them
+  - the validated-readings table now shows what the compiler actually emits
+    next to the hand reading, plus measured compiler-vs-gold agreement
+  - corrupt JSONL lines are counted and reported instead of silently dropped
+  - folios load in manuscript order (f1r, f1v, ... not f100r, f100v, ...)
+  - repo-relative paths, UTF-8 I/O
+
+Usage:
+    python transcription/scripts/generate_reports.py
+    python transcription/scripts/generate_reports.py --folios DIR --out DIR
 """
 
+import argparse
+import datetime
 import json
 import os
 import re
+import sys
 from collections import Counter, defaultdict
+from pathlib import Path
 
-FOLIOS_DIR = "/home/user/ZFD/transcription/folios"
-OUTPUT_DIR = "/home/user/ZFD/transcription"
+HERE = Path(__file__).resolve().parent
+sys.path.insert(0, str(HERE))
+import batch_transcribe as bt  # noqa: E402  (same rules the corpus was compiled with)
+
+REPO_ROOT = HERE.parents[1]
+FOLIOS_DIR = str(REPO_ROOT / "transcription" / "folios")
+OUTPUT_DIR = str(REPO_ROOT / "transcription")
+TODAY = datetime.date.today().isoformat()
+BAD_JSON = Counter()
 
 
-def load_all_data():
-    """Load all line_data.jsonl files."""
+def zfd_words(text):
+    return [w for w in re.split(r'[.\s|]+', text or "") if w and w != "|"]
+
+
+def eva_words(text):
+    return [w for seg in bt.eva_segments(text or "")
+            for w in (bt.clean_eva_word(x) for x in seg) if w]
+
+
+def parsed_structure(eva_word):
+    """Operator/suffix flags in the same order as the transcription compiler.
+
+    Claim a ligature suffix, detect the operator, then seek an ordinary suffix
+    in the remainder. Raw-word searches overcount daiin as a da operator and
+    qod as an od suffix, although neither survives that parsing order.
+    """
+    word = bt.clean_eva_word(eva_word)
+    if not word or all(c == "?" for c in word):
+        return False, False
+    suffix = None
+    for eva, _ in bt.LIGATURE_SUFFIXES:
+        if word.endswith(eva):
+            suffix = eva
+            word = word[:-len(eva)]
+            break
+    operator, _, remainder = bt.detect_operator(word)
+    if suffix is None:
+        suffix, _, _ = bt.detect_suffix(remainder)
+    return operator is not None, suffix is not None
+
+
+def load_all_data(folios_dir=None):
+    """Load all line_data.jsonl files, in manuscript order."""
+    folios_dir = folios_dir or FOLIOS_DIR
     all_lines = []
-    folio_dirs = sorted(os.listdir(FOLIOS_DIR))
-    for folio_dir in folio_dirs:
-        jsonl_path = os.path.join(FOLIOS_DIR, folio_dir, "line_data.jsonl")
-        if os.path.exists(jsonl_path):
-            with open(jsonl_path) as f:
-                for line in f:
-                    line = line.strip()
-                    if line:
-                        try:
-                            data = json.loads(line)
-                            data["_dir"] = folio_dir
-                            all_lines.append(data)
-                        except json.JSONDecodeError:
-                            pass
+    for folio_dir in sorted(os.listdir(folios_dir), key=bt.folio_sort_key):
+        jsonl_path = os.path.join(folios_dir, folio_dir, "line_data.jsonl")
+        if not os.path.exists(jsonl_path):
+            continue
+        with open(jsonl_path, encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
+                if not line:
+                    continue
+                try:
+                    data = json.loads(line)
+                except json.JSONDecodeError:
+                    BAD_JSON[folio_dir] += 1
+                    continue
+                data["_dir"] = folio_dir
+                all_lines.append(data)
+    if BAD_JSON:
+        print(f"WARNING: unparseable JSONL lines skipped: {dict(BAD_JSON)}")
     return all_lines
 
 
-def load_metadata():
+def load_metadata(folios_dir=None):
     """Load all metadata.json files."""
+    folios_dir = folios_dir or FOLIOS_DIR
     metadata = {}
-    for folio_dir in os.listdir(FOLIOS_DIR):
-        meta_path = os.path.join(FOLIOS_DIR, folio_dir, "metadata.json")
+    for folio_dir in sorted(os.listdir(folios_dir), key=bt.folio_sort_key):
+        meta_path = os.path.join(folios_dir, folio_dir, "metadata.json")
         if os.path.exists(meta_path):
-            with open(meta_path) as f:
+            with open(meta_path, encoding="utf-8") as f:
                 try:
                     metadata[folio_dir] = json.load(f)
                 except json.JSONDecodeError:
-                    pass
+                    BAD_JSON[folio_dir + "/metadata.json"] += 1
     return metadata
+
+
+def grade_desc(grade):
+    # What the grades actually encode (batch_transcribe.assess_confidence).
+    # Not accuracy percentages: no grade has been scored against gold.
+    descs = {"A": "validated term", "B": "operator/suffix parsed or short word",
+             "C": "no operator or suffix parsed", "D": "unreadable glyph in source"}
+    return descs.get(grade, "")
+
+
+def normalize_gold(word):
+    # The hand anchors spell Croatian š as the ASCII digraph "sh" (63 of 64
+    # initial sh). Same sound, different spelling, so compare on š.
+    return word.replace("sh", "š")
+
+
+def anchor_agreement(all_lines):
+    """Word-level agreement between the batch compiler and the hand anchors."""
+    total = agree = skipped = 0
+    for entry in all_lines:
+        if entry.get("_dir") not in bt.ANCHORS:
+            continue
+        # Commas are word breaks in the compiler. Omitting them previously
+        # excluded 13 otherwise aligned anchor rows from the comparison.
+        ew = eva_words(entry.get("eva_transliteration", ""))
+        gw = zfd_words(entry.get("zfd_croatian", ""))
+        if len(ew) != len(gw):
+            skipped += 1
+            continue
+        for e, g in zip(ew, gw):
+            total += 1
+            agree += bt.parse_word(e)[0] == normalize_gold(g)
+    return total, agree, skipped
+
+
+def anchor_source_coverage(all_lines):
+    """Compare retained anchor rows with the current IVTFF source selector."""
+    coverage = []
+    for folio in sorted(bt.ANCHORS, key=bt.folio_sort_key):
+        stored = [row for row in all_lines if row.get("_dir") == folio]
+        if not stored:
+            continue
+        selected = bt.extract_eva_lines(bt.DEFAULT_EVA, folio)
+        coverage.append((
+            folio, len(stored),
+            sum(len(eva_words(row.get("eva_transliteration", ""))) for row in stored),
+            len(selected), sum(len(eva_words(text)) for text in selected.values()),
+        ))
+    return coverage
 
 
 def generate_statistics(all_lines, metadata):
     """Generate STATISTICS.md."""
     lines = []
-    lines.append("# ZFD Paleographic Transcription -- Statistics\n")
-    lines.append(f"**Generated:** 2026-02-07")
-    lines.append(f"**Total folios:** {len(metadata)}")
-    lines.append(f"**Total text lines:** {len(all_lines)}\n")
+    lines.append("# ZFD Transcription -- Statistics\n")
+    lines.append(f"**Generated:** {TODAY}")
+    lines.append(f"**Total folio packages:** {len(metadata)}")
+    lines.append(f"**Total JSONL rows:** {len(all_lines)}\n")
+    placeholders = sum(row.get("_dir") == "f85v" and
+                       not eva_words(row.get("eva_transliteration", "")) and
+                       not zfd_words(row.get("zfd_croatian", "")) for row in all_lines)
+    fragments = sum(row.get("_dir") == "f116v" for row in all_lines)
+    lines.append(f"The row total includes {placeholders} empty f85v diagram placeholder "
+                 f"and {fragments} fragmentary f116v text-stub row. These retained "
+                 "records are not two additional complete text transcriptions.\n")
 
-    # Section distribution
     section_counts = Counter()
-    section_lines = defaultdict(int)
+    section_lines = Counter(l.get("_dir") for l in all_lines)
+    per_section_lines = defaultdict(int)
     for folio_id, meta in metadata.items():
         section = meta.get("section", "unknown")
         section_counts[section] += 1
-        # Count lines for this folio
-        section_lines[section] += sum(1 for l in all_lines if l.get("_dir") == folio_id)
+        per_section_lines[section] += section_lines.get(folio_id, 0)
 
     lines.append("## Section Distribution\n")
-    lines.append("| Section | Folios | Lines |")
+    lines.append("| Section | Packages | JSONL rows |")
     lines.append("|---------|--------|-------|")
     for section, count in section_counts.most_common():
-        lcount = section_lines[section]
-        lines.append(f"| {section} | {count} | {lcount} |")
+        lines.append(f"| {section} | {count} | {per_section_lines[section]} |")
     lines.append(f"| **Total** | **{len(metadata)}** | **{len(all_lines)}** |")
     lines.append("")
 
-    # Confidence distribution
-    conf_counts = Counter()
-    for entry in all_lines:
-        conf = entry.get("confidence", "?")
-        conf_counts[conf] += 1
-
-    lines.append("## Confidence Distribution\n")
-    lines.append("| Grade | Lines | Percentage |")
-    lines.append("|-------|-------|------------|")
+    conf_counts = Counter(entry.get("confidence", "?") for entry in all_lines)
+    lines.append("## Grade Distribution\n")
+    lines.append("Automated line grades average the word-level structure grades below; "
+                 "they are not measured accuracy. Hand-anchor and stub grades are "
+                 "retained from their source packages.\n")
+    lines.append("| Grade | Underlying word-grade rule | Rows | Percentage |")
+    lines.append("|-------|---------|-------|------------|")
     total = len(all_lines)
     for grade in ["A", "B", "C", "D"]:
         count = conf_counts.get(grade, 0)
-        pct = count / total * 100 if total > 0 else 0
-        lines.append(f"| {grade} ({grade_desc(grade)}) | {count} | {pct:.1f}% |")
-    other = sum(v for k, v in conf_counts.items() if k not in "ABCD")
+        pct = count / total * 100 if total else 0
+        lines.append(f"| {grade} | {grade_desc(grade)} | {count} | {pct:.1f}% |")
+    other = sum(v for k, v in conf_counts.items() if k not in ("A", "B", "C", "D"))
     if other:
-        lines.append(f"| Other | {other} | {other/total*100:.1f}% |")
+        lines.append(f"| Other | | {other} | {other / total * 100:.1f}% |")
     lines.append("")
 
-    # Word statistics
-    all_zfd_words = []
-    all_eva_words = []
+    t, a, s = anchor_agreement(all_lines)
+    lines.append("## Measured Agreement With Hand Anchors\n")
+    if t:
+        lines.append(f"Batch compiler output vs hand-transcribed anchor folios "
+                     f"({', '.join(sorted(bt.ANCHORS))}): **{a}/{t} words = {a / t:.1%}** identical "
+                     f"({s} anchor rows skipped where word counts differ; gold \"sh\" read as š).\n")
+        lines.append("This measures agreement with the project's retained hand readings, "
+                     "which also informed the rule choices. It does not independently "
+                     "measure transcription or translation accuracy.\n")
+    else:
+        lines.append("No anchor folios found.\n")
+
+    coverage = anchor_source_coverage(all_lines)
+    if coverage:
+        lines.append("## Anchor Source Coverage\n")
+        lines.append("| Anchor | Retained rows | Retained EVA tokens | Selected source lines | Selected source EVA tokens |")
+        lines.append("|--------|--------------:|--------------------:|----------------------:|---------------------------:|")
+        for row in coverage:
+            lines.append("| " + " | ".join(map(str, row)) + " |")
+        lines.append("")
+        partial = [folio for folio, _, kept_tokens, _, source_tokens in coverage
+                   if kept_tokens < source_tokens]
+        if partial:
+            lines.append("The retained anchor contains fewer EVA tokens than the "
+                         "source selection for: " + ", ".join(partial) + ".\n")
+        lines.append("The hand anchors remain unchanged. Representation of every "
+                     "page identifier does not establish complete source-text coverage.\n")
+
+    all_zfd, all_eva = [], []
     for entry in all_lines:
-        zfd = entry.get("zfd_croatian", "")
-        eva = entry.get("eva_transliteration", "")
-        for w in re.split(r'[.\s|]+', zfd):
-            w = w.strip()
-            if w and w != "|":
-                all_zfd_words.append(w)
-        for w in re.split(r'[.\s|]+', eva):
-            w = w.strip()
-            if w:
-                all_eva_words.append(w)
+        all_zfd += zfd_words(entry.get("zfd_croatian", ""))
+        all_eva += eva_words(entry.get("eva_transliteration", ""))
 
     lines.append("## Vocabulary Statistics\n")
-    lines.append(f"- **Total ZFD words:** {len(all_zfd_words)}")
-    lines.append(f"- **Unique ZFD words:** {len(set(all_zfd_words))}")
-    lines.append(f"- **Total EVA words:** {len(all_eva_words)}")
-    lines.append(f"- **Unique EVA words:** {len(set(all_eva_words))}")
+    lines.append(f"- **Total ZFD words:** {len(all_zfd)}")
+    lines.append(f"- **Unique ZFD words:** {len(set(all_zfd))}")
+    lines.append(f"- **Total EVA words:** {len(all_eva)}")
+    lines.append(f"- **Unique EVA words:** {len(set(all_eva))}")
     lines.append("")
 
-    # Most common words
-    word_freq = Counter(all_zfd_words)
+    word_freq = Counter(all_zfd)
     lines.append("## 30 Most Frequent ZFD Words\n")
     lines.append("| Rank | Word | Count | Likely Meaning |")
     lines.append("|------|------|-------|----------------|")
     validated = {
         "dain": "substance/given", "hol": "cook-oil", "hor": "cook-agent",
-        "dar": "give-agent", "sol": "with-oil", "sal": "salt",
+        "dar": "give-agent", "šol": "with-oil", "sal": "salt",
         "hi": "cook-adj", "hei": "cook-adj", "or": "oil",
-        "ol": "oil", "s": "with", "dor": "give-oil",
+        "ol": "oil", "š": "with", "dor": "give-oil",
         "ostol": "bone oil", "stor": "bone-agent", "stol": "bone-oil",
-        "dai": "give-substance", "sei": "with-adj",
+        "dai": "give-substance", "šei": "with-adj",
     }
     for rank, (word, count) in enumerate(word_freq.most_common(30), 1):
-        meaning = validated.get(word, "")
-        lines.append(f"| {rank} | {word} | {count} | {meaning} |")
+        lines.append(f"| {rank} | {word} | {count} | {validated.get(word, '')} |")
     lines.append("")
 
-    # Gallows expansion stats
-    gallows_map = {"k": "st", "t": "tr", "f": "pr", "p": "pl"}
     gallows_counts = Counter()
-    for w in all_eva_words:
-        for g, exp in gallows_map.items():
+    for w in all_eva:
+        for g, exp in bt.GALLOWS.items():
             gallows_counts[f"{g}→{exp}"] += w.count(g)
 
-    lines.append("## Gallows Expansion Statistics\n")
+    lines.append("## Gallows Occurrence Statistics\n")
+    lines.append("Raw glyph counts. Includes gallows inside operators (ok, ot) and bench "
+                 "gallows (cth, ckh, cph, cfh), which expand differently.\n")
     lines.append("| Gallows | EVA | ZFD | Total Occurrences |")
     lines.append("|---------|-----|-----|-------------------|")
     for g, count in gallows_counts.most_common():
-        eva_g = g.split("→")[0]
-        zfd_g = g.split("→")[1]
+        eva_g, zfd_g = g.split("→")
         lines.append(f"| {g} | {eva_g} | {zfd_g} | {count} |")
     lines.append("")
 
     lines.append("---\n")
-    lines.append("*Statistics generated 2026-02-07 from 197-folio corpus.*\n")
-
+    lines.append(f"*Statistics generated {TODAY} from {len(metadata)} folio packages.*\n")
     return "\n".join(lines)
-
-
-def grade_desc(grade):
-    descs = {"A": "95%+", "B": "80-94%", "C": "60-79%", "D": "<60%"}
-    return descs.get(grade, "")
 
 
 def generate_comparison_report(all_lines):
     """Generate COMPARISON_REPORT.md -- EVA vs ZFD analysis."""
+    n_folios = len({l.get("_dir") for l in all_lines})
     lines = []
-    lines.append("# EVA vs ZFD Paleographic Comparison Report\n")
-    lines.append("**Generated:** 2026-02-07")
-    lines.append("**Scope:** Full Voynich Manuscript corpus (197 folios)\n")
+    lines.append("# EVA vs ZFD Comparison Report\n")
+    lines.append(f"**Generated:** {TODAY}")
+    lines.append(f"**Scope:** {n_folios} folio packages, {len(all_lines)} JSONL rows\n")
 
     lines.append("## Overview\n")
-    lines.append("This report documents where the ZFD paleographic transcription diverges from the")
+    lines.append("This report documents where the ZFD transcription diverges from the")
     lines.append("EVA (European Voynich Alphabet) transliteration system. EVA treats each glyph as a")
-    lines.append("standalone letter in an unknown alphabet. ZFD recognizes a positional shorthand system")
+    lines.append("standalone letter in an unknown alphabet. ZFD models a positional shorthand system")
     lines.append("with operators (word-initial), gallows abbreviation marks (medial), and suffixes (word-final).\n")
 
     lines.append("## Key Divergences\n")
-
-    lines.append("### 1. Gallows Characters (Fundamental Disagreement)\n")
+    lines.append("### 1. Gallows Characters\n")
     lines.append("EVA treats gallows (k, t, f, p) as individual letters. ZFD expands them as cluster abbreviations:\n")
-    lines.append("| EVA | ZFD | Meaning | Impact |")
-    lines.append("|-----|-----|---------|--------|")
-    lines.append("| k | st | bone/firm cluster | Every 'k' in EVA becomes 'st' in ZFD |")
-    lines.append("| t | tr | treatment cluster | Every 't' in EVA becomes 'tr' in ZFD |")
-    lines.append("| f | pr | pour/heat cluster | Every 'f' in EVA becomes 'pr' in ZFD |")
-    lines.append("| p | pl | pour/liquid cluster | Every 'p' in EVA becomes 'pl' in ZFD |")
+    lines.append("| EVA | ZFD |")
+    lines.append("|-----|-----|")
+    for g, exp in bt.GALLOWS.items():
+        lines.append(f"| {g} | {exp} |")
     lines.append("")
-    lines.append("This is the single largest source of divergence. Thousands of words are affected.\n")
 
     lines.append("### 2. Operator Detection (Word-Initial Parsing)\n")
-    lines.append("EVA treats word-initial sequences as simple letter combinations. ZFD detects operators:\n")
-    lines.append("| EVA initial | ZFD operator | Meaning |")
-    lines.append("|-------------|-------------|---------|")
-    lines.append("| qo- | ko- | which/determiner |")
-    lines.append("| ch- | h- | cook/heat |")
-    lines.append("| sh- | s- | with/soak |")
-    lines.append("| da- | da- | give/administer |")
-    lines.append("| ok- | ost- | bone/vessel |")
-    lines.append("| ot- | otr- | treat/process |")
+    lines.append("| EVA initial | ZFD operator |")
+    lines.append("|-------------|-------------|")
+    for eva, zfd in bt.OPERATORS:
+        lines.append(f"| {eva}- | {zfd}- |")
     lines.append("")
 
     lines.append("### 3. Suffix Detection (Word-Final Parsing)\n")
-    lines.append("EVA treats word-final sequences as individual characters. ZFD detects suffixes:\n")
-    lines.append("| EVA final | ZFD suffix | Function |")
-    lines.append("|-----------|-----------|----------|")
-    lines.append("| -aiin | -ain | Substance noun marker |")
-    lines.append("| -eey | -ei | Instance/adjective |")
-    lines.append("| -y | -i | Adjective marker |")
-    lines.append("| -ol | -ol | Oil/liquid suffix |")
-    lines.append("| -ar | -ar | Water/agent suffix |")
-    lines.append("| -am | -am | Substance/mass suffix |")
+    lines.append("| EVA final | ZFD suffix |")
+    lines.append("|-----------|-----------|")
+    for eva, zfd in bt.SUFFIXES:
+        lines.append(f"| -{eva} | -{zfd} |")
     lines.append("")
 
-    lines.append("### 4. Bench Gallows (Compound Expansions)\n")
-    lines.append("EVA treats bench gallows as two-character sequences. ZFD expands them differently:\n")
-    lines.append("| EVA | ZFD | Meaning |")
-    lines.append("|-----|-----|---------|")
-    lines.append("| cth | htr | cook-treat |")
-    lines.append("| ckh | hst | cook-bone |")
-    lines.append("| cph | hpl | cook-pour |")
-    lines.append("| cfh | hpr | cook-heat |")
+    lines.append("### 4. Bench Gallows and Ligatures\n")
+    lines.append("| EVA | ZFD |")
+    lines.append("|-----|-----|")
+    for eva, zfd in bt.BENCH_GALLOWS.items():
+        lines.append(f"| {eva} | {zfd} |")
+    for eva, zfd in bt.MEDIAL_UNITS:
+        lines.append(f"| {eva} (any position) | {zfd} |")
+    for eva, zfd in bt.GLYPH_VALUES.items():
+        lines.append(f"| {eva} (outside the suffix slot) | {zfd} |")
+    for eva, zfd in bt.LIGATURE_SUFFIXES:
+        lines.append(f"| -{eva} (ligature, claimed before operators) | -{zfd} |")
     lines.append("")
 
-    lines.append("### 5. 'aiin' as Ligature Unit\n")
-    lines.append("EVA: four separate characters (a, i, i, n)")
-    lines.append("ZFD: single ligature unit 'ain' representing a substance/noun suffix")
-    lines.append("Evidence: zero-pen-lift execution confirmed in ductus analysis\n")
-
-    # Count divergences
-    div_count = 0
-    for entry in all_lines:
-        divs = entry.get("eva_divergences", [])
-        if divs:
-            div_count += 1
-
-    lines.append("## Divergence Statistics\n")
-    lines.append(f"- **Lines with documented divergences:** {div_count} / {len(all_lines)}")
-    lines.append(f"- **Divergence rate:** {div_count/len(all_lines)*100:.1f}%")
-    lines.append("- **Primary divergence type:** Gallows expansion (present in virtually every line)")
-    lines.append("- **Secondary divergence:** Operator detection (most word-initial sequences)")
-    lines.append("- **Tertiary divergence:** Suffix detection (most word-final sequences)\n")
-
-    lines.append("## Validated Readings Where ZFD and EVA Disagree\n")
-    lines.append("| EVA Reading | ZFD Reading | Meaning | Validation |")
-    lines.append("|-------------|-------------|---------|------------|")
-    lines.append("| okol | ostol | bone oil | Curio adversarial validation (f88r) |")
-    lines.append("| otorchety | otrorhetri | treated heated fluid | Curio adversarial validation (f88r) |")
-    lines.append("| okeo.r!oly | orolaly | orally (Latin) | Confirmed Latin pharmaceutical term (f102v) |")
-    lines.append("| sal | sal | salt | Identity (no divergence) |")
-    lines.append("| daiin | dain | substance/given | Operator + suffix vs individual characters |")
+    div_lines = sum(1 for e in all_lines if e.get("eva_divergences"))
+    total = len(all_lines) or 1
+    op_words = suf_words = n_words = 0
+    for e in all_lines:
+        for w in eva_words(e.get("eva_transliteration", "")):
+            n_words += 1
+            operator, suffix = parsed_structure(w)
+            op_words += operator
+            suf_words += suffix
+    lines.append("## Divergence Statistics (computed)\n")
+    lines.append("Operator and suffix counts follow the compiler's parsing order: "
+                 "ligature suffix, operator, then any ordinary suffix.\n")
+    lines.append(f"- **Rows with a recorded gallows divergence:** {div_lines} / {len(all_lines)} "
+                 f"({div_lines / total * 100:.1f}%)")
+    if n_words:
+        lines.append(f"- **EVA words with a detected operator:** {op_words} / {n_words} ({op_words / n_words:.1%})")
+        lines.append(f"- **EVA words with a detected suffix:** {suf_words} / {n_words} ({suf_words / n_words:.1%})")
     lines.append("")
 
+    lines.append("## Hand Readings vs Compiler Output\n")
+    lines.append("| EVA | Hand reading | Compiler output | Match | Source of hand reading |")
+    lines.append("|-----|--------------|-----------------|-------|------------------------|")
+    hand = [
+        ("okol", "ostol", "Project hand reading (f88r)"),
+        ("otorchety", "otrorhetri", "Project hand reading (f88r)"),
+        ("okeo.r!oly", "orolaly", "Latin term reading (f102v)"),
+        ("sal", "sal", "identity"),
+        ("shol", "šol", "FINAL_CHARACTER_MAP_v1 §3.2"),
+        ("daiin", "dain", "operator + ligature suffix"),
+    ]
+    for eva, reading, src in hand:
+        compiled = bt.parse_line(eva)[0]
+        lines.append(f"| {eva} | {reading} | {compiled} | {'yes' if compiled == reading else 'NO'} | {src} |")
+    lines.append("")
+
+    t, a, s = anchor_agreement(all_lines)
     lines.append("## Conclusion\n")
-    lines.append("The ZFD transcription and EVA transliteration disagree on virtually every word")
-    lines.append("in the manuscript, because they are based on fundamentally different models of")
-    lines.append("the writing system. EVA assumes a 1:1 character-to-letter cipher. ZFD recognizes")
-    lines.append("a positional shorthand system with three layers (operators, gallows abbreviations,")
-    lines.append("suffixes). Where validation evidence exists (Curio adversarial testing, Latin")
-    lines.append("pharmaceutical terms, spatial correlation), the ZFD readings are consistently")
-    lines.append("supported.\n")
-
+    lines.append("ZFD and EVA differ on most words because they model the writing system")
+    lines.append("differently (1:1 glyph-to-letter vs positional shorthand).")
+    if t:
+        lines.append("Measured against the hand-transcribed anchor folios, the batch compiler")
+        lines.append(f"reproduces {a}/{t} words ({a / t:.1%}), after the declared sh-to-š")
+        lines.append("normalization. This is agreement with the project's hand anchors,")
+        lines.append("which also informed rule choices; it does not independently measure")
+        lines.append("transcription or translation accuracy. The retained anchors do not all")
+        lines.append("cover their full source page; see [anchor source coverage](STATISTICS.md#anchor-source-coverage).\n")
     lines.append("---\n")
-    lines.append("*Comparison report generated 2026-02-07.*\n")
-
+    lines.append(f"*Comparison report generated {TODAY}.*\n")
     return "\n".join(lines)
+
+
+def section_observations(section_vocab):
+    """Observations computed from the data (replaces hardcoded prose)."""
+    obs = []
+    secs = sorted(section_vocab)
+    if len(secs) < 2:
+        return obs
+    biggest = max(secs, key=lambda s: len(section_vocab[s]))
+    obs.append(f"**{biggest}** has the largest vocabulary ({len(section_vocab[biggest])} unique words).")
+
+    def overlap(a, b):
+        return len(section_vocab[a] & section_vocab[b]) / len(section_vocab[a]) if section_vocab[a] else 0
+
+    mean_out = {a: sum(overlap(a, b) for b in secs if b != a) / (len(secs) - 1) for a in secs}
+    lo = min(secs, key=mean_out.get)
+    hi = max(secs, key=mean_out.get)
+    obs.append(f"**{lo}** has the most distinctive vocabulary (mean overlap {mean_out[lo]:.0%} with other sections); "
+               f"**{hi}** the least ({mean_out[hi]:.0%}).")
+    pair = max(((a, b) for a in secs for b in secs if a != b), key=lambda p: overlap(*p))
+    obs.append(f"Highest directional overlap: {pair[0]} → {pair[1]} ({overlap(*pair):.0%}).")
+    if "recipe" in section_vocab and "pharmaceutical" in section_vocab:
+        obs.append(f"recipe → pharmaceutical overlap: {overlap('recipe', 'pharmaceutical'):.0%}.")
+    core = ["dain", "hol", "hor", "dar", "sal"]
+    everywhere = [w for w in core if all(w in section_vocab[s] for s in secs)]
+    missing = {w: [s for s in secs if w not in section_vocab[s]] for w in core if w not in everywhere}
+    text = "Core terms present in every section: " + (", ".join(everywhere) or "none")
+    if missing:
+        text += "; missing: " + ", ".join(
+            "{} (not in {})".format(w, ", ".join(m)) for w, m in missing.items())
+    obs.append(text + ".")
+    return obs
 
 
 def generate_section_comparison(all_lines, metadata):
     """Generate SECTION_COMPARISON.md."""
     lines = []
     lines.append("# Section Comparison -- Vocabulary Across Manuscript Sections\n")
-    lines.append("**Generated:** 2026-02-07\n")
+    lines.append(f"**Generated:** {TODAY}\n")
 
-    # Group words by section
     section_words = defaultdict(list)
     for entry in all_lines:
-        folio_dir = entry.get("_dir", "")
-        meta = metadata.get(folio_dir, {})
-        section = meta.get("section", "unknown")
-        zfd = entry.get("zfd_croatian", "")
-        for w in re.split(r'[.\s|]+', zfd):
-            w = w.strip()
-            if w and w != "|" and len(w) > 1:
-                section_words[section].append(w)
+        section = metadata.get(entry.get("_dir", ""), {}).get("section", "unknown")
+        section_words[section] += [w for w in zfd_words(entry.get("zfd_croatian", "")) if len(w) > 1]
 
     lines.append("## Section Word Counts\n")
+    lines.append("Words of length 1 are excluded here (they are included in STATISTICS.md).\n")
     lines.append("| Section | Total Words | Unique Words |")
     lines.append("|---------|-------------|-------------|")
-    for section in sorted(section_words.keys()):
+    for section in sorted(section_words):
         words = section_words[section]
         lines.append(f"| {section} | {len(words)} | {len(set(words))} |")
     lines.append("")
 
-    # Top 10 words per section
     lines.append("## Top 10 Words by Section\n")
-    for section in sorted(section_words.keys()):
-        words = section_words[section]
-        freq = Counter(words)
+    for section in sorted(section_words):
+        freq = Counter(section_words[section])
         lines.append(f"### {section.replace('_', ' ').title()}\n")
         lines.append("| Rank | Word | Count |")
         lines.append("|------|------|-------|")
@@ -304,16 +450,11 @@ def generate_section_comparison(all_lines, metadata):
             lines.append(f"| {rank} | {word} | {count} |")
         lines.append("")
 
-    # Cross-section vocabulary overlap
-    section_vocab = {}
-    for section, words in section_words.items():
-        section_vocab[section] = set(words)
-
-    sections = sorted(section_vocab.keys())
+    section_vocab = {s: set(w) for s, w in section_words.items()}
+    sections = sorted(section_vocab)
     lines.append("## Cross-Section Vocabulary Overlap\n")
-    lines.append("Percentage of Section A's vocabulary that also appears in Section B:\n")
-    header = "| Section | " + " | ".join(sections) + " |"
-    lines.append(header)
+    lines.append("Percentage of the row section's vocabulary that also appears in the column section:\n")
+    lines.append("| Section | " + " | ".join(sections) + " |")
     lines.append("|" + "|".join(["---"] * (len(sections) + 1)) + "|")
     for sa in sections:
         row = f"| {sa} |"
@@ -321,47 +462,52 @@ def generate_section_comparison(all_lines, metadata):
             if sa == sb:
                 row += " -- |"
             else:
-                overlap = len(section_vocab[sa] & section_vocab[sb])
-                pct = overlap / len(section_vocab[sa]) * 100 if section_vocab[sa] else 0
+                pct = len(section_vocab[sa] & section_vocab[sb]) / len(section_vocab[sa]) * 100 if section_vocab[sa] else 0
                 row += f" {pct:.0f}% |"
         lines.append(row)
     lines.append("")
 
-    lines.append("## Key Observations\n")
-    lines.append("1. **Core pharmaceutical vocabulary** (dain, hol, hor, dar, sal) appears across ALL sections")
-    lines.append("2. **Herbal section** has the largest vocabulary (most unique words)")
-    lines.append("3. **Biological section** shows high overlap with pharmaceutical vocabulary")
-    lines.append("4. **Zodiac section** has the most distinctive vocabulary (lowest overlap)")
-    lines.append("5. **Recipe section** shows near-complete overlap with pharmaceutical vocabulary\n")
-
+    lines.append("## Key Observations (computed)\n")
+    for i, o in enumerate(section_observations(section_vocab), 1):
+        lines.append(f"{i}. {o}")
+    lines.append("")
     lines.append("---\n")
-    lines.append("*Section comparison generated 2026-02-07.*\n")
-
+    lines.append(f"*Section comparison generated {TODAY}.*\n")
     return "\n".join(lines)
 
 
-def main():
+def write_full_corpus(all_lines, path):
+    """FULL_CORPUS.jsonl: every line_data.jsonl row, in manuscript order.
+    (The committed file had no generator and was in string order, f100r first.)"""
+    with open(path, "w", encoding="utf-8", newline="\n") as f:
+        for entry in all_lines:
+            row = {k: v for k, v in entry.items() if k != "_dir"}
+            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+
+
+def main(argv=None):
+    ap = argparse.ArgumentParser(description="Generate Phase 8 transcription reports")
+    ap.add_argument("--folios", default=FOLIOS_DIR)
+    ap.add_argument("--out", default=OUTPUT_DIR)
+    args = ap.parse_args(argv)
+
     print("Loading data...")
-    all_lines = load_all_data()
-    metadata = load_metadata()
-    print(f"Loaded {len(all_lines)} lines from {len(metadata)} folios")
+    all_lines = load_all_data(args.folios)
+    metadata = load_metadata(args.folios)
+    print(f"Loaded {len(all_lines)} JSONL rows from {len(metadata)} folio packages")
 
-    print("Generating STATISTICS.md...")
-    stats = generate_statistics(all_lines, metadata)
-    with open(os.path.join(OUTPUT_DIR, "STATISTICS.md"), "w") as f:
-        f.write(stats)
+    for name, text in [
+        ("STATISTICS.md", generate_statistics(all_lines, metadata)),
+        ("COMPARISON_REPORT.md", generate_comparison_report(all_lines)),
+        ("SECTION_COMPARISON.md", generate_section_comparison(all_lines, metadata)),
+    ]:
+        print(f"Generating {name}...")
+        with open(os.path.join(args.out, name), "w", encoding="utf-8", newline="\n") as f:
+            f.write(text)
 
-    print("Generating COMPARISON_REPORT.md...")
-    comparison = generate_comparison_report(all_lines)
-    with open(os.path.join(OUTPUT_DIR, "COMPARISON_REPORT.md"), "w") as f:
-        f.write(comparison)
-
-    print("Generating SECTION_COMPARISON.md...")
-    section_comp = generate_section_comparison(all_lines, metadata)
-    with open(os.path.join(OUTPUT_DIR, "SECTION_COMPARISON.md"), "w") as f:
-        f.write(section_comp)
-
-    print("Done! Reports written to transcription/")
+    write_full_corpus(all_lines, os.path.join(args.out, "FULL_CORPUS.jsonl"))
+    print("Wrote FULL_CORPUS.jsonl")
+    print(f"Done! Reports written to {args.out}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,17 @@
+{
+  "folio": "f95r",
+  "section": "pharmaceutical",
+  "illustration_type": "herbal",
+  "quire": "Q (Rene) / XVII (Beinecke)",
+  "currier_language": "B",
+  "currier_hand": "5",
+  "iiif_id": null,
+  "iiif_url": null,
+  "condition": "Pharmaceutical page with apparatus illustrations and recipe text.",
+  "layout": {
+    "type": "pharmaceutical",
+    "text_lines": 20
+  },
+  "transcription_date": "2026-11-21",
+  "transcription_method": "Automated ZFD rule parsing (batch_transcribe.py) of the Takahashi (H) EVA transliteration in LSI_ivtff_0d.txt. Not a direct reading of the manuscript image."
+}

@@ -6,7 +6,7 @@
 |----------|-------|
 | qo→ko | 91 |
 | ot→otr | 28 |
-| sh→s | 24 |
+| sh→š | 25 |
 | ok→ost | 24 |
 | ch→h | 18 |
 | da→da | 11 |
@@ -26,29 +26,28 @@
 - **dar** (give-agent)
 - **dain** (substance/given)
 - **hol** (cook-oil)
-- **sal** (salt)
 
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 32 (76%)
-- C: 10 (24%)
+- B: 42 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
 
 - ol: 16x
+- kostain: 14x
 - kosteedi: 13x
-- kostai?n: 12x
 - kostei: 12x
-- sei: 9x
-- kostedi: 8x
+- šei: 10x
+- kostedi: 9x
+- ostain: 8x
 - hedi: 6x
 - or: 5x
 - kosti: 5x
-- otreedi: 5x
 
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*

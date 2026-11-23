@@ -7,7 +7,7 @@
 | ch→h | 16 |
 | qo→ko | 10 |
 | ok→ost | 6 |
-| sh→s | 5 |
+| sh→š | 5 |
 | da→da | 4 |
 | ot→otr | 2 |
 
@@ -27,8 +27,8 @@
 ## Confidence Summary
 
 - A: 0 (0%)
-- B: 8 (89%)
-- C: 1 (11%)
+- B: 9 (100%)
+- C: 0 (0%)
 - D: 0 (0%)
 
 ## Most Frequent ZFD Words
@@ -37,7 +37,8 @@
 - kostedi: 3x
 - or: 3x
 - hedi: 3x
-- sedi: 2x
+- sair: 2x
+- šedi: 2x
 - otredi: 2x
 - kotredi: 2x
 - steodi: 2x
@@ -46,4 +47,4 @@
 
 ---
 
-*Notes compiled 2026-02-07.*
+*Notes compiled 2026-11-21.*
