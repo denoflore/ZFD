@@ -1,0 +1,1199 @@
+{
+  "source_commit": "47ddb6977337bec64de843f923ae6f79b0bf12d1",
+  "source_path": "zfd_decoder/data/lexicon_v2.csv",
+  "archived_sha256": "9c49cac6fc1add3e30b96ff983e6d9c35cfb79d05d9d09af19c00a0b0fce067e",
+  "selection": "Explicit branch-candidates profile only; not the shipping lexicon. Uses the current parser.",
+  "branch_rows": 185,
+  "branch_unique_forms": 182,
+  "shipping_rows": 212,
+  "shipping_unique_forms": 208,
+  "branch_only_forms": [
+    "ako",
+    "bil",
+    "bubr",
+    "cid",
+    "cist",
+    "crn",
+    "crv",
+    "dobr",
+    "dok",
+    "dov",
+    "dram",
+    "dva",
+    "fi",
+    "glav",
+    "grij",
+    "grl",
+    "gut",
+    "hlad_v",
+    "i",
+    "ili",
+    "jed",
+    "jed_n",
+    "jetr",
+    "jez",
+    "jutr",
+    "k",
+    "kad",
+    "kas",
+    "ko",
+    "kost_t",
+    "koz",
+    "krp",
+    "krv",
+    "kvan",
+    "libr",
+    "liz",
+    "mal",
+    "malo",
+    "maz",
+    "melem",
+    "mij",
+    "mnog",
+    "moz",
+    "nam",
+    "ne",
+    "nog",
+    "nos",
+    "obl",
+    "od",
+    "ok",
+    "otek",
+    "per",
+    "pi",
+    "pil",
+    "pol",
+    "posl",
+    "pov",
+    "prah",
+    "prij",
+    "prs",
+    "ran",
+    "ras",
+    "rec",
+    "ruk",
+    "s",
+    "sat",
+    "sav",
+    "sig",
+    "slez",
+    "src",
+    "sus",
+    "svjez",
+    "svr",
+    "tad",
+    "trbuh",
+    "tri",
+    "tuc",
+    "tuc_e",
+    "u",
+    "uh",
+    "ust",
+    "vec",
+    "vel",
+    "vruc",
+    "zel",
+    "zglob",
+    "ziv",
+    "zub",
+    "zut"
+  ],
+  "shipping_only_forms": [
+    "absint",
+    "acet",
+    "add",
+    "adustio",
+    "ain",
+    "airal",
+    "aloin",
+    "amyl",
+    "appon",
+    "aur",
+    "axung",
+    "bib",
+    "calid",
+    "caput",
+    "catapl",
+    "cer",
+    "ciner",
+    "coclear",
+    "col",
+    "comed",
+    "confect",
+    "contund",
+    "cor",
+    "cortic",
+    "croc",
+    "cstr",
+    "ctrr",
+    "cum",
+    "decoct",
+    "dent",
+    "distil",
+    "dolor",
+    "dors",
+    "dragm",
+    "dysent",
+    "eal",
+    "eey",
+    "emplast",
+    "eos",
+    "eoy",
+    "estr",
+    "etr",
+    "ey",
+    "fac",
+    "fauces",
+    "febr",
+    "flux",
+    "fol",
+    "fric",
+    "frigid",
+    "gargar",
+    "glyc",
+    "gumm",
+    "he",
+    "heo",
+    "heodi",
+    "heom",
+    "heos",
+    "hepat",
+    "hern",
+    "infund",
+    "instil",
+    "iunct",
+    "lapis",
+    "lav",
+    "lingu",
+    "lstry",
+    "mamm",
+    "man",
+    "mast",
+    "membr",
+    "misc",
+    "nerv",
+    "noct",
+    "ocul",
+    "olib",
+    "om",
+    "oral",
+    "orolaly",
+    "ov",
+    "papav",
+    "plr",
+    "podag",
+    "pon",
+    "pulm",
+    "pulv",
+    "recip",
+    "ren",
+    "resin",
+    "sacchar",
+    "sain",
+    "sambuc",
+    "sem",
+    "splen",
+    "sterc",
+    "stomac",
+    "streod",
+    "stroy",
+    "succ",
+    "super",
+    "syrup",
+    "ter",
+    "tram",
+    "trocisc",
+    "tumor",
+    "tuss",
+    "unguent",
+    "urtic",
+    "ventr",
+    "vertig",
+    "vesic",
+    "vuln",
+    "še",
+    "šeo",
+    "šeom"
+  ],
+  "shared_forms_with_different_rows": [
+    {
+      "variant": "amar",
+      "branch_rows": [
+        {
+          "name": "bitter",
+          "variant": "amar",
+          "context": "wines/bitters",
+          "gloss": "bitter herb",
+          "latin": "amarus",
+          "croatian": "gorak",
+          "category": "modifier",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "bitter",
+          "variant": "amar",
+          "context": "wines/bitters",
+          "gloss": "bitter herb",
+          "latin": "amarus",
+          "croatian": "gorak",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "ana",
+      "branch_rows": [
+        {
+          "name": "ana",
+          "variant": "ana",
+          "context": "latin_pharma",
+          "gloss": "of each equal parts",
+          "latin": "ana",
+          "croatian": "ana",
+          "category": "latin_pharma",
+          "status": "MISCELLANY",
+          "source": "miscellany+voynich"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "equal_parts",
+          "variant": "ana",
+          "context": "measurement",
+          "gloss": "of each equal parts",
+          "latin": "ana",
+          "croatian": "jednako",
+          "category": "latin_pharma",
+          "status": "CONFIRMED",
+          "source": "miscellany+voynich"
+        }
+      ]
+    },
+    {
+      "variant": "bol",
+      "branch_rows": [
+        {
+          "name": "pain",
+          "variant": "bol",
+          "context": "free",
+          "gloss": "pain/ache",
+          "latin": "",
+          "croatian": "bol",
+          "category": "condition",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "pain",
+          "variant": "bol",
+          "context": "free",
+          "gloss": "pain/ache",
+          "latin": "",
+          "croatian": "bol",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "calc",
+      "branch_rows": [
+        {
+          "name": "lime",
+          "variant": "calc",
+          "context": "minerals/fire",
+          "gloss": "lime/ite",
+          "latin": "calx",
+          "croatian": "vapno",
+          "category": "ingredient",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "lime",
+          "variant": "calc",
+          "context": "minerals/fire",
+          "gloss": "lime/ite",
+          "latin": "calx",
+          "croatian": "vapno",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "char",
+      "branch_rows": [
+        {
+          "name": "fire",
+          "variant": "char",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "ingredient",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "fire",
+          "variant": "char",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "dan",
+      "branch_rows": [
+        {
+          "name": "day",
+          "variant": "dan",
+          "context": "free",
+          "gloss": "day",
+          "latin": "dies",
+          "croatian": "dan",
+          "category": "timing",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "day",
+          "variant": "dan",
+          "context": "free",
+          "gloss": "day",
+          "latin": "dies",
+          "croatian": "dan",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "galb",
+      "branch_rows": [
+        {
+          "name": "galbanum",
+          "variant": "galb",
+          "context": "oils/resins",
+          "gloss": "galbanum",
+          "latin": "galbanum",
+          "croatian": "galbanum",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "galbanum",
+          "variant": "galb",
+          "context": "oils/resins",
+          "gloss": "galbanum",
+          "latin": "galbanum",
+          "croatian": "galban",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "genist",
+      "branch_rows": [
+        {
+          "name": "broom",
+          "variant": "genist",
+          "context": "flowers/roots",
+          "gloss": "genista broom",
+          "latin": "genista",
+          "croatian": "zuka",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "broom",
+          "variant": "genist",
+          "context": "flowers/roots",
+          "gloss": "genista broom",
+          "latin": "genista",
+          "croatian": "zukva",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "gor",
+      "branch_rows": [
+        {
+          "name": "burn",
+          "variant": "gor",
+          "context": "free",
+          "gloss": "burn/fire",
+          "latin": "",
+          "croatian": "gorjeti",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "burn",
+          "variant": "gor",
+          "context": "free",
+          "gloss": "burn/fire",
+          "latin": "",
+          "croatian": "gorjeti",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "hei",
+      "branch_rows": [
+        {
+          "name": "combine",
+          "variant": "hei",
+          "context": "after h-",
+          "gloss": "combine/mix",
+          "latin": "",
+          "croatian": "pomijesati",
+          "category": "action",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "combine",
+          "variant": "hei",
+          "context": "after h-",
+          "gloss": "combine/mix",
+          "latin": "",
+          "croatian": "mijesati",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "hlad",
+      "branch_rows": [
+        {
+          "name": "cold",
+          "variant": "hlad",
+          "context": "free",
+          "gloss": "cold/cool",
+          "latin": "",
+          "croatian": "hladan",
+          "category": "condition",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "cold",
+          "variant": "hlad",
+          "context": "free",
+          "gloss": "cold/cool",
+          "latin": "",
+          "croatian": "hladan",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "hodi",
+      "branch_rows": [
+        {
+          "name": "walk",
+          "variant": "hodi",
+          "context": "after h-",
+          "gloss": "walk/go",
+          "latin": "",
+          "croatian": "hodati",
+          "category": "action",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "walk",
+          "variant": "hodi",
+          "context": "after h-",
+          "gloss": "walk/go",
+          "latin": "",
+          "croatian": "hoditi",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "kair",
+      "branch_rows": [
+        {
+          "name": "fire",
+          "variant": "kair",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "ingredient",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "fire",
+          "variant": "kair",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "kar",
+      "branch_rows": [
+        {
+          "name": "fire",
+          "variant": "kar",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "ingredient",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "fire",
+          "variant": "kar",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "matr",
+      "branch_rows": [
+        {
+          "name": "womb",
+          "variant": "matr",
+          "context": "body target",
+          "gloss": "womb/uterus",
+          "latin": "matrix",
+          "croatian": "maternica",
+          "category": "body_part",
+          "status": "MISCELLANY",
+          "source": "miscellany_new"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "womb",
+          "variant": "matr",
+          "context": "body/organ",
+          "gloss": "womb",
+          "latin": "matrix",
+          "croatian": "maternica",
+          "category": "body_part",
+          "status": "MISCELLANY",
+          "source": "miscellany_new"
+        }
+      ]
+    },
+    {
+      "variant": "mir",
+      "branch_rows": [
+        {
+          "name": "peace",
+          "variant": "mir",
+          "context": "free",
+          "gloss": "peace/calm",
+          "latin": "",
+          "croatian": "mir",
+          "category": "condition",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "peace",
+          "variant": "mir",
+          "context": "free",
+          "gloss": "peace/calm",
+          "latin": "",
+          "croatian": "mir",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "mok",
+      "branch_rows": [
+        {
+          "name": "wet",
+          "variant": "mok",
+          "context": "free",
+          "gloss": "wet/moist",
+          "latin": "",
+          "croatian": "mokar",
+          "category": "condition",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "wet",
+          "variant": "mok",
+          "context": "free",
+          "gloss": "wet/moist",
+          "latin": "",
+          "croatian": "mokar",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "nov",
+      "branch_rows": [
+        {
+          "name": "new",
+          "variant": "nov",
+          "context": "free",
+          "gloss": "new/fresh",
+          "latin": "",
+          "croatian": "nov",
+          "category": "modifier",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "new",
+          "variant": "nov",
+          "context": "free",
+          "gloss": "new/fresh",
+          "latin": "",
+          "croatian": "nov",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "ostai",
+      "branch_rows": [
+        {
+          "name": "vessel",
+          "variant": "ostai",
+          "context": "vessel markers",
+          "gloss": "vessel/container",
+          "latin": "olla",
+          "croatian": "posuda",
+          "category": "equipment",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "vessel",
+          "variant": "ostai",
+          "context": "vessel markers",
+          "gloss": "vessel/container",
+          "latin": "olla",
+          "croatian": "posuda",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "otrai",
+      "branch_rows": [
+        {
+          "name": "vessel",
+          "variant": "otrai",
+          "context": "vessel markers",
+          "gloss": "vessel/container",
+          "latin": "olla",
+          "croatian": "posuda",
+          "category": "equipment",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "vessel",
+          "variant": "otrai",
+          "context": "vessel markers",
+          "gloss": "vessel/container",
+          "latin": "olla",
+          "croatian": "posuda",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "phar",
+      "branch_rows": [
+        {
+          "name": "flask",
+          "variant": "phar",
+          "context": "liquids/resins",
+          "gloss": "flask/phial",
+          "latin": "phiala",
+          "croatian": "boca",
+          "category": "equipment",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "flask",
+          "variant": "phar",
+          "context": "liquids/resins",
+          "gloss": "flask/phial",
+          "latin": "phiala",
+          "croatian": "bocica",
+          "category": "equipment",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "star",
+      "branch_rows": [
+        {
+          "name": "fire",
+          "variant": "star",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "ingredient",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        },
+        {
+          "name": "old",
+          "variant": "star",
+          "context": "free",
+          "gloss": "old/aged",
+          "latin": "",
+          "croatian": "star",
+          "category": "modifier",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "fire",
+          "variant": "star",
+          "context": "vessels/cooking",
+          "gloss": "fire/heat",
+          "latin": "carbo",
+          "croatian": "vatra",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        },
+        {
+          "name": "old",
+          "variant": "star",
+          "context": "free",
+          "gloss": "old/aged",
+          "latin": "",
+          "croatian": "star",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "suh",
+      "branch_rows": [
+        {
+          "name": "dry",
+          "variant": "suh",
+          "context": "free",
+          "gloss": "dry/dried",
+          "latin": "",
+          "croatian": "suh",
+          "category": "condition",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "dry",
+          "variant": "suh",
+          "context": "free",
+          "gloss": "dry/dried",
+          "latin": "",
+          "croatian": "suh",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "syr",
+      "branch_rows": [
+        {
+          "name": "syrup",
+          "variant": "syr",
+          "context": "sweetened",
+          "gloss": "syrup/potion",
+          "latin": "syrupus",
+          "croatian": "sirup",
+          "category": "preparation",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "syrup",
+          "variant": "syr",
+          "context": "sweetened",
+          "gloss": "syrup/potion",
+          "latin": "syrupus",
+          "croatian": "sirup",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "thor",
+      "branch_rows": [
+        {
+          "name": "boil",
+          "variant": "thor",
+          "context": "heat contexts",
+          "gloss": "boil/roast",
+          "latin": "torreo",
+          "croatian": "prokuhati",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "boil",
+          "variant": "thor",
+          "context": "heat contexts",
+          "gloss": "boil/roast",
+          "latin": "torreo",
+          "croatian": "vreti",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "topl",
+      "branch_rows": [
+        {
+          "name": "warm",
+          "variant": "topl",
+          "context": "free",
+          "gloss": "warm/hot",
+          "latin": "",
+          "croatian": "topao",
+          "category": "condition",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "warm",
+          "variant": "topl",
+          "context": "free",
+          "gloss": "warm/hot",
+          "latin": "",
+          "croatian": "topao",
+          "category": "grammar",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "tror",
+      "branch_rows": [
+        {
+          "name": "boil",
+          "variant": "tror",
+          "context": "heat contexts",
+          "gloss": "boil/roast",
+          "latin": "torreo",
+          "croatian": "prokuhati",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "boil",
+          "variant": "tror",
+          "context": "heat contexts",
+          "gloss": "boil/roast",
+          "latin": "torreo",
+          "croatian": "vreti",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "unc",
+      "branch_rows": [
+        {
+          "name": "ounce",
+          "variant": "unc",
+          "context": "measurement",
+          "gloss": "ounce",
+          "latin": "uncia",
+          "croatian": "unca",
+          "category": "measurement",
+          "status": "MISCELLANY",
+          "source": "miscellany_new"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "ounce",
+          "variant": "unc",
+          "context": "measurement",
+          "gloss": "ounce (weight)",
+          "latin": "uncia",
+          "croatian": "unca",
+          "category": "measurement",
+          "status": "MISCELLANY",
+          "source": "miscellany_new"
+        }
+      ]
+    },
+    {
+      "variant": "ung",
+      "branch_rows": [
+        {
+          "name": "ointment",
+          "variant": "ung",
+          "context": "form",
+          "gloss": "ointment/salve",
+          "latin": "unguentum",
+          "croatian": "mast",
+          "category": "preparation",
+          "status": "MISCELLANY",
+          "source": "miscellany_new"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "anoint",
+          "variant": "ung",
+          "context": "action/application",
+          "gloss": "anoint/rub",
+          "latin": "ungere",
+          "croatian": "namazati",
+          "category": "action",
+          "status": "MISCELLANY",
+          "source": "miscellany_new"
+        }
+      ]
+    },
+    {
+      "variant": "ykal",
+      "branch_rows": [
+        {
+          "name": "broth",
+          "variant": "ykal",
+          "context": "vessels/soaking",
+          "gloss": "broth/decoction",
+          "latin": "",
+          "croatian": "juha",
+          "category": "preparation",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "broth",
+          "variant": "ykal",
+          "context": "vessels/soaking",
+          "gloss": "broth/decoction",
+          "latin": "",
+          "croatian": "juha",
+          "category": "action",
+          "status": "CANDIDATE",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "zing",
+      "branch_rows": [
+        {
+          "name": "ginger",
+          "variant": "zing",
+          "context": "spice clusters",
+          "gloss": "ginger",
+          "latin": "zingiber",
+          "croatian": "dumbir",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "ginger",
+          "variant": "zing",
+          "context": "spice clusters",
+          "gloss": "ginger",
+          "latin": "zingiber",
+          "croatian": "djumbir",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "zinor",
+      "branch_rows": [
+        {
+          "name": "ginger",
+          "variant": "zinor",
+          "context": "spice clusters",
+          "gloss": "ginger",
+          "latin": "zingiber",
+          "croatian": "dumbir",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "ginger",
+          "variant": "zinor",
+          "context": "spice clusters",
+          "gloss": "ginger",
+          "latin": "zingiber",
+          "croatian": "djumbir",
+          "category": "ingredient",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    },
+    {
+      "variant": "šei",
+      "branch_rows": [
+        {
+          "name": "strain",
+          "variant": "šei",
+          "context": "after š-",
+          "gloss": "strain/filter",
+          "latin": "",
+          "croatian": "procijediti",
+          "category": "action",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ],
+      "shipping_rows": [
+        {
+          "name": "strain",
+          "variant": "šei",
+          "context": "after š-",
+          "gloss": "strain/filter",
+          "latin": "",
+          "croatian": "cijediti",
+          "category": "grammar",
+          "status": "CONFIRMED",
+          "source": "lexicon_v1"
+        }
+      ]
+    }
+  ]
+}

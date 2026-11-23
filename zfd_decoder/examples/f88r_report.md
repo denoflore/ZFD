@@ -1,0 +1,6176 @@
+# Folio f88r Decode Report
+
+Croatian renderings and English glosses are outputs of the ZFD parser. Parser scores are rule-based scores, not calibrated probabilities.
+
+## Source, image and configuration
+
+```json
+{
+  "folio": "f88r",
+  "diagnostics": {
+    "total_tokens": 150,
+    "operator_counts": {
+      "otr": 9,
+      "da": 5,
+      "ost": 6,
+      "ko": 17,
+      "š": 10,
+      "h": 29
+    },
+    "known_stems": 150,
+    "unknown_stems": 0,
+    "known_ratio": 1.0,
+    "average_confidence": 0.544,
+    "unknown_stem_list": [],
+    "category_distribution": {
+      "preparation": 22,
+      "latin_pharma": 2,
+      "ingredient": 71,
+      "compound": 23,
+      "grammar": 27,
+      "action": 5
+    },
+    "miscellany_stems": 0,
+    "match_type_counts": {
+      "partial": 81,
+      "whole_word": 26,
+      "compound": 23,
+      "suffix": 6,
+      "exact_stem": 14
+    },
+    "validation": {
+      "kost_present": true,
+      "ol_present": true,
+      "operators_found": true
+    }
+  },
+  "source": {
+    "kind": "raw_eva",
+    "path": "voynich_data/raw_eva/f88r.txt",
+    "sha256": "a62eef5453c539b114022ff70a19910c61955f240d3400e6a86f7b4f52c40915",
+    "selection": "Exact raw_eva filename; all recorded readings retained.",
+    "line_numbering": "physical input-file lines",
+    "line_ids": {},
+    "text_sha256": "a62eef5453c539b114022ff70a19910c61955f240d3400e6a86f7b4f52c40915"
+  },
+  "configuration": {
+    "reader_version": 1,
+    "profile": "shipping",
+    "lexicon_file": "zfd_decoder/data/lexicon_v2.csv",
+    "lexicon_sha256": "68fb55f2b4c7725b300cab5c438d7abbc25837f5a6b8a499747193241423741b",
+    "lexicon_rows": 212,
+    "lexicon_unique_forms": 208,
+    "duplicate_variants": 4,
+    "duplicate_policy": "Last CSV row for a variant wins; overlapping entries are retained in the source file.",
+    "compound_enabled": true,
+    "data_sha256": {
+      "zfd_decoder/data/gallows.json": "4b92a22ca5b34981e8382132a38cdf3bf757c03c7b4b2e5cc75461992fdc2c14",
+      "zfd_decoder/data/mid_word.json": "befae478f26852dfa1dc5bca16992ee3cbced8a7890eb5a15e18a95ed5962a76",
+      "zfd_decoder/data/operators.json": "9094d28efbf4f49f04e3b351484683cacc231afddcdedf712ea4e21ad0566e12",
+      "zfd_decoder/data/suffixes.json": "31a0128c3dfb28f87cf78f8ecc14ec962b28c7e31ae720b5beb59f9e1241fde8",
+      "zfd_decoder/data/unified_lexicon_v2.json": "ca4283c4fcf2c42f82e1b4658875fab67561166702115cdaa14446d11b664c29"
+    },
+    "code_sha256": {
+      "06_Pipelines/complete_missing_folios.py": "2254af868619925d189fcecf261b65dfac1b2245406d7b3791ec178070fd379e",
+      "zfd_decoder/main.py": "3335b799f10bc0baef93ba6db1ca35a66dd548e2949fc2d3f0d108a25b285265",
+      "zfd_decoder/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "zfd_decoder/src/compound.py": "a30533277ad6fdfad1efe782617365950d1c15d3708dc043da7b35c38c668670",
+      "zfd_decoder/src/folio_sources.py": "32cefa718799c18c2b10cccbbffaf36f95e533ef1f7605fe27362f22e6ea316b",
+      "zfd_decoder/src/gallows.py": "da493003bbf8800f750bdb19531a92ae15ed9e3fd1dcc391f264a2a7f58b1b56",
+      "zfd_decoder/src/operators.py": "b9cfc426174bac1dfe3acb32e509002fda3ad7f71cd08dfd163543fd7afb41c0",
+      "zfd_decoder/src/output.py": "72ce03a8b2248970a8b2d073f4a320ebe382bedffe33118f27ac66567e8aa3b3",
+      "zfd_decoder/src/pipeline.py": "e4eef80ef791b1677c2386f8f2b88ef23b61267d2d2d6d9cdf9ec5c14079ef9b",
+      "zfd_decoder/src/stems.py": "c23d803fe87ca6ccb8d688d82407f91c499c8f1d3e37c9a202cde55ab03360e6",
+      "zfd_decoder/src/suffixes.py": "8078d5c62cf7b65d341e48daae73aa4c3a3f364089c226d29855187fbf1f4ddf",
+      "zfd_decoder/src/tokenizer.py": "7a2e0cb37c7df47ba80d9d05dbbfefe1ccb550bb80026cea268c8b1b3948f5f0"
+    },
+    "score_definition": "Additive parser score, not a probability of translation correctness."
+  },
+  "image": {
+    "available": true,
+    "folio": "f88r",
+    "base_folio": "f88r",
+    "source_url": "https://collections.library.yale.edu/catalog/2002046",
+    "references": [
+      {
+        "label": "88r",
+        "identifier": "1037112",
+        "service_url": "https://collections.library.yale.edu/iiif/2/1037112",
+        "image_url": "https://collections.library.yale.edu/iiif/2/1037112/full/1000,/0/default.jpg",
+        "full_url": "https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg",
+        "in_root_map": true,
+        "scope": "folio reference"
+      }
+    ],
+    "mapping_sha256": {
+      "folio_iiif_map.json": "0022e1fdab774e6deada3bb92009562590d5749ff072cec6e2ead9c189aeb3bc",
+      "06_Pipelines/glagolitic_ocr/data/folio_iiif_map.json": "ac1e4e38d6d1db7d99ac5c4d1c8b78310d9f177766fd3340d02f760cfbd67726"
+    },
+    "identifier": "1037112",
+    "label": "88r",
+    "image_url": "https://collections.library.yale.edu/iiif/2/1037112/full/1000,/0/default.jpg",
+    "full_url": "https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg",
+    "scope": "folio reference",
+    "note": "References preserve the source map labels. Panel IDs refer to their parent side; no panel crop or word coordinates are inferred. Multiple references are in image-ID order."
+  }
+}
+```
+
+## Image references
+
+- [88r](<https://collections.library.yale.edu/iiif/2/1037112/full/full/0/default.jpg>)
+
+  Scope: folio reference
+
+## Line-aligned reading
+
+### Source line 4
+
+| Layer | Text |
+| --- | --- |
+| EVA | otorchety |
+| ZFD | otrorhetri |
+| Croatian | otr\[orh\]ekstrakti |
+| English gloss | vessel \[orh\] extract/tincture |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.4.1 | Partial | etr | orhetr | orh |  | CANDIDATE | 0.850 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.4.1",
+    "eva": "otorchety",
+    "zfd": "otrorhetri",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "etr",
+    "stem_known": true,
+    "stem_gloss": "extract/tincture",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:otr][RESIDUE:orh][STEM:etr=extract/tincture][SUF:i=adjectival]",
+    "croatian": "otr[orh]ekstrakti",
+    "english": "vessel [orh] extract/tincture",
+    "confidence": 0.8500000000000001,
+    "rewrites": [
+      "operator: ot→otr",
+      "mid-word: ch→h",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: etr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "etr",
+    "matched_croatian": "ekstrakt",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "orhetr",
+    "unmatched_prefix": "orh",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 5
+
+| Layer | Text |
+| --- | --- |
+| EVA | oral |
+| ZFD | oral |
+| Croatian | oralno |
+| English gloss | by mouth |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.5.1 | Whole word | oral | oral |  |  | CONFIRMED | 0.300 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.5.1",
+    "eva": "oral",
+    "zfd": "oral",
+    "operator": null,
+    "operator_type": null,
+    "stem": "oral",
+    "stem_known": true,
+    "stem_gloss": "by mouth",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:oral=by mouth]",
+    "croatian": "oralno",
+    "english": "by mouth",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oral (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "oral",
+    "matched_croatian": "oralno",
+    "matched_category": "latin_pharma",
+    "matched_status": "CONFIRMED",
+    "matched_source": "miscellany+voynich",
+    "stem_surface": "oral",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 6
+
+| Layer | Text |
+| --- | --- |
+| EVA | orald |
+| ZFD | orald |
+| Croatian | oralno\[d\] |
+| English gloss | by mouth \[d\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.6.1 | Partial | oral | orald |  | d | CONFIRMED | 0.300 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.6.1",
+    "eva": "orald",
+    "zfd": "orald",
+    "operator": null,
+    "operator_type": null,
+    "stem": "orald",
+    "stem_known": true,
+    "stem_gloss": "by mouth",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:oral=by mouth][RESIDUE:d]",
+    "croatian": "oralno[d]",
+    "english": "by mouth [d]",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oral (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "oral",
+    "matched_croatian": "oralno",
+    "matched_category": "latin_pharma",
+    "matched_status": "CONFIRMED",
+    "matched_source": "miscellany+voynich",
+    "stem_surface": "orald",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 7
+
+| Layer | Text |
+| --- | --- |
+| EVA | oldar |
+| ZFD | oldar |
+| Croatian | ulje\[d\]ar |
+| English gloss | oil \[d\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.7.1 | Partial | ol | old |  | d | CONFIRMED | 0.450 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.7.1",
+    "eva": "oldar",
+    "zfd": "oldar",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "ar",
+    "suffix_semantic": "water_agent",
+    "expansion": "[STEM:ol=oil][RESIDUE:d][SUF:ar=water_agent]",
+    "croatian": "ulje[d]ar",
+    "english": "oil [d]",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: ar→ar (water/agent)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "old",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 8
+
+| Layer | Text |
+| --- | --- |
+| EVA | otoky |
+| ZFD | otrostri |
+| Croatian | otrkost\[r\]i |
+| English gloss | vessel bone \[r\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.8.1 | Partial | ost | ostr |  | r | CONFIRMED | 1.000 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.8.1",
+    "eva": "otoky",
+    "zfd": "otrostri",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "ost",
+    "stem_known": true,
+    "stem_gloss": "bone",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:otr][STEM:ost=bone][RESIDUE:r][SUF:i=adjectival]",
+    "croatian": "otrkost[r]i",
+    "english": "vessel bone [r]",
+    "confidence": 1.0,
+    "rewrites": [
+      "operator: ot→otr",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: bone (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ost",
+    "matched_croatian": "kost",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ostr",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "r",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 9
+
+| Layer | Text |
+| --- | --- |
+| EVA | otaly |
+| ZFD | otraly |
+| Croatian | otr\[aly\] |
+| English gloss | vessel \[aly\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.9.1 | Compound |  | aly |  |  | CANDIDATE | 0.500 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.9.1",
+    "eva": "otaly",
+    "zfd": "otraly",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "aly",
+    "stem_known": true,
+    "stem_gloss": "Pot (alt) adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][COMPOUND:aly=Pot (alt) adjectival]",
+    "croatian": "otr[aly]",
+    "english": "vessel [aly]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ot→otr"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Compound: [otal=Pot (alt)] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "aly",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "otal",
+        "type": "stem",
+        "gloss": "Pot (alt)",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 10
+
+| Layer | Text |
+| --- | --- |
+| EVA | otaldy |
+| ZFD | otraldy |
+| Croatian | otr\[aldy\] |
+| English gloss | vessel \[aldy\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.10.1 | Compound |  | aldy |  |  | CANDIDATE | 0.500 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.10.1",
+    "eva": "otaldy",
+    "zfd": "otraldy",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "aldy",
+    "stem_known": true,
+    "stem_gloss": "Pot (alt) active process (variant)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][COMPOUND:aldy=Pot (alt) active process (variant)]",
+    "croatian": "otr[aldy]",
+    "english": "vessel [aldy]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ot→otr"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Compound: [otal=Pot (alt)] [dy=active process (vari]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "aldy",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "otal",
+        "type": "stem",
+        "gloss": "Pot (alt)",
+        "content": true
+      },
+      {
+        "eva": "dy",
+        "type": "suffixe",
+        "gloss": "active process (variant)",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 11
+
+| Layer | Text |
+| --- | --- |
+| EVA | oram |
+| ZFD | oram |
+| Croatian | uljeam |
+| English gloss | with oil |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.11.1 | Stem + suffix | or | or |  |  | CONFIRMED | 0.450 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.11.1",
+    "eva": "oram",
+    "zfd": "oram",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "am",
+    "suffix_semantic": "instrumental",
+    "expansion": "[STEM:or=oil][SUF:am=instrumental]",
+    "croatian": "uljeam",
+    "english": "with oil",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: am→am (by means of)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "suffix",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 12
+
+| Layer | Text |
+| --- | --- |
+| EVA | dary |
+| ZFD | dary |
+| Croatian | da\[ry\] |
+| English gloss | dose \[ry\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.12.1 | Compound |  | ry |  |  | CANDIDATE | 0.500 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.12.1",
+    "eva": "dary",
+    "zfd": "dary",
+    "operator": "da",
+    "operator_type": "dative",
+    "stem": "ry",
+    "stem_known": true,
+    "stem_gloss": "Add adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:da][COMPOUND:ry=Add adjectival]",
+    "croatian": "da[ry]",
+    "english": "dose [ry]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: da→da"
+    ],
+    "notes": [
+      "Operator dose/give/add (CONFIRMED)",
+      "Compound: [dar=Add / Portion / Seed] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "ry",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "dar",
+        "type": "stem",
+        "gloss": "Add / Portion / Seed",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 13
+
+| Layer | Text |
+| --- | --- |
+| EVA | okol |
+| ZFD | ostol |
+| Croatian | ostulje |
+| English gloss | vessel oil |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.13.1 | Exact stem | ol | ol |  |  | CONFIRMED | 0.550 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.13.1",
+    "eva": "okol",
+    "zfd": "ostol",
+    "operator": "ost",
+    "operator_type": "vessel",
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ost][STEM:ol=oil]",
+    "croatian": "ostulje",
+    "english": "vessel oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ok→ost"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 14
+
+| Layer | Text |
+| --- | --- |
+| EVA | sorory |
+| ZFD | sorori |
+| Croatian | \[s\]ulje\[or\]i |
+| English gloss | \[s\] oil \[or\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.14.1 | Partial | or | soror | s | or | CONFIRMED | 0.450 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.14.1",
+    "eva": "sorory",
+    "zfd": "sorori",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:s][STEM:or=oil][RESIDUE:or][SUF:i=adjectival]",
+    "croatian": "[s]ulje[or]i",
+    "english": "[s] oil [or]",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "soror",
+    "unmatched_prefix": "s",
+    "unmatched_suffix": "or",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 15
+
+| Layer | Text |
+| --- | --- |
+| EVA | otyda |
+| ZFD | otryda |
+| Croatian | otr\[y\]dati |
+| English gloss | vessel \[y\] give/add |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.15.1 | Partial | da | yda | y |  | CONFIRMED | 0.550 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.15.1",
+    "eva": "otyda",
+    "zfd": "otryda",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "yda",
+    "stem_known": true,
+    "stem_gloss": "give/add",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][RESIDUE:y][STEM:da=give/add]",
+    "croatian": "otr[y]dati",
+    "english": "vessel [y] give/add",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ot→otr"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: give (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "da",
+    "matched_croatian": "dati",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "yda",
+    "unmatched_prefix": "y",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 16
+
+| Layer | Text |
+| --- | --- |
+| EVA | ofyskydal |
+| ZFD | oplrysstrydal |
+| Croatian | \[o\]prašak\[ysstryd\]al |
+| English gloss | \[o\] powder/pulverize \[ysstryd\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.16.1 | Partial | plr | oplrysstryd | o | ysstryd | CANDIDATE | 1.000 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.16.1",
+    "eva": "ofyskydal",
+    "zfd": "oplrysstrydal",
+    "operator": null,
+    "operator_type": null,
+    "stem": "plr",
+    "stem_known": true,
+    "stem_gloss": "powder/pulverize",
+    "suffix": "al",
+    "suffix_semantic": "substance",
+    "expansion": "[RESIDUE:o][STEM:plr=powder/pulverize][RESIDUE:ysstryd][SUF:al=substance]",
+    "croatian": "[o]prašak[ysstryd]al",
+    "english": "[o] powder/pulverize [ysstryd]",
+    "confidence": 1.0,
+    "rewrites": [
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "gallows: f→pr (known stem)",
+      "gallows: p→pl (known stem)",
+      "suffix: al→al (substance)"
+    ],
+    "notes": [
+      "Stem: pulv (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "plr",
+    "matched_croatian": "prašak",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "oplrysstryd",
+    "unmatched_prefix": "o",
+    "unmatched_suffix": "ysstryd",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 17
+
+| Layer | Text |
+| --- | --- |
+| EVA | otor am |
+| ZFD | otror am |
+| Croatian | otrulje \[am\] |
+| English gloss | vessel oil \[am\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.17.1 | Exact stem | or | or |  |  | CONFIRMED | 0.550 |
+| f88r.17.2 | Compound |  | am |  |  | CANDIDATE | 0.250 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.17.1",
+    "eva": "otor",
+    "zfd": "otror",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][STEM:or=oil]",
+    "croatian": "otrulje",
+    "english": "vessel oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ot→otr"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.17.2",
+    "eva": "am",
+    "zfd": "am",
+    "operator": null,
+    "operator_type": null,
+    "stem": "am",
+    "stem_known": true,
+    "stem_gloss": "dative",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:am=dative]",
+    "croatian": "[am]",
+    "english": "[am]",
+    "confidence": 0.25,
+    "rewrites": [],
+    "notes": [
+      "Compound: a [m=dative/instrumental]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "am",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "a",
+        "type": "binding",
+        "gloss": "case vowel",
+        "content": false
+      },
+      {
+        "eva": "m",
+        "type": "suffixe",
+        "gloss": "dative/instrumental",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 18
+
+| Layer | Text |
+| --- | --- |
+| EVA | ofaldo |
+| ZFD | oplraldo |
+| Croatian | \[o\]prašak\[aldo\] |
+| English gloss | \[o\] powder/pulverize \[aldo\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.18.1 | Partial | plr | oplraldo | o | aldo | CANDIDATE | 0.400 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.18.1",
+    "eva": "ofaldo",
+    "zfd": "oplraldo",
+    "operator": null,
+    "operator_type": null,
+    "stem": "oplraldo",
+    "stem_known": true,
+    "stem_gloss": "powder/pulverize",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:o][STEM:plr=powder/pulverize][RESIDUE:aldo]",
+    "croatian": "[o]prašak[aldo]",
+    "english": "[o] powder/pulverize [aldo]",
+    "confidence": 0.4,
+    "rewrites": [
+      "gallows: f→pr (unverified)",
+      "gallows: p→pl (known stem)"
+    ],
+    "notes": [
+      "Stem: pulv (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "plr",
+    "matched_croatian": "prašak",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "oplraldo",
+    "unmatched_prefix": "o",
+    "unmatched_suffix": "aldo",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 21
+
+| Layer | Text |
+| --- | --- |
+| EVA | dorsheoy ctheol qockhey dory sheor sholfchor dal chckhod |
+| ZFD | doršeoi ctrrheol kocstrhei dori šeor šolplrhor dal hcstrhod |
+| Croatian | \[dor\]sa onimi smjesa\[he\]ol kozgušnjeni\[he\]i \[d\]uljei š\[e\]ulje š\[ol\]prašak\[h\]or da\[l\] hzgušnjeni\[h\]od |
+| English gloss | \[dor\] with that which compound mixture \[he\] which concentrated preparation \[he\] \[d\] oil with \[e\] oil with \[ol\] powder/pulverize \[h\] dose \[l\] combine concentrated preparation \[h\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.21.1 | Partial | šeo | doršeo | dor |  | CANDIDATE | 0.400 |
+| f88r.21.2 | Partial | ctrr | ctrrhe |  | he | CANDIDATE | 0.600 |
+| f88r.21.3 | Partial | cstr | cstrhe |  | he | CANDIDATE | 0.850 |
+| f88r.21.4 | Partial | or | dor | d |  | CONFIRMED | 0.450 |
+| f88r.21.5 | Partial | or | eor | e |  | CONFIRMED | 0.550 |
+| f88r.21.6 | Partial | plr | olplrh | ol | h | CANDIDATE | 1.000 |
+| f88r.21.7 | Compound |  | l |  |  | CANDIDATE | 0.500 |
+| f88r.21.8 | Partial | cstr | cstrh |  | h | CANDIDATE | 0.850 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.21.1",
+    "eva": "dorsheoy",
+    "zfd": "doršeoi",
+    "operator": null,
+    "operator_type": null,
+    "stem": "šeo",
+    "stem_known": true,
+    "stem_gloss": "with that which",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:dor][STEM:šeo=with that which][SUF:i=adjectival]",
+    "croatian": "[dor]sa onimi",
+    "english": "[dor] with that which",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: sh→š",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: state_with_that (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "šeo",
+    "matched_croatian": "sa onim",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "doršeo",
+    "unmatched_prefix": "dor",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.21.2",
+    "eva": "ctheol",
+    "zfd": "ctrrheol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ctrr",
+    "stem_known": true,
+    "stem_gloss": "compound mixture",
+    "suffix": "ol",
+    "suffix_semantic": "oil_related",
+    "expansion": "[STEM:ctrr=compound mixture][RESIDUE:he][SUF:ol=oil_related]",
+    "croatian": "smjesa[he]ol",
+    "english": "compound mixture [he]",
+    "confidence": 0.6000000000000001,
+    "rewrites": [
+      "mid-word: ct→ctr",
+      "gallows: t→tr (known stem)",
+      "suffix: ol→ol (oil/oily)"
+    ],
+    "notes": [
+      "Stem: ctrr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ctrr",
+    "matched_croatian": "smjesa",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "ctrrhe",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "he",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.21.3",
+    "eva": "qockhey",
+    "zfd": "kocstrhei",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "cstr",
+    "stem_known": true,
+    "stem_gloss": "concentrated preparation",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:ko][STEM:cstr=concentrated preparation][RESIDUE:he][SUF:i=adjectival]",
+    "croatian": "kozgušnjeni[he]i",
+    "english": "which concentrated preparation [he]",
+    "confidence": 0.8500000000000001,
+    "rewrites": [
+      "operator: qo→ko",
+      "mid-word: ck→cst",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: cstr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "cstr",
+    "matched_croatian": "zgušnjeni",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "cstrhe",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "he",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.21.4",
+    "eva": "dory",
+    "zfd": "dori",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:d][STEM:or=oil][SUF:i=adjectival]",
+    "croatian": "[d]uljei",
+    "english": "[d] oil",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "dor",
+    "unmatched_prefix": "d",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.21.5",
+    "eva": "sheor",
+    "zfd": "šeor",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "eor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][RESIDUE:e][STEM:or=oil]",
+    "croatian": "š[e]ulje",
+    "english": "with [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: sh→š"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eor",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.21.6",
+    "eva": "sholfchor",
+    "zfd": "šolplrhor",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "plr",
+    "stem_known": true,
+    "stem_gloss": "powder/pulverize",
+    "suffix": "or",
+    "suffix_semantic": "oil_related",
+    "expansion": "[OP:š][RESIDUE:ol][STEM:plr=powder/pulverize][RESIDUE:h][SUF:or=oil_related]",
+    "croatian": "š[ol]prašak[h]or",
+    "english": "with [ol] powder/pulverize [h]",
+    "confidence": 1.0,
+    "rewrites": [
+      "operator: sh→š",
+      "mid-word: ch→h",
+      "gallows: f→pr (known stem)",
+      "gallows: p→pl (known stem)",
+      "suffix: or→or (oil)"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: pulv (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "plr",
+    "matched_croatian": "prašak",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "olplrh",
+    "unmatched_prefix": "ol",
+    "unmatched_suffix": "h",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.21.7",
+    "eva": "dal",
+    "zfd": "dal",
+    "operator": "da",
+    "operator_type": "dative",
+    "stem": "l",
+    "stem_known": true,
+    "stem_gloss": "da-l-al",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:da][COMPOUND:l=da-l-al]",
+    "croatian": "da[l]",
+    "english": "dose [l]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: da→da"
+    ],
+    "notes": [
+      "Operator dose/give/add (CONFIRMED)",
+      "Compound: [dal=da-l-al]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "l",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "dal",
+        "type": "stem",
+        "gloss": "da-l-al",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.21.8",
+    "eva": "chckhod",
+    "zfd": "hcstrhod",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "cstr",
+    "stem_known": true,
+    "stem_gloss": "concentrated preparation",
+    "suffix": "od",
+    "suffix_semantic": "completion",
+    "expansion": "[OP:h][STEM:cstr=concentrated preparation][RESIDUE:h][SUF:od=completion]",
+    "croatian": "hzgušnjeni[h]od",
+    "english": "combine concentrated preparation [h]",
+    "confidence": 0.8500000000000001,
+    "rewrites": [
+      "operator: ch→h",
+      "mid-word: ck→cst",
+      "gallows: t→tr (known stem)",
+      "suffix: od→od (completed)"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: cstr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "cstr",
+    "matched_croatian": "zgušnjeni",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "cstrh",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "h",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 22
+
+| Layer | Text |
+| --- | --- |
+| EVA | sal sheom kol chear shekor qokor daiin sar raiin oky sam |
+| ZFD | sal šeom strol hear šestror kostror dain sar rain osty sam |
+| Croatian | sol š\[e\]-om \[str\]ulje h\[e\]voda šmelemor ko\[s\]vreti da\[in\] sol \[r\]stvar ost\[y\] sam |
+| English gloss | salt with \[e\] with/by (instrumental) \[str\] oil combine \[e\] water with plaster/poultice which \[s\] boil/roast dose \[in\] salt \[r\] substance/thing vessel \[y\] self/alone |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.22.1 | Whole word | sal | sal |  |  | CONFIRMED | 0.300 |
+| f88r.22.2 | Partial | om | eom | e |  | CONFIRMED | 0.550 |
+| f88r.22.3 | Partial | ol | strol | str |  | CONFIRMED | 0.700 |
+| f88r.22.4 | Partial | ar | ear | e |  | CONFIRMED | 0.550 |
+| f88r.22.5 | Stem + suffix | estr | estr |  |  | CANDIDATE | 0.950 |
+| f88r.22.6 | Partial | tror | stror | s |  | CANDIDATE | 0.800 |
+| f88r.22.7 | Compound |  | in |  |  | CANDIDATE | 0.600 |
+| f88r.22.8 | Whole word | sar | sar |  |  | CONFIRMED | 0.300 |
+| f88r.22.9 | Partial | ain | rain | r |  | CONFIRMED | 0.400 |
+| f88r.22.10 | Compound |  | y |  |  | CANDIDATE | 0.500 |
+| f88r.22.11 | Whole word | sam | sam |  |  | CONFIRMED | 0.300 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.22.1",
+    "eva": "sal",
+    "zfd": "sal",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sal",
+    "stem_known": true,
+    "stem_gloss": "salt",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sal=salt]",
+    "croatian": "sol",
+    "english": "salt",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: salt (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "sal",
+    "matched_croatian": "sol",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "sal",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.2",
+    "eva": "sheom",
+    "zfd": "šeom",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "eom",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][RESIDUE:e][STEM:om=with/by (instrumental)]",
+    "croatian": "š[e]-om",
+    "english": "with [e] with/by (instrumental)",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: sh→š"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: instrumental (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "eom",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.3",
+    "eva": "kol",
+    "zfd": "strol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "strol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:str][STEM:ol=oil]",
+    "croatian": "[str]ulje",
+    "english": "[str] oil",
+    "confidence": 0.7,
+    "rewrites": [
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strol",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.4",
+    "eva": "chear",
+    "zfd": "hear",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ear",
+    "stem_known": true,
+    "stem_gloss": "water",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ar=water]",
+    "croatian": "h[e]voda",
+    "english": "combine [e] water",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: water (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ar",
+    "matched_croatian": "voda",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ear",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.5",
+    "eva": "shekor",
+    "zfd": "šestror",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "estr",
+    "stem_known": true,
+    "stem_gloss": "plaster/poultice",
+    "suffix": "or",
+    "suffix_semantic": "oil_related",
+    "expansion": "[OP:š][STEM:estr=plaster/poultice][SUF:or=oil_related]",
+    "croatian": "šmelemor",
+    "english": "with plaster/poultice",
+    "confidence": 0.9500000000000001,
+    "rewrites": [
+      "operator: sh→š",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: or→or (oil)"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: emplastr (CANDIDATE)"
+    ],
+    "match_type": "suffix",
+    "matched_form": "estr",
+    "matched_croatian": "melem",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "estr",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.6",
+    "eva": "qokor",
+    "zfd": "kostror",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "stror",
+    "stem_known": true,
+    "stem_gloss": "boil/roast",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:s][STEM:tror=boil/roast]",
+    "croatian": "ko[s]vreti",
+    "english": "which [s] boil/roast",
+    "confidence": 0.8,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: boil (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "tror",
+    "matched_croatian": "vreti",
+    "matched_category": "action",
+    "matched_status": "CANDIDATE",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "stror",
+    "unmatched_prefix": "s",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.7",
+    "eva": "daiin",
+    "zfd": "dain",
+    "operator": "da",
+    "operator_type": "dative",
+    "stem": "in",
+    "stem_known": true,
+    "stem_gloss": "Add (extended)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:da][COMPOUND:in=Add (extended)]",
+    "croatian": "da[in]",
+    "english": "dose [in]",
+    "confidence": 0.6,
+    "rewrites": [
+      "operator: da→da",
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Operator dose/give/add (CONFIRMED)",
+      "Compound: [daiin=Add (extended)]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "in",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "daiin",
+        "type": "stem",
+        "gloss": "Add (extended)",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.22.8",
+    "eva": "sar",
+    "zfd": "sar",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sar",
+    "stem_known": true,
+    "stem_gloss": "salt",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sar=salt]",
+    "croatian": "sol",
+    "english": "salt",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: salt (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "sar",
+    "matched_croatian": "sol",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "sar",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.9",
+    "eva": "raiin",
+    "zfd": "rain",
+    "operator": null,
+    "operator_type": null,
+    "stem": "rain",
+    "stem_known": true,
+    "stem_gloss": "substance/thing",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:r][STEM:ain=substance/thing]",
+    "croatian": "[r]stvar",
+    "english": "[r] substance/thing",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Stem: substance (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ain",
+    "matched_croatian": "stvar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "rain",
+    "unmatched_prefix": "r",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.22.10",
+    "eva": "oky",
+    "zfd": "osty",
+    "operator": "ost",
+    "operator_type": "vessel",
+    "stem": "y",
+    "stem_known": true,
+    "stem_gloss": "vessel adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ost][COMPOUND:y=vessel adjectival]",
+    "croatian": "ost[y]",
+    "english": "vessel [y]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ok→ost"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Compound: [ok=vessel/container] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "y",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ok",
+        "type": "operator",
+        "gloss": "vessel/container",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.22.11",
+    "eva": "sam",
+    "zfd": "sam",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sam",
+    "stem_known": true,
+    "stem_gloss": "self/alone",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sam=self/alone]",
+    "croatian": "sam",
+    "english": "self/alone",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: self (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "sam",
+    "matched_croatian": "sam",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "sam",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 23
+
+| Layer | Text |
+| --- | --- |
+| EVA | oain or om otam okeom cheeor qokeody dar or om cheody |
+| ZFD | oain or om otram osteom heor kostreodi dar or om heody |
+| Croatian | \[o\]stvar ulje -om otr\[am\] ost\[e\]-om h\[e\]ulje kosmolai dar ulje -om h\[eody\] |
+| English gloss | \[o\] substance/thing oil with/by (instrumental) vessel \[am\] vessel \[e\] with/by (instrumental) combine \[e\] oil which storax/resin preparation gift oil with/by (instrumental) combine \[eody\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.23.1 | Partial | ain | oain | o |  | CONFIRMED | 0.300 |
+| f88r.23.2 | Whole word | or | or |  |  | CONFIRMED | 0.300 |
+| f88r.23.3 | Whole word | om | om |  |  | CONFIRMED | 0.300 |
+| f88r.23.4 | Compound |  | am |  |  | CANDIDATE | 0.500 |
+| f88r.23.5 | Partial | om | eom | e |  | CONFIRMED | 0.550 |
+| f88r.23.6 | Partial | or | eor | e |  | CONFIRMED | 0.650 |
+| f88r.23.7 | Stem + suffix | streod | streod |  |  | CANDIDATE | 0.800 |
+| f88r.23.8 | Whole word | dar | dar |  |  | CONFIRMED | 0.300 |
+| f88r.23.9 | Whole word | or | or |  |  | CONFIRMED | 0.300 |
+| f88r.23.10 | Whole word | om | om |  |  | CONFIRMED | 0.300 |
+| f88r.23.11 | Compound |  | eody |  |  | CANDIDATE | 0.500 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.23.1",
+    "eva": "oain",
+    "zfd": "oain",
+    "operator": null,
+    "operator_type": null,
+    "stem": "oain",
+    "stem_known": true,
+    "stem_gloss": "substance/thing",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:o][STEM:ain=substance/thing]",
+    "croatian": "[o]stvar",
+    "english": "[o] substance/thing",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: substance (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ain",
+    "matched_croatian": "stvar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "oain",
+    "unmatched_prefix": "o",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.2",
+    "eva": "or",
+    "zfd": "or",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:or=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.3",
+    "eva": "om",
+    "zfd": "om",
+    "operator": null,
+    "operator_type": null,
+    "stem": "om",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:om=with/by (instrumental)]",
+    "croatian": "-om",
+    "english": "with/by (instrumental)",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: instrumental (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "om",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.4",
+    "eva": "otam",
+    "zfd": "otram",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "am",
+    "stem_known": true,
+    "stem_gloss": "vessel dative",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][COMPOUND:am=vessel dative]",
+    "croatian": "otr[am]",
+    "english": "vessel [am]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ot→otr"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Compound: [ot=vessel/container (va] a [m=dative/instrumental]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "am",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ot",
+        "type": "operator",
+        "gloss": "vessel/container (variant)",
+        "content": true
+      },
+      {
+        "eva": "a",
+        "type": "binding",
+        "gloss": "case vowel",
+        "content": false
+      },
+      {
+        "eva": "m",
+        "type": "suffixe",
+        "gloss": "dative/instrumental",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.23.5",
+    "eva": "okeom",
+    "zfd": "osteom",
+    "operator": "ost",
+    "operator_type": "vessel",
+    "stem": "eom",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ost][RESIDUE:e][STEM:om=with/by (instrumental)]",
+    "croatian": "ost[e]-om",
+    "english": "vessel [e] with/by (instrumental)",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ok→ost"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: instrumental (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "eom",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.6",
+    "eva": "cheeor",
+    "zfd": "heor",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:or=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.6499999999999999,
+    "rewrites": [
+      "operator: ch→h",
+      "mid-word: ee→e"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eor",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.7",
+    "eva": "qokeody",
+    "zfd": "kostreodi",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "streod",
+    "stem_known": true,
+    "stem_gloss": "storax/resin preparation",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:ko][STEM:streod=storax/resin preparation][SUF:i=adjectival]",
+    "croatian": "kosmolai",
+    "english": "which storax/resin preparation",
+    "confidence": 0.8,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (unverified)",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: streod (CANDIDATE)"
+    ],
+    "match_type": "suffix",
+    "matched_form": "streod",
+    "matched_croatian": "smola",
+    "matched_category": "ingredient",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "streod",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.8",
+    "eva": "dar",
+    "zfd": "dar",
+    "operator": null,
+    "operator_type": null,
+    "stem": "dar",
+    "stem_known": true,
+    "stem_gloss": "gift",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:dar=gift]",
+    "croatian": "dar",
+    "english": "gift",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: gift (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "dar",
+    "matched_croatian": "dar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "dar",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.9",
+    "eva": "or",
+    "zfd": "or",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:or=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.10",
+    "eva": "om",
+    "zfd": "om",
+    "operator": null,
+    "operator_type": null,
+    "stem": "om",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:om=with/by (instrumental)]",
+    "croatian": "-om",
+    "english": "with/by (instrumental)",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: instrumental (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "om",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.23.11",
+    "eva": "cheody",
+    "zfd": "heody",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eody",
+    "stem_known": true,
+    "stem_gloss": "combine stalk adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][COMPOUND:eody=combine stalk adjectival]",
+    "croatian": "h[eody]",
+    "english": "combine [eody]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Compound: [ch=combine/cook] e [od=stalk/stem] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "eody",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ch",
+        "type": "operator",
+        "gloss": "combine/cook",
+        "content": true
+      },
+      {
+        "eva": "e",
+        "type": "binding",
+        "gloss": "case vowel",
+        "content": false
+      },
+      {
+        "eva": "od",
+        "type": "stem",
+        "gloss": "stalk/stem",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 24
+
+| Layer | Text |
+| --- | --- |
+| EVA | qokeol cheol saiin cheos cheol doleeey or cheom cheomam |
+| ZFD | kostreol heol sain heos heol dolei or heom heomam |
+| Croatian | ko\[stre\]ulje h\[e\]ulje solina hih h\[e\]ulje \[d\]uljeei ulje h\[e\]-om h\[e\]-omam |
+| English gloss | which \[stre\] oil combine \[e\] oil salt-substance/brine combine them/those combine \[e\] oil \[d\] oil oil combine \[e\] with/by (instrumental) with combine \[e\] with/by (instrumental) |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.24.1 | Partial | ol | streol | stre |  | CONFIRMED | 0.950 |
+| f88r.24.2 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+| f88r.24.3 | Exact stem | sain | sain |  |  | CANDIDATE | 0.250 |
+| f88r.24.4 | Exact stem | eos | eos |  |  | CANDIDATE | 0.400 |
+| f88r.24.5 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+| f88r.24.6 | Partial | ol | dol | d |  | CONFIRMED | 0.550 |
+| f88r.24.7 | Whole word | or | or |  |  | CONFIRMED | 0.300 |
+| f88r.24.8 | Partial | om | eom | e |  | CONFIRMED | 0.550 |
+| f88r.24.9 | Partial | om | eom | e |  | CONFIRMED | 0.700 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.24.1",
+    "eva": "qokeol",
+    "zfd": "kostreol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "streol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:stre][STEM:ol=oil]",
+    "croatian": "ko[stre]ulje",
+    "english": "which [stre] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "streol",
+    "unmatched_prefix": "stre",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.2",
+    "eva": "cheol",
+    "zfd": "heol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.3",
+    "eva": "saiin",
+    "zfd": "sain",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sain",
+    "stem_known": true,
+    "stem_gloss": "salt-substance/brine",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sain=salt-substance/brine]",
+    "croatian": "solina",
+    "english": "salt-substance/brine",
+    "confidence": 0.25,
+    "rewrites": [
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Stem: salt_substance (CANDIDATE)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "sain",
+    "matched_croatian": "solina",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "sain",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.4",
+    "eva": "cheos",
+    "zfd": "heos",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eos",
+    "stem_known": true,
+    "stem_gloss": "them/those",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][STEM:eos=them/those]",
+    "croatian": "hih",
+    "english": "combine them/those",
+    "confidence": 0.4,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: eos (CANDIDATE)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "eos",
+    "matched_croatian": "ih",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "eos",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.5",
+    "eva": "cheol",
+    "zfd": "heol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.6",
+    "eva": "doleeey",
+    "zfd": "dolei",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "ei",
+    "suffix_semantic": "instance",
+    "expansion": "[RESIDUE:d][STEM:ol=oil][SUF:ei=instance]",
+    "croatian": "[d]uljeei",
+    "english": "[d] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "mid-word: ee→e",
+      "suffix: eey→ei (instance of)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "dol",
+    "unmatched_prefix": "d",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.7",
+    "eva": "or",
+    "zfd": "or",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:or=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.8",
+    "eva": "cheom",
+    "zfd": "heom",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eom",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:om=with/by (instrumental)]",
+    "croatian": "h[e]-om",
+    "english": "combine [e] with/by (instrumental)",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: instrumental (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "eom",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.24.9",
+    "eva": "cheomam",
+    "zfd": "heomam",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "om",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": "am",
+    "suffix_semantic": "instrumental",
+    "expansion": "[OP:h][RESIDUE:e][STEM:om=with/by (instrumental)][SUF:am=instrumental]",
+    "croatian": "h[e]-omam",
+    "english": "with combine [e] with/by (instrumental)",
+    "confidence": 0.7,
+    "rewrites": [
+      "operator: ch→h",
+      "suffix: am→am (by means of)"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: instrumental (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "eom",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 25
+
+| Layer | Text |
+| --- | --- |
+| EVA | yokeody cheom qoor chees ykeor shy sam |
+| ZFD | yostreodi heom koor hes ystreor šy sam |
+| Croatian | \[yo\]smolai h\[e\]-om koulje h\[es\] \[ystre\]ulje š\[y\] sam |
+| English gloss | \[yo\] storax/resin preparation combine \[e\] with/by (instrumental) which oil combine \[es\] \[ystre\] oil with \[y\] self/alone |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.25.1 | Partial | streod | yostreod | yo |  | CANDIDATE | 0.700 |
+| f88r.25.2 | Partial | om | eom | e |  | CONFIRMED | 0.550 |
+| f88r.25.3 | Exact stem | or | or |  |  | CONFIRMED | 0.550 |
+| f88r.25.4 | Compound |  | es |  |  | CANDIDATE | 0.600 |
+| f88r.25.5 | Partial | or | ystreor | ystre |  | CONFIRMED | 0.700 |
+| f88r.25.6 | Compound |  | y |  |  | CANDIDATE | 0.500 |
+| f88r.25.7 | Whole word | sam | sam |  |  | CONFIRMED | 0.300 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.25.1",
+    "eva": "yokeody",
+    "zfd": "yostreodi",
+    "operator": null,
+    "operator_type": null,
+    "stem": "streod",
+    "stem_known": true,
+    "stem_gloss": "storax/resin preparation",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:yo][STEM:streod=storax/resin preparation][SUF:i=adjectival]",
+    "croatian": "[yo]smolai",
+    "english": "[yo] storax/resin preparation",
+    "confidence": 0.7000000000000001,
+    "rewrites": [
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: streod (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "streod",
+    "matched_croatian": "smola",
+    "matched_category": "ingredient",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "yostreod",
+    "unmatched_prefix": "yo",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.25.2",
+    "eva": "cheom",
+    "zfd": "heom",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eom",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:om=with/by (instrumental)]",
+    "croatian": "h[e]-om",
+    "english": "combine [e] with/by (instrumental)",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: instrumental (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "eom",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.25.3",
+    "eva": "qoor",
+    "zfd": "koor",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][STEM:or=oil]",
+    "croatian": "koulje",
+    "english": "which oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: qo→ko"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.25.4",
+    "eva": "chees",
+    "zfd": "hes",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "es",
+    "stem_known": true,
+    "stem_gloss": "combine",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][COMPOUND:es=combine]",
+    "croatian": "h[es]",
+    "english": "combine [es]",
+    "confidence": 0.6,
+    "rewrites": [
+      "operator: ch→h",
+      "mid-word: ee→e"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Compound: [ch=combine/cook] [ee=(intensifier)] [s=~15]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "es",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ch",
+        "type": "operator",
+        "gloss": "combine/cook",
+        "content": true
+      },
+      {
+        "eva": "ee",
+        "type": "stem",
+        "gloss": "(intensifier)",
+        "content": true
+      },
+      {
+        "eva": "s",
+        "type": "suffixe",
+        "gloss": "~15",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.25.5",
+    "eva": "ykeor",
+    "zfd": "ystreor",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ystreor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:ystre][STEM:or=oil]",
+    "croatian": "[ystre]ulje",
+    "english": "[ystre] oil",
+    "confidence": 0.7,
+    "rewrites": [
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ystreor",
+    "unmatched_prefix": "ystre",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.25.6",
+    "eva": "shy",
+    "zfd": "šy",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "y",
+    "stem_known": true,
+    "stem_gloss": "soak adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][COMPOUND:y=soak adjectival]",
+    "croatian": "š[y]",
+    "english": "with [y]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: sh→š"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Compound: [sh=soak/infuse] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "y",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "sh",
+        "type": "operator",
+        "gloss": "soak/infuse",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.25.7",
+    "eva": "sam",
+    "zfd": "sam",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sam",
+    "stem_known": true,
+    "stem_gloss": "self/alone",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sam=self/alone]",
+    "croatian": "sam",
+    "english": "self/alone",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: self (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "sam",
+    "matched_croatian": "sam",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "sam",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 26
+
+| Layer | Text |
+| --- | --- |
+| EVA | koaiphhy cphol orchor pcheoly otchol oldy sal saly |
+| ZFD | stroaiplhhy cplhol orhor plheoli otrhol oldi sal sali |
+| Croatian | \[stroaiplhhy\] \[cpl\]brasno ulje\[h\]or \[pl\]ono što\[l\]i otrbrasno ulje\[d\]i sol soli |
+| English gloss | \[stroaiplhhy\] \[cpl\] flour/grain oil \[h\] \[pl\] that which/the one \[l\] vessel flour/grain oil \[d\] salt salt |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.26.1 | Compound |  | stroaiplhhy |  |  | CANDIDATE | 0.400 |
+| f88r.26.2 | Partial | hol | cplhol | cpl |  | CONFIRMED | 0.500 |
+| f88r.26.3 | Partial | or | orh |  | h | CONFIRMED | 0.550 |
+| f88r.26.4 | Partial | heo | plheol | pl | l | CANDIDATE | 0.600 |
+| f88r.26.5 | Exact stem | hol | hol |  |  | CONFIRMED | 0.650 |
+| f88r.26.6 | Partial | ol | old |  | d | CONFIRMED | 0.450 |
+| f88r.26.7 | Whole word | sal | sal |  |  | CONFIRMED | 0.300 |
+| f88r.26.8 | Stem + suffix | sal | sal |  |  | CONFIRMED | 0.450 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.26.1",
+    "eva": "koaiphhy",
+    "zfd": "stroaiplhhy",
+    "operator": null,
+    "operator_type": null,
+    "stem": "stroaiplhhy",
+    "stem_known": true,
+    "stem_gloss": "measure adjectival (variant) combine combine adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:stroaiplhhy=measure adjectival (variant) combine combine adjectival]",
+    "croatian": "[stroaiplhhy]",
+    "english": "[stroaiplhhy]",
+    "confidence": 0.4,
+    "rewrites": [
+      "gallows: k→st (unverified)",
+      "gallows: t→tr (unverified)",
+      "gallows: p→pl (unverified)"
+    ],
+    "notes": [
+      "Compound: [ko=measure/quantify (va] a [i=adjectival (variant)] p [h=combine/cook (reduce] [h=combine/cook (reduce] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "stroaiplhhy",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ko",
+        "type": "operator",
+        "gloss": "measure/quantify (variant)",
+        "content": true
+      },
+      {
+        "eva": "a",
+        "type": "binding",
+        "gloss": "case vowel",
+        "content": false
+      },
+      {
+        "eva": "i",
+        "type": "suffixe",
+        "gloss": "adjectival (variant)",
+        "content": true
+      },
+      {
+        "eva": "p",
+        "type": "gallows",
+        "gloss": "preparation (pl-)",
+        "content": false
+      },
+      {
+        "eva": "h",
+        "type": "operator",
+        "gloss": "combine/cook (reduced)",
+        "content": true
+      },
+      {
+        "eva": "h",
+        "type": "operator",
+        "gloss": "combine/cook (reduced)",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.26.2",
+    "eva": "cphol",
+    "zfd": "cplhol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "cplhol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:cpl][STEM:hol=flour/grain]",
+    "croatian": "[cpl]brasno",
+    "english": "[cpl] flour/grain",
+    "confidence": 0.5,
+    "rewrites": [
+      "gallows: p→pl (known stem)"
+    ],
+    "notes": [
+      "Stem: flour (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "hol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "cplhol",
+    "unmatched_prefix": "cpl",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.26.3",
+    "eva": "orchor",
+    "zfd": "orhor",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "or",
+    "suffix_semantic": "oil_related",
+    "expansion": "[STEM:or=oil][RESIDUE:h][SUF:or=oil_related]",
+    "croatian": "ulje[h]or",
+    "english": "oil [h]",
+    "confidence": 0.55,
+    "rewrites": [
+      "mid-word: ch→h",
+      "suffix: or→or (oil)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "orh",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "h",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.26.4",
+    "eva": "pcheoly",
+    "zfd": "plheoli",
+    "operator": null,
+    "operator_type": null,
+    "stem": "heo",
+    "stem_known": true,
+    "stem_gloss": "that which/the one",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:pl][STEM:heo=that which/the one][RESIDUE:l][SUF:i=adjectival]",
+    "croatian": "[pl]ono što[l]i",
+    "english": "[pl] that which/the one [l]",
+    "confidence": 0.6000000000000001,
+    "rewrites": [
+      "mid-word: ch→h",
+      "gallows: p→pl (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: state_that_which (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "heo",
+    "matched_croatian": "ono što",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "plheol",
+    "unmatched_prefix": "pl",
+    "unmatched_suffix": "l",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.26.5",
+    "eva": "otchol",
+    "zfd": "otrhol",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "hol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][STEM:hol=flour/grain]",
+    "croatian": "otrbrasno",
+    "english": "vessel flour/grain",
+    "confidence": 0.6499999999999999,
+    "rewrites": [
+      "operator: ot→otr",
+      "mid-word: ch→h"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: flour (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "hol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "hol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.26.6",
+    "eva": "oldy",
+    "zfd": "oldi",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[STEM:ol=oil][RESIDUE:d][SUF:i=adjectival]",
+    "croatian": "ulje[d]i",
+    "english": "oil [d]",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "old",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.26.7",
+    "eva": "sal",
+    "zfd": "sal",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sal",
+    "stem_known": true,
+    "stem_gloss": "salt",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sal=salt]",
+    "croatian": "sol",
+    "english": "salt",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: salt (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "sal",
+    "matched_croatian": "sol",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "sal",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.26.8",
+    "eva": "saly",
+    "zfd": "sali",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sal",
+    "stem_known": true,
+    "stem_gloss": "salt",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[STEM:sal=salt][SUF:i=adjectival]",
+    "croatian": "soli",
+    "english": "salt",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: salt (CONFIRMED)"
+    ],
+    "match_type": "suffix",
+    "matched_form": "sal",
+    "matched_croatian": "sol",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "sal",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 27
+
+| Layer | Text |
+| --- | --- |
+| EVA | dchey chokol daiin qoekol qoekol qockhoy okol cheol |
+| ZFD | dhei hostrol dain koestrol koestrol kocstrhoi ostol heol |
+| Croatian | \[d\]ov/taji hkost\[r\]ol da\[in\] komelemol komelemol kozgušnjeni\[ho\]i ostulje h\[e\]ulje |
+| English gloss | \[d\] the/this (demonstrative) combine bone \[r\] dose \[in\] which plaster/poultice which plaster/poultice which concentrated preparation \[ho\] vessel oil combine \[e\] oil |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.27.1 | Partial | he | dhe | d |  | CANDIDATE | 0.400 |
+| f88r.27.2 | Partial | ost | ostr |  | r | CONFIRMED | 1.000 |
+| f88r.27.3 | Compound |  | in |  |  | CANDIDATE | 0.600 |
+| f88r.27.4 | Stem + suffix | estr | estr |  |  | CANDIDATE | 0.950 |
+| f88r.27.5 | Stem + suffix | estr | estr |  |  | CANDIDATE | 0.950 |
+| f88r.27.6 | Partial | cstr | cstrho |  | ho | CANDIDATE | 0.850 |
+| f88r.27.7 | Exact stem | ol | ol |  |  | CONFIRMED | 0.550 |
+| f88r.27.8 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.27.1",
+    "eva": "dchey",
+    "zfd": "dhei",
+    "operator": null,
+    "operator_type": null,
+    "stem": "he",
+    "stem_known": true,
+    "stem_gloss": "the/this (demonstrative)",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:d][STEM:he=the/this (demonstrative)][SUF:i=adjectival]",
+    "croatian": "[d]ov/taji",
+    "english": "[d] the/this (demonstrative)",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: ch→h",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: state_this (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "he",
+    "matched_croatian": "ov/taj",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "dhe",
+    "unmatched_prefix": "d",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.27.2",
+    "eva": "chokol",
+    "zfd": "hostrol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ost",
+    "stem_known": true,
+    "stem_gloss": "bone",
+    "suffix": "ol",
+    "suffix_semantic": "oil_related",
+    "expansion": "[OP:h][STEM:ost=bone][RESIDUE:r][SUF:ol=oil_related]",
+    "croatian": "hkost[r]ol",
+    "english": "combine bone [r]",
+    "confidence": 1.0,
+    "rewrites": [
+      "operator: ch→h",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: ol→ol (oil/oily)"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: bone (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ost",
+    "matched_croatian": "kost",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ostr",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "r",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.27.3",
+    "eva": "daiin",
+    "zfd": "dain",
+    "operator": "da",
+    "operator_type": "dative",
+    "stem": "in",
+    "stem_known": true,
+    "stem_gloss": "Add (extended)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:da][COMPOUND:in=Add (extended)]",
+    "croatian": "da[in]",
+    "english": "dose [in]",
+    "confidence": 0.6,
+    "rewrites": [
+      "operator: da→da",
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Operator dose/give/add (CONFIRMED)",
+      "Compound: [daiin=Add (extended)]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "in",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "daiin",
+        "type": "stem",
+        "gloss": "Add (extended)",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.27.4",
+    "eva": "qoekol",
+    "zfd": "koestrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "estr",
+    "stem_known": true,
+    "stem_gloss": "plaster/poultice",
+    "suffix": "ol",
+    "suffix_semantic": "oil_related",
+    "expansion": "[OP:ko][STEM:estr=plaster/poultice][SUF:ol=oil_related]",
+    "croatian": "komelemol",
+    "english": "which plaster/poultice",
+    "confidence": 0.9500000000000001,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: ol→ol (oil/oily)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: emplastr (CANDIDATE)"
+    ],
+    "match_type": "suffix",
+    "matched_form": "estr",
+    "matched_croatian": "melem",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "estr",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.27.5",
+    "eva": "qoekol",
+    "zfd": "koestrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "estr",
+    "stem_known": true,
+    "stem_gloss": "plaster/poultice",
+    "suffix": "ol",
+    "suffix_semantic": "oil_related",
+    "expansion": "[OP:ko][STEM:estr=plaster/poultice][SUF:ol=oil_related]",
+    "croatian": "komelemol",
+    "english": "which plaster/poultice",
+    "confidence": 0.9500000000000001,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: ol→ol (oil/oily)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: emplastr (CANDIDATE)"
+    ],
+    "match_type": "suffix",
+    "matched_form": "estr",
+    "matched_croatian": "melem",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "estr",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.27.6",
+    "eva": "qockhoy",
+    "zfd": "kocstrhoi",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "cstr",
+    "stem_known": true,
+    "stem_gloss": "concentrated preparation",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:ko][STEM:cstr=concentrated preparation][RESIDUE:ho][SUF:i=adjectival]",
+    "croatian": "kozgušnjeni[ho]i",
+    "english": "which concentrated preparation [ho]",
+    "confidence": 0.8500000000000001,
+    "rewrites": [
+      "operator: qo→ko",
+      "mid-word: ck→cst",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: cstr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "cstr",
+    "matched_croatian": "zgušnjeni",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "cstrho",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "ho",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.27.7",
+    "eva": "okol",
+    "zfd": "ostol",
+    "operator": "ost",
+    "operator_type": "vessel",
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ost][STEM:ol=oil]",
+    "croatian": "ostulje",
+    "english": "vessel oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ok→ost"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.27.8",
+    "eva": "cheol",
+    "zfd": "heol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 28
+
+| Layer | Text |
+| --- | --- |
+| EVA | dsheol qokeey s chy saiin chor oteor aiin chosals |
+| ZFD | dšeol kostrey s hy sain chor otreor ain hosals |
+| Croatian | \[d\]sa timol ko\[str\]\[ey\] \[s\] h\[y\] solina kuhati otr\[e\]ulje stvar h\[o\]sol\[s\] |
+| English gloss | \[d\] with the (comitative+article) which \[str\] liquid/fluid \[s\] combine \[y\] salt-substance/brine cook/combine vessel \[e\] oil substance/thing combine \[o\] salt \[s\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.28.1 | Partial | še | dše | d |  | CANDIDATE | 0.400 |
+| f88r.28.2 | Partial | ey | strey | str |  | CANDIDATE | 0.900 |
+| f88r.28.3 | Compound |  | s |  |  | CANDIDATE | 0.250 |
+| f88r.28.4 | Compound |  | y |  |  | CANDIDATE | 0.500 |
+| f88r.28.5 | Exact stem | sain | sain |  |  | CANDIDATE | 0.250 |
+| f88r.28.6 | Whole word | chor | chor |  |  | CONFIRMED | 0.300 |
+| f88r.28.7 | Partial | or | eor | e |  | CONFIRMED | 0.550 |
+| f88r.28.8 | Exact stem | ain | ain |  |  | CONFIRMED | 0.400 |
+| f88r.28.9 | Partial | sal | osals | o | s | CONFIRMED | 0.550 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.28.1",
+    "eva": "dsheol",
+    "zfd": "dšeol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "še",
+    "stem_known": true,
+    "stem_gloss": "with the (comitative+article)",
+    "suffix": "ol",
+    "suffix_semantic": "oil_related",
+    "expansion": "[RESIDUE:d][STEM:še=with the (comitative+article)][SUF:ol=oil_related]",
+    "croatian": "[d]sa timol",
+    "english": "[d] with the (comitative+article)",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: sh→š",
+      "suffix: ol→ol (oil/oily)"
+    ],
+    "notes": [
+      "Stem: state_with_the (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "še",
+    "matched_croatian": "sa tim",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "dše",
+    "unmatched_prefix": "d",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.28.2",
+    "eva": "qokeey",
+    "zfd": "kostrey",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "strey",
+    "stem_known": true,
+    "stem_gloss": "liquid/fluid",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:str][STEM:ey=liquid/fluid]",
+    "croatian": "ko[str][ey]",
+    "english": "which [str] liquid/fluid",
+    "confidence": 0.9,
+    "rewrites": [
+      "operator: qo→ko",
+      "mid-word: ee→e",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: ey (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ey",
+    "matched_croatian": "",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "corpus_frequency",
+    "stem_surface": "strey",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.28.3",
+    "eva": "s",
+    "zfd": "s",
+    "operator": null,
+    "operator_type": null,
+    "stem": "s",
+    "stem_known": true,
+    "stem_gloss": "(compound)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:s=(compound)]",
+    "croatian": "[s]",
+    "english": "[s]",
+    "confidence": 0.25,
+    "rewrites": [],
+    "notes": [
+      "Compound: [s=~15]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "s",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "s",
+        "type": "suffixe",
+        "gloss": "~15",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.28.4",
+    "eva": "chy",
+    "zfd": "hy",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "y",
+    "stem_known": true,
+    "stem_gloss": "combine adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][COMPOUND:y=combine adjectival]",
+    "croatian": "h[y]",
+    "english": "combine [y]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Compound: [ch=combine/cook] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "y",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ch",
+        "type": "operator",
+        "gloss": "combine/cook",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.28.5",
+    "eva": "saiin",
+    "zfd": "sain",
+    "operator": null,
+    "operator_type": null,
+    "stem": "sain",
+    "stem_known": true,
+    "stem_gloss": "salt-substance/brine",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:sain=salt-substance/brine]",
+    "croatian": "solina",
+    "english": "salt-substance/brine",
+    "confidence": 0.25,
+    "rewrites": [
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Stem: salt_substance (CANDIDATE)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "sain",
+    "matched_croatian": "solina",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "sain",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.28.6",
+    "eva": "chor",
+    "zfd": "chor",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chor",
+    "stem_known": true,
+    "stem_gloss": "cook/combine",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chor=cook/combine]",
+    "croatian": "kuhati",
+    "english": "cook/combine",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: cook (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chor",
+    "matched_croatian": "kuhati",
+    "matched_category": "action",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chor",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.28.7",
+    "eva": "oteor",
+    "zfd": "otreor",
+    "operator": "otr",
+    "operator_type": "vessel",
+    "stem": "eor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:otr][RESIDUE:e][STEM:or=oil]",
+    "croatian": "otr[e]ulje",
+    "english": "vessel [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ot→otr"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eor",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.28.8",
+    "eva": "aiin",
+    "zfd": "ain",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ain",
+    "stem_known": true,
+    "stem_gloss": "substance/thing",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:ain=substance/thing]",
+    "croatian": "stvar",
+    "english": "substance/thing",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Stem: substance (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ain",
+    "matched_croatian": "stvar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "ain",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.28.9",
+    "eva": "chosals",
+    "zfd": "hosals",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "osals",
+    "stem_known": true,
+    "stem_gloss": "salt",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:o][STEM:sal=salt][RESIDUE:s]",
+    "croatian": "h[o]sol[s]",
+    "english": "combine [o] salt [s]",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: salt (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "sal",
+    "matched_croatian": "sol",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "osals",
+    "unmatched_prefix": "o",
+    "unmatched_suffix": "s",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 29
+
+| Layer | Text |
+| --- | --- |
+| EVA | teol chor olsheody qokeol shoikhy ol sheeol sheol dg |
+| ZFD | treol chor olšeodi kostreol šoistrhy ol šeol šeol dg |
+| Croatian | \[tre\]ulje kuhati \[ol\]sa onim\[d\]i ko\[stre\]ulje š\[oistrhy\] ulje š\[e\]ulje š\[e\]ulje \[dg\] |
+| English gloss | \[tre\] oil cook/combine \[ol\] with that which \[d\] which \[stre\] oil with \[oistrhy\] oil with \[e\] oil with \[e\] oil \[dg\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.29.1 | Partial | ol | treol | tre |  | CONFIRMED | 0.500 |
+| f88r.29.2 | Whole word | chor | chor |  |  | CONFIRMED | 0.300 |
+| f88r.29.3 | Partial | šeo | olšeod | ol | d | CANDIDATE | 0.400 |
+| f88r.29.4 | Partial | ol | streol | stre |  | CONFIRMED | 0.950 |
+| f88r.29.5 | Compound |  | oistrhy |  |  | CANDIDATE | 0.600 |
+| f88r.29.6 | Whole word | ol | ol |  |  | CONFIRMED | 0.300 |
+| f88r.29.7 | Partial | ol | eol | e |  | CONFIRMED | 0.650 |
+| f88r.29.8 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+| f88r.29.9 | Compound |  | dg |  |  | CANDIDATE | 0.250 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.29.1",
+    "eva": "teol",
+    "zfd": "treol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "treol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:tre][STEM:ol=oil]",
+    "croatian": "[tre]ulje",
+    "english": "[tre] oil",
+    "confidence": 0.5,
+    "rewrites": [
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "treol",
+    "unmatched_prefix": "tre",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.2",
+    "eva": "chor",
+    "zfd": "chor",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chor",
+    "stem_known": true,
+    "stem_gloss": "cook/combine",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chor=cook/combine]",
+    "croatian": "kuhati",
+    "english": "cook/combine",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: cook (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chor",
+    "matched_croatian": "kuhati",
+    "matched_category": "action",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chor",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.3",
+    "eva": "olsheody",
+    "zfd": "olšeodi",
+    "operator": null,
+    "operator_type": null,
+    "stem": "šeo",
+    "stem_known": true,
+    "stem_gloss": "with that which",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:ol][STEM:šeo=with that which][RESIDUE:d][SUF:i=adjectival]",
+    "croatian": "[ol]sa onim[d]i",
+    "english": "[ol] with that which [d]",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: sh→š",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: state_with_that (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "šeo",
+    "matched_croatian": "sa onim",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "olšeod",
+    "unmatched_prefix": "ol",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.4",
+    "eva": "qokeol",
+    "zfd": "kostreol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "streol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:stre][STEM:ol=oil]",
+    "croatian": "ko[stre]ulje",
+    "english": "which [stre] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "streol",
+    "unmatched_prefix": "stre",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.5",
+    "eva": "shoikhy",
+    "zfd": "šoistrhy",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "oistrhy",
+    "stem_known": true,
+    "stem_gloss": "soak adjectival (variant) vessel (short) combine adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][COMPOUND:oistrhy=soak adjectival (variant) vessel (short) combine adjectival]",
+    "croatian": "š[oistrhy]",
+    "english": "with [oistrhy]",
+    "confidence": 0.6,
+    "rewrites": [
+      "operator: sh→š",
+      "gallows: k→st (unverified)",
+      "gallows: t→tr (unverified)"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Compound: [sh=soak/infuse] o [i=adjectival (variant)] [k=vessel (short)] [h=combine/cook (reduce] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "oistrhy",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "sh",
+        "type": "operator",
+        "gloss": "soak/infuse",
+        "content": true
+      },
+      {
+        "eva": "o",
+        "type": "binding",
+        "gloss": "binding vowel",
+        "content": false
+      },
+      {
+        "eva": "i",
+        "type": "suffixe",
+        "gloss": "adjectival (variant)",
+        "content": true
+      },
+      {
+        "eva": "k",
+        "type": "stem",
+        "gloss": "vessel (short)",
+        "content": true
+      },
+      {
+        "eva": "h",
+        "type": "operator",
+        "gloss": "combine/cook (reduced)",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.29.6",
+    "eva": "ol",
+    "zfd": "ol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:ol=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.7",
+    "eva": "sheeol",
+    "zfd": "šeol",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "š[e]ulje",
+    "english": "with [e] oil",
+    "confidence": 0.6499999999999999,
+    "rewrites": [
+      "operator: sh→š",
+      "mid-word: ee→e"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.8",
+    "eva": "sheol",
+    "zfd": "šeol",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "š[e]ulje",
+    "english": "with [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: sh→š"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.29.9",
+    "eva": "dg",
+    "zfd": "dg",
+    "operator": null,
+    "operator_type": null,
+    "stem": "dg",
+    "stem_known": true,
+    "stem_gloss": "(compound)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:dg=(compound)]",
+    "croatian": "[dg]",
+    "english": "[dg]",
+    "confidence": 0.25,
+    "rewrites": [],
+    "notes": [
+      "Compound: d g",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "dg",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "d",
+        "type": "suffix_char",
+        "gloss": "past/done",
+        "content": false
+      },
+      {
+        "eva": "g",
+        "type": "cluster",
+        "gloss": "voiced stop",
+        "content": false
+      }
+    ]
+  }
+]
+```
+
+### Source line 30
+
+| Layer | Text |
+| --- | --- |
+| EVA | ychey okaiin chol cheor ol chorcholsal |
+| ZFD | yhei ostain chol heor ol horholsal |
+| Croatian | \[y\]ov/taji oststvar brasno h\[e\]ulje ulje h\[or\]brasno\[s\]al |
+| English gloss | \[y\] the/this (demonstrative) vessel substance/thing flour/grain combine \[e\] oil oil combine \[or\] flour/grain \[s\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.30.1 | Partial | he | yhe | y |  | CANDIDATE | 0.400 |
+| f88r.30.2 | Exact stem | ain | ain |  |  | CONFIRMED | 0.650 |
+| f88r.30.3 | Whole word | chol | chol |  |  | CONFIRMED | 0.300 |
+| f88r.30.4 | Partial | or | eor | e |  | CONFIRMED | 0.550 |
+| f88r.30.5 | Whole word | ol | ol |  |  | CONFIRMED | 0.300 |
+| f88r.30.6 | Partial | hol | orhols | or | s | CONFIRMED | 0.800 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.30.1",
+    "eva": "ychey",
+    "zfd": "yhei",
+    "operator": null,
+    "operator_type": null,
+    "stem": "he",
+    "stem_known": true,
+    "stem_gloss": "the/this (demonstrative)",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:y][STEM:he=the/this (demonstrative)][SUF:i=adjectival]",
+    "croatian": "[y]ov/taji",
+    "english": "[y] the/this (demonstrative)",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: ch→h",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: state_this (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "he",
+    "matched_croatian": "ov/taj",
+    "matched_category": "grammar",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "yhe",
+    "unmatched_prefix": "y",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.30.2",
+    "eva": "okaiin",
+    "zfd": "ostain",
+    "operator": "ost",
+    "operator_type": "vessel",
+    "stem": "ain",
+    "stem_known": true,
+    "stem_gloss": "substance/thing",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ost][STEM:ain=substance/thing]",
+    "croatian": "oststvar",
+    "english": "vessel substance/thing",
+    "confidence": 0.6499999999999999,
+    "rewrites": [
+      "operator: ok→ost",
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: substance (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ain",
+    "matched_croatian": "stvar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "ain",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.30.3",
+    "eva": "chol",
+    "zfd": "chol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chol=flour/grain]",
+    "croatian": "brasno",
+    "english": "flour/grain",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: flour (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.30.4",
+    "eva": "cheor",
+    "zfd": "heor",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:or=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eor",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.30.5",
+    "eva": "ol",
+    "zfd": "ol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:ol=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.30.6",
+    "eva": "chorcholsal",
+    "zfd": "horholsal",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "hol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": "al",
+    "suffix_semantic": "substance",
+    "expansion": "[OP:h][RESIDUE:or][STEM:hol=flour/grain][RESIDUE:s][SUF:al=substance]",
+    "croatian": "h[or]brasno[s]al",
+    "english": "combine [or] flour/grain [s]",
+    "confidence": 0.8,
+    "rewrites": [
+      "operator: ch→h",
+      "mid-word: ch→h",
+      "suffix: al→al (substance)"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: flour (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "hol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "orhols",
+    "unmatched_prefix": "or",
+    "unmatched_suffix": "s",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 31
+
+| Layer | Text |
+| --- | --- |
+| EVA | poeeas sheoky olkeey cthol poldy s okoldy |
+| ZFD | ploeas šeostri olstrei ctrrhol ploldi s ostoldi |
+| Croatian | \[ploeas\] š\[e\]kost\[r\]i ulje\[stre\]i smjesa\[h\]ol \[pl\]ulje\[d\]i \[s\] ostulje\[d\]i |
+| English gloss | \[ploeas\] with \[e\] bone \[r\] oil \[stre\] compound mixture \[h\] \[pl\] oil \[d\] \[s\] vessel oil \[d\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.31.1 | Compound |  | ploeas |  |  | CANDIDATE | 0.400 |
+| f88r.31.2 | Partial | ost | eostr | e | r | CONFIRMED | 1.000 |
+| f88r.31.3 | Partial | ol | olstre |  | stre | CONFIRMED | 0.950 |
+| f88r.31.4 | Partial | ctrr | ctrrh |  | h | CANDIDATE | 0.600 |
+| f88r.31.5 | Partial | ol | plold | pl | d | CONFIRMED | 0.650 |
+| f88r.31.6 | Compound |  | s |  |  | CANDIDATE | 0.250 |
+| f88r.31.7 | Partial | ol | old |  | d | CONFIRMED | 0.700 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.31.1",
+    "eva": "poeeas",
+    "zfd": "ploeas",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ploeas",
+    "stem_known": true,
+    "stem_gloss": "(compound)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:ploeas=(compound)]",
+    "croatian": "[ploeas]",
+    "english": "[ploeas]",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: ee→e",
+      "gallows: p→pl (unverified)"
+    ],
+    "notes": [
+      "Compound: p o [ee=(intensifier)] a [s=~15]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "ploeas",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "p",
+        "type": "gallows",
+        "gloss": "preparation (pl-)",
+        "content": false
+      },
+      {
+        "eva": "o",
+        "type": "binding",
+        "gloss": "binding vowel",
+        "content": false
+      },
+      {
+        "eva": "ee",
+        "type": "stem",
+        "gloss": "(intensifier)",
+        "content": true
+      },
+      {
+        "eva": "a",
+        "type": "binding",
+        "gloss": "case vowel",
+        "content": false
+      },
+      {
+        "eva": "s",
+        "type": "suffixe",
+        "gloss": "~15",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.31.2",
+    "eva": "sheoky",
+    "zfd": "šeostri",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "ost",
+    "stem_known": true,
+    "stem_gloss": "bone",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:š][RESIDUE:e][STEM:ost=bone][RESIDUE:r][SUF:i=adjectival]",
+    "croatian": "š[e]kost[r]i",
+    "english": "with [e] bone [r]",
+    "confidence": 1.0,
+    "rewrites": [
+      "operator: sh→š",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: bone (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ost",
+    "matched_croatian": "kost",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eostr",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "r",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.31.3",
+    "eva": "olkeey",
+    "zfd": "olstrei",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[STEM:ol=oil][RESIDUE:stre][SUF:i=adjectival]",
+    "croatian": "ulje[stre]i",
+    "english": "oil [stre]",
+    "confidence": 0.95,
+    "rewrites": [
+      "mid-word: ee→e",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "olstre",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "stre",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.31.4",
+    "eva": "cthol",
+    "zfd": "ctrrhol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ctrr",
+    "stem_known": true,
+    "stem_gloss": "compound mixture",
+    "suffix": "ol",
+    "suffix_semantic": "oil_related",
+    "expansion": "[STEM:ctrr=compound mixture][RESIDUE:h][SUF:ol=oil_related]",
+    "croatian": "smjesa[h]ol",
+    "english": "compound mixture [h]",
+    "confidence": 0.6000000000000001,
+    "rewrites": [
+      "mid-word: ct→ctr",
+      "gallows: t→tr (known stem)",
+      "suffix: ol→ol (oil/oily)"
+    ],
+    "notes": [
+      "Stem: ctrr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ctrr",
+    "matched_croatian": "smjesa",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "ctrrh",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "h",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.31.5",
+    "eva": "poldy",
+    "zfd": "ploldi",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[RESIDUE:pl][STEM:ol=oil][RESIDUE:d][SUF:i=adjectival]",
+    "croatian": "[pl]ulje[d]i",
+    "english": "[pl] oil [d]",
+    "confidence": 0.6499999999999999,
+    "rewrites": [
+      "gallows: p→pl (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "plold",
+    "unmatched_prefix": "pl",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.31.6",
+    "eva": "s",
+    "zfd": "s",
+    "operator": null,
+    "operator_type": null,
+    "stem": "s",
+    "stem_known": true,
+    "stem_gloss": "(compound)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:s=(compound)]",
+    "croatian": "[s]",
+    "english": "[s]",
+    "confidence": 0.25,
+    "rewrites": [],
+    "notes": [
+      "Compound: [s=~15]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "s",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "s",
+        "type": "suffixe",
+        "gloss": "~15",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.31.7",
+    "eva": "okoldy",
+    "zfd": "ostoldi",
+    "operator": "ost",
+    "operator_type": "vessel",
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:ost][STEM:ol=oil][RESIDUE:d][SUF:i=adjectival]",
+    "croatian": "ostulje[d]i",
+    "english": "vessel oil [d]",
+    "confidence": 0.7,
+    "rewrites": [
+      "operator: ok→ost",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator vessel/container (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "old",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 32
+
+| Layer | Text |
+| --- | --- |
+| EVA | qokol chol qokol qokol chol cheey or aiin oldal |
+| ZFD | kostrol chol kostrol kostrol chol hey or ain oldal |
+| Croatian | ko\[str\]ulje brasno ko\[str\]ulje ko\[str\]ulje brasno h\[ey\] ulje stvar ulje\[d\]al |
+| English gloss | which \[str\] oil flour/grain which \[str\] oil which \[str\] oil flour/grain combine liquid/fluid oil substance/thing oil \[d\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.32.1 | Partial | ol | strol | str |  | CONFIRMED | 0.950 |
+| f88r.32.2 | Whole word | chol | chol |  |  | CONFIRMED | 0.300 |
+| f88r.32.3 | Partial | ol | strol | str |  | CONFIRMED | 0.950 |
+| f88r.32.4 | Partial | ol | strol | str |  | CONFIRMED | 0.950 |
+| f88r.32.5 | Whole word | chol | chol |  |  | CONFIRMED | 0.300 |
+| f88r.32.6 | Exact stem | ey | ey |  |  | CANDIDATE | 0.500 |
+| f88r.32.7 | Whole word | or | or |  |  | CONFIRMED | 0.300 |
+| f88r.32.8 | Exact stem | ain | ain |  |  | CONFIRMED | 0.400 |
+| f88r.32.9 | Partial | ol | old |  | d | CONFIRMED | 0.450 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.32.1",
+    "eva": "qokol",
+    "zfd": "kostrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "strol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:str][STEM:ol=oil]",
+    "croatian": "ko[str]ulje",
+    "english": "which [str] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strol",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.2",
+    "eva": "chol",
+    "zfd": "chol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chol=flour/grain]",
+    "croatian": "brasno",
+    "english": "flour/grain",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: flour (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.3",
+    "eva": "qokol",
+    "zfd": "kostrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "strol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:str][STEM:ol=oil]",
+    "croatian": "ko[str]ulje",
+    "english": "which [str] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strol",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.4",
+    "eva": "qokol",
+    "zfd": "kostrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "strol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:str][STEM:ol=oil]",
+    "croatian": "ko[str]ulje",
+    "english": "which [str] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strol",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.5",
+    "eva": "chol",
+    "zfd": "chol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chol=flour/grain]",
+    "croatian": "brasno",
+    "english": "flour/grain",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: flour (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.6",
+    "eva": "cheey",
+    "zfd": "hey",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ey",
+    "stem_known": true,
+    "stem_gloss": "liquid/fluid",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][STEM:ey=liquid/fluid]",
+    "croatian": "h[ey]",
+    "english": "combine liquid/fluid",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ch→h",
+      "mid-word: ee→e"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: ey (CANDIDATE)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ey",
+    "matched_croatian": "",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "corpus_frequency",
+    "stem_surface": "ey",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.7",
+    "eva": "or",
+    "zfd": "or",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:or=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.8",
+    "eva": "aiin",
+    "zfd": "ain",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ain",
+    "stem_known": true,
+    "stem_gloss": "substance/thing",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:ain=substance/thing]",
+    "croatian": "stvar",
+    "english": "substance/thing",
+    "confidence": 0.4,
+    "rewrites": [
+      "mid-word: ii→i"
+    ],
+    "notes": [
+      "Stem: substance (CONFIRMED)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ain",
+    "matched_croatian": "stvar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "ain",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.32.9",
+    "eva": "oldal",
+    "zfd": "oldal",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": "al",
+    "suffix_semantic": "substance",
+    "expansion": "[STEM:ol=oil][RESIDUE:d][SUF:al=substance]",
+    "croatian": "ulje[d]al",
+    "english": "oil [d]",
+    "confidence": 0.44999999999999996,
+    "rewrites": [
+      "suffix: al→al (substance)"
+    ],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "old",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "d",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 33
+
+| Layer | Text |
+| --- | --- |
+| EVA | ykar cheol chol chey ckhey s or shear ar alsy |
+| ZFD | ystrar heol chol hey cstrhei s or šear ar alsy |
+| Croatian | \[ystr\]voda h\[e\]ulje brasno h\[ey\] zgušnjeni\[he\]i \[s\] ulje š\[e\]voda voda \[alsy\] |
+| English gloss | \[ystr\] water combine \[e\] oil flour/grain combine liquid/fluid concentrated preparation \[he\] \[s\] oil with \[e\] water water \[alsy\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.33.1 | Partial | ar | ystrar | ystr |  | CONFIRMED | 0.700 |
+| f88r.33.2 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+| f88r.33.3 | Whole word | chol | chol |  |  | CONFIRMED | 0.300 |
+| f88r.33.4 | Exact stem | ey | ey |  |  | CANDIDATE | 0.400 |
+| f88r.33.5 | Partial | cstr | cstrhe |  | he | CANDIDATE | 0.600 |
+| f88r.33.6 | Compound |  | s |  |  | CANDIDATE | 0.250 |
+| f88r.33.7 | Whole word | or | or |  |  | CONFIRMED | 0.300 |
+| f88r.33.8 | Partial | ar | ear | e |  | CONFIRMED | 0.550 |
+| f88r.33.9 | Whole word | ar | ar |  |  | CONFIRMED | 0.300 |
+| f88r.33.10 | Compound |  | alsy |  |  | CANDIDATE | 0.250 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.33.1",
+    "eva": "ykar",
+    "zfd": "ystrar",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ystrar",
+    "stem_known": true,
+    "stem_gloss": "water",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:ystr][STEM:ar=water]",
+    "croatian": "[ystr]voda",
+    "english": "[ystr] water",
+    "confidence": 0.7,
+    "rewrites": [
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: water (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ar",
+    "matched_croatian": "voda",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ystrar",
+    "unmatched_prefix": "ystr",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.2",
+    "eva": "cheol",
+    "zfd": "heol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.3",
+    "eva": "chol",
+    "zfd": "chol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chol=flour/grain]",
+    "croatian": "brasno",
+    "english": "flour/grain",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: flour (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.4",
+    "eva": "chey",
+    "zfd": "hey",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ey",
+    "stem_known": true,
+    "stem_gloss": "liquid/fluid",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][STEM:ey=liquid/fluid]",
+    "croatian": "h[ey]",
+    "english": "combine liquid/fluid",
+    "confidence": 0.4,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: ey (CANDIDATE)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ey",
+    "matched_croatian": "",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "corpus_frequency",
+    "stem_surface": "ey",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.5",
+    "eva": "ckhey",
+    "zfd": "cstrhei",
+    "operator": null,
+    "operator_type": null,
+    "stem": "cstr",
+    "stem_known": true,
+    "stem_gloss": "concentrated preparation",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[STEM:cstr=concentrated preparation][RESIDUE:he][SUF:i=adjectival]",
+    "croatian": "zgušnjeni[he]i",
+    "english": "concentrated preparation [he]",
+    "confidence": 0.6000000000000001,
+    "rewrites": [
+      "mid-word: ck→cst",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Stem: cstr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "cstr",
+    "matched_croatian": "zgušnjeni",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "cstrhe",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "he",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.6",
+    "eva": "s",
+    "zfd": "s",
+    "operator": null,
+    "operator_type": null,
+    "stem": "s",
+    "stem_known": true,
+    "stem_gloss": "(compound)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:s=(compound)]",
+    "croatian": "[s]",
+    "english": "[s]",
+    "confidence": 0.25,
+    "rewrites": [],
+    "notes": [
+      "Compound: [s=~15]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "s",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "s",
+        "type": "suffixe",
+        "gloss": "~15",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.33.7",
+    "eva": "or",
+    "zfd": "or",
+    "operator": null,
+    "operator_type": null,
+    "stem": "or",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:or=oil]",
+    "croatian": "ulje",
+    "english": "oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "or",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.8",
+    "eva": "shear",
+    "zfd": "šear",
+    "operator": "š",
+    "operator_type": "comitative",
+    "stem": "ear",
+    "stem_known": true,
+    "stem_gloss": "water",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:š][RESIDUE:e][STEM:ar=water]",
+    "croatian": "š[e]voda",
+    "english": "with [e] water",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: sh→š"
+    ],
+    "notes": [
+      "Operator with/soak (CONFIRMED)",
+      "Stem: water (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ar",
+    "matched_croatian": "voda",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ear",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.9",
+    "eva": "ar",
+    "zfd": "ar",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ar",
+    "stem_known": true,
+    "stem_gloss": "water",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:ar=water]",
+    "croatian": "voda",
+    "english": "water",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: water (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "ar",
+    "matched_croatian": "voda",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ar",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.33.10",
+    "eva": "alsy",
+    "zfd": "alsy",
+    "operator": null,
+    "operator_type": null,
+    "stem": "alsy",
+    "stem_known": true,
+    "stem_gloss": "container adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[COMPOUND:alsy=container adjectival]",
+    "croatian": "[alsy]",
+    "english": "[alsy]",
+    "confidence": 0.25,
+    "rewrites": [],
+    "notes": [
+      "Compound: [al=container/vessel con] [s=~15] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "alsy",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "al",
+        "type": "suffixe",
+        "gloss": "container/vessel context",
+        "content": true
+      },
+      {
+        "eva": "s",
+        "type": "suffixe",
+        "gloss": "~15",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 34
+
+| Layer | Text |
+| --- | --- |
+| EVA | kor chey qokol cheol chody qokol kchor chol dal |
+| ZFD | stror hey kostrol heol hody kostrol strhor chol dal |
+| Croatian | \[s\]vreti h\[ey\] ko\[str\]ulje h\[e\]ulje h\[ody\] ko\[str\]ulje \[str\]kuhati brasno da\[l\] |
+| English gloss | \[s\] boil/roast combine liquid/fluid which \[str\] oil combine \[e\] oil combine \[ody\] which \[str\] oil \[str\] cook/combine flour/grain dose \[l\] |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.34.1 | Partial | tror | stror | s |  | CANDIDATE | 0.550 |
+| f88r.34.2 | Exact stem | ey | ey |  |  | CANDIDATE | 0.400 |
+| f88r.34.3 | Partial | ol | strol | str |  | CONFIRMED | 0.950 |
+| f88r.34.4 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+| f88r.34.5 | Compound |  | ody |  |  | CANDIDATE | 0.500 |
+| f88r.34.6 | Partial | ol | strol | str |  | CONFIRMED | 0.950 |
+| f88r.34.7 | Partial | hor | strhor | str |  | CONFIRMED | 0.800 |
+| f88r.34.8 | Whole word | chol | chol |  |  | CONFIRMED | 0.300 |
+| f88r.34.9 | Compound |  | l |  |  | CANDIDATE | 0.500 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.34.1",
+    "eva": "kor",
+    "zfd": "stror",
+    "operator": null,
+    "operator_type": null,
+    "stem": "stror",
+    "stem_known": true,
+    "stem_gloss": "boil/roast",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:s][STEM:tror=boil/roast]",
+    "croatian": "[s]vreti",
+    "english": "[s] boil/roast",
+    "confidence": 0.55,
+    "rewrites": [
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: boil (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "tror",
+    "matched_croatian": "vreti",
+    "matched_category": "action",
+    "matched_status": "CANDIDATE",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "stror",
+    "unmatched_prefix": "s",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.2",
+    "eva": "chey",
+    "zfd": "hey",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ey",
+    "stem_known": true,
+    "stem_gloss": "liquid/fluid",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][STEM:ey=liquid/fluid]",
+    "croatian": "h[ey]",
+    "english": "combine liquid/fluid",
+    "confidence": 0.4,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: ey (CANDIDATE)"
+    ],
+    "match_type": "exact_stem",
+    "matched_form": "ey",
+    "matched_croatian": "",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "corpus_frequency",
+    "stem_surface": "ey",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.3",
+    "eva": "qokol",
+    "zfd": "kostrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "strol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:str][STEM:ol=oil]",
+    "croatian": "ko[str]ulje",
+    "english": "which [str] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strol",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.4",
+    "eva": "cheol",
+    "zfd": "heol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.5",
+    "eva": "chody",
+    "zfd": "hody",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ody",
+    "stem_known": true,
+    "stem_gloss": "combine stalk adjectival",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][COMPOUND:ody=combine stalk adjectival]",
+    "croatian": "h[ody]",
+    "english": "combine [ody]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Compound: [ch=combine/cook] [od=stalk/stem] [y=adjectival/state]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "ody",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "ch",
+        "type": "operator",
+        "gloss": "combine/cook",
+        "content": true
+      },
+      {
+        "eva": "od",
+        "type": "stem",
+        "gloss": "stalk/stem",
+        "content": true
+      },
+      {
+        "eva": "y",
+        "type": "suffixe",
+        "gloss": "adjectival/state",
+        "content": true
+      }
+    ]
+  },
+  {
+    "id": "f88r.34.6",
+    "eva": "qokol",
+    "zfd": "kostrol",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "strol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:str][STEM:ol=oil]",
+    "croatian": "ko[str]ulje",
+    "english": "which [str] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strol",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.7",
+    "eva": "kchor",
+    "zfd": "strhor",
+    "operator": null,
+    "operator_type": null,
+    "stem": "strhor",
+    "stem_known": true,
+    "stem_gloss": "cook/combine",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:str][STEM:hor=cook/combine]",
+    "croatian": "[str]kuhati",
+    "english": "[str] cook/combine",
+    "confidence": 0.8,
+    "rewrites": [
+      "mid-word: ch→h",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: cook (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "hor",
+    "matched_croatian": "kuhati",
+    "matched_category": "action",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "strhor",
+    "unmatched_prefix": "str",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.8",
+    "eva": "chol",
+    "zfd": "chol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chol=flour/grain]",
+    "croatian": "brasno",
+    "english": "flour/grain",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: flour (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.34.9",
+    "eva": "dal",
+    "zfd": "dal",
+    "operator": "da",
+    "operator_type": "dative",
+    "stem": "l",
+    "stem_known": true,
+    "stem_gloss": "da-l-al",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:da][COMPOUND:l=da-l-al]",
+    "croatian": "da[l]",
+    "english": "dose [l]",
+    "confidence": 0.5,
+    "rewrites": [
+      "operator: da→da"
+    ],
+    "notes": [
+      "Operator dose/give/add (CONFIRMED)",
+      "Compound: [dal=da-l-al]",
+      "Stem: compound (CANDIDATE)"
+    ],
+    "match_type": "compound",
+    "matched_form": "",
+    "matched_croatian": "",
+    "matched_category": "compound",
+    "matched_status": "CANDIDATE",
+    "matched_source": "unified_lexicon_v2.json",
+    "stem_surface": "l",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": [
+      {
+        "eva": "dal",
+        "type": "stem",
+        "gloss": "da-l-al",
+        "content": true
+      }
+    ]
+  }
+]
+```
+
+### Source line 35
+
+| Layer | Text |
+| --- | --- |
+| EVA | ykeeey cheor cheotey cheol qokeor chetchy ofal |
+| ZFD | ystreey heor heotrey heol kostreor hetrhi oplral |
+| Croatian | \[ystr\]\[eey\] h\[e\]ulje h\[eotr\]\[ey\] h\[e\]ulje ko\[stre\]ulje hekstrakt\[h\]i \[o\]prašakal |
+| English gloss | \[ystr\] distilled fluid combine \[e\] oil combine \[eotr\] liquid/fluid combine \[e\] oil which \[stre\] oil combine extract/tincture \[h\] \[o\] powder/pulverize |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.35.1 | Partial | eey | ystreey | ystr |  | CANDIDATE | 0.650 |
+| f88r.35.2 | Partial | or | eor | e |  | CONFIRMED | 0.550 |
+| f88r.35.3 | Partial | ey | eotrey | eotr |  | CANDIDATE | 0.600 |
+| f88r.35.4 | Partial | ol | eol | e |  | CONFIRMED | 0.550 |
+| f88r.35.5 | Partial | or | streor | stre |  | CONFIRMED | 0.950 |
+| f88r.35.6 | Partial | etr | etrh |  | h | CANDIDATE | 0.850 |
+| f88r.35.7 | Partial | plr | oplr | o |  | CANDIDATE | 0.550 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.35.1",
+    "eva": "ykeeey",
+    "zfd": "ystreey",
+    "operator": null,
+    "operator_type": null,
+    "stem": "ystreey",
+    "stem_known": true,
+    "stem_gloss": "distilled fluid",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:ystr][STEM:eey=distilled fluid]",
+    "croatian": "[ystr][eey]",
+    "english": "[ystr] distilled fluid",
+    "confidence": 0.65,
+    "rewrites": [
+      "mid-word: ee→e",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Stem: eey (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "eey",
+    "matched_croatian": "",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "corpus_frequency",
+    "stem_surface": "ystreey",
+    "unmatched_prefix": "ystr",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.35.2",
+    "eva": "cheor",
+    "zfd": "heor",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:or=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eor",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.35.3",
+    "eva": "cheotey",
+    "zfd": "heotrey",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eotrey",
+    "stem_known": true,
+    "stem_gloss": "liquid/fluid",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:eotr][STEM:ey=liquid/fluid]",
+    "croatian": "h[eotr][ey]",
+    "english": "combine [eotr] liquid/fluid",
+    "confidence": 0.6,
+    "rewrites": [
+      "operator: ch→h",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: ey (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ey",
+    "matched_croatian": "",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "corpus_frequency",
+    "stem_surface": "eotrey",
+    "unmatched_prefix": "eotr",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.35.4",
+    "eva": "cheol",
+    "zfd": "heol",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ol=oil]",
+    "croatian": "h[e]ulje",
+    "english": "combine [e] oil",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "eol",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.35.5",
+    "eva": "qokeor",
+    "zfd": "kostreor",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "streor",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:ko][RESIDUE:stre][STEM:or=oil]",
+    "croatian": "ko[stre]ulje",
+    "english": "which [stre] oil",
+    "confidence": 0.95,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "or",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "streor",
+    "unmatched_prefix": "stre",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.35.6",
+    "eva": "chetchy",
+    "zfd": "hetrhi",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "etr",
+    "stem_known": true,
+    "stem_gloss": "extract/tincture",
+    "suffix": "i",
+    "suffix_semantic": "adjectival",
+    "expansion": "[OP:h][STEM:etr=extract/tincture][RESIDUE:h][SUF:i=adjectival]",
+    "croatian": "hekstrakt[h]i",
+    "english": "combine extract/tincture [h]",
+    "confidence": 0.8500000000000001,
+    "rewrites": [
+      "operator: ch→h",
+      "mid-word: ch→h",
+      "gallows: t→tr (known stem)",
+      "suffix: y→i (adjective marker)"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: etr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "etr",
+    "matched_croatian": "ekstrakt",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "etrh",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "h",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.35.7",
+    "eva": "ofal",
+    "zfd": "oplral",
+    "operator": null,
+    "operator_type": null,
+    "stem": "plr",
+    "stem_known": true,
+    "stem_gloss": "powder/pulverize",
+    "suffix": "al",
+    "suffix_semantic": "substance",
+    "expansion": "[RESIDUE:o][STEM:plr=powder/pulverize][SUF:al=substance]",
+    "croatian": "[o]prašakal",
+    "english": "[o] powder/pulverize",
+    "confidence": 0.55,
+    "rewrites": [
+      "gallows: f→pr (unverified)",
+      "gallows: p→pl (known stem)",
+      "suffix: al→al (substance)"
+    ],
+    "notes": [
+      "Stem: pulv (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "plr",
+    "matched_croatian": "prašak",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "oplr",
+    "unmatched_prefix": "o",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```
+
+### Source line 36
+
+| Layer | Text |
+| --- | --- |
+| EVA | dar chear chol dol qoekeor cheom |
+| ZFD | dar hear chol dol koestreor heom |
+| Croatian | dar h\[e\]voda brasno \[d\]ulje komelem\[e\]or h\[e\]-om |
+| English gloss | gift combine \[e\] water flour/grain \[d\] oil which plaster/poultice \[e\] combine \[e\] with/by (instrumental) |
+
+| Token | Match | Matched form | Stem surface | Prefix residue | Suffix residue | Lexicon status | Parser score |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| f88r.36.1 | Whole word | dar | dar |  |  | CONFIRMED | 0.300 |
+| f88r.36.2 | Partial | ar | ear | e |  | CONFIRMED | 0.550 |
+| f88r.36.3 | Whole word | chol | chol |  |  | CONFIRMED | 0.300 |
+| f88r.36.4 | Partial | ol | dol | d |  | CONFIRMED | 0.300 |
+| f88r.36.5 | Partial | estr | estre |  | e | CANDIDATE | 0.950 |
+| f88r.36.6 | Partial | om | eom | e |  | CONFIRMED | 0.550 |
+
+#### Complete token provenance
+
+```json
+[
+  {
+    "id": "f88r.36.1",
+    "eva": "dar",
+    "zfd": "dar",
+    "operator": null,
+    "operator_type": null,
+    "stem": "dar",
+    "stem_known": true,
+    "stem_gloss": "gift",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:dar=gift]",
+    "croatian": "dar",
+    "english": "gift",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: gift (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "dar",
+    "matched_croatian": "dar",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "dar",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.36.2",
+    "eva": "chear",
+    "zfd": "hear",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "ear",
+    "stem_known": true,
+    "stem_gloss": "water",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:ar=water]",
+    "croatian": "h[e]voda",
+    "english": "combine [e] water",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: water (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ar",
+    "matched_croatian": "voda",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "ear",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.36.3",
+    "eva": "chol",
+    "zfd": "chol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "chol",
+    "stem_known": true,
+    "stem_gloss": "flour/grain",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[STEM:chol=flour/grain]",
+    "croatian": "brasno",
+    "english": "flour/grain",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: flour (CONFIRMED) [whole-word]"
+    ],
+    "match_type": "whole_word",
+    "matched_form": "chol",
+    "matched_croatian": "brasno",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "chol",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.36.4",
+    "eva": "dol",
+    "zfd": "dol",
+    "operator": null,
+    "operator_type": null,
+    "stem": "dol",
+    "stem_known": true,
+    "stem_gloss": "oil",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[RESIDUE:d][STEM:ol=oil]",
+    "croatian": "[d]ulje",
+    "english": "[d] oil",
+    "confidence": 0.3,
+    "rewrites": [],
+    "notes": [
+      "Stem: oil (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "ol",
+    "matched_croatian": "ulje",
+    "matched_category": "ingredient",
+    "matched_status": "CONFIRMED",
+    "matched_source": "lexicon_v1",
+    "stem_surface": "dol",
+    "unmatched_prefix": "d",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.36.5",
+    "eva": "qoekeor",
+    "zfd": "koestreor",
+    "operator": "ko",
+    "operator_type": "relative",
+    "stem": "estr",
+    "stem_known": true,
+    "stem_gloss": "plaster/poultice",
+    "suffix": "or",
+    "suffix_semantic": "oil_related",
+    "expansion": "[OP:ko][STEM:estr=plaster/poultice][RESIDUE:e][SUF:or=oil_related]",
+    "croatian": "komelem[e]or",
+    "english": "which plaster/poultice [e]",
+    "confidence": 0.9500000000000001,
+    "rewrites": [
+      "operator: qo→ko",
+      "gallows: k→st (known stem)",
+      "gallows: t→tr (known stem)",
+      "suffix: or→or (oil)"
+    ],
+    "notes": [
+      "Operator which/that/quantity (CONFIRMED)",
+      "Stem: emplastr (CANDIDATE)"
+    ],
+    "match_type": "partial",
+    "matched_form": "estr",
+    "matched_croatian": "melem",
+    "matched_category": "preparation",
+    "matched_status": "CANDIDATE",
+    "matched_source": "MS650_cross_reference",
+    "stem_surface": "estre",
+    "unmatched_prefix": "",
+    "unmatched_suffix": "e",
+    "compound_parts": []
+  },
+  {
+    "id": "f88r.36.6",
+    "eva": "cheom",
+    "zfd": "heom",
+    "operator": "h",
+    "operator_type": "action",
+    "stem": "eom",
+    "stem_known": true,
+    "stem_gloss": "with/by (instrumental)",
+    "suffix": null,
+    "suffix_semantic": null,
+    "expansion": "[OP:h][RESIDUE:e][STEM:om=with/by (instrumental)]",
+    "croatian": "h[e]-om",
+    "english": "combine [e] with/by (instrumental)",
+    "confidence": 0.55,
+    "rewrites": [
+      "operator: ch→h"
+    ],
+    "notes": [
+      "Operator combine/cook (CONFIRMED)",
+      "Stem: instrumental (CONFIRMED)"
+    ],
+    "match_type": "partial",
+    "matched_form": "om",
+    "matched_croatian": "-om",
+    "matched_category": "grammar",
+    "matched_status": "CONFIRMED",
+    "matched_source": "morphology_analysis",
+    "stem_surface": "eom",
+    "unmatched_prefix": "e",
+    "unmatched_suffix": "",
+    "compound_parts": []
+  }
+]
+```

@@ -1,0 +1,2 @@
+# csv.DictWriter emits RFC 4180 CRLF records. Preserve their exact bytes.
+*_table.csv -text whitespace=cr-at-eol

@@ -1,0 +1,11 @@
+Command: python -m pytest -q
+Date: 2026-11-23
+Result: exit 0
+
+........................................................................ [ 74%]
+.........................                                                [100%]
+
+97 passed, 1 warning in 0.58s
+
+The warning is PytestRemovedIn10Warning from the installed anyio pytest
+plugin, concerning the external CallSpec2 alias. No repository test failed.

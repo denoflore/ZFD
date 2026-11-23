@@ -1,6 +1,6 @@
 # V3 Clean-Input Dual-Configuration Audit
 
-**Run date:** 2026-11-23T11:17:38.694319
+**Run date:** 2026-11-23T11:57:12.110632
 **Iterations per baseline:** 30
 
 ## Scope and correction

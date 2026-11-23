@@ -1,5 +1,13 @@
 # Lexicon v2 Integration Changelog
 
+**Historical record:** the counts and benchmark below describe the February
+integration. The 23 November 2026 shipping CSV has **212 rows / 208 distinct
+forms**. The retained folio branch's original CSV has **185 rows / 182 distinct
+forms**, correcting this entry's old 181-form count. It is available through
+the explicit candidate profile described in the [reader guide](README.md) and
+[reconciliation record](data/candidates/README.md). Current parser measurements
+and partial-match definitions are documented there.
+
 **Date:** 2026-02-05
 **Commit:** feat: integrate lexicon_v2 with category-aware glossing and confidence tiers
 

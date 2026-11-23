@@ -1,5 +1,5 @@
 {
-  "test_date": "2026-11-23T11:17:38.694319",
+  "test_date": "2026-11-23T11:57:12.110632",
   "test_version": "v3-dual-config-clean-input-2026-11",
   "iterations_per_baseline": 30,
   "seed_schedule": "31337 + iteration (0-based), shared across configurations",
@@ -17,14 +17,15 @@
     "zfd_decoder/data/suffixes.json": "31a0128c3dfb28f87cf78f8ecc14ec962b28c7e31ae720b5beb59f9e1241fde8",
     "zfd_decoder/data/unified_lexicon_v2.json": "ca4283c4fcf2c42f82e1b4658875fab67561166702115cdaa14446d11b664c29",
     "zfd_decoder/src/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
-    "zfd_decoder/src/compound.py": "2ccf48883dcd06f2fa5540d87dcdfc2e62e324db37a45bef6c59e07f9ea2bc6c",
-    "zfd_decoder/src/gallows.py": "d2abc22ee95d33b8a3bfb3e0d4cdd081f58823a9bbabe4170e49b4154785be42",
-    "zfd_decoder/src/operators.py": "7d262c7bf3a11bb367262288445084284d6f294ae62bf43a14fbb6b1771dd17a",
-    "zfd_decoder/src/output.py": "894d8042e0394dc6d80eeef156b99da9682718162245c10921186222690af9c3",
-    "zfd_decoder/src/pipeline.py": "c44b7601988aaa434891b769119a9d1414c7d6b8895e0933db4acdebbd14e79a",
-    "zfd_decoder/src/stems.py": "d78991ac8884c7b1b5c70c5df8802fe008429d8dd9977ed617b5c60e8a531fec",
-    "zfd_decoder/src/suffixes.py": "c386c8e9ba48f26b92be85f08ab06493cdb46f4fe500060fcb857370f89e173b",
-    "zfd_decoder/src/tokenizer.py": "873ab94bff635c62066358f62e88dc745e130dca1297fa09403489acbed59c49"
+    "zfd_decoder/src/compound.py": "a30533277ad6fdfad1efe782617365950d1c15d3708dc043da7b35c38c668670",
+    "zfd_decoder/src/folio_sources.py": "32cefa718799c18c2b10cccbbffaf36f95e533ef1f7605fe27362f22e6ea316b",
+    "zfd_decoder/src/gallows.py": "da493003bbf8800f750bdb19531a92ae15ed9e3fd1dcc391f264a2a7f58b1b56",
+    "zfd_decoder/src/operators.py": "b9cfc426174bac1dfe3acb32e509002fda3ad7f71cd08dfd163543fd7afb41c0",
+    "zfd_decoder/src/output.py": "72ce03a8b2248970a8b2d073f4a320ebe382bedffe33118f27ac66567e8aa3b3",
+    "zfd_decoder/src/pipeline.py": "e4eef80ef791b1677c2386f8f2b88ef23b61267d2d2d6d9cdf9ec5c14079ef9b",
+    "zfd_decoder/src/stems.py": "c23d803fe87ca6ccb8d688d82407f91c499c8f1d3e37c9a202cde55ab03360e6",
+    "zfd_decoder/src/suffixes.py": "8078d5c62cf7b65d341e48daae73aa4c3a3f364089c226d29855187fbf1f4ddf",
+    "zfd_decoder/src/tokenizer.py": "7a2e0cb37c7df47ba80d9d05dbbfefe1ccb550bb80026cea268c8b1b3948f5f0"
   },
   "interpretation_contract": "Absolute coverage is not evidence. Evidence = real-vs-null deltas, significance, and preserved ordering hierarchy.",
   "configs": {

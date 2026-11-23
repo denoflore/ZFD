@@ -4,7 +4,7 @@ Splits lines into tokens, preserves structure.
 """
 
 from dataclasses import dataclass, field
-from typing import List, Optional
+from typing import Dict, List, Optional
 import re
 
 
@@ -27,6 +27,18 @@ class Token:
     confidence: float = 0.0
     rewrites: List[str] = field(default_factory=list)
     notes: List[str] = field(default_factory=list)
+    # Match provenance is additive: stem retains the parser's legacy value,
+    # while stem_surface preserves all expanded characters around a match.
+    match_type: str = "unresolved"
+    matched_form: str = ""
+    matched_croatian: str = ""
+    matched_category: str = ""
+    matched_status: str = ""
+    matched_source: str = ""
+    stem_surface: str = ""
+    unmatched_prefix: str = ""
+    unmatched_suffix: str = ""
+    compound_parts: List[Dict] = field(default_factory=list)
 
 
 def words_from_eva_line(line: str) -> List[str]:

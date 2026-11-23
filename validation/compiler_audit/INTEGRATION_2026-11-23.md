@@ -138,3 +138,9 @@ were already ancestors of main. The compiler-audit branch is prunable only
 after its final head is incorporated. Five branches contain unique work and
 must be retained: LGN eye, edition architecture, paleographic transcription,
 folio images/Croatian, and image-native decipherment.
+
+**Subsequent completion, 23 November:** the
+[folio-reader completion](../folio_reader/COMPLETION_2026-11-23.md) incorporates
+the folio images/Croatian branch, preserves its original candidate CSV and
+adds the finished reader. Its branch can be retired after that merge. The
+other four branches retain unique work outside that completion's scope.
